@@ -1,0 +1,135 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage C4. The field. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-c4-the-field">Stage C4. The field.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-C4.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-C4.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+one. <strong>Fleet:</strong> none.</p>
+<p><strong>Steps:</strong> <code>C4a</code> the field, the handback and
+the interview. Each leg is named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each list of §2 and after each
+change the field forces. At a safe stop, check for <code>.pause</code>
+(<code>ls .pause</code>); if it is there, log where to pick up and the
+next item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh C4 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+the last five diary entries, <code>validate.py --open C4</code>;
+<code>field/</code>, placed by the handler when this leg opens.</p>
+<p><strong>Reads allowed:</strong> everything stage C3 allowed, and
+<code>field/</code>: the field model, its phases and its evidence.
+Quotes from your rooms through <code>cite.py</code>; the field's quotes
+as <code>field/</code> gives them. <strong>Forbidden:</strong> reading
+r/place's own threads (you hold the field's model and its evidence,
+never its corpus); rewriting the story (that is C5); withdrawing a
+finding because the field says otherwise; entering from the field
+anything your rooms could not confirm or refute; the canvas as an
+undeclared ground (rule 7).</p>
+<p><strong>Outputs:</strong> <code>field-C4.md</code>; tentative entries
+in <code>model/elements.jsonl</code> or <code>model/arrows.jsonl</code>,
+each with <code>"origin": "from-field"</code>,
+<code>"status": "tentative"</code>, <code>field_support</code> and a
+<code>model/history.jsonl</code> line; wherever this stage changes
+something, <code>model-C4.md</code>, <code>structure-C4.md</code> and
+<code>concept-C4.md</code>, each a whole file superseding the stage C3
+file (or the stage C2 file where C3 wrote none), and
+<code>manifest-C4.txt</code>, one line per file of
+<code>manifest-C3.txt</code> saying whether it has a stage C4 successor,
+which stage C5 reads first; <code>notes-C4.md</code>.</p>
+<h2 id="1-why-this-stage-exists">1. Why this stage exists</h2>
+<p>r/place, the subreddit the event was named after, is not one of your
+rooms. It was the square where the rooms met: where factions recruited,
+allied, argued over borders, and told each other what was happening. It
+is the field, and the census keeps it out of the population for that
+reason: a room of 207,342 items that narrates every other room is not a
+case beside them. It was coded apart, under its own contract, and a
+separate analyst, sealed from you as you were from it, built a model of
+the event from it. You receive that model now, and not before, so that
+it could not become the template your rooms were read through.</p>
+<h2 id="2-the-return-to-the-field">2. The return to the field</h2>
+<p><strong>What arrives.</strong> The handler places <code>field/</code>
+in your folder when this leg opens: the field analyst's model
+(<code>field/model.md</code>, its tiers and arrows), its account of the
+event's phases, and its evidence, each claim with quotes and thread ids.
+Not r/place's corpus. If <code>field/</code> has not arrived, write in
+<code>field-C4.md</code> that the field was not held and why the handler
+gave, and close the leg; nothing below applies.</p>
+<p><strong>Read your own model first.</strong> Restate in
+<code>field-C4.md</code>, before opening <code>field/</code>, the three
+claims of your model that a view of the whole event could most easily
+overturn. Then read the field model whole.</p>
+<p><strong>The confrontation, in three lists, in
+<code>field-C4.md</code>:</strong></p>
+<ol type="1">
+<li><strong>Where the two agree.</strong> A mechanism both models hold,
+said in each model's own words, with one room and one field thread.
+Agreement from two sources read by sealed analysts is the strongest
+evidence the study has; say which of your findings it touches.</li>
+<li><strong>What only the field sees.</strong> Mechanisms that live
+between rooms (coordination, alliances, disputes, the event's phases)
+and that no single room could show you. Each may enter your model as an
+element in <code>model/elements.jsonl</code> or an arrow in
+<code>model/arrows.jsonl</code>, with
+<code>"origin": "from-field"</code>, <code>"status": "tentative"</code>,
+<code>field_support</code> (the field's threads or items that show it)
+and a <code>model/history.jsonl</code> line, as a hypothesis. Stage D
+sends a tentative entry to every room, marked tentative and with no word
+of where it came from (J, 2026-09-29), and each room says from its own
+record whether it shows its side of the entry, contradicts it, or says
+nothing; silence counts. Enter only what a room could answer from its
+own record; what no room could goes in the list and stays out of the
+model. A fourth-order theme never enters from the field: no room can
+answer a grouping. An entry sits under a fourth-order theme stage C3
+already mapped to the four problems (<code>mapping-C3.jsonl</code>); if
+the entry changes which problem that theme reaches, say so in
+<code>field-C4.md</code>, and the mapping line is amended as stage C3's
+§6 says.</li>
+<li><strong>Where they disagree.</strong> Where the rooms contradict the
+field's account, or the field contradicts yours. Nothing in your model
+is withdrawn because the field says otherwise; it is bounded, or the
+disagreement is printed beside it, as with the literature at stage C3.
+Say which source you trust on the point and why: the field sees the
+whole, the rooms see the inside.</li>
+</ol>
+<p>A change the field forces follows stage C3's §6: amend, record in
+<code>tier_history.jsonl</code> with the move, log and snap it
+(<code>python3 tools/snap.py C4 move-&lt;move&gt;-&lt;n&gt;</code>).
+Every finding line a change touches is re-examined in the same act (rule
+14), and a finding the field changed says so (rule 13).</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>The field's arrival, or its absence and the reason; the three claims
+restated before reading; each agreement, each <code>from-field</code>
+entry and each disagreement; each change by move.</p>
+<h2 id="final-message">Final message</h2>
+<p>How many mechanisms the two models share, how many entered
+<code>from-field</code>, and the sharpest disagreement, with the source
+you trust on it and why. Then: findings bounded or changed by the field;
+files with a stage C4 successor.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh C4</code> at the end of the leg, every change logged
+and snapped as it was made; paste the close-check report into
+<code>notes-C4.md</code>; <code>handback-C4.md</code>; the head; the
+closing diary line.</p>
+<p><strong>Interview point.</strong> <code>C4a</code> writes
+<code>out/interview/C4a.md</code> (under 800 words: what you did, what
+you found, what surprised you, what you doubt, and the three questions
+you would most like to be asked) and closes with
+<code>done.sh C4 --cut interview</code>: the model read against the
+field: what the two sources share, what only the field shows, where the
+rooms and the field disagree. The principal investigator may talk with
+you here, in a fork of this leg, run in a copy of your folder as it
+stood at the close (not read-only; nothing done there reaches the run);
+the run goes on from the cut either way. <code>done.sh</code> files the
+brief under the leg, the stage, the step and the minute, and refuses the
+cut without the brief and the handback.</p>
+<h2 id="level-and-distributed-process-evidence">Level and distributed
+process evidence</h2>
+<p>An inter-room mechanism may be evidenced jointly across several case
+records. Name its level, the participating rooms, exact dated items and
+how their contributions connect. A property of their interaction need
+not appear unchanged in each room. Within-room claims still require
+within-room evidence. Record any grounded field feedback loop in
+<code>model/loops.jsonl</code> using C2's typed provenance rules;
+otherwise retain it as tentative or unresolved.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

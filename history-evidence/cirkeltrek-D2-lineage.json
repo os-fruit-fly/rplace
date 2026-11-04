@@ -1,0 +1,45 @@
+{
+  "community": "cirkeltrek",
+  "archive_sha256": "1108a007b309acb95ddd94f43c2ced1919e77bc02d7e037903c4c407b66c6222",
+  "archive_name": "cirkeltrek.tar.zst",
+  "session": "01a14290-8697-7870-ab8b-f98ccb49e94b",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T04-35-30-01a14290-8697-7870-ab8b-f98ccb49e94b.jsonl",
+      "sha256": "e33e421186731d099cd08888c6e33e35a5d530e8160e6b052c08583d2de74bc9",
+      "lines": 222,
+      "last_utc": "2026-10-16T02:44:08.441Z",
+      "identity": [
+        {
+          "id": "01a14290-8697-7870-ab8b-f98ccb49e94b",
+          "session_id": "01a14290-8697-7870-ab8b-f98ccb49e94b",
+          "timestamp": "2026-10-16T02:35:30.327Z",
+          "forked_from_id": "01a0a436-a005-7591-84d4-2e20a989b760",
+          "forked_from_ordinal_exclusive": 666,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T02:35:35.386Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T02:43:05.856Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "8fa41e78b18a09dde8afb94b08ae3838b11cfeeedb7b47b09d20c9f103e48654",
+    "source_archive_sha256": "07cc1ac22d5b302ee0df2b9ce64203c64b0564f06c533f211e2e0c85bd29e2a0",
+    "checkpoint": "a726ed6160b2778e747b0f8722d9321a1abe8a8b896a06ea99ef44229397e463",
+    "source_finished": "2026-09-15T09:26:34.099138+00:00",
+    "source_archive_name": "cirkeltrek-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "checkpoint_id": "aggregator--claude-v43-1--C4-field--B1.B1d-07",
+  "bundle_sha256": "5c8cfefe27861f770d0d4a1a7b9b24966f16df89b273d81f80058d8d669957ed",
+  "snapshot_manifest_sha256": null,
+  "recipe_sha256": "28c93cb2f5783ab24af9ff8e238f99b9daf88eceb801407757e79c96ed5c34ad",
+  "commit": "60878fb9f4461b97e19b9836d73d0025f8613343",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/out/_head.md",
+      "sha256": "c4786fe36e9ac14d1a294d8094d784933bbb5792eba461f80c143188e9a7e878",
+      "bytes": 18539,
+      "source_file": "record-files/c4786fe36e9ac14d1a294d8094d784933bbb5792eba461f80c143188e9a7e878.md",
+      "origin": {
+        "blob": "f9f67af97e1876991e72b1193679528b9b6cbaa5",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md"
+      },
+      "reading_sha256": "974bcc689072b4546b5fae8167ad10eb902f908aa0ad16a8b009b35eccf760f5",
+      "reading_bytes": 18554,
+      "reading_file": "c4786fe36e9ac14d1a294d8094d784933bbb5792eba461f80c143188e9a7e878.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "01-_head",
+      "raw": "../files/c4786fe36e9ac14d1a294d8094d784933bbb5792eba461f80c143188e9a7e878.reading.md"
+    },
+    {
+      "path": "workspace/out/contrast.md",
+      "sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "bytes": 7599,
+      "source_file": "record-files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.md",
+      "origin": {
+        "blob": "e47aeca4dab7bb35c528ba9164327619b33f3f71",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/contrast.md"
+      },
+      "reading_sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "reading_bytes": 7599,
+      "reading_file": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-contrast",
+      "raw": "../files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md"
+    },
+    {
+      "path": "workspace/out/saturation-B1.md",
+      "sha256": "f2fb4531ad81bee07a2852ed87ccfd08e0ae8ccfd74d98ff1ec3d30f8c8b1ba0",
+      "bytes": 36360,
+      "source_file": "record-files/f2fb4531ad81bee07a2852ed87ccfd08e0ae8ccfd74d98ff1ec3d30f8c8b1ba0.md",
+      "origin": {
+        "blob": "c758bbebaed9ea432dfca4e83a3b2ce6ada14fcd",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/saturation-B1.md"
+      },
+      "reading_sha256": "f2fb4531ad81bee07a2852ed87ccfd08e0ae8ccfd74d98ff1ec3d30f8c8b1ba0",
+      "reading_bytes": 36360,
+      "reading_file": "f2fb4531ad81bee07a2852ed87ccfd08e0ae8ccfd74d98ff1ec3d30f8c8b1ba0.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "03-saturation-B1",
+      "raw": "../files/f2fb4531ad81bee07a2852ed87ccfd08e0ae8ccfd74d98ff1ec3d30f8c8b1ba0.reading.md"
+    },
+    {
+      "path": "workspace/out/stopping-B1.md",
+      "sha256": "d94becde51532f3725b64ec258bdcca1757bfa054f9e67a169fa069c56a9068a",
+      "bytes": 14900,
+      "source_file": "record-files/d94becde51532f3725b64ec258bdcca1757bfa054f9e67a169fa069c56a9068a.md",
+      "origin": {
+        "blob": "30c191ce61cff8f1d2a37033b54383435e4e427b",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/stopping-B1.md"
+      },
+      "reading_sha256": "d94becde51532f3725b64ec258bdcca1757bfa054f9e67a169fa069c56a9068a",
+      "reading_bytes": 14900,
+      "reading_file": "d94becde51532f3725b64ec258bdcca1757bfa054f9e67a169fa069c56a9068a.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-stopping-B1",
+      "raw": "../files/d94becde51532f3725b64ec258bdcca1757bfa054f9e67a169fa069c56a9068a.reading.md"
+    }
+  ],
+  "comparison": null
+}

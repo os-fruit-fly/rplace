@@ -1,0 +1,510 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The adaptation schema | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><!-- INDEX -->
+
+<table>
+<thead>
+<tr>
+<th>section</th>
+<th>lines</th>
+<th>words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Elements of the global model</td>
+<td>29 to 61</td>
+<td>322</td>
+</tr>
+<tr>
+<td>2. Operations</td>
+<td>62 to 110</td>
+<td>587</td>
+</tr>
+<tr>
+<td>3. The ledger line</td>
+<td>111 to 137</td>
+<td>237</td>
+</tr>
+<tr>
+<td>4. Validation at ingest</td>
+<td>138 to 158</td>
+<td>201</td>
+</tr>
+<tr>
+<td>5. The room model</td>
+<td>159 to 174</td>
+<td>183</td>
+</tr>
+<tr>
+<td>6. Adjudication</td>
+<td>175 to 200</td>
+<td>207</td>
+</tr>
+<tr>
+<td>7. What is built from the ledger</td>
+<td>201 to 234</td>
+<td>436</td>
+</tr>
+<tr>
+<td>8. Reconstruction</td>
+<td>235 to 246</td>
+<td>116</td>
+</tr>
+<tr>
+<td>9. The handoff folder (stage D1)</td>
+<td>247 to 267</td>
+<td>195</td>
+</tr>
+<tr>
+<td>10. Decisions taken, and their consequences</td>
+<td>268 to 296</td>
+<td>264</td>
+</tr>
+</tbody>
+</table>
+<!-- /INDEX -->
+
+<h1 id="the-adaptation-schema">The adaptation schema</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="adaptations.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/adaptations.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Everything downstream of the return (adjudication, the taxonomy, the
+branch descriptions, the reconstruction test, the element views) works
+only if an adaptation is a typed operation on a named element of the
+global model, with evidence, and not a paragraph. This document fixes
+the types. It is deliberately small: five element kinds, seven
+operations, one ledger line, one adjudication line, and the files
+derived from them.</p>
+<h2 id="1-elements-of-the-global-model">1. Elements of the global
+model</h2>
+<p>The model the analyst builds at stages C2 to C5 is stored in
+<code>model/elements.jsonl</code>, one line per element, and
+<code>model/arrows.jsonl</code>. Five kinds:</p>
+<table>
+<thead>
+<tr>
+<th>kind</th>
+<th>prefix</th>
+<th>what it is</th>
+<th>example statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>process</td>
+<td>P</td>
+<td>something the organizations do, as a verb phrase over time</td>
+<td>recruiting placers from outside the subreddit through a template
+post</td>
+</tr>
+<tr>
+<td>condition</td>
+<td>K</td>
+<td>a state under which a process runs or a claim holds</td>
+<td>the artwork borders a hostile neighbour</td>
+</tr>
+<tr>
+<td>claim</td>
+<td>C</td>
+<td>a statement relating processes, conditions and outcomes</td>
+<td>where K04 holds, P07 starts before the first attack, not after</td>
+</tr>
+<tr>
+<td>role</td>
+<td>R</td>
+<td>a position members take that the model names</td>
+<td>the template keeper</td>
+</tr>
+<tr>
+<td>arrow</td>
+<td>A</td>
+<td>a sequence or dependence between elements</td>
+<td>P03 precedes P07</td>
+</tr>
+</tbody>
+</table>
+<p>Element line:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;P07&quot;</span><span class="fu">,</span> <span class="dt">&quot;kind&quot;</span><span class="fu">:</span> <span class="st">&quot;process&quot;</span><span class="fu">,</span> <span class="dt">&quot;statement&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;tier&quot;</span><span class="fu">:</span> <span class="st">&quot;T4-003&quot;</span><span class="fu">,</span> <span class="dt">&quot;dimension&quot;</span><span class="fu">:</span> <span class="st">&quot;D2&quot;</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;evidence&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;findings&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;F-031&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;codes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;asoiaf:c0042&quot;</span><span class="ot">,</span> <span class="st">&quot;denmark:c0117&quot;</span><span class="ot">]</span><span class="fu">},</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;since&quot;</span><span class="fu">:</span> <span class="st">&quot;C2-pass-3&quot;</span><span class="fu">,</span> <span class="dt">&quot;status&quot;</span><span class="fu">:</span> <span class="st">&quot;standing&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p><code>tier</code> links the element to the fourth-order theme it
+belongs to; <code>dimension</code> to the aggregate dimension.
+<code>status</code> is standing, bounded, withdrawn or candidate (a
+proposed element accepted at D3 and not yet instantiated in a second
+room); a bounded element carries the condition ids that bound it. Every
+change to an element is a line in <code>model/history.jsonl</code> with
+the move (one of Grodal, Anteby and Holm's eight) and the leg. Ids are
+never reused; a withdrawn id stays withdrawn.</p>
+<p>The id vocabulary the labelers receive at the return (D1 to D3) is
+the projection of <code>elements.jsonl</code> and
+<code>arrows.jsonl</code> at the model version hash written into the
+handoff: for an element id, kind, statement, tier and dimension; for an
+arrow id, kind, from, to and mechanism (and its statement where it has
+one); and <code>status: tentative</code> on an entry stage C4 took from
+the field. Nothing else.</p>
+<h2 id="2-operations">2. Operations</h2>
+<p>Seven operations. The labeler chooses the operation; the kind
+(specification, elaboration, correction) follows from it and is not
+chosen. The aggregator may reclassify at D3, and the reclassification is
+logged.</p>
+<table>
+<thead>
+<tr>
+<th>op</th>
+<th>fields</th>
+<th>meaning</th>
+<th>kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>instantiate</code></td>
+<td>element, source, how</td>
+<td>the element operates here in this way: who, with what, at what
+moment</td>
+<td>specification</td>
+</tr>
+<tr>
+<td><code>absent</code></td>
+<td>element, why, observation</td>
+<td><code>observed-absent</code> or <code>not-needed</code> with
+evidence; <code>unobserved</code> or <code>not-testable</code> marks
+evidence limits</td>
+<td>evidenced absence is specification or a warranted correction;
+unknown states support neither</td>
+</tr>
+<tr>
+<td><code>add-condition</code></td>
+<td>element, condition</td>
+<td>the element operates here only under a condition the model leaves
+open</td>
+<td>elaboration</td>
+</tr>
+<tr>
+<td><code>add-step</code></td>
+<td>element, statement</td>
+<td>a finer process inside the element that the model does not name</td>
+<td>elaboration</td>
+</tr>
+<tr>
+<td><code>link</code></td>
+<td>from, to, kind</td>
+<td>a sequence or dependence the room needs and the model lacks</td>
+<td>elaboration</td>
+</tr>
+<tr>
+<td><code>restrict</code></td>
+<td>element, condition</td>
+<td>the element fails here unless the condition holds, and the model
+says otherwise</td>
+<td>correction</td>
+</tr>
+<tr>
+<td><code>contradict</code></td>
+<td>element, statement</td>
+<td>the room's record contradicts the element as stated</td>
+<td>correction</td>
+</tr>
+</tbody>
+</table>
+<p>The operations are this instrument's operationalization of Fisher and
+Aguinis (2017): <code>instantiate</code> and <code>absent</code> are
+vertical contrasting (the theory applied at another level of detail);
+<code>add-condition</code> and <code>restrict</code> are new construct
+specification of a condition; <code>add-step</code> is construct
+splitting; <code>link</code> is structuring specific and sequence
+relations; <code>contradict</code> and <code>propose</code> are
+horizontal contrasting. Busse, Kach and Wagner (2017) motivate exploring
+boundaries through construct refinement, moderators and mediators. Our
+two correction codes distinguish discrepancies, not mandatory outcomes:
+adjudication may bound, refine, extend or replace a formulation.</p>
+<p><strong>Source and target nodes .</strong> Every operation names a
+target in the model (an element id, or a dimension id for
+<code>link</code>) and, where it adds anything, a source in the room's
+own ladder: a second-order theme id of the room
+(<code>denmark:t07</code>) or a code id. <code>add-condition</code> and
+<code>restrict</code> give the condition as a source theme id;
+<code>add-step</code> gives the finer process as a source theme id;
+<code>link</code> connects a source theme to a target element or
+dimension; <code>instantiate</code> and <code>absent</code> name the
+target and cite codes. Free text lives only in <code>how</code>. Two
+labelers can no longer describe one adaptation in two vocabularies,
+because they point at nodes.</p>
+<p>At ingest each source node is lifted through
+<code>assignments_final.jsonl</code> as it stands at the model version
+the handoff carries (stage C1's placements, re-decided by every logged
+recut since): second-order theme → third-order theme → fourth-order
+theme → dimension. The lifted path is stored on the line
+(<code>"lift": ["denmark:t07", "T3-014", "T4-003", "D2"]</code>, with
+<code>null</code> at a level the theme was never placed at). An unplaced
+second-order theme lifts to nothing above itself; those are the lines
+from which D3 mints new third-order themes when several rooms' unplaced
+themes point at the same target.</p>
+<p>An eighth form, <code>propose</code>, is not an operation on an
+element: it names something the room needed that no element covers. It
+carries a statement and evidence and is unattached until D3, where it
+may become a shared candidate element or a locally validated particular.
+Unshared does not mean false.</p>
+<p>Relational adaptations use the same operations with a
+<code>relation</code> field naming the other room
+(<code>"relation": "placenl"</code>), so "defence delegated to a named
+neighbour" is <code>instantiate</code> on the defence process with a
+relation. Naming another room in <code>relation</code> does not make the
+line a particular; naming the room itself in <code>condition</code> does
+(§4).</p>
+<h2 id="3-the-ledger-line">3. The ledger line</h2>
+<p><code>adaptations.jsonl</code>, one line per adaptation, written by
+<code>ingest.py</code> from the labelers' returns, never by hand:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;denmark-007&quot;</span><span class="fu">,</span> <span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="st">&quot;denmark&quot;</span><span class="fu">,</span> <span class="dt">&quot;op&quot;</span><span class="fu">:</span> <span class="st">&quot;add-condition&quot;</span><span class="fu">,</span> <span class="dt">&quot;element&quot;</span><span class="fu">:</span> <span class="st">&quot;P07&quot;</span><span class="fu">,</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;source&quot;</span><span class="fu">:</span> <span class="st">&quot;denmark:t07&quot;</span><span class="fu">,</span> <span class="dt">&quot;lift&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;denmark:t07&quot;</span><span class="ot">,</span> <span class="st">&quot;T3-014&quot;</span><span class="ot">,</span> <span class="st">&quot;T4-003&quot;</span><span class="ot">,</span> <span class="st">&quot;D2&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;condition&quot;</span><span class="fu">:</span> <span class="st">&quot;the artwork is under attack from two sides at once&quot;</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;statement&quot;</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">&quot;how&quot;</span><span class="fu">:</span> <span class="st">&quot;explains why denmark recruited outside placers on night two and not before&quot;</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;evidence&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;codes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;denmark:c0117&quot;</span><span class="ot">,</span> <span class="st">&quot;denmark:c0118&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;transitions&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;denmark:t-C5&quot;</span><span class="ot">]</span><span class="fu">},</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;relation&quot;</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">&quot;portable&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;kind&quot;</span><span class="fu">:</span> <span class="st">&quot;elaboration&quot;</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;origin&quot;</span><span class="fu">:</span> <span class="st">&quot;labeler&quot;</span><span class="fu">,</span> <span class="dt">&quot;model_version&quot;</span><span class="fu">:</span> <span class="st">&quot;sha256:…&quot;</span><span class="fu">,</span> <span class="dt">&quot;labeler_run&quot;</span><span class="fu">:</span> <span class="st">&quot;codex-2026-11-…&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>Required for every line: <code>sub</code>, <code>op</code>,
+<code>element</code> (or <code>propose</code> with
+<code>statement</code>), at least one code id in
+<code>evidence.codes</code>, <code>how</code> as one sentence,
+<code>model_version</code>. <code>source</code> (a theme or code id of
+the room) is required for every op except <code>absent</code>, and for
+<code>contradict</code> it may be a code id rather than a theme; for
+<code>instantiate</code> it is the theme that shows the element
+operating, so that instantiations carry a key and enter the distance as
+specifications; <code>condition</code> and <code>statement</code> are
+the source theme's label copied for reading, not free text, except that
+<code>contradict</code> and <code>propose</code> may state in words what
+no theme names; <code>from</code>, <code>to</code> for <code>link</code>
+are source and target. <code>kind</code>, <code>portable</code> and
+<code>lift</code> are computed at ingest.</p>
+<p>A room with nothing to adapt returns one line:
+<code>{"sub": ..., "op": "none", "how": "the global model explains this room as stated", "evidence": {"codes": [...]}}</code>,
+with evidence for the fit. Silence is a missing return, not a
+verdict.</p>
+<h2 id="4-validation-at-ingest">4. Validation at ingest</h2>
+<p><code>ingest.py D</code> accepts a room's return only if every line
+passes:</p>
+<ol type="1">
+<li>Schema: the fields in §3, the op in §2, no extra fields.</li>
+<li>Element ids exist in the model at <code>model_version</code>, and
+are not withdrawn. A return against a stale version is rejected whole
+and reissued with the current packet.</li>
+<li>Code ids exist in the room's <code>codes.jsonl</code> in the store,
+and are not retracted. A transition id exists in the room's forest.</li>
+<li><code>how</code> is one sentence (one terminal stop; under 40
+words).</li>
+<li>Portability: <code>condition</code> and <code>statement</code>
+contain no subreddit name from the census and no proper name from the
+room's lines in the analyst's <code>lexicon-A1.md</code>, except in
+<code>relation</code>. A line that fails is kept with
+<code>portable: false</code> and is a particular by construction
+(contract rule 12).</li>
+<li>The return carries the end marker from <code>RETURN-D.md</code> and
+the room's line count matches its header.</li>
+</ol>
+<p>Rejected returns go back through the handler with the failing rule
+named. Completion comes before any limit: the handler returns every room
+it can, and marks a room <code>unreturned</code> only when it cannot.
+Counts of accepted, reissued and unreturned rooms go into
+<code>RUN.json</code> at the close of D2.</p>
+<h2 id="5-the-room-model">5. The room model</h2>
+<p><code>rooms/&lt;sub&gt;/model-D.md</code>, written by the labeler
+beside the ledger, is <code>case.md</code> rewritten in the model's
+vocabulary. Its sections are the aggregate dimensions, in the model's
+order. Inside a section the labeler writes prose, and every claim
+carries either an element id in brackets (<code>[P07]</code>) or a
+<code>[new: …]</code> marker for what no element covers, and a code
+citation (<code>[c0117]</code>) from the room's own codes. The file ends
+with a grade the labeler writes, <code>composes</code>,
+<code>composes-with-residue</code> or <code>does-not-compose</code>, and
+one sentence of why. The grade is the labeler's; the verdict, with its
+fourth value <code>cannot-tell</code>, is the fleet's (FLEET.md), and
+the two are reported side by side. The lead's grade concerns the adapted
+local explanation; the fleet verdict concerns the fixed global model.
+The return also requires
+<code>local_status: validated | unresolved | insufficient-evidence</code>
+and a <code>## Local exceptions</code> section linking discrepancies to
+evidence and adaptations. Local validation is distinct from
+portability.</p>
+<p><code>ingest.py</code> checks the room model for the same id and code
+validity as the ledger, and that every adaptation line's element appears
+in the room model at least once.</p>
+<h2 id="6-adjudication">6. Adjudication</h2>
+<p><code>adjudications.jsonl</code>, one line per adaptation, written by
+the analyst at D3 through <code>mem.py adjudicate</code>:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;adaptation&quot;</span><span class="fu">:</span> <span class="st">&quot;denmark-007&quot;</span><span class="fu">,</span> <span class="dt">&quot;decision&quot;</span><span class="fu">:</span> <span class="st">&quot;accept&quot;</span><span class="fu">,</span> <span class="dt">&quot;kind&quot;</span><span class="fu">:</span> <span class="st">&quot;elaboration&quot;</span><span class="fu">,</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;reason&quot;</span><span class="fu">:</span> <span class="st">&quot;the condition is stated without the room, and asoiaf-011 meets it&quot;</span><span class="fu">,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;pair&quot;</span><span class="fu">:</span> <span class="st">&quot;asoiaf-011&quot;</span><span class="fu">,</span> <span class="dt">&quot;change&quot;</span><span class="fu">:</span> <span class="st">&quot;h-0412&quot;</span><span class="fu">,</span> <span class="dt">&quot;leg&quot;</span><span class="fu">:</span> <span class="st">&quot;D3-P07&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p><code>decision</code> is accept, modify, reject, particular or
+pending. <code>modify</code> carries the rewritten condition or
+statement in a <code>revised</code> field, which passes the same
+portability check as the labeler's line, and the original stays in the
+ledger. A supported portable line with no shared warrant is
+<code>particular</code>. A line with insufficient evidence remains
+<code>pending</code> and unresolved at D3 close; pending lines are
+counted as such. <code>pair</code> names the second room whose accepted
+line meets the same candidate correction. Recurrence prompts a reasoned
+shared-warrant assessment, not automatic model revision;
+<code>change</code> names the logged revision or explicit scope decision
+when one is made. <code>kind</code> here is the analyst's, and differs
+from the ledger's when the analyst reclassifies.</p>
+<p>D3 reads by element: <code>mem.py adaptations --element P07</code>
+returns every accepted-or-pending line touching P07 across rooms, sorted
+by op. One leg per element group, one hundred lines per packet at most.
+After the elements, the <code>propose</code> lines: each becomes a
+candidate element (an <code>elements.jsonl</code> line with
+<code>since: D3</code> and status <code>candidate</code>) or a
+particular.</p>
+<h2 id="7-what-is-built-from-the-ledger">7. What is built from the
+ledger</h2>
+<p>All generated by <code>gen_views.py</code> at leg close; none
+hand-edited.</p>
+<ul>
+<li><code>rooms-x-elements.tsv</code>: rows rooms, columns elements,
+cell the op or blank. The view D3 reads before any element.</li>
+<li><code>rooms-x-adaptations.tsv</code>: one matrix per ladder level
+and per kind, plus the combined one. A key at level L is
+<code>op:target:&lt;node at L&gt;</code> from the line's lift, for
+accepted and modified lines at the model version frozen at D3's close
+(every line is re-lifted to that version before stage D4; rooms whose
+elements changed at D3 were re-checked). Particulars and pending lines
+are excluded. The distance, written once so nobody re-derives it:
+<ul>
+<li>For rooms i and j, let T be the set of targets touched by either
+room's lines. For each target t in T, let L be the deepest ladder level
+at which some line of i and some line of j on t have the same lifted
+node (3, 4, dimension, or the bare target), and let w(L) be 4, 2, 1,
+0.5; if only one room touches t, the term is 0.</li>
+<li>Let g be the operation agreement over the two lines that met at L: 1
+for the same op, 0.5 for ops of the same kind, 0 for different kinds,
+and -1 for <code>instantiate</code> against <code>absent</code> or
+<code>add-condition</code> against <code>contradict</code> on that
+target. Where several pairs of lines meet at L, take the pair with the
+largest g.</li>
+<li>Similarity S(i, j) = sum over t in T of w(L_t) times g_t, divided by
+4 times |T|, so S lies in [-1, 1]. Dividing by |T| removes the mass
+effect: a room with more lines gains no closeness from having more.
+Distance d = (1 - S) / 2: 0 for identical fully comparable adaptation
+profiles, 0.5 for rooms that share no target (unrelated), 1 for rooms
+whose lines oppose each other everywhere. Rooms whose line sets are both
+empty (<code>none</code>) have d = 0 with each other and 0.5 with every
+adapted room. Explicit observed-absent or not-needed lines on the same
+target contribute the deepest-level same-op weight without requiring a
+source lift. Unobserved and not-testable lines remain in local accounts
+but are excluded from shared distances. Missing lift entries never
+become shared None keys; partially comparable non-absence profiles can
+retain nonzero distance even when their raw sets match.
+<code>tools/distance.py</code> computes it.</li>
+<li>Per-kind matrices use only lines of that kind; the tree-likeness
+statistic (Gray, Bryant and Greenhill 2010) is computed on the combined
+level-3 matrix. The weights and grades are declared in
+<code>prior.md</code> before stage D4 opens and are not changed
+after.</li>
+</ul></li>
+<li><code>exception-report-D.md</code>: per room, particulars against
+accepted shared lines; per element, the count of rooms adapting it by
+op; the sentence the stage file requires when all of a room's
+adaptations are particulars.</li>
+<li><code>forms/&lt;id&gt;.md</code> at stage D4: a branch as the set of
+shared keys, its members, and the analyst's description of what the
+branch does differently.</li>
+</ul>
+<h2 id="8-reconstruction">8. Reconstruction</h2>
+<p><code>rebuild.py &lt;sub&gt;</code> uses the effective adjudicated
+ledger. It includes accepted, modified and supported particular lines in
+local reconstruction. It lists pending lines as unresolved, never
+asserted support. The latest accepted room return replaces that room's
+earlier ledger even if its new ids list is empty. Original ledgers and
+model versions remain available.</p>
+<p>Recheck ids include a digest of the line content and model version:
+<code>R-&lt;sub&gt;-&lt;digest&gt;-NNN</code>. An unchanged return is
+idempotent; a changed return cannot inherit an earlier line's
+adjudication. Prior recheck rows remain in the ledger and the latest
+accepted manifest selects current ids. Superseded compile files and
+local account copies remain under <code>return-history/</code>.</p>
+<p><code>adaptation-returns.jsonl</code> records each accepted return
+with <code>sub</code>, <code>phase</code> (<code>initial</code> or
+<code>recheck</code>), <code>status: accepted</code>,
+<code>model_version</code>, <code>ids</code>, <code>local_status</code>
+and <code>local_grade</code>. An old local return carries forward to a
+changed model only when D3 explicitly marks the room unaffected with a
+reason; all affected cases return to their original leads. The skeleton
+reports the current model hash, return version and local version
+status.</p>
+<p>An <code>absent</code> line produces <code>no</code> only for
+<code>observed-absent</code>. <code>not-needed</code>,
+<code>unobserved</code> and <code>not-testable</code> retain their own
+meanings. Legacy unspecified absence is conservatively unobserved.
+Unknown states never enter shared adaptation distances as negative
+evidence.</p>
+<p>At E1 a fresh reader receives the skeleton and the coder's blind
+<code>case.md</code> with the room's second-order themes, never
+<code>model-D.md</code>. Score all warranted claims, record evidence
+limits, and report reconstruction fidelity by branch and by historical
+global verdict. This is an in-sample preservation and composition check,
+not independent truth estimation.</p>
+<h2 id="9-the-handoff-folder-stage-d1">9. The handoff folder (stage
+D1)</h2>
+<p><code>out/handoff-D/</code> written by <code>handoff.py D</code>:</p>
+<ul>
+<li><code>RETURN-D.md</code>: the return specification, verbatim in
+every task, the schema of §3 and §5, the end marker, the reissue
+rule.</li>
+<li><code>VOCABULARY.json</code>: the id vocabulary at the model version
+hash.</li>
+<li><code>MODEL.md</code>: the global model as prose with ids, the
+account from stage C5 cut to the ceiling the labeler's context allows,
+plus the wiki pages for the elements the room's second-order themes were
+placed under.</li>
+<li><code>LADDER.md</code>: the coding table, quote to aggregate
+dimension, with representative codes for every tier the model uses,
+projected for the dimensions and elements in <code>MODEL.md</code>
+.</li>
+<li><code>tasks/&lt;sub&gt;/TASK.md</code>: the labeler's instruction:
+read the coder documents, rewrite <code>case.md</code> in the model's
+vocabulary, write the ledger; the room's <code>case.md</code>,
+<code>codes.jsonl</code>, <code>themes.jsonl</code>,
+<code>brief.md</code>, <code>forest.md</code>; the placements of the
+room's second-order themes; the two outputs and where they go.</li>
+<li><code>HANDLER.md</code>: the adaptation handler's brief: dispatch
+order (by size ascending, so failures surface early), how to run a
+labeler in Codex, the return path <code>DROPS/D/&lt;sub&gt;/</code>, the
+reissue rule, and what never to do (no access to <code>out/</code>
+beyond the folder, no edits to the vocabulary, no merging of
+rooms).</li>
+</ul>
+<h2 id="10-decisions-taken-and-their-consequences">10. Decisions taken,
+and their consequences</h2>
+<ol type="1">
+<li><strong>Evidence states are distinct.</strong> A room need not use
+every global element. Only evidenced absence or lack of need supports a
+negative assertion. Silence and untestability are unresolved evidence,
+never a contradiction. An evidenced absence challenges a universal claim
+only after its scope and evidence are examined.</li>
+<li><strong>Completion over reissue.</strong> No reissue limit as a
+rule; the handler's job is to get every room returned and to check that
+the returns work, and <code>ingest.py</code> reports what fails and why.
+A room is <code>unreturned</code> only if the handler says so, and the
+count is reported.</li>
+<li><strong>Proposed elements enter the model in the same run.</strong>
+At D3 a <code>propose</code> line that the analyst accepts becomes an
+element and the model is rewritten with it. Then a re-check: a few of
+the rooms whose evidence produced the change are sent back through the
+labeler against the revised model, in a small second handoff
+(<code>handoff-D/recheck/</code>), and their new returns say whether the
+rewrite fixed what the evidence pointed at. The re-check rooms and their
+before-and-after ledgers are reported at 18.</li>
+<li><strong>The labeler's packet carries the whole ladder.</strong>
+Beside the wiki pages of the elements its themes were placed under, the
+labeler receives the coding table with representative codes for every
+tier the model uses: quote, first-order concept, second-order theme,
+third-order theme, fourth-order theme, aggregate dimension, projected
+for the dimensions and elements in <code>MODEL.md</code>. A labeler that
+sees only its own codes cannot understand an aggregate dimension, so it
+cannot say what the model fails to explain. <code>handoff.py</code>
+builds this projection from <code>_views/data-structure.tsv</code>.</li>
+</ol>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

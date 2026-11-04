@@ -1,0 +1,345 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage A1. The reading. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-a1-the-reading">Stage A1. The reading.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-A1.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-A1.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+one per declared room block, plus a first leg for the checks, the screen
+and what is written before you read. A block is a set of rooms whose
+material sums to about 3 MB (v42; 0.6 MB before, J 2026-10-03)
+(<code>python3 tools/mem.py room &lt;sub&gt; --size</code> gives a
+room's bytes); a large room may be a block of its own. A block this size
+compacts several times in a leg; that is routine, and the room notes on
+disk are why it costs nothing (STANDING, Compaction). The blocks are
+declared in <code>notes-A1.md</code> before the first is opened.
+<strong>Fleet:</strong> none. The note is your prior, and a prosthesis
+would write someone else's.</p>
+<p><strong>Steps:</strong> <code>A1a</code> checks and screen (and the
+blocks declared); <code>A1b-01</code>, <code>A1b-02</code> ... one per
+reading block; <code>A1c</code> the lexicon and the analysed set, and
+the handback (an interview point). Each leg is named by its step
+(STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each room note is written and
+logged. At a safe stop, check for <code>.pause</code>
+(<code>ls .pause</code>); if it is there, log where to pick up, your
+working hypothesis and the next room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh A1 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet, every leg:</strong> <code>_head.md</code>
+(empty at the first leg; you write it at the close of the first), this
+file, the last five diary entries, <code>validate.py --open A1</code>.
+First leg only: <code>HOW-TO-RUN.md</code>,
+<code>package/store/README-store.md</code>, <code>METHOD.md</code>,
+whole.</p>
+<p><strong>Reads allowed:</strong> everything in the package and the
+store through the verbs; the canvas fields in every room (rule 7);
+<code>canvas/artworks.jsonl</code> beside each room's account.
+<strong>Forbidden:</strong> nothing yet exists that is.</p>
+<p><strong>Outputs:</strong> <code>rooms/&lt;sub&gt;.md</code> one per
+room of the analysed set; <code>lexicon-A1.md</code>;
+<code>running-A1.md</code>; <code>contrast.md</code>;
+<code>dropped.jsonl</code> (written even when empty);
+<code>notes-A1.md</code>; <code>coordinating-rule-A1.md</code>;
+<code>organizing_end-A1.jsonl</code>; <code>order-A1.txt</code>;
+<code>leads-A1.jsonl</code> (written even when empty);
+<code>departures.jsonl</code> and <code>defects.jsonl</code> opened,
+empty or not; <code>run_manifest.json</code>;
+<code>handback-A1.md</code>; <code>_head.md</code>, written for the
+first time at the first close. <strong>No scheme is written in this
+stage.</strong></p>
+<h2 id="1-the-first-leg-the-tools-and-the-package">1. The first leg: the
+tools and the package</h2>
+<p>Run <code>python3 tools/mem.py help</code>, then every read verb once
+with <code>--stage A1</code> (<code>mint</code>, <code>idea</code>,
+<code>place</code>, <code>unplace</code> and <code>adjudicate</code>
+belong to later stages and refuse here, as they should), and one call of
+<code>cite.py</code>; the logs are <code>_mem_reads-A1.jsonl</code> and
+<code>_cite_reads-A1.jsonl</code> (rule 1). A call that fails is a
+defect in the package: write it to <code>defects.jsonl</code> and say so
+in your final message. Run <code>validate.py --self-test</code> once and
+paste its report into <code>notes-A1.md</code>: it plants a known defect
+for every close-check it has, stage by stage, and shows each firing
+once; a check that does not fire is a defect, and a stage whose
+close-check the report does not list has no close-check, which you will
+know before you reach it. The harness snaps <code>out/</code> at every
+close; you call <code>snap.py</code> yourself only when an order
+matters.</p>
+<p>Check the package before you trust it; every result into
+<code>notes-A1.md</code>, every failure a <code>defects.jsonl</code>
+line. <code>python3 tools/mem.py audit</code> serves the raw fields
+these checks need (the census count, the six files of every room, the
+retracted concepts, the store's build figures), each figure with its
+file, and its call is logged like any read (v43); for anything it does
+not serve, a saved script in <code>out/_analysis/</code> that prints
+each input's path, size and sha256 beside its counts, logged as a
+departure:</p>
+<ul>
+<li><strong>The census.</strong> <code>package/FRAME.md</code> names the
+copy date, the count and the hash; reconcile the count against
+<code>rooms.jsonl</code>, the room folders under <code>package/</code>,
+and the distinct rooms in <code>codes.jsonl</code> and
+<code>themes.jsonl</code>. Report N.</li>
+<li><strong>One run per room.</strong> Every room folder under
+<code>package/</code> holds the same six files (<code>brief.md</code>,
+<code>case.md</code>, <code>codes.jsonl</code>,
+<code>themes.jsonl</code>, <code>threads.jsonl</code>,
+<code>pointers.jsonl</code>) and a forest in <code>trees/</code>; a room
+that does not is a defect.</li>
+<li><strong>The canvas, present and whole.</strong> The six canvas
+fields (<code>canvas_entries</code>, <code>canvas_area_px</code>,
+<code>canvas_centre</code>, <code>canvas_ring</code>,
+<code>canvas_artwork</code>, <code>canvas_source</code>) on every room
+of the census in <code>rooms.jsonl</code>;
+<code>canvas/artworks.jsonl</code> readable, with its index and its
+placement over time. Report the distribution of
+<code>canvas_area_px</code> and of the share of each room's own artwork
+placed by the people who wrote in it; the contract's §5 says what that
+share measures. A room in the census with no canvas line is a
+defect.</li>
+<li><strong>The clocks.</strong> <code>onset_first_code_hour</code>,
+<code>onset_last_code_hour</code>, <code>items_in_window</code>: null
+counts, rooms named. The two clocks of ending:
+<code>onset_last_code_hour</code> against the last
+<code>last_hour</code> over the room's threads in
+<code>threads.jsonl</code>; report how many rooms have each null.</li>
+<li><strong>Off the record.</strong> <code>n_off_platform</code> in
+<code>rooms.jsonl</code> (off-platform pointers the coder recorded): its
+distribution over the census, and the rooms with the most named; every
+verdict at the return (D1 to D3) carries it.</li>
+<li><strong>The nulls.</strong> The rooms whose concentration fields
+(<code>coded_authors</code>, <code>top1_share</code>,
+<code>herfindahl</code>) are null, named; carry that denominator with
+any claim resting on concentration.</li>
+<li><strong>The instrument's shape, recomputed.</strong> Log-log slopes
+of first-order concepts and of second-order themes against
+<code>items_in_window</code>, over the census, as you find them; there
+is no target figure. Report beside them the second-order theme count
+against <code>items_in_window</code> and against the concept count, raw,
+log and rank, all six. Then the share of each room's concepts reachable
+from a second-order theme (a concept with a <code>theme_id</code>),
+against items; declare the room size above which the share falls below
+the median of the smallest quartile. Write it to
+<code>notes-A1.md</code> as <code>concept_reach_threshold</code>; the
+contract's §5 says what it does at C2 to D3.</li>
+<li><strong>The concepts and the themes.</strong> The sum of per-room
+concept counts in <code>rooms.jsonl</code> against the lines of
+<code>codes.jsonl</code>, and against the coder's own count
+(<code>n_codes_coder</code> less the retractions); second-order themes
+in total, rooms with none, rooms with one or two.</li>
+<li><strong>Retracted concepts</strong> are absent from the store; the
+count dropped at build is in <code>README-store.md</code>; confirm it
+against <code>_retracted.jsonl</code> and against the coder's
+<code>codes.jsonl</code> in each room folder.</li>
+<li><strong>The store against the package.</strong>
+<code>counts.py</code> first: its concept, second-order theme and
+coded-room totals against the collections, exactly. Then the store's own
+build figures in <code>README-store.md</code> recomputed: the count of
+concepts whose item the record does not hold
+(<code>_unjoined.jsonl</code> against <code>codes.jsonl</code> and
+<code>items.jsonl</code>), the retracted count, and the forest header
+totals over <code>trees/</code>; say whether they agree. What you
+compute wins; carry both to stage E1.</li>
+<li><strong>The analysed set is null until <code>dropped.jsonl</code>
+exists.</strong> Re-run <code>counts.py</code> after the screen and
+report the count of second-order themes to be placed at B3. If you
+dropped anything, the count must fall by exactly what the dropped rooms
+carried.</li>
+</ul>
+<h2 id="2-the-screen">2. The screen</h2>
+<p>Contract §5: a room that wrote nothing about the event is a negative
+screen on the frame, not a case at zero; a room that tried and failed is
+a case. Read the rooms whose coder coded one thread or none
+(<code>threads_coded</code> in <code>rooms.jsonl</code>), any room whose
+first coded turn falls after hour 73
+(<code>onset_first_code_hour</code>; the census admits only rooms that
+wrote about the event while the canvas was open, v43, so such a room is
+a defect of the frame as well as a screen), and any room the coder's own
+documents (<code>case.md</code>, <code>threads.jsonl</code>) give you
+reason to doubt: account, notes and forest for each. Every drop to
+<code>dropped.jsonl</code> as <code>{"sub": "...", "why": "..."}</code>,
+and <code>why</code> says what the analysed set loses with the room, not
+only what the room lacks (a screen is a move on the frame, and the frame
+is where the population patterns come from: contract §1, two kinds of
+claim); a room kept against a doubt gets a line in
+<code>notes-A1.md</code> saying what the doubt was. If you drop nothing
+the file is written empty. From here on the census is two numbers, and
+<code>counts.py</code> is re-run.</p>
+<h2 id="3-written-before-you-read">3. Written before you read</h2>
+<p>Into <code>notes-A1.md</code>: the blocks, each a list of rooms with
+its summed bytes, the order and why; three sentences on what you expect
+the material to show. Into <code>order-A1.txt</code>: the same order as
+a file the tools read, one line per room of the analysed set,
+<code>&lt;block&gt;&lt;TAB&gt;&lt;sub&gt;</code>
+(<code>01  denmark</code>), every room once. It is the order:
+<code>mem.py next</code> names the first room in it with no note, the
+compaction hook prints that room, and the close-check fails a block that
+leaves a room behind. A run before this one carried its order as a list
+in its head, lost rooms from that list across compactions without
+knowing, and found them only when the reading was over. Into
+<code>contrast.md</code>: the onset contrast (contract §5) on
+<code>onset_first_code_hour</code>, with the rule that defines each
+side, the named members, the size of each, and what you expect to
+differ. Stage C2 puts it to the model's arrows, and stage E1 reports
+what it showed.</p>
+<h2 id="4-the-reading-block-by-block">4. The reading, block by
+block</h2>
+<p>Read every room of the analysed set whole, in the declared order,
+through its forest: <code>mem.py room --no-canvas</code>,
+<code>forest</code>, <code>when</code>, then the concepts with their
+words (<code>codes --sub</code>, and <code>cite.py --room</code> for the
+passages), then <code>case.md</code> and the brief, and
+<code>mem.py room</code> with its canvas fields last, for the
+<code>made</code> line, read against the room's placement in
+<code>canvas/artworks.jsonl</code>. <strong>Write the room's note before
+you open the next room</strong>, and log it
+(<code>mem.py log --kind opened --ids &lt;sub&gt;</code>, then
+<code>mem.py log "noted" --kind note --ids &lt;sub&gt;</code> when the
+note is written, naming that one room). The harness refuses a note whose
+room's concepts were not read, and checks the note's form the moment it
+is written. <strong>The next room is always
+<code>mem.py next</code></strong>, at the start of every leg and after
+every compaction; never a room you remember as next, and never one from
+the summary of a compacted context. <strong>Read the room's concepts
+before its account.</strong> The close-check requires, for every note, a
+logged <code>mem.py codes --sub &lt;sub&gt;</code> or
+<code>cite.py --room &lt;sub&gt;</code> call for that room made before
+its <code>note</code> line: a run before this one wrote its notes from
+the coders' accounts and inherited their leaps. A block closes with
+<code>done.sh A1</code>; the next leg starts from the head. The note is
+what survives; a room you read and did not write about is a room you
+have not read. If compaction happens inside a block, the harness names
+the head and this file and refuses every other call until you have read
+them and the diary, and you resume at a room boundary from
+<code>_head.md</code> and <code>mem.py note</code>: the notes, the
+lexicon, the running file and your <code>_</code> files are the carrier,
+and nothing that is not in them survives. No fleet reads for you
+here.</p>
+<p><strong><code>rooms/&lt;sub&gt;.md</code>, one fixed form, dated;
+about 350 words is a guide, not a limit:</strong> the note is yours, for
+your own later reading, so write what you need; the fixed lines and
+their checks stand, the length and the wording are your judgement, and
+you may ask J. Short notes link and read sideways better than long ones
+(J, 7 October 2026).</p>
+<pre><code># r/&lt;sub&gt;  (read &lt;ISO&gt;)   coded share &lt;n&gt;   off-platform pointers &lt;n&gt;
+doing:      what these people were doing, in their words (no quotes; concept ids in brackets)
+week:       what changed across the 97 hours, by hour
+named:      who they named, and what for
+goal:       what they were trying to make or hold, when that became settled, and whether it changed
+unsettled:  what the room could not settle
+coder unsure: what the coder said she could not place or resolve (in case.md), with thread
+            ids; or none
+carrying:   three concepts that carry the room (ids only)
+not this:   one thing a reader would assume about this room that the record does not show
+ended:      last observed coordination hour in the forest, its evidential limit, and what is observed after
+struck by:  the phrase or moment that struck you, in the room&#39;s words; free, and never cited as evidence
+made:       what was on the canvas at the freeze, from the fields, against the room&#39;s own account;
+            written last</code></pre>
+<p>The ten lines other than <code>struck by:</code> are fixed;
+<code>struck by:</code> is the one free line, a trace of your reading
+and not a finding, so no stage cites it. The header figures come from
+<code>rooms.jsonl</code> (<code>item_coded_share</code>,
+<code>n_off_platform</code>); a null is written as null. Write
+<code>made</code> last: the note is what the room did, and what it kept
+is read beside that (rule 7); when the canvas changed what you looked
+for in the room, the note says so. A later stage that re-reads the room
+appends one dated <code>later:</code> line below <code>made</code>, one
+clause of your own on what you make of the room, amended and never
+deleted, so that the note carries your judgement of the room and not
+only its facts.</p>
+<p><code>lexicon-A1.md</code>: the rooms' own words, one per line with
+the room and the item id of first use, facts only.
+<code>running-A1.md</code>: what you keep seeing, unpruned and
+unordered, one entry per line with the room it came from; a few hundred
+entries out of the first block is the right order of magnitude. Both are
+appended at every block and never rewritten.</p>
+<p><strong>Leads.</strong> When a room makes you suspect a tie to
+another room (the same drawing, the same fight, a treaty one side
+names), and you have not checked the other room, append one line to
+<code>leads-A1.jsonl</code> at once:
+<code>{"sub": "hatsune", "other": "vocaloid", "why": "names r/Vocaloid as the party that struck the deal; same line about being eaten", "item": "&lt;item id&gt;"}</code>.
+A suspicion held in context does not survive a compaction; a line does.
+Stage B1 reads them when it meets those rooms; no stage resolves them
+for you.</p>
+<p><strong>The notes are a prior</strong> (STANDING-INSTRUCTIONS §1),
+never a source for a quote, and <strong>they are queried, never read as
+a list.</strong> <code>mem.py note &lt;sub&gt;</code> serves one;
+<code>mem.py notes --grep &lt;words&gt;</code> serves a query over
+them.</p>
+<h2 id="5-the-coordinating-turn-rule-and-the-hour-organizing-ended">5.
+The coordinating-turn rule, and the hour organizing ended</h2>
+<p>After the last block, in that block's leg and before its close, write
+<code>coordinating-rule-A1.md</code>: the rule that says which
+first-order concepts count as a coordinating turn (a call, an
+assignment, a plan, a report of placement, a defence, an alliance, a
+correction of another's placement) and which do not (recounting, joking,
+mourning), in the lexicon's words, with ten concept ids on each side as
+examples. Stage B1 copies it into <code>prior.md</code> §5. It may be
+amended later only by a logged departure (a
+<code>departures.jsonl</code> line and a diary line through
+<code>mem.py log</code>) that says what changed and why, and every
+figure computed under it is then reported twice, under the rule before
+and after the change.</p>
+<p>Under that rule, and from the forest and never from the canvas, write
+<code>organizing_end-A1.jsonl</code>, one line per room of the analysed
+set:
+<code>{"sub": "...", "organizing_end_hour": &lt;the hour of the last coordinating turn&gt;, "aftermath_share": &lt;coded turns after hour 73 that coordinate rather than recount, over coded turns after hour 73&gt;, "coordinating_turns": &lt;n&gt;, "turns_after_73": &lt;n&gt;, "work_remained": "kept" | "lost" | "silent", "work_remained_codes": [&lt;concept ids&gt;]}</code>,
+with the <code>ended</code> line of each note reconciled to it and a
+disagreement logged. Two more fields make the figures checkable:
+<code>"last_coordinating_code"</code> (the concept id of the last
+coordinating turn, null with the hour) and
+<code>"aftermath_coordinating_codes"</code> (the concept ids after hour
+73 that coordinate). <code>work_remained</code> is what the room's own
+record says became of its work: <code>kept</code> or <code>lost</code>
+when its last word on the matter says so, cited by the concepts that say
+it; <code>silent</code> when the record never says, with no ids. Silence
+marks an unknown outcome in this public record. It does not establish
+that organizing stopped, especially where activity moved off platform.
+The close check recomputes the hour, the turns after hour 73 (distinct
+coded items) and the share from the store's hours and those ids; a
+difference is an error, so the figure stage D5 reports per branch
+(contract §1) is the store's.</p>
+<h2 id="6-run_manifestjson-and-notes-a1md">6.
+<code>run_manifest.json</code> and <code>notes-A1.md</code></h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;stage&quot;</span><span class="fu">:</span> <span class="st">&quot;A1&quot;</span><span class="fu">,</span> <span class="dt">&quot;written_utc&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;package_sha256&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;tools_commit&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;model&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;id of the model running this stage&gt;&quot;</span><span class="fu">,</span> <span class="dt">&quot;decoding&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;temperature&quot;</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span> <span class="dt">&quot;top_p&quot;</span><span class="fu">:</span> <span class="fl">1.0</span><span class="fu">},</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;seeds&quot;</span><span class="fu">:</span> <span class="fu">{},</span> <span class="dt">&quot;n_agents&quot;</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">&quot;notes&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>Written here with the package hash (from
+<code>package/FRAME.md</code>) and the tools commit. Stages B2, B3, B4,
+C2 (its one reviewer), C5 (its three readers) and D2 (the labelers and
+the verdict fleet) append an entry with their seed, agent count, model
+and decoding, and stage E1 writes the last line and reports the whole
+file; a figure whose manifest cannot name its model has not been
+reported.</p>
+<p><code>notes-A1.md</code> at the end: the order, the contrast and the
+three sentences, written first; every check in §1 with its result; what
+you read, from the logs and not from memory; what this material is,
+under 400 words; three things you expected to find and did not; the one
+room that fits nothing else; what the canvas lines showed against the
+<code>doing</code> lines, in three sentences, without a claim.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>A room opened; a note written; a block closed; a drop; a check
+failed, with its defect line; the contrast picked;
+<code>concept_reach_threshold</code> declared; the coordinating-turn
+rule written; anything you keep seeing for the third time
+(<code>--kind note</code>).</p>
+<h2 id="final-message">Final message</h2>
+<p>Counts: rooms read whole, notes written, lexicon and running entries,
+dropped and remaining, checks passed and which failed, the contrast
+picked, the threshold declared, the rooms with an
+<code>organizing_end_hour</code>; then the three things you keep seeing
+and the one that most surprised you. A return value.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh A1</code> at the end of <code>A1a</code> and of every
+block (<code>A1b-NN</code>); it runs <code>validate.py A1</code>, and
+you paste the report into <code>notes-A1.md</code>. At <code>A1c</code>,
+the last: <code>_head.md</code> rewritten whole in the standing
+instructions' form; <code>handback-A1.md</code>; the closing diary line,
+three sentences through <code>mem.py log</code>; then the brief,
+<code>out/interview/A1c.md</code>, and
+<code>done.sh A1 --cut interview</code> (STANDING §2, interview points).
+From here on every leg opens with <code>validate.py --open NN</code>
+after the head and the last five diary entries. Stage B1 reads your room
+notes as its prior.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

@@ -1,0 +1,59 @@
+{
+  "checkpoint_id": "d0e97ff8fcf88ed5",
+  "label": "D4.D4a-08",
+  "stage": "D4",
+  "stage_file": "stages/STAGE-D4-forming-the-tree.md",
+  "kind": "agent-and-files",
+  "run": {
+    "instrument_version": "v43",
+    "fingerprint": "74db41ef9490edae"
+  },
+  "arm": {
+    "analyst": "claude-opus-5-5",
+    "effort": "xhigh"
+  },
+  "lineage": {
+    "resume_session": null,
+    "resumed_session": "5f52ec2e-d631-42f5-bbba-fda67ccd7d4e",
+    "child_session": "d8a83898-ad91-4ffc-b8b2-37a2fbaf9ad8",
+    "inherited_lines": 2674
+  },
+  "parent_checkpoint": "8d67446c61ed4366",
+  "parent_label": "D4.D4a-07",
+  "session": {
+    "session_id": "d8a83898-ad91-4ffc-b8b2-37a2fbaf9ad8",
+    "mode": "fork",
+    "transcript_sha256": "5975def8e1ed7942504b1ecd97c53fdf7af98d75e1b93d903c4cc659f633b19a",
+    "boundary_line": 4154,
+    "boundary_verified": true,
+    "transcript_path_at_close": "CONTROL/.cc/projects/run/d8a83898-ad91-4ffc-b8b2-37a2fbaf9ad8.jsonl"
+  },
+  "cli_version": "2.1.300 (Claude Code)",
+  "fs": {
+    "files_in_out": 56718,
+    "manifest_sha256": "e391460b497b2607083026875c4881529ca5c0c2027405985ee5bd0894d3699e"
+  },
+  "subject": "aggregator",
+  "filesystem_root": "00_GIVE-THE-AGENT",
+  "handler_conversation_included": false,
+  "validation": {
+    "subject": "aggregator",
+    "complete": true,
+    "completed_turn": true,
+    "launcher_exited": true,
+    "validator_exit_code": 0,
+    "validator_sha256": "889d92f85edcb6314f8bdd867d78984ebbdb1afa6fd3815c1077f4d19bf19258",
+    "report_sha256": "ae130c0cbe5be450be58a4378e3aff8228682ed203adcc1974013f23acde6460",
+    "checked_utc": "2026-10-26T21:58:09.672851+00:00",
+    "handed": true,
+    "notes_present": true,
+    "handback_present": true,
+    "validate_report_in_notes": true
+  },
+  "forced": null,
+  "cost": {
+    "tokens_in": 177761696,
+    "tokens_out": 590168
+  },
+  "published_utc": "2026-10-26T22:04:52Z"
+}

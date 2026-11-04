@@ -1,0 +1,476 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The handler&#x27;s protocol | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-handlers-protocol">The handler's protocol</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="handler.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/handler.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>For the agent that handles a run of the aggregator: builds it, checks
+each close, answers the analyst in files, keeps the record, and brings
+the principal investigator only what is theirs to decide. It is written
+for any handler, on any account: the one that built v38 was Claude in
+Cowork, with the whole repository mounted; the v43 run's handler is a
+Claude Code session on the PI's Mac (or Cowork), driving the legs
+through the leg handler, legs.py.
+Every path below is from the repository root unless it starts in this
+folder. The analyst's rules are in the contract and the standing
+instructions; the person's lines are in harness/READ-ME-FIRST.md. This file
+is the handler's. The coder side has its own handler, the yard's
+scheduler, under coder/handler/CONTRACT-scheduler.md;
+the Manual maps its files in the yard, file by
+file.</p>
+<h2 id="two-platforms">Two platforms</h2>
+<p>The instrument in <code>../instrument/</code> is shared by Claude and
+Codex. What differs is held in four places only: the schedules
+<code>claude/arm.claude.json</code> and
+<code>claude/arm.codex.json</code>, the platform files they generate
+(<code>python3 claude/gen_platform.py</code>; <code>build.sh</code>
+refuses when they are stale), <code>CLAUDE.md</code> against
+<code>AGENTS.md</code>, and the launcher: this folder's
+<code>claude/</code> for Claude,
+<code>aggregator/handler/codex/run.py</code> with
+<code>aggregator/handler/codex/runtime/</code> for Codex. A change to
+the method goes into the shared files once; a change to a model or a
+route goes into one arm file and the platform files are regenerated. The
+labelers at D2 run in Codex on both platforms.</p>
+<h2 id="three-parties-and-who-decides">Three parties, and who
+decides</h2>
+<ul>
+<li><strong>The principal investigator</strong> (PI) owns the study.
+They decide anything that changes the instrument, the data, the frame or
+what is published, and they type the harness lines that launch and close
+legs (the analyst runs on their subscription, from their Terminal).</li>
+<li><strong>The analyst</strong> works inside
+<code>aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/</code> and sees
+nothing else.</li>
+<li><strong>The handler</strong> proposes and prepares; the PI decides.
+The handler acts alone only on what this file lists as its duties, and
+on housekeeping that loses nothing.</li>
+<li><strong>The orchestrators</strong> keep the instrument, the harness
+and the Codex runtime: in this study Claude and OpenAI, each in its own
+session, their roles, rules and checks in <code>orchestrator/</code>,
+which a run never changes. Their live record (where things stand,
+decisions, diaries, messages) is kept outside the repository, in the
+folder <code>Orchestrator/</code> beside it. Instrument and harness
+changes go through them, with the PI's approval, as a new version of the
+instrument, and they tell the handler in
+<code>Orchestrator/messages/</code>. Read a message addressed to the
+handler before the next leg.</li>
+</ul>
+<p>When the PI says how they want something handled, that holds over
+this file.</p>
+<h2 id="rules-that-do-not-bend">Rules that do not bend</h2>
+<ol type="1">
+<li><strong>Nothing is deleted, and nothing set aside stays in the
+repository</strong> (J, 6 October 2026). A file is superseded under a
+new name, or moved to <code>Jail/_to_delete/</code>, beside the
+repository, under the path it had in <code>Jail/</code>
+(<code>Jail/r-place/FOR-AGENTS.md</code> goes to
+<code>Jail/_to_delete/r-place/FOR-AGENTS.md</code>; if that path is
+taken, the UTC time goes before the extension), with a line in
+<code>Jail/_to_delete/WHY.tsv</code>: time, who, from, to, why. Never
+into a <code>_to_delete/</code> inside the repository or a run. The PI
+purges, never the handler.</li>
+<li><strong>Condemn by content, never by filename.</strong> Before
+moving anything aside, open it and say what it holds.</li>
+<li><strong>Never write in the coding yard</strong> or in any source the
+run was built from (the layers, the raw data). Read them freely; write
+exports elsewhere.</li>
+<li><strong>The handler never speaks to the analyst in its own
+words.</strong> Only the PI does, in their own words, through
+<code>legs.py</code>; the handler passes them verbatim only when the PI
+asks (J's rulings of 3 and 5 October 2026), and each message and its
+delivery is recorded in <code>CONTROL/messages-to-legs.jsonl</code>.
+Everything else reaches the analyst through the harness or a file it is
+told to read. If it needs something, it writes it in its handback and
+stops; if it finds something wrong, it writes a line to
+<code>out/defects.jsonl</code>. The handler answers through what the
+next leg receives. Interviews are forks, not legs.</li>
+<li><strong>A running instrument does not change without the
+PI.</strong> Every change, once approved, is recorded three ways (see
+"Changing the instrument").</li>
+<li><strong>Files the PI marks private are never opened</strong>,
+whatever they are named.</li>
+<li><strong>No account data leaves the machine.</strong> The run's
+Claude folder (<code>aggregator/runs/claude-v43-1/CONTROL/.cc/</code>)
+is never committed; a checkpoint keeps only the run's own sessions from
+it.</li>
+<li><strong>Say what was checked and what was not.</strong> A count
+comes from a file or a script, with its date; a guess is marked as
+one.</li>
+</ol>
+<h2 id="the-handlers-memory">The handler's memory</h2>
+<p>A handler session ends and a new one begins with nothing. What
+carries over is on disk:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What goes in it</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>memory/diary.md</code></td>
+<td>one dated line per action: what was done, to which files, with what
+result</td>
+<td>as you work</td>
+</tr>
+<tr>
+<td><code>memory/DECISIONS.tsv</code></td>
+<td><code>date</code>, <code>decision</code>, <code>by</code>,
+<code>source</code>: every decision the PI made or approved</td>
+<td>when made</td>
+</tr>
+<tr>
+<td>git</td>
+<td>every version of every file, with the reason in the commit message;
+outside git, version_log.py keeps
+copies</td>
+<td>at every change</td>
+</tr>
+<tr>
+<td>the PI's open items</td>
+<td>a checklist of what the PI owes the handler and what the handler
+found and left for the PI, <code>memory/open-items.md</code></td>
+<td>kept current; ticked, never deleted</td>
+</tr>
+<tr>
+<td><code>memory/handovers/</code></td>
+<td>at the end of a long session, a dated note: where things stand, what
+is open, what to read first</td>
+<td>at session end</td>
+</tr>
+</tbody>
+</table>
+<p><strong>At the start of every session</strong>, read in this order:
+the open items, the last twenty lines of the diary, the last ten
+decisions, the run's front page in the Manual (how far the run has got),
+and the latest handover. Then say in one line what you found before
+doing anything.</p>
+<h2 id="before-the-run">Before the run</h2>
+<p>In order. Each script is in this folder unless named otherwise; set
+<code>paths.json</code> first (see "Paths").</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Script</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Paths</td>
+<td>paths.py</td>
+<td><code>python3 aggregator/handler/paths.py</code> shows every source
+it will read and whether it exists</td>
+</tr>
+<tr>
+<td>2. Rooms</td>
+<td>import_rooms.py, extract_legacy.py</td>
+<td>brings each coded room into
+<code>aggregator/input/coders/rooms/</code> in the one layout every room
+has: <code>import_rooms.py verified</code> takes every verified yard
+room from its archives (<code>room &lt;sub&gt;</code> one at a time) and
+rewrites <code>ROOMS.tsv</code>; <code>extract_legacy.py</code> and
+<code>import_rooms.py legacy</code> were for the rooms coded before the
+yard</td>
+</tr>
+<tr>
+<td>3. Canvas</td>
+<td>build_outcome.py
+(<code>ATLAS ROOMS.tsv OUT</code>), build_canvas.py</td>
+<td>the six canvas fields per room from the atlas, and the artworks and
+hourly pixel series into <code>aggregator/input/canvas/</code></td>
+</tr>
+<tr>
+<td>4. Shelves</td>
+<td>aggregator/instrument/tools/build_shelves.py,
+aggregator/instrument/shelves/make_meta.py</td>
+<td>the literature per stage, and one metadata page per work</td>
+</tr>
+<tr>
+<td>5. Build</td>
+<td>harness/build.sh</td>
+<td>lays out the run, builds the store, joins the canvas, writes the
+stage cards and the Manual</td>
+</tr>
+<tr>
+<td>6. Accept</td>
+<td>harness/acceptance.sh</td>
+<td>run by the PI after logging in the run's Claude once; must end ALL
+CLEAR (with <code>acceptance_v41.sh</code>, the second set)</td>
+</tr>
+<tr>
+<td>7. Leg handler</td>
+<td>claude-adapter/probe_lifecycle.py</td>
+<td>the live check of <code>legs.py</code>'s actor in a synthetic run
+outside the repository, once per CLI version; must pass every check</td>
+</tr>
+<tr>
+<td>8. Repository</td>
+<td>git, the PI's</td>
+<td>the first commit and push before A1a, the lead sessions in a second
+commit, so that <code>publish.sh</code> at A1a's close commits A1a
+alone</td>
+</tr>
+</tbody>
+</table>
+<p>Report each step's counts to the PI (rooms imported, rooms refused
+and why, canvas rows) before the next.</p>
+<h2 id="during-the-run">During the run</h2>
+<p><strong>Each leg.</strong> A leg opens with
+<code>step.sh &lt;leg&gt;</code> and ends with
+<code>close.sh &lt;leg&gt;</code>, in one of two ways that run the same
+scripts:</p>
+<ul>
+<li><strong>Through the leg handler</strong> (J, 5 October 2026: "a
+handler i can access via claude code/cowork that opens and close the
+sessions"). The PI starts
+<code>python3 aggregator/handler/claude-adapter/legs.py serve</code>
+once in a Terminal on the Mac and talks to the agents in
+<code>legs.py chat claude-v43-1</code>; the handler opens, runs and
+closes legs with <code>legs.py open</code>, <code>run</code> and
+<code>close</code>, follows them with <code>status</code> and
+<code>wait</code>, and passes the PI's words with <code>say</code> and
+<code>answer</code> only when the PI asks. Each turn is one headless
+Claude process; the analyst's session, settings, guards and close are
+the harness's. LEGS.md is the
+reference; the skill <code>rplace-legs</code> gives the handler the same
+commands.</li>
+<li><strong>By hand.</strong> The PI types
+<code>step.sh &lt;leg&gt;</code>; the analyst works in its terminal
+session; after it stops the PI types <code>close.sh &lt;leg&gt;</code>.
+A leg opened by hand may be closed with <code>legs.py close</code>;
+while <code>legs.py</code> drives a run, nobody runs
+<code>step.sh</code> or <code>close.sh</code> on it by hand:
+<code>close.sh</code> and <code>dispatch.sh</code> name the next leg in
+<code>legs.py</code>'s form first, and the <code>step.sh</code> line for
+a leg opened by hand. <code>legs.py wait</code> shows every notice not
+yet shown.</li>
+</ul>
+<p>After each close the handler:</p>
+<ol start="0" type="1">
+<li><strong>checks that the leg did the work, not only that the checks
+passed</strong> (J, 7 October 2026: "you are in charge of checking that
+every close went as expected"). The validator checks shapes; the handler
+checks substance, against the stage card: how much of each source the
+leg read (the read log, <code>out/_mem_reads-&lt;stage&gt;.jsonl</code>:
+offset, lines and total per call), which rooms or items it covered
+against the leg's list, what it wrote for each, its minutes and cost
+against <code>memory/stage-estimates.md</code>, its refusals,
+<code>guard.log</code>, compactions, and what any hook made it cut. A
+shortfall is the handler's to catch at the first close that shows it,
+not at the stage's end: A1's reading gap (forests read whole for 1 room
+in 705, case accounts for 43, briefs for 3) passed every check and was
+found only at A1c. The handler's own checks live in
+<code>memory/scripts/</code> and run at every close; a failed one stops
+the next start until the handler has looked;</li>
+<li>reads
+<code>aggregator/runs/claude-v43-1/CONTROL/close-status-&lt;label&gt;.json</code>
+and the validation it names; a failed check goes back to the analyst as
+a file in its next packet, never as a message;</li>
+<li>reads what the analyst wrote for the handler:
+<code>out/defects.jsonl</code> (anything in the material that looks
+wrong) and <code>out/handback-&lt;stage&gt;.md</code> (what a stage
+needs that the package does not hold, what is wrong with the instrument,
+and the stage's close). A defect in the material is checked against the
+source and, if real, fixed with the PI's approval and recorded; a
+request is answered, with the PI's approval, by putting the material
+where the analyst's next leg is told to find it; the analyst records
+what arrived and what it did with it. Material informs; it never
+overrides the contract;</li>
+<li>writes the diary line;</li>
+<li>checks the Manual was regenerated and the commit made
+(<code>publish.sh</code> does both; a failed push is reported, not
+fatal);</li>
+<li>answers what <code>legs.py status</code> lists: a question the
+analyst asked with <code>mem.py ask</code> gets the PI's answer
+(<code>legs.py answer</code>, which writes
+<code>out/_answers/&lt;id&gt;.md</code>), never the handler's own. A
+running leg hears it beside its next tool result, an open one with its
+next turn, and the first message of the next leg opened after it names
+it once (<code>CONTROL/answers-named.tsv</code>).</li>
+</ol>
+<p><strong>A fleet stage</strong> (B2, B3, B4, C2, C5, D2, D3, E1). The
+build leg closes at <code>packets-out</code>; the PI runs
+<code>dispatch.sh</code> in their own Terminal, since the OpenRouter key
+lives in their Keychain. D2 also prints the brief for the labelers in
+Codex. The handler checks that every packet came back before the check
+leg opens.</p>
+<p><strong>The field</strong> (C4). Before <code>C4a</code> opens, the
+handler places the field analyst's delivered model in the run as
+<code>out/field/</code> (<code>model.md</code>, the phases, the evidence
+file), never r/place's corpus. If the field model is not ready, the
+principal investigator decides whether the run waits at the end of C3 or
+goes on; in the second case C4 opens without <code>field/</code> and its
+analyst writes that the field was not held.</p>
+<p><strong>Interviews.</strong> An interview is the PI opening a closed
+leg to talk to it, most often at the twelve interview points the stage
+cards mark. Each runs in its own copy of the analyst's folder, restored
+from the leg's checkpoint with its sessions
+(<code>aggregator/runs/claude-v43-1/interview-workspaces/</code>, kept
+on disk and not committed); the PI may add material there, and nothing
+reaches the live run. Both ways record the fork in
+<code>CONTROL/interviews.tsv</code>, and at E2a <code>step.sh</code>
+copies every listed interview into the analyst's
+<code>handling/interviews/</code>:</p>
+<ul>
+<li><code>interview.sh [LEG]</code> in a Terminal: the PI talks in the
+CLI; it also copies the transcript to
+<code>aggregator/runs/claude-v43-1/interviews/</code>.</li>
+<li><code>legs.py interview RUN LEG TEXT</code> (or
+<code>?LEG text</code> in the chat): later words continue that leg's
+latest interview, <code>--new</code> opens another; its transcript stays
+in the run's Claude folder
+(<code>CONTROL/.cc/projects/iv-&lt;fork&gt;/</code>, on disk, in no
+checkpoint, not committed) until E2a: back up the repository
+folder.</li>
+</ul>
+<p>If the PI wants to answer the analyst, the handler helps write the
+reply file <code>interview.sh</code> names, or the PI says it to the
+next leg through <code>legs.py</code>.</p>
+<p><strong>Whether an interview is committed is the PI's decision,
+interview by interview</strong> (J, 6 October 2026). Transcripts are
+kept out of git by default (<code>.gitignore</code>: the run's
+<code>interviews/</code> and the analyst's
+<code>handling/interviews/</code>); <code>CONTROL/interviews.tsv</code>,
+the list, is committed. After each interview, ask the PI. For one to
+commit, give the PI the commands: copy the transcript into the run's
+<code>interviews/</code> as
+<code>&lt;label&gt;__&lt;fork&gt;.jsonl</code> if it is not there (a
+<code>legs.py</code> interview's is in
+<code>CONTROL/.cc/projects/iv-&lt;fork&gt;/</code>; copy that one file,
+never anything else of <code>.cc</code>), then <code>git add -f</code>
+that file, commit and push.</p>
+<p><strong>Before E1.</strong> The record it checks against is in the
+run:
+<code>aggregator/input/raw/&lt;sub&gt;/coder_corpus.jsonl.gz</code>,
+every frame room's coder corpus, built by build_raw_record.py from the yard and
+Layer A, read only (<code>aggregator/input/raw/MANIFEST.tsv</code>). Run
+check_quotes.py: it samples rooms and
+checks every code's quote and every long quote in the case accounts
+against the record the coder read, and writes
+<code>aggregator/runs/claude-v43-1/DROPS/E1/quote-check-E1.json</code>,
+which E1 reads.</p>
+<p><strong>Before E2.</strong> Put the study's proposal as it stands
+into
+<code>aggregator/runs/claude-v43-1/DROPS/E2/handling/proposal.md</code>,
+and replace the design note there if the design changed.</p>
+<p><strong>Pausing.</strong> When the subscription week runs short, the
+PI runs <code>pause.sh</code>; the analyst stops at its next safe stop.
+Note the pause and the leg to resume (<code>-p2</code>) in the diary and
+the open items.</p>
+<h2 id="changing-the-instrument">Changing the instrument</h2>
+<p><strong>The handler is in charge of the instrument and the
+scripts</strong> (J, 7 October 2026). It finds what needs changing, from
+its own checks, the analyst's handbacks and defects, or the PI; it
+writes the change and implements it in every copy; it records it. Every
+change is an amendment: the earlier text is superseded and logged, never
+rewritten in silence and never deleted. Among the agents, the handler's
+word on the instrument stands highest: the orchestrator may be asked for
+help (for example, B1's stopping rule), and its answer is advice the
+handler weighs and implements or declines with a reason; the analyst's
+handback is a request. The PI's word stands above the handler's: a
+change to what the study decides (a stopping rule, a threshold, a
+sample, what counts as read) goes to the PI before it is made; a change
+to how the scripts carry out what is already decided the handler makes
+and then reports. Each change, in order:</p>
+<ol type="1">
+<li>edit the file in <code>aggregator/instrument/</code> or
+<code>aggregator/handler/claude/</code>; once the run has begun, also
+change the run's own copy, which is what it reads:
+<code>CONTROL/harness/</code> for the scripts,
+<code>CONTROL/settings.template.json</code> for the permission rules,
+<code>CONTROL/arm.json</code> for the models;</li>
+<li>run the harness test (from Cowork, where the shell stops at about
+180 s and lacks scipy, run what fits and list the rest as owed on the
+Mac in <code>memory/changes-for-orchestrator.md</code>),
+<code>bash aggregator/handler/claude/tests/run.sh aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT</code>
+(any folder holding <code>package/</code> and <code>trees/</code>; it
+builds a scratch run, never touches the real one), and the checks'
+self-test,
+<code>python3 aggregator/instrument/tools/validate.py --self-test</code>;
+a failure stops the change;</li>
+<li>record the change: a commit whose message says why, a line in
+<code>memory/DECISIONS.tsv</code>, a line in the diary;</li>
+<li>regenerate the Manual
+(<code>python3 aggregator/runs/claude-v43-1/CONTROL/harness/gen_manual.py aggregator/runs/claude-v43-1</code>)
+and check its links;</li>
+<li>tell the PI in two sentences what changed and what it affects.</li>
+</ol>
+<p>Any change under <code>aggregator/handler/claude/</code> moves the
+run's fingerprint (<code>CONTROL/RUN.json</code>, from
+<code>build.sh</code>): before the run's first leg, rebuild in place
+with <code>build.sh</code> (the login is kept) and rerun the acceptance;
+after it, <code>build.sh</code> refuses and the copy in
+<code>CONTROL/harness/</code> is the run's.</p>
+<p>A change to a stage file, the contract or the standing instructions
+while the run is past that point is a departure: say so in the diary,
+and the analyst meets it at its next leg, not mid-leg.</p>
+<h2 id="the-repository">The repository</h2>
+<ul>
+<li><strong>What is committed.</strong> Everything under the repository
+root except what <code>.gitignore</code> names: the run's Claude folder,
+any <code>_to_delete/</code> (a guard: nothing set aside belongs in the
+repository), the checkpoints
+(<code>aggregator/runs/claude-v43-1/CONTROL/snapshots/</code>, one full
+copy of the analyst's folder and sessions per leg, kept on disk; back
+them up with the repository folder), the interview folders and
+transcripts (each committed only by the PI's decision), caches.
+<code>publish.sh</code> commits at every close and interview and tags
+interview points and finished stages.</li>
+<li><strong>Size.</strong> GitHub refuses a file over 100 MB. Split
+anything larger (<code>split -b 90m</code>) or keep it off git and link
+it.</li>
+<li><strong>Collection code.</strong> gather_collection.py copies the code
+that collected and built the data into a folder you name, skipping every
+data store, and lists which scripts touch which store.</li>
+<li><strong>Earlier versions.</strong> bundle_history.py packs earlier instrument
+versions into one archive in <code>archive/</code>, instruments only.
+Build it once and freeze it; git keeps every rebuild.</li>
+<li><strong>The data</strong> stays outside the repository; the Manual's
+data page links it and states the terms.</li>
+<li><strong>Going back.</strong> Git is the record: every close is a
+commit, every interview point and finished stage a tag.</li>
+<li><strong>Analysis branches.</strong> A fork of the run from one
+verified close, with a new stage card or data, is made with
+<code>legs.py branch</code> (LEGS.md, "An analysis branch"). Its
+folder, <code>aggregator/runs/&lt;run&gt;--&lt;name&gt;/</code>, never
+reaches main; it is committed to its own Git branch,
+<code>analysis/&lt;run&gt;--&lt;name&gt;</code>.</li>
+<li><strong>The leg handler's records</strong>
+(<code>aggregator/runs/claude-v43-1/CONTROL/legs/</code>: streams,
+requests, results) stay on disk, out of git. The PI's words to legs and
+their delivery are in <code>CONTROL/messages-to-legs.jsonl</code>, which
+is committed.</li>
+</ul>
+<h2 id="audits">Audits</h2>
+<p>Before a run starts, and after any large change, have fresh agents
+read the Manual cold, in personas that differ (in v38: a qualitative
+researcher and a computer scientist), read-only, each reporting what it
+saw, where it got lost, and what is wrong against the code. Fix what is
+the Manual's; list what is the scripts' for the PI; record both in
+<code>DESIGN/</code>.</p>
+<h2 id="paths">Paths</h2>
+<p>paths.py resolves every location the scripts
+read. The instrument's own folders are found from where the scripts sit.
+The sources outside the repository (the coding yard, Layer A's records,
+the previous run's package; the pixel flow per artwork and the hourly
+series are built inside the repository, in
+<code>data/pixels-per-artwork/</code> and
+<code>data/pixels-hourly/</code>) come from
+<code>RPLACE_&lt;KEY&gt;</code> in the environment, else from
+<code>aggregator/handler/paths.json</code>, else the defaults, which are
+paths relative to the repository root (the places the sources sit beside
+it on the author's machines). No file of the aggregator or its handler
+holds a full path; <code>verify.sh</code> checks this. The one exception
+is made at run time: before each step <code>protocol_guard.py</code>
+renders the analyst's <code>.claude/settings.json</code> from
+<code>CONTROL/settings.template.json</code> with this machine's full
+paths, because the sandbox needs them, and that file is not committed.
+Copy paths.example.json to
+<code>paths.json</code> and set yours;
+<code>python3 aggregator/handler/paths.py</code> shows what each
+resolves to and whether it exists.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

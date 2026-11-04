@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The community coder&#x27;s documents | r/place</title><link rel="stylesheet" href="assets/site.css"><script defer src="assets/local-setup.js"></script><script defer src="assets/site.js"></script><script defer src="assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="check.html">Check the papers</a><a data-reviewer-entry href="open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="index.html">Overview</a><a  href="organism.html">Model organism</a><a aria-current=location href="instrument.html">Instrument</a><a  href="results.html">Findings</a><a  href="interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-coding-contracts" data-layer="Overview"><nav class="parts" aria-label="Instrument"><a  href="instrument.html">Instrument</a><a  href="how-collection-works.html">Collection</a><a aria-current=location href="how-coding-works.html">Community coding</a><a  href="how-it-works.html">Aggregation</a><a  href="versions.html">Versions</a><a  href="run.html">Run the study</a></nav><h1 id="the-community-coders-documents">The community coder's
+documents</h1>
+<p>Every document a community went through, from its brief to its local
+model, reproduced unchanged. How community coding works explains them in
+order.</p>
+<h2 id="the-coder-instrument">The coder instrument</h2>
+<p>Version 32 coded 603 communities and version 30 coded 102, r/PlaceNL
+among them. Version 32 is in the repository; version 30 comes from
+r/PlaceNL's checkpoint. In the four communities checked, the run
+contract differs from its template only in ten lines: the community's
+name and the paths to its record, brief, tools and outputs.</p>
+<table><caption>The coder instrument, document by document</caption>
+<thead>
+<tr>
+<th>Document</th>
+<th>What it governs</th>
+<th>v32</th>
+<th>v30</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coder contract</td>
+<td>the method, the rules, the five steps and the outputs</td>
+<td><a href="sources/coder-contract.html">v32</a></td>
+<td><a href="sources/v30-coder-contract.html">v30</a></td>
+</tr>
+<tr>
+<td>Community coder, which the run calls the case lead</td>
+<td>the gate between working alone and with a fleet, and the order of
+work in each branch</td>
+<td><a href="sources/case-lead.html">v32</a></td>
+<td><a href="sources/v30-case-lead.html">v30</a></td>
+</tr>
+<tr>
+<td>Fleet coder</td>
+<td>one slice of whole threads, coded, and nothing else</td>
+<td><a href="sources/fleet-coder.html">v32</a></td>
+<td><a href="sources/v30-fleet-coder.html">v30</a></td>
+</tr>
+<tr>
+<td>Brief writer</td>
+<td>the brief of the community's week before the event</td>
+<td><a href="sources/brief-writer.html">v32</a></td>
+<td><a href="sources/v30-brief-writer.html">v30</a></td>
+</tr>
+<tr>
+<td>Launch file</td>
+<td>what each agent is told when it starts</td>
+<td><a href="sources/coder-agent.html">v32</a></td>
+<td><a href="sources/v30-coder-agent.html">v30</a></td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>how the agents read the record and cite it</td>
+<td><a href="sources/coder-tools.html">both</a></td>
+<td>same file</td>
+</tr>
+<tr>
+<td>The instrument</td>
+<td>its files, and what changed from the version before</td>
+<td><a href="sources/coder-instrument.html">files</a>, <a
+href="sources/coder-changelog.html">changes</a></td>
+<td><a href="sources/v30-changelog.html">changes</a></td>
+</tr>
+</tbody>
+</table>
+<p>Why the instrument moved <a
+href="sources/coder-v31-rationale.html">from v30 to v31</a> and <a
+href="sources/coder-v32-rationale.html">from v31 to v32</a>. Nearly
+every brief records the brief writer of version 30, with its revision of
+7 September 2026, whichever version then coded the community; 17 record
+version 32's revision.</p>
+<h2 id="the-handler">The handler</h2>
+<ul>
+<li><a href="sources/scheduler.html">The coding handler's contract</a>:
+what it may read and write, the cycle for one community, the checks,
+failures, the record, and what is ours to decide.</li>
+<li><a href="sources/coding-scheduler.html">The coding handler's
+queue</a>: how many communities run at once, and the order of the
+queue.</li>
+<li><a href="sources/case-lead-prompt.html">The case-lead prompt</a>:
+how a community coder is launched and calibrated.</li>
+<li><a href="sources/coder-checkpoints.html">Checkpoints</a>: the saved
+session of each community coder.</li>
+<li><a href="sources/brief-coordinator.html">The brief coordinator</a>
+and <a href="sources/brief-writer-prompt.html">the brief writer's
+prompt</a>: how the briefs were queued and written.</li>
+<li><a href="sources/repair-queue.html">Repair-queue rules</a>: how
+failed work is restarted.</li>
+<li><a href="sources/verified-archives.html">Verified archives</a>: how
+a finished community is archived and restored.</li>
+</ul>
+<h2 id="the-local-model-r6">The local model (R6)</h2>
+<p>These reach the repository only inside the R6 checkpoints.</p>
+<ul>
+<li><a href="sources/room-model.html">The local model's contract</a>,
+fifth version of 7 October 2026, and <a
+href="sources/pilot-amendment.html">the pilot amendment</a> of 11
+October, which 13 of the 14 checkpoints carry.</li>
+<li><a href="sources/room-crosswalk.html">The crosswalk</a>: the local
+model beside the aggregator, stage by stage.</li>
+<li><a href="sources/room-profile.html">The file profile</a>: every file
+the local model writes.</li>
+<li><a href="sources/room-contract-v43.html">The aggregator's
+contract</a> and <a href="sources/room-stage-C1.html">C1 card</a> as the
+checkpoints carry them, earlier than the copies the aggregator ran with.
+Its other stage cards, C2, C3, C5 and E1, are the aggregator's own.</li>
+<li>The <a href="sources/room-handler.html">handler</a>, its <a
+href="sources/room-snapshots.html">snapshot policy</a> and <a
+href="sources/room-amendments.html">amendments</a>, as they stood on 2
+November 2026, after the run.</li>
+</ul>
+</main><footer><div><a href="check.html">Check the papers</a><a href="agents.html">For agents</a><a href="reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

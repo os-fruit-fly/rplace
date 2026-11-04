@@ -1,0 +1,244 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How community coding works | r/place</title><link rel="stylesheet" href="assets/site.css"><script defer src="assets/local-setup.js"></script><script defer src="assets/site.js"></script><script defer src="assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="check.html">Check the papers</a><a data-reviewer-entry href="open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="index.html">Overview</a><a  href="organism.html">Model organism</a><a aria-current=location href="instrument.html">Instrument</a><a  href="results.html">Findings</a><a  href="interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-how-coding-works" data-layer="Overview"><nav class="parts" aria-label="Instrument"><a  href="instrument.html">Instrument</a><a  href="how-collection-works.html">Collection</a><a aria-current=page href="how-coding-works.html">Community coding</a><a  href="how-it-works.html">Aggregation</a><a  href="versions.html">Versions</a><a  href="run.html">Run the study</a></nav><h1 id="how-community-coding-works">How community coding works</h1>
+<p>Each community is read by its own community coder, a model
+conversation that sees no other community and no earlier coding. The
+coding handler prepares each community, launches its coder, checks the
+result and keeps the record. Communities with more than 500 items divide
+their threads among fleet coders, and the community coder brings their
+work together. In this study: 705 communities, coded from 7 September to
+4 October 2026, with 115,388 first-order codes and 7,844 second-order
+themes.</p>
+<h2 id="its-contracts">Its contracts</h2>
+<ul>
+<li><a href="sources/coder-contract.html">The coder contract</a>,
+version 32 (version 30 for 102 communities, r/PlaceNL among them): the
+method, the rules, the five steps and the outputs.</li>
+<li><a href="sources/case-lead.html">The community coder's contract</a>,
+which the run calls the case lead's: the gate between working alone and
+with a fleet, and the order of work in each branch.</li>
+<li><a href="sources/fleet-coder.html">The fleet coder's contract</a>:
+one slice of whole threads, coded, and nothing else.</li>
+<li><a href="sources/v30-brief-writer.html">The brief writer's
+contract</a>: the brief of the community's week before the event. Nearly
+every brief records version 30, with its revision of 7 September 2026,
+whichever version then coded the community; 17 record <a
+href="sources/brief-writer.html">version 32's</a>.</li>
+<li><a href="sources/scheduler.html">The coding handler's contract</a>:
+the cycle for one community, the checks, and what happens when one
+fails.</li>
+</ul>
+<p>A fresh gpt-5.6-sol conversation writes each community's brief, and a
+script writes an empty brief where the week before holds nothing. The
+briefs were written in three runs, from 7 to 30 September: the first two
+at high reasoning effort, the third at medium. Of the 705 briefs, 626
+come from a writer (373 at high effort, 246 at medium, 7 not recorded),
+78 are empty, and r/Dorset's records no writer.</p>
+<p><a href="coding-contracts.html">The community coder's documents</a>
+lists every document in both versions, with the handler's and the local
+model's.</p>
+<h2 id="the-steps">The steps</h2>
+<table><caption>The steps of community coding, in order</caption>
+<thead>
+<tr>
+<th>Step</th>
+<th>What happens</th>
+<th>In the contract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. The briefing</td>
+<td>The coder reads a brief of the community's ordinary week before the
+event, written by a different reader, and flags any claim without a
+quote.</td>
+<td><a href="sources/coder-contract.html#4-step-1--the-briefing">coder
+contract, step 1</a></td>
+</tr>
+<tr>
+<td>2. Every thread</td>
+<td>It passes over every thread in time order, twenty-five at a time,
+and records whether each belongs to the case. Nothing is coded yet.</td>
+<td><a
+href="sources/coder-contract.html#5-step-2--go-through-every-thread-and-decide-what-this-case-is">coder
+contract, step 2</a></td>
+</tr>
+<tr>
+<td>The gate</td>
+<td>Above 500 items, a fixed gate divides whole threads among fleet
+coders; below it, the community coder works alone. Decided once and
+recorded.</td>
+<td><a
+href="sources/case-lead.html#1b-the-gate-decided-once-and-recorded">community
+coder, the gate</a></td>
+</tr>
+<tr>
+<td>3. First-order codes</td>
+<td>Codes stay close to how members put it. A code cites its item by
+reference; no coder types quotation text.</td>
+<td><a
+href="sources/coder-contract.html#6-step-3--first-order-codes">coder
+contract, step 3</a></td>
+</tr>
+<tr>
+<td>4. Themes</td>
+<td>Codes are grouped into second-order themes, named in the members'
+words where they have one.</td>
+<td><a href="sources/coder-contract.html#7-step-4--themes">coder
+contract, step 4</a></td>
+</tr>
+<tr>
+<td>5. The case account</td>
+<td>A chronology, then what set off what, with a stated reason for each
+relation, and a counter-reading before the verdict.</td>
+<td><a
+href="sources/coder-contract.html#8-step-5--the-within-case-account">coder
+contract, step 5</a></td>
+</tr>
+<tr>
+<td>Checks and close</td>
+<td>The coding handler resolves every cited quote against the record and
+runs end checks; a failed check sends the work back.</td>
+<td><a href="sources/scheduler.html#3-the-checks">coding handler, the
+checks</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="after-the-coding-the-return">After the coding: the return</h2>
+<p>At the return (<a href="stages/D2.html">D2</a>), an adaptation
+handler forks, for each community, the checkpoint of the community coder
+that coded it, with its conversation and files, and gives it a new task
+in a separate folder. Under the return contract the coder recodes its
+whole community in the population model's terms; its first coding stays
+as it was. It reads its own case account, themes, codes, brief and reply
+trees against the model, the coding structure and the model's vocabulary
+of element and arrow ids. It then writes two files:</p>
+<ul>
+<li>a model of the community: its case account rewritten section by
+section in the model's terms, each claim tied to an element id or marked
+as new and cited to the community's own codes, ending with its own grade
+and the exceptions it found;</li>
+<li>one line for each change the model needs: an element instantiated,
+marked absent, given a condition or a finer step, linked, restricted or
+contradicted, or a new element proposed.</li>
+</ul>
+<p>A script checks every return, and the same session repairs what
+fails. Two separate readers judge, from the evidence, whether the model
+composes the community. The aggregator rules on every line and revises
+the model (<a href="stages/D3.html">D3</a>); each community's return
+checkpoint then continues with the revised model for the re-check. The
+results are on <a href="results/population-return.html">the population
+return page</a>.</p>
+<h2 id="after-the-coding-the-local-model-r6">After the coding: the local
+model (R6)</h2>
+<p>The local model is a second branch from the coding close, and the
+aggregator did not use it. Admissions stopped on 28 October; by 29
+October, 173 communities had finished it and the other 532 had not run
+it. The site shares 14 of the 173. For each, a copy of the closed
+community coder resumed its own session under <a
+href="sources/room-model.html">the local model's contract</a>, fifth
+version of 7 October 2026, and <a href="sources/pilot-amendment.html">a
+pilot amendment</a> authorized on 11 October. r/Goodboye, the first, ran
+without the amendment.</p>
+<p>The contract tells the coder that coding is closed and that no code,
+theme or coding file may change. It asks for the community's own model
+in the manner of Gioia, Corley and Hamilton (2013): themes above the
+coder's themes, aggregate dimensions where the material carries them, a
+coding structure and a dynamic model. The coder then sets the model
+against the literature, writes an account, grades its confidence and
+closes. Each of its six stages follows a stage of the aggregator; R6,
+the last, names the checkpoint.</p>
+<table><caption>The six stages of the local model</caption>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What the coder does</th>
+<th>The aggregator's stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1 prior</td>
+<td>writes what the coding taught it to expect, before it reopens its
+codes</td>
+<td>B1</td>
+</tr>
+<tr>
+<td>R2 reading</td>
+<td>reads its codes in clock order, one note per block, and keeps a list
+of episodes</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>R3 structure</td>
+<td>reads its codes for form, then groups its themes into higher themes
+and dimensions</td>
+<td><a href="sources/room-stage-C1.html">C1</a>, <a
+href="sources/stage-C2.html">C2</a></td>
+</tr>
+<tr>
+<td>R4 the model</td>
+<td>builds the model in numbered passes until two in a row change
+nothing; a fresh critic returns errors and a rival grouping of its
+themes</td>
+<td><a href="sources/stage-C2.html">C2</a></td>
+</tr>
+<tr>
+<td>R5 literature</td>
+<td>receives the paper by Puranam, Alexy and Reitzig (2014) and maps
+each higher theme to the problem of organizing it handles</td>
+<td><a href="sources/stage-C3.html">C3</a></td>
+</tr>
+<tr>
+<td>R6 account and close</td>
+<td>writes the account, propositions, the coding structure, claims and
+an interview, then grades its confidence last</td>
+<td><a href="sources/stage-C5.html">C5</a>, <a
+href="sources/stage-E1.html">E1</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="coding-contracts.html#the-local-model-r6">The local model's
+other documents</a>: how it maps onto the aggregator, the files it
+writes, the aggregator's texts as the checkpoints carry them, and the
+handler's.</p>
+<table><caption>The local model (R6) in brief</caption>
+<tbody>
+<tr>
+<td>Model</td>
+<td>for the 14 shared, a naming turn on gpt-5.6-sol at medium, then
+gpt-6.1-sol at medium; the coding close ran on gpt-5.6-sol at
+medium</td>
+</tr>
+<tr>
+<td>Critic</td>
+<td>gpt-6.1-sol at medium, the route the runner requests and checks; its
+record was read for 7 of the 14</td>
+</tr>
+<tr>
+<td>Dates</td>
+<td>for the 14 shared, 20 October 15:39 to 21 October 13:47 UTC;
+r/Goodboye also ran on 9 and 10 October</td>
+</tr>
+<tr>
+<td>Outputs</td>
+<td>for r/PlaceNL, six higher themes, two dimensions, 12 elements and
+four propositions (<a href="records/community--PlaceNL--R6.html">its
+outputs</a>)</td>
+</tr>
+<tr>
+<td>Lineage</td>
+<td>same session and same source checkpoint as the coding close; the
+return (D2) forked the coding close, not R6</td>
+</tr>
+<tr>
+<td>Not recorded</td>
+<td>a commit for the contract and the amendment, which reach the
+repository only inside each R6 checkpoint</td>
+</tr>
+</tbody>
+</table>
+<p><a href="guides/communities.html">Run it</a></p>
+</main><footer><div><a href="check.html">Check the papers</a><a href="agents.html">For agents</a><a href="reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

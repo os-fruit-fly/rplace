@@ -1,0 +1,113 @@
+{
+  "checkpoint_id": "aggregator--claude-v43-1--C4-field--D6.D6b",
+  "bundle_sha256": null,
+  "snapshot_manifest_sha256": "e916c3beceab3db8547c6c39418d88ba9f983c710d5803212ac90d5db7439f65",
+  "recipe_sha256": "5ea75c7b53d8ec6ded74641946eb9cdb196f5d78bc95081d1a09ad5c92b55d64",
+  "commit": "5677dbb06f793260f26397127088257d7535355e",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/out/retelling-D6.md",
+      "sha256": "16d576e285b671b149105efcebc6be5588dd37a8e100d20404c8e086584fc8ac",
+      "bytes": 71880,
+      "source_file": "record-files/16d576e285b671b149105efcebc6be5588dd37a8e100d20404c8e086584fc8ac.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/retelling-D6.md",
+        "blob": "eaf74ba7d77e312a4ee07d19080cc2a4ce1a29e9"
+      },
+      "reading_sha256": "16d576e285b671b149105efcebc6be5588dd37a8e100d20404c8e086584fc8ac",
+      "reading_bytes": 71880,
+      "reading_file": "16d576e285b671b149105efcebc6be5588dd37a8e100d20404c8e086584fc8ac.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "01-retelling-D6",
+      "raw": "../files/16d576e285b671b149105efcebc6be5588dd37a8e100d20404c8e086584fc8ac.reading.md"
+    },
+    {
+      "path": "workspace/out/figure-D6.md",
+      "sha256": "fdb961fbe38dca5a06d556a546f3d67168f5c2b9ebdde4c8ce24607f57dc0adf",
+      "bytes": 7477,
+      "source_file": "record-files/fdb961fbe38dca5a06d556a546f3d67168f5c2b9ebdde4c8ce24607f57dc0adf.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/figure-D6.md",
+        "blob": "1351f55445ffe2d3d190814532a0d13181ed611a"
+      },
+      "reading_sha256": "fdb961fbe38dca5a06d556a546f3d67168f5c2b9ebdde4c8ce24607f57dc0adf",
+      "reading_bytes": 7477,
+      "reading_file": "fdb961fbe38dca5a06d556a546f3d67168f5c2b9ebdde4c8ce24607f57dc0adf.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-figure-D6",
+      "raw": "../files/fdb961fbe38dca5a06d556a546f3d67168f5c2b9ebdde4c8ce24607f57dc0adf.reading.md"
+    },
+    {
+      "path": "workspace/out/MODEL-D3.md",
+      "sha256": "6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd",
+      "bytes": 27297,
+      "source_file": "record-files/6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/MODEL-D3.md",
+        "blob": "3ca08e57ad4737ea80175f915c35d5eae2210c13"
+      },
+      "reading_sha256": "6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd",
+      "reading_bytes": 27297,
+      "reading_file": "6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "03-MODEL-D3",
+      "raw": "../files/6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd.reading.md"
+    },
+    {
+      "path": "workspace/out/_head.md",
+      "sha256": "eadd231c05bb134a6579ec251ea3fe7ddf79226821f323d13901acab43990574",
+      "bytes": 17625,
+      "source_file": "record-files/eadd231c05bb134a6579ec251ea3fe7ddf79226821f323d13901acab43990574.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md",
+        "blob": "fc5cc0bba0a75fa84b09a37865a9e136f4e43f61"
+      },
+      "reading_sha256": "eadd231c05bb134a6579ec251ea3fe7ddf79226821f323d13901acab43990574",
+      "reading_bytes": 17625,
+      "reading_file": "eadd231c05bb134a6579ec251ea3fe7ddf79226821f323d13901acab43990574.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-_head",
+      "raw": "../files/eadd231c05bb134a6579ec251ea3fe7ddf79226821f323d13901acab43990574.reading.md"
+    },
+    {
+      "path": "workspace/out/notes-D6.md",
+      "sha256": "556f25f55517cfb845a2424ab8b8ded93cb264dae54d32c3ce0196042e07204a",
+      "bytes": 31388,
+      "source_file": "record-files/556f25f55517cfb845a2424ab8b8ded93cb264dae54d32c3ce0196042e07204a.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-D6.md",
+        "blob": "795c4e65e7016fa0cb0d733a168f6d1cf392d82f"
+      },
+      "reading_sha256": "556f25f55517cfb845a2424ab8b8ded93cb264dae54d32c3ce0196042e07204a",
+      "reading_bytes": 31388,
+      "reading_file": "556f25f55517cfb845a2424ab8b8ded93cb264dae54d32c3ce0196042e07204a.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "05-notes-D6",
+      "raw": "../files/556f25f55517cfb845a2424ab8b8ded93cb264dae54d32c3ce0196042e07204a.reading.md"
+    },
+    {
+      "path": "workspace/out/handback-D6.md",
+      "sha256": "e94c7d675ba47b34040c9c6edb40025635b16916bdb4632d32cc648eb976f986",
+      "bytes": 9641,
+      "source_file": "record-files/e94c7d675ba47b34040c9c6edb40025635b16916bdb4632d32cc648eb976f986.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/handback-D6.md",
+        "blob": "caa7a210ca8bc6f16fede5fcacf9ead59cb03b22"
+      },
+      "reading_sha256": "e94c7d675ba47b34040c9c6edb40025635b16916bdb4632d32cc648eb976f986",
+      "reading_bytes": 9641,
+      "reading_file": "e94c7d675ba47b34040c9c6edb40025635b16916bdb4632d32cc648eb976f986.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "06-handback-D6",
+      "raw": "../files/e94c7d675ba47b34040c9c6edb40025635b16916bdb4632d32cc648eb976f986.reading.md"
+    }
+  ],
+  "comparison": null
+}

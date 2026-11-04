@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The pixel record | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-pixel-record">The pixel record</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="data-pixels.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/data-pixels.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Reddit's release of every placement on the 2017 canvas: 16,559,897
+rows, no header, <code>ts_ms,username_sha1_b64,x,y,color</code>. The
+second column is base64(sha1(username)), so a name can be matched to its
+placements; only this release's hashes work this way. Beside it: opl's
+table of 1,102,111 usernames and their hashes, collected by people who
+recorded the canvas's traffic during the event.</p>
+<p><strong>Get it:</strong> <code>bash pixels/get_pixels.sh</code> (from
+<code>data/</code>). It checks the row counts.
+<code>pixels-per-artwork/code/fetch_sources.py</code> fetches the record
+too, if it is not here.</p>
+<p><strong>Files after the script:</strong>
+<code>place_tiles_sha1.csv</code> (894 MB),
+<code>reddit-place-username-hashes/reddit-place-username-hashes.csv</code>.</p>
+<p><strong>Read by:</strong> <code>users/build_worklist.py</code> (who
+placed, and how often),
+<code>pixels-per-artwork/code/fetch_sources.py</code>.</p>
+<p><strong>Which copy.</strong> The study parsed static.aperiodic.net's
+<code>original_tile_placements.csv.xz</code>, the same rows sorted as
+text. archive.org's copy is grouped differently within each second;
+<code>fetch_sources.py</code> restores the study's order, and the parse
+then equals the study's in every array.</p>
+<p><strong>Tested 2026-09-26:</strong> the record downloaded from
+archive.org in 22 seconds and passed every count; the username table
+held 1,102,111 rows.</p>
+<h2 id="codebook">Codebook</h2>
+<p><code>place_tiles_sha1.csv</code>, no header, one placement per
+row:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>time, milliseconds since 1970, UTC; whole seconds in practice</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the placer: base64 of the SHA-1 of the username, 28 characters</td>
+</tr>
+<tr>
+<td>3, 4</td>
+<td>x and y, 0 to 999, y downwards; 3,256 rows fall outside</td>
+</tr>
+<tr>
+<td>5</td>
+<td>colour, an index 0 to 15 into the 2017 palette</td>
+</tr>
+</tbody>
+</table>
+<p><code>reddit-place-username-hashes.csv</code>, no header:
+<code>"username","hash"</code>, the hash as in column 2.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

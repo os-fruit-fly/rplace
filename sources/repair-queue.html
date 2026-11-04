@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repair queue restart rules | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="repair-queue-restart-rules">Repair queue restart rules</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="repair-queue.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/repair-queue.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Date: 2026-09-09</p>
+<p>These rules govern <code>_tools/repair_queue.py</code> and the repair
+monitor for this moved yard.</p>
+<h2 id="goal">Goal</h2>
+<p>Keep six repair workers active when possible. The queue is not a
+batch barrier: when one worker ends, the coordinator checks that room,
+records the outcome, archives the ended case-lead store, updates status
+files, and starts the next smallest unresolved subreddit into the free
+slot.</p>
+<h2 id="scope">Scope</h2>
+<p>Use only the fixed unresolved repair pool in this yard. Do not start
+the broad coding queue. Do not start sub-500 rooms outside the already
+authorised repair pool. New workers use <code>gpt-5.6-sol</code>,
+medium. Existing live workers keep the model and effort already recorded
+in their store.</p>
+<h2 id="ordering">Ordering</h2>
+<p>Always sort unresolved rooms by <code>items_in_window</code>, then
+subreddit name. Remove rooms already in <code>completed</code>,
+<code>failed</code>, or <code>active</code> from the launch queue before
+adopting or restarting. A failed room may be retried only through an
+explicit repair pass or a targeted manual fix; the slot refill should
+move to the next queued room instead of looping on the same failed
+room.</p>
+<h2 id="ended-worker-protocol">Ended worker protocol</h2>
+<p>For each ended worker:</p>
+<ol type="1">
+<li>Read <code>rooms/&lt;sub&gt;/STATE.json</code>.</li>
+<li>If <code>coding_status</code> is <code>verified</code> and
+<code>validation/RUN-RECEIPT.json</code> exists, record the token total
+and archive hash as completed.</li>
+<li>Otherwise record <code>needs-attention</code> with the current room
+status, log path, and archive hash.</li>
+<li>Run the yard status refresh and coding progress refresh.</li>
+<li>Fill the free slot from the next queued room unless
+<code>STOP_AFTER_ACTIVE.json</code> exists.</li>
+</ol>
+<p>The coordinator must not exit because one reconciliation step fails.
+If a status read, archive read, or refresh command fails, record that
+room as <code>needs-attention</code> with the reconciliation error and
+continue with the next room.</p>
+<h2 id="storage">Storage</h2>
+<p>After every ended attempt, keep only the compressed forkable
+case-lead store when archive verification succeeds. The uncompressed
+<code>_lead_sessions/&lt;sub&gt;-gpt56-calibration-v1/</code> directory
+should be absent for ended attempts. Store the SHA-256 in both the room
+state and <code>STATUS.tsv</code>. Never delete an uncompressed store
+for a genuinely live worker.</p>
+<h2 id="moved-yard-rules">Moved yard rules</h2>
+<p>The live yard is:</p>
+<p><code>~/Obsidian/Research/Claude/rPlace/Layer A/50_coding_runs/yard_v30</code></p>
+<p>Repair scripts must derive the yard root from their own
+<code>_tools</code> location. Do not reintroduce absolute references to
+<code>~/Documents/Codex/rplace/atlas_yard</code> in
+repair-control code.</p>
+<p>Old archived case-lead stores may contain runtime descriptors and
+checkpoint manifests with the old path. On restore, update
+<code>STORE.json</code>, <code>state/runtime.json</code>, and saved
+runtime evidence to the new store and source-room paths. If the native
+case-lead history cannot fork because a source rollout is missing after
+the move, preserve the old archive and start a fresh case lead from the
+contract. Do not repeatedly try the broken fork lineage.</p>
+<h2 id="known-repeated-repair-class">Known repeated repair class</h2>
+<p>For new coding runs, final close validation is part of the live
+case-lead cycle. A failed final room check must be returned to the same
+case lead with its exact output before the lead store is archived or a
+fresh repair is queued. Allow at most two correction turns, and rerun
+both checkpoint verification and room validation after each. This rule
+applies to final lead-output defects. It does not apply to missing coder
+output, transport failures, or interrupted native turns. New fleet
+coders have their own validation-bounded session: run the authoritative
+batch check before deleting that temporary session, return failures to
+the same coder for at most two correction turns, and restore the clean
+dispatched batch first when the check reports an append-only disposition
+defect. Delete the temporary coder session and batch snapshot after
+validation. Do not retain a forkable session for a fleet coder.</p>
+<p>Several fresh or reforked coders still fail C5 by writing malformed
+<code>excluded_quote</code> data. Treat these as repairable validation
+failures, not coordinator failures. Record them as
+<code>needs-attention</code>, archive their stores, and continue to the
+next queued subreddit. Do not let that repeated class stall the whole
+queue.</p>
+<p>After Claude's <code>Coder Comments v1</code> audit, future new
+launches should use v32. v32 makes C5 fail at <code>emit.thread</code>,
+before the bad row is recorded. If a running older store fails C5, do
+not edit its copied instrument in place. Preserve the evidence and
+repair or rerun the room through the queue.</p>
+<h2 id="coordinator-restart-checklist">Coordinator restart
+checklist</h2>
+<p>On every restart, first rebuild reality from the filesystem, not from
+stale memory. Check <code>_repair_queue/STATE.json</code>, the live
+process table, each active room <code>STATE.json</code>, and the room
+<code>validation/RUN-RECEIPT.json</code>. A room with
+<code>stage: verified</code> and a receipt is complete even if the queue
+state still lists the worker as active. A dead worker without
+verification is <code>needs-attention</code>; do not immediately
+relaunch it unless the user asked for that specific room.</p>
+<p>When one slot opens, close exactly that ended worker: validate the
+room, write the result and token count if available, archive the
+forkable case-lead store, store the archive SHA-256, remove only the
+verified uncompressed store, append the queue event, then launch the
+next smallest unresolved room. Do not wait for the rest of the
+batch.</p>
+<p>Keep the repair pool ordered by <code>items_in_window</code>. If a
+larger room appears before a smaller unresolved room, write why: already
+running, already finished, already failed in this pass, below the active
+threshold, missing brief, or blocked by a specific mechanical error.</p>
+<p>Use a two-run failure limit per subreddit. First send authoritative
+closing errors back to the same live coder or case lead. If the run
+remains invalid, preserve its archive and restart the room from the
+contract. If that clean restart also fails, stop the subreddit, retain
+both failure records, and report it. Never refill that subreddit for a
+third consecutive run without a deliberate repair change.</p>
+<p>For current repair work, use <code>gpt-5.6-sol</code> with medium
+effort for new starts. Preserve already-running model settings. Record
+model, effort, start time, end state, token count, and archive SHA in
+<code>status.tsv</code> or the queue state so future reports do not
+depend on chat memory.</p>
+<h2 id="stop-marker">Stop marker</h2>
+<p><code>_repair_queue/STOP_AFTER_ACTIVE.json</code> means drain only:
+adopt live workers, reconcile them when they end, archive stores, and do
+not launch replacements. Remove or rename this marker only when the user
+asks to resume slot-by-slot repair.</p>
+<p>If the model service rejects a turn with
+<code>serverOverloaded</code>, treat it as transport failure. Preserve
+the failed attempt, recover the operation marker only after its
+processes exit, fork the last completed lead checkpoint, and redo the
+interrupted slice or finish turn. It does not count as a failed coding
+run or justify a new model.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

@@ -1,0 +1,98 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instrument v32 | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="instrument-v32">Instrument v32</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coder-instrument.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coder-instrument.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>One integer, no decimals. <code>CHANGELOG-v32.md</code> says what
+moved and when.</p>
+<h2 id="the-files">The files</h2>
+<table>
+<thead>
+<tr>
+<th>file</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CONTRACT.v32.md</code></td>
+<td>the coder contract. Ten sections; every role reads this first</td>
+</tr>
+<tr>
+<td><code>CONTRACT-case-lead.v32.md</code></td>
+<td>the case lead: the branch gate, the fleet, the forest, step 4 and 5
+over a pool</td>
+</tr>
+<tr>
+<td><code>CONTRACT-fleet-coder.v32.md</code></td>
+<td>a fleet coder: one slice, steps 1 to 3, a slice case</td>
+</tr>
+<tr>
+<td><code>AGENT.v32.md</code></td>
+<td>operating notes beside the contracts: the tools, the role, what to
+do when interrupted</td>
+</tr>
+<tr>
+<td><code>CONTRACT-brief-writer.v32.md</code></td>
+<td>the brief writer: the seven days before the canvas opened</td>
+</tr>
+<tr>
+<td><code>read.py</code>, <code>cite.py</code>,
+<code>emit.py</code></td>
+<td>the three tools a coder calls</td>
+</tr>
+<tr>
+<td><code>read_brief.py</code></td>
+<td>the brief writer's reading tool; <code>cite.py</code> is shared</td>
+</tr>
+<tr>
+<td><code>TOOLS-SPEC.md</code></td>
+<td>what the reading, citing and searching tools do the same way across
+the brief writer, the coder and the aggregator, and what differs</td>
+</tr>
+<tr>
+<td><code>tools/fleet.py</code></td>
+<td>the case lead's harness: <code>plan</code>, <code>dispatch</code>,
+<code>consolidate</code>, <code>status</code></td>
+</tr>
+<tr>
+<td><code>tools/tree_builder.py</code></td>
+<td>the forest, from the record and the codes</td>
+</tr>
+<tr>
+<td><code>tools/audit_fleet.py</code></td>
+<td>the gate before step 4</td>
+</tr>
+<tr>
+<td><code>close_run.py</code></td>
+<td>pre-final and post-exit gates: C1 to C12, `--role lead</td>
+</tr>
+<tr>
+<td><code>newrun.py</code>, <code>newbrief.py</code></td>
+<td>build a run directory</td>
+</tr>
+<tr>
+<td><code>render_corpus_v32.py</code>,
+<code>cut_window_v32.py</code></td>
+<td>the renderer and the window cut</td>
+</tr>
+<tr>
+<td><code>render_openings_v32.py</code></td>
+<td>the openings file the case lead reads first: every thread's
+metadata, counts, title and opening text</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-run">A run</h2>
+<pre><code>python3 newrun.py RUNDIR SUB CORPUS.jsonl BRIEF.md MODEL     # the case lead&#39;s directory
+cd RUNDIR
+python3 tools/fleet.py plan                                   # the branch, the slices
+python3 tools/fleet.py dispatch --batch 01 --model MODEL      # branch B: one coder at a time
+...                                                           # the coder runs in fleet/batch_01
+python3 tools/fleet.py consolidate                            # after the last coder
+python3 tools/tree_builder.py --sub SUB --record coder_corpus.jsonl --codes-file package/codes.jsonl --out-dir .
+python3 tools/audit_fleet.py --run . --sub SUB
+python3 close_run.py . --role lead                            # after the lead&#39;s step 5</code></pre>
+<p>The case lead's contract gives the same commands at the points where
+the lead runs them.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

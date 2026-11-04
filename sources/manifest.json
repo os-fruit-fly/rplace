@@ -1,0 +1,494 @@
+[
+  {
+    "path": "data/README.md",
+    "site_source": "sources/data-README.md",
+    "sha256": "f9dc5427c2d96a786379eee2e8f80ab8420bef84dadae12fd38fe86759e02a6a",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/README.md",
+    "site_source": "sources/coder-README.md",
+    "sha256": "4db02db5a8c7206e575f9b2a404082b1a8447b285d746876b0a35faa15762488",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/FOR-AGENTS.md",
+    "site_source": "sources/data-for-agents.md",
+    "sha256": "a9d4e95c5869e763520ffba42bc1e5b646f1864b095c566fc575e0399a798fa3",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/_lib/README.md",
+    "site_source": "sources/data-lib.md",
+    "sha256": "3e022e8978de1e7211705a5f189050c8d8880542a90d91c322c2ba898e2f4583",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels/README.md",
+    "site_source": "sources/data-pixels.md",
+    "sha256": "ee5ba42ff6f5aa8220ed0a4604327ba5c89480f691c224df35ff91a74e90f424",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels/LINK.md",
+    "site_source": "sources/data-pixels-link.md",
+    "sha256": "70e527ac45e26ecf506179fca156b072f5feae54b26e882db96811bcbb798da2",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/atlas/README.md",
+    "site_source": "sources/data-atlas.md",
+    "sha256": "fcaae3b2d4fe51970795fba4b6316f52caf013e4e80f2cb1cb2609bde550939a",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/users/README.md",
+    "site_source": "sources/data-users.md",
+    "sha256": "539141bd7b6696e63616cb3a05bb7ea04a7727a7e68eb205ac5561c5bc41dd46",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/users/LINK.md",
+    "site_source": "sources/data-users-link.md",
+    "sha256": "25b8eacd0c21af4b5aa3dd86b301e953e215e72520e6e129cceb801755059b16",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/venues-placers/README.md",
+    "site_source": "sources/data-venues-placers.md",
+    "sha256": "1810bdeeb0128db206d0417a335cdc79e2ce50d894a0c76dd7712bfc0e1365e0",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/venues-placers/LINK.md",
+    "site_source": "sources/data-venues-placers-link.md",
+    "sha256": "7cbfc435775c014616841cb5fa4081ad525ca78a373814741d5075cdef55ba17",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/raw24/README.md",
+    "site_source": "sources/data-raw24.md",
+    "sha256": "195b932e28a22a8b5089950418baaa358d463f616a90bf6cae7536fe91edc7c0",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/raw24/LINK.md",
+    "site_source": "sources/data-raw24-link.md",
+    "sha256": "2167bae982489bbf76c27b9db0ced7c8b21c1298e281ab75c27001e0cbf18197",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels-per-artwork/README.md",
+    "site_source": "sources/data-pixels-per-artwork.md",
+    "sha256": "f39897930625819db42b9a7112e233c6cf2cf5a0e9930868073ce16a77819c1f",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels-per-artwork/LINK.md",
+    "site_source": "sources/data-pixels-per-artwork-link.md",
+    "sha256": "1ffb53b84df5af629bf64d3e43ba77012cf72a8a61b8d072cc134a2290fc332c",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels-hourly/README.md",
+    "site_source": "sources/data-pixels-hourly.md",
+    "sha256": "bf1ace8f69ed7d37eb3d5ef36fe3322de65bd826bee41cfacba0199085f1c3bc",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels-hourly/LINK.md",
+    "site_source": "sources/data-pixels-hourly-link.md",
+    "sha256": "0d53131da2b618a544c9baad8719d694d92c7a54693eb68fda5b26dae64f7a4b",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "data/pixels-hourly/README-activity.md",
+    "site_source": "sources/data-activity.md",
+    "sha256": "ca95c4106c8c71c23eba51ef52be5016a6b435638a607dab7cec8ec2b230e5e8",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/census/README.md",
+    "site_source": "sources/census-README.md",
+    "sha256": "3ac647004d0d458ddb73238040ed96eb763bad5cd2d76ba757709b197a25099c",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/census/builders/README.md",
+    "site_source": "sources/census-builders.md",
+    "sha256": "ca2eefc0509ab311117491f04cdee153a8ed2042c7eb9273841622e432d3de70",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/CONTRACT.v32.md",
+    "site_source": "sources/coder-contract.md",
+    "sha256": "986f8b520bce808eebe5b93c317f73e60f747b8bfab34f8ad51e600ae48218e1",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/CONTRACT-case-lead.v32.md",
+    "site_source": "sources/case-lead.md",
+    "sha256": "7b84da1d4ca2a5f3375bdefbb0881a9d738e5273480eecc2cddb8b1c77e16974",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/CONTRACT-fleet-coder.v32.md",
+    "site_source": "sources/fleet-coder.md",
+    "sha256": "79c8ad2f723af36a296601fe9ea63b9c5b679e20e83bd66c2387ba1e9be42af3",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/CONTRACT-scheduler.md",
+    "site_source": "sources/scheduler.md",
+    "sha256": "7e5fbadee821e22351543d42546d0663a9b2b0fcdad58ad220739a47d7f63a56",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/CONTRACT-brief-writer.v32.md",
+    "site_source": "sources/brief-writer.md",
+    "sha256": "0b6139ce0c9d11e09e978911db1aafa3520985ecdff050d5e6f53108dcb7f122",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/AGENT.v32.md",
+    "site_source": "sources/coder-agent.md",
+    "sha256": "f428e33ead41ba54ae06d7001b6fb729b60e4ea6990b1d251b0521062594c82f",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/TOOLS-SPEC.md",
+    "site_source": "sources/coder-tools.md",
+    "sha256": "345ecc3e886596f9a537b2e1728e0647063edd0854694c53aa0538a3cf17bf70",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/README.md",
+    "site_source": "sources/coder-instrument.md",
+    "sha256": "980387f6c055f495ec2804bc3e43a602b2fb9a88cbf9dd41e0d00d9a4662ed65",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/CHANGELOG-v32.md",
+    "site_source": "sources/coder-changelog.md",
+    "sha256": "de3f6de8b2db827b2372982409f116206c88fb028c7fcfb9629bd12ce60eb933",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/rationale/V31-PREVENTION-RATIONALE.md",
+    "site_source": "sources/coder-v31-rationale.md",
+    "sha256": "076c254784cbc43c0163ea3756dc8bb029c38f51f0b8c165280b5736554a554f",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/instrument/v32/rationale/V32-C5-PREVENTION-RATIONALE.md",
+    "site_source": "sources/coder-v32-rationale.md",
+    "sha256": "8fd2a2a842b0d9ecd540e38b454c4db0081cf8870a0b4afffc558968b5bcd4a2",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/CODING-SCHEDULER.md",
+    "site_source": "sources/coding-scheduler.md",
+    "sha256": "22eb395d7e79a10570846846d68db9ea3a85fad8a411fb1e43fa23d7e58a1952",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/CASE-LEAD-PROMPT.md",
+    "site_source": "sources/case-lead-prompt.md",
+    "sha256": "72b66473307467a8cf1dadfcada45bcf164a4139f53db4c374cc249839d3858a",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/CHECKPOINTS.md",
+    "site_source": "sources/coder-checkpoints.md",
+    "sha256": "0578b05a13106bc55d8f8b27cda5701c2eb7d264acffe36927f7c8dbe3812575",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/BRIEF-COORDINATOR.md",
+    "site_source": "sources/brief-coordinator.md",
+    "sha256": "0276e9a00b18f373de3f949debda16e9e40b9a8f0db07d9eeaf4d32af9ca92ab",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/BRIEF-WRITER-PROMPT.md",
+    "site_source": "sources/brief-writer-prompt.md",
+    "sha256": "d30dae43e1cb3a99973d29e579af5ad8561375a822a6ba1d2c2df7c87356393b",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/REPAIR-QUEUE-RESTART-RULES.md",
+    "site_source": "sources/repair-queue.md",
+    "sha256": "f3f3ea9ed355a050134d9540387d16353dacf376be4b7bbc2456397eacf94d46",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "coder/handler/VERIFIED-RUN-ARCHIVES.md",
+    "site_source": "sources/verified-archives.md",
+    "sha256": "c13ef3e5fbe4bfa6d664e3d788b31f34af876e2e81c26e2bc60b206ad6158a07",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/handler/HANDLER.md",
+    "site_source": "sources/handler.md",
+    "sha256": "0aa8f43ae8886a9b4d99ec1300c74c8cc819919207905cf3562210118c281b62",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/handler/claude-adapter/LEGS.md",
+    "site_source": "sources/legs.md",
+    "sha256": "9bac7939c271749d66513149ff0b2f8b5b9c1d2d14c5fa8d237a99af041a5d10",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "OPENAI.md",
+    "site_source": "sources/codex.md",
+    "sha256": "551b4a33f76745967d0883dd50f5512e11b62f7cd77579119bb2881320d51242",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/CONTRACT-aggregator.md",
+    "site_source": "sources/contract.md",
+    "sha256": "ec92317becd24b53eecf35faa87b629893b0649a6037a59020ddea9dd9d929ef",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/METHOD.md",
+    "site_source": "sources/method.md",
+    "sha256": "5daaeb2319f61a54cfa4d9acbcd077e3a1405edd470795005fb0e152e27fc415",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/WRITING.md",
+    "site_source": "sources/writing.md",
+    "sha256": "df6718d74c3a296de39288f338541dad1126651255b573ee3e5de6681ff5026d",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/STANDING-INSTRUCTIONS.md",
+    "site_source": "sources/standing.md",
+    "sha256": "ccd2b0839511624273133f66466c7721a361e45b69e60617a131d44a0a7c8ecb",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/HOW-TO-RUN.md",
+    "site_source": "sources/how-to-run.md",
+    "sha256": "d505880783e8d13966e29e64d4b91fc94823f3d4135461af0d7338dfcaeabd2b",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/PLATFORM-claude.md",
+    "site_source": "sources/platform-claude.md",
+    "sha256": "c7b542f7e4578bcf4856a852e16c5e0feb55f3dcd3cdd10e0e91a98038bb09d1",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/PLATFORM-codex.md",
+    "site_source": "sources/platform-codex.md",
+    "sha256": "184d65e91d1886d9cd89403f73cba5fd9d5ef9baa09897971c4d421f3f8103ac",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/SCHEMA-adaptations.md",
+    "site_source": "sources/adaptations.md",
+    "sha256": "88aac5a1b16141f3914a3994b2d881a8274b012f050e8ccd6cc47e319c514914",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-A1-reading-room-notes.md",
+    "site_source": "sources/stage-A1.md",
+    "sha256": "9a8ba05c6754cf316fd0fad43bedf08701a067a872c4cfad5809d3ff01653a76",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-B1-coding-third-order-scheme.md",
+    "site_source": "sources/stage-B1.md",
+    "sha256": "a2b733dded3046ba611c65e979beb597ef8ef26e8b625dea28469a254219f8a0",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-B2-coding-pilot.md",
+    "site_source": "sources/stage-B2.md",
+    "sha256": "79c92744bb7b7b26941cf7738a849cf64f121caae77e8a940af97c0e570c8808",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-B3-coding-fleet.md",
+    "site_source": "sources/stage-B3.md",
+    "sha256": "31fd906762e1d2ebf478bcf621410fad82d17a1432defed958a75cb8c07adcc7",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-B4-coding-adjudication-and-freeze.md",
+    "site_source": "sources/stage-B4.md",
+    "sha256": "7fb68adfcd6a1dab15368728559d3eb3c91162c555a8a69b26a53571dfd16ebe",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-C1-model-structuring.md",
+    "site_source": "sources/stage-C1.md",
+    "sha256": "04bfb71195594cbaa2dd500b592419c539c2ea7afdde92d2db2de7ec25183b58",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-C2-model-the-loop.md",
+    "site_source": "sources/stage-C2.md",
+    "sha256": "e9a2ee259d281a421640230c300d693a7f07d3081ec1549bfa097202269ecd17",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-C3-model-literature.md",
+    "site_source": "sources/stage-C3.md",
+    "sha256": "9232e37ea6cda07a6eb28bef367ce7202231b37cc3121dfa051d82a5b3cf2641",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-C4-model-the-field.md",
+    "site_source": "sources/stage-C4.md",
+    "sha256": "dec5968155f6420e1b758384681cf0d20406c7680217e1ece452270212c43f7f",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-C5-model-account.md",
+    "site_source": "sources/stage-C5.md",
+    "sha256": "c0904fc40910da0b2d37fa801159ea39d85b84df09263c343aec2c36104756c4",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-D1-adaptation-return-build.md",
+    "site_source": "sources/stage-D1.md",
+    "sha256": "e7f7a3da33a3603708b1c320337ce205f55d4ae6500807d4558c3a94853fdc4d",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-D2-adaptation-labelers-and-verdicts.md",
+    "site_source": "sources/stage-D2.md",
+    "sha256": "2fe159d9d0967d09e425785ecba74e0e07f9220e4d4fed63ddaa8f622c3f81de",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-D3-adaptation-adjudication.md",
+    "site_source": "sources/stage-D3.md",
+    "sha256": "3dc71c70120dae278ea87958a4b45f2ac02b44eacbd1a2ba2e3534884b623338",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-D4-forming-the-tree.md",
+    "site_source": "sources/stage-D4.md",
+    "sha256": "a28da602661375431d68a7fdf90920ef62bca59fddfe37fde9462a8f891cb3c9",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-D5-forming-branch-accounts.md",
+    "site_source": "sources/stage-D5.md",
+    "sha256": "d00fff0cabc3825eb40949f2e19c0421140116c13b0b17b5fa33d3c875cf1640",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-D6-forming-the-retelling.md",
+    "site_source": "sources/stage-D6.md",
+    "sha256": "b82b0af634ba86053b074d7f0ddedab99830e4fe324fcd079ded914b0d0d2485",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-E1-formalizing-audit.md",
+    "site_source": "sources/stage-E1.md",
+    "sha256": "7c5d45ab13dbdde7e28373dcbc2a6c26447da0c060e1b54acee1a08460173bc3",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "aggregator/instrument/stages/STAGE-E2-formalizing-feedback.md",
+    "site_source": "sources/stage-E2.md",
+    "sha256": "19de4da8d6adc78bb837a997065744d5f3ba5ef6b8a8e10144d7a3cd051a4501",
+    "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624"
+  },
+  {
+    "path": "website/community-contracts/v30/CONTRACT.v30.md",
+    "site_source": "sources/v30-coder-contract.md",
+    "sha256": "121b0472ebd612751ef1060e1b9f28f5db51e327cf2e07441032e3cd2163fe51",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/v30/CONTRACT-case-lead.v30.md",
+    "site_source": "sources/v30-case-lead.md",
+    "sha256": "d472caa6ee824832d056a518570aa6063dddaa4956c119d17440ad0285e44991",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/v30/CONTRACT-fleet-coder.v30.md",
+    "site_source": "sources/v30-fleet-coder.md",
+    "sha256": "ea62d867e549abcff3581ea84eea08fe51c929a99454612b6447a7eed330c1a5",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/v30/CONTRACT-brief-writer.v30.md",
+    "site_source": "sources/v30-brief-writer.md",
+    "sha256": "03a227ddc54ba3bf4c46c08ffcc5ecafbe0f036b75db6b2cbf1d2ba663be2925",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/v30/AGENT.v30.md",
+    "site_source": "sources/v30-coder-agent.md",
+    "sha256": "c72461f997957658ffc2a11b9a0172bed33f400b9df77c7f7574336548104e89",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/v30/CHANGELOG-v30.md",
+    "site_source": "sources/v30-changelog.md",
+    "sha256": "487157dd826fd4e20b510fef0e64e4d7eb87848212052c7c871c3e1575345c8d",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/room-model/CONTRACT.md",
+    "site_source": "sources/room-model.md",
+    "sha256": "ef116a840835667f5336a86d4c1db161db1e5de53e81191649ea1ca56744b0a2",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/PILOT-AMENDMENT.md",
+    "site_source": "sources/pilot-amendment.md",
+    "sha256": "425a1443e9703a2feb253d6ef564ebec9a8aecbce086b1afcf5c87af00de1782",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/CROSSWALK.md",
+    "site_source": "sources/room-crosswalk.md",
+    "sha256": "71be757f136a3b6200c617598343ba6687958d3f22116021e8447fc9857b1e31",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/PROFILE.md",
+    "site_source": "sources/room-profile.md",
+    "sha256": "361232b4de0bebbe90101d70acf252db9c0775feee0897740a9aa0bc2b2e226d",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/global/CONTRACT-aggregator.md",
+    "site_source": "sources/room-contract-v43.md",
+    "sha256": "0898d8b5726d357739d7b61cebe059e757fb4226e017f13955ba0c7b7ac59925",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/global/stages/STAGE-C1-model-structuring.md",
+    "site_source": "sources/room-stage-C1.md",
+    "sha256": "958ea51caf47fa9b2a89212ff57482b46471d4d50a9114cd0cbdf18871796f2f",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/handler/ROOM-HANDLER.md",
+    "site_source": "sources/room-handler.md",
+    "sha256": "0bc6b3535ca6ad83487c96c23bece78969d4446468a4caa9dc6475158189e997",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/handler/SNAPSHOT-POLICY.md",
+    "site_source": "sources/room-snapshots.md",
+    "sha256": "854ce115bc20f02c07cdcfe11d75953375e00b34441ee0299360c4206957d84e",
+    "commit": null
+  },
+  {
+    "path": "website/community-contracts/R6/handler/AMENDMENTS.md",
+    "site_source": "sources/room-amendments.md",
+    "sha256": "a0ec9f7138c47ecb1b658d54b7a15bd7ae6628298fb9b885054937d3b354856c",
+    "commit": null
+  }
+]

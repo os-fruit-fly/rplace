@@ -1,0 +1,58 @@
+# r/place agent index
+
+This repository accompanies the paper An Organizational Fruit Fly: r/place as a Model Organism for Cumulative Grounded Theory. It holds a frozen dataset and a revisable instrument.
+
+## Research context
+
+- [r/place as a model organism](organism.md).
+- [Why compose single cases](composition.md).
+- [One shared research object](guides/project.md).
+
+> Use these reading keys to find the authoritative instrument. They do not replace it.
+
+[Start here](agents.md). Use [resolved source links](reading/manifest.json); exact source bytes and hashes remain in [sources/manifest.json](sources/manifest.json).
+
+## Findings
+
+- [Read the completed study](results.md): PlaceNL and the population model.
+- [PlaceNL coding](results/data/case.md), [timeline](results/data/timeline.md), [A1 note](results/data/a1-note.md), [local R6 model](results/data/R6-model.md), and [all return decisions](results/data/return-decisions.json).
+- [Population model](results/data/MODEL-D3.md), [served ladder](results/data/LADDER.md), and [all community profiles](results/data/population-rows.csv).
+
+## Choose a route
+
+- [From raw data](agents/download.md).
+- [From coded communities](agents/aggregator.md).
+- [Interview a checkpoint](agents/interview.md).
+
+## Handlers, in order
+
+1. [Collection handler, new](agents/collection.md): Prepare the data.
+2. [Existing coding handler reading key](agents/communities.md): Code communities.
+3. [Existing aggregator handler reading key](agents/aggregator.md): Run the aggregator.
+
+## Stage reading keys
+
+- [A1 Reading: community notes](agents/A1.md)
+- [B1 Coding: third-order scheme](agents/B1.md)
+- [B2 Coding: pilot](agents/B2.md)
+- [B3 Coding: independent readers](agents/B3.md)
+- [B4 Coding: adjudication and freeze](agents/B4.md)
+- [C1 Model: structuring](agents/C1.md)
+- [C2 Model: the loop](agents/C2.md)
+- [C3 Model: literature](agents/C3.md)
+- [C4 Model: r/place](agents/C4.md)
+- [C5 Model: account](agents/C5.md)
+- [D1 Adaptation: return build](agents/D1.md)
+- [D2 Adaptation: labelers and verdicts](agents/D2.md)
+- [D3 Adaptation: adjudication](agents/D3.md)
+- [D4 Forming: the tree](agents/D4.md)
+- [D5 Forming: branch accounts](agents/D5.md)
+- [D6 Forming: the retelling](agents/D6.md)
+- [E1 Formalizing: audit](agents/E1.md)
+- [E2 Formalizing: feedback](agents/E2.md)
+
+## Checkpoint interviews
+
+- [Checkpoint catalog](catalog.json): The baseline publication census, not a live agent.
+- [Dated historical context](guides/history.md) and [evidence map](history.json): Later verified closes, actual model settings, fork lineage and instruction amendments. Read these with the baseline catalog.
+- [Interview runtime](runtime.md): An interview is an audit copy. Never update the original run, infer missing files from the latest workspace, or substitute a fresh agent when native restoration fails.

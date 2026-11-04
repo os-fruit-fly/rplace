@@ -1,0 +1,248 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage D1. The return: the build. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-d1-the-return-the-build">Stage D1. The return: the
+build.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-D1.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-D1.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+one. <strong>Fleet:</strong> none here; D2 runs them. You never run a
+labeler or a reader and never call a model.</p>
+<p><strong>Steps:</strong> <code>D1a</code>, one leg:
+<code>handoff.py</code> writes the folder once per version. Each leg is
+named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> before <code>handoff.py</code> runs (it
+writes the folder once, so a pause after it is a close). At a safe stop,
+check for <code>.pause</code> (<code>ls .pause</code>); if it is there,
+log where to pick up, your working hypothesis and the next room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh D1 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+<code>FLEET.md</code>, <code>SCHEMA-adaptations.md</code>, the last five
+diary entries, <code>validate.py --open D1</code>. The adaptation shelf
+arrives (METHOD.md).</p>
+<p><strong>Reads allowed:</strong> <code>model/</code> at its frozen
+hash; <code>account.md</code>; <code>implications-C5.md</code>;
+<code>propositions.jsonl</code>; <code>assignments_final.jsonl</code>;
+<code>_views/data-structure.tsv</code>; <code>_wiki/</code>; the last
+<code>story_rooms-pN.jsonl</code>; <code>prior.md</code>, into which you
+write §7 and §8 here; <code>rooms.jsonl</code> for each room's concept
+count and off-platform pointers; <code>mem.py room --size</code>; the
+rooms' coder documents through the verbs. <strong>Forbidden:</strong>
+writing any adaptation or verdict yourself; reading <code>DROPS/</code>;
+serving the canvas, a room note, your notes or another room to any task
+or packet (rule 7).</p>
+<p><strong>Outputs:</strong> <code>handoff-D/</code> with
+<code>RETURN-D.md</code>, <code>VOCABULARY.json</code>,
+<code>VERSION</code>, <code>MODEL.md</code>, <code>LADDER.md</code>,
+<code>tasks/&lt;sub&gt;/TASK.md</code> and the room's documents,
+<code>tasks/index.tsv</code>, <code>HANDLER.md</code>;
+<code>verdict-D/</code> with <code>RETURN-D2v.md</code> and the verdict
+packets; <code>prior.md</code> §7 and §8; <code>notes-D1.md</code>;
+<code>handback-D1.md</code>.</p>
+<p><strong><code>prior.md</code> §7 and §8 first.</strong> Before you
+build anything, and before any adaptation is seen, write the distance
+weights and grades for stage D4 (§7) and the concept floor and the
+off-platform threshold for <code>cannot-tell</code> (§8), each with one
+line on why that figure. §7 carries two lines in the form
+<code>distance.py</code> reads:
+<code>w = &lt;third&gt;, &lt;fourth&gt;, &lt;dimension&gt;, &lt;target&gt;</code>
+(the weight of a meeting at each level) and
+<code>g = &lt;same op&gt;, &lt;same kind&gt;, &lt;different kind&gt;, &lt;opposite&gt;</code>
+(the grades). You set them now because the model is fixed and no room
+has yet answered it. <code>done.sh</code> records
+<code>prior.md</code>'s hash at D1's close
+(<code>out/_closes/prior-D1.sha256</code>), and stage D4 refuses weights
+that changed without a departure (rule 10).</p>
+<p><strong>The model is fixed.</strong> Nothing here changes an element,
+an arrow, a fourth-order theme or a dimension. What a room does to the
+model is written against the model by a labeler and ruled on at D3; a
+change after C5 is a D3 amendment under rule 11, logged with the
+adaptation lines that caused it. This is the test the loop prepared for:
+stage C2 read rooms against every telling of the story, and the rooms
+its last story could not tell are the first ones to watch. List them in
+<code>notes-D1.md</code> from <code>story_rooms-pN.jsonl</code> before
+you build anything, so that D3 can count how they fared. The return is
+Eisenhardt's replication only if something is predicted before it is
+seen; <code>EXPECTATIONS.jsonl</code> is that prediction, and it is
+written here, before any return exists.</p>
+<h2 id="1-the-handoff-folder-schema-9">1. The handoff folder (SCHEMA
+§9)</h2>
+<p><code>handoff.py D</code> builds it from your inputs; you check it
+and write what the script cannot. Before you run it, write the two files
+only you can write: <code>MODEL-D1.md</code> (the model as prose with
+ids, below) and <code>EXPECTATIONS-D1.jsonl</code> (below). The script
+copies them in, projects the rest from <code>model/</code>, the scheme,
+<code>fourth/</code>, <code>dimensions.jsonl</code>,
+<code>assignments_final.jsonl</code>, the store and the coder documents,
+writes <code>VERSION</code>, hashes the folder into
+<code>handoff-D.sha256</code> and <code>RUN.json</code>, and prints the
+payload distribution for §3. It will not overwrite a built folder.</p>
+<ul>
+<li><code>RETURN-D.md</code>: the return specification for the labelers,
+verbatim in every task: the two outputs, the ledger line and its fields,
+the operations with their required fields, the room model's form and its
+grade line, the end marker, the reissue rule, the rule that every claim
+carries a node id and a concept id, the rule that free text lives only
+in <code>how</code>. The template ships with this stage; you do not
+rewrite it, and a defect in it goes to <code>handback-D1.md</code>.</li>
+<li><code>VOCABULARY.json</code>: the id vocabulary at the frozen model
+version: every element with id, kind, statement, tier and dimension,
+every arrow with id, kind, from, to and mechanism, and
+<code>status: tentative</code> where an entry is one; every third-order
+and fourth-order theme with id and name; the dimensions. Nothing else.
+Arrows are in it by id, so a room instantiates, restricts or contradicts
+an arrow as it does any element; an arrow with no concept in the room is
+not instantiated there. An element or arrow entered at stage C4 from the
+field carries <code>status: tentative</code> and nothing else that says
+where it came from; it goes to every room, which answers it from its own
+record like any other element, silence included (J, 2026-09-29). The
+mark <code>from-field</code> stays in
+<code>out/sealed/FIELD.jsonl</code>, which <code>handoff.py</code>
+writes and never serves; stages D3 and E1 read it and report the field's
+entries apart. An element on a form-pass tier (<code>FP-01</code> ...)
+also goes to every room, since no second-order theme lifts to it; its
+unit is the turn, and a room answers it from its turns.</li>
+<li><code>VERSION</code>: the hash of the model and its tiers as
+<code>done.sh</code> recorded it at C5d's close
+(<code>out/_closes/model-C5.sha256</code>). <code>ingest.py</code>
+rejects a return written against any other version, whole, and the
+handler reissues it.</li>
+<li><code>MODEL.md</code>: the global model as prose with ids, from
+<code>account.md</code>, cut to the ceiling the labeler's context allows
+and declared in <code>notes-D1.md</code>, with an entry for each of the
+elements the room's second-order themes were placed under appended per
+task. Every arrow in it reads <em>when X, Y follows, because Z</em>; it
+describes the universe, not the mode, so that a labeler can read an odd
+room as one way of running the same structure. Nothing in it refers to a
+room note, a branch, your notes or the canvas.</li>
+<li><code>LADDER.md</code>: the coding table from quote to aggregate
+dimension with representative concepts for every tier the model uses,
+projected from <code>_views/data-structure.tsv</code> for the dimensions
+and elements in <code>MODEL.md</code>. A labeler that sees only its own
+concepts cannot understand a dimension, so it cannot say what the model
+fails to explain.</li>
+<li><code>EXPECTATIONS.jsonl</code>, sealed in <code>out/sealed/</code>
+(out of the handler's and the labelers' reach), per room, from
+<code>implications-C5.md</code>, <code>propositions.jsonl</code> and the
+room's placements, which elements the model expects to instantiate and
+which to be absent, one line:
+<code>{"sub": "...", "expect_instantiate": ["P07", "A03"], "expect_absent": ["P03"], "from": ["implications-C5 §2", "placements"], "why": "one clause per element, in the model's terms"}</code>.
+Rule 6 governs every <code>expect_absent</code>: an element the room had
+no opportunity to carry is <code>not-testable-here</code>, not expected
+absent. Sealed by the harness, kept outside the readers' and the
+labelers' directories, never served, scored at E1. This is what makes
+the return a replication and not a re-reading.</li>
+<li><code>tasks/&lt;sub&gt;/TASK.md</code>: the labeler's instruction
+(the template ships with this stage): read the coder documents, rewrite
+<code>case.md</code> in the model's vocabulary as
+<code>model-D.md</code>, write <code>adaptations.jsonl</code>, grade the
+fit; the room's <code>case.md</code>, <code>codes.jsonl</code>,
+<code>themes.jsonl</code>, <code>brief.md</code>, <code>forest.md</code>
+(the room's coded threads as reply trees,
+<code>trees/&lt;sub&gt;.md</code>, so that
+<code>evidence.transitions</code> rests on the forest);
+<code>placements.jsonl</code>, the placements of the room's second-order
+themes (third-order theme, fourth-order theme, dimension, or none);
+where the outputs go. Not in any task: the room note, the account beyond
+<code>MODEL.md</code>, your notes, the propositions, any canvas field,
+any other room. A labeler who sees a large area grades a success; rule 7
+names this fleet.</li>
+<li><code>tasks/index.tsv</code>: one row per room with
+<code>items_in_window</code> and the payload in bytes from
+<code>mem.py room --size</code> plus the documents served; the handler
+dispatches by it, size ascending.</li>
+<li><code>HANDLER.md</code>: the adaptation handler's brief (ships with
+this stage): dispatch by size ascending; how to run a labeler in Codex,
+one fork of the matching original case-lead checkpoint per room, the
+model and session id recorded in
+<code>DROPS/D/&lt;sub&gt;/run.json</code>; the per-room check
+<code>ingest.py --check &lt;sub&gt;</code> and the repair; the return
+path <code>DROPS/D/&lt;sub&gt;/</code>; that completion comes before any
+limit and the handler marks a room <code>unreturned</code> in
+<code>DROPS/D/UNRETURNED.tsv</code> only when it cannot return it;
+<code>DROPS/D/DONE</code> with the counts; what never to do (no access
+to <code>out/</code> beyond this folder, no edits to the vocabulary, no
+merging of rooms, no summarising the model for a labeler).</li>
+</ul>
+<h2 id="2-the-verdict-fleets-packets">2. The verdict fleet's
+packets</h2>
+<p><code>handoff.py D</code> writes them too, into
+<code>verdict-D/</code> (<code>--verdict-only</code> rebuilds them
+alone): per room, the model as prose with ids, the room's second-order
+themes with their placements, the room's concepts the model did not use
+(those of themes placed nowhere, and a seeded sample of those no element
+cites), the verdict criterion from FLEET.md §3 verbatim, and none of the
+coder's prose (no <code>case.md</code>, no theme notes), no other room,
+under the 50 KB ceiling with the end marker and the line telling the
+reader to confirm it reached it. The concept floor and the off-platform
+threshold for <code>cannot-tell</code> are read from
+<code>prior.md</code> into the specification, and each packet states the
+room's concept count and off-platform pointers from
+<code>rooms.jsonl</code> beside them, so that the reader does not
+estimate what the store already holds; every verdict carries the count
+(contract §5).</p>
+<p><code>RETURN-D2v.md</code>, frozen with this file, and
+<code>RETURN-D2v.schema.json</code>, which <code>fleet.py</code> checks
+every line against (<code>tools/dreturn.py</code>): the verdict, the
+themes and the unused concepts it rests on, one sentence, the end
+marker. The return line:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;reader&quot;</span><span class="fu">:</span> <span class="st">&quot;r1&quot;</span><span class="fu">,</span> <span class="dt">&quot;verdict&quot;</span><span class="fu">:</span> <span class="st">&quot;composes|composes-with-residue|does-not-compose|cannot-tell&quot;</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;themes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;t03&quot;</span><span class="ot">,</span> <span class="st">&quot;t07&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;concepts&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;c0041&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;residue&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;t11&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;cannot_tell_under&quot;</span><span class="fu">:</span> <span class="st">&quot;coded-share|off-platform|both|null&quot;</span><span class="fu">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;sentence&quot;</span><span class="fu">:</span> <span class="st">&quot;one sentence, in the criterion&#39;s terms&quot;</span><span class="fu">,</span> <span class="dt">&quot;served&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;sha256 of the packet&gt;&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>The reader's id is the name of its return file
+(<code>ingest.py</code> sets it). <code>residue</code> lists the themes
+or concepts with no element and is null unless the verdict is
+<code>composes-with-residue</code>; <code>cannot_tell_under</code> names
+the threshold and is null otherwise. <code>R = 2</code> readers per
+room, so that a disagreement is visible (FLEET §1). A verdict is one
+value and is a reading with a reason, never a profile, a score or a
+coordinate: stage D4 projects it onto the branches afterwards and never
+clusters on it.</p>
+<h2 id="3-the-payload-measured">3. The payload, measured</h2>
+<p>Before the folder is hashed, write in <code>notes-D1.md</code> the
+distribution of task payloads and of verdict packets (median, p90,
+largest, from <code>tasks/index.tsv</code>), the ceiling declared for
+<code>MODEL.md</code> and what it cut from <code>account.md</code>. No
+stage carries a budget (contract §4): a room whose documents exceed what
+one labeler session can hold is not cut, not split and not read by you;
+name it in <code>notes-D1.md</code> and <code>handback-D1.md</code>, and
+the handler returns it whole or marks it <code>unreturned</code> with
+the reason. The tokens go to <code>RUN.json</code> through
+<code>done.sh</code>.</p>
+<h2 id="4-what-you-check">4. What you check</h2>
+<p>Every task resolves every id it names against
+<code>VOCABULARY.json</code>; no task and no packet holds a canvas
+field, a room note or another room's material; every room of the
+analysed set has a task, an <code>index.tsv</code> row and a verdict
+packet; <code>MODEL.md</code> fits the declared ceiling;
+<code>EXPECTATIONS.jsonl</code> has a line per room and sits outside
+both served folders; <code>VERSION</code> equals the harness's hash of
+<code>model/</code>; the folder is hashed and the hash is in
+<code>notes-D1.md</code> and <code>RUN.json</code>. A room whose task
+could not be built goes to <code>handback-D1.md</code> with why; you do
+not invent a document.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>The story-miss rooms listed; the ceiling declared; each expectation
+line written that departs from a plain reading of
+<code>implications-C5.md</code>, with why; the payload distribution; the
+folder built and hashed; any room whose task could not be built and
+why.</p>
+<h2 id="final-message">Final message</h2>
+<p>Counts: tasks built, verdict packets built, elements and arrows in
+the vocabulary, the <code>MODEL.md</code> ceiling, expectations written
+(instantiate and absent, by element), rooms
+<code>not-testable-here</code> on any element, story-miss rooms carried,
+the largest payload; the folder's hash and <code>VERSION</code>. A
+return value.</p>
+<h2 id="close">Close</h2>
+<p><strong>Stop here.</strong>
+<code>done.sh D1 --cut packets-out</code>; <code>handback-D1.md</code>;
+the head; the closing diary line. Your session ends. The labelers run in
+Codex and the verdict fleet on the reader route without you, and nothing
+of the return (D1 to D3) runs on your model until D2 is launched as the
+check leg, told that the labelers and the readers left their files in
+<code>DROPS/D/</code> and <code>_fleet_raw/D2v/</code>.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

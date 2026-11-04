@@ -1,0 +1,112 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to run the tools, v43 | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="how-to-run-the-tools-v43">How to run the tools, v43</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="how-to-run.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/how-to-run.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Everything works from inside the folder you were given. Nothing
+reaches outside it. Read this once, at stage A1. Tools marked
+<em>new</em> do not exist in v37 and are built before the run
+(<code>CHANGELOG-v37-to-v38.md</code>, "Not yet done").</p>
+<h2 id="quotes-and-the-store">Quotes and the store</h2>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/cite.py <span class="at">--room</span> hsv <span class="at">--grep</span> <span class="st">&quot;.&quot;</span> <span class="at">--n</span> 3              <span class="co"># quotes from a room, a seeded draw</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/cite.py <span class="at">--room</span> hsv <span class="at">--code</span> c0031                 <span class="co"># one concept&#39;s words with offsets</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/cite.py <span class="at">--room</span> hsv <span class="at">--theme</span> t03 <span class="at">--n</span> 5            <span class="co"># a theme&#39;s concepts</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/cite.py <span class="at">--tier</span> 3rd <span class="at">--id</span> T3-007 <span class="at">--n</span> 5            <span class="co"># exemplars under a third-order theme</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/cite.py <span class="at">--resolve</span> <span class="st">&quot;the words&quot;</span>                   <span class="co"># which concept holds these words; rejects a label</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py room hsv <span class="pp">[--</span><span class="ss">no</span><span class="pp">-</span><span class="ss">canvas</span><span class="pp">]</span> <span class="pp">[--</span><span class="ss">size</span><span class="pp">]</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py forest hsv <span class="pp">[</span><span class="ss">63x9ab</span><span class="pp">]</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py note hsv</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py codes <span class="at">--sub</span> hsv <span class="kw">|</span> <span class="ex">--theme</span> t03 <span class="kw">|</span> <span class="ex">--third</span> T3-007 <span class="kw">|</span> <span class="ex">--grep</span> <span class="st">&quot;discord&quot;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py theme hsv/t03</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py where T3-007</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py after hsv/c0031 <span class="kw">|</span> <span class="ex">pairs</span> <span class="at">--level</span> second<span class="kw">|</span><span class="ex">third</span> <span class="kw">|</span> <span class="ex">when</span> hsv</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py shelf <span class="at">--list</span> <span class="kw">|</span> <span class="ex">shelf</span> <span class="op">&lt;</span>name<span class="op">&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py rooms <span class="at">--with</span> T3-007 <span class="kw">|</span> <span class="ex">--without</span> P07 <span class="kw">|</span> <span class="ex">--with</span> restrict:P07:T3-014   <span class="co"># new</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py contrast hsv denmark                                              <span class="co"># new</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py finding F-031 <span class="kw">|</span> <span class="ex">findings</span> <span class="at">--touching</span> P07                           <span class="co"># new</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py adaptations <span class="at">--element</span> P07 [--kind correction]                    <span class="co"># new</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py ask <span class="st">&quot;is r/hsv one room or two?&quot;</span> <span class="at">--assume</span> <span class="st">&quot;one room&quot;</span>            <span class="co"># v43: a question for J</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py asks <span class="pp">[</span><span class="ss">QA1</span><span class="pp">-</span><span class="ss">001</span><span class="pp">]</span> <span class="pp">[--</span><span class="ss">open</span><span class="pp">]</span>                                         <span class="co"># v43: the questions and answers</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py audit [frame<span class="kw">|</span><span class="ex">rooms</span><span class="kw">|</span><span class="ex">retracted</span><span class="kw">|</span><span class="ex">build]</span>                             <span class="co"># v43: A1 package checks</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py table <span class="at">--from</span> 3rd <span class="kw">|</span> <span class="ex">--from</span> 2nd <span class="kw">|</span> <span class="ex">--room</span> hsv                        <span class="co"># new</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py question <span class="op">&lt;</span>slug<span class="op">&gt;</span> <span class="kw">|</span> <span class="ex">contract</span> <span class="at">--section</span> 3                            <span class="co"># new</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py log <span class="st">&quot;opened hsv for the contrast&quot;</span> <span class="at">--kind</span> opened <span class="at">--ids</span> hsv         <span class="co"># new</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py diary <span class="at">--last</span> 5 <span class="kw">|</span> <span class="ex">diary</span> <span class="at">--grep</span> P07                                 <span class="co"># new</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py mint <span class="at">--label</span> <span class="st">&quot;...&quot;</span> <span class="at">--trigger</span> hsv:t07                              <span class="co"># B1; after B1 the stamp only (C1 to D6)</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py place hsv:t07 <span class="at">--theme</span> T3-007 <span class="kw">|</span> <span class="ex">unplace</span> hsv:t07                    <span class="co"># B1 only</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py reassign hsv:t07 <span class="at">--theme</span> T3-012 <span class="at">--reason</span> <span class="st">&quot;the split&quot;</span>              <span class="co"># new, C1 to D6: a recut&#39;s re-placement</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py adjudicate <span class="op">&lt;</span>adaptation-id<span class="op">&gt;</span> --decision accept <span class="at">--reason</span> <span class="st">&quot;...&quot;</span>       <span class="co"># new, D3</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py diff-scheme <span class="op">&lt;</span>snap<span class="op">&gt;</span> <span class="kw">|</span> <span class="ex">diff-model</span> <span class="op">&lt;</span>snap<span class="op">&gt;</span>                            <span class="co"># new</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py next <span class="at">--stage</span> A1<span class="kw">|</span><span class="ex">B1</span> <span class="kw">|</span> <span class="ex">progress</span> <span class="at">--stage</span> A1                          <span class="co"># the next room: A1 from order-A1.txt, B1 from the stopping rule</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/mem.py idea <span class="st">&quot;...&quot;</span> <span class="at">--trigger</span> hsv:t07                                      <span class="co"># a prospective theme, stamped (B1)</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/saturation.py status <span class="at">--stage</span> B1 <span class="kw">|</span> <span class="ex">report</span> <span class="at">--stage</span> B1 <span class="kw">|</span> <span class="ex">order</span> <span class="at">--stage</span> B1  <span class="co"># B1&#39;s stopping rule: where it stands, the report, the order</span></span></code></pre></div>
+<p>Every call is logged to <code>out/_mem_reads-NN.jsonl</code> (NN from
+<code>--stage</code>, else the <code>.stage</code> file the harness
+writes at every hand-over). Pages are 80 lines; <code>--offset</code>
+and <code>--limit</code> page through. Placements, fourth-order themes,
+dimensions and elements are overlaid from <code>out/</code> at query
+time.</p>
+<h2 id="the-fleets-pages">The fleet's pages</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/packets.py B2<span class="kw">|</span><span class="ex">B3</span> <span class="at">--scheme</span> out/scheme_final.jsonl <span class="at">--families</span> out/families.jsonl <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">--to</span> out/_packets-NN <span class="pp">[--</span><span class="ss">exemplars</span><span class="pp">]</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/handoff.py D <span class="at">--verdict-only</span>     <span class="co"># the verdict packets alone, from the frozen MODEL-D1.md and model/</span></span></code></pre></div>
+<p>The index page, one file per family, a batch's themes with their
+sibling block; 50 KB ceiling asserted, end marker appended. The dispatch
+(<code>FLEET.md</code>) is the operator's <code>fleet.py</code>, not
+yours.</p>
+<h2 id="the-return">The return</h2>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/handoff.py D                       <span class="co"># builds out/handoff-D/ from the frozen model</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/handoff.py D <span class="at">--recheck</span> hsv,denmark  <span class="co"># the named affected rooms, from MODEL-D3.md</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/ingest.py D [--check <span class="op">&lt;</span>sub<span class="op">&gt;</span>]  <span class="co"># new: validates DROPS/D, lifts, compiles the ledger</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/rebuild.py hsv                 <span class="co"># the current local model: accepted, modified and supported particular lines; pending lines listed as unresolved (from the effective adjudicated ledger, tools/adaptation_ledger.py)</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/adaptation_tree.py <span class="at">--out</span> out    <span class="co"># D4: the adaptation dendrogram as HTML, SVG and JSON</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/chunk_compare.py <span class="at">--out</span> out <span class="at">--store</span> package/store   <span class="co"># D4: the fixed chunk-share comparison, replayable</span></span></code></pre></div>
+<h2 id="open-close-cut-views">Open, close, cut, views</h2>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/validate.py <span class="at">--open</span> NN          <span class="co"># startup counts; fails on an unresolved link</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/validate.py NN                 <span class="co"># the close-check; refuses by name what it cannot check</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/validate.py <span class="at">--links</span>            <span class="co"># new: every id in head, questions, views resolves</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/validate.py <span class="at">--self-test</span>        <span class="co"># once, at A1</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/gen_views.py NN                <span class="co"># new: _views/ and _wiki/ regenerated, hashed</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> tools/done.sh NN [--cut <span class="op">&lt;</span>name<span class="op">&gt;</span>]         <span class="co"># new: close-check, views, snap, tokens, probe, session id</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/snap.py NN move-<span class="op">&lt;</span>move<span class="op">&gt;</span>-<span class="op">&lt;</span>n<span class="op">&gt;</span>     <span class="co"># a move&#39;s snap, taken when the move is made; the leg stays open</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/counts.py . out/               <span class="co"># the denominators; run it, never read the copy</span></span></code></pre></div>
+<p><code>done.sh</code> is the leg's one exit. It runs the close-check,
+the links check and <code>gen_views.py</code>, and marks the leg closed.
+Then stop: what happens next (the snap, the recall probe in a fork of
+your session, the checkpoint) is your platform's, and your platform file
+says how.</p>
+<h2 id="your-platform">Your platform</h2>
+<p>The instrument runs on two platforms, Claude and Codex (since v41).
+Everything in this folder is the same on both but two files:
+<code>PLATFORM-claude.md</code> and <code>PLATFORM-codex.md</code> name
+the models, the efforts, the reader routes and how a leg is opened,
+closed, paused and compacted. Read yours (<code>CLAUDE.md</code> points
+Claude to its own, <code>AGENTS.md</code> points Codex to its own).</p>
+<ul>
+<li><strong>Legs.</strong> Every stage is legs; fleet stages are build,
+dispatch, check; C2 to C5 one leg per pass, every move logged and
+snapped as it is made; D3 one leg per element group. Each ordinary leg
+continues the previous leg's conversation from its committed checkpoint,
+in the same folder; the startup packet (the standing instructions')
+orients that continuation and does not replace it.</li>
+<li><strong><code>_head.md</code></strong> is at most 3,000 words,
+rewritten at every close and before every cut.</li>
+<li><strong>Three limits of the runner.</strong> A tool result can be
+clipped without saying so above a fixed size: page long files. A shell
+call past its timeout is killed: run long scripts in the background with
+output to a file. Nothing in <code>out/</code> is deleted.</li>
+<li><strong>Forks.</strong> The operator may fork the run at a stage
+boundary (after A1, after C1, after C5, and at any cut). You are not
+told you are a fork; the carried fork is chosen by the rule in
+<code>RUN.json</code>, declared before any fork ran.</li>
+</ul>
+<h2 id="stage-00s-builders">Stage 00's builders</h2>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/build_store.py <span class="at">--root</span> . <span class="at">--input</span> RUN/INPUT/coders   <span class="co"># drops retracted concepts; writes README-store.md</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/transitions.py <span class="at">--root</span> .</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/relations.py <span class="at">--root</span> .                                <span class="co"># new: the mention graph and canvas adjacency</span></span></code></pre></div>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

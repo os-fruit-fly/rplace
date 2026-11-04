@@ -1,0 +1,261 @@
+{
+ "checkpoint_id": "community--placehearts--R6",
+ "bundle_sha256": "9dbac787d8300642dd47918961d39381aa0b8ba03586dfa264e888e186c520a0",
+ "snapshot_manifest_sha256": null,
+ "recipe_sha256": "3a0e8eb623d5a1eae9356b0921528d1e1eca75b924773afd757672be2a1035c4",
+ "commit": "c070d990be88234ccd74101d4104160e71a28c5e",
+ "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+ "files": [
+  {
+   "path": "workspace/room/run/out/case.md",
+   "sha256": "d3d4730100e114eae40afe9416813ce7827c813202bed083d0d9b70515d01754",
+   "bytes": 12949,
+   "source_file": "record-files/d3d4730100e114eae40afe9416813ce7827c813202bed083d0d9b70515d01754.md",
+   "origin": {
+    "blob": "06d55bb384d232e0fd93d26fa38abe2ee3607d7b",
+    "format": "tar-zstd",
+    "member": "run/out/case.md",
+    "path": "coder/rooms/placehearts/run.tar.zst"
+   },
+   "reading_sha256": "d3d4730100e114eae40afe9416813ce7827c813202bed083d0d9b70515d01754",
+   "reading_bytes": 12949,
+   "reading_file": "d3d4730100e114eae40afe9416813ce7827c813202bed083d0d9b70515d01754.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": false,
+   "page": "01-case",
+   "raw": "../files/d3d4730100e114eae40afe9416813ce7827c813202bed083d0d9b70515d01754.reading.md"
+  },
+  {
+   "path": "workspace/room/run/out/lexicon.md",
+   "sha256": "1ef81bcfd854c3a2a67babdc2abf7b84e67e3dc2c782c128d8bc1425bfa7a052",
+   "bytes": 813,
+   "source_file": "record-files/1ef81bcfd854c3a2a67babdc2abf7b84e67e3dc2c782c128d8bc1425bfa7a052.md",
+   "origin": {
+    "blob": "06d55bb384d232e0fd93d26fa38abe2ee3607d7b",
+    "format": "tar-zstd",
+    "member": "run/out/lexicon.md",
+    "path": "coder/rooms/placehearts/run.tar.zst"
+   },
+   "reading_sha256": "1ef81bcfd854c3a2a67babdc2abf7b84e67e3dc2c782c128d8bc1425bfa7a052",
+   "reading_bytes": 813,
+   "reading_file": "1ef81bcfd854c3a2a67babdc2abf7b84e67e3dc2c782c128d8bc1425bfa7a052.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": false,
+   "page": "02-lexicon",
+   "raw": "../files/1ef81bcfd854c3a2a67babdc2abf7b84e67e3dc2c782c128d8bc1425bfa7a052.reading.md"
+  },
+  {
+   "path": "workspace/room/run/out/timeline.md",
+   "sha256": "bd2e867a992295b9abc4cdf21f1797a18bd05e719a3d64dfb3ee54f6d019eb57",
+   "bytes": 1693,
+   "source_file": "record-files/bd2e867a992295b9abc4cdf21f1797a18bd05e719a3d64dfb3ee54f6d019eb57.md",
+   "origin": {
+    "blob": "06d55bb384d232e0fd93d26fa38abe2ee3607d7b",
+    "format": "tar-zstd",
+    "member": "run/out/timeline.md",
+    "path": "coder/rooms/placehearts/run.tar.zst"
+   },
+   "reading_sha256": "55425453bdb79a2bf67cc7a7adf6af23842dd2a6f21bc1a6afa17abb212aa272",
+   "reading_bytes": 1906,
+   "reading_file": "bd2e867a992295b9abc4cdf21f1797a18bd05e719a3d64dfb3ee54f6d019eb57.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "03-timeline",
+   "raw": "../files/bd2e867a992295b9abc4cdf21f1797a18bd05e719a3d64dfb3ee54f6d019eb57.reading.md"
+  },
+  {
+   "path": "workspace/room/run/out/final_message.md",
+   "sha256": "747d6efbbf321ce80ca8d8cb1fee3b27710628608ef27c80b54e6d46312e9b6f",
+   "bytes": 283,
+   "source_file": "record-files/747d6efbbf321ce80ca8d8cb1fee3b27710628608ef27c80b54e6d46312e9b6f.md",
+   "origin": {
+    "blob": "06d55bb384d232e0fd93d26fa38abe2ee3607d7b",
+    "format": "tar-zstd",
+    "member": "run/out/final_message.md",
+    "path": "coder/rooms/placehearts/run.tar.zst"
+   },
+   "reading_sha256": "747d6efbbf321ce80ca8d8cb1fee3b27710628608ef27c80b54e6d46312e9b6f",
+   "reading_bytes": 283,
+   "reading_file": "747d6efbbf321ce80ca8d8cb1fee3b27710628608ef27c80b54e6d46312e9b6f.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": false,
+   "page": "04-final_message",
+   "raw": "../files/747d6efbbf321ce80ca8d8cb1fee3b27710628608ef27c80b54e6d46312e9b6f.reading.md"
+  },
+  {
+   "path": "workspace/out/account.md",
+   "sha256": "158172e65e178c918cda67f830315030394bee5e657422170cd8b4ae32a3edf4",
+   "bytes": 10871,
+   "source_file": "record-files/158172e65e178c918cda67f830315030394bee5e657422170cd8b4ae32a3edf4.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/account.md"
+   },
+   "reading_sha256": "7f8deb8b32f705d4f36d9887d3a1f3653c74961d166254a94c86fe8353e7cdd4",
+   "reading_bytes": 11098,
+   "reading_file": "158172e65e178c918cda67f830315030394bee5e657422170cd8b4ae32a3edf4.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "05-account",
+   "raw": "../files/158172e65e178c918cda67f830315030394bee5e657422170cd8b4ae32a3edf4.reading.md"
+  },
+  {
+   "path": "workspace/out/model.md",
+   "sha256": "5e1934954b8aeed91d1e3609fd50dc382e1bdddf6b21866fffc8111dd714d716",
+   "bytes": 15744,
+   "source_file": "record-files/5e1934954b8aeed91d1e3609fd50dc382e1bdddf6b21866fffc8111dd714d716.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/model.md"
+   },
+   "reading_sha256": "3debe01885f638f3a0864da2d3c61bdd5027def05626872fb1b8d1c1d37de7f5",
+   "reading_bytes": 15849,
+   "reading_file": "5e1934954b8aeed91d1e3609fd50dc382e1bdddf6b21866fffc8111dd714d716.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "06-model",
+   "raw": "../files/5e1934954b8aeed91d1e3609fd50dc382e1bdddf6b21866fffc8111dd714d716.reading.md"
+  },
+  {
+   "path": "workspace/out/data_structure.md",
+   "sha256": "da06735578a89c99b63051d635b36c7286a431b2df3bceb02d2ff2095e4208aa",
+   "bytes": 9972,
+   "source_file": "record-files/da06735578a89c99b63051d635b36c7286a431b2df3bceb02d2ff2095e4208aa.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/data_structure.md"
+   },
+   "reading_sha256": "ab9ab6a6a8395d1b8d78fa5acebf8ed9493d1295578f105d8882a79dca4d7c4b",
+   "reading_bytes": 10428,
+   "reading_file": "da06735578a89c99b63051d635b36c7286a431b2df3bceb02d2ff2095e4208aa.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "07-data_structure",
+   "raw": "../files/da06735578a89c99b63051d635b36c7286a431b2df3bceb02d2ff2095e4208aa.reading.md"
+  },
+  {
+   "path": "workspace/out/figure-C5.md",
+   "sha256": "1056e359932275db208b6f5920af0b9d1ddc3a4dafd2486fcd9edc48261f3ad3",
+   "bytes": 4074,
+   "source_file": "record-files/1056e359932275db208b6f5920af0b9d1ddc3a4dafd2486fcd9edc48261f3ad3.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/figure-C5.md"
+   },
+   "reading_sha256": "1056e359932275db208b6f5920af0b9d1ddc3a4dafd2486fcd9edc48261f3ad3",
+   "reading_bytes": 4074,
+   "reading_file": "1056e359932275db208b6f5920af0b9d1ddc3a4dafd2486fcd9edc48261f3ad3.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": false,
+   "page": "08-figure-C5",
+   "raw": "../files/1056e359932275db208b6f5920af0b9d1ddc3a4dafd2486fcd9edc48261f3ad3.reading.md"
+  },
+  {
+   "path": "workspace/out/claims.md",
+   "sha256": "6f9d4837e1854eeabb2fed9db08a855c5f17d927bea4e786e34be5cea6b04767",
+   "bytes": 7298,
+   "source_file": "record-files/6f9d4837e1854eeabb2fed9db08a855c5f17d927bea4e786e34be5cea6b04767.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/claims.md"
+   },
+   "reading_sha256": "6f9d4837e1854eeabb2fed9db08a855c5f17d927bea4e786e34be5cea6b04767",
+   "reading_bytes": 7298,
+   "reading_file": "6f9d4837e1854eeabb2fed9db08a855c5f17d927bea4e786e34be5cea6b04767.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": false,
+   "page": "09-claims",
+   "raw": "../files/6f9d4837e1854eeabb2fed9db08a855c5f17d927bea4e786e34be5cea6b04767.reading.md"
+  },
+  {
+   "path": "workspace/out/fourth/fourth.md",
+   "sha256": "adfba865c9f2e4893e118b63318494ab031af0351685579d9b3bcf1d7a01972b",
+   "bytes": 17101,
+   "source_file": "record-files/adfba865c9f2e4893e118b63318494ab031af0351685579d9b3bcf1d7a01972b.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/fourth/fourth.md"
+   },
+   "reading_sha256": "e01502ae26a335506c34b499e32e5d36a673673de5e1bbf7d434e3cb26915a34",
+   "reading_bytes": 17468,
+   "reading_file": "adfba865c9f2e4893e118b63318494ab031af0351685579d9b3bcf1d7a01972b.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "10-fourth",
+   "raw": "../files/adfba865c9f2e4893e118b63318494ab031af0351685579d9b3bcf1d7a01972b.reading.md"
+  },
+  {
+   "path": "workspace/out/structure.md",
+   "sha256": "f394510940a21be5915e4b49a39db54a815440c799d9fe8191e1e9734828b1a1",
+   "bytes": 41387,
+   "source_file": "record-files/f394510940a21be5915e4b49a39db54a815440c799d9fe8191e1e9734828b1a1.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/structure.md"
+   },
+   "reading_sha256": "973b8ab37ad95d50d5cae588800cb2af2f78f2b71b14106850210d2891aede5a",
+   "reading_bytes": 42224,
+   "reading_file": "f394510940a21be5915e4b49a39db54a815440c799d9fe8191e1e9734828b1a1.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "11-structure",
+   "raw": "../files/f394510940a21be5915e4b49a39db54a815440c799d9fe8191e1e9734828b1a1.reading.md"
+  },
+  {
+   "path": "workspace/out/within_case.md",
+   "sha256": "882277132a9212f870982c19fc5d09d3560f2e798cdda8103c655b940c976ecc",
+   "bytes": 6917,
+   "source_file": "record-files/882277132a9212f870982c19fc5d09d3560f2e798cdda8103c655b940c976ecc.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/within_case.md"
+   },
+   "reading_sha256": "98062f25abaad8a336dee1dc92d2a35a36f5df1b4a4bde922952097c5de7ac0e",
+   "reading_bytes": 7230,
+   "reading_file": "882277132a9212f870982c19fc5d09d3560f2e798cdda8103c655b940c976ecc.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": true,
+   "page": "12-within_case",
+   "raw": "../files/882277132a9212f870982c19fc5d09d3560f2e798cdda8103c655b940c976ecc.reading.md"
+  },
+  {
+   "path": "workspace/out/notes-R6.md",
+   "sha256": "3c98172b604d4b1e3ee78db8168a4eae0804fa5f127137e8a59321c3d96d40e7",
+   "bytes": 10127,
+   "source_file": "record-files/3c98172b604d4b1e3ee78db8168a4eae0804fa5f127137e8a59321c3d96d40e7.md",
+   "origin": {
+    "supplement": null,
+    "member": "workspace/out/notes-R6.md"
+   },
+   "reading_sha256": "3c98172b604d4b1e3ee78db8168a4eae0804fa5f127137e8a59321c3d96d40e7",
+   "reading_bytes": 10127,
+   "reading_file": "3c98172b604d4b1e3ee78db8168a4eae0804fa5f127137e8a59321c3d96d40e7.reading.md",
+   "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+   "names_substituted": false,
+   "page": "13-notes-R6",
+   "raw": "../files/3c98172b604d4b1e3ee78db8168a4eae0804fa5f127137e8a59321c3d96d40e7.reading.md"
+  }
+ ],
+ "comparison": {
+  "parent": "community--placehearts--coding-close",
+  "added": [
+   "workspace/out/account.md",
+   "workspace/out/model.md",
+   "workspace/out/data_structure.md",
+   "workspace/out/figure-C5.md",
+   "workspace/out/claims.md",
+   "workspace/out/fourth/fourth.md",
+   "workspace/out/structure.md",
+   "workspace/out/within_case.md",
+   "workspace/out/notes-R6.md"
+  ],
+  "changed": [],
+  "unchanged": [
+   "workspace/room/run/out/case.md",
+   "workspace/room/run/out/lexicon.md",
+   "workspace/room/run/out/timeline.md",
+   "workspace/room/run/out/final_message.md"
+  ],
+  "not_selected_here": []
+ }
+}

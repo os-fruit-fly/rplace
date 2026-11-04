@@ -1,0 +1,127 @@
+{
+  "checkpoint_id": "aggregator--claude-v43-1--C4-field--E1.E1c",
+  "bundle_sha256": null,
+  "snapshot_manifest_sha256": "9eff12461c1c1c29ccda489b435c4efc45c897ba22856ff24ca5d8d310af68f8",
+  "recipe_sha256": "6e74a5e5feb85c01d7c1b97db27beff77b9f96507873f4ab6a800f3fe7b519f4",
+  "commit": "3387768448a8105a92d57b82115c8a0e21cfdb14",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/out/claims-E1.md",
+      "sha256": "41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d",
+      "bytes": 11302,
+      "source_file": "record-files/41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/claims-E1.md",
+        "blob": "f777682dfae831de468a76e5c6bf637b3d9f9746"
+      },
+      "reading_sha256": "41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d",
+      "reading_bytes": 11302,
+      "reading_file": "41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "01-claims-E1",
+      "raw": "../files/41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d.reading.md"
+    },
+    {
+      "path": "workspace/out/probes-E1.md",
+      "sha256": "62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f",
+      "bytes": 5318,
+      "source_file": "record-files/62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/probes-E1.md",
+        "blob": "4b234dabb753b4e6e6e0ff5eaa5da93409b505f7"
+      },
+      "reading_sha256": "62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f",
+      "reading_bytes": 5318,
+      "reading_file": "62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-probes-E1",
+      "raw": "../files/62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f.reading.md"
+    },
+    {
+      "path": "workspace/out/expectations-E1.md",
+      "sha256": "f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9",
+      "bytes": 4435,
+      "source_file": "record-files/f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/expectations-E1.md",
+        "blob": "f802fc31dedd19dc68d48ff7cd8dc04d6f3cf0f3"
+      },
+      "reading_sha256": "f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9",
+      "reading_bytes": 4435,
+      "reading_file": "f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "03-expectations-E1",
+      "raw": "../files/f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9.reading.md"
+    },
+    {
+      "path": "workspace/out/retelling-D6.md",
+      "sha256": "21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895",
+      "bytes": 85056,
+      "source_file": "record-files/21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/retelling-D6.md",
+        "blob": "309e20ec6fceaff94566b69f2677124e1b1cc9f2"
+      },
+      "reading_sha256": "21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895",
+      "reading_bytes": 85056,
+      "reading_file": "21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-retelling-D6",
+      "raw": "../files/21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895.reading.md"
+    },
+    {
+      "path": "workspace/out/_head.md",
+      "sha256": "0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158",
+      "bytes": 17616,
+      "source_file": "record-files/0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md",
+        "blob": "96b732782b2f939504ad257d8bf8975394bf4b87"
+      },
+      "reading_sha256": "0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158",
+      "reading_bytes": 17616,
+      "reading_file": "0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "05-_head",
+      "raw": "../files/0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158.reading.md"
+    },
+    {
+      "path": "workspace/out/notes-E1.md",
+      "sha256": "6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450",
+      "bytes": 30997,
+      "source_file": "record-files/6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450.md",
+      "origin": {
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-E1.md",
+        "blob": "c8e31560c8f0cfa2f84b884120f6c2384c76048e"
+      },
+      "reading_sha256": "6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450",
+      "reading_bytes": 30997,
+      "reading_file": "6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "06-notes-E1",
+      "raw": "../files/6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450.reading.md"
+    }
+  ],
+  "comparison": {
+    "parent": "aggregator--claude-v43-1--C4-field--E1.E1b-08",
+    "added": [],
+    "changed": [
+      "workspace/out/_head.md",
+      "workspace/out/notes-E1.md"
+    ],
+    "unchanged": [
+      "workspace/out/claims-E1.md",
+      "workspace/out/probes-E1.md",
+      "workspace/out/expectations-E1.md",
+      "workspace/out/retelling-D6.md"
+    ],
+    "not_selected_here": []
+  }
+}

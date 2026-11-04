@@ -1,0 +1,40 @@
+{
+  "community": "placehearts",
+  "archive_sha256": "baa6f0201c8ff78b1269cee6abe0757af73a4ef56fbd040d0e94224f68cecab3",
+  "archive_name": "placehearts.tar.zst",
+  "session": "01a14295-f235-75b2-87e2-a5683b71708a",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T04-41-25-01a14295-f235-75b2-87e2-a5683b71708a.jsonl",
+      "sha256": "ed14c5017ef07ddaba8df4ff9e61d3e6d320e50a548aaefb55904e22641a96a4",
+      "lines": 210,
+      "last_utc": "2026-10-16T02:50:03.047Z",
+      "identity": [
+        {
+          "id": "01a14295-f235-75b2-87e2-a5683b71708a",
+          "session_id": "01a14295-f235-75b2-87e2-a5683b71708a",
+          "timestamp": "2026-10-16T02:41:25.557Z",
+          "forked_from_id": "01a0a444-7fd3-79b0-a110-f19ea8abca42",
+          "forked_from_ordinal_exclusive": 664,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T02:41:51.927Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "5e36d32a6552fb9a769c1cbc5cafbf5a3b68f80f2f2ccb86805910ce0aea5144",
+    "source_archive_sha256": "7207d0cd8e09f759a6c541d8ad72be275a6da6a305557629c3f7304817d54498",
+    "checkpoint": "086210398d064dc10ee276e3724bdfd1f6794ecc634b5cc53b856618b0bd2ff9",
+    "source_finished": "2026-09-15T10:00:06.941583+00:00",
+    "source_archive_name": "placehearts-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

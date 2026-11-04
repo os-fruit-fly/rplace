@@ -1,0 +1,65 @@
+{
+  "checkpoint_id": "f26cf452870e3709",
+  "label": "E1.E1c",
+  "stage": "E1",
+  "stage_file": "stages/STAGE-E1-formalizing-audit.md",
+  "kind": "agent-and-files",
+  "run": {
+    "instrument_version": "v43",
+    "fingerprint": "74db41ef9490edae"
+  },
+  "arm": {
+    "analyst": "claude-opus-5-5",
+    "effort": "xhigh",
+    "readers": {
+      "route": "gateway",
+      "model": "@preset/cheap",
+      "n": 1,
+      "shared": ""
+    }
+  },
+  "lineage": {
+    "resume_session": null,
+    "resumed_session": "6a510e80-6658-4e7f-ba74-10116c1c4e72",
+    "child_session": "62f6203d-2a6a-4442-94f8-841a4c76b033",
+    "inherited_lines": 1669
+  },
+  "parent_checkpoint": "6df40f8f3c53f329",
+  "parent_label": "E1.E1b-08",
+  "session": {
+    "session_id": "62f6203d-2a6a-4442-94f8-841a4c76b033",
+    "mode": "fork",
+    "transcript_sha256": "1f3e311f59af784ad10c28a8930163853b3b74c7cda4ec09a9d36e9d77a9cb6c",
+    "boundary_line": 1726,
+    "boundary_verified": true,
+    "transcript_path_at_close": "CONTROL/.cc/projects/run/62f6203d-2a6a-4442-94f8-841a4c76b033.jsonl"
+  },
+  "cli_version": "2.1.300 (Claude Code)",
+  "fs": {
+    "files_in_out": 57993,
+    "manifest_sha256": "1eed8ca815a002679ad835d3229b5d827767a45131b6c214058d62477d19975d"
+  },
+  "subject": "aggregator",
+  "filesystem_root": "00_GIVE-THE-AGENT",
+  "handler_conversation_included": false,
+  "validation": {
+    "subject": "aggregator",
+    "complete": true,
+    "completed_turn": true,
+    "launcher_exited": true,
+    "validator_exit_code": 0,
+    "validator_sha256": "889d92f85edcb6314f8bdd867d78984ebbdb1afa6fd3815c1077f4d19bf19258",
+    "report_sha256": "0a759ad2a800fa169d64ed48e3ebb0c88e8454012829d017e45946cd4dd23429",
+    "checked_utc": "2026-10-27T22:01:36.922633+00:00",
+    "handed": true,
+    "notes_present": true,
+    "handback_present": false,
+    "validate_report_in_notes": true
+  },
+  "forced": null,
+  "cost": {
+    "tokens_in": 37940614,
+    "tokens_out": 32438
+  },
+  "published_utc": "2026-10-27T22:08:54Z"
+}

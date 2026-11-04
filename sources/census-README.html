@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The census | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-census">The census</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="census-README.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/census-README.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>The files that decide which communities are rooms. They record
+judgements, so they cannot be regenerated from downloads; the census page explains each step
+from 1,473 atlas artworks to 706 communities.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it holds</th>
+<th>Kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MASTER-census.csv</code></td>
+<td>one row per community (777: the 763 the atlas links, 4 named on the
+canvas, 9 credited in atlas descriptions, and r/TFLS, a redirect): its
+counts in each window, the lexical screen, the coder's verdict, the
+validation, and <code>handable</code> (1 for the 706) and
+<code>disposition</code></td>
+<td>counts from raw24, plus the judgements below applied</td>
+</tr>
+<tr>
+<td><code>census_740_mapping.csv</code></td>
+<td>each community and the atlas artworks credited to it, with its
+window counts</td>
+<td>the atlas links as resolved by hand</td>
+</tr>
+<tr>
+<td><code>atlas_35_resolution_worksheet.csv</code></td>
+<td>the 35 links that matched no downloaded community at first, and the
+candidates for each</td>
+<td>working sheet of the resolution</td>
+</tr>
+<tr>
+<td><code>atlas_link_unresolved.csv</code></td>
+<td>the 15 links that remain, and why each is not a community</td>
+<td>judgement</td>
+</tr>
+<tr>
+<td><code>screen_audit.csv</code></td>
+<td>the rooms a coder read as <code>none</code>, beside their screen
+hits</td>
+<td>the check that the screen and the coders agree</td>
+</tr>
+<tr>
+<td><code>validations.jsonl</code></td>
+<td>rooms whose membership a reading decided, with the evidence: four
+the screen flagged (27 August 2026), four named on the canvas and the
+Robin room behind a truncated link (26 September 2026)</td>
+<td>judgement</td>
+</tr>
+<tr>
+<td><code>ROOM-RULES.md</code></td>
+<td>what counts as a room, rule by rule, for this yard and for
+venues_yard; the 706 rooms and the 71 discarded rows by Reddit's own
+name and id, and the links and makers that name no community
+(2026-10-04)</td>
+<td>the rules stated; names from each venue's record</td>
+</tr>
+<tr>
+<td><code>ROOM-LIST.tsv</code></td>
+<td>the same lists, one line per name: reddit_name, subreddit_id,
+census_sub, status, coded, in_yard, disposition, why, name_source</td>
+<td>data</td>
+</tr>
+<tr>
+<td><code>artworks_outside_population.csv</code></td>
+<td>the atlas artworks that credited none of the population on 26
+September 2026 (312; three have since moved to r/TheFarLeftSide, and two
+more left on 4 October 2026 with r/lehigh and r/upvote, #1725 and #1250,
+not added as rows): why each is outside, its size, overlap with credited
+artworks, surviving-pixel authors, and a <code>kind</code> read from its
+description (the
+report)</td>
+<td>counts from the atlas and the placement record, plus a judgement
+(<code>kind</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>Built 27 August 2026 and rebuilt 26 September 2026 (two records
+collected again, three links resolved, four communities from the canvas)
+by <code>build_master_census.py</code> and its three companions, in builders/ with the run order and what a
+rerun needs. A handler starting a yard takes the rooms with
+<code>handable = 1</code>.</p>
+<h2 id="changed-4-october-2026">Changed 4 October 2026</h2>
+<p>The rule for being there is writing about the event during the 73
+hours the canvas was open, not any post in them (J: "we need only
+communities in which there was some writing"). Two rows changed by hand
+in <code>MASTER-census.csv</code>, each with its reason in
+<code>validation_note</code> and a line in
+<code>validations.jsonl</code>: r/lehigh
+(<code>event_talk_after_freeze</code>, a new disposition: posts while
+the canvas was open, but its writing about the event begins at hour
+78.98) and r/upvote (<code>screened_out</code>: its one coded thread
+names no canvas, drawing or placement). <code>handable</code>,
+<code>in_population</code> and <code>positive</code> are 0 for both;
+<code>coder_verdict</code> stays as the coders wrote it. The population
+is 706. The builders, kept unchanged as the study's record, do not know
+the new rule; a rebuild needs these two validations applied after
+it.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

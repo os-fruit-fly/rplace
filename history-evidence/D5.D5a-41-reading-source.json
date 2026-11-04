@@ -1,0 +1,123 @@
+{
+ "format": "rplace-saved-reading-v1",
+ "checkpoint_id": "aggregator--claude-v43-1--C4-field--D5.D5a-41",
+ "repository": "the research repository",
+ "commit": "acd32c80512bae9a9edb84dd3c4523cdb518556c",
+ "metadata_sha256": "147ce13c7d1fbeaf5ad2612889ce1ea2953408a3970433099641c32d8fdd0b6d",
+ "snapshot_manifest_sha256": "2118208eeb49651b7640927cc0fee929693b01998d332cf3dbfdc5564bca494b",
+ "manifest": {
+  "files": {
+   "workspace/out/handback-D5-room-forms.md": {
+    "sha256": "284d9e2d5d5bac5432241b4d079518fee939281adb8344317f5b828aed351551",
+    "size": 6734,
+    "mode": 420
+   },
+   "workspace/out/waterfall-D5.md": {
+    "sha256": "15c305923a04a97e45d2304911b028c111bd8e1bad52b625aa2e4a67e3a2afc6",
+    "size": 22255,
+    "mode": 420
+   },
+   "workspace/out/survival-D5.md": {
+    "sha256": "f56101acc4630dd145457247d4cd837d43acd46430a22cf409c1988fc63992ad",
+    "size": 36561,
+    "mode": 420
+   },
+   "workspace/out/room-form-A-account.md": {
+    "sha256": "24f11f63df7ffc7f62e657de3bec94442877726d1ec710bd8912adc290396912",
+    "size": 65715,
+    "mode": 420
+   },
+   "workspace/out/room-form-B-account.md": {
+    "sha256": "b112ca36002dc19d91f584726e52bbd685d288f6653b795fa37a70e371dbb764",
+    "size": 68271,
+    "mode": 420
+   },
+   "workspace/out/room-form-C-account.md": {
+    "sha256": "c620482b566cb5c1806e996f164492d920fdb8b15624f317e3255cae272e39a4",
+    "size": 58464,
+    "mode": 420
+   },
+   "workspace/out/room-form-D-account.md": {
+    "sha256": "4b40bec67b4217d1a171a7460ac66a8949d2fb88ea1bda4caa8b542531342e5b",
+    "size": 73716,
+    "mode": 420
+   },
+   "workspace/out/room-form-E-account.md": {
+    "sha256": "72fb5c2c34de67da98fc63edc1d81d492304f3958fb9d842cfc733dc93a2280f",
+    "size": 66383,
+    "mode": 420
+   },
+   "workspace/out/room-form-F-account.md": {
+    "sha256": "417201e6d9abe37963e5ed725076b3281060dfdafe2865d30571bbbce791b63d",
+    "size": 60728,
+    "mode": 420
+   },
+   "workspace/out/_head.md": {
+    "sha256": "65680a2279b19cad207c92a67ce46395851316c7f0e61eea500ca8d11fb3dd08",
+    "size": 17706,
+    "mode": 420
+   },
+   "workspace/out/notes-D5.md": {
+    "sha256": "78fcdf92efc19bf26cdfaa4ce332611c1e5b65db29bacb469d9bdbb7eeca0537",
+    "size": 137148,
+    "mode": 420
+   },
+   "workspace/out/handback-D5.md": {
+    "sha256": "e56ac4f0c10fb89cee4fe29517f252624c333cbb47481075d453e29c246f83b6",
+    "size": 11659,
+    "mode": 420
+   }
+  }
+ },
+ "git_files": {
+  "workspace/out/handback-D5-room-forms.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/handback-D5-room-forms.md",
+   "blob": "e34d3a2ca453473749e3be3628cfe7a5b76dc009"
+  },
+  "workspace/out/waterfall-D5.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/waterfall-D5.md",
+   "blob": "4e40d6ca39e7b0fd40929a6cf126b490975662d2"
+  },
+  "workspace/out/survival-D5.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/survival-D5.md",
+   "blob": "67715155e881c13b0c01c635409ca48f08ca62b5"
+  },
+  "workspace/out/room-form-A-account.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/room-form-A-account.md",
+   "blob": "8b3a955bb11edc31d49660790f75d1fff110edbe"
+  },
+  "workspace/out/room-form-B-account.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/room-form-B-account.md",
+   "blob": "88f44432e21530173b2d57e47693fd51cf52bdd5"
+  },
+  "workspace/out/room-form-C-account.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/room-form-C-account.md",
+   "blob": "2b4f5fc2ae0503815fe6e4ff7752f0a791bbeddf"
+  },
+  "workspace/out/room-form-D-account.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/room-form-D-account.md",
+   "blob": "e0c79d1f96b6efac8080baf926bcb7e597641b8b"
+  },
+  "workspace/out/room-form-E-account.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/room-form-E-account.md",
+   "blob": "1a158fc9ce19ae697f3d73163a1e6eb2d72612f0"
+  },
+  "workspace/out/room-form-F-account.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/room-form-F-account.md",
+   "blob": "09b634d881f3bd103925fa48abf82e0243731e95"
+  },
+  "workspace/out/_head.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md",
+   "blob": "600f9a62ceecaa86ce3cfc06130f653e95e48c26"
+  },
+  "workspace/out/notes-D5.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-D5.md",
+   "blob": "dc9b52fd76dc60e4b98fdf6815ee7ac7cbf712b1"
+  },
+  "workspace/out/handback-D5.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/handback-D5.md",
+   "blob": "a0716e4cb908a4913a3796b21116a4c4ca0a2f5a"
+  }
+ },
+ "scope": "Selected narrative files verified against the immutable external snapshot and original Git objects. Not an interview restore recipe."
+}

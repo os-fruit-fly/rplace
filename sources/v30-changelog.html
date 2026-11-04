@@ -1,0 +1,401 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>v28 to v29, and v29 to v30 | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="v28-to-v29-and-v29-to-v30">v28 to v29, and v29 to v30</h1><p class="notice">Original document, reproduced unchanged. <a href="v30-changelog.md" target="_blank" rel="noopener">Exact Markdown</a>. Copied from the R6 checkpoint of r/PlaceNL (<code>community--PlaceNL--R6.tar.gz</code>, <code>workspace/room/instrument/</code>). Instrument v30 coded 102 of the 705 communities, r/PlaceNL among them. It is not in the repository. sha256 <code>487157dd826fd4e2</code>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Written 2026-09-04, Layer A.</strong> Two changes and one
+tool.</p>
+<h2 id="1-the-case-lead-and-two-branches">1. The case lead, and two
+branches</h2>
+<p>The coder contract assumed one reader reads the room whole. That
+holds to about 250 items; the largest coded room in the census is 246,
+and rule 12's candidates run past 200,000. v29 adds a case lead who
+reads the room whole when it fits (branch A) and runs a serial fleet
+when it does not (branch B), then does step 4 and step 5 either way.</p>
+<p><strong>The branch is recorded per community as a covariate</strong>,
+with the counts it was decided on. Two branches is two instruments over
+one census, and the lesson from this study's own coder tier is that an
+unrecorded instrument change is invisible afterwards and contaminates
+everything computed across it.</p>
+<p><strong>What branch B gives up is written into the contract rather
+than left to be discovered.</strong> No reader holds the week; there is
+one coder per slice, so the largest rooms have no agreement measure at
+all; and slice boundaries cut the material arbitrarily. All three go in
+<code>notes.md</code>.</p>
+<h2 id="2-the-forest">2. The forest</h2>
+<p><code>tools/tree_builder.py</code> joins first-order codes onto each
+coded thread's reply tree and emits <code>trees/&lt;sub&gt;.md</code>,
+<code>package/forest.jsonl</code> and
+<code>package/tree_index.json</code>. Deterministic; no agent draws a
+tree.</p>
+<p>Four node states — coded, bridge, pruned, collapsed — and <strong>the
+dropped are counted in the header</strong>, per thread and per
+community, so nobody mistakes what was not coded for what was not
+said.</p>
+<p><strong>Coordinates are pure Dewey</strong>: the submission is
+<code>0</code>, its replies <code>1</code>, <code>2</code>, …, theirs
+<code>1.1</code>, <code>1.2</code>, …, to any depth. Depth is the
+segment count and siblings share every segment but the last. A draft
+scheme that made the top level <code>1.0</code>, <code>2.0</code> and
+hung <code>1.1</code> beneath <code>1.0</code> was rejected: it makes
+<code>[1.1]</code> a child in one place and a sibling in another, and
+the worked example circulated with it did not match what its own code
+produced — the demo output was written by hand, not run. This one is
+tested; <code>--demo</code> prints the tree, the counts and an index
+lookup.</p>
+<p><strong>A limit is written into both contracts.</strong> A reply is a
+reply. The tree shows that one turn was posted after another and how
+long after; it does not show that the first caused the second. No
+relation may rest on adjacency alone, and latency is elapsed time
+between two posts, not the speed of a decision. The forest was proposed
+as proof of causal direction, and it is not that.</p>
+<h2 id="2a-additions-of-2026-09-05">2a. Additions of 2026-09-05</h2>
+<p><code>lexicon.md</code> travels between coders with
+<code>timeline.md</code>, both facts and neither a reading, so the
+room's own words reach every slice. The forest carries the record's
+metadata on each node beside <code>retrieved_on</code>, with
+<code>stickied</code> marked as a retrieval-time snapshot, and a
+<code>removed</code> state for platform removal notices, which are the
+platform speaking and not a participant.
+<code>tools/audit_fleet.py</code> is the gate the case-lead contract
+names before step 4; it reports a check that could not run as failed,
+never as passed.</p>
+<h2 id="3-unchanged">3. Unchanged</h2>
+<p>Method, register, the citation rule, the five steps, the brief
+writer, and every output of v28. Small rooms run as they did, now with a
+forest.</p>
+<h2
+id="2026-09-05-afternoon-audited-made-runnable-tested-on-rliverpoolfc">2026-09-05,
+afternoon: audited, made runnable, tested on r/liverpoolfc</h2>
+<p>Two auditors read the v29 files against the v28 harness before any
+run. Their finding, in one line: v29 as shipped could not be run, in
+either branch. <code>newrun.py</code> dispatched v28's contract and none
+of the v29 files; the harness carried three version strings; nothing cut
+a slice, nothing consolidated a fleet, <code>emit</code> could not theme
+a pooled code, the forest command was fed a file of dispositions and
+rendered blank labels, <code>audit_fleet.py</code> failed every correct
+run on one check and passed vacuously on three, and the two role
+contracts named files nobody creates.</p>
+<p>What changed:</p>
+<ul>
+<li><strong>v29 ships its own harness.</strong> <code>read.py</code>,
+<code>cite.py</code>, <code>emit.py</code>, <code>close_run.py</code>,
+<code>newrun.py</code>, <code>newbrief.py</code>,
+<code>read_brief.py</code>, <code>render_corpus_v29.py</code>,
+<code>cut_window_v29.py</code>, all stamped v29. <code>newrun.py</code>
+dispatches the coder contract, the case lead's contract,
+<code>AGENT.md</code>, the three tools and <code>tools/</code>,
+substitutes the role placeholders, and writes
+<code>corpus_manifest.json</code> with the counts the branch gate
+reads.</li>
+<li><strong><code>tools/fleet.py</code></strong> is the case lead's
+harness for branch B: <code>plan</code> decides the branch, cuts
+whole-thread slices in corpus order and writes
+<code>out/_gate.json</code>; <code>dispatch</code> builds a coder's
+directory with its slice, the openings of earlier slices' threads still
+active in its span marked as context, and ids continuing from the
+previous coder; <code>consolidate</code> closes each batch, writes
+<code>staging/</code> and <code>package/</code>, and gives the lead a
+journal holding every code.</li>
+<li><strong><code>emit.py</code></strong>: ids continue across a fleet
+from <code>_manifest.json</code>; a code or pointer on an earlier
+slice's opening is refused; duplicate detection survives across
+processes; <code>close()</code> carries <code>out/_gate.json</code> into
+<code>_run.json</code>.</li>
+<li><strong><code>tools/tree_builder.py</code></strong>:
+<code>--record coder_corpus.jsonl</code> builds the forest from the
+run's own record; <code>first_order</code> is read where
+<code>label</code> is absent; retracted codes are not codes; a re-run
+replaces the community's forest lines instead of appending; every THREAD
+line carries its item, coded and dropped counts.</li>
+<li><strong><code>tools/audit_fleet.py</code></strong> rewritten: seven
+checks that read what the tools write, a branch-A mode, and no check
+that can pass without its inputs.</li>
+<li><strong><code>close_run.py --role fleet|lead</code></strong>: a
+fleet coder's directory holds no theme by contract; the lead's C6 reads
+the fleet's read logs from <code>staging/</code>.</li>
+<li><strong>The contracts.</strong> The case lead's and fleet coder's
+contracts rewritten to the procedure the tools implement: the order of
+the work in both branches (steps 1 to 3, <code>emit.close()</code>,
+forest, gate, step 4, step 5, <code>emit.close(verdict)</code>), the
+slice rule and the context openings, the two facts files, the tags, the
+pool, the lead's step 5, every output by path. The precedence between
+the files is stated. <code>AGENT.md</code> carries the role, the batch
+and the slice in STATE. The coder contract's preamble says the one rule
+v29 adds inside it.</li>
+<li><code>removed</code> stays what it was: a distinguished comment
+saying a post was removed. A body that reads <code>[removed]</code> or
+<code>[deleted]</code> is an absence and is rendered as one, not a
+removal notice.</li>
+</ul>
+<h2
+id="2026-09-05-evening-the-two-runs-and-what-they-found-in-the-instrument">2026-09-05,
+evening: the two runs, and what they found in the instrument</h2>
+<p>Fingerprint <code>e6a5732e7e854df9</code> for both runs; every coder
+and both leads on <code>claude-sonnet-5</code>.</p>
+<p><strong>r/liverpoolfc, branch B, 33 slices, stopped after batch
+07</strong> (<code>50_coding_runs/run_v29_liverpoolfc_partial/</code>).
+Seven coders, 12 to 26 minutes each, contexts of 202k to 296k tokens, 74
+codes in all (3, 1, 0, 54, 16, 0, 0); batch 06 read the 2,030-item derby
+thread whole and recorded it out of scope. Every batch's read claims
+hold against what <code>read.py</code> served. Stopped for time, not for
+a defect: thirty-three serial coders is nine hours. The lead holds its
+journal at batch 07; the run resumes from
+<code>dispatch --batch 08</code>. Three Fable coders ran slices 01 to 03
+before the model was corrected (<code>_lfc_v29_fable_partial/</code>):
+Fable minted 49 codes on slice 01 where Sonnet minted 3. Examined
+2026-09-06: all 49 sit in <code>62dd8q</code>, the derby pre-match
+thread, and are line-ups, alarms and pub talk, coded against scope;
+Sonnet's 3 there are the sub's restyle, coded as the contract asks. The
+gap is a Fable scope failure, not a reading.</p>
+<p><strong>r/muse, branch B, 2 slices, complete</strong>
+(<code>50_coding_runs/run_v29_muse/</code>). 442 items, 62 threads;
+coders of 38 and 30 minutes, 176 and 173 codes; the lead consolidated,
+built the forest, passed <code>audit_fleet</code> (349 codes at their
+offsets, 349 on nodes, both slices disposed exactly), grouped 21 themes,
+ran a 32-query counter-reading and closed <code>full</code>.
+<code>close_run</code> 7 of 7 for the lead and both coders. Against the
+v27 single reader of the same cut: 34 coded threads to v27's 36, 286
+coded items to 306, every fleet-coded thread and item inside the v27
+set; the two threads only v27 coded are the sub's own April Fools jokes,
+which the batch 01 coder ruled out of scope citing the Setting section;
+the section says to code such talk as conduct not about r/place, so this
+is a coder's misreading and the wording wants tightening. Ninety-six
+minutes end to end.</p>
+<p><strong>Defects found, not fixed, so that the fingerprint above is
+the instrument that ran:</strong></p>
+<ul>
+<li><code>read.py audit</code> reads <code>out/threads.jsonl</code>,
+which only <code>emit.close()</code> writes; in a fleet batch before
+<code>consolidate</code> it reports <code>checked: false</code> and 0
+mismatches, which is not a pass. It should fall back to the journal's
+<code>thread</code> records. A scratch checker that does so found 0
+mismatches in 89 dispositions across nine batches.</li>
+<li>Coders write working scripts to the scratchpad directory the harness
+names in their environment, which is shared across every agent of the
+session, against AGENT.md's scratch rule. The dispatcher's prompt for
+the muse batch 02 coder forbade it and that sufficed; the sentence
+belongs in AGENT.md.</li>
+<li>Coders read the tools' source (<code>emit.py</code> three times,
+<code>read.py</code>, <code>cite.py</code>): about 49k chars, 18k
+tokens, per coder, for nothing AGENT.md does not say. One line in
+AGENT.md.</li>
+<li><code>fleet.py plan</code> closes a slice when the next thread would
+overflow the budget, so a slice can be one thread of five items
+(liverpoolfc slice 09) ahead of a 433-item thread. A slice under some
+floor should fold into its neighbour.</li>
+<li>Late slices carry many context openings (liverpoolfc slice 33: 169
+openings for 85 items of its own). Bearable at one line each; the first
+thing to trim if a run must be cheaper.</li>
+<li>The lead wrote its step 4 with a script in its run directory and
+deleted it after; the record keeps the themes and not the script.
+Harmless, and worth a sentence in the lead's contract either way.</li>
+</ul>
+<h1 id="v29-to-v30-2026-09-06">v29 to v30 (2026-09-06)</h1>
+<p>Cut for the run yard, after the r/muse pilot and the seven
+liverpoolfc batches. Every file renamed from <code>.v29.</code> to
+<code>.v30.</code>; every label <code>v29</code> in the tools now reads
+<code>v30</code>; the fingerprint moves. What changed in substance:</p>
+<ul>
+<li><p><strong>Threshold and budget 500.</strong>
+<code>fleet.py plan</code> defaults to
+<code>--threshold 500 --budget 500</code>, and the case lead's contract
+says 500. Grounds: the frame's 300 rooms stop at 501 items; on v27 one
+reader read 91 per cent of the threads whole across the 250-to-501 band
+with no decline toward the top; a whole room at 500 items is about
+100,000 tokens of corpus. Recorded in
+<code>claude/fleet-token-budget-and-the-two-slice-pilot.md</code>.</p></li>
+<li><p><strong>A slice floor.</strong> <code>plan --floor 25</code>: a
+slice under 25 in-window items folds into the slice before it (the
+first, into the one after). liverpoolfc slice 09 was one thread of five
+items. <code>_gate.json</code> carries <code>floor_items</code> and the
+rule names it.</p></li>
+<li><p><strong><code>read.py audit</code> reads the journal</strong>
+when <code>out/threads.jsonl</code> is absent, so a fleet coder's
+reading claims are checked before consolidation; the result carries
+<code>source</code> and <code>declared</code>. On the nine fleet batches
+run so far: 0 mismatches.</p></li>
+<li><p><strong>AGENT.md</strong> forbids the session-level scratchpad an
+environment may name, and forbids reading the tools' source (about
+18,000 tokens a coder, for nothing).</p></li>
+<li><p><strong>The community's own April Fools joke</strong> is disposed
+<code>coded</code>, never <code>out_of_scope</code> for being a joke;
+the r/muse batch 01 coder read the old wording the other way.</p></li>
+<li><p><strong>The case lead's step 5</strong>: every time and interval
+computed from <code>package/tree_index.json</code> or quoted with the
+coder's own figure (the r/muse lead turned 51 minutes into "roughly nine
+hours" by restating); <code>## Counter-reading</code> names the
+strongest contrary item with its id before reporting the search; the
+chronology carries the first and last coders' edges; a lead's helper
+script stays in the run directory under <code>_lead_</code>.</p></li>
+<li><p><strong><code>fleet.py redispatch --batch NN --model &lt;id&gt;</code></strong>
+sets a failed coder's directory aside under <code>fleet/_failed/</code>
+and dispatches the slice again with the same ids; only the last,
+uncollected batch. The gate record keeps the set-aside under
+<code>redispatched</code>.</p></li>
+<li><p><strong>The openings file</strong>
+(<code>render_openings_v30.py</code>; asked for by J on 2026-09-06).
+<code>newrun</code> writes <code>openings.md</code> into the case lead's
+directory: every thread in time order of its opening post, with the
+metadata line, a counts line over the whole thread (comments in the
+window and in all, branches, depth, distinct authors, the sum of scores
+over every scored item), the title and the opening post's text cut at
+500 words. Rooms over 1,500 threads also get
+<code>openings_titles.md</code> and <code>openings_digest.md</code>. The
+lead reads it in step 1; the contract's new §1a says what it is for and
+what it is not (orientation; nothing coded or cited from it but a title;
+not served through <code>read.py</code>). Fleet coders do not get it.
+AGENT.md's STATE block names it. In the fingerprint.</p></li>
+<li><p><strong>The timeline is seeded by the harness.</strong>
+<code>fleet.py plan</code> starts <code>out/timeline.md</code> with
+every stickied or moderator-distinguished post, hour, author, title and
+id, from the record's metadata, so coders extend a record of facts
+instead of starting one.</p></li>
+<li><p><strong>The lead's memory</strong> (J, 2026-09-06).
+<code>collect</code> keeps <code>out/ledger.md</code>: per batch the
+slice, the counts, the facts lines added, the coder's final message when
+saved, its <code>[unresolved]</code> and <code>[inherited]</code>
+episodes and its anomalies and data problems copied from its case and
+notes; the lead writes its strikes under the entry at collect.
+<code>consolidate</code> writes <code>package/codes_by_thread.md</code>,
+the pool in reading order, and step 4 reads it one slice at a time. The
+lead keeps <code>out/_lead_notes.md</code>. A fork's lead reads the
+ledger and the notes first. Fleet coders get no such file: what travels
+between coders is facts, not readings.</p></li>
+</ul>
+<h2 id="after-the-audit-2026-09-06-evening">After the audit (2026-09-06,
+evening)</h2>
+<p>Four auditors read the contracts against Gioia, Corley and Hamilton
+(2013), Eisenhardt (1989) and Langley (1999), and the tools against the
+contracts (a Sonnet and a Fable each; the reports are in
+<code>Layer A/10_instrument/v30/audit_20260906/</code>). What changed,
+and why:</p>
+<ul>
+<li><strong>Contracts.</strong> §1 no longer describes the coder's
+themes with Gioia's words for his second order ("researcher-centric ...
+abstraction"); themes are "still descriptive", his first-order concepts,
+and the second order and the aggregate dimensions belong to a reader the
+coder is now told about: §1's "Write so another reader could follow you"
+says the outputs go to a reader that builds the account across three
+hundred communities and does the abstracting. §7: a theme names the
+doing, not how it came out. §8 Relations: a link needs a passage in
+which the later turn answers, names or recalls the earlier; order alone
+is reported as <em>follows</em>. §2: day markers are the corpus's
+(<code>d0</code> from 03-31 16:00, twenty-four hours each, as printed on
+every item line), written only in the form <code>d1 04-01 16:08</code>;
+the earlier sentence called them calendar days, which the corpus never
+did. §9 maps the seven <code>emit.stage</code> names onto the steps
+(<code>step6_account</code> is <code>case.md</code>,
+<code>step7_write</code> is <code>notes.md</code>). §0 says in one
+clause what a fleet coder does not do. The lead file: §1a (openings) now
+precedes §1b (the gate) on the page as it does in the work; precedence
+in one form; branch A says in <code>## Selection</code> that the
+openings were read before the triage; branch B carries
+<code>## Posts against comments</code> from the slice cases; a
+counter-search hit in a thread no coder read whole may be read with
+<code>read thread</code>; the <code>_lead_</code> script may read times
+from <code>tree_index.json</code>, the one exception to §10; the fold
+rule says which neighbour. The fleet file: "no theme" rather than "no
+pattern above a code"; the two-themes question is not asked;
+<code>step6_account</code> and <code>step7_write</code> are announced;
+the corpus's counts include the context openings. AGENT.md: scratch goes
+under <code>out/</code> or the run directory; the tally has
+<code>threads_undisposed</code>; <code>emit</code> refuses what it now
+refuses.</li>
+<li><strong><code>emit</code></strong> verifies every quote against the
+record as it arrives (a code, a pointer, an
+<code>excluded_quote</code>): the text is a non-empty slice of the
+item's body, the item is in the thread named, the body is not
+<code>[deleted]</code>/<code>[removed]</code> (Rule 7). It refuses a
+code or a pointer on an item <code>read.py</code> never served (a thread
+read whole, a window's items, or an <code>item</code> read;
+<code>read.py</code> now logs <code>window_items</code>).
+<code>close()</code> is a journal record, so <code>close_calls</code>
+and the verdict outlive the process. A refused <code>code()</code> no
+longer registers its duplicate key first. <code>theme()</code> refuses
+an empty code list; <code>thread()</code> needs a stage and a thread of
+the corpus. <code>item_kind</code>, <code>author</code> and
+<code>created_utc</code> are on every code, as §9 had promised.</li>
+<li><strong><code>close_run</code></strong> C8 (pointers and exclusion
+quotes verified), C9 (every live code and pointer on a served item), C10
+(nothing after the last close); C3 no longer passes an empty text at an
+out-of-range offset; the verdict is read from <code>_run.json</code>
+first; <code>--help</code>. <code>audit_fleet</code> verifies pointers
+and exclusion quotes too. <code>newrun</code> hashes <code>tools/</code>
+into the manifest, so C7 sees an edit to <code>fleet.py</code>.
+<code>consolidate</code> marks the coders' stage and close records
+<code>coder_stage</code>/<code>coder_close</code>, so the lead's journal
+starts with no stage and its <code>_run.json</code> reports the lead; it
+catches an overclaim with a sentence instead of a traceback.
+<code>collect</code> refuses a second call without <code>--force</code>;
+the context span ends at the window's end; <code>fleet.py --help</code>
+explains every flag. <code>cite</code>'s shell form prints a refusal and
+exits 2 instead of a traceback, requires a quote, and its normalised
+path refuses an ambiguous quote. <code>read.py</code> has no
+<code>--out</code> (the environment variable <code>READ_LOG_DIR</code>
+is the scheduler's). <code>tree_builder</code> opens files as UTF-8 and
+prints usage on missing arguments instead of running the demo.
+<code>emit.py --help</code> lists the calls.</li>
+<li><strong>Yard tools.</strong> <code>room.py check --fork</code>
+checks the fork; <code>room.py fork</code> recomputes the hashes of the
+files it rewrites and records the parent's, so a fork passes C7; B5 uses
+the record's id shape; E3 reads the query log too, and counts the
+consolidation second as before; the self-test's scripted case passes
+B4.</li>
+</ul>
+<p>Fingerprint after the audit: <code>17ae5d4fb7912406</code>.</p>
+<p>J's three answers (2026-09-06, later): the room's own April Fools
+joke is in scope as conduct, §5 now says so beside §2, with the note on
+every such code mandatory. A score is a number taken at retrieval; it
+may be reported beside an item and is never coded as something these
+people did (§2). And instead of defining an episode, the thread tree is
+coded: every code is a cited chunk of an item (a sentence or a
+paragraph, cited whole), and the forest now shows each coded item as its
+chunks in text order, <code>[c0012 na c0015]</code>, with
+<code>na</code> for a stretch of forty characters or more that no code
+covers; the index carries the sequence and each item's coverage, the
+header the count of <code>na</code> stretches and the mean coverage. §6
+says a passage is cited whole and that an uncoded stretch is a visible
+choice; §8 says an episode is a stretch of the coded threads bounded by
+item ids and resting on the codes in the forest; the lead's §4 describes
+the sequence line. Fingerprint: <code>6560df4fd13c1618</code>.</p>
+<p>Not changed by the audit: the citation rule, the append-only journal,
+the counter-reading procedure, Rule 6, "a reply is a reply", the pointer
+schema, the forest, the slice rule, the seeded timeline, the ledger.
+Open, J's to decide: the community's own April Fools joke against §5's
+scope test; whether a score may be coded as conduct; whether an episode
+is defined.</p>
+<h2 id="the-brief-stage-and-the-tools-aligned-2026-09-06-night">The
+brief stage and the tools aligned (2026-09-06, night)</h2>
+<p>J asked for the equivalent of the yard for briefs and for the tools
+of the brief writer, the coder and the aggregator to be defined the same
+way unless there is a reason. Every room already carried the brief
+stage; what it lacked was the scheduler's side. Added:
+<code>verify_room --brief</code> (F1 to F6: the brief over 300 words
+unless harness-written, the nine headings, a read log opening with
+<code>header</code> and a note on the days touched, every quoted string
+of twenty characters or more verbatim in the pre-week record against the
+item id written beside it or anywhere, one in ten tolerated and listed;
+the transcript; the manifest's hashes),
+<code>room.py check --brief</code>, the stages
+<code>brief to write</code> and <code>brief built, writer to run</code>
+with their next steps, the scheduler contract's brief cycle and F rows,
+<code>simbrief.py</code> and <code>selftest_brief.py</code>.</p>
+<p>The tools: <code>TOOLS-SPEC.md</code> says what the reading, citing
+and searching tools do the same way and what differs with reason.
+<code>read_brief.py</code> now logs to <code>out/_read.jsonl</code> with
+<code>read.py</code>'s record shape (a thread read carries
+<code>thread_id</code>), has the <code>item</code> verb, no
+<code>--out</code> (<code>READ_LOG_DIR</code>), the same
+<code>state</code> keys, and prints <code>ReadError:</code> like
+<code>read.py</code>. <code>cite.find</code> returns a
+<code>FindResult</code> with <code>truncated</code>, <code>limit</code>,
+<code>scanned</code>, <code>not_scanned</code>, as the aggregator's
+does, and logs
+<code>kind: find, tool, items_scanned, items_not_scanned</code>. The
+aggregator's <code>cite_case.py</code> and <code>mem.py</code> are left
+as v36 built them, with their differences listed in the spec for v37.
+The brief writer's contract, <code>read_brief.py</code> and
+<code>newbrief.py</code> are in the fingerprint now. Fingerprint:
+<code>1d758e5427e622df</code>.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

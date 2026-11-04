@@ -1,0 +1,45 @@
+{
+  "community": "greece",
+  "archive_sha256": "04256c1d4491cb14a8724f0d871f42c4f16f3fad5159ff5f04aec2a78f16e801",
+  "archive_name": "greece.tar.zst",
+  "session": "01a142ad-db7a-7641-ba8c-270b7dd431ba",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T05-07-32-01a142ad-db7a-7641-ba8c-270b7dd431ba.jsonl",
+      "sha256": "0c94ed2ac953e979765249b321cc0c9b7036a32f9740609a9ce5406518575c5a",
+      "lines": 250,
+      "last_utc": "2026-10-16T03:19:53.855Z",
+      "identity": [
+        {
+          "id": "01a142ad-db7a-7641-ba8c-270b7dd431ba",
+          "session_id": "01a142ad-db7a-7641-ba8c-270b7dd431ba",
+          "timestamp": "2026-10-16T03:07:32.602Z",
+          "forked_from_id": "01a0a5ab-b2de-7990-bb02-1783d6a96af9",
+          "forked_from_ordinal_exclusive": 702,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T03:07:44.467Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T03:09:46.771Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "4552c9b1244c4964166ef42b43fa126ef9b81e1798a073376a5d97099f01078d",
+    "source_archive_sha256": "47a93de23528bef5d5166ce2a78251a90ff81a3ca87ee221525bbb2131c4fbd8",
+    "checkpoint": "a59a80009c074c0b9343ea9e62c4b9d750943ddc8aaf072b1a9d3b79fbe31cb8",
+    "source_finished": "2026-09-15T16:20:51.106450+00:00",
+    "source_archive_name": "greece-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paused-boundary amendments | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="paused-boundary-amendments">Paused-boundary amendments</h1><p class="notice">Original document, reproduced unchanged. <a href="room-amendments.md" target="_blank" rel="noopener">Exact Markdown</a>. The room handler's document as it stood on 2 November 2026, after the run. It is not in the repository. sha256 <code>a0ec9f7138c47ecb</code>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>2026-10-07T20:08Z. Target: under 450 words. Controller operations,
+not a scientific protocol.</p>
+<p><code>amend-plan</code> and <code>amend-apply</code> are for an
+approved change of instrument or controller at an idle boundary. They do
+not replace interruption recovery. The lead must be ready, PAUSE must
+exist, the last native turn must be complete, and no owned actor may
+still be running.</p>
+<p>Run from <code>Jail/community coder</code> with the managed Python
+3.11 and <code>-B -m sibling_model</code>. Inspect <code>--help</code>;
+do not use placeholder paths as commands.</p>
+<p><code>amend-plan JOB</code> takes <code>--frozen</code>,
+<code>--previous-source</code>, <code>--previous-sha256</code> and
+<code>--declaration-file</code>. The declaration is JSON with
+<code>reason</code> and an <code>overrides</code> list naming each
+changed provision, including rule 19. The previous source must actually
+exist and match its hash. The plan binds the current state, complete
+files, old/new source and build hashes. It starts no native process.</p>
+<p>Give J this plan. Approval JSON must contain <code>origin: J</code>,
+<code>decision: apply</code>, the exact <code>plan_sha256</code>, and
+J's approval text. Never manufacture this for a research pilot.</p>
+<p><code>amend-apply JOB</code> takes <code>--plan-sha256</code>,
+<code>--approval-file</code>, <code>--executable</code>,
+<code>--credential</code>, <code>--capacity</code> and
+<code>--slots</code>. It retains both code/build versions and both cold
+native/filesystem checkpoints. The native session and transcript stay
+the same. Tools are disabled in the separate discarded recall probes; a
+separate grader checks remembered replies. Neither probe is the research
+agent. The amended workspace is a new owned generation. Original
+preparation and generation stay intact.</p>
+<p>Application keeps PAUSE, clears admission and runs no research turn.
+The next admitted opening reports what changed. Old-stage checks and
+judgments are not rewritten or silently repeated. A failed probe or
+partial preparation leaves the original active. A crash after the commit
+but before the state switch can finish that switch once, provided the
+saved generation is unchanged. Partial preparation requires inspection,
+not automatic retry.</p>
+<p>Amendment records and snapshots enter the final archive. Field
+private-controller files are included. No command edits a yard, alters
+the native model/runtime, substitutes an agent, commits or pushes.</p>
+<p>Current limits: no real pilot has undergone this operation; frozen
+scientific amendments and full release acceptance are pending.
+Placement-reader recovery now uses
+<code>field-recover --actor reader:REQUEST:AGENT</code>; it requires an
+unchanged controller and is not an amendment route. The operation is
+tested on synthetic room and field files, with live cold recall on one
+synthetic room session.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

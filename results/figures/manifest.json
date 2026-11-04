@@ -1,0 +1,209 @@
+{
+  "placenl-r6.svg": {
+    "source_svg_sha256": "d5041c2331f19f4eab70e994204f75f9a76d7b14564d9a7b3e495550b77684a7",
+    "reading_svg_sha256": "194d4faf4f76279b70e454a15cdc4e7d707cfcceb4b4a4573d9ea09665b5fdc6",
+    "text_labels": 29,
+    "geometric_elements": 21,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "The local PlaceNL R6 model"
+  },
+  "community-1.svg": {
+    "source_svg_sha256": "e1d5dbd9fb01a2f8a3d1279d5f87ad2afe14b979a416497f5e0a4003eadcba49",
+    "reading_svg_sha256": "838305dee91c2b18ea266d56e3872e8ee4ae71aec68c7630d133a3babcae85d8",
+    "text_labels": 26,
+    "geometric_elements": 86,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Placements per hour in r/PlaceNL's region, hours 0 to 73"
+  },
+  "community-2.svg": {
+    "source_svg_sha256": "d1c993865b38369c44d6ae293700367fd2c07ab7eeca83e8182b353a89e873d6",
+    "reading_svg_sha256": "5ecd1cd9d9a12be48d4a1174bda6656865b9894fb5e99179c92aa97249e0231d",
+    "text_labels": 162,
+    "geometric_elements": 79,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "The population model as instantiated in PlaceNL"
+  },
+  "population-1.svg": {
+    "source_svg_sha256": "b6ad9768346e3e846d061ac7a8e93c173f223d112993fe7a96f58c1a696229b6",
+    "reading_svg_sha256": "8d0686c125adcfd7ede490a83179aa09bc406f8e039bd45c4a898595feea273b",
+    "text_labels": 47,
+    "geometric_elements": 38,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "The population model across eight dimensions"
+  },
+  "population-2.svg": {
+    "source_svg_sha256": "ad60fc712764cb87d73f35bdc4f9e6685a7c8e189fcb121be573a6f8410395dc",
+    "reading_svg_sha256": "1ef29ba5b92c5e3590bcb8825eea9fa78c9e9f8ea51b6de41a7447df2e1c4447",
+    "text_labels": 36,
+    "geometric_elements": 2529,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Hierarchical tree of all 705 communities"
+  },
+  "population-3.svg": {
+    "source_svg_sha256": "9867b849317a73e7d91b0c8fce953f6b44f5aa3542c0090406c8f61373bb6db1",
+    "reading_svg_sha256": "50c2c3497a6c45b4c130c9693db9562f3f7028c3c5ebb4cbd8242331a7d586de",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u00d70.5 \u00d71 \u00d72 A Border terms and the announced plan 16"
+  },
+  "population-4.svg": {
+    "source_svg_sha256": "d114852ba081633150d94abb89ab13be2c40826bff111120b43d8f5e488bb778",
+    "reading_svg_sha256": "e22643ad1080545065cf18c32edd781558f97dbdc0c7554c37d6d450ebfa39e7",
+    "text_labels": 17,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u00d70.5 \u00d71 \u00d72 B Behind the thread: chat, scripts, raid"
+  },
+  "population-5.svg": {
+    "source_svg_sha256": "7e0d3202688f3a3bd94a0efb600a167773a1e53583184b276f0339486a7f21c0",
+    "reading_svg_sha256": "73eba5582aa082801907a1cd34012a0d87dec696bb245d3a660e8a3baf27a2e1",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u00d70.5 \u00d71 \u00d72 C The design reopened 123 rooms"
+  },
+  "population-6.svg": {
+    "source_svg_sha256": "b2332bb149cdb66979e30b0db9c55b651aac9774b5bd139b27be04a4a24466d0",
+    "reading_svg_sha256": "d0b7c31bd6b4c0a698ef746c66d2000b4717d217d12bd8c5240196574d4169ab",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u00d70.5 \u00d71 \u00d72 D Keeping, with help or carrying on 116 "
+  },
+  "population-7.svg": {
+    "source_svg_sha256": "de160f7db02646cf8b3f22a4c9087cc5da9d4fef38dab2eb6f6999691fdbf0d2",
+    "reading_svg_sha256": "976975b7512c9b166088e514851e4c8c9350c3bc105056c5195eeef91d358dd6",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u00d70.5 \u00d71 \u00d72 E The sub's play, run as work 96 rooms"
+  },
+  "population-8.svg": {
+    "source_svg_sha256": "3dd508ed010ea21cf035785285007ebe7a9df7fb6a7b01af73ec7f675950e7d5",
+    "reading_svg_sha256": "3bc91056131fb47c1c11a94bb62bf622ee1dd66ac129b4dd364e35d18654de3c",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u00d70.5 \u00d71 \u00d72 F Moving for the spot 50 rooms"
+  },
+  "population-9.svg": {
+    "source_svg_sha256": "672b88f72e2c3ed6c4d56dbdea523bf77125b15b7f806dabd458a6b36dbad084",
+    "reading_svg_sha256": "69264a49f95c95331d2b4a7560ed5b41e6696af7dcd4fa199391cb463893478f",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u221250% 0 +50% A Border terms and the announced plan 1"
+  },
+  "population-10.svg": {
+    "source_svg_sha256": "e055da4da6143201e6053f7c819fd2088a625ffb3681ed6ca22c3e999af0b1c9",
+    "reading_svg_sha256": "4b24cb93b03c53d2b2bfe145a56910ef835762fb5dae8ed6b71ff87500af677b",
+    "text_labels": 18,
+    "geometric_elements": 21,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention +160% \u221250% 0 +50% B Behind the thread: chat, script"
+  },
+  "population-11.svg": {
+    "source_svg_sha256": "6f29f38ad840f2a8b430c52ab03747c1fc5b505df31a7c1a53fbe656a3c64fe7",
+    "reading_svg_sha256": "efe6f28031000bf0a6ce92237511495b05bb42ae236796502aeb639391dd4f97",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u221250% 0 +50% C The design reopened 125 rooms"
+  },
+  "population-12.svg": {
+    "source_svg_sha256": "54df538382232af5ba97606886da06bac13ac3f940fbfbbe080a0820e12f21a7",
+    "reading_svg_sha256": "eeb671779de68998c892b8fee14833528628e5eb03ba023ddaf00185bd080071",
+    "text_labels": 16,
+    "geometric_elements": 20,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention \u221250% 0 +50% D Keeping, with help or carrying on 119"
+  },
+  "population-13.svg": {
+    "source_svg_sha256": "ad7b1d4654248f52188b46dcdf580b1bdd121eb28932ef153c2843fa28ac2061",
+    "reading_svg_sha256": "6e83d8c7fa23107c41b19144477d5688e76723134d68da548f1a9fc01c36e272",
+    "text_labels": 17,
+    "geometric_elements": 21,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention +262% \u221250% 0 +50% E The sub's play, run as work 98 "
+  },
+  "population-14.svg": {
+    "source_svg_sha256": "b44db1d6e659824dc57192bee8579ca0b2c7fced79e178fd7e5a1c44dc48c8e1",
+    "reading_svg_sha256": "f02b6a81d481b2ad857ca2581f9da44c09856c49b471383326bba860adcc4a06",
+    "text_labels": 17,
+    "geometric_elements": 21,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention +169% \u221250% 0 +50% F Moving for the spot 56 rooms"
+  },
+  "population-15.svg": {
+    "source_svg_sha256": "e184c32fe316bacc6d8e896c7ee60cc96325654edfac0b4c3c33b15dbb496ab1",
+    "reading_svg_sha256": "10552c477e3565decaa9cbc38d0cd039231cae17794cb601978c77eeac253693",
+    "text_labels": 136,
+    "geometric_elements": 71,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Population model, form A"
+  },
+  "population-16.svg": {
+    "source_svg_sha256": "a18877df63e507f29f5dba5916bc4e46c98c61e9f377b59f339e140740d8a87e",
+    "reading_svg_sha256": "98f16bb1096abf45e7505ebc17472d8df1586e78754c27b48c16ce8f0b6613d8",
+    "text_labels": 112,
+    "geometric_elements": 70,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Population model, form B"
+  },
+  "population-17.svg": {
+    "source_svg_sha256": "a5dc34ac203a5a358c3551a73d8ef5ebf623e563a60552056136055b9d3e2bfa",
+    "reading_svg_sha256": "829bbd64dfc66751318a626c254934af707310659cae4618ebec9549f3ac4202",
+    "text_labels": 128,
+    "geometric_elements": 70,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Population model, form C"
+  },
+  "population-18.svg": {
+    "source_svg_sha256": "4310d4f7cb477db502e4bd252605c2d7977d74c0f46c2963594282b2fe301c92",
+    "reading_svg_sha256": "bcfd7a711bd6ec5a76871fe1a635fda9ef58a76b83a4badbeddba2c97ec85e98",
+    "text_labels": 149,
+    "geometric_elements": 69,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Population model, form D"
+  },
+  "population-19.svg": {
+    "source_svg_sha256": "9e4982e194369da2c62694e8cf286859dddaa2818d3448b16ea184947c0c6875",
+    "reading_svg_sha256": "54f2e431f906fb0f1a6052cbd38a17e19078045294f1170f2f445bd420edb189",
+    "text_labels": 123,
+    "geometric_elements": 69,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Population model, form E"
+  },
+  "population-20.svg": {
+    "source_svg_sha256": "69d5bb9e416aa4b5271e779cf01e82bc1d514d09b979ecbd124cf7c492cf15b1",
+    "reading_svg_sha256": "c0982d4b576cfa85b8a74e63fbc72422241e20a1b66c6de3aede96eefc7213a4",
+    "text_labels": 140,
+    "geometric_elements": 70,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Population model, form F"
+  }
+}

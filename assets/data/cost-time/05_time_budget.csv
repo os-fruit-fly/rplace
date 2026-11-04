@@ -1,0 +1,24 @@
+category,hours,days,share_of_wall
+analyst working (active),247.91,10.33,0.4801
+idle inside legs: usage limit,67.63,2.82,0.131
+wait between legs: J,39.85,1.66,0.0772
+idle inside legs: short in-leg pauses,33.98,1.42,0.0658
+wait between legs: usage limit,26.3,1.1,0.0509
+wait between legs: routine handover,19.42,0.81,0.0376
+idle inside legs: Codex coders,16.78,0.7,0.0325
+wait between legs: fleet,13.98,0.58,0.0271
+wait between legs: Codex coders,13.17,0.55,0.0255
+wait between legs: J and Codex Field,7.45,0.31,0.0144
+wait between legs: fleet and Codex coders,6.76,0.28,0.0131
+idle inside legs: not recorded,6.63,0.28,0.0128
+wait between legs: handler (late check),4.96,0.21,0.0096
+wait between legs: not recorded,3.1,0.13,0.006
+wait between legs: handler (publishing),2.02,0.08,0.0039
+wait between legs: Codex Field,1.99,0.08,0.0038
+idle inside legs: network,1.98,0.08,0.0038
+idle inside legs: computer off,1.25,0.05,0.0024
+wait between legs: disk,1.24,0.05,0.0024
+"wall clock, first start to last close",516.4,21.52,1.0
+estimate without delays: active only (lower bound),247.91,10.33,0.4801
+estimate without delays: active + routine handovers + short in-leg pauses,301.3,12.55,0.5835
+estimate without delays: the above + fleet and Codex waits as they ran,361.42,15.06,0.6999

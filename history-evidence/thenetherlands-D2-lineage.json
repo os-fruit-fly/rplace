@@ -1,0 +1,50 @@
+{
+  "community": "thenetherlands",
+  "archive_sha256": "ad3c16330567916cbc091679cc2bd5c166c79fc77d7ab966f907257427c9305f",
+  "archive_name": "thenetherlands.tar.zst",
+  "session": "01a1430d-3b22-7443-91c8-d0d8e1645668",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T06-51-43-01a1430d-3b22-7443-91c8-d0d8e1645668.jsonl",
+      "sha256": "6098cf17b469d5645fa579af60e925311723ac5c01e8fcc60697bc5c02f0b942",
+      "lines": 265,
+      "last_utc": "2026-10-16T05:01:42.707Z",
+      "identity": [
+        {
+          "id": "01a1430d-3b22-7443-91c8-d0d8e1645668",
+          "session_id": "01a1430d-3b22-7443-91c8-d0d8e1645668",
+          "timestamp": "2026-10-16T04:51:43.010Z",
+          "forked_from_id": "01a0c4db-01b0-7c02-a43c-1489dd4c3391",
+          "forked_from_ordinal_exclusive": 962,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T04:51:59.533Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T04:56:04.549Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T05:01:20.579Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "f82acb264977c5978ba3658d9765f740b906f3979e19f1a15d8d5819e80e89e5",
+    "source_archive_sha256": "8df7bbad3588ecbb788a612eb534c5e5f5ea2b0186bddccd6312df9b3b014803",
+    "checkpoint": "e33a572216ddafd3f4b04589845662a733f457b78f8ee1d33985237172b9b982",
+    "source_finished": "2026-09-21T19:54:40.230553+00:00",
+    "source_archive_name": "thenetherlands-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

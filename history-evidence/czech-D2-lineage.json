@@ -1,0 +1,45 @@
+{
+  "community": "czech",
+  "archive_sha256": "d8aec2de2df16991929e48ff49db06d2f75f95075a12f0f41bbc087438a0c474",
+  "archive_name": "czech.tar.zst",
+  "session": "01a1423d-f101-76a2-9466-781a1b91a2c3",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T03-05-18-01a1423d-f101-76a2-9466-781a1b91a2c3.jsonl",
+      "sha256": "81c349a55b3c33daed36ccebe4f7113d523db025d68bda370bba07105fef3207",
+      "lines": 239,
+      "last_utc": "2026-10-16T01:15:58.667Z",
+      "identity": [
+        {
+          "id": "01a1423d-f101-76a2-9466-781a1b91a2c3",
+          "session_id": "01a1423d-f101-76a2-9466-781a1b91a2c3",
+          "timestamp": "2026-10-16T01:05:18.081Z",
+          "forked_from_id": "01a08171-0689-7322-bb0d-b343a6753884",
+          "forked_from_ordinal_exclusive": 503,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T01:05:36.713Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T01:09:42.507Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "b4da1c826f1e6547732399d502fee55b1d29c683e2f5dfc2b35d374c3c661aa2",
+    "source_archive_sha256": "3e488a0fbf87317bccad863bff861125b14ecdb7b96e4a6c6d451db2c6d8b38e",
+    "checkpoint": "2e84d83c84f259a328174d54b6b3baef614c08c91f86932db27c66cd4edaf2f3",
+    "source_finished": "2026-09-08T14:54:33.633455+00:00",
+    "source_archive_name": "czech-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

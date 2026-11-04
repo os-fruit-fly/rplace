@@ -1,0 +1,72 @@
+{
+ "source": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/ (private repository): verdicts-D.jsonl, verdicts-recheck-D.jsonl, adaptations.jsonl, adaptations-recheck.jsonl, adjudications.jsonl",
+ "made_by": "datapage/population_return.py, 1 November 2026; rulings counted at each change's last ruling",
+ "models": {
+  "first": "e15f9647",
+  "recheck": "46384686"
+ },
+ "first": {
+  "fit": {
+   "composes-with-residue": 489,
+   "composes": 201,
+   "cannot-tell": 14,
+   "does-not-compose": 1
+  },
+  "agreed": 542,
+  "ruled": 163,
+  "ruled_as": {
+   "composes": 61,
+   "composes-with-residue": 102
+  },
+  "communities": 705,
+  "changes": 42243,
+  "ops": {
+   "instantiate": 17648,
+   "absent": 14675,
+   "restrict": 4406,
+   "add-step": 1889,
+   "add-condition": 1408,
+   "propose": 1362,
+   "link": 844,
+   "contradict": 11
+  },
+  "ruled_changes": 42243,
+  "decisions": {
+   "accept": 36682,
+   "reject": 4324,
+   "particular": 1236,
+   "modify": 1
+  }
+ },
+ "recheck": {
+  "fit": {
+   "composes": 630,
+   "composes-with-residue": 56,
+   "cannot-tell": 19
+  },
+  "agreed": 544,
+  "ruled": 161,
+  "ruled_as": {
+   "composes": 160,
+   "composes-with-residue": 1
+  },
+  "communities": 705,
+  "changes": 53493,
+  "ops": {
+   "instantiate": 22972,
+   "absent": 21504,
+   "restrict": 4345,
+   "add-step": 1563,
+   "add-condition": 1406,
+   "link": 1086,
+   "propose": 613,
+   "contradict": 4
+  },
+  "ruled_changes": 53493,
+  "decisions": {
+   "accept": 47432,
+   "reject": 4548,
+   "particular": 1513
+  }
+ }
+}

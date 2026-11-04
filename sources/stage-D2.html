@@ -1,0 +1,150 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage D2. The return: the labelers in Codex, and the verdict fleet. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1
+id="stage-d2-the-return-the-labelers-in-codex-and-the-verdict-fleet">Stage
+D2. The return: the labelers in Codex, and the verdict fleet.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-D2.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-D2.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>The dispatch and the check leg of the return.</strong> Two
+things run outside your session, and you are launched only when both
+have left their files. The adaptation handler runs one resumed original
+case lead per room, retaining its Codex history and matching files; the
+handoff task is delivered in a separate return folder alongside its
+original workspace, without another room's private history, holding the
+room's coder documents, <code>MODEL.md</code>, <code>LADDER.md</code>
+and <code>VOCABULARY.json</code>, and returning <code>model-D.md</code>
+and <code>adaptations.jsonl</code> into
+<code>DROPS/D/&lt;sub&gt;/</code> with <code>run.json</code> (the
+labeler's model and session id); the handler runs
+<code>ingest.py --check &lt;sub&gt;</code> after each room, has the
+failing rule repaired, keeps returning rooms before any limit, marks a
+room <code>unreturned</code> in <code>DROPS/D/UNRETURNED.tsv</code> only
+when it cannot return it, and writes <code>DROPS/D/DONE</code> with the
+counts. The verdict fleet runs on the reader route, the dispatch sending
+packets to the routine readers, from <code>verdict-D/</code>, two
+readers per room, returning into <code>_fleet_raw/D2v/</code> and
+validated against <code>RETURN-D2v.md</code>, with reissues for what
+fails the schema; when reissues are exhausted <code>fleet.py</code>
+stops and the packets are rebuilt (FLEET §1). Neither reads your files.
+When both have returned, the harness runs <code>ingest.py D</code> and
+relaunches you for the check leg with one line: the labelers and the
+readers left their files.</p>
+<p><strong>Check leg. Model:</strong> as <code>arm.json</code> sets.
+<strong>Steps:</strong> <code>D2a</code>, the check, once both the
+labelers and the verdict fleet have returned. Each leg is named by its
+step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each section of the check leg. At
+a safe stop, check for <code>.pause</code> (<code>ls .pause</code>); if
+it is there, log where to pick up, your working hypothesis and the next
+room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh D2 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+<code>SCHEMA-adaptations.md</code>, <code>FLEET.md</code>, the last five
+diary entries, <code>validate.py --open D2</code>.</p>
+<p><strong>Reads allowed:</strong> <code>ingest.py</code>'s report;
+<code>adaptations.jsonl</code> by count and by the views, never as a
+list; <code>verdicts-D.jsonl</code>; <code>_fleet_raw/D2v/</code>;
+<code>DROPS/D/UNRETURNED.tsv</code> and <code>DONE</code>; sampled
+<code>model-D.md</code> files by query; <code>prior.md</code> §8.
+<strong>Forbidden:</strong> adjudicating a line (that is D3); editing a
+return; re-running a labeler or a reader; editing the task template or
+the criterion mid-return; <code>EXPECTATIONS.jsonl</code> against the
+ledger (that is stage E1).</p>
+<p><strong>Outputs:</strong> <code>adaptations.jsonl</code> (ingested,
+validated); <code>verdicts-D.jsonl</code>; <code>ingest-D.md</code>;
+<code>_views/rooms-x-elements.tsv</code> (generated);
+<code>rooms/&lt;sub&gt;/model-D.md</code> and <code>verdict-D</code>
+copied from the drops; <code>notes-D2.md</code>; the D2 counts in
+<code>RUN.json</code>; a <code>run_manifest.json</code> entry for the
+labelers' model and the readers' model; <code>handback-D2.md</code>.</p>
+<h2 id="1-what-ingest-did">1. What ingest did</h2>
+<p><code>ingest.py D</code> validated every line against SCHEMA §4: the
+schema (a known op, its required fields, no extra fields); the model
+version against <code>handoff-D/VERSION</code>, with element ids in
+<code>VOCABULARY.json</code> and not withdrawn; concept ids in the
+room's <code>codes.jsonl</code> and not retracted, transition ids in the
+room's forest; <code>how</code> one sentence under forty words;
+portability (no census subreddit name and no proper name from the room's
+lines in your <code>lexicon-A1.md</code> in <code>condition</code>,
+<code>statement</code> or <code>how</code>, except in
+<code>relation</code>), a failing line kept with
+<code>portable: false</code> and a particular by construction; the end
+marker matching the line count and <code>model-D.md</code> ending with
+its marker. It lifted every source node through
+<code>assignments_final.jsonl</code> at the model version (second-order
+theme, third-order theme, fourth-order theme, dimension,
+<code>null</code> where never placed), computed <code>kind</code> and
+<code>portable</code>, stamped <code>origin</code> and
+<code>labeler_run</code>, checked that every adaptation's element
+appears in the room model, and compiled the ledger; it reported per room
+what failed and why, and the handler reissued what it could. A room with
+nothing to adapt returned one <code>none</code> line with evidence for
+the fit; silence is a missing return, not a verdict.</p>
+<p>You read <code>ingest-D.md</code>: rooms returned, lines accepted,
+lines flagged by rule, rooms <code>unreturned</code> with the handler's
+reason, the distribution of lines per room and of ops, the share of
+<code>portable: false</code>, the share of <code>none</code> rooms, the
+share of unplaced source themes (the lines D3 may mint from).
+<code>ingest.py</code> wrote the counts of accepted, reissued and
+unreturned rooms into <code>RUN.json</code> (SCHEMA §4), copied the room
+models and verdicts beside the notes, and marked every room it rejected
+unreturned; check the counts against the report, since stage D4
+reconciles every room against them.</p>
+<h2 id="2-the-verdicts">2. The verdicts</h2>
+<p><code>verdicts-D.jsonl</code>: one line per room from the fleet, with
+each reader's themes, sentence and <code>cannot_tell_under</code>, at
+<code>R = 2</code>; where the two readers differ, the room is listed for
+D3 to rule with the criterion in front of it, and the disagreement rate
+is reported, by verdict pair. Report <code>cannot-tell</code> by
+threshold (<code>coded-share</code>, <code>off-platform</code>,
+<code>both</code>), and check each against the room's concept count and
+off-platform pointers on the line: one the numbers do not support is
+listed for D3 beside the splits. The figure bounds whether the written
+criterion decides a room, never whether the model is right (FLEET §2);
+say so where it appears. The labeler's grade from
+<code>model-D.md</code> sits beside the verdict in the same file and
+never replaces it; the cross-table of grade against verdict is reported
+here and again at E1.</p>
+<h2 id="3-what-you-check-by-sampling">3. What you check by sampling</h2>
+<p>Ten <code>model-D.md</code> files drawn by seed, stratified on
+verdict: does the room model cite element ids where the model applies,
+<code>[absent &lt;id&gt;]</code> where it did not apply and was not
+needed, and <code>[new: ...]</code> where no element covers what the
+room did; does every adaptation's element appear in it; does every claim
+carry a concept citation from the room's own codes; does the prose read
+as the room's organizing in the model's words rather than as a summary
+of the model; does the grade's sentence name what the ledger names.
+Every quote you carry into <code>notes-D2.md</code> goes through
+<code>cite.py</code>. What you find goes in <code>notes-D2.md</code>
+and, where it is a defect in the task template, the return specification
+or the criterion, in <code>handback-D2.md</code> for the operator: none
+of the three is edited mid-return, and a labeler is never re-run by
+you.</p>
+<h2 id="4-verbal-before-numeric">4. Verbal before numeric</h2>
+<p>No verdict and no line is revisited because of a count. A share that
+looks bad (many <code>does-not-compose</code>, many particulars, a thin
+ledger) is a fact to report; D3 assesses fixed-global fit, local
+adequacy and shared composition separately against
+<code>prior.md</code>. Repeated corrections and a sparse ledger alone
+establish neither failure nor success.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>The ingest report read, with the rule that flagged most lines; the
+<code>RUN.json</code> counts written; the verdict disagreement rate and
+the <code>cannot-tell</code> lines the numbers do not support; each
+sampled room model and what it showed; each defect sent to
+<code>handback-D2.md</code>.</p>
+<h2 id="final-message">Final message</h2>
+<p>Counts: rooms returned, reissued, unreturned, lines accepted and
+flagged by rule, lines per room, ops by kind, <code>none</code> rooms,
+non-portable share, unplaced-source share, verdicts by value with the
+disagreement rate, <code>cannot-tell</code> by threshold, the labeler
+grade against the fleet verdict as a cross-table, the labelers' model
+and the readers' model from the manifest. A return value.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh D2 --cut adaptations-in</code>: the adaptations and
+verdicts have arrived and nothing is yet ruled on them, the moment D3's
+rulings are measured from; <code>gen_views.py</code> builds the element
+views and the wiki pages; <code>handback-D2.md</code>; the head; the
+closing diary line.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

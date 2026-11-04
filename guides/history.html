@@ -1,0 +1,215 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Historical context for this study | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-run" data-layer="Guide"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="historical-context-for-this-study">Historical context for this
+study</h1>
+<p>Updated 28 October 2026. These notes describe the recorded study. The
+contracts stay as published, and the notes authorize no run.</p>
+<h2 id="publications-and-closure">Publications and closure</h2>
+<p>The run finished at E2b on 28 October 2026. Final publication
+<code>f27566528a5102d944c6ddc3d2e2e98b839cbab8</code> records all 18
+stages closed. The earlier catalog baseline,
+<code>c070d990be88234ccd74101d4104160e71a28c5e</code>, ends during D3.
+Its accepted checkpoints and proofs are unchanged; later records name
+their own commits.</p>
+<p>Final stage boundaries are D4a-08, D5a-41, D6a-18, E1e and E2b. D5b
+and D6b closed earlier, before further work in those stages. They stay
+available as historical legs; the final versions are the ones above. A
+checkpoint that also closes a stage appears once. <a
+href="study.html">Read the completed run</a>.</p>
+<p>Every checkpoint displays its source commit and commit date.
+Saved-state dates have their own basis, or say "not recorded". A commit
+date marks when files were committed, and a stage closes on its own
+record. For D3c, the <a
+href="../history-evidence/D3c-checkpoint.json" download>checkpoint metadata</a>,
+<a href="../history-evidence/D3c-validation.json" download>validation receipt</a>
+and <a href="../history-evidence/D3-FINISHED.txt" target="_blank" rel="noopener">stage close marker</a>
+support the dated status. The metadata hash matches the admitted
+checkpoint.</p>
+<p>The <a
+href="../records/aggregator--claude-v43-1--C4-field--C5.C5d-p2.html">C5d-p2
+account</a>, saved on 15 October, is partly superseded. D3 revised R01
+and P05, bounded A21 and added fifteen candidates. The <a
+href="../records/aggregator--claude-v43-1--C4-field--D3.D3c.html#07-handback-D3">D3
+handback</a> records those revisions. The <a
+href="../records/aggregator--claude-v43-1--C4-field--D6.D6a-18.html">final
+D6 account</a> and E1/E2 audits now document the later account and its
+limits.</p>
+<h2 id="c4-and-the-field-agents-unfinished-analysis">C4 and the Field
+agent's unfinished analysis</h2>
+<p>The Field agent had not finished its analysis when it supplied its
+reading and comments to C4. We clarified this on 29 October 2026. The saved C4 account calls the supplied material a field
+model; it was an interim reading, and the Field agent's full account was
+not complete. C4's close records how the aggregator handled the interim
+material.</p>
+<p><a href="../stages/C4.html#what-v43-received">Read what that
+comparison changed</a>. The saved files and their wording are intact. A
+comparison with the completed Field account is still pending.</p>
+<h2 id="models-and-lineage">Models and lineage</h2>
+<p>The canonical instruction says to restore the original community
+coder on its recorded model and effort. This study used dated
+operational decisions, kept in <a
+href="../history-evidence/handler-decisions.tsv" download>handler decision rows
+155 and 248</a>. On 15 October, J specified a gpt-5.6-sol resume
+followed by gpt-6.1-sol medium for the return. On 21 October, the
+re-check was corrected to gpt-6.1-sol medium; the earlier 5.6 launch
+wording was superseded. The <a
+href="../history-evidence/D3-model-correction.md" target="_blank" rel="noopener">correction message</a>
+records why <code>resumed_with</code> is unreliable as a description of
+an answer turn.</p>
+<p>This website review inspected the D2 archives of all 14 shared
+communities. Each archive hash matched its custody receipt. In each, the
+source proof names the same archive used for the shared coding close;
+the native fork identifies its original session and boundary ordinal;
+and the D2 turn contexts record gpt-6.1-sol, medium. So
+<code>run.json</code>'s <code>model=6.1</code> describes these returns,
+and <code>resumed_with=5.6</code> is historical metadata that says
+nothing about the model of their answers.</p>
+<p>The verified relationship for these communities is:</p>
+<pre class="text"><code>Original coding close
+  +-- R6: same original session continued for the local model
+  +-- D2: fork from the coding close for the global return
+        +-- D3: same D2 session ID in the re-check return record</code></pre>
+<p>D2 did not fork from R6, and the D2 branch never held the later R6
+local model, although both share a source. The D3 records name
+gpt-6.1-sol and the same D2 session IDs. They omit effort; medium was
+prescribed, and this website review did not check it in those D3
+transcripts. The review inspected the native histories of these 14
+communities only, out of 705, and its findings cover those 14.</p>
+<table><caption>The 14 shared communities: where each return came from, and
+the evidence for its model</caption>
+<thead>
+<tr>
+<th>Shared community</th>
+<th>D2 source and native-turn evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r/PlaceNL</td>
+<td><a href="../history-evidence/PlaceNL-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/thenetherlands</td>
+<td><a href="../history-evidence/thenetherlands-D2-lineage.json" download>Fork,
+source archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/cirkeltrek</td>
+<td><a href="../history-evidence/cirkeltrek-D2-lineage.json" download>Fork,
+source archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/norge</td>
+<td><a href="../history-evidence/norge-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/norway</td>
+<td><a href="../history-evidence/norway-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/sweden</td>
+<td><a href="../history-evidence/sweden-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/greece</td>
+<td><a href="../history-evidence/greece-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/czech</td>
+<td><a href="../history-evidence/czech-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/armenia</td>
+<td><a href="../history-evidence/armenia-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/indonesia</td>
+<td><a href="../history-evidence/indonesia-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/placehearts</td>
+<td><a href="../history-evidence/placehearts-D2-lineage.json" download>Fork,
+source archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/mindcrack</td>
+<td><a href="../history-evidence/mindcrack-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/blackmirror</td>
+<td><a href="../history-evidence/blackmirror-D2-lineage.json" download>Fork,
+source archive and turn settings</a></td>
+</tr>
+<tr>
+<td>r/Goodboye</td>
+<td><a href="../history-evidence/Goodboye-D2-lineage.json" download>Fork, source
+archive and turn settings</a></td>
+</tr>
+</tbody>
+</table>
+<p>These are selected metadata fields from the agents' records. Their
+member hashes and archive hashes identify the evidence kept. Reading
+them starts no agent.</p>
+<h2 id="instruction-versions">Instruction versions</h2>
+<p>The canonical source copies on this site are unchanged. Historical
+checkpoints keep the files they held. A stage-file hash shows that a
+file was saved; whether the aggregator read it, and whether a later
+instruction followed, needs other evidence.</p>
+<h3 id="b1">B1</h3>
+<p>Saved card SHA-256:
+<code>246c890d13c93007d92a27d29c76be7814281d946bc014c23dc96496e0819f97</code>.
+Current canonical card SHA-256:
+<code>a2b733dded3046ba611c65e979beb597ef8ef26e8b625dea28469a254219f8a0</code>.
+<a
+href="../history-evidence/saved-STAGE-B1-coding-third-order-scheme.md" target="_blank" rel="noopener">Saved
+card</a>; <a href="../sources/stage-B1.md" target="_blank" rel="noopener">current canonical card</a>.
+The saved hash is confirmed in all three shared B1 checkpoints.</p>
+<h3 id="b4">B4</h3>
+<p>Saved card SHA-256:
+<code>bb5cc6a5690643e43d2e8a600efb4c750fc499bf2c2abea6c90a94861f0e1357</code>.
+Current canonical card SHA-256:
+<code>7fb68adfcd6a1dab15368728559d3eb3c91162c555a8a69b26a53571dfd16ebe</code>.
+<a
+href="../history-evidence/saved-STAGE-B4-coding-adjudication-and-freeze.md" target="_blank" rel="noopener">Saved
+card</a>; <a href="../sources/stage-B4.md" target="_blank" rel="noopener">current canonical card</a>.
+The saved hash is confirmed in all three shared B4 checkpoints.</p>
+<p>B1b-32, B1d-07 and B1e predate the 11 October amendment. B1e closed
+at 14:49Z; decision row 75 follows at 15:51Z. The 16:25Z delivery puts
+the gate and member re-check changes into the next B2 leg. Those later
+checks apply from B2 on, and B1 is judged under the rules it ran
+with.</p>
+<p>Decision row 96 introduced B4's three-placement rule on 12 October.
+The 21:19Z handler delivery explicitly opens B4a-01 under that
+amendment. The saved notes record its use. A further ruling changed
+packet 4 from item 401 and sent earlier affected rulings back at B4a-05.
+So the B4a-07, B4b-p4 and B4c checkpoints follow those changes, and the
+delivered amendments are recorded in the handler's deliveries; the
+original stage-file hash does not include them. This review did not
+reconstruct every tool read of every intermediate leg.</p>
+<p>Evidence: <a href="../history-evidence/handler-decisions.tsv" download>exact
+selected decision rows</a>, <a
+href="../history-evidence/amendment-deliveries.jsonl" download>dated handler
+deliveries</a>, and notes-B4
+at the B4c source commit. The delivery's label can name
+the outgoing leg; its text names the incoming leg.</p>
+<h2 id="release-access">Release access</h2>
+<p>These reading pages are public. Saved reading pages, their Markdown and JSONL downloads, and the PlaceNL example use the pixel stream's participant IDs: <code>base64(SHA1(username))</code>, case kept, with no salt. These are linkable pseudonyms. Quoted text and comment IDs can still lead back to the source record.</p>
+<p>Original checkpoint bundles and transcripts are in the public research repository. Three legacy manual pages containing participant handles link to their originals in the research repository. Original research files keep their verified bytes. Reading manifests list the hashes of original sources apart from those of the derived copies.</p>
+<p>Online interviews are not connected yet. Chat Locally is available to readers with a supported model account and runtime. A later interview server can connect to this website without moving these reading pages.</p>
+<p><a href="../history.json" download>Machine-readable history and evidence
+hashes</a>. New records extend the catalog; earlier checkpoint
+identities, accepted bundles and source recipes are unchanged.
+Additional runtime proofs, when available, name the exact executable
+tested.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

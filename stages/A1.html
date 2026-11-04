@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Read each community on its own terms | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-instrument" data-layer="Stage guide"><nav class="parts" aria-label="Instrument"><a aria-current=location href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a  href="../run.html">Run the study</a></nav><article class="stage-explanation"><p class="kicker">A1 · Reading: community notes</p><h1 id="read-each-community-on-its-own-terms">Read each community on its
+own terms</h1>
+<p>Before it looks for patterns across communities, the aggregator reads
+each one and checks what the evidence it was given can support. On this
+site, a community is one subreddit read as a case; the run's files call
+it a room.</p>
+<h2 id="where-this-stage-starts">Where this stage starts</h2>
+<p>Community coding has produced first-order codes tied to participants'
+words, second-order themes that group those codes, and a written account
+of each community. Reply trees record who answered whom. The aggregator
+receives this coded collection as the community coders sealed it, so
+checking the collection's coverage is part of the analysis.</p>
+<h2 id="what-the-aggregator-does">What the aggregator does</h2>
+<p>First, the aggregator checks the package: whether files and counts
+agree, whether dates make sense, and whether missing material or work on
+other platforms could change an interpretation. A community that tried
+and failed to organize stays in the analysis. Dropping it because it
+left no lasting artwork would hide part of the phenomenon.</p>
+<p>The aggregator declares a reading order and its expectations, then
+reads each community as a whole. Participants' words come first, the
+community coder's account second and canvas information last. This order
+separates what the record shows from what another agent has already
+interpreted.</p>
+<p>Each community gets a note on its aims, its sequence of events, its
+uncertainties and its last observed coordination. A later claim cites
+the source material, and the note only gives it context. Silence at the
+end of a thread leaves open whether organizing ended, above all when
+members moved to another platform.</p>
+<h2 id="what-the-next-stage-receives">What the next stage receives</h2>
+<p><a href="B1.html">B1</a> receives a reading of every community, a
+declared analysis set and the recorded uncertainties. From these it
+builds categories that work across cases.</p>
+<section class="stage-outputs" aria-labelledby="stage-outputs-title"><h2 id="stage-outputs-title">What the output files contain</h2><p>Markdown files hold prose; JSONL files hold one structured record per line.</p><details class="stage-output"><summary><span class="output-purpose">Community reading notes</span><span class="output-filenames"><code>rooms/&lt;sub&gt;.md</code>, <code>&lt;sub&gt;</code>, <code>order-A1.txt</code></span></summary><div class="output-description"><p><code>rooms/&lt;sub&gt;.md</code> records each community's story and
+uncertainties. <code>&lt;sub&gt;</code> stands for its subreddit name.
+<code>order-A1.txt</code> records the order of reading, so later readers
+can see how the aggregator met the cases.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Words, patterns and possible connections</span><span class="output-filenames"><code>lexicon-A1.md</code>, <code>running-A1.md</code>, <code>leads-A1.jsonl</code></span></summary><div class="output-description"><p><code>lexicon-A1.md</code> keeps participants' vocabulary with source
+references. <code>running-A1.md</code> collects observations across
+readings. <code>leads-A1.jsonl</code> records possible connections
+between communities that still need checking.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">The planned comparison and exclusions</span><span class="output-filenames"><code>contrast.md</code>, <code>dropped.jsonl</code></span></summary><div class="output-description"><p><code>contrast.md</code> declares the early-versus-late comparison
+and the expectations written before the reading.
+<code>dropped.jsonl</code> names each exclusion and its reason; an empty
+file means none were recorded.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">How the end of organizing is observed</span><span class="output-filenames"><code>coordinating-rule-A1.md</code>, <code>organizing_end-A1.jsonl</code></span></summary><div class="output-description"><p><code>coordinating-rule-A1.md</code> sets out how coordination is
+told apart from recounting or joking.
+<code>organizing_end-A1.jsonl</code> records the last observed
+coordination and what remained, including cases where the record is
+silent.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Checks, departures and the handoff</span><span class="output-filenames"><code>notes-A1.md</code>, <code>defects.jsonl</code>, <code>departures.jsonl</code>, <code>run_manifest.json</code>, <code>handback-A1.md</code>, <code>_head.md</code></span></summary><div class="output-description"><p><code>notes-A1.md</code> explains decisions and limits.
+<code>defects.jsonl</code> records problems with the data or tools;
+<code>departures.jsonl</code> records departures from the protocol.
+<code>run_manifest.json</code> records inputs and model settings.
+<code>handback-A1.md</code> summarizes the handoff, and
+<code>_head.md</code> records the current position for continuation.</p>
+</div></details></section><section class="stage-reference" aria-labelledby="stage-reference-title"><h2 id="stage-reference-title"><a href="../sources/stage-A1.html">Full stage description</a></h2><p>Read the complete technical card for exact tasks, reading boundaries, checks and closing rules. The explanation above is a guide; the card holds the instructions.</p><details><summary>Show how the stage is divided into its 3 legs</summary><ul>
+<li><code>A1a</code>: checks and screen. Repeats: no. Interview point:
+-.</li>
+<li><code>A1b</code>: reading block. Repeats: yes. Interview point:
+-.</li>
+<li><code>A1c</code>: lexicon and analysed set. Repeats: no. Interview
+point: end.</li>
+</ul>
+</details><p><a href="../sources/manifest.json" download>Source versions and hashes</a> identify the exact technical documents reproduced here.</p></section></article><div class="actions chat-actions"><button type="button" class="talk-action talk-local" data-local-checkpoint="aggregator--claude-v43-1--C4-field--A1.A1b-55" aria-expanded="false" aria-controls="local-setup-aggregator--claude-v43-1--C4-field--A1.A1b-55">Chat Locally</button><a class="talk-action" href="../online-chat.html?checkpoint=aggregator--claude-v43-1--C4-field--A1.A1b-55" target="_blank" rel="noopener" aria-label="Chat Online at A1.A1b-55, opens in a new tab">Chat Online</a></div><section id="local-setup-aggregator--claude-v43-1--C4-field--A1.A1b-55" class="local-setup" hidden></section><noscript><p><a href="../guides/interviews.html#open-an-interview-on-your-computer">Local setup instructions</a></p></noscript><nav class="stage-navigation" aria-label="Stage navigation"><span aria-hidden="true"></span><a class="stage-all" href="../guides/aggregator.html#stage-map">See all stages</a><a class="stage-neighbour" rel="next" href="B1.html" aria-label="Next stage: B1"><span>Next stage</span><strong>B1</strong></a></nav><aside class="stage-agent-key" aria-labelledby="stage-agent-key-title"><h2 id="stage-agent-key-title">For an agent running this stage</h2><p><a href="../agents/A1.html">Open the agent reading key</a> for the required reading order. <a href="../agents/A1.md" target="_blank" rel="noopener">Download that key as Markdown</a>, or <a href="../sources/stage-A1.md" target="_blank" rel="noopener">download the full stage card as Markdown</a>.</p><p><a href="../guides/agent-roles.html">Agents and their roles</a> explains who does each part of the work.</p></aside></main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

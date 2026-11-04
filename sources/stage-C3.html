@@ -1,0 +1,313 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage C3. The model against the literature. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-c3-the-model-against-the-literature">Stage C3. The model
+against the literature.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-C3.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-C3.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+one per shelf pass (contradicting work; resembling work, with the
+concept; the four problems), closed at the pass's end or earlier when
+you choose; every recut the literature forces is logged and snapped when
+it is made (§6). <strong>Fleet:</strong> none.</p>
+<p><strong>Steps:</strong> <code>C3a</code> the contradicting shelf;
+<code>C3b</code> the resembling shelf; <code>C3c</code> the four
+problems (§1's claim put to the structure), the handback and the
+interview. Each leg is named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each logged recut, and after each
+shelf pass. At a safe stop, check for <code>.pause</code>
+(<code>ls .pause</code>); if it is there, log where to pick up, your
+working hypothesis and the next room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh C3 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+the last five diary entries, <code>validate.py --open C3</code>. First
+leg: the explanation shelf arrives, its read tier shipped with this
+stage and its on-request tier listed one line each
+(<code>mem.py shelf --list</code>,
+<code>mem.py shelf &lt;name&gt;</code>); <code>prior.md</code>, read
+before anything else; <code>concept.md</code>; <code>notes-A1.md</code>,
+opened only at §7.</p>
+<p><strong>Reads allowed:</strong> every shelf that has arrived (nothing
+served once is taken away); <code>model/</code>, <code>model.md</code>,
+<code>structure.md</code>, <code>dimensions.jsonl</code>,
+<code>fourth/fourth.jsonl</code>, <code>concept.md</code>,
+<code>findings.jsonl</code>, <code>prior.md</code>; the store through
+<code>mem.py</code> (<code>where</code>, <code>codes --third</code>,
+<code>after</code>); rooms by query for a check, and rooms whole through
+the verbs for an abductive read (§1); quotes through
+<code>cite.py</code>. <strong>Forbidden:</strong> rewriting the story
+(that is C5); opening <code>field/</code>, which arrives at stage C4;
+renaming a third-order theme after a construct (contract §1); a change
+from a read of the corpus that is not flagged <code>abductive</code>
+with the paper that prompted it (§1); the canvas as an undeclared ground
+(rule 7).</p>
+<p><strong>Outputs:</strong> <code>literature-C3.md</code>;
+<code>findings.jsonl</code> lines with literature ids;
+<code>mapping-C3.jsonl</code>; mechanisms rewritten in
+<code>model/arrows.jsonl</code>, each a <code>model/history.jsonl</code>
+line; wherever this stage changes something, <code>model-C3.md</code>,
+<code>structure-C3.md</code> and <code>concept-C3.md</code>, each a
+whole file superseding the stage C2 file (rule 18; a file holding only
+what changed is read downstream as the whole thing), and
+<code>manifest-C3.txt</code>, one line per stage C2 file saying whether
+it has a stage C3 successor, which stage C5 reads first; a recut is not
+a superseding file: the tier file is amended and the superseded line
+goes to <code>tier_history.jsonl</code>, as stage C2 says; when the
+third-order tier is recut, <code>scheme_v2.jsonl</code> and
+<code>assignments_final.jsonl</code> rewritten
+(<code>mem.py mint</code>, then <code>mem.py reassign</code>, as stage
+C2 says); <code>notes-C3.md</code>.</p>
+<h2 id="1-the-sequence-and-the-log-point">1. The sequence, and the log
+point</h2>
+<p><strong>Nothing is read against the explanation literature before
+this stage</strong> (contract §4). Within it, <strong>read
+<code>prior.md</code> first</strong>, and restate in
+<code>notes-C3.md</code> what you expected; read after a conclusion has
+formed, it can no longer tell a finding from a prior. Then, before you
+open the shelf, re-read <code>METHOD.md</code>'s first section and every
+shelf already held (<code>mem.py shelf</code>): the v35 analyst had
+forgotten the method shelf by the time the next arrived, and an
+explanation read on a forgotten foundation is a relabelling waiting to
+happen.</p>
+<p><strong>Record where the read logs stand before you open the
+shelf</strong>: the line counts of <code>_cite_reads-C3.jsonl</code> and
+<code>_mem_reads-C3.jsonl</code>, in <code>notes-C3.md</code> and
+logged. Count them yourself; <code>cite.py</code>'s sequence counter
+resets when the tool is constructed. From there on, <strong>a read of
+the rooms prompted by a paper is an abductive read, and it may add or
+change a theme or an arrow</strong>, as Gioia, Corley and Hamilton cycle
+between the data and the literature. Log it before you read
+(<code>mem.py log --kind abductive</code>, the paper and what it made
+you look for). A change it makes carries <code>"abductive": true</code>
+and <code>"prompted_by": "&lt;author year&gt;"</code> on its
+<code>model/history.jsonl</code> or <code>tier_history.jsonl</code>
+line, and is listed in <code>literature-C3.md</code>, so a reader can
+tell what the rooms showed unprompted from what a paper made you find. A
+read to check a quote or a count is not abductive and carries no flag.
+The log records what was served and not why, so it cannot tell a check
+from an abductive read you did not log; say so in
+<code>literature-C3.md</code>.</p>
+<p><strong>If a work changes what a claim rests on, write a switch
+record</strong> (Günther, Joshi and Constantinides 2026, p. 872;
+contract §1, two kinds of claim), one paragraph in
+<code>literature-C3.md</code> per switch: the work and the cue that
+triggered it; what moved (a claim that rested on the rooms' words now
+rests on a pattern across rooms, or the reverse; a name that was the
+participants' now the literature's); which earlier work is redone or
+rechecked, with the leg that does it; what differs in the output; why
+the state after the switch serves the claim better; and the
+<code>findings.jsonl</code> line that supersedes the earlier one (rule
+14). A reading that leaves every claim resting where it rested is not a
+switch and gets no record; this stage's planned reading is the design,
+never a switch.</p>
+<p><strong>Say in <code>notes-C3.md</code>, first</strong>, that the
+literature is read after the model and not through it; it is the design,
+not a departure, and no <code>departures.jsonl</code> line is written
+for it. Then say whether the substitution worked: whether knowing the
+contract's §1 frame and not building with it was a distinction you could
+hold while writing the scheme and adjudicating its placements.</p>
+<h2 id="2-how-to-cite">2. How to cite</h2>
+<p>Mark every claim about the literature one of two ways:
+<strong><code>verified</code></strong>, you opened it on the shelf in
+this session and can quote it; <strong><code>recalled</code></strong>,
+you are working from what you know, with author, year and the claim you
+are attributing, so a reader can check it. A work on the on-request tier
+is <code>recalled</code> until served. <strong>Do not invent a
+reference, a title, a year or a quotation, and do not attach a real
+author to a claim you are not sure they made.</strong> Where you are
+unsure, write <em>I believe this literature holds X but cannot verify it
+here</em> and carry on.</p>
+<h2 id="3-leg-1-work-that-contradicts-the-model">3. Leg 1: work that
+contradicts the model</h2>
+<p>Work that reports the opposite of what you found, or that explains
+your phenomenon with something you did not use. For each: the two
+claims, one sentence each; what in the record decides between them, with
+a room and a quote through <code>cite.py</code> or a transition; and
+which of three things is true: the accounts disagree about the world,
+they disagree about the setting, or they are about different things and
+one of you has the wrong name for it. Say which. Then whether the
+disagreement bounds your claim (a condition, rule 16, written into the
+finding) or the work's (a scope this material falls outside). A
+contradiction you cannot decide from the record is reported as open,
+with what would decide it.</p>
+<h2 id="4-leg-2-work-that-resembles-the-model">4. Leg 2: work that
+resembles the model</h2>
+<h3 id="4a-distant-fields-and-the-mechanisms">4a. Distant fields, and
+the mechanisms</h3>
+<p><strong>This is the pass that supplies mechanisms.</strong> Take your
+model's arrows, particularly the ones whose <code>mechanism</code> you
+found hardest to write, and ask what other literature describes the same
+move, going deliberately outside organization studies. For each match:
+what the distant work holds the mechanism to be, and whether it fits
+here. For each resembling work: what it names that you named differently
+(the fourth-order theme or dimension, its declaration updated under §6);
+what it explains that yours does not, and the reverse.</p>
+<p><strong>Where it fits, rewrite that arrow's <code>mechanism</code> in
+<code>model/arrows.jsonl</code> and in <code>model-C3.md</code>, keep
+the stage C2 sentence beside it as <code>mechanism_C2</code>, mark the
+arrow <code>mechanism_source: from-literature</code> with the work
+named, and write the <code>model/history.jsonl</code> line.</strong>
+Stage C5 takes each mechanism from the arrow that grounds it; one left
+only in <code>literature-C3.md</code> is invisible downstream. Re-read
+<code>mechanism_fails_if</code> against the new sentence; a mechanism no
+observation here could show failing makes the arrow theorised, listed
+apart.</p>
+<p>Where the distant work predicts something here you have not looked
+for, that is an abductive read (§1), logged before you read. Test it,
+record the result either way, and say whether it qualified, bounded,
+added or changed an arrow or a theme. If you decline the read, say
+why.</p>
+<h3 id="4b-the-concept">4b. The concept</h3>
+<p>Stage C2 named a concept and guessed at its nearest existing referent
+from recollection. Test the guess against the shelf, the difference
+stated so a reader could test it. Three outcomes:</p>
+<ul>
+<li><strong>It survives.</strong> The literature has no adequate
+referent. Say what the nearest three are and how each falls short.</li>
+<li><strong>It is a relabelling.</strong> Adopt the existing name,
+rename the concept as borrowed, and say what your material adds, usually
+a setting, a boundary, or a mechanism the original did not have; the
+finding says so.</li>
+<li><strong>It is a relabelling and adds nothing.</strong> Then the
+study produced a description and the model stands without a named
+concept at its centre. Write that; stage C5's propositions do not depend
+on a concept surviving.</li>
+</ul>
+<p>If this pass changes the concept, write <code>concept-C3.md</code>
+whole and leave <code>concept.md</code> standing.</p>
+<h2 id="5-leg-3-the-four-problems-put-to-the-structure">5. Leg 3: the
+four problems, put to the structure</h2>
+<p>The contract's §1 claim is that every group with a goal must solve
+four problems, task division, task allocation, reward provision and
+information provision, whether or not anyone says so. The definition
+assumes a goal; establish from evidence whether each group inherited,
+negotiated, contested or changed its goal (Felin and Zenger 2016 and
+2017 put that gap, the chosen problem, at the centre of strategy). Put
+the claim to your structure and model as they stand; <strong>do not
+revise them to accommodate it</strong>, and be specific enough to be
+wrong.</p>
+<p><strong>The one written operation</strong> (contract §1): for every
+fourth-order theme, which of the four problems it is a way of handling,
+or none, one line in <code>mapping-C3.jsonl</code> with a clause of why;
+the mapped set is the match, the unmapped set the remainder, and each
+mapped problem carries the sentence saying what this material's version
+of it cannot do. A fourth-order theme that already carries one of the
+four's names under its declaration answers this pass by construction;
+say so first, and what the pass asks of it is that sentence, and whether
+the frame's version would have cut the theme where you did. Treat the
+remainder as a candidate extension. Test whether it is a different
+mechanism, a renamed instance, a change of level or an evidence gap. An
+empty remainder is allowed.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;fourth&quot;</span><span class="fu">:</span> <span class="st">&quot;T4-003&quot;</span><span class="fu">,</span> <span class="dt">&quot;problem&quot;</span><span class="fu">:</span> <span class="st">&quot;division|allocation|reward|information|none&quot;</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;why&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;cannot_do&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>Two limits. Your evidence is talk and the claim is about
+arrangements: a group can allocate work perfectly and never write a word
+about it, and the contract's §5 holds you to organizing <em>done in
+public</em>. And there is no denominator: you have the share of coded
+records that maps onto each problem, confounded as §5 describes, not the
+share of groups that solved it.</p>
+<p>Answer in seven parts, in <code>literature-C3.md</code>:</p>
+<ol type="1">
+<li><strong>What you expected</strong>, quoted from
+<code>prior.md</code> rather than remembered: which of those things you
+found, whether any turned up only where the material was thin, and what
+<code>prior.md</code> holds that your structure has no room for.</li>
+<li><strong>What in your structure speaks to the claim</strong>,
+fourth-order theme by fourth-order theme from the mapping, with counts
+and rule 5's gate, and for each whether the material put it there or you
+did.</li>
+<li><strong>What your structure carries that the claim has no place
+for</strong>, the remainder, if any. Explain why it extends the
+framework. Be specific, and quote through <code>cite.py</code>.</li>
+<li><strong>Which of the four your structure reaches richly, which
+thinly, and which not at all</strong>, and for each thin or absent one
+whether the limit is in the material, in the coders' selection, or in
+your own pruning. Where one comes back nearly empty, take a side: did
+these rooms not solve that problem, or can your instrument not see it?
+Say which you think and why. Stage E1's account of what the study cannot
+say inherits this paragraph directly.</li>
+<li><strong>The goal.</strong> Where in the structure and the model the
+making of a goal sits, its contest and its change, and what its setting
+did to the four problems; a finding, never a premise, and if the
+structure has no place for it, say so as a finding about the
+structure.</li>
+<li><strong>Whether your material supports the claim, contradicts it, or
+is silent</strong>, with §5's warning on every count: a claim about what
+is <em>absent</em> here is a claim about small rooms writing in public,
+and every absence claim is marked weak.</li>
+<li><strong>Whether the claim is answerable with this material at
+all.</strong> <em>The structure does not speak to this</em> is a
+complete answer.</li>
+</ol>
+<h2 id="6-keep-the-construct-declarations-current">6. Keep the construct
+declarations current</h2>
+<p>Where the shelf shows a construct is borrowed or adapted rather than
+coined, or mistaken for a construct you had not named, amend its
+<code>construct</code> block (stage C2 §2) and log the event, with the
+sentence saying what this material's version cannot do wherever the name
+is borrowed; the third-order themes stay descriptive and do not change
+here (contract §1). Record what changed in
+<code>structure-C3.md</code>.</p>
+<p><strong>You may recut fourth-order themes and dimensions here, and
+the third-order tier too, under rule 11</strong> (a third-order recut is
+written as stage C2 says: <code>scheme_v2.jsonl</code> and
+<code>mem.py reassign</code>), and stage C2's rule on the dimension tier
+holds through every recut: no number is set, a fourth-order theme may
+gather under no dimension, the dimensions hold apart pairwise, and
+collapsing to one is examined with its candidates and runner-up, never
+an automatic failure or an answer; a recut that empties the tier is
+reported the same way. Every <code>findings.jsonl</code> line a recut
+touches is re-examined in the same act (rule 14). A literature that
+shows a fourth-order theme holding two things the field keeps apart
+means the cut was wrong. Amend the rule first, append the event to
+<code>tier_history.jsonl</code> with its move and one clause of reason,
+amend the tier file, re-place what the amendment touches yourself under
+the amended rule, redraw whatever depended on it, and log the move
+(<code>mem.py log --kind move</code>) and snap it
+(<code>python3 tools/snap.py C3 move-&lt;move&gt;-&lt;n&gt;</code>) as
+you make it.</p>
+<p><strong>What changes, and what does not.</strong> A finding changed
+by a recut says in <code>findings.jsonl</code> what changed it (rule
+13). Nothing in the model is withdrawn because a work says otherwise; it
+is bounded, or the disagreement is printed beside it.</p>
+<h2 id="7-stage-a1s-three-sentences">7. Stage A1's three sentences</h2>
+<p>Read them now, from <code>notes-A1.md</code>, for the first time
+since. Say in <code>notes-C3.md</code> which of this stage's conclusions
+you would have reached anyway and which the material forced.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>The log point; each work read and what it did to which claim,
+<code>verified</code> or <code>recalled</code>; the abductive read, with
+its paper and what it changed or did not, or its refusal; each switch
+record, or that none was needed; each mapping line; each declaration
+amended; each recut by move; the three sentences read.</p>
+<h2 id="final-message">Final message</h2>
+<p>The claim (what the literature changed about the model), the room
+that best supports the model's side, the room that most threatens it,
+and the condition that separates them. Then: works contradicting and how
+each resolved; works resembling; the one distant field that supplied a
+mechanism; findings bounded and changed; declarations updated and names
+changed; whether the concept survived; how much of <code>prior.md</code>
+came true; fourth-order themes mapped to each problem and the size of
+the remainder; files with a stage C3 successor; citations
+<code>verified</code> and <code>recalled</code>; the log point at which
+this stage began; the licences exercised and not (METHOD.md).</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh C3</code> at the end of every pass, or earlier when you
+choose, every recut logged and snapped as it was made; paste the
+close-check report into <code>notes-C3.md</code>;
+<code>handback-C3.md</code>; the head; the closing diary line.</p>
+<p><strong>Interview point.</strong> <code>C3c</code> writes
+<code>out/interview/C3c.md</code> (under 800 words: what you did, what
+you found, what surprised you, what you doubt, and the three questions
+you would most like to be asked) and closes with
+<code>done.sh C3 --cut interview</code>: the model read against the
+literature: what it borrowed, what it contradicts, what no paper has.
+The principal investigator may talk with you here, in a fork of this
+leg, run in a copy of your folder as it stood at the close (not
+read-only; nothing done there reaches the run); the run goes on from the
+cut either way. <code>done.sh</code> files the brief under the leg, the
+stage, the step and the minute, and refuses the cut without the brief
+(and, at a stage's end, without the handback).</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

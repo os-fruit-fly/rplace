@@ -1,0 +1,122 @@
+{
+  "MODEL-D3.md": {
+    "sha256": "6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd",
+    "bytes": 27297
+  },
+  "data_structure-C5.md": {
+    "sha256": "a1a5060c85b73a4f5c593045cd6bdf7956522807f9bee183082b6b051c163472",
+    "bytes": 67660
+  },
+  "verdict-D3-PlaceNL.jsonl": {
+    "sha256": "f8985291c7c3cfa966cf4037ee30b01e225d9c13f82c1c9324952d76f5c3b4ad",
+    "bytes": 1435
+  },
+  "gioia-PlaceNL.csv": {
+    "sha256": "5463a4c9181432c9bd412138719322b23e02d93b07a19193576a88369cc878e3",
+    "bytes": 83964
+  },
+  "return-decisions.json": {
+    "sha256": "9b73388010a8e943697bd84b9cfb03211eb72f9c5fb9f97b6f1d803dd3dd082c",
+    "bytes": 259301
+  },
+  "case.md": {
+    "sha256": "d437a9bc4ed0abe87e91814cb848743adc305092b74b658657d2d40888d6dcc0",
+    "bytes": 15415
+  },
+  "lexicon.md": {
+    "sha256": "2ffe1295628192f1d85cf96b6522194ce3c739a6eb8b41fc08729a492f08f375",
+    "bytes": 672
+  },
+  "R6-data_structure.md": {
+    "sha256": "1908ad096afd086d52c800f2066826dcec0b87d31afedae10467d49e78aa2407",
+    "bytes": 15773
+  },
+  "R6-model.md": {
+    "sha256": "b0a3027a22f28445396897a9922b0c05cf09fea21d4f72c584ed6010b3c9555c",
+    "bytes": 28033
+  },
+  "rulings-D2-PlaceNL.jsonl": {
+    "sha256": "0f386471d8c726c8b453582e309472fee091dafa3b06fc24c003d49c01e38c64",
+    "bytes": 36823
+  },
+  "LADDER.md": {
+    "sha256": "8370d824e020a5dcc2abdf0a35b597e847090f48125f0acfa2c859284d4d3be6",
+    "bytes": 142495
+  },
+  "themes.jsonl": {
+    "sha256": "a3ff8f851344fbecb515ae5b78f2eb3753423829667f92372085862df0ed276c",
+    "bytes": 7181
+  },
+  "timeline.md": {
+    "sha256": "5dbaed62e4111b760648abc64cedb91d1ba3322e35bbd4e381843375afed785a",
+    "bytes": 3302
+  },
+  "adaptations-D3.jsonl": {
+    "sha256": "bc6d3fbd4a827c83c8436285fd8128a17a9eaefec35fdb8e7f5f4b27e799ca4c",
+    "bytes": 27582
+  },
+  "model-D3-by-case-lead.md": {
+    "sha256": "52783c94a5f2f8c689ec08d670416dfcda185a5512d82073ddcc15f769a1825a",
+    "bytes": 21041
+  },
+  "a1-note.md": {
+    "sha256": "ba92fd3c50a756acf25fadf632fc2d298e38a816c32e0750784648e06ba06a0e",
+    "bytes": 3076
+  },
+  "R6-figure-C5.md": {
+    "sha256": "1022ffda2676c65285b94540b811b0b7d9a4a342144fa81d86519fa229c1b69c",
+    "bytes": 5754
+  },
+  "rulings-D3-PlaceNL.jsonl": {
+    "sha256": "86bdda8e310218ca565bc8f52211873e83bafb8d869a78fb05c38f406ce589c0",
+    "bytes": 33966
+  },
+  "adaptations-D2.jsonl": {
+    "sha256": "72436592e4c666851b7ab9b545d0986422c9627522a32d73f8bff8fb4726bfe5",
+    "bytes": 22162
+  },
+  "codes.jsonl": {
+    "sha256": "5d3d9a27a9fc58059e6d114821e69b26c85a9524ca2f9fac7c9467e8b04eb68e",
+    "bytes": 150444
+  },
+  "r6-inventory.json": {
+    "sha256": "406a8b1e3202bb717011ba15cd7a4833022128f70c53b36b39a9dc4c1f98844c",
+    "bytes": 99878
+  },
+  "R6-account.md": {
+    "sha256": "0746e80eb4b671988e0a441e725205937a0a9482d0557300910ab86bd687ba58",
+    "bytes": 8629
+  },
+  "scheme_final.md": {
+    "sha256": "448f7db5a90f56731c9bc4a9067b95eff190739b1a5b6d93d5445f6b3731f5da",
+    "bytes": 379989
+  },
+  "room-B-PlaceNL.md": {
+    "sha256": "700578f5e3c3248b2bab458a53a8f30f834a84e2287e371fa1695acad9669263",
+    "bytes": 9488
+  },
+  "themes.jsonl.txt": {
+    "sha256": "a3ff8f851344fbecb515ae5b78f2eb3753423829667f92372085862df0ed276c",
+    "bytes": 7181
+  },
+  "population-rows.csv": {
+    "sha256": "c881c7792421796feb54280600a70796fb580a153cbf53e62fc18ab553d99884",
+    "bytes": 119613
+  },
+  "verdict-D2-PlaceNL.jsonl": {
+    "sha256": "3c693eed0035fc3a105823929b8a5b8d70d009fc1a16d43c9fb5689fb409a5ae",
+    "bytes": 2734
+  },
+  "P05-revision-history.json": {
+    "sha256": "62a4eb90056acbc33c945d5e7b0f2be215f179e6ca8a4060c6b46489b28bdebf",
+    "bytes": 12185
+  },
+  "model-D2-by-case-lead.md": {
+    "sha256": "f1a3bce6c135ec99efd6e1e485a928d0df1009cf3dbb19e323e6da4e21747f77",
+    "bytes": 17630
+  },
+  "codes.jsonl.txt": {
+    "sha256": "5d3d9a27a9fc58059e6d114821e69b26c85a9524ca2f9fac7c9467e8b04eb68e",
+    "bytes": 150444
+  }
+}

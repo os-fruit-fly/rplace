@@ -1,0 +1,54 @@
+{
+  "checkpoint_id": "community--PlaceNL--R6",
+  "account_path": "workspace/out/account.md",
+  "account_file": "record-files/6c1158d63872feec7c2eaec2ec34a7acb91640f0a8ff35235c22060abf7b0e9c.md",
+  "account_sha256": "6c1158d63872feec7c2eaec2ec34a7acb91640f0a8ff35235c22060abf7b0e9c",
+  "code_id": "c0004",
+  "item_id": "dfqn51t",
+  "thread_id": "62uyvm",
+  "sources": [
+    {
+      "path": "workspace/room/run/out/codes.jsonl",
+      "sha256": "52ee8060ad2f6932920d2df59f7980a65ccb13d171009d83e98d94048ea1ae04",
+      "source_file": "record-files/52ee8060ad2f6932920d2df59f7980a65ccb13d171009d83e98d94048ea1ae04.jsonl",
+      "origin": {
+        "blob": "23093ef44c4ea90ae4f7b0a091ab47e0dcc14fee",
+        "format": "tar-zstd",
+        "member": "run/out/codes.jsonl",
+        "path": "coder/rooms/PlaceNL/run.tar.zst"
+      },
+      "reading_sha256": "5d3d9a27a9fc58059e6d114821e69b26c85a9524ca2f9fac7c9467e8b04eb68e",
+      "reading_bytes": 150444,
+      "reading_file": "52ee8060ad2f6932920d2df59f7980a65ccb13d171009d83e98d94048ea1ae04.reading.jsonl",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "bytes": 146312
+    },
+    {
+      "path": "workspace/room/run/coder_corpus.jsonl",
+      "sha256": "521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd",
+      "source_file": "record-files/521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd.jsonl",
+      "origin": {
+        "blob": "23093ef44c4ea90ae4f7b0a091ab47e0dcc14fee",
+        "format": "tar-zstd",
+        "member": "run/coder_corpus.jsonl",
+        "path": "coder/rooms/PlaceNL/run.tar.zst"
+      },
+      "reading_sha256": "c303bd7ff7beb988e5a723f55d6879d325280a4a24ad80c4facf65511c909559",
+      "reading_bytes": 565503,
+      "reading_file": "521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd.reading.jsonl",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "bytes": 553389
+    }
+  ],
+  "code_line": 4,
+  "item_line": 67,
+  "thread_items": 7,
+  "checks": [
+    "manifest hashes and sizes",
+    "code and item identifiers",
+    "code text equals item body",
+    "quote occurs in account"
+  ]
+}

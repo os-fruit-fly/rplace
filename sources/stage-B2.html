@@ -1,0 +1,272 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage B2. Assignment: the pilot. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-b2-assignment-the-pilot">Stage B2. Assignment: the
+pilot.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-B2.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-B2.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> build and check legs as <code>arm.json</code>
+sets (your platform file lists them); dispatch outside your session, the
+dispatch sending packets to the routine readers on the platform's reader
+route (FLEET.md). <strong>Legs:</strong> per round, build, dispatch,
+check; the check leg of round k decides whether round k+1 opens.
+<strong>This stage freezes the scheme.</strong> You hand it, with a
+small set of deliberately hard second-order themes, to fresh readers,
+and treat every divergence as a defect in the description rather than in
+the reader.</p>
+<p><strong>Steps:</strong> <code>B2a-r1</code> build round 1 (it ends at
+<code>--cut packets-out</code>), the dispatch, <code>B2b-r1</code> check
+round 1; then <code>B2a-r2</code>, <code>B2b-r2</code> ... while a round
+is needed; after the freeze, <code>B2c</code> builds the gold round and
+the two stability rounds (it ends at <code>--cut packets-out</code>),
+three dispatches, and <code>B2d</code> checks them. Each leg is named by
+its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after the packets are written (the build
+leg), and after each section of the check leg. At a safe stop, check for
+<code>.pause</code> (<code>ls .pause</code>); if it is there, log where
+to pick up, your working hypothesis and the next room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh B2 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+<code>FLEET.md</code>, the last five diary entries,
+<code>validate.py --open B2</code>. In a check leg the harness adds one
+line: the readers left their files in
+<code>_fleet_raw/B2/round-k/</code>.</p>
+<p><strong>Reads allowed:</strong> <code>scheme.md</code>,
+<code>scheme.jsonl</code>, <code>families.jsonl</code>,
+<code>confusions.md</code>, <code>notes-B1.md</code>; the corpus through
+<code>cite.py</code>; second-order themes through
+<code>mem.py theme</code>, concepts through <code>codes --sub</code>;
+<code>_fleet_raw/B2/</code> in check legs. <strong>Forbidden:</strong>
+your room notes, the running file and <code>findings.jsonl</code> to any
+reader; <code>gold_items.jsonl</code> to any reader; exemplars to any
+reader in this stage.</p>
+<p><strong>Outputs:</strong> <code>author_items.jsonl</code>;
+<code>gold_items.jsonl</code>; <code>RETURN-B2.md</code>;
+<code>pilot_rounds.jsonl</code>; <code>scheme_edits.jsonl</code>;
+<code>exemplar_candidates.jsonl</code>; <code>stability-B2.md</code>;
+<code>pilot_report.md</code>; the frozen <code>scheme_final.md</code>
+and <code>scheme_final.jsonl</code>; <code>notes-B2.md</code>; a
+<code>run_manifest.json</code> entry.</p>
+<h2
+id="1-build-leg-round-1-the-hard-set-the-gold-set-the-declarations">1.
+Build leg, round 1: the hard set, the gold set, the declarations</h2>
+<p><strong>Place every item yourself first</strong>, into
+<code>author_items.jsonl</code>, each with <code>confidence</code>
+(<code>clear|arguable</code>), which stage B4's transmission rows split
+on, before any packet exists. Whether a reader holding only the scheme
+lands where you would have landed has an answer only if your answers
+were written down first; a scheme edited with your own placements in
+front of you is edited to justify them. Three sources, mixed and
+shuffled so a reader cannot tell them apart, sizes declared in
+<code>notes-B2.md</code> before round 1: the second-order themes you
+nominated in <code>confusions.md</code> to expose each ranked pair, at
+least half sibling pairs inside one family, since that is where a scheme
+of hundreds divides readers (the pilot scores that prediction); the ten
+biggest bags from <code>notes-B1.md</code>; a random sample, seeded and
+recorded. Forty to sixty items.</p>
+<p><strong>The gold set</strong>: a second hard set by the same rule and
+seed discipline, placed by you, shown to no pilot reader, written to
+<code>gold_items.jsonl</code> with placements, confidence and reasons,
+and kept outside the readers' directory (FLEET.md). It is scored once,
+after the last round (§5). Stage B3 seeds it unannounced into the live
+batches at the rate you declare.</p>
+<p><strong>Declared before round 1, in
+<code>notes-B2.md</code>:</strong> the stopping threshold (pairwise
+agreement on the hard set at which rounds stop); the agreement
+definition stages B3 and B4 reuse unchanged (whether
+<code>["T3-004"]</code> against <code>["T3-004","T3-011"]</code> is
+agreement, disagreement or partial: agreement on sets by Jaccard where
+rule 0 allowed more than one placement, alpha computed on it; and
+whether chance correction is over themes, over sets, or over presence
+and absence per theme); the gold policy (count, seeding rate, and that
+they are seeded; never the items); the batch cap stage B3 runs under,
+set from §4 below after round 1.</p>
+<p><strong><code>RETURN-B2.md</code></strong>, the one return
+specification (FLEET.md): the return line below, rule 0 in the
+contract's words and not restated (a reader that places a second theme
+owes rule 0 its line in <code>multiplacement_log.jsonl</code>, here as
+at stage B3), the end marker, and the line telling the reader to confirm
+it reached the marker. <code>packets.py B2</code> builds one packet per
+reader under the 50 KB ceiling: <code>scheme.jsonl</code> as it
+currently stands, served as stage B3 serves it, the index page whole and
+the families opened as the reader needs them; the hard set's items with
+label, <code>theme_note</code> and concepts; and no exemplars: stage B3
+may ship them; this stage measures the description alone. <strong>From
+the round after 2026-10-11 (J)</strong> the return line also carries
+<code>also_present</code>: <code>{}</code> unless
+<code>item_is_a_bag</code> is true, and then every theme beyond the one
+placed, each with its own concept ids (rule 0 as amended);
+<code>support</code> holds the concepts behind the primary, and each
+further theme's concepts are in its <code>multiplacement_log</code>
+record. Rounds sent before the amendment are scored as they were sent.
+Oversized items are served in parts to the same reader
+(<code>MANIFEST.json</code> groups, as stage B3 serves a large room),
+never dropped for size.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;theme_id&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;batch&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;agent&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;replicate&quot;</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span> <span class="dt">&quot;position&quot;</span><span class="fu">:</span> <span class="dv">23</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;third_order&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;T3-007&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;multi&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;why&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;T3-007&quot;</span><span class="fu">:</span> <span class="st">&quot;what about THIS theme put it here rather than its nearest neighbour&quot;</span><span class="fu">},</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;confidence&quot;</span><span class="fu">:</span> <span class="st">&quot;clear|arguable&quot;</span><span class="fu">,</span> <span class="dt">&quot;read&quot;</span><span class="fu">:</span> <span class="st">&quot;whole|theme-block&quot;</span><span class="fu">,</span> <span class="dt">&quot;exemplar_read&quot;</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;families_opened&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;G03&quot;</span><span class="ot">,</span> <span class="st">&quot;G09&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;t_start&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;support&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;c0013&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;also_present&quot;</span><span class="fu">:</span> <span class="fu">{}}</span></span></code></pre></div>
+<p>Append the round's manifest entry: readers' model, seed, decoding,
+count. Every later fidelity is compared against this stage's figure.
+<strong>Stop here.</strong> Close with
+<code>done.sh B2 --cut packets-out</code>. Your session ends; nothing
+more of this stage runs on your model until the check leg. The dispatch
+runs without you, on the platform's reader route. The next launch of
+stage B2 is the check leg, and its packet tells you one thing: the
+readers left their files in <code>_fleet_raw/B2/round-k/</code>.</p>
+<h2 id="2-dispatch-leg">2. Dispatch leg</h2>
+<p>Not yours. The dispatch sends each packet to three fresh readers,
+collects the returns into <code>_fleet_raw/B2/round-k/</code>, validates
+them against <code>RETURN-B2.md</code>, reissues what fails the schema,
+and closes. Nothing in it reads your files. A partial return is not a
+return: its unwritten items are gaps, not verdicts, and are reissued;
+when reissues are exhausted the stage stops and you rebuild the packets
+(FLEET.md). No reader gets a stronger model for a hard item: readers are
+interchangeable or fidelity means nothing. In the check leg copy
+<code>fleet.py</code>'s counts into <code>notes-B2.md</code>: readers,
+reissues, durations. Counts, not readings.</p>
+<h2 id="3-check-leg-the-three-numbers-and-the-edit">3. Check leg: the
+three numbers and the edit</h2>
+<p>You are relaunched. Validate, then score, in this order:
+<strong>fidelity</strong> against <code>author_items.jsonl</code>, the
+primary figure; <strong>pairwise agreement</strong> among the three
+readers, secondary, since three readers can agree with each other and
+all diverge from you; <strong>your own consistency</strong>, by
+re-placing ten of the hard set blind (after the last round only): open a
+blind window first (<code>mem.py blind on --reason "..."</code>), read
+the ten through <code>mem.py theme</code> and the packets' family pages,
+write your placements, then <code>mem.py blind off</code>; the read log
+is the evidence that the window held. If you disagree with yourself more
+than the readers disagree with you, the fleet is not the problem. Every
+item where any two disagree is a finding and the material for the edit.
+One line per round in <code>pilot_rounds.jsonl</code>:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;round&quot;</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span> <span class="dt">&quot;n_items&quot;</span><span class="fu">:</span> <span class="dv">52</span><span class="fu">,</span> <span class="dt">&quot;agents&quot;</span><span class="fu">:</span> <span class="dv">3</span><span class="fu">,</span> <span class="dt">&quot;exemplars&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span> <span class="dt">&quot;fidelity_vs_author&quot;</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;agreement_pairwise&quot;</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span> <span class="dt">&quot;alpha&quot;</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span> <span class="dt">&quot;items_with_disagreement&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;...&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;seed&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">}</span></span></code></pre></div>
+<p><strong>The edit, every one logged</strong> in
+<code>scheme_edits.jsonl</code> with stage B4's taxonomy, so the pilot
+and the run share one set of names: <code>scheme-ambiguous</code> (the
+belonging test or the discriminator does not decide; fix the sentence);
+<code>item-is-a-bag</code> (the coder's theme holds two practices, so no
+single placement is right; not a scheme defect; flag the item and move
+on); <code>reader-error</code> (the file does decide and the reader
+missed it; suspect this last: two independent readers making the same
+miss is a scheme defect that looks like a reader error);
+<code>author-error</code> (you were wrong and the readers were right; a
+pilot that never returns it measures obedience);
+<code>genuine-joint</code> (the material satisfies two gates and one
+placement cannot carry it, rule 0's exception on the record; check that
+the readers actually differed rather than one recording the
+exception).</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;round&quot;</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span> <span class="dt">&quot;theme&quot;</span><span class="fu">:</span> <span class="st">&quot;T3-007&quot;</span><span class="fu">,</span> <span class="dt">&quot;field&quot;</span><span class="fu">:</span> <span class="st">&quot;must_not_show&quot;</span><span class="fu">,</span> <span class="dt">&quot;caused_by&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;sub/theme_id&quot;</span><span class="ot">,</span> <span class="st">&quot;...&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;was&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;now&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;why&quot;</span><span class="fu">:</span> <span class="st">&quot;two of three readers placed a coordination-of-labour item here because the test said nothing about who was named&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>An edit with no <code>caused_by</code> is not allowed; stage C1 opens
+<code>scheme_edits.jsonl</code> before it revises anything. Every edit
+is a <code>tier_history</code> line with its move
+(<code>relabelled</code> or <code>rescoped</code>, move
+<code>asking questions</code> or <code>splitting</code>). <strong>Never
+tighten by narrowing until a theme becomes rare</strong>: it looks like
+success here and makes that theme's prevalence wrong everywhere after.
+Watch every theme's base rate across rounds and report it.</p>
+<p><strong>Every edit owes its rechecks</strong> (J, 2026-10-11). After
+you change a gate, place again every placement of yours it could move:
+the items of <code>author_items.jsonl</code> and
+<code>gold_items.jsonl</code> on the edited theme, or on a theme its old
+or new sentence names. <code>mem.py rechecks --owed</code> lists them
+(the edit is <code>edit:&lt;n&gt;</code>, its line in
+<code>scheme_edits.jsonl</code>; above thirty a seeded sample of thirty,
+and all of them once more than one in ten of the sample moves);
+<code>mem.py recheck &lt;sub&gt;:&lt;tNN&gt; --change edit:&lt;n&gt; --theme ... --codes "T3-a=c1,c2" --reason "..."</code>
+records each, with the concepts behind each theme.
+<code>author_items.jsonl</code> stays as you wrote it: from the next
+round report fidelity twice, against it and against the rechecked
+placements, and say in each moved recheck's reason whether it is an
+<code>author-error</code> or the edit doing its work. The close refuses
+an edit whose rechecks are missing. Then run <code>mem.py gates</code>
+and read every pair an edited theme belongs to
+(<code>mem.py gates T3-a T3-b</code>), confirming each with
+<code>--confirm --reason</code>: a discriminator that runs one way, or a
+<code>must_not_show</code> that sends material to a theme with no
+discriminator against it, is fixed before the packets are rebuilt, and
+the freeze refuses a scheme that carries either.</p>
+<p>Then decide: another round opens if no stopping condition holds (§5),
+and its build leg rebuilds the packets from the edited scheme.</p>
+<h2 id="4-two-things-this-stage-owes-the-fleet">4. Two things this stage
+owes the fleet</h2>
+<p><strong>How long a convention takes to form.</strong> Compare each
+reader's first ten items against its last ten on the arguable rate and
+on agreement with the other two; report where the curve flattens. If
+either still improves inside a round, formation is still happening and
+stage B3's cap is too small; the fix is a warm-up block that does not
+count, not a bigger batch. <strong>Which items make good
+exemplars.</strong> Export the items that divided readers to
+<code>exemplar_candidates.jsonl</code>; stage B3's exemplar arm draws
+from them, not from clear cases.</p>
+<h2 id="5-stopping-the-freeze-stability-the-gold-score">5. Stopping, the
+freeze, stability, the gold score</h2>
+<p>Rounds stop when one holds: a round produces no scheme edit; pairwise
+agreement on the hard set clears the declared threshold; four rounds.
+After four, a scheme that still divides three readers is telling you
+about the tier, not the wording: report it and carry it into B3.</p>
+<p>Freeze the scheme as <code>scheme_final.md</code> and
+<code>scheme_final.jsonl</code>, the rare tier inside it under
+<code>"tier": "rare"</code>, <code>families.jsonl</code> beside it.
+Then, in <code>B2c</code>, the dispatches on the frozen scheme: one
+round of fresh readers on the gold set
+(<code>packets.py B2 --round gold --items gold_items.jsonl</code>); and
+the <strong>stability check</strong> (FLEET.md), the gold set served to
+the same reader arm under two rewordings of the brief that change no
+test (<code>out/brief-stab-1.md</code> and
+<code>out/brief-stab-2.md</code>, written by you;
+<code>packets.py B2 --round stab-1 --items gold_items.jsonl --brief brief-stab-1.md</code>,
+and the same for 2), whose disagreement with itself is written to
+<code>stability-B2.md</code> and is the floor every later figure is read
+against. Report gold fidelity beside the last pilot round's fidelity
+(close means clearer, much worse means fitted); pairwise agreement and
+alpha on the gold set beside the final round's; per-family agreement,
+and per theme only where a theme has three or more items in the set,
+since at hundreds of themes over sixty items a per-theme figure is one
+item wide; your <code>confusions.md</code> predictions scored: which
+pairs confused readers, in what order, and how the observed rate
+compared with your estimate.</p>
+<p>Gold fidelity is a trend against this stage's frozen figure, not a
+level: the set was drawn hard, and the figure is agreement with your own
+placements. Wherever a figure from this stage appears, say what it
+licenses in FLEET.md's words, and which claim you are making: <em>what
+you would have produced at a scale one analyst cannot reach</em> is
+supported; <em>what any competent reader would have produced</em> is
+not.</p>
+<h2 id="6-pilot_reportmd">6. <code>pilot_report.md</code></h2>
+<p>The rounds, with agreement climbing or not; every edit grouped by
+theme with the disagreement that caused it; the gold number beside the
+last pilot number and what the gap means; the <code>author-error</code>
+verdicts, listed; the themes that never stabilised, named, with what
+stage B4 should expect from them; the prediction scorecard; the
+stability figure; what it cost: readers, items, tokens
+(<code>tools/tokens.py --dispatched</code> gives the tokens each packet
+cost, as the gateway counted them).</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>Each declaration; each round opened and closed with its three
+numbers; each edit; the freeze; the stability result.</p>
+<h2 id="final-message">Final message</h2>
+<p>Rounds run; fidelity at round 1 and at the end; the gold figure with
+agreement and alpha beside it; the stability figure;
+<code>author-error</code> count; your blind re-placement score; edits by
+field; which predicted confusions were real; themes that did not
+stabilise; any theme whose base rate fell while tightened; the one
+sentence in the scheme you are least confident a stranger reads as you
+meant. A return value.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh B2</code> at every leg (its close-check is
+<code>validate.py B2</code>; paste the report into
+<code>notes-B2.md</code>); <code>--cut packets-out</code> at every build
+leg; where a check leg's edit recuts a theme, the move logged with
+<code>mem.py log --kind move</code> and snapped with
+<code>python3 tools/snap.py B2 move-&lt;move&gt;-&lt;n&gt;</code>;
+<code>handback-B2.md</code>; the head; the closing diary line.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

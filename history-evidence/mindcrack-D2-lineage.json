@@ -1,0 +1,45 @@
+{
+  "community": "mindcrack",
+  "archive_sha256": "2a1d27e5fb520fffa0b1253f900678341b8ffb52f5043a7d7b7e0e2fb5d85570",
+  "archive_name": "mindcrack.tar.zst",
+  "session": "01a14271-2f94-7d01-91d2-b3c884cb2581",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T04-01-16-01a14271-2f94-7d01-91d2-b3c884cb2581.jsonl",
+      "sha256": "a798527e9268d06d1a005de9af53ba4739354077d276482d683e87976b96dfdf",
+      "lines": 162,
+      "last_utc": "2026-10-16T02:08:48.521Z",
+      "identity": [
+        {
+          "id": "01a14271-2f94-7d01-91d2-b3c884cb2581",
+          "session_id": "01a14271-2f94-7d01-91d2-b3c884cb2581",
+          "timestamp": "2026-10-16T02:01:16.436Z",
+          "forked_from_id": "01a0a497-11f9-7b81-8a08-369b9031ea7b",
+          "forked_from_ordinal_exclusive": 492,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T02:01:21.013Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T02:07:38.607Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "70039d6e7d4e20037636511b822d1bc6a607d35859536744ab9aa761413478c6",
+    "source_archive_sha256": "ef0c21270221b79a1e6503a83fb06fa8c49d60bd726a5177c91be8030723160b",
+    "checkpoint": "160c1f3b279c46b3f95fd665a0a39bc1c87e44868327710c47610660d2c8e37f",
+    "source_finished": "2026-09-15T10:55:20.424708+00:00",
+    "source_archive_name": "mindcrack-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

@@ -1,0 +1,1 @@
+r/PlaceNL — branch B — verdict: full. Practice saturation: later material repeated established organizing practices while adding conflict and closure practices. Evidence saturation: Reddit practice is well supported, but Discord and missing bodies remain partial. Blocked: nothing.

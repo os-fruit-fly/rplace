@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage D6. The retelling: the model with its forms inside it. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-d6-the-retelling-the-model-with-its-forms-inside-it">Stage
+D6. The retelling: the model with its forms inside it.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-D6.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-D6.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+one per aggregate dimension (or per group of fourth-order themes, if you
+judge that a better unit), then one for the whole telling and the
+figure; each leg closes at its end or earlier when you choose.
+<strong>Fleet:</strong> none.</p>
+<p><strong>Steps:</strong> <code>D6a-01</code>, <code>D6a-02</code> ...
+one per aggregate dimension (or group of fourth-order themes);
+<code>D6b</code> the telling and the figure, the handback and the
+interview. Each leg is named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each dimension's section is
+written and logged; after the figure; after each amendment is logged and
+snapped. At a safe stop, check for <code>.pause</code>
+(<code>ls .pause</code>); if it is there, log where to pick up, your
+working hypothesis and the next room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh D6 --pause</code>.</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+the last five diary entries, <code>validate.py --open D6</code>. First
+leg only: <code>account.md</code> (stage C5),
+<code>branches.jsonl</code>, <code>crosslinks.jsonl</code>,
+<code>tree-D4.md</code>, every <code>forms/&lt;id&gt;-account.md</code>
+from stage D5, and <code>notes-D5.md</code> (the lumps, renamings and
+subforms stage D5 left for you to act on or decline, each answered in
+<code>notes-D6.md</code>).</p>
+<p><strong>Reads allowed:</strong> everything you have written; the
+model (<code>model/elements.jsonl</code>,
+<code>model/arrows.jsonl</code>, <code>MODEL-D1.md</code>); the ledger
+and the verdicts; the rooms and their concepts through the verbs
+(<code>mem.py room</code>, <code>forest</code>, <code>case</code>,
+<code>compare</code>, <code>cite.py</code>); the canvas, declared where
+it shapes a sentence (rule 7). Nothing is forbidden to you here.</p>
+<p><strong>Outputs:</strong> <code>retelling-D6.md</code>;
+<code>fractal-D6.jsonl</code>; <code>figure-D6.md</code> (the figure as
+text: a mermaid or dot source you can render, with a legend); empty
+<code>amendments-D6.jsonl</code>; <code>proposals-D6.jsonl</code> (empty
+if none); <code>notes-D6.md</code>; <code>handback-D6.md</code>; the
+interview brief, <code>out/interview/D6b.md</code>.</p>
+<h2 id="why-this-stage-exists">Why this stage exists</h2>
+<p>Stage C5 told the global model. Stages D1 to D4 returned it to every
+room and cut the forms organizing took from what the rooms did to it.
+Stage D5 wrote one account per branch. None of them tells the model
+again with the forms inside it, and that telling is the answer to the
+theory question: what forms organizing takes, how they differ in their
+functioning, and which of them keep the work alive. Write it now, from
+the top down, so that a reader can walk from an aggregate dimension to a
+form to a room and back, and at every step see the level below specify
+the one above without contradicting it (fractal specification, contract
+§2).</p>
+<h2 id="1-dimension-by-dimension">1. Dimension by dimension</h2>
+<p>For each aggregate dimension, in the order you choose: what it is in
+the global model, in one paragraph; then, for each fourth-order theme
+under it, what each branch does to it. A branch
+<strong>specifies</strong> the element (adds detail that holds in its
+rooms), <strong>restricts</strong> it (it holds only under a condition
+the branch names), <strong>replaces</strong> it (the branch does the
+work another way), or <strong>leaves it untouched</strong>. Write one
+line per element and branch in <code>fractal-D6.jsonl</code>:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;element&quot;</span><span class="fu">:</span> <span class="st">&quot;P07&quot;</span><span class="fu">,</span> <span class="dt">&quot;branch&quot;</span><span class="fu">:</span> <span class="st">&quot;F03&quot;</span><span class="fu">,</span> <span class="dt">&quot;relation&quot;</span><span class="fu">:</span> <span class="st">&quot;specifies|restricts|replaces|untouched&quot;</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;how&quot;</span><span class="fu">:</span> <span class="st">&quot;one sentence&quot;</span><span class="fu">,</span> <span class="dt">&quot;evidence&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;codes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;denmark:c0117&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;rooms&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;denmark&quot;</span><span class="ot">,</span> <span class="st">&quot;sweden&quot;</span><span class="ot">]</span><span class="fu">},</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;canvas&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">}</span></span></code></pre></div>
+<p>Name two or three rooms per branch that show it best, and one that
+shows it least well. Where a branch's rooms disagree at this element,
+describe the evidence and alternatives. It may be local variation,
+unresolved evidence, or a candidate subform or crosslink. Any new
+structural claim goes in <code>proposals-D6.jsonl</code> as
+unvalidated.</p>
+<h2 id="2-the-telling">2. The telling</h2>
+<p><code>retelling-D6.md</code> tells the whole model again, with the
+forms inside it, in the model's terms. It says which forms kept the work
+alive to the freeze and after it, from the record
+(<code>organizing_end_hour</code>, the aftermath share and
+<code>work_remained</code> read beside each form, silence counted; the
+canvas only as the outcome, the use declared), which did not, and what
+in the model separates them. It says what the unadapted group is, and
+what the rooms the model could not compose have in common, if anything.
+It names every branch by its id at least once.</p>
+<h2 id="3-the-figure">3. The figure</h2>
+<p><code>figure-D6.md</code>: the stage C5 figure with the forms drawn
+inside it, at the level where they differ. As many elements and forms as
+the telling needs; no fixed count.</p>
+<h2 id="4-new-substantive-proposals">4. New substantive proposals</h2>
+<p>The D3 model and D4 tree remain unchanged here. A new explanatory
+insight is a proposal, not an applied amendment. Write
+<code>proposals-D6.jsonl</code> with <code>id</code>, <code>what</code>,
+<code>change</code>, <code>why</code>, <code>evidence</code>,
+<code>affected_rooms</code>, <code>base_model_version</code> and
+<code>status: unvalidated</code>. Keep these proposals separate from the
+validated retelling and figure. <code>amendments-D6.jsonl</code> remains
+empty. A proposal can enter a later model only through a supported
+affected-case return to the original leads and a new validation cycle;
+the current run never inherits D3 validation for it. E1 reports the
+proposals and their unvalidated status.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>Each dimension finished; each unvalidated proposal; the figure drawn;
+the telling finished.</p>
+<h2 id="final-message">Final message</h2>
+<p>Three sentences: the answer to the theory question as this run found
+it; the form you are most and least sure of; what the retelling changed
+in the model, or that it changed nothing.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh D6</code> at the end of each leg; paste the close-check
+report into <code>notes-D6.md</code>; <code>handback-D6.md</code>; the
+head; the closing diary line.</p>
+<p><strong>Interview point.</strong> <code>D6b</code> writes
+<code>out/interview/D6b.md</code> (under 800 words: what you did, what
+you found, what surprised you, what you doubt, and the three questions
+you would most like to be asked) and closes with
+<code>done.sh D6 --cut interview</code>: the model re-told with its
+forms inside it, the answer to the theory question. The principal
+investigator may talk with you here, in a fork of this leg, run in a
+copy of your folder as it stood at the close (not read-only; nothing
+done there reaches the run); the run goes on from the cut either
+way.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

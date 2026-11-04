@@ -1,0 +1,1 @@
+r/mindcrack — branch B; verdict `full`. Practice saturation: later slices added megathread, closing-account, and recap practices. Record saturation: removals, post-window continuations, and off-platform talk leave specific gaps. Nothing blocked.

@@ -1,0 +1,190 @@
+{
+  "source": "population/history.jsonl",
+  "source_sha256": "30b0da963748363cfdf39a2767f1af87ada0adf6bff19170440989fad33e7e77",
+  "entries": [
+    {
+      "line": 136,
+      "entry": {
+        "t": "2026-10-16T14:40:30Z",
+        "stage": "D3",
+        "leg": "D3a-04",
+        "id": "P05",
+        "event": "statement revised: repair related to the form its keepers know, and to the room's changes (P02)",
+        "move": "relating",
+        "why": "Corrections met twice (rule 12, stage D3 section 2): OnePiece-012 and leagueoflegends-053, accepted corrections at T4-013, correct the same clause of P05, 'members watch it and repair changed pixels'. In both, members repaired an intended feature or a valid fix back to the form they knew ('people thought the fixing of it was attempted vandalism. I fell into that trap myself'; 'If someone would stop patching up the white glare'). monsterhunter-016 (T4-007) and portugal-029 (T4-019) meet them in substance: an agreed change and a settled addition repaired away. The alignment holds beyond the four. By a phrase search over my rulings' reasons, accepted P05 lines in 67 rooms carry the same mechanism, most as paired elaborations: keepers who do not know a planned change take it for damage; keepers check, or are told, the intended form before they repair; builders give a change up when keepers undo it. P02's lines showed it from the design side in 14 rooms (D3a-03). An order test over eleven rooms (out/_analysis/d3_order_keepers.py) holds in seven: keepers erase first and, once told, switch within the hour. In three (leagueoflegends, monsterhunter, cubers) the room told its keepers in the thread and they went on erasing for hours, or the builders gave the change up; the eleventh (tf2) fails by the order of the reports, not of the acts. The clause is therefore related to P02: repair restores the form the keepers know, so a planned or agreed change must reach them. The range is unchanged and no room enters or leaves P05, so this is not a loosening. 'Puts upkeep before growth' stands; the lines where members weigh upkeep against growth, press growth beside upkeep or use growth as defence are accepted as paired elaborations and left to D4. No finding touches P05.",
+        "field": "statement",
+        "now": "The room keeps its placed work against erosion: members watch it and repair changed pixels, and the room rallies to defend it under attack, covers the night, hardens its shape and puts upkeep before growth. Repair restores the form the keepers know. A change the room has planned or agreed (P02) is therefore repaired away as damage until its keepers are told of it, and it is lost or given up where the telling does not reach them.",
+        "was": {
+          "id": "P05",
+          "kind": "process",
+          "statement": "The room keeps its placed work against erosion: members watch it and repair changed pixels, and the room rallies to defend it under attack, covers the night, hardens its shape and puts upkeep before growth.",
+          "tier": [
+            "T4-013"
+          ],
+          "dimension": [
+            "D03"
+          ],
+          "range": "from one member fixing stray pixels to shifts, scripts and calls to defend over many hours",
+          "evidence": {
+            "findings": [],
+            "codes": [
+              "wildhockey:c0143",
+              "day9:c0003",
+              "ubc:c0090"
+            ]
+          },
+          "since": "C2-pass-1",
+          "leg": "C2a-01",
+          "status": "standing"
+        },
+        "adaptations": [
+          "OnePiece-012",
+          "leagueoflegends-053",
+          "monsterhunter-016",
+          "portugal-029"
+        ]
+      }
+    },
+    {
+      "line": 172,
+      "entry": {
+        "t": "2026-10-24T05:38:42Z",
+        "stage": "D3",
+        "leg": "D3c",
+        "id": "P05",
+        "event": "corrections met twice re-examined with every room back (section 2), and the scope decided without a change to the frozen model (QD3-011, option b): a cluster branch with a bound, carried in F-024; the relating revision drafted at D3b held for D4",
+        "move": "developing working hypotheses",
+        "why": "Nine re-check corrections fail the clause move 173 added ('until its keepers are told of it, and it is lost or given up where the telling does not reach them'). In six rooms (completeanarchy, polska, satania, halo, bangtan, thesilphroad) the keepers read a planned change from its shape and stop repairing it, with no telling; polska and satania meet at T4-006, and halo and bangtan at T3-170 and T4-019. In three (armok, maryland, oneshot) informed members hold the change against keepers who do not know, at three nodes. The re-examination holds the alignment for the six. J chose option (b) (23 October, 10:36 Berlin): hold the move and freeze 46384686, the version the rooms were re-checked on (section 5). The scope decision is the one rule 12 and section 4 allow beside a global revision: the frozen clause is the trunk, bounded to rooms where the keepers can learn of a planned change only by being told and no informed member holds it; the six rooms are a cluster branch, 'the shape read', carried to D4 and D5, where branches are built and judged; the three are a second limit, below the trigger. F-024 states the bounded claim with its refuted_by. The revision drafted at D3b is held for D4: the change is repaired away as damage until its keepers learn of it, by being told or by seeing enough of its shape to read it; informed members can hold it against keepers who do not know; it is lost or given up where neither the telling nor the shape reaches the keepers. P05's statement is unchanged by this line.",
+        "adaptations": [
+          "R-completeanarchy-c187508d7ae3-022",
+          "R-polska-dadda7358f9a-049",
+          "R-satania-84df196116f3-022",
+          "R-halo-b988854ba168-036",
+          "R-bangtan-7efe23da0d0c-070",
+          "R-thesilphroad-a3f86618e239-018",
+          "R-armok-8852b2ab85f8-022",
+          "R-maryland-d1b6e2d1d5f3-017",
+          "R-oneshot-e840e127e9b2-013"
+        ],
+        "rooms": [
+          "completeanarchy",
+          "polska",
+          "satania",
+          "halo",
+          "bangtan",
+          "thesilphroad",
+          "armok",
+          "maryland",
+          "oneshot"
+        ],
+        "evidence": [
+          "F-024",
+          "out/_analysis/d3b2_P05_corrections_rooms.txt"
+        ]
+      }
+    },
+    {
+      "line": 181,
+      "entry": {
+        "t": "2026-10-24T13:07:25Z",
+        "stage": "D4",
+        "leg": "D4a-01",
+        "id": "P05",
+        "event": "amendment reverted (J, QD4-001, option b): the frozen D3 record restored, the amendment held as a proposal",
+        "move": "developing working hypotheses",
+        "why": "J's answer to QD4-001 (24 Oct 15:05 Berlin): revert the two amendments by appending history lines and restoring the frozen records, so the model is 46384686 again and the D4 check passes, and carry both as held proposals, stated in full with their rooms, lines and moves. This line restores P05 as frozen at D3 (byte for byte from the snap of move 197) and reverts history lines 173 to 176 (move 198, contrasting). The amendment stays on record in those lines and in the 'was' of this one; it is a held proposal, never served to the rooms and not re-checked.",
+        "field": "record",
+        "was": {
+          "id": "P05",
+          "kind": "process",
+          "statement": "The room keeps its placed work against erosion: members watch it and repair changed pixels, and the room rallies to defend it under attack, covers the night, hardens its shape and puts upkeep before growth. Repair restores the form the keepers know. A change the room has planned or agreed (P02) is therefore repaired away as damage until its keepers are told of it, and it is lost or given up where the telling does not reach them. This holds where the keepers can learn of a planned change only by being told, and no informed member holds it.",
+          "tier": [
+            "T4-013"
+          ],
+          "dimension": [
+            "D03"
+          ],
+          "range": "from one member fixing stray pixels to shifts, scripts and calls to defend over many hours",
+          "evidence": {
+            "findings": [],
+            "codes": [
+              "wildhockey:c0143",
+              "day9:c0003",
+              "ubc:c0090"
+            ]
+          },
+          "since": "C2-pass-1",
+          "leg": "C2a-01",
+          "status": "bounded",
+          "bound": "It does not hold where the keepers read a planned change from its shape and stop repairing it with no telling: completeanarchy, polska, satania, halo, bangtan, thesilphroad (R-completeanarchy-c187508d7ae3-022, R-polska-dadda7358f9a-049, R-satania-84df196116f3-022, R-halo-b988854ba168-036, R-bangtan-7efe23da0d0c-070, R-thesilphroad-a3f86618e239-018), a candidate branch, 'the shape read' (F-024). It does not hold where informed members hold the change against keepers who do not know: armok, maryland, oneshot (R-armok-8852b2ab85f8-022, R-maryland-d1b6e2d1d5f3-017, R-oneshot-e840e127e9b2-013), a limit below the trigger, at three nodes. Amended at D4a-01, after the D3 freeze (46384686...); not re-checked: no room was served these words.",
+          "amendment": {
+            "leg": "D4a-01",
+            "rule": "11",
+            "rechecked": false,
+            "frozen_version": "46384686d6173fdeb4c749667478c1363e675bc6b52bb6f4fdc211d387e68525",
+            "frozen": {
+              "statement": "The room keeps its placed work against erosion: members watch it and repair changed pixels, and the room rallies to defend it under attack, covers the night, hardens its shape and puts upkeep before growth. Repair restores the form the keepers know. A change the room has planned or agreed (P02) is therefore repaired away as damage until its keepers are told of it, and it is lost or given up where the telling does not reach them.",
+              "status": "standing"
+            },
+            "note": "Amended after the D3 freeze; never served to the rooms. The frozen version stands beside it, and every print of P05 marks it not re-checked."
+          }
+        },
+        "now": {
+          "id": "P05",
+          "kind": "process",
+          "statement": "The room keeps its placed work against erosion: members watch it and repair changed pixels, and the room rallies to defend it under attack, covers the night, hardens its shape and puts upkeep before growth. Repair restores the form the keepers know. A change the room has planned or agreed (P02) is therefore repaired away as damage until its keepers are told of it, and it is lost or given up where the telling does not reach them.",
+          "tier": [
+            "T4-013"
+          ],
+          "dimension": [
+            "D03"
+          ],
+          "range": "from one member fixing stray pixels to shifts, scripts and calls to defend over many hours",
+          "evidence": {
+            "findings": [],
+            "codes": [
+              "wildhockey:c0143",
+              "day9:c0003",
+              "ubc:c0090"
+            ]
+          },
+          "since": "C2-pass-1",
+          "leg": "C2a-01",
+          "status": "standing"
+        },
+        "reverts_lines": [
+          173,
+          174,
+          175,
+          176
+        ],
+        "reverted_move": 198,
+        "held_proposal": true,
+        "rechecked": false,
+        "frozen_version": "46384686d6173fdeb4c749667478c1363e675bc6b52bb6f4fdc211d387e68525",
+        "adaptations": [
+          "R-completeanarchy-c187508d7ae3-022",
+          "R-polska-dadda7358f9a-049",
+          "R-satania-84df196116f3-022",
+          "R-halo-b988854ba168-036",
+          "R-bangtan-7efe23da0d0c-070",
+          "R-thesilphroad-a3f86618e239-018",
+          "R-armok-8852b2ab85f8-022",
+          "R-maryland-d1b6e2d1d5f3-017",
+          "R-oneshot-e840e127e9b2-013"
+        ],
+        "rooms": [
+          "completeanarchy",
+          "polska",
+          "satania",
+          "halo",
+          "bangtan",
+          "thesilphroad",
+          "armok",
+          "maryland",
+          "oneshot"
+        ]
+      }
+    }
+  ]
+}

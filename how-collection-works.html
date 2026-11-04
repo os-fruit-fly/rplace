@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How collection works | r/place</title><link rel="stylesheet" href="assets/site.css"><script defer src="assets/local-setup.js"></script><script defer src="assets/site.js"></script><script defer src="assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="check.html">Check the papers</a><a data-reviewer-entry href="open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="index.html">Overview</a><a  href="organism.html">Model organism</a><a aria-current=location href="instrument.html">Instrument</a><a  href="results.html">Findings</a><a  href="interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-how-collection-works" data-layer="Overview"><nav class="parts" aria-label="Instrument"><a  href="instrument.html">Instrument</a><a aria-current=page href="how-collection-works.html">Collection</a><a  href="how-coding-works.html">Community coding</a><a  href="how-it-works.html">Aggregation</a><a  href="versions.html">Versions</a><a  href="run.html">Run the study</a></nav><h1 id="how-collection-works">How collection works</h1>
+<p>Collection gathers the public record of the event once, checks it and
+freezes it, so that every later reader works from the same copy. A
+collection handler, a model conversation with shell access, follows the
+data recipes. The census of communities is a set of research judgments,
+each recorded with its evidence; no download produces it.</p>
+<h2 id="its-instructions">Its instructions</h2>
+<ul>
+<li><a href="agents/collection.html">The collection handler's brief</a>:
+what it reads, what it checks, what it hands over, and when it
+stops.</li>
+<li><a href="sources/data-README.html">The data recipes</a>: seven
+stores, the scripts that build each, where each comes from and what was
+tested.</li>
+<li><a href="sources/data-for-agents.html">The data folder, for
+agents</a>: the order in which the stores are built, fast ones
+first.</li>
+<li><a href="sources/data-lib.html">The shared collectors</a>: the
+archive collector every text store reuses, and the one place the event
+window is defined.</li>
+<li><a href="agents/download.html">Start from raw data</a>: the reading
+key, with the inputs and access a collection needs.</li>
+</ul>
+<h2 id="the-steps">The steps</h2>
+<table><caption>The steps of collection, in order</caption>
+<thead>
+<tr>
+<th>Step</th>
+<th>What it gives</th>
+<th>Size in the study</th>
+<th>Its documents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. The pixel record</td>
+<td>every pixel change, with the placer's hashed name, and the table of
+usernames behind the hashes</td>
+<td>16,559,897 pixel changes</td>
+<td><a href="sources/data-pixels.html">recipe</a>, <a
+href="sources/data-pixels-link.html">the copy</a></td>
+</tr>
+<tr>
+<td>2. The atlas</td>
+<td>1,473 artworks, their outlines and the subreddits they name, checked
+byte for byte against the study's copy</td>
+<td>675 KB</td>
+<td><a href="sources/data-atlas.html">recipe</a></td>
+</tr>
+<tr>
+<td>3. The placer accounts</td>
+<td>everything each placer wrote on Reddit in 24 days around the canvas;
+days at the archive's pace, resumable</td>
+<td>1,101,801 accounts, about 14 GB</td>
+<td><a href="sources/data-users.html">recipe</a>, <a
+href="sources/data-users-link.html">the copy</a></td>
+</tr>
+<tr>
+<td>4. Venues, placers only</td>
+<td>what placers wrote in each subreddit</td>
+<td>50,936 venues, 13.6 GB</td>
+<td><a href="sources/data-venues-placers.html">recipe</a>, <a
+href="sources/data-venues-placers-link.html">the copy</a></td>
+</tr>
+<tr>
+<td>5. Venues in full</td>
+<td>everything anyone wrote in each subreddit in the 24 days; days,
+resumable</td>
+<td>24,093 venues, about 51 GB</td>
+<td><a href="sources/data-raw24.html">recipe</a>, <a
+href="sources/data-raw24-link.html">the copy</a></td>
+</tr>
+<tr>
+<td>6. Pixels per artwork</td>
+<td>every pixel change inside each artwork's outline, and a 30-minute
+panel per artwork; about four minutes</td>
+<td>23,058,857 rows, 1.1 GB</td>
+<td><a href="sources/data-pixels-per-artwork.html">recipe</a>, <a
+href="sources/data-pixels-per-artwork-link.html">the copy</a></td>
+</tr>
+<tr>
+<td>7. Hourly pixels per community</td>
+<td>pixel changes in each community's region by hour, by anyone and by
+its own members; about a minute</td>
+<td>67,907 rows, 1.4 MB</td>
+<td><a href="sources/data-pixels-hourly.html">recipe</a>, <a
+href="sources/data-pixels-hourly-link.html">the copy</a>, <a
+href="sources/data-activity.html">the week before</a></td>
+</tr>
+<tr>
+<td>8. The census</td>
+<td>which subreddits count as communities: <a
+href="results/population-record.html#census">from 2,796 subreddits to
+705 communities</a></td>
+<td>judgments with evidence</td>
+<td><a href="sources/census-README.html">the census</a>, <a
+href="sources/census-builders.html">its builders</a></td>
+</tr>
+<tr>
+<td>9. Freeze and hand over</td>
+<td>every file hashed; <code>HANDOFF-collection.md</code> records each
+input's path, source, bytes, hash, time window, version, checks, gaps
+and status</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>A recipe says what a store holds, how to build it and what was
+tested; "the copy" says where the study's own copy is. Every text record
+came through the public Arctic Shift archive, which serves Reddit's
+record as it was ingested at the time, before later deletions. The pixel
+record is Reddit's own release; the atlas is the 2017 Place Atlas.</p>
+<h2 id="when-it-stops">When it stops</h2>
+<p>The handler stops a route when access is missing, archived bytes are
+unavailable, a check fails or the choice of collection is unresolved. It
+names the missing store and the next action. It never infers a census
+decision and never counts an incomplete download as ready.</p>
+<p><a href="guides/download.html">Run it</a></p>
+</main><footer><div><a href="check.html">Check the papers</a><a href="agents.html">For agents</a><a href="reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

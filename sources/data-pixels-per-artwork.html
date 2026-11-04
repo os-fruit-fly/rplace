@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixels per artwork | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="pixels-per-artwork">Pixels per artwork</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="data-pixels-per-artwork.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/data-pixels-per-artwork.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Every placement routed to the atlas artwork or artworks whose outline
+contains it, and a 30-minute panel per artwork. Built from two public
+sources, the pixel record and the atlas, by two commands. The study's
+copy is <code>Layer C/C5_atlas_flow/</code> (its build kit,
+<code>build/</code>, is what this folder holds).</p>
+<p><strong>Build it</strong> (from <code>data/</code>; needs numpy and
+Pillow, pandas optional; about 1.5 GB free while it works):</p>
+<ol type="1">
+<li><code>python3 pixels-per-artwork/code/fetch_sources.py</code>:
+downloads the record into <code>pixels/place_tiles_sha1.csv</code> if it
+is not there (894 MB, from archive.org), uses the atlas in
+<code>atlas/atlas_2017.json</code>, and writes
+<code>pixels-per-artwork/inputs/</code>. About 2 to 5 minutes.</li>
+<li><code>bash pixels-per-artwork/run_all.sh</code>: the five stages,
+into <code>pixels-per-artwork/data/</code>. About 2 minutes, 1.1
+GB.</li>
+</ol>
+<p><code>fetch_sources.py</code> stops unless every count matches:
+16,559,897 rows, 1,166,924 placers, 16,556,641 on the canvas, 1,473
+artworks (1,236 naming a subreddit), 956,741 covered pixels, 1,319,701
+pixel-artwork memberships, and the final canvas's fingerprint.</p>
+<p><strong>Files after it:</strong></p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data/atlas_flow_all.csv.gz</code></td>
+<td>23,058,857 rows, by artwork, then time:
+<code>artwork_id,ts_ms,x,y,color,placer_uid,n_artworks,is_primary</code></td>
+</tr>
+<tr>
+<td><code>data/by_artwork/aw0000.csv.gz</code> to
+<code>aw1472.csv.gz</code></td>
+<td>the same rows, one file per artwork</td>
+</tr>
+<tr>
+<td><code>data/artworks_index.csv</code></td>
+<td>per artwork: name, subreddits, area, placements, distinct placers,
+first and last placement</td>
+</tr>
+<tr>
+<td><code>data/placers.csv.gz</code></td>
+<td><code>placer_uid</code> to hashed name, 1,166,924 rows</td>
+</tr>
+<tr>
+<td><code>data/panel_30min.csv.gz</code>, <code>.npz</code></td>
+<td>per artwork and 30-minute bin: placements, placers, pixels touched,
+repaints, reverts, restorations, net change; 215,058 rows</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Read by:</strong>
+<code>aggregator/handler/build_canvas.py</code> (its
+<code>c5_data</code> path points here), which reads
+<code>artworks_index.csv</code> and the panel's placements.</p>
+<p><strong>Three things to know.</strong></p>
+<ul>
+<li><em>Overlap.</em> Outlines overlap on 30.5 per cent of covered
+pixels, so a placement appears once per containing artwork: 23,058,857
+rows for 16,556,641 placements. <code>is_primary == 1</code> keeps one
+row per placement, in the smallest containing outline (16,136,055
+rows).</li>
+<li><em>Placer ids.</em> <code>placer_uid</code> indexes
+<code>inputs/placer_hashes.txt.gz</code>, which
+<code>fetch_sources.py</code> writes. It numbers placers as the study
+did, by a 64-bit key of each hash, so ids equal the study's (all
+1,166,924 checked). Join across builds on the hash all the same.</li>
+<li><em>Ties.</em> Timestamps are whole seconds, so most rows tie with
+another, and the two releases of the record order ties differently.
+<code>fetch_sources.py</code> sorts the rows as the study's copy was
+sorted (as text: time, hashed name, the rest of the line), and
+<code>build_artwork_flow.py</code> breaks every remaining tie by colour
+and placer. Repaints, reverts and restorations depend on this order.
+Under this rule, on the primary partition, they are 4,370,182,
+12,186,459 and 5,695,139; the study's C4 notes quote 4,369,968,
+12,186,673 and 5,695,494 from before the rule. Placements, placers and
+pixels touched do not depend on order.</li>
+</ul>
+<p><strong>Tested 2026-09-26:</strong> from nothing, in a Linux
+workspace: the download, the parse and the five stages in about 4
+minutes. Every array of <code>pixel_record.npz</code> equals the study's
+stored parse. The outputs equal <code>C5_atlas_flow/data/</code> as
+rebuilt that day: <code>artworks_index.csv</code> byte for byte; the
+long table, the tidy panel, the placer table and the per-artwork files
+checked, on decompressed content.</p>
+<h2 id="codebook">Codebook</h2>
+<p>Flow rows: <code>artwork_id</code> (0 to 1472, the atlas's order);
+<code>ts_ms</code>; <code>x</code>, <code>y</code>; <code>color</code>;
+<code>placer_uid</code> (index into
+<code>inputs/placer_hashes.txt.gz</code>); <code>n_artworks</code>
+(outlines containing the pixel); <code>is_primary</code> (1 in the
+smallest of them).</p>
+<p><code>artworks_index.csv</code>: per artwork, its name, subreddits,
+<code>area_px</code>, <code>center</code>, <code>placements</code>,
+<code>placements_primary</code>, <code>distinct_placers</code>,
+<code>first_ts_ms</code>, <code>last_ts_ms</code>.
+<code>placers.csv.gz</code>: <code>placer_uid</code> and the hash.
+<code>panel_30min.csv.gz</code>: per artwork and 30-minute bin,
+<code>placements</code>, <code>placers</code>,
+<code>pixels_touched</code>, <code>repaints</code>,
+<code>reverts</code>, <code>restorations</code>,
+<code>net_change_px</code>, each also in a <code>_primary</code>
+version, with <code>bin</code>, <code>bin_start_ms</code>,
+<code>hours_from_open</code>, <code>area_px</code> and
+<code>placers_total</code>.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

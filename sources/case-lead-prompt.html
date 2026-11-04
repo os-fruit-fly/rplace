@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case-lead prompting | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="case-lead-prompting">Case-lead prompting</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="case-lead-prompt.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/case-lead-prompt.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Version: <code>lead-calibration-v2</code><br />
+Date: 2026-09-08<br />
+Applies to: new case-lead runs under instrument v31; the compatible
+checklist also applies to v30 repairs<br />
+Model for this wave: <code>gpt-5.6-sol</code>, reasoning effort
+<code>medium</code></p>
+<h2 id="purpose-and-authority">Purpose and authority</h2>
+<p>This document records the additional prompting authorised after
+review of the Dorset demonstration. The research contract is unchanged.
+The additional message asks the lead to apply the existing
+consolidation, register, within-case account and counter-reading
+requirements more fully. It introduces no target number of themes,
+searches or codes, and no requirement that another model reproduce a
+previous reader's interpretation.</p>
+<p>The scheduler appends the exact block below to the normal opening
+message printed by <code>_tools/room.py message lead</code>. The normal
+role contract and branch-specific workflow still apply. In branch B, the
+same lead retains this instruction through its saved conversation;
+collection and finish messages preserve the prescribed order. Fleet
+coders receive the normal coder message and their existing
+contracts.</p>
+<p>The text outside the marked block is documentation for the scheduler,
+not extra material for the case lead to read. No Dorset output,
+comparison reading or reviewer interpretation is supplied to a new
+room's lead.</p>
+<h2 id="exact-additional-message-sent-to-the-lead">Exact additional
+message sent to the lead</h2>
+<!-- BEGIN LEAD PROMPT -->
+
+<p>Additional case-lead calibration: lead-calibration-v2.</p>
+<p>Apply the supplied contracts unchanged. Pay particular attention to
+these existing requirements when you reach their prescribed stages:</p>
+<ol type="1">
+<li><p>Consolidation (§7). Compare what codes in different exchanges are
+doing in common. Shared vocabulary or reply adjacency alone does not
+establish a shared practice. For each theme, explain the practice that
+holds its codes together and what varies within it. Keep labels
+concrete, gerund-led and in participants' words or ordinary language.
+Keep a single-code theme when that code belongs with nothing else; there
+is no target number or size of themes. In branch B, do this
+incrementally in the prescribed slice order, opening and extending
+themes as the contract says. Record the required grouping review and any
+regrouping through the instrument.</p></li>
+<li><p>Within-case findings (§8). State the patterns, differences and
+developments the supplied evidence supports, with their passages. Make
+the account useful to a reader who has not seen the threads. Distinguish
+a descriptive contrast, a participant's own explanation and a supported
+causal relation. Different speakers can express contrasting positions
+without establishing that the community changed its mind. Keep the
+contract's strict evidence requirement for a relation; state an observed
+sequence as a sequence when no causal link is supported. Make each
+qualification specific to the claim it limits. Preserve all required
+headings.</p></li>
+<li><p>Counter-reading (§8). Before searching, state a plausible
+competing account and what would be present if your reading were wrong.
+Test the most consequential alternative supported by this case's
+vocabulary. Read the returned items through the prescribed tools, name
+the strongest contrary item, and explain what changes or survives. There
+is no query-count quota. Report null results with their scope; a small
+or partial record limits what absence can establish. Follow the existing
+rules for late codes and append-only records.</p></li>
+<li><p>Checkable citations. In the case account, put each cited item or
+thread ID individually in backticks, including both endpoints of an
+episode. Give the supporting words as the contract requires. Use the
+instrument's measurements for times and intervals. Textual citations
+must be readable by the yard's checker.</p></li>
+<li><p>Complete-record check. Before the final message, check the
+complete run rather than only the last named defect. Every thread
+disposed as <code>coded</code> must retain at least one live code. Every
+read <code>out_of_scope</code> thread with ten or more in-window items
+must carry the exact exclusion citation returned by the instrument. In
+branch B, <code>notes.md</code> must include the literal line
+<code>branch B; threshold N; items_in_window N; chars_by_people N</code>,
+with the values copied from <code>_gate.json</code>. Under v31, run
+<code>python3 close_run.py . --role lead --preflight</code>, repair
+every failure, and rerun it until it passes. Under a v30 repair, where
+<code>--preflight</code> does not exist, perform this checklist
+explicitly and leave final validation to the scheduler.</p></li>
+</ol>
+<p>Read the instructions completely before acting. Request long files in
+bounded sections and recover any clipped section. When find returns
+matches, inspect and read the matching items rather than treating its
+hit count as the result. Keep required working files and record
+difficulties in notes as the contract specifies.</p>
+<p>These instructions add no case evidence or interpretive categories.
+Resolve any apparent conflict in favour of the supplied research
+contract and report it.</p>
+<!-- END LEAD PROMPT -->
+
+<h2 id="delivery-and-evidence">Delivery and evidence</h2>
+<p>For each run the scheduler saves the complete assembled opening
+message, this document's version and SHA-256, and the exact message
+SHA-256 in the lead store's <code>state/</code> directory before
+launching the lead. Those files become part of its next completed-turn
+filesystem checkpoint. The complete native transcript records what the
+lead actually received. A copy of the prompting receipt accompanies the
+room's validation documents. Contract and instrument hashes remain
+independently checked.</p>
+<p>The native runner also supplies its existing lifecycle instruction:
+work only in this run directory, launch no agents, finish foreground
+commands before replying, leave no background process or persistent REPL
+state, keep working state in files, and do not inspect other rooms,
+native runtime files or checkpoint metadata. The exact lifecycle text
+and effective model settings are recorded in <code>STORE.json</code> and
+the native session. It is separate from the calibration above.</p>
+<p>The scheduler checks the run mechanically after the agent ends. A
+case account in which the checker detects zero citations is flagged for
+attention; zero unknown IDs alone does not demonstrate that any
+citations were checked. Mechanical success does not certify the
+qualitative reading. The scheduler never edits an agent's account,
+codes, theme notes or journal to improve the result.</p>
+<h2 id="storage-and-continuation">Storage and continuation</h2>
+<p>The canonical reading and validation documents are published under
+<code>rooms/&lt;community&gt;/run/</code> and
+<code>rooms/&lt;community&gt;/validation/</code>. The source brief and
+record are preserved. The byte-identical run copy retains its original
+instrument paths and hash baselines; it is a review copy, not a
+relocated native conversation.</p>
+<p>Only the case lead receives native conversation checkpoints. The
+complete store at <code>_lead_sessions/&lt;run-name&gt;/</code> remains
+at its original absolute path for continuation and forks. Every
+completed lead reply is checkpointed after the runtime exits. Fleet
+coders retain their outputs and transcripts, without a resumable native
+session. In branch B, the last collection stops before consolidation and
+is saved as <code>after-fleet</code>; the separate finish message then
+starts consolidation.</p>
+<h2 id="order-and-comparison">Order and comparison</h2>
+<p>Continue with never-coded rooms whose briefs pass the current gate,
+smallest first. Previously coded rooms remain comparison material. Do
+not change the 500-item gate to force a branch. Keep the initial Dorset
+demonstration intact. Record new prompting as an explicit condition of
+new runs; a calibrated run is distinguishable from the earlier
+uncalibrated demonstration.</p>
+<p>GPT-5.6 is run here with the explicit model ID
+<code>gpt-5.6-sol</code> at <code>medium</code> effort. OpenAI's model
+page identifies this as the target of the <code>gpt-5.6</code> alias: <a
+href="https://developers.openai.com/api/docs/models/gpt-5.6-sol">https://developers.openai.com/api/docs/models/gpt-5.6-sol</a>
+(checked 2026-09-07). The methodological calibration above comes from
+the supplied v31 contracts and the user's approved review discussion,
+rather than a model-specific research method.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

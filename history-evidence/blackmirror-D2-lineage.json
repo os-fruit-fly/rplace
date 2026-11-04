@@ -1,0 +1,40 @@
+{
+  "community": "blackmirror",
+  "archive_sha256": "9b066d7ca72eacfaa8d37abf151287dea07a165d8902b11f5b3b8999f7321e28",
+  "archive_name": "blackmirror.tar.zst",
+  "session": "01a1423d-be9b-7e81-9698-0182292b1b7b",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T03-05-05-01a1423d-be9b-7e81-9698-0182292b1b7b.jsonl",
+      "sha256": "3ba999f8f8630c81e4e55c93d83f7b9ed98e97617c2790cd4b445916700978d2",
+      "lines": 218,
+      "last_utc": "2026-10-16T01:13:47.452Z",
+      "identity": [
+        {
+          "id": "01a1423d-be9b-7e81-9698-0182292b1b7b",
+          "session_id": "01a1423d-be9b-7e81-9698-0182292b1b7b",
+          "timestamp": "2026-10-16T01:05:05.179Z",
+          "forked_from_id": "01a08170-cd2f-7933-b61d-0f11423b3ea6",
+          "forked_from_ordinal_exclusive": 582,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T01:05:13.544Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "0eced6475d2a5f5e8712e9482ef8f54504fe8bf5808fb3ccdd9757a800d81b5e",
+    "source_archive_sha256": "920355f5a755f101c139be1cccaac147096aca8fbd70836ce07eec8ab2d9c651",
+    "checkpoint": "cd144bf0caf258a1f71fbe1b35ba082d20fb8a87043e46615f432b22b303398c",
+    "source_finished": "2026-09-08T15:04:01.533496+00:00",
+    "source_archive_name": "blackmirror-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

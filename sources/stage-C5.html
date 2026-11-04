@@ -1,0 +1,475 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage C5. The account. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-c5-the-account">Stage C5. The account.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-C5.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-C5.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+build (one leg per pass of the account, closed at the pass's end or
+earlier when you choose; every move logged with
+<code>mem.py log --kind move</code>, its Grodal, Anteby and Holm move
+named, and snapped with
+<code>python3 tools/snap.py C5 move-&lt;move&gt;-&lt;n&gt;</code> when
+it is made); dispatch (three readers on the platform's reviewer model,
+outside your session, sent by <code>fleet.py</code>); check (you are
+relaunched, told the readers left their files in
+<code>_fleet_raw/C5/</code>, and revise, one leg per pass).
+<strong>Fleet:</strong> three readers, once. <strong>This is the last
+stage before the model and the tiers are fixed.</strong> After it
+nothing below the model moves except as an affected-case-validated
+amendment at D3 (rule 11); D6 records separate unvalidated proposals,
+and stages D1 to E1 measure against it.</p>
+<p><strong>Steps:</strong> <code>C5a-01</code> ... one per pass of the
+account; <code>C5b</code> the readers' build (it ends at
+<code>--cut packets-out</code>), the dispatch, <code>C5c-01</code>,
+<code>C5c-02</code> ... the readers' check, one leg per pass over the
+returns; <code>C5d</code> the Gioia table, the dynamic model and the
+figure, the handback and the interview. Each leg is named by its step
+(STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each logged move, after each
+section of the account, and after the data structure and the figure. At
+a safe stop, check for <code>.pause</code> (<code>ls .pause</code>); if
+it is there, log where to pick up, your working hypothesis and the next
+room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh C5 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+the last five diary entries, <code>validate.py --open C5</code>; the
+last story, <code>model/story-pN.md</code> of the pass C2 kept. In a
+check leg the harness adds one line: the readers left their files in
+<code>_fleet_raw/C5/</code>.</p>
+<p><strong>Reads allowed:</strong> everything of yours:
+<code>model/</code> as it stands after C3 and C4
+(<code>mem.py diff-model &lt;snap&gt;</code>, with the name of C2's last
+close snap in <code>out/_snap/</code>, shows what they changed; its
+arrows carry the mechanisms C3 supplied and the <code>from-field</code>
+hypotheses C4 entered, which the propositions run on; read
+<code>manifest-C4.txt</code> first, then <code>manifest-C3.txt</code>),
+<code>model.md</code>, <code>structure.md</code>,
+<code>dimensions.jsonl</code>, <code>fourth/fourth.jsonl</code>,
+<code>concept.md</code>, <code>literature-C3.md</code>,
+<code>mapping-C3.jsonl</code>, <code>field-C4.md</code>,
+<code>findings.jsonl</code>, <code>within_case.md</code>,
+<code>story_rooms-pN.jsonl</code>; your notes through
+<code>mem.py note</code>; <code>counts.py</code>; rooms by query
+(<code>mem.py room</code>, <code>forest</code>, <code>where</code>,
+<code>codes</code>, <code>pairs</code>, <code>rooms --with</code>,
+<code>contrast</code>); quotes through <code>cite.py</code>;
+<code>_fleet_raw/C5/</code> in check legs. <strong>Forbidden:</strong>
+new elements (the model is fixed at the close of C5 except through
+validated amendments at D3); clustering anything (stage D4); the canvas
+as an undeclared ground (rule 7); your notes to any reader.</p>
+<p><strong>Outputs:</strong> <code>account.md</code>, the final version
+of the model's explanation; <code>sketches.md</code>;
+<code>account_passes.jsonl</code>; <code>prose-test-C5.md</code>;
+<code>propositions.jsonl</code>; <code>author_claims.jsonl</code>;
+<code>RETURN-C5.md</code> and three packets; <code>readers-C5/</code>
+(three returns) and <code>notes-C5.md</code> answering them;
+<code>data_structure-C5.md</code>; <code>figure-C5.md</code> (the model
+figure as text and as the generated drawing);
+<code>implications-C5.md</code>; <code>findings.jsonl</code> lines;
+<code>tier_history.jsonl</code> and <code>model/history.jsonl</code>
+lines for any recut; when the third-order tier is recut,
+<code>scheme_v2.jsonl</code> and <code>assignments_final.jsonl</code>
+rewritten (<code>mem.py mint</code>, then <code>mem.py reassign</code>,
+as stage C2 says); a <code>run_manifest.json</code> entry;
+<code>handback-C5.md</code>; the model frozen (<code>done.sh</code>
+records the hash of the model and its tiers at C5d's close,
+<code>out/_closes/model-C5.sha256</code>).</p>
+<p>Write sections 1 to 5 before 6, and 6 before the packets go out; the
+figure and the data structure are re-emitted at <code>C5d</code> from
+the model that survives the readers. A cut can still move here; test
+every one you suspect while the account is open. If a proposition will
+not state because a fourth-order theme is wrong, move it now, logged and
+written as stage C2 says (<code>scheme_v2.jsonl</code> and
+<code>mem.py reassign</code> for a third-order recut), re-placing what
+the amendment touches yourself and redrawing whatever depended on
+it.</p>
+<h2 id="1-write-the-model-as-prose-before-you-draw-anything">1. Write
+the model as prose, before you draw anything</h2>
+<p><code>account.md</code> is the model in continuous prose, one to two
+pages: how organizing came about in these rooms and how the parts worked
+together, so that a reader who was not here can follow it once through
+and say what it claims. Tell it both ways: from the population down to a
+room, and from three rooms up to the population. Every claim goes
+through an element id and a quote or a transition; the concept sits in
+its place; the loops and the irreversibles across hour 73 are named;
+where the model should break is said in its own terms. It describes the
+universe, not the mode: read it against a room you know is odd and make
+it say what happened there as one way of running the same structure;
+every element should have a range. The last story of stage C2 is its
+first draft, and the rooms that story could not tell
+(<code>story_rooms-pN.jsonl</code>) are its first test. Name every
+community the account cannot reach, one clause each; the return (D1 to
+D3) returns them anyway (rule 12) and stage D5 reads them inside their
+branches.</p>
+<p>Three things this catches. A model you cannot write as prose is a
+taxonomy with arrows added; if every paragraph is <em>and also</em>, say
+so. An arrow that will not survive being stated as <em>when X, Y
+follows, because Z</em> is not grounded, whatever
+<code>arrows.jsonl</code> says. A probabilistic claim needs evidence for
+its tendency and scope. If the relevant condition is unknown, state that
+uncertainty; do not invent a boundary or turn uncertain support into a
+deterministic mechanism (rule 16).</p>
+<h2 id="2-the-prose-test-on-the-names">2. The prose test on the
+names</h2>
+<p>Every fourth-order theme and dimension is a construct declared at
+stage C2 (borrowed, adapted, coined). In <code>prose-test-C5.md</code>,
+write one sentence per construct in which the name does theoretical
+work, <em>because the room had X, Y could happen</em>: the sentence a
+reader would say about a room using the name and nothing else. A name
+that only labels the sentence's subject and does no work in it is a
+description one tier too high; recut it under rule 11, logged, and keep
+the grounded phrase as the gloss. A name a reader will mistake for its
+<code>mistaken_for</code> construct without being told needs its
+difference stated in the account. A third-order theme that turns out to
+be named for a construct is renamed in the material's words, logged.</p>
+<h2 id="3-draw-it-more-than-one-way">3. Draw it more than one way</h2>
+<p><code>sketches.md</code>: at least three arrangements of the same
+model, each with a paragraph on what it showed and what it hid; by time
+on the canvas clock, by tier (conditions above, mechanisms in the
+middle, what follows below), by trajectory (one room's path, then a
+second whose path differs). If two drawings put the same element in
+different places, that element is doing two jobs and is a candidate for
+a recut. Working sketches; section 10 specifies the figure.</p>
+<h2 id="4-simplify-and-say-what-it-cost">4. Simplify, and say what it
+cost</h2>
+<p>Cut the model to what a reader can hold at the top; the count is
+yours, set by what keeps composition and explanatory power alive
+(contract §2), with why in <code>notes-C5.md</code>. For every element
+cut: what it was doing and what the model can no longer account for
+without it. For every element kept over an alternative: which
+alternative and why. A cut element keeps its id in <code>model/</code>
+with its status changed and a <code>history.jsonl</code> line with the
+move, logged and snapped when it is made.</p>
+<h2 id="5-recut-when-the-account-says-to">5. Recut when the account says
+to</h2>
+<p>Rule 11 governs, and a recut here is the ordinary outcome, each a
+<code>tier_history.jsonl</code> line with its move, logged and snapped
+when it is made. Keep the construct declaration current with every
+recut, and re-examine every <code>findings.jsonl</code> line it touches
+in the same act (rule 14). Before pass 1, write in
+<code>notes-C5.md</code> what would make you prefer a later account to
+this one; a criterion written after the passes exist is not a
+criterion.</p>
+<p><strong>A counterexample requires explanation.</strong> Record the
+evidence and compare local adaptation, construct or mechanism
+refinement, a supported scope condition, and withdrawal. Do not invent a
+condition to preserve a claim. An isolated case can validate a local
+exception without automatically revising the shared model. Preserve
+unresolved evidence and record the decision in
+<code>findings.jsonl</code> and model history, including any weakened or
+withdrawn claim.</p>
+<h2 id="6-the-propositions">6. The propositions</h2>
+<p><strong>A proposition here can carry a number</strong>: a claim of
+the form <em>authority is claimed and no dated consequence of it appears
+anywhere</em> is answerable against the analysed set, whichever way the
+count comes out.</p>
+<p>Write the propositions the model implies into
+<code>propositions.jsonl</code>, one line each, numbered: the figure
+tags its arrows with them and stage D5 says which hold in each
+branch.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;N12&quot;</span><span class="fu">,</span> <span class="dt">&quot;statement&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;rests_on&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;A03&quot;</span><span class="ot">,</span> <span class="st">&quot;A07&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;theorised&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;finding&quot;</span><span class="fu">:</span> <span class="st">&quot;F-031&quot;</span><span class="fu">,</span> <span class="dt">&quot;carried_by&quot;</span><span class="fu">:</span> <span class="st">&quot;words|pattern|both&quot;</span><span class="fu">,</span> <span class="dt">&quot;rival&quot;</span><span class="fu">:</span> <span class="st">&quot;one clause&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>For each, in the line or in its paragraph in
+<code>account.md</code>:</p>
+<ul>
+<li><strong>The claim</strong>, in one sentence, in the model's own
+terms.</li>
+<li><strong>The mechanism</strong>, carried up from the arrow that
+grounds it and marked <code>from-literature</code> where stage C3
+supplied it. A proposition without a mechanism is a pattern.
+<strong>Where the proposition sits at the dimension tier and the arrow
+that grounds it sits lower, say so</strong>, and say whether every arrow
+beneath it shares that mechanism; if not, narrow the proposition to the
+subset that does, or drop it.</li>
+<li><strong>The evidence in this corpus</strong>, with its count, its
+gate (rule 5), and the contract's §5 warning where the count is an
+absence; rule 6 governs every absence: say how many communities could
+have carried the thing before you say it is missing from any of
+them.</li>
+<li><strong>Whether the arrows beneath it are observed or
+theorised</strong> (<code>theorised</code>). A proposition resting
+wholly on <code>reading-alone</code> arrows is a conjecture drawn from
+the data structure, and legitimate. Mark it.</li>
+<li><strong>What carries it</strong> (<code>carried_by</code>, contract
+§1): <code>words</code>, a claim about what rooms did or meant,
+validated by exemplars that pass its gate and by the return;
+<code>pattern</code>, a claim about a distribution, an order on the
+clock or a difference between groups of rooms, validated by counts with
+their denominators and by the documented events of the 73 hours;
+<code>both</code> only with one named primary in the paragraph. The
+evidence you name is of the kind you declare; a <code>pattern</code>
+claim offered quotes as its proof, or a <code>words</code> claim offered
+a count, is the defect stage E1 looks for.</li>
+<li><strong>The strongest rival</strong> (<code>rival</code>): the other
+reading of the same evidence that a careful stranger would offer, and
+what in the record decides between them; where nothing in the record
+does, the claim is thin (rule 8) and says so.</li>
+<li><strong>What would falsify it in a population that is not this
+one.</strong></li>
+<li><strong>Where it should not hold</strong>: the boundary, in the
+constructs the model is built from. Corpus size, subreddit topic and
+which rooms the frame holds are limits on the sample, not boundary
+conditions; a boundary that names a surface feature of the setting is
+not one.</li>
+</ul>
+<p><strong>Do not write more than the model earns</strong>: four
+defensible propositions are better than a dozen padded ones. <strong>A
+thin claim is made and labelled thin</strong> (rule 8), with what it
+would take to firm it up; <em>the evidence is weak, but the difference
+was large and the record suggests why</em> is preferred to silence.</p>
+<p><strong>A proposition that says a problem was solved is a claim, not
+a report.</strong> One about task division, task allocation, reward
+provision or information provision is stated from your structure and
+<code>mapping-C3.jsonl</code>; the return (D1 to D3) reads it room by
+room. Write it so that it can fail.</p>
+<h2 id="7-the-passes">7. The passes</h2>
+<p>Every pass, in the build leg and in the check leg, is one leg and one
+line in <code>account_passes.jsonl</code>:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;pass&quot;</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span> <span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;ISO&gt;&quot;</span><span class="fu">,</span> <span class="dt">&quot;leg&quot;</span><span class="fu">:</span> <span class="st">&quot;C5-build-2&quot;</span><span class="fu">,</span> <span class="dt">&quot;what_changed&quot;</span><span class="fu">:</span> <span class="st">&quot;one clause&quot;</span><span class="fu">,</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;tier_events&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;&lt;ids from tier_history.jsonl and model/history.jsonl&gt;&quot;</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;sketches_tried&quot;</span><span class="fu">:</span> <span class="dv">3</span><span class="fu">,</span> <span class="dt">&quot;elements_cut&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;...&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;criterion_says&quot;</span><span class="fu">:</span> <span class="st">&quot;prefer|reject|no change&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>Stop when a pass changes no element and no cut. No cap; from pass 4
+on say in <code>notes-C5.md</code> what the criterion says about each.
+When the passes stop, build the packets and close.</p>
+<h2 id="8-three-readers">8. Three readers</h2>
+<p><strong>Build leg, last pass.</strong> Append this stage's entry to
+<code>run_manifest.json</code> (the readers' model, seed, decoding,
+count). Then, in this order:</p>
+<ol type="1">
+<li><code>author_claims.jsonl</code> first: five to nine lines, each one
+claim you believe <code>account.md</code> makes, in a form a reader
+could agree or disagree with:
+<code>{"id": "c3", "claim": "...", "where": "paragraph 4"}</code>.</li>
+<li>Three rooms named in <code>notes-C5.md</code>: one the account
+reaches easily, one the last story could not tell, one from the side of
+the onset contrast the account has visited least. Draw them by query,
+never by opening notes.</li>
+<li><code>RETURN-C5.md</code>, the one return specification (FLEET.md):
+the return line below, the end marker, and the line telling the reader
+to confirm it reached it. Three packets
+(<code>packets.py files --stage C5 --name C5-reader-k &lt;files&gt;</code>,
+the three rooms dumped first from the verbs into files), each with
+<code>account.md</code>, <code>figure-C5.md</code>,
+<code>propositions.jsonl</code>, the three rooms through the verbs with
+<code>room</code> served <code>--no-canvas</code>, <code>forest</code>
+and <code>cite.py</code> (never your notes), and nothing else of yours,
+under the 50 KB ceiling. The instruction, verbatim: <em>Read the account
+as a stranger. Say where it carries what it means and where it does not,
+both ways: a sentence you cannot follow, a claim you cannot find the
+evidence for, a room you can name that the account does not fit, jargon
+a reader would not accept. Do not propose another model. A disagreement
+is never a verdict.</em> Then: <em>For each of the three rooms you were
+given, say whether the account describes what happened there and, where
+it does not, what the room did instead, one paragraph per
+room.</em></li>
+</ol>
+<p>The return line:
+<code>{"reader": "r1", "served": "&lt;sha256 of account.md&gt;", "claims": ["..."], "relations": ["A03 acts on P04"], "could_not_follow": ["quoted"], "unsupported": "...", "rooms": [{"sub": "...", "fits": true, "instead": "..."}]}</code>,
+five to nine claims in the reader's own words. <strong>Stop
+here.</strong> Close with <code>done.sh C5 --cut packets-out</code>.
+Your session ends; nothing more of this stage runs on your model until
+the check leg. The dispatch runs without you, on the platform's reviewer
+route, each reader in a session of its own. The next launch of stage C5
+is the check leg, and its packet tells you one thing: the readers left
+their files in <code>_fleet_raw/C5/</code>.</p>
+<p><strong>Dispatch leg.</strong> Not yours. The dispatch sends each
+packet to a fresh reader on the platform's reviewer model, collects the
+returns into <code>_fleet_raw/C5/</code>, validates them against
+<code>RETURN-C5.md</code>, reissues what fails the schema, and closes.
+Nothing in it reads your files.</p>
+<p><strong>Check leg.</strong> You are relaunched. Copy the validated
+returns into <code>readers-C5/</code>. Score fidelity both ways in
+<code>notes-C5.md</code>: your claims each reader recovered, and claims
+they recovered that you did not write. A claim all three found that you
+never intended is the account teaching something unintended. Every
+divergence is a defect in the account, not the reader;
+<code>author-error</code> is a permitted verdict. Answer every item
+under rule 13: an error is fixed; a room the account does not describe
+is a bound written at section 5 or a residue named for the return (D1 to
+D3); a disagreement about how to tell it is printed beside the account;
+every change is logged and is a pass (section 7). Nothing a reader says
+changes an arrow's grounding. The readers are not judges: they tell you
+whether the account carries what you meant and whether it describes
+their three rooms, and nothing else. They run once; no second round.</p>
+<h2 id="9-the-data-structure-final-data_structure-c5md">9. The data
+structure, final: <code>data_structure-C5.md</code></h2>
+<p>Nothing is moving now. The display over every concept is generated:
+<code>gen_views.py</code> writes <code>_views/data-structure.md</code>
+and <code>.tsv</code> at every close, one row per first-order concept up
+to its dimension, never edited (rule 15). What you write is
+<code>data_structure-C5.md</code>, the table this method is named for,
+from the tiers as they finally stand, all five of them: full over the
+tiers, representative in its quotes. Six columns, one row per
+third-order theme at minimum, more where a theme needs them, so that
+every third-order theme, fourth-order theme and dimension appears:</p>
+<table>
+<thead>
+<tr>
+<th>representative quote</th>
+<th>first-order concept</th>
+<th>second-order theme</th>
+<th>third-order theme</th>
+<th>fourth-order theme</th>
+<th>aggregate dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the participant's words</td>
+<td>the coder's concept</td>
+<td>the coder's theme</td>
+<td>the theme it was placed on</td>
+<td>the theme it feeds</td>
+<td>the dimension it feeds</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The leftmost column is material through <code>cite.py</code>,
+never a label you wrote.</strong> Where a quote will not carry a row on
+its own, use the coder's second-order theme label and say so in the
+cell. <strong>Every row's quote carries its metadata</strong>, in the
+row or in a footnote keyed to it: community, author handle as the record
+carries it, the hour since the canvas opened, and the concept id.
+<strong>Rows show the range rather than the centre</strong>; name in
+<code>notes-C5.md</code> the rule that chose them, and the paper's
+figure is a sample of these rows chosen by that rule. <strong>Carry the
+residue</strong>: below the table, the third-order themes no
+fourth-order theme picked up and the fourth-order themes no dimension
+gathers, each with the account from <code>structure.md</code> and one of
+its quotes. <strong>Keep it to what one person can read</strong>;
+<code>structure.md</code> carries the rest.</p>
+<h2 id="10-the-figure">10. The figure</h2>
+<p>One figure, taken in at one pass, in <code>figure-C5.md</code>, drawn
+once with the theorised arrows and once without;
+<code>gen_views.py</code> draws both from <code>model/</code> and
+<code>propositions.jsonl</code> into <code>_views/figure-model.md</code>
+(Mermaid) at every close, and the text beside them is yours.</p>
+<ul>
+<li><strong>The things at the top and the arrows among them</strong>,
+the size section 4 reduced the model to (as many as a reader can take in
+at one pass; say why the count), every element and arrow by id.</li>
+<li><strong>Every arrow is tagged with the id of the proposition that
+carries it. An arrow no proposition carries is not drawn.</strong></li>
+<li>Conditions on one side, what follows on the other, and
+<strong>things named for what they do in the middle</strong>, the
+mediators. If the figure has no middle column, say so: a two-column
+lattice with tagged arrows is a taxonomy, and a reader should be told
+which they are looking at. Show loops as loops, only where
+<code>model/loops.jsonl</code> records the full dated cycle at its
+stated within-room or inter-room level. Do not turn cross-case
+similarity into a process loop.</li>
+<li>The imposed terminus belongs in the picture: placement stopped at
+hour 73 for everyone.</li>
+</ul>
+<p>The text specifies the figure precisely enough that someone else
+could draw it: every box, every arrow, what each arrow is grounded in,
+the instance shown for it (the quote or the forest transition from its
+<code>support</code> or <code>support_transition</code>, so that the
+arrow is a thing that happened and not a line), its proposition id, and
+the community count on it. An arrow with no instance is not drawn
+(contract §2). Then, in one paragraph, <strong>what the figure leaves
+out</strong>: the arrows no proposition carried, the third-order themes
+the model does not use, the register the topic-based coder tier
+scattered.</p>
+<h2 id="11-transferability-and-where-the-model-should-fail">11.
+Transferability, and where the model should fail</h2>
+<p>Say what carries. Establish from the evidence the relevant
+conditions: voluntary participation, existing authority, resource
+access, legal or informal commitments, the external clock and whether
+failure dissolves a group. Do not assume all rooms share these
+conditions. Name settings where the conditions plausibly hold and where
+they do not, what the model predicts, and what this record cannot check.
+State the frozen frame and A1 exclusions from their files: 705 rooms in
+this snapshot, with 706 a target census, not complete observational
+coverage. The artwork-based frame cannot warrant claims about all
+communities that organized.</p>
+<p>Name the conditions under which the model should hold and should
+break, in the things the model is built from. Corpus size, subreddit
+topic and which rooms the frame holds are limits on the sample and do
+not count here.</p>
+<h2 id="12-implications">12. Implications</h2>
+<p><code>implications-C5.md</code>: what the model implies for the
+theory question, in the model's own terms; what a counterfactual at a
+leaf would borrow from a neighbouring leaf, with the mechanism explicit
+(contract §1, prediction secondary); what the return (D1 to D3) should
+find if the model composes, written as expectations the handoff can
+carry (which elements should instantiate in which kinds of room, which
+should be absent), so that the return (D1 to D3) is a replication in
+Eisenhardt's sense and not a re-reading. Stage D1 writes
+<code>EXPECTATIONS.jsonl</code> from this file; stage E1 scores the
+ledger against it. It also says, in one paragraph, what the model
+implies for which forms keep the work alive, answered from the record
+(contract §1): <code>organizing_end_hour</code>, the aftermath share and
+<code>work_remained</code> in <code>organizing_end-A1.jsonl</code>,
+where silence leaves the outcome unknown and the last coordinating turn
+is a last observation, not a demonstrated end. The canvas is not
+evidence here.</p>
+<h2 id="13-what-you-may-not-do-and-what-the-canvas-is-here">13. What you
+may not do, and what the canvas is here</h2>
+<p>You may not cluster anything; that is stage D4. A room the account
+cannot reach is named, not fitted with a new element. If the account
+claims which of the contract's §1 four problems your structure reaches
+richly and which thinly, that claim is stage C3's mapping restated, and
+the return (D1 to D3) reads it beside the ledger.</p>
+<p>The canvas is what was made (rule 7). The account may say, in one
+paragraph, how the rooms whose record says their work was kept
+(<code>work_remained</code>, stage A1) organized differently from those
+whose record says it was lost or falls silent, in the model's terms; you
+held the canvas throughout, so this is a comparison and never a
+prediction, and stage D5 reads it against the canvas by branch. The
+paragraph says whose pixels it is about: much of a room's artwork was
+placed by people who never wrote in the room (stage A1 reported the
+share placed by those who wrote in it), so a claim about what the room's
+members kept and a claim about what survived on the room's patch are two
+claims, and the paragraph makes one of them by name or is not written.
+It may not be built from the canvas: no element is cut, kept or named
+because of what a room drew, and no proposition takes the canvas as its
+evidence.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>The criterion; the account's drafts, one entry per pass; each sketch
+and what it hid; each element cut and what it cost; each name that
+failed the prose test; each recut with its move; each finding bounded or
+changed; each proposition written, thin ones marked; the three rooms
+named for the readers; each reader item and its answer; the rule that
+chose the table's rows; each expectation written for the return.</p>
+<h2 id="final-message">Final message</h2>
+<p>The claim, the room that best supports it, the room that most
+threatens it, and the condition that separates them. Then: passes run
+and what each changed; arrangements drawn and which the account rests
+on; what you cut and what the model can no longer account for; tier
+events by tier, and whether any third-order recut moved second-order
+themes; names recut by the prose test; the readers' fidelity both ways,
+their items by kind and what changed, and what they said of their three
+rooms; the criterion and what it says about the pass you kept;
+propositions, how many thin, how many wholly on theorised arrows, how
+many <code>from-literature</code>; things and arrows in the figure,
+arrows shown by a quote and by a transition, arrows dropped; rows in the
+data structure and the rule that chose them; the expectations written
+for the return; what the account showed that the room notes did not
+predict; the sentence in <code>account.md</code> you are least sure a
+reader will take as meant; the licences exercised (METHOD.md). A return
+value.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh C5</code> at the end of every pass, or earlier when you
+choose, every recut, element cut or dropped hypothesis logged and
+snapped as it was made; paste the close-check report into
+<code>notes-C5.md</code>; the harness hashes <code>model/</code> and the
+account; <code>handback-C5.md</code>; the head; the closing diary
+line.</p>
+<p><strong>Interview point.</strong> <code>C5d</code> writes
+<code>out/interview/C5d.md</code> (under 800 words: what you did, what
+you found, what surprised you, what you doubt, and the three questions
+you would most like to be asked) and closes with
+<code>done.sh C5 --cut interview</code>: the model finished: the data
+structure (the Gioia table) written, the dynamic model explained, the
+figure plotted. The principal investigator may talk with you here, in a
+fork of this leg, run in a copy of your folder as it stood at the close
+(not read-only; nothing done there reaches the run); the run goes on
+from the cut either way. <code>done.sh</code> files the brief under the
+leg, the stage, the step and the minute, and refuses the cut without the
+brief (and, at a stage's end, without the handback).</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

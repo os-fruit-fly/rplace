@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find shared forms in the changes communities need | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-instrument" data-layer="Stage guide"><nav class="parts" aria-label="Instrument"><a aria-current=location href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a  href="../run.html">Run the study</a></nav><article class="stage-explanation"><p class="kicker">D4 · Forming: the tree</p><h1 id="find-shared-forms-in-the-changes-communities-need">Find shared
+forms in the changes communities need</h1>
+<p>D4 asks whether communities differ in patterned ways. Communities may
+need the same correction to the population model, add similar detail, or
+do the same work through different processes. Such shared adaptations
+can suggest organizational forms.</p>
+<h2 id="where-this-stage-starts">Where this stage starts</h2>
+<p><a href="D3.html">D3</a> has frozen the model and ruled on its
+adaptation records. Each record names what changes, how it changes and
+the supporting evidence. Similarity can be measured at several levels: a
+third-order theme, a fourth-order theme or an aggregate dimension.</p>
+<h2 id="what-the-aggregator-does">What the aggregator does</h2>
+<p>The aggregator first inspects the recorded similarities and their
+limits. A dendrogram shows how cases join as dissimilarity grows. It
+pictures those differences and makes no claim about descent or about a
+tree-shaped structure in organizing. The population model is a
+conceptual reference point.</p>
+<p>A candidate branch needs more than a convenient split in the picture.
+The aggregator names the shared changes, reads the supporting
+communities and explains the mechanism or condition that holds the group
+together. Changes that meet only at a broad conceptual level support a
+weaker grouping than the same specific correction.</p>
+<p>A community can belong to more than one branch when different parts
+of its activity support different links. These cross-links are recorded,
+and no case is forced into a single box. Explicit "no adaptation"
+returns also stay apart from missing returns, unresolved claims and
+cases with only local particulars.</p>
+<p>After the groups are fixed, a separate calculation groups communities
+by the composition of their coded themes. This comparison uses no
+adaptation records and no outcomes, but it shares the study's coding
+structure, so agreement between the two methods is weaker evidence than
+two independent tests. Verdicts and canvas measures are added
+afterwards, with checks for coverage, size and sensitivity.</p>
+<h2 id="what-the-next-stage-receives">What the next stage receives</h2>
+<p><a href="D5.html">D5</a> receives the branch definitions,
+memberships, cross-links, comparison results and an account of every
+community. It tests whether each group supports an account of
+organizing. Finding no supported shared forms is a valid result, and the
+procedure keeps no branch for the sake of a tidy tree.</p>
+<section class="stage-outputs" aria-labelledby="stage-outputs-title"><h2 id="stage-outputs-title">What the output files contain</h2><p>Markdown files hold prose; JSONL files hold one structured record per line.</p><details class="stage-output"><summary><span class="output-purpose">The visual tree and its definitions</span><span class="output-filenames"><code>_views/adaptation-tree.html</code>, <code>.svg</code>, <code>.json</code>, <code>branches.jsonl</code>, <code>forms/&lt;id&gt;.md</code>, <code>&lt;id&gt;</code></span></summary><div class="output-description"><p><code>_views/adaptation-tree.html</code>, <code>.svg</code> and
+<code>.json</code> give interactive, graphic and structured views.
+<code>branches.jsonl</code> defines the accepted branches.
+<code>forms/&lt;id&gt;.md</code> gathers their members and supporting
+changes; <code>&lt;id&gt;</code> is the branch identifier.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Overlap and the reasons for cuts</span><span class="output-filenames"><code>crosslinks.jsonl</code>, <code>tier_history.jsonl</code>, <code>tree-D4.md</code></span></summary><div class="output-description"><p><code>crosslinks.jsonl</code> records overlapping memberships.
+<code>tier_history.jsonl</code> records each cut and its grounds.
+<code>tree-D4.md</code> explains the chosen representation, its limits
+and the communities outside every branch.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">The separate composition comparison</span><span class="output-filenames"><code>chunk-share-D4.md</code>, <code>chunk-share-D4.jsonl</code>, <code>chunk-share-D4.py</code></span></summary><div class="output-description"><p><code>chunk-share-D4.md</code> explains the results;
+<code>chunk-share-D4.jsonl</code> records memberships;
+<code>chunk-share-D4.py</code> is the entry point for replay. The linked
+result record keeps the numerical diagnostics. This comparison uses the
+composition of coded themes, and none of the adaptations that defined
+the branches.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">What is added after grouping</span><span class="output-filenames"><code>projections-D4.jsonl</code>, <code>notes-D4.md</code>, <code>taxonomy-status.json</code></span></summary><div class="output-description"><p><code>projections-D4.jsonl</code> records verdict and canvas
+summaries for the branches and the comparison clusters.
+<code>notes-D4.md</code> explains choices and sensitivity. If no shared
+forms are supported, <code>taxonomy-status.json</code> records that
+result and its grounds.</p>
+</div></details></section><section class="stage-reference" aria-labelledby="stage-reference-title"><h2 id="stage-reference-title"><a href="../sources/stage-D4.html">Full stage description</a></h2><p>Read the complete technical card for exact tasks, reading boundaries, checks and closing rules. The explanation above is a guide; the card holds the instructions.</p><details><summary>Show how the stage is divided into its 1 legs</summary><ul>
+<li><code>D4a</code>: cut. Repeats: yes. Interview point: end.</li>
+</ul>
+</details><p><a href="../sources/manifest.json" download>Source versions and hashes</a> identify the exact technical documents reproduced here.</p></section></article><div class="actions chat-actions"><button type="button" class="talk-action talk-local" data-local-checkpoint="aggregator--claude-v43-1--C4-field--D4.D4a-08" aria-expanded="false" aria-controls="local-setup-aggregator--claude-v43-1--C4-field--D4.D4a-08">Chat Locally</button><a class="talk-action" href="../online-chat.html?checkpoint=aggregator--claude-v43-1--C4-field--D4.D4a-08" target="_blank" rel="noopener" aria-label="Chat Online at D4.D4a-08, opens in a new tab">Chat Online</a></div><section id="local-setup-aggregator--claude-v43-1--C4-field--D4.D4a-08" class="local-setup" hidden></section><noscript><p><a href="../guides/interviews.html#open-an-interview-on-your-computer">Local setup instructions</a></p></noscript><nav class="stage-navigation" aria-label="Stage navigation"><a class="stage-neighbour" rel="prev" href="D3.html" aria-label="Previous stage: D3"><span>Previous stage</span><strong>D3</strong></a><a class="stage-all" href="../guides/aggregator.html#stage-map">See all stages</a><a class="stage-neighbour" rel="next" href="D5.html" aria-label="Next stage: D5"><span>Next stage</span><strong>D5</strong></a></nav><aside class="stage-agent-key" aria-labelledby="stage-agent-key-title"><h2 id="stage-agent-key-title">For an agent running this stage</h2><p><a href="../agents/D4.html">Open the agent reading key</a> for the required reading order. <a href="../agents/D4.md" target="_blank" rel="noopener">Download that key as Markdown</a>, or <a href="../sources/stage-D4.md" target="_blank" rel="noopener">download the full stage card as Markdown</a>.</p><p><a href="../guides/agent-roles.html">Agents and their roles</a> explains who does each part of the work.</p></aside></main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

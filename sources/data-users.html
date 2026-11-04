@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The placer accounts | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-placer-accounts">The placer accounts</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="data-users.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/data-users.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>One file per account that placed at least one pixel and whose name
+resolves: everything it wrote on Reddit from 2017-03-24 16:00 to
+2017-04-17 17:00 UTC, posts and comments, as arctic-shift holds them,
+unprojected, with <code>kind</code> (post or comment) and
+<code>segment</code> (pre, during, after) added. The study holds
+1,101,801 accounts, about 14 GB; half the heaviest placers wrote nothing
+at all, so an empty file is a result, not a failure.</p>
+<p><strong>Build it:</strong></p>
+<ol type="1">
+<li><code>python3 users/build_worklist.py</code>: counts each hash's
+placements in the tile dump, resolves it through opl's table, writes
+<code>users/worklist.csv.gz</code>, most placements first.</li>
+<li><code>python3 _lib/10_collect_authors.py --worklist users/worklist.csv.gz --out users/_collected</code>:
+the collector. Resumable (a checkpoint after every 250 accounts), single
+instance, every failed request in <code>_gaps.jsonl</code>; its header
+explains each rule. Days for the full list.</li>
+<li><code>python3 users/organise_users.py</code>: moves each file to
+<code>users/&lt;bb&gt;/&lt;username&gt;.jsonl</code> (<bb>: the first
+two characters of the name) and writes
+<code>users/_users.csv</code>.</li>
+</ol>
+<p><strong>How the study's copy differs:</strong> it was collected in
+passes (the 87,903 heaviest placers, a recovery pass, then the tail to
+1,101,801) and repacked into this layout; its <code>_users.csv</code>
+also records each pass and when each file was written.</p>
+<p><strong>Tested 2026-09-26:</strong> three real accounts collected
+(477 records, no gaps), then laid out. <code>build_worklist.py</code> on
+the full record, in 38 seconds: 1,166,924 hashed accounts, 1,101,801
+resolved to a name, the study's count. Against Layer B's table of every
+placer (<code>W3_worklist_all_pareto</code>, which counts only
+placements on the canvas): the same 1,101,322 accounts and names, plus
+479 whose only placements fell off the canvas; 18 accounts' counts
+differ there for a reason not found. Order within tied counts differs,
+as the script's note says.</p>
+<p><strong>The most identifying store.</strong> One file per real
+account name.</p>
+<h2 id="codebook">Codebook</h2>
+<p>Every text record is one Reddit item as the arctic-shift archive
+holds it, unprojected. The fields the study reads:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kind</code></td>
+<td><code>post</code> or <code>comment</code>, added at collection</td>
+</tr>
+<tr>
+<td><code>id</code>, <code>name</code></td>
+<td>the item's id, and the same with its type prefix (<code>t3_</code>
+post, <code>t1_</code> comment)</td>
+</tr>
+<tr>
+<td><code>created_utc</code></td>
+<td>seconds since 1970, UTC</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>the account name; <code>[deleted]</code> when the account was gone
+before the archive took the item</td>
+</tr>
+<tr>
+<td><code>subreddit</code>, <code>subreddit_id</code></td>
+<td>where it was written</td>
+</tr>
+<tr>
+<td><code>title</code>, <code>selftext</code></td>
+<td>a post's title and text</td>
+</tr>
+<tr>
+<td><code>body</code></td>
+<td>a comment's text</td>
+</tr>
+<tr>
+<td><code>link_id</code>, <code>parent_id</code></td>
+<td>a comment's thread and the item it answers</td>
+</tr>
+<tr>
+<td><code>score</code>, <code>ups</code>, <code>gilded</code>,
+<code>stickied</code>, <code>distinguished</code>,
+<code>edited</code></td>
+<td>as Reddit reported them when the archive took the item</td>
+</tr>
+<tr>
+<td><code>retrieved_on</code></td>
+<td>when the archive took it</td>
+</tr>
+</tbody>
+</table>
+<p>The other fields (flair, media, flags) are kept as served and not
+read.</p>
+<p>Beside <code>kind</code>, each account's record adds
+<code>segment</code>: <code>pre</code>, <code>during</code> or
+<code>after</code> the canvas. <code>_users.csv</code>:
+<code>username</code>, <code>path</code>, <code>bucket</code>,
+<code>bytes</code>. <code>worklist.csv.gz</code>: <code>order</code>,
+<code>username</code>, <code>user_hash</code> (base64 of the SHA-1 of
+the name, as the pixel record writes it),
+<code>placements_total</code>.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

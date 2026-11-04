@@ -1,0 +1,138 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Room controller for the coding handler | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="room-controller-for-the-coding-handler">Room controller for the
+coding handler</h1><p class="notice">Original document, reproduced unchanged. <a href="room-handler.md" target="_blank" rel="noopener">Exact Markdown</a>. The room handler's document as it stood on 2 November 2026, after the run. It is not in the repository. sha256 <code>0bc6b3535ca6ad83</code>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Case C5 readers, clarified 26 October 2026.</strong>
+Individual cases have no C5 readers, as the CROSSWALK deliverables row
+states. Apply this exemption to global C5 section 8. Do not ask for
+another ruling or wait for reader dispatch. Keep the R4 critic,
+original-lead confidence and full R6 and custody checks. Field and
+global readers are unchanged. For a pinned existing case, deliver this
+clarification through a qualified original-session continuation; do not
+edit its frozen build or history.</p>
+<p>2026-10-08T09:24Z, OpenAI. Target length: under 600 words.</p>
+<p>Bounded native admission passes on source54214f6f/build57c5906a.
+Aeskwadraat is complete and archived. Scale stays closed. Read
+BUILD-STATE.json, the current VALIDATION.md and AMENDMENTS.md before a
+further bounded pilot.</p>
+<h2 id="scope">Scope</h2>
+<p>Coder operates rooms; this chat owns runtime and r/place. Claude owns
+scientific instruments and global analysis. Deliver the frozen room
+contract and PROFILE through sibling_model, never
+coder_model.runner.</p>
+<p>Yards and source archives stay read-only. Each room owns its files,
+native home, memory, snapshots, index and critic packet. Handlers share
+capacity and slot limits. Credentials never enter archives.</p>
+<p>Original leads retain their model, effort, session and executable.
+New critics use GPT-6.1 Sol medium. Dispatch their separate runtime
+explicitly when required; never substitute a lead or runtime. Approved
+migrations need their own receipt.</p>
+<h2 id="commands">Commands</h2>
+<p>Use the managed Python 3.11, <code>-B -m sibling_model</code>, and
+actual paths/hashes.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>verify-pins</code></td>
+<td>Compare shared sources with their lock.</td>
+</tr>
+<tr>
+<td><code>readiness --mode room --runtime-sha256 HASH</code></td>
+<td>Require current controller, instrument and runtime evidence.</td>
+</tr>
+<tr>
+<td><code>prepare-room</code></td>
+<td>Copy one audited lead and verify its files/history. No
+inference.</td>
+</tr>
+<tr>
+<td><code>room-status JOB</code></td>
+<td>Read state.</td>
+</tr>
+<tr>
+<td><code>room-events JOB --after N</code></td>
+<td>Read public messages and questions; lost records stay marked.</td>
+</tr>
+<tr>
+<td><code>room-run JOB --through R2 ...</code></td>
+<td>Run the chosen span, including the critic if R4 is reached. Default:
+current stage.</td>
+</tr>
+<tr>
+<td><code>room-message JOB --text-file FILE</code></td>
+<td>Deliver J's words; never automatically replay uncertain
+delivery.</td>
+</tr>
+<tr>
+<td><code>room-answer JOB --request-id JSON --answers-file FILE</code></td>
+<td>Answer a question with J's words.</td>
+</tr>
+<tr>
+<td><code>room-pause JOB</code></td>
+<td>Finish the active turn, save its valid boundary, start no next
+turn.</td>
+</tr>
+<tr>
+<td><code>room-unpause JOB</code></td>
+<td>Retain and clear the pause record without starting work.</td>
+</tr>
+<tr>
+<td><code>room-continue JOB --reason-file FILE</code></td>
+<td>Prepare another turn in an incomplete settled stage.</td>
+</tr>
+<tr>
+<td><code>room-invalidate-stage JOB --stage R2 --reason-file FILE --previous-code-sha256 HASH</code></td>
+<td>Withdraw the latest false R2/R3 acceptance before its successor
+starts; preserve evidence and leave PAUSE. No inference.</td>
+</tr>
+<tr>
+<td><code>room-recover JOB ...</code></td>
+<td>Check identity, state and recall before restoring the original
+session. No research turn.</td>
+</tr>
+<tr>
+<td><code>room-replay JOB --sequences JSON</code></td>
+<td>J explicitly chooses later messages to replay, including an empty
+list.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checks-and-repair">Checks and repair</h2>
+<p>A completed turn is not a passed stage. The lead obtains a passing
+check; the controller settles tools, stops native writes, checks again
+and snapshots.</p>
+<p>For new R2 counts, aftermath uses distinct coded items strictly after
+hour 73. Coverage needs no gate; prevalence binds a claim and gate.
+Existing receipts keep their recorded semantics. Current PROFILE builds
+require the typed organizing-end record, episode kinds and six-column
+Gioia table. The sealed local table keeps its name column. Comparison
+export drops that column and names.jsonl. Older builds retain their
+original formats. A declared rule-19 departure remains unverified
+arithmetic.</p>
+<p>Invalidation preserves both checkpoints and old results, records the
+source change and requires normal recovery. The pause remains until
+review. Never edit checkpoint identities or replace the lead's result
+with a controller reconstruction.</p>
+<p>Completed critic returns are retained, not regenerated. Final closure
+needs accounts, display, confidence, seals, namespaced export, exact
+runtime and extraction-tested archive. No command refills rooms, retries
+failures, chooses J's answers or pushes Git.</p>
+<p>Use <code>amend-plan</code> and <code>amend-apply</code> only under
+AMENDMENTS.md. They preserve the completed native boundary and keep
+PAUSE; they do not authorize research continuation.</p>
+<p>Fresh critics may use a separate pinned runtime through
+<code>room-run --critic-runtime DESCRIPTOR --critic-receipts RECEIPTS</code>.
+The descriptor names <code>executable</code>,
+<code>native_bundle</code>, <code>cli_sha256</code> and
+<code>runtime_sha256</code>. Its admission must match separately; none
+of these options changes the original lead. Use receipts bound to the
+selected source, build and runtime.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

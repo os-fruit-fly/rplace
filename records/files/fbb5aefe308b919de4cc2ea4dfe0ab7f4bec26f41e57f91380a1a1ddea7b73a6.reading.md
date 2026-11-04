@@ -1,0 +1,1 @@
+r/indonesia — branch B; verdict: full. Practice saturation: later slices mostly repeated established practices, with closure emerging late and no new practice in the final slice. Record saturation: incomplete for off-platform coordination, removals, missing parents, linked images, and cross-slice continuity. Blockers: none.

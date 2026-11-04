@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fleet coder&#x27;s contract, instrument INSTRUMENT | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="fleet-coders-contract-instrument-instrument">Fleet coder's
+contract, instrument <strong>INSTRUMENT</strong></h1><p class="notice">Authoritative source, reproduced unchanged. <a href="fleet-coder.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/fleet-coder.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>You read one time-ordered slice of one community's week and code it.
+<strong>Read <code>CONTRACT.md</code> first and whole.</strong> The
+method, the register, the citation rule and steps 1, 2 and 3 hold for
+you unchanged; this file says what is different about reading a slice,
+and it wins over <code>CONTRACT.md</code> on those differences only.</p>
+<p>Rule 1 for you reads: your corpus, your briefing,
+<code>timeline.md</code>, <code>lexicon.md</code>, nothing else.</p>
+<hr />
+<h2 id="1-what-you-do-and-do-not-do">1. What you do and do not do</h2>
+<p>You do step 1, step 2 and step 3 on your slice, and then write
+<code>case.md</code> and <code>notes.md</code> as §4 says. <strong>You
+do not do step 4</strong>: no theme, and nothing about the community as
+a whole; your one-sentence reading in §5 is of your slice and no more.
+You do not run the counter-reading search, you give no verdict, and you
+do not call <code>emit.close()</code>; the case lead does those over
+every slice.</p>
+<p>You are not given any other coder's codes, case or notes, and you
+must not ask for them. Two files reach you from earlier slices, and both
+are facts, not readings.</p>
+<h2 id="2-what-you-get">2. What you get</h2>
+<ul>
+<li><strong><code>brief.md</code></strong>, the community before the
+canvas opened.</li>
+<li><strong><code>timeline.md</code></strong>: stickies, moderator posts
+and edits, with times and item ids, as earlier slices left it.</li>
+<li><strong><code>lexicon.md</code></strong>: the room's own words, one
+per line, each with the item id of its first use. A name for a piece of
+the drawing, a nickname for a neighbour, a verb the room made up. No
+gloss.</li>
+<li><strong>Your slice</strong>: whole threads, in time order.
+<code>AGENT.md</code>'s STATE block says which slice it is and where it
+sits in the week. The corpus's counts include the context openings
+below; the STATE block's slice line is the count of your own
+threads.</li>
+<li><strong>Openings of earlier slices' threads</strong> that were still
+receiving replies during your slice, marked
+<code>[CONTEXT — an earlier slice's opening]</code>. Read them, so the
+room's running threads are known to you. Never code them, never cite
+them, and do not record them with <code>emit.thread</code>: they are not
+threads of your slice, and <code>emit</code> refuses all three.</li>
+</ul>
+<p>If you find a reading in either facts file, say so in
+<code>notes.md</code> and do not extend it that way.</p>
+<h2 id="3-your-slice-has-two-edges">3. Your slice has two edges</h2>
+<p>Unless yours is the first slice, you start mid-week: what you read
+began before you, and you cannot see it begin. Do not write as if the
+practices you find started when your slice did. Unless yours is the last
+slice, you stop mid-week: an argument still running at your last thread
+is not resolved, it is unresolved to you.</p>
+<p>Every episode in your <code>## Chronology</code>, and every exchange
+you name in <code>case.md</code>, ends with one tag:
+<code>[closed]</code> when it begins and ends inside your slice;
+<code>[inherited]</code> when it began in an earlier slice's opening you
+were given; <code>[unresolved]</code> when it is still running at your
+last thread, with what would settle it. Where you cannot tell, write
+<code>[unresolved]</code> and say why. The case lead reassembles the
+week from these tags.</p>
+<h2 id="4-coding-and-what-you-leave-alone">4. Coding, and what you leave
+alone</h2>
+<p><code>CONTRACT.md</code>'s step 3 applies unchanged. A bare "placed",
+"done", a set of coordinates, a one-word agreement: these are passages
+of a kind, and §6 lets you cluster the awkward material by kind, so one
+code for the kind is enough. Do not mark an item as uncoded and do not
+draw a tree: the forest is built afterwards from the reply structure and
+your codes, and it keeps an uncoded turn whenever a coded turn hangs
+below it.</p>
+<p>Give a call and its answer one <code>exchange_id</code> whenever both
+are in your slice.</p>
+<p>A <code>coded</code> thread disposition is a commitment: before you
+finish, that thread must have at least one live, non-retracted code. If
+no passage supports a live code, revisit the thread and record the
+disposition the evidence supports. An <code>out_of_scope</code> thread
+with ten or more in-window items carries the exact exclusion citation
+returned by <code>cite.py</code>, as the main contract requires. Reading
+the whole thread does not replace that citation; the trigger is size,
+read state, and exclusion.</p>
+<h2 id="5-outputs">5. Outputs</h2>
+<p><code>emit</code> keeps your codes, dispositions and pointers in
+<code>out/_journal.jsonl</code> from your calls; the case lead's
+<code>consolidate</code> writes the files from it. Announce
+<code>step6_account</code> before <code>case.md</code> and
+<code>step7_write</code> before <code>notes.md</code>. You write:</p>
+<pre><code>out/case.md      your slice, in CONTRACT.md&#39;s sections, each episode and exchange tagged;
+                 `## Counter-reading` states your one-sentence reading of the slice and
+                 what would unseat it, and says the search is the case lead&#39;s
+out/notes.md     CONTRACT.md&#39;s notes without the two-themes question, and three more
+                 things: where your slice sits (its
+                 first and last thread, and the hours of the 97 it covers, from STATE);
+                 what you could not tell because you did not see the earlier week; whether
+                 your slice ended in the middle of something, and what
+timeline.md      extended with what your slice adds: facts only, one line each, with item ids
+lexicon.md       extended with every new term your slice introduces, with the item id of
+                 its first use</code></pre>
+<p>Before your final message, run:</p>
+<pre><code>python3 close_run.py . --role fleet --preflight</code></pre>
+<p>Fix every reported failure and run it again until it passes. This
+checks the whole assigned slice. A retry instruction naming one defect
+adds that defect to the checklist; it never narrows the assignment to
+that defect or to a subset of the slice.</p>
+<p><strong>Final message.</strong> The community, the batch, your two
+edges as §3 has them, and anything that blocked you. Nothing else.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

@@ -1,0 +1,59 @@
+{
+  "checkpoint_id": "4889468edb79b9ce",
+  "label": "D5.D5a-41",
+  "stage": "D5",
+  "stage_file": "stages/STAGE-D5-forming-branch-accounts.md",
+  "kind": "agent-and-files",
+  "run": {
+    "instrument_version": "v43",
+    "fingerprint": "74db41ef9490edae"
+  },
+  "arm": {
+    "analyst": "claude-opus-5-5",
+    "effort": "xhigh"
+  },
+  "lineage": {
+    "resume_session": null,
+    "resumed_session": "7b047589-5b91-49a8-b498-57fead39f009",
+    "child_session": "0179235b-c71b-4f25-a054-2be4c4ede37c",
+    "inherited_lines": 1214
+  },
+  "parent_checkpoint": "a45e1cf8385184b2",
+  "parent_label": "D5.D5a-40",
+  "session": {
+    "session_id": "0179235b-c71b-4f25-a054-2be4c4ede37c",
+    "mode": "fork",
+    "transcript_sha256": "5b91b5bf2e462a219bf6dd3e50b686b38f64995097811df7744f44b02ef3db71",
+    "boundary_line": 1531,
+    "boundary_verified": true,
+    "transcript_path_at_close": "CONTROL/.cc/projects/run/0179235b-c71b-4f25-a054-2be4c4ede37c.jsonl"
+  },
+  "cli_version": "2.1.300 (Claude Code)",
+  "fs": {
+    "files_in_out": 56989,
+    "manifest_sha256": "5bdad97be557c5ff8b532a8fa5219d5fab596a30848062dd902b8ebd6df1031c"
+  },
+  "subject": "aggregator",
+  "filesystem_root": "00_GIVE-THE-AGENT",
+  "handler_conversation_included": false,
+  "validation": {
+    "subject": "aggregator",
+    "complete": true,
+    "completed_turn": true,
+    "launcher_exited": true,
+    "validator_exit_code": 0,
+    "validator_sha256": "889d92f85edcb6314f8bdd867d78984ebbdb1afa6fd3815c1077f4d19bf19258",
+    "report_sha256": "75258adfd49dbdfd215b87df02e012566d4c14cb4a40464a391619e6030028b2",
+    "checked_utc": "2026-10-27T03:12:28.060398+00:00",
+    "handed": true,
+    "notes_present": true,
+    "handback_present": true,
+    "validate_report_in_notes": true
+  },
+  "forced": null,
+  "cost": {
+    "tokens_in": 86369555,
+    "tokens_out": 217594
+  },
+  "published_utc": "2026-10-27T03:19:34Z"
+}

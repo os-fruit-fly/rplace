@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Audit what the run supports | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-instrument" data-layer="Stage guide"><nav class="parts" aria-label="Instrument"><a aria-current=location href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a  href="../run.html">Run the study</a></nav><article class="stage-explanation"><p class="kicker">E1 · Formalizing: audit</p><h1 id="audit-what-the-run-supports">Audit what the run supports</h1>
+<p>E1 checks the completed analysis against its records. It separates
+what can be recomputed from what the aggregator remembers or believes,
+then judges whether the model links population claims to local evidence
+well enough.</p>
+<h2 id="where-this-stage-starts">Where this stage starts</h2>
+<p>The aggregator can inspect the outputs, logs, saved versions and
+handoffs of the whole run, including <a href="D6.html">D6</a>. Earlier
+files stay as they were. An error found now becomes a recorded defect or
+a new correction file, and the evidence under audit stays unchanged.</p>
+<h2 id="what-the-aggregator-does">What the aggregator does</h2>
+<p>Scripts recompute counts, trace quotations and identifiers, and check
+whether the required steps happened in the prescribed order. A separate
+check that the handler supplies compares quoted material with the raw
+record. The audit reports that check apart from the resolution of
+citations within the coded store.</p>
+<p>The aggregator examines how the model developed: which cases changed
+successive stories, what readers were given, which category revisions
+occurred, and which later claims use each stage's outputs. A file that
+was produced and never used may point to unnecessary work or a broken
+handoff.</p>
+<p>It then opens the predictions sealed before the return to communities
+and compares them with the answers. The comparison stays within the
+sample, because those communities helped build the model. First global
+fit, current local adequacy and support for shared forms are reported
+separately, with versions and unresolved evidence.</p>
+<p>For a seeded sample of thirty communities, fresh readers judge
+whether the population model plus the supported local adaptations can
+reconstruct the claims in the community account. A poor reconstruction
+can come from missing evidence, an omitted local detail, an unsupported
+claim or a weak shared model. The audit looks for the cause in each
+case, and no single score gives the verdict.</p>
+<p>Finally, the aggregator writes its experience of the run against the
+audited record and says where it cannot remember. New D6 proposals stay
+marked as unvalidated.</p>
+<h2 id="what-the-next-stage-receives">What the next stage receives</h2>
+<p><a href="E2.html">E2</a> receives a reproducible audit, the study's
+limits and the aggregator's separate account of its experience. The
+judgment on composition may be supported, unsupported or unresolved,
+with its level and scope stated. E2 can then examine the instructions
+and handling that shaped the work.</p>
+<section class="stage-outputs" aria-labelledby="stage-outputs-title"><h2 id="stage-outputs-title">What the output files contain</h2><p>Markdown files hold prose; JSONL files hold one structured record per line.</p><details class="stage-output"><summary><span class="output-purpose">The audit and reproducible calculations</span><span class="output-filenames"><code>audit-E1.md</code>, <code>audit-E1/</code>, <code>claims-E1.md</code>, <code>probes-E1.md</code></span></summary><div class="output-description"><p><code>audit-E1.md</code> reports checks, limits and the account of
+methods. <code>audit-E1/</code> holds scripts and outputs for replay.
+<code>claims-E1.md</code> checks whether each claim received the kind of
+evidence it needs: source words or a pattern across cases.
+<code>probes-E1.md</code> reports recall checks and separates forgotten
+information from questions the record could not answer.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Expectations checked against returns</span><span class="output-filenames"><code>expectations-E1.md</code></span></summary><div class="output-description"><p><code>expectations-E1.md</code> compares the sealed predictions with
+the communities' answers, including claims that came from the Field
+account. It keeps an expected absence apart from something a case could
+not test.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">The local reconstruction test</span><span class="output-filenames"><code>reconstruction-sample-E1.jsonl</code>, <code>RETURN-E1.md</code>, <code>reconstruction-E1.jsonl</code></span></summary><div class="output-description"><p><code>reconstruction-sample-E1.jsonl</code> records the thirty
+selected communities before inspection. <code>RETURN-E1.md</code>
+specifies the reader task. <code>reconstruction-E1.jsonl</code> keeps
+the results and ties each to a particular claim.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Experience and the final handoff</span><span class="output-filenames"><code>experience-E1.md</code>, <code>notes-E1.md</code>, <code>handback-E1.md</code>, <code>run_manifest.json</code></span></summary><div class="output-description"><p><code>experience-E1.md</code> is the aggregator's first-person
+account, kept apart from computed evidence. <code>notes-E1.md</code>
+explains audit decisions. <code>handback-E1.md</code> carries problems
+and lessons forward. The last <code>run_manifest.json</code> entry
+records the experience file and the model that wrote it.</p>
+</div></details></section><section class="stage-reference" aria-labelledby="stage-reference-title"><h2 id="stage-reference-title"><a href="../sources/stage-E1.html">Full stage description</a></h2><p>Read the complete technical card for exact tasks, reading boundaries, checks and closing rules. The explanation above is a guide; the card holds the instructions.</p><details><summary>Show how the stage is divided into its 5 legs</summary><ul>
+<li><code>E1a</code>: scripts. Repeats: no. Interview point: -.</li>
+<li><code>E1b</code>: audit section. Repeats: yes. Interview point:
+-.</li>
+<li><code>E1c</code>: reconstruction build. Repeats: no. Interview
+point: -.</li>
+<li><code>E1d</code>: reconstruction check. Repeats: no. Interview
+point: -.</li>
+<li><code>E1e</code>: experience. Repeats: no. Interview point: -.</li>
+</ul>
+</details><p><a href="../sources/manifest.json" download>Source versions and hashes</a> identify the exact technical documents reproduced here.</p></section></article><div class="actions chat-actions"><button type="button" class="talk-action talk-local" data-local-checkpoint="aggregator--claude-v43-1--C4-field--E1.E1e" aria-expanded="false" aria-controls="local-setup-aggregator--claude-v43-1--C4-field--E1.E1e">Chat Locally</button><a class="talk-action" href="../online-chat.html?checkpoint=aggregator--claude-v43-1--C4-field--E1.E1e" target="_blank" rel="noopener" aria-label="Chat Online at E1.E1e, opens in a new tab">Chat Online</a></div><section id="local-setup-aggregator--claude-v43-1--C4-field--E1.E1e" class="local-setup" hidden></section><noscript><p><a href="../guides/interviews.html#open-an-interview-on-your-computer">Local setup instructions</a></p></noscript><nav class="stage-navigation" aria-label="Stage navigation"><a class="stage-neighbour" rel="prev" href="D6.html" aria-label="Previous stage: D6"><span>Previous stage</span><strong>D6</strong></a><a class="stage-all" href="../guides/aggregator.html#stage-map">See all stages</a><a class="stage-neighbour" rel="next" href="E2.html" aria-label="Next stage: E2"><span>Next stage</span><strong>E2</strong></a></nav><aside class="stage-agent-key" aria-labelledby="stage-agent-key-title"><h2 id="stage-agent-key-title">For an agent running this stage</h2><p><a href="../agents/E1.html">Open the agent reading key</a> for the required reading order. <a href="../agents/E1.md" target="_blank" rel="noopener">Download that key as Markdown</a>, or <a href="../sources/stage-E1.md" target="_blank" rel="noopener">download the full stage card as Markdown</a>.</p><p><a href="../guides/agent-roles.html">Agents and their roles</a> explains who does each part of the work.</p></aside></main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

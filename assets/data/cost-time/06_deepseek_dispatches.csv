@@ -1,0 +1,7 @@
+dispatch,description,model,calls,valid,uncached_input,cached_input,output,reasoning,billable_tokens,actual_usd,deepseek_peak_usd,deepseek_offpeak_usd,deepseek_openrouter_usd,source,note
+B2,"B2 rounds 1 to 3, gold and stability, including failed tries",deepseek-v4.1-flash (B2 partly v4-flash-0731),265,,9588179,8325376,3302157,2940236,21215712,3.4114,6.889,3.4445,4.5908,"openrouter_activity_2026-10-13.csv, rows before 2026-10-12 15:00Z",
+B3,"B3 reader fleet (1,210 packets, two groups, resends, halves)",deepseek-v4.1-flash,1303,1216,23275194,98372976,41292110,35228024,162940280,33.7492,57.1233,28.5617,33.9817,out/_fleet_raw/B3/log.jsonl,
+B4,"B4 blind-sample readers, DeepSeek arm",deepseek-v4.1-flash,106,96,2170270,7454208,2651169,2098124,12275647,3.4568,3.8772,1.9386,2.3907,out/_fleet_raw/B4/log.jsonl,
+D2v,"D2 verdict check, 705 rooms x 2 readers",deepseek-v4.1-flash,1442,1410,11116577,291060,14144770,13798027,25552407,13.028,20.3104,10.1552,11.0253,out/_fleet_raw/D2v/log.jsonl,
+D3v,"D3 re-check verdict check, 705 rooms x 2 readers",deepseek-v4.1-flash,1438,1410,13741326,9216,13547096,13186823,27297638,12.2954,20.379,10.1895,11.2911,out/_fleet_raw/D3v/log.jsonl,
+E1,E1 readers (30 packets x 3),deepseek-v4.1-flash,90,0,916006,0,2267673,1885145,3183679,1.7282,2.996,1.498,1.5578,out/_fleet_raw/E1/log.jsonl,valid 0 at dispatch: every reader added an end-marker line; validated from the raw files at E1d

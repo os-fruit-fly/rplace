@@ -1,0 +1,3752 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Formalizing: audit | E1c | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a  href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a aria-current=location href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-interviews" data-layer="Guide"><nav class="parts" aria-label="Checkpoint interviews"><a  href="../interviews.html">Choose an interview</a><a aria-current=location href="../records/index.html">Saved outputs</a><a  href="../launch-commands.html">All launch commands</a></nav><h1>Formalizing: audit | E1c</h1><p class="notice">Reading copy of text saved at this checkpoint. Reading it creates no interview and sends no model call. These pages contain selected narrative files from the saved workspace.</p><p>Catalogue title: E1.E1c: reconstruction build. Checkpoint: <code>aggregator--claude-v43-1--C4-field--E1.E1c</code>. <a href="../interviews.html?checkpoint=aggregator--claude-v43-1--C4-field--E1.E1c">Interview and provenance</a>.</p><p id="participant-identifiers" class="notice">Participant handles in these reading copies use the pixel stream's identifiers: base64(SHA1(username)), case preserved, without a salt. These are linkable pseudonyms. Profile links are removed; missing-author markers remain. Original research files are unchanged. Quote offsets refer to original text. Source and reading-copy hashes are listed separately.</p><div class="historical-context"><p>Source commit: <code>3387768448a8</code>, 2026-10-27T23:11:07+01:00. Saved-state date: 2026-10-27T22:09:55Z. Committed checkpoint close receipt Commit date and saved-state date are distinct.</p></div><p>Original GitHub files and additional saved-state files are identified separately in the manifest. Original files were verified against their recorded hashes before participant identifiers were substituted for display. Native restore verification does not certify scientific closure.</p><h2>Read the saved outputs</h2><p>Open a file to read it here, or download its reading copy.</p><p class="notice">These saved files are reproduced as the agents wrote them. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p><div class="saved-files"><details class="saved-file" id="01-claims-E1"><summary>out/claims-E1.md</summary><p class="saved-meta"><a href="files/41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d.reading.md" download>Download the reading copy</a> · Original GitHub file. Original SHA-256 <code>41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d</code>; reading copy <code>41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d</code>.</p><section class="record-copy" data-agent="reading copy"><h3 id="claims-against-their-evidence-stage-e1-section-1">Claims against
+their evidence (stage E1, section 1)</h3>
+<p>Written at E1b-04, 27 October 2026. Contract section 1 names two
+kinds of claim:</p>
+<ul>
+<li>a <strong>pattern</strong> claim rests on counts across rooms, with
+their denominators;</li>
+<li>a <strong>words</strong> claim rests on what members wrote, through
+exemplars that resolve and the return's verdicts.</li>
+</ul>
+<p>For every proposition (<code>propositions.jsonl</code>) and every
+branch (<code>branches-D5.jsonl</code>), this table gives:</p>
+<ul>
+<li>the kind declared;</li>
+<li>the evidence named;</li>
+<li>the rival;</li>
+<li>whether the validation the claim received is of its kind.</li>
+</ul>
+<p>A claim validated with the other kind's evidence would be a defect.
+No claim is.</p>
+<p>The sources:</p>
+<ul>
+<li><code>audit-E1/claims.py</code> (E1a) lays out the fields.</li>
+<li><code>audit-E1/claims_returns.py</code> (E1b-04) counts the return's
+verdicts on each arrow. It reads the last ruling in
+<code>adjudications.jsonl</code> of every return line on the arrow, from
+both the first return and the re-check, and counts the accepted lines by
+op.</li>
+<li>The arrows' <code>support</code> quotes were resolved against the
+store at this leg: 57 quotes, all of which resolve.</li>
+</ul>
+<p>The model is the D3 freeze, <code>46384686…</code>. The held
+proposals for P05 and A11 are not part of it.</p>
+<h4 id="the-propositions">The propositions</h4>
+<p>An arrow's order count reads "holds of both". "Both" is the number of
+rooms carrying both of its elements. "Holds" is the number in which the
+first concept of the one comes before the first concept of the other.
+The null is the 95th percentile of 500 shuffles within each room (seed
+20261014). The return's accepted lines are summed over the proposition's
+arrows.</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>kind declared</th>
+<th>evidence named (arrow: holds of both, share, null p95; finding)</th>
+<th>rival</th>
+<th>return, accepted lines (instantiate, restrict, absent)</th>
+<th>validation of its kind?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N01</td>
+<td>pattern</td>
+<td>A02 64 of 89, 0.719, 0.539; A01 81 of 126, 0.643, 0.571; A03 148 of
+190, 0.779, 0.389; no finding</td>
+<td>The order is how threads are made: the call is a title, the reports
+are comments under it.</td>
+<td>1,095; 622; 1,203</td>
+<td>Yes. Counts with denominators, every null beaten; 9 support quotes
+resolve.</td>
+</tr>
+<tr>
+<td>N02</td>
+<td>pattern</td>
+<td>A04 235 of 401, 0.586, 0.539; A13 171 of 240, 0.713, 0.642; A19 87
+of 121, 0.719, 0.678; F-008 (inferred, standing)</td>
+<td>Neighbours were there from the first post, so the talk comes with
+the spot.</td>
+<td>218; 885; 2,099</td>
+<td>Yes. Every null beaten; A19 is thin, as stated.</td>
+</tr>
+<tr>
+<td>N03</td>
+<td>both</td>
+<td>A15 93 of 129, 0.721, 0.550; A16 82 of 104, 0.788, 0.606; A17 95 of
+172, 0.552, 0.477; A18 56 of 68, 0.824, 0.676; F-014 (read, bounded:
+refusals give a reason in 23 of 38, acceptances in 2 of 14)</td>
+<td>Restraint is coded only when there is an attack call to refuse (A16
+partly constitutive).</td>
+<td>729; 737; 2,494</td>
+<td>Yes, both kinds. The order counts beat their nulls, and the words
+come from 80 seeded reply pairs read for reasons.</td>
+</tr>
+<tr>
+<td>N04</td>
+<td>pattern</td>
+<td>A07 139 of 182, 0.764, 0.434; A08 225 of 289, 0.779, 0.609; A09 113
+of 145, 0.779, 0.628; F-004 (inferred, standing)</td>
+<td>The order is the clock's: celebrations and records cluster at the
+end in every room.</td>
+<td>230; 773; 1,802</td>
+<td>Yes, but the rival names the clock and none of the three arrows is
+read against the hour-73 bracket.</td>
+</tr>
+<tr>
+<td>N05</td>
+<td>pattern</td>
+<td>A20 132 of 155, 0.852, 0.594; before hour 73 (rulings): 102 of 118,
+0.864, 0.644; F-010 (inferred, bounded)</td>
+<td>A removal needs a post to remove (A20 partly constitutive).</td>
+<td>79; 247; 778</td>
+<td>Yes, and the one arrow read against a bracket of prior.md section
+4.</td>
+</tr>
+<tr>
+<td>N06</td>
+<td>pattern</td>
+<td>A06 160 of 203, 0.788, 0.655; F-005 (inferred, standing)</td>
+<td>The members who run scripts are the members who keep the work.</td>
+<td>63; 279; 918</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td>N07</td>
+<td>both (theorised, thin)</td>
+<td>A11 111 of 185, 0.600, 0.670, <strong>not beaten</strong>; A12 no
+order count; F-021 (inferred, standing); F-023 (read: 25 of 31 written
+acceptances bare)</td>
+<td>Members decided their organization in chats off the record.</td>
+<td>712 (A12 691); 955 (A11 627); 948</td>
+<td><strong>The pattern half is not established</strong>, as the
+proposition says (theorised, thin). The words half rests on read replies
+and on the return instantiating A12 in 691 accepted lines. The return
+restricts A11 far more than it instantiates it (627 against 21); that is
+the held proposal to withdraw it. It is not validated with the other
+kind's evidence.</td>
+</tr>
+<tr>
+<td>N08</td>
+<td>pattern (thin)</td>
+<td>A10 11 of 21, 0.524, 0.429; F-019 (read: after doubt and a loss, 10
+moved and 11 gave up)</td>
+<td>Rooms move by a coalition's plan, and the judgment of too few hands
+is written after.</td>
+<td>44; 457; 729</td>
+<td>Yes, on 21 rooms, as stated thin.</td>
+</tr>
+<tr>
+<td>N09</td>
+<td>pattern (thin)</td>
+<td>A05 106 of 158, 0.671, 0.658; A14 138 of 214, 0.645, 0.636; F-020
+(read)</td>
+<td>Sparing is tacit and comes first; help comes with the neighbour, not
+with the border.</td>
+<td>517; 508; 1,138</td>
+<td>Yes, narrowly: both shares sit just above their nulls. A05's
+mechanism is theorised, as stated.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The bracket each sits in</strong> (prior.md section 4):</p>
+<ul>
+<li>The order counts run over the whole record. The pre-event week,
+placement (hours 0 to 73) and aftermath (73 to 97) are counted
+together.</li>
+<li>Only A20 (N05) is also read inside a bracket, before hour 73.</li>
+<li>Every counted arrow but A12 and A21 carries the onset contrast's
+early and late counts (<code>early_late</code>).</li>
+</ul>
+<p><strong>Not done, against prior.md section 3:</strong></p>
+<ul>
+<li>No arrow's order test was run at held size, although section 3 says
+the population pattern is "supported by a pattern that holds in counts
+over the analysed set and at held size". The one finding tested at held
+size is F-009 (the play frame does not delay the canvas work).</li>
+<li>The order was read against section 4's brackets for A20 alone.</li>
+<li>Both gaps are recorded in <code>defects.jsonl</code> (line
+114).</li>
+</ul>
+<h4 id="the-branches">The branches</h4>
+<p>Every branch rests on its shared key in the ledger for membership,
+and on its account's quotes for what it is. The 35 accounts cite 38 to
+89 concepts each, and those resolved at E1b-01. The kind of each warrant
+is therefore both, as prior.md section 3 asks of forms and subforms.
+"Form" means the branch passed D5's form test; "grouping" means its
+members share the key but no condition was stated that explains them
+jointly. Local validation is established for none.</p>
+<table>
+<thead>
+<tr>
+<th>branch</th>
+<th>rooms</th>
+<th>form or grouping</th>
+<th>shared warrant</th>
+<th>verdicts: composes, with residue, cannot tell, does not compose</th>
+<th>account's cited concepts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F01</td>
+<td>103</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>54, 49, 0, 0</td>
+<td>63</td>
+</tr>
+<tr>
+<td>F02</td>
+<td>33</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>18, 15, 0, 0</td>
+<td>46</td>
+</tr>
+<tr>
+<td>F03</td>
+<td>18</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>9, 9, 0, 0</td>
+<td>48</td>
+</tr>
+<tr>
+<td>F04</td>
+<td>13</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>4, 9, 0, 0</td>
+<td>59</td>
+</tr>
+<tr>
+<td>F05</td>
+<td>12</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>6, 6, 0, 0</td>
+<td>46</td>
+</tr>
+<tr>
+<td>F06</td>
+<td>8</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>5, 3, 0, 0</td>
+<td>56</td>
+</tr>
+<tr>
+<td>F07</td>
+<td>59</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>21, 38, 0, 0</td>
+<td>48</td>
+</tr>
+<tr>
+<td>F08</td>
+<td>50</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>21, 29, 0, 0</td>
+<td>44</td>
+</tr>
+<tr>
+<td>F09</td>
+<td>54</td>
+<td><strong>form</strong></td>
+<td><strong>supported</strong></td>
+<td>22, 32, 0, 0</td>
+<td>53</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>38</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>16, 22, 0, 0</td>
+<td>38</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>43</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>18, 25, 0, 0</td>
+<td>50</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>22</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>9, 13, 0, 0</td>
+<td>52</td>
+</tr>
+<tr>
+<td>F13</td>
+<td>9</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>2, 7, 0, 0</td>
+<td>46</td>
+</tr>
+<tr>
+<td>F14</td>
+<td>7</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>4, 3, 0, 0</td>
+<td>53</td>
+</tr>
+<tr>
+<td>F15</td>
+<td>42</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>20, 22, 0, 0</td>
+<td>47</td>
+</tr>
+<tr>
+<td>F16</td>
+<td>35</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>13, 22, 0, 0</td>
+<td>46</td>
+</tr>
+<tr>
+<td>F17</td>
+<td>36</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>12, 23, 1, 0</td>
+<td>59</td>
+</tr>
+<tr>
+<td>F18</td>
+<td>15</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>4, 11, 0, 0</td>
+<td>53</td>
+</tr>
+<tr>
+<td>F19</td>
+<td>14</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>6, 7, 1, 0</td>
+<td>46</td>
+</tr>
+<tr>
+<td>F20</td>
+<td>10</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>2, 7, 1, 0</td>
+<td>74</td>
+</tr>
+<tr>
+<td>F21</td>
+<td>32</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>21, 10, 0, 1</td>
+<td>68</td>
+</tr>
+<tr>
+<td>F22</td>
+<td>30</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>13, 17, 0, 0</td>
+<td>67</td>
+</tr>
+<tr>
+<td>F23</td>
+<td>30</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>8, 22, 0, 0</td>
+<td>71</td>
+</tr>
+<tr>
+<td>F24</td>
+<td>27</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>12, 15, 0, 0</td>
+<td>67</td>
+</tr>
+<tr>
+<td>F25</td>
+<td>27</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>15, 11, 0, 1</td>
+<td>62</td>
+</tr>
+<tr>
+<td>F26</td>
+<td>23</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>10, 13, 0, 0</td>
+<td>58</td>
+</tr>
+<tr>
+<td>F27</td>
+<td>27</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>9, 18, 0, 0</td>
+<td>79</td>
+</tr>
+<tr>
+<td>F28</td>
+<td>22</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>11, 11, 0, 0</td>
+<td>67</td>
+</tr>
+<tr>
+<td>F29</td>
+<td>25</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>8, 17, 0, 0</td>
+<td>65</td>
+</tr>
+<tr>
+<td>F30</td>
+<td>24</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>7, 17, 0, 0</td>
+<td>66</td>
+</tr>
+<tr>
+<td>F31</td>
+<td>22</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>12, 10, 0, 0</td>
+<td>70</td>
+</tr>
+<tr>
+<td>F32</td>
+<td>21</td>
+<td><strong>form</strong></td>
+<td><strong>supported</strong></td>
+<td>5, 16, 0, 0</td>
+<td>86</td>
+</tr>
+<tr>
+<td>F33</td>
+<td>23</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>10, 13, 0, 0</td>
+<td>89</td>
+</tr>
+<tr>
+<td>F34</td>
+<td>22</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>9, 13, 0, 0</td>
+<td>78</td>
+</tr>
+<tr>
+<td>F35</td>
+<td>18</td>
+<td>grouping</td>
+<td>unresolved</td>
+<td>8, 10, 0, 0</td>
+<td>83</td>
+</tr>
+</tbody>
+</table>
+<p>The verdicts are the first return's. <code>branches-D5.jsonl</code>
+names no proposition that a branch holds or fails.</p>
+<h4
+id="priormd-section-3s-declaration-against-what-each-level-rests-on">prior.md
+section 3's declaration, against what each level rests on</h4>
+<ul>
+<li><strong>The population pattern.</strong>
+<ul>
+<li><em>Declared:</em> counts with their denominators; the order on the
+clock against section 4's brackets; the onset contrast; the organizing
+end under section 5; support at held size; the words secondary.</li>
+<li><em>Rests on:</em> counts with their denominators and an order
+beating a within-room null, for 18 of the 20 arrows the propositions
+rest on. A11 is not beaten, and A12 has no count; A21 is in no
+proposition and has no null test. The onset contrast's counts are
+recorded for 19 of the 20, all but A12, and the organizing end is A1's
+field.</li>
+<li><em>Not done:</em> the held-size test, and the brackets for every
+arrow but A20.</li>
+<li><em>The words:</em> the 57 support quotes, secondary as
+declared.</li>
+</ul></li>
+<li><strong>The forms and subforms.</strong>
+<ul>
+<li><em>Declared:</em> both kinds, the shape primary for membership and
+the words primary for what the form is.</li>
+<li><em>Rests on:</em> just that. The keys of D4 give membership, and
+the accounts' cited concepts give the words.</li>
+<li><em>Status:</em> two of 35 branches pass the form test; 33 are
+groupings, reported as such.</li>
+<li><em>The six room forms of D4a-05 to D4a-08:</em> they rest on the
+same two kinds, by changes and codes, with their accounts
+(<code>room-form-*-account.md</code>).</li>
+</ul></li>
+<li><strong>The particular histories.</strong>
+<ul>
+<li><em>Declared:</em> the words primary: a dated sequence of the room's
+own turns that the model's elements reach.</li>
+<li><em>Rests on:</em> the room models of D2 and D3 and the coders' case
+accounts.</li>
+<li><em>The element-reach half</em> of section 3's local measure was
+computed at E1a (<code>audit-E1/element_reach.py</code>). Of 5,380
+second-order themes that hold a coordinating turn, in 696 rooms, 4,759
+are reached by a standing element (88.46 per cent), or 5,239 with the
+candidates (97.38 per cent). 297 rooms are reached in full, or 581 with
+the candidates.</li>
+<li><em>Not computed:</em> the other half, a validated adaptation or a
+theme listed as unresolved with its reason. So local validation is not
+established.</li>
+</ul></li>
+<li><strong>The method question's verdict</strong> is the work of
+section 3 of the audit.</li>
+</ul>
+<h4
+id="the-switch-records-of-literature-c3md-against-the-findings-they-superseded">The
+switch records of <code>literature-C3.md</code>, against the findings
+they superseded</h4>
+<table>
+<thead>
+<tr>
+<th>record</th>
+<th>what moved</th>
+<th>findings it supersedes</th>
+<th>against the ledger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leg 1 (C3a), "Switch records"</td>
+<td>none: "F-006 rested on a count across rooms and still does; the
+bound is another count across rooms."</td>
+<td>none</td>
+<td>Holds. F-006's C3a line is a bound of the C2 line
+(<code>supersedes</code> "F-006@C2a-01", a form other than the bare id
+the later lines use), with no change of kind.</td>
+</tr>
+<tr>
+<td>Leg 2 (C3b), "Switch record: the concept"</td>
+<td>The concept's name, from a coinage ("the one-line enrolment") to the
+literature's ("the preferred acceptance"). Its form claim, from
+exemplars to a pattern across rooms (F-014). Its function claim, put to
+a pattern, which failed (F-015).</td>
+<td>none, as it says: the concept was in <code>concept.md</code>, in no
+finding</td>
+<td>Holds. F-014 and F-015 are C3b lines with no
+<code>supersedes</code>. F-014 was later bounded at C5c-11 by a line
+that supersedes it by its bare id.</td>
+</tr>
+</tbody>
+</table>
+</section></details><details class="saved-file" id="02-probes-E1"><summary>out/probes-E1.md</summary><p class="saved-meta"><a href="files/62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f.reading.md" download>Download the reading copy</a> · Original GitHub file. Original SHA-256 <code>62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f</code>; reading copy <code>62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f</code>.</p><section class="record-copy" data-agent="reading copy"><h3 id="the-recall-probes-stage-e1">The recall probes (stage E1)</h3>
+<p>Written at E1b-05, 27 October 2026. At every leg's close the harness
+asked five questions, to be answered from memory without opening a
+file:</p>
+<ul>
+<li><strong>goal:</strong> the method question;</li>
+<li><strong>open:</strong> the open distinctions, by slug;</li>
+<li><strong>rooms:</strong> the last three rooms opened;</li>
+<li><strong>changed:</strong> the element or theme changed, and
+why;</li>
+<li><strong>next:</strong> the next comparison.</li>
+</ul>
+<p>It stored the answers and the expected values in
+<code>out/_probe/NN-L.json</code>. There are 300 answer files, over 16
+stages.</p>
+<p>The sources:</p>
+<ul>
+<li><code>audit-E1/probes_score.py</code> (E1a) gives each file's status
+as filed, and re-reads it by <code>probe.py</code>'s own rules.</li>
+<li><code>audit-E1/probes_notes.py</code> (E1b-05) sorts each wrong
+re-read answer. It is a <strong>note</strong> where the head, the diary
+or the question files held the answer at the close. It is a
+<strong>defect</strong> where none did.</li>
+<li><strong>n/a</strong>, where nothing on record could check the
+answer, is counted apart and never as recall.</li>
+</ul>
+<p>I did not rerun <code>probe.py --score</code>. It writes into
+<code>_probe/</code>, which is the harness's, and it would score against
+the question files as they stand now, not as they stood at each
+close.</p>
+<h4 id="as-filed-and-re-read">As filed, and re-read</h4>
+<p>As filed, <code>probe.py</code> found "missing" for most answers,
+because 283 of the 300 answer files write <code>- **goal:** ...</code>
+in bold markdown, and its matching rule reads only a bare
+<code>goal: ...</code> line. The re-read strips the marks and applies
+the same rule to the same expected values. The filed score is the
+record; the re-read says how much of it was the parse.</p>
+<table>
+<thead>
+<tr>
+<th>question</th>
+<th>filed: right, wrong, missing, n/a</th>
+<th>re-read: right</th>
+<th>re-read: wrong, a note</th>
+<th>re-read: wrong, a defect</th>
+<th>n/a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>goal</td>
+<td>17, 0, 283, 0</td>
+<td>298</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>open</td>
+<td>0, 0, 161, 139</td>
+<td>26</td>
+<td>135</td>
+<td>0</td>
+<td>139</td>
+</tr>
+<tr>
+<td>rooms</td>
+<td>6, 9, 158, 127</td>
+<td>48</td>
+<td>111</td>
+<td>14</td>
+<td>127</td>
+</tr>
+<tr>
+<td>changed</td>
+<td>0, 0, 63, 237</td>
+<td>50</td>
+<td>9</td>
+<td>4</td>
+<td>237</td>
+</tr>
+<tr>
+<td>next</td>
+<td>0, 0, 23, 277</td>
+<td>11</td>
+<td>12</td>
+<td>0</td>
+<td>277</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The test for a note.</strong></p>
+<ul>
+<li>goal: the head states the method question at every close.</li>
+<li>open: every expected slug is a file in
+<code>_questions/</code>.</li>
+<li>rooms: every expected room is named in the stage's diary.</li>
+<li>changed: an expected id is named in the stage's diary.</li>
+<li>next: the expected text's first six words are in the diary.</li>
+</ul>
+<p>For rooms, the declared test read only the leg's own diary lines, and
+gave 24 notes and 101 defects. But the expected rooms repeat across legs
+that opened nothing: A1b-20 to A1b-26 all expect predators, Russiaclan
+and winnipegjets. The harness's value is therefore the last three rooms
+on record, not the leg's own. Read over the stage's diary up to the
+close, 111 are notes and 14 defects. Both counts are in
+<code>probes_notes.json</code>; its first run, the declared rule alone,
+is kept as <code>.superseded-1</code>.</p>
+<h4 id="the-recall-failures-that-are-defects-18">The recall failures
+that are defects (18)</h4>
+<p>These are misses that neither the head nor the diary nor the question
+files answered at the close:</p>
+<ul>
+<li><strong>rooms</strong>, 14: B1b-01, B1b-03 to B1b-08, B1b-17 to
+B1b-19, B1b-19-p2, B1b-20, B1b-21 and D5a-33. At B1 the rooms were
+opened through <code>mem.py room</code> and recorded in the read log,
+but the diary names no room for these legs, so the head and the diary
+could not answer.</li>
+<li><strong>changed</strong>, 4: D4a-06, D4a-07, D4a-08 and D6a-01. The
+diary of those legs names none of the expected ids.</li>
+</ul>
+<p>All 18 are recall failures of the record, the memory a later leg
+reads. They are not faults in the work the legs did.</p>
+<h4 id="by-stage-re-read-rooms-by-the-declared-test">By stage (re-read;
+rooms by the declared test)</h4>
+<p>Each cell gives right, wrong as a note, wrong as a defect, and
+n/a.</p>
+<table>
+<thead>
+<tr>
+<th>stage</th>
+<th>goal</th>
+<th>open</th>
+<th>rooms</th>
+<th>changed</th>
+<th>next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>57, 0, 0, 0</td>
+<td>0, 0, 0, 57</td>
+<td>19, 2, 36, 0</td>
+<td>0, 0, 0, 57</td>
+<td>0, 1, 0, 56</td>
+</tr>
+<tr>
+<td>B1</td>
+<td>44, 0, 0, 0</td>
+<td>0, 0, 0, 44</td>
+<td>18, 1, 24, 1</td>
+<td>15, 4, 0, 25</td>
+<td>2, 4, 0, 38</td>
+</tr>
+<tr>
+<td>B2</td>
+<td>12, 0, 0, 0</td>
+<td>0, 0, 0, 12</td>
+<td>0, 0, 0, 12</td>
+<td>3, 0, 0, 9</td>
+<td>0, 0, 0, 12</td>
+</tr>
+<tr>
+<td>B3</td>
+<td>3, 0, 0, 0</td>
+<td>0, 0, 0, 3</td>
+<td>0, 0, 0, 3</td>
+<td>0, 0, 0, 3</td>
+<td>0, 1, 0, 2</td>
+</tr>
+<tr>
+<td>B4</td>
+<td>12, 0, 0, 0</td>
+<td>0, 0, 0, 12</td>
+<td>0, 0, 0, 12</td>
+<td>0, 0, 0, 12</td>
+<td>0, 0, 0, 12</td>
+</tr>
+<tr>
+<td>C1</td>
+<td>11, 0, 0, 0</td>
+<td>0, 0, 0, 11</td>
+<td>0, 0, 0, 11</td>
+<td>2, 0, 0, 9</td>
+<td>0, 0, 0, 11</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>7, 0, 0, 0</td>
+<td>5, 2, 0, 0</td>
+<td>6, 0, 1, 0</td>
+<td>3, 3, 0, 1</td>
+<td>0, 0, 0, 7</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>3, 0, 0, 0</td>
+<td>0, 3, 0, 0</td>
+<td>0, 0, 0, 3</td>
+<td>2, 0, 0, 1</td>
+<td>0, 0, 0, 3</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>1, 0, 0, 0</td>
+<td>0, 1, 0, 0</td>
+<td>0, 0, 0, 1</td>
+<td>1, 0, 0, 0</td>
+<td>0, 0, 0, 1</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>21, 0, 0, 0</td>
+<td>17, 4, 0, 0</td>
+<td>2, 0, 15, 4</td>
+<td>11, 1, 0, 9</td>
+<td>0, 0, 0, 21</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>1, 0, 0, 0</td>
+<td>0, 1, 0, 0</td>
+<td>0, 0, 0, 1</td>
+<td>0, 0, 0, 1</td>
+<td>0, 0, 0, 1</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>1, 0, 0, 0</td>
+<td>0, 1, 0, 0</td>
+<td>0, 0, 0, 1</td>
+<td>0, 0, 0, 1</td>
+<td>0, 0, 0, 1</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>57, 1, 0, 0</td>
+<td>0, 58, 0, 0</td>
+<td>1, 21, 16, 20</td>
+<td>11, 0, 0, 47</td>
+<td>7, 3, 0, 48</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>8, 0, 0, 0</td>
+<td>3, 5, 0, 0</td>
+<td>0, 0, 0, 8</td>
+<td>2, 1, 3, 2</td>
+<td>0, 0, 0, 8</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>42, 0, 0, 0</td>
+<td>1, 41, 0, 0</td>
+<td>2, 0, 9, 31</td>
+<td>0, 0, 0, 42</td>
+<td>0, 3, 0, 39</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>18, 1, 0, 0</td>
+<td>0, 19, 0, 0</td>
+<td>0, 0, 0, 19</td>
+<td>0, 0, 1, 18</td>
+<td>2, 0, 0, 17</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What the probes show.</strong></p>
+<ul>
+<li>The method question was carried at every close, and stated right in
+298 of 300 re-read answers.</li>
+<li>The open distinctions and the last rooms were the weakest recall.
+Most of those misses (open 135, rooms 111) are notes: the record held
+what the session's memory did not.</li>
+<li>What the record lost is narrow: the rooms of 13 B1 legs and one D5
+leg, and the changes of three D4 legs and the first D6 leg. The harness
+drew its expected values from the run's own files, so these were
+recorded somewhere, but not in the head or the diary, which a later leg
+reads first.</li>
+</ul>
+</section></details><details class="saved-file" id="03-expectations-E1"><summary>out/expectations-E1.md</summary><p class="saved-meta"><a href="files/f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9.reading.md" download>Download the reading copy</a> · Original GitHub file. Original SHA-256 <code>f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9</code>; reading copy <code>f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9</code>.</p><section class="record-copy" data-agent="reading copy"><h3
+id="expectations-against-the-ledger-and-the-verdicts-stage-e1">Expectations
+against the ledger and the verdicts (stage E1)</h3>
+<p>Written at E1b-07, 27 October 2026, from
+<code>audit-E1/expectations.py</code> and its output,
+<code>expectations.json</code>. <code>sealed/EXPECTATIONS.jsonl</code>
+holds one line per analysed room (705). Each line names the elements and
+arrows the room was expected to instantiate and those expected to be
+absent, with the source of each expectation (the implications of C5, the
+propositions and the placements).</p>
+<p>A room's evidence on an element is its accepted return lines on that
+element, from the first return and the re-check, with the last ruling of
+each line:</p>
+<ul>
+<li><strong>Taken up:</strong> an accepted instantiate, restrict,
+add-condition, add-step or link line.</li>
+<li><strong>Contradicted:</strong> an accepted contradict line.</li>
+<li><strong>Absent:</strong> only an accepted absent line.</li>
+<li><strong>Untested:</strong> no line.</li>
+</ul>
+<p>The score is <strong>in-sample throughout</strong>: the expectations
+were written from the same rooms whose return scores them, and the
+uncited concept ids are computed by script, not held out.</p>
+<h4 id="the-replication-score">The replication score</h4>
+<table>
+<thead>
+<tr>
+<th>outcome</th>
+<th>expectations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>met</td>
+<td>8,034</td>
+</tr>
+<tr>
+<td>failed: absent where it was expected</td>
+<td>575</td>
+</tr>
+<tr>
+<td>failed: taken up where absence was expected</td>
+<td>87</td>
+</tr>
+<tr>
+<td>untested: no line</td>
+<td>944</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The replication score is 0.924</strong> (8,034 met of 8,696
+met or failed).</p>
+<p><strong>By verdict</strong>, the first return's (both readers
+agreeing, else split):</p>
+<table>
+<thead>
+<tr>
+<th>verdict</th>
+<th>score</th>
+<th>met</th>
+<th>failed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>composes</td>
+<td>0.933</td>
+<td>1,443</td>
+<td>104</td>
+</tr>
+<tr>
+<td>composes with residue</td>
+<td>0.917</td>
+<td>4,703</td>
+<td>425</td>
+</tr>
+<tr>
+<td>split</td>
+<td>0.933</td>
+<td>1,846</td>
+<td>133</td>
+</tr>
+<tr>
+<td>cannot tell</td>
+<td>1.0</td>
+<td>40</td>
+<td>0</td>
+</tr>
+<tr>
+<td>does not compose</td>
+<td>1.0</td>
+<td>2</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>By branch</strong>, the score runs from 0.887 (F16) to 0.964
+(F04). The 229 rooms in no branch score 0.919. Every branch's score is
+in <code>expectations.json</code>.</p>
+<p><strong>The two failures, by element.</strong></p>
+<ul>
+<li><strong>Expected absent, taken up:</strong> C01, decided order, in
+81 rooms. This is the largest single failure. The return finds decided
+order in many rooms the coding did not.</li>
+<li><strong>Expected present, absent:</strong> A04 (62), A08 (61), A06
+(59), A13 (52) and A19 (48). In those rooms, the return's only accepted
+word on the arrow is that it is absent.</li>
+</ul>
+<p><strong>Stage D5's survival figures per branch</strong>, from the
+record and never from the canvas, are in <code>survival-D5.md</code> and
+<code>branches-D5.jsonl</code> (<code>work_remained</code> re-read for
+the 476 rooms in a branch, agreeing with the field in 248). They stand
+beside these scores. D5's reading of <code>work_remained</code> is an
+open defect (line 100), so no score here is set against survival.</p>
+<h4 id="the-fields-entries">The field's entries</h4>
+<p>The field model handed over three entries at C4a
+(<code>sealed/FIELD.jsonl</code>). Over the 705 rooms:</p>
+<table>
+<thead>
+<tr>
+<th>entry</th>
+<th>taken up</th>
+<th>contradicted</th>
+<th>absent</th>
+<th>no line</th>
+<th>D3's ruling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P21 (members say an agreement cannot bind every placer)</td>
+<td>166</td>
+<td>0</td>
+<td>490</td>
+<td>49</td>
+<td>standing (D3a-26, rule 11): shown in the rooms' own lines</td>
+</tr>
+<tr>
+<td>P22 (rooms contest which version of the work is kept)</td>
+<td>223</td>
+<td>0</td>
+<td>463</td>
+<td>19</td>
+<td>standing (D3a-06, rule 11): shown in the rooms' own lines</td>
+</tr>
+<tr>
+<td>A21 (an agreement, or the making of terms, brings the
+disclaimer)</td>
+<td>112</td>
+<td>0</td>
+<td>567</td>
+<td>26</td>
+<td>standing with a bound (D3a-27, rule 11): counted in the rooms' own
+lines</td>
+</tr>
+<tr>
+<td>the model's other 48 standing elements and arrows, mean per
+element</td>
+<td>382.6</td>
+<td>0.1</td>
+<td>235.3</td>
+<td>87.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The tentative mark drew answers, but fewer than the model's other
+elements. All three were taken up in 112 to 223 rooms, and none was
+contradicted. Each is absent in more rooms than the mean element, so the
+return speaks of them less often.</p>
+<h4 id="the-onset-contrast">The onset contrast</h4>
+<p><code>contrast.md</code> (A1, recomputed at A1b-20) sets two sides:
+131 early rooms and 61 late, with a held-size comparison of 41 early and
+12 late. Stage C2 recorded each arrow's <code>early_late</code>
+counts.</p>
+<p><strong>Rule 6, the denominators before any gap:</strong></p>
+<ul>
+<li>19 arrows carry the counts. The late side holds 0 to 15 rooms per
+arrow (95 over all 19), and the early side 4 to 93 (818).</li>
+<li>No arrow's late side is large enough to read a gap. The pooled
+figures (578 of 818 early, 54 of 95 late) are not independent, because
+the same rooms recur across arrows. So no gap is read.</li>
+</ul>
+<p><strong>A1's expectations:</strong></p>
+<ul>
+<li><em>Late rooms organize around finding room; their organizing lives
+are shorter; early rooms name rivals more; the held-size comparison
+keeps the first difference and loses the third.</em></li>
+<li>They are <strong>untested</strong> by these counts. They are neither
+held nor failed.</li>
+<li>The contrast is a boundary condition that the model's terms could
+not test on this record, not a covariate.</li>
+</ul>
+</section></details><details class="saved-file" id="04-retelling-D6"><summary>out/retelling-D6.md</summary><p class="saved-meta"><a href="files/21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895.reading.md" download>Download the reading copy</a> · Original GitHub file. Original SHA-256 <code>21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895</code>; reading copy <code>21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895</code>.</p><section class="record-copy" data-agent="reading copy"><h3 id="the-retelling-the-model-with-its-forms-inside-it">The retelling:
+the model with its forms inside it</h3>
+<p>Part 1 goes dimension by dimension, one leg each (D6a-01 to D6a-08);
+part 2, the telling, follows, written at D6b with the figure
+(<code>figure-D6.md</code>). The two parts, with the sensitivity section
+added at D6a-09 and the size-held test added at D6a-10, run to about
+15,000 words. The forms are the six room forms of D4a-08c, by their
+final names (<code>room-forms-names.md</code>); the 35 branches are the
+level below and appear where they explain a form (the PI's message for
+D6, on J's word). The model is the version frozen at D3
+(46384686d6173fdeb4c749667478c1363e675bc6b52bb6f4fdc211d387e68525), with
+two held proposals (QD4-001) stated in full in each form account.</p>
+<p>The six forms:</p>
+<ul>
+<li><strong>A, Border terms and the announced plan</strong> (166 rooms,
+135 defining).</li>
+<li><strong>B, Behind the thread: chat, scripts, raids</strong> (141,
+113; a residual grouping, not a form, with three facets held by
+different rooms: the chat, the scripts and the raids).</li>
+<li><strong>C, The design reopened</strong> (125, 96).</li>
+<li><strong>D, Keeping, with help or carrying on</strong> (119, 96),
+with its splits D.1, Keeping with the call; D.2, Keeping inside the
+sub's play; and below D.2, D.2.1, The play, carried on, and D.2.2, The
+play, kept.</li>
+<li><strong>E, The sub's play, run as work</strong> (98, 84).</li>
+<li><strong>F, Moving for the spot</strong> (56, 34).</li>
+</ul>
+<p>The form lines, one per element and room form, are in
+<code>fractal-forms-D6.jsonl</code>; the branch lines, at least one per
+branch where it explains a form, are in <code>fractal-D6.jsonl</code>
+(QD6-001; <code>departures.jsonl</code> line 20). How each form line is
+decided (rule logged at D6a-01 before it ran,
+<code>_analysis/d6_fractal.py</code>): on a form's defining rooms, an op
+on an element or arrow leans where it is held by max(5, a tenth of the
+defining rooms) or more, at 1.2 times the 558 defining rooms' share or
+more. A form <strong>replaces</strong> the element where contradict
+lines lean, <strong>restricts</strong> it where restrict lines lean and
+outnumber the other leaning ops, <strong>specifies</strong> it where
+add-step, add-condition or link lines lean, and leaves it
+<strong>untouched</strong> otherwise. No form replaces any element. The
+coding vocabulary made that relation nearly unreachable: the readers
+returned 11 contradict lines among 42,243 at the first return and 4
+among 53,493 at the re-check, and none stands among the forms' selected
+lines. Restrict lines often say what a contradict line would have said.
+Of each form's restrict lines on arrows, 43 to 63 per cent say that the
+arrow fails in the room (Part 2 gives the counts by form). Each relation
+is a claim about the form's changes, a pattern across rooms counted by
+the ledger; what the rooms did is a claim on their words. No canvas
+field is used. How far each changed cell depends on the rule's two
+thresholds is in the sensitivity section after Part 2, and how far it
+depends on record size is in the size-held test after that; each cell's
+marks are in <code>form-cells-sensitivity-D6.tsv</code> and
+<code>form-cells-size-D6.tsv</code>.</p>
+<p><strong>Local validation is not established.</strong> prior.md
+section 3's measure was not computed, and every member's adapted local
+account is unresolved. That measure would show each second-order theme
+with a coordinating turn reached by an element or a validated
+adaptation; it moves to E1. So wherever this telling names a room that
+shows a pattern best or least well, the room shows it in its ruled lines
+in the ledger, not in a validated account of the room.</p>
+<h4 id="part-1-dimension-by-dimension">Part 1. Dimension by
+dimension</h4>
+<h5 id="d01-critical-mass">D01, Critical mass</h5>
+<p><strong>In the global model.</strong> Critical mass is whether a
+scattered readership gathers enough hands, who know how to place, to
+make a work viable on the clock, and how a room reads its own numbers.
+Three fourth-order themes sit under it. Mobilization is the call and its
+answer: the room calls its members and kindred subs to place (P01), a
+member answers in one line that asks for nothing back (P15), the call
+follows a member's start (A02), and a bare join answers the call (A12).
+Sensemaking is members asking what the canvas is and others explaining
+it (P24). Collective efficacy is the room judging that it has too few
+hands or too little room (K02), and members stepping away under strain
+or repairing a quarrel (P32, a candidate). The model has the call at the
+start of the work, after a member proposes or begins the mark.</p>
+<p><strong>Mobilization.</strong> Three forms specify the call (P01),
+and each makes it return later in the work.</p>
+<ul>
+<li>In C, The design reopened, the call returns within the work. A
+finished figure, a granted space or a member's report of a part done
+becomes the premise for the next call. The rooms that show it best are
+r/starbound, r/bisexual and r/suomi; r/Honduras shows it least well. Not
+every C link is a return: in r/trees an explanation of the canvas leads
+a member to say they will place, and in r/anaheimducks the organiser
+explains why the timer favours working together. That is local variation
+inside the specification.</li>
+<li>In D, Keeping, with help or carrying on, the call returns from
+carrying on and from loss: a later canvas, damage to the mark or a lost
+spot leads the room back to calling for hands. r/bindingofisaac, r/rotmg
+and r/edmontonoilers show it best; r/rojava least well. Two branches
+explain part of it: F11 (carrying on as renewed work, begun before the
+close) and F12 (the spine restarted on another canvas) lean to D at 2.62
+and 2.69 times its share, and three of their rooms in D link the call
+(r/bindingofisaac, r/furry_irl, r/sadboys), two of them to a later
+canvas or a remake.</li>
+<li>In F, Moving for the spot, the call returns after a lost, taken or
+bulldozed spot: a failed attempt or a smaller restart reopens the call
+at a new spot. r/twentyonepilots, r/snsd and r/penguins show it best;
+r/dbz least well. F09 (the move returns to building) leans to F at 2.33
+times its share, but of its rooms in F only r/penguins links the call,
+and not to a move, so the branch does not explain this return; F09's
+line is read at the building element (D02).</li>
+<li>A, B and E leave P01 untouched.</li>
+</ul>
+<p>The start before the call (A02) is restricted in D and E, where the
+start and the first call share one post in the restricting rooms; the
+lines say that the two coincide, and in two E rooms (r/nintendo,
+r/titanfall) a call came before any start. The bare answer (A12) is
+restricted in F, where answers to a call often ask where or how to help,
+or give a reason (r/sips, r/latin, r/UPenn; r/ducks least well). The
+one-line answer itself (P15) is untouched in all six forms.</p>
+<p><strong>Sensemaking.</strong> All six forms leave P24 untouched.
+Members asked what the canvas is and were answered in every form, at
+about the population's rate: P24 is instantiated in 84 to 95 per cent of
+each form's defining rooms.</p>
+<p><strong>Collective efficacy.</strong> All six forms leave K02
+untouched as a change, although form F instantiates it in 32 of 34
+defining rooms, against 82 per cent of the 558; F's rooms judged their
+room too small or their hands too few, and the change they made was to
+the move that followed (A10, read under D04). Form B restricts P32:
+where a member left, the reason given was the room's scripts or an
+ideology (r/placecanada, r/EraseThePlace), not strain, and attempts to
+repair a quarrel are seen without their outcome (r/reddevils,
+r/FederationPlace; r/EraseThePlace least well).</p>
+<p><strong>What the forms add to the dimension.</strong> The model has
+the call once, at the start. Three forms show it again, after a finish
+(C), after carrying on or a loss (D) and after a lost spot (F). The
+account grounds no loop; these link lines are the material for one, and
+they go to <code>proposals-D6.jsonl</code> as an unvalidated proposal
+(PR-D6-01), not into the model. Two smaller proposals answer branch
+notes from D5 with the forms' lines: an answer that joins and asks for a
+task as a second form of acceptance (PR-D6-02, from F's A12 lines and
+branch F35), and a start that is itself the first call, as a clause in
+A02's bound (PR-D6-03, from D's and E's A02 lines and branch F32).
+Elsewhere the forms leave critical mass as the model states it.</p>
+<h5 id="d02-coordination-without-command">D02, Coordination without
+command</h5>
+<p>Written at D6a-02. Form lines in <code>fractal-forms-D6.jsonl</code>
+(78 lines: 13 units by six forms; 21 lean, 57 untouched); branch lines
+in <code>fractal-D6.jsonl</code>.</p>
+<p><strong>In the global model.</strong> Coordination without command is
+how hands that no one can command come to place the same picture: what
+settles what the room will make, and what aligns the placing. Six
+fourth-order themes sit under it. Collective representation is the
+design (P02). Direct information sharing is members reporting the mark's
+state as they build (P03). Standardization of output is the template
+(P04). Workarounds are the scripts, bots and spare accounts (P14), with
+the site's faults (K06) and members' own time and devices (K05).
+Backstage decision-making is the chat (P23) and keeping plans from
+rivals (P33). Decided order is the starter (R01) and the claim that most
+rooms worked without deciding how they were organized (C01, a decided
+element in 46 of 705 rooms). Three arrows end here: the call brings
+builders (A01), a template settles the design (A11, its withdrawal a
+held proposal), and scripts follow upkeep under strain (A06).</p>
+<p><strong>Collective representation.</strong> Two forms specify the
+design.</p>
+<ul>
+<li>In C, The design reopened, the design is settled for a time and
+reopened: a provisional choice made overnight, rough lettering to hold a
+gap, a finished mark followed by the next addition. r/bardmains,
+r/gatech and r/aggies show it best; r/uvic least well. F07 and F34
+explain it.</li>
+<li>In E, The sub's play, run as work, the design depends on the host
+and the means: a host's approval for space, the colours and size
+available, the upkeep of a picture already standing (r/warframe,
+r/starlightstage, r/yugioh; r/baylor least well). F34 explains it here
+too.</li>
+<li>A, B, D and F leave P02 untouched.</li>
+</ul>
+<p>F34's rooms in C and E size the design to the hands before any loss,
+a consequence of K02 that the model does not state; it goes to
+<code>proposals-D6.jsonl</code> as PR-D6-05.</p>
+<p><strong>Direct information sharing.</strong> Only F, Moving for the
+spot, specifies P03: building returns after a move, as a new spot or a
+replacement plan is followed by a new start (r/wildhockey, r/portal,
+r/UPenn; r/warthunder least well). F09 (the move returns to building)
+explains it: 8 of the 12 holders are its rooms. The arrow from the move
+to building is PR-D6-04. The call-to-building arrow (A01) is restricted
+in D and E. In D the call and the building overlap, and an active
+builder also recruits (r/gorillaz, r/gamindustri, r/rotmg; r/cgpgrey
+least well). In E the two appear apart in the record (r/uwaterloo,
+r/paragon, r/teslamotors; r/baylor least well).</p>
+<p><strong>Standardization of output.</strong> Three forms specify the
+template.</p>
+<ul>
+<li>In A, Border terms and the announced plan, members keep the template
+in step with the placements: they correct references against what is
+placed and replace stale plans (r/FloydVsVoid, r/stardewvalley,
+r/kamenrider; r/Villanova least well). F15 explains it: 20 of the 32
+holders are its rooms. F15's note asked whether the plan follows the
+work; in form A it does.</li>
+<li>In C the template is kept current: builders retire outdated posts,
+announce changed locations and message overwriters (r/torontoraptors,
+r/eve, r/tf2; r/kuwait least well). F33 explains it.</li>
+<li>In F the template moves with the spot: a new site gets an anchor
+coordinate (r/dallasstars, r/latin, r/portal; r/warthunder least
+well).</li>
+</ul>
+<p>F15 and F33, which their notes call one change at two nodes, fall in
+different forms, A and C. C restricts A11. In 40 of its 58 lines the
+template did not settle the design: colours, sizes and spacing stayed
+open, or a redesign was repaired away as damage (r/starbound,
+r/bardmains, r/pitt; r/guatemala least well; F07 and F33). These are the
+grounds of the held A11 proposal, which stays held.</p>
+<p><strong>Workarounds.</strong> Three forms specify machine hands and
+two restrict them.</p>
+<ul>
+<li>B, Behind the thread: chat, scripts, raids, runs scripts as shared
+tools whose targets and versions are kept in step (r/mexico, r/PlaceNL,
+r/AmericanFlaginPlace; r/aeon least well). F08 (machine hands kept on
+one target) explains it: 24 of the 33 holders.</li>
+<li>E lets machine hands help only on conditions: matching targets,
+agreed overlaps, updates reaching every runner (r/mls, r/dota2,
+r/teslamotors).</li>
+<li>F keeps scripts and overlays in step across accounts, and members
+switch automation off to place by hand (r/wildhockey, r/predators,
+r/sbu; F08).</li>
+<li>A and D restrict P14. There scripts are offered, debated and
+refused, and the record shows the offer more than any placing (A:
+r/FloydVsVoid, r/mindcrack, r/prequelmemes; D: r/rutgers, r/danganronpa,
+r/Temple, with F24).</li>
+<li>A06 is restricted in D and F. Scripts did not wait for strain: they
+were offered for a new build or a move, or came with the first request
+to coordinate construction (D 12 of 21 lines fail as stated; F: r/sips,
+r/wildhockey, r/uiowa).</li>
+<li>K05 and K06 are untouched in all six forms.</li>
+</ul>
+<p><strong>Backstage decision-making.</strong> B specifies the chat. It
+works on conditions: invitations that work and a current plan members
+can find (r/mexico, r/quebec, r/reddevils; r/lithuania least well). F16
+and F29 explain it, the chat family the D5 notes read as one change with
+three ops. A specifies the chat's upkeep: expired invitations are
+replaced and decisions are brought back for members outside it
+(r/berserk, r/theexpanse, r/de; r/japan least well). Inside A, F30 (the
+chat seen only through its invitations and returned reports, not its
+choices) restricts P23: its rooms are 10 of A's 16 restrict holders, and
+they show the chat only from outside, through invitations, venues
+offered and reports that come back (r/xcom, r/forsen, r/prequelmemes;
+line added at D6a-07). E restricts P23: its threads hold invitations and
+claims brought back, not how the chat decided. No form changes P33.</p>
+<p><strong>Decided order.</strong> A and C restrict C01. In their lines,
+rooms divided the work, appointed representatives, assigned defenders or
+pixels, and endorsed a template, though implementation is not shown and
+the population count is not tested. A's best rooms are r/FloydVsVoid,
+r/furry and r/berserk; C's are r/PUBATTLEGROUNDS, r/bisexual and
+r/gatech. R01 is untouched.</p>
+<p><strong>What the forms add to the dimension.</strong> Each form
+specifies the part of coordination its name says:</p>
+<ul>
+<li>A, the template kept in step with the placements and a division of
+the work;</li>
+<li>B, shared scripts and a chat that works only on conditions;</li>
+<li>C, the design reopened and the template kept current;</li>
+<li>E, design and scripts on the host's and the tools' conditions;</li>
+<li>F, building again after a move, with a template that moves with the
+spot.</li>
+</ul>
+<p>D specifies nothing here; it restricts the order of call and building
+and the arrow from strain to scripts. Two unvalidated proposals come
+from this dimension: PR-D6-04 (after the move, the room builds again)
+and PR-D6-05 (the design sized to the hands before any loss).</p>
+<h5 id="d03-maintenance">D03, Maintenance</h5>
+<p>Written at D6a-03. Form lines in <code>fractal-forms-D6.jsonl</code>
+(18 lines: 3 units by six forms; 4 lean, 14 untouched); branch lines in
+<code>fractal-D6.jsonl</code>.</p>
+<p><strong>In the global model.</strong> Maintenance is what keeps a
+finished work alive on a surface anyone can change, and how a room
+decides what a change to its work was. Two fourth-order themes sit under
+it. Repair work is keeping (P05): members watch the work and repair
+changed pixels, rally under attack, cover the night, harden the shape
+and put upkeep before growth. Its second and third sentences are the
+telling clause. Repair restores the form the keepers know, so a change
+the room planned is repaired away until its keepers are told of it.
+Attribution is working out who changed the work and why (P06). One arrow
+ends here: once a mark stands, keeping it becomes the work (A03,
+building then keeping). Four D5 findings bound the telling clause: F-024
+(the change read from its shape, informed members holding it), F-025
+(informed members reject it), F-026 (at the border) and F-027 (in
+keeping). The held P05 proposal states the first of these as a bound,
+and it stays held (QD4-001).</p>
+<p><strong>Repair work.</strong> Four forms change keeping, each in its
+own way.</p>
+<ul>
+<li>In A, Border terms and the announced plan, keeping takes conditions
+and links. Protecting a neighbour can mean undoing the room's own
+overextension (r/FloydVsVoid). Keepers can refuse a change they know of
+as a takeover (r/de). Repair follows the keeper's own idea of the right
+form, even when that form holds a spelling error (r/prequelmemes). An
+announced finish is followed by repair and renewed defence
+(r/stardewvalley, r/ripcity). F32 (the marking returns to keeping)
+explains the links: 9 of its rooms hold them. r/halo shows the form's
+keeping least well.</li>
+<li>In C, The design reopened, the lines restrict the telling clause.
+Informed members refused changes, or the record cannot tell ignorance
+from dissent, and none of the 47 lines shows a change lost only for want
+of telling (r/bardmains, r/pitt, r/PUBATTLEGROUNDS; r/pusheen least
+well). F07 (the telling clause not shown at the design) explains it: 34
+of its rooms are among the 46 that restrict.</li>
+<li>In D, Keeping, with help or carrying on, keeping is shared and
+checked. Watches are volunteered and handed on, keepers check the
+current canvas and the intended form before they repair, and the room
+ranks what to keep (r/portugal, r/mylittlepony, r/rotmg; r/glasgow least
+well). F27 explains part of it: two of its four rooms here check whether
+a change is intended before undoing it (r/OnePiece, r/radiohead).</li>
+<li>In F, Moving for the spot, keeping begins before the mark is
+finished. A border reserves the space, defenders are planned before a
+stable work exists, and a repair tool's reference image is diagnosed and
+changed (r/wildhockey, r/portal, r/planetside; r/clubpenguin least
+well). F08 explains the machine part.</li>
+<li>B, Behind the thread: chat, scripts, raids, and E, The sub's play,
+run as work, leave P05 untouched. E instantiates it in 71 of 84 defining
+rooms, against 93.4 per cent of the 558; its records hold less
+keeping.</li>
+</ul>
+<p>A03, building then keeping, is untouched in all six forms.</p>
+<p><strong>Attribution.</strong> P06 is untouched in all six forms. Form
+D comes nearest: 9 of its defining rooms add steps to working out who
+changed the work, at 2.01 times the 558's share, one room under its
+floor of 10.</p>
+<p><strong>The telling clause, read across the forms, as the D5 notes
+asked.</strong> The forms that touch the clause show four ways it holds
+only in part:</p>
+<ul>
+<li>informed keepers refuse a change: C, and r/de in A (F-025);</li>
+<li>the news must cross to a neighbour: the border, read under D04
+(F-026);</li>
+<li>a script keeps the old form until its operator changes the target:
+F, and branch F08 (F-027's machine route);</li>
+<li>keepers check before they repair: D.</li>
+</ul>
+<p>The last is a route by which keepers learn of a planned change other
+than being told. It is the step the room models of r/OnePiece, r/cowchop
+and r/armok proposed (F27's note), and it goes to
+<code>proposals-D6.jsonl</code> as PR-D6-06, unvalidated. No form's
+lines show a planned change lost only because its keepers were not told.
+P05's statement is unchanged, and the held proposal stays held.</p>
+<p><strong>What the forms add to the dimension.</strong> Every form
+keeps its work as P05 states it. What differs is when keeping starts and
+how keepers learn the intended form:</p>
+<ul>
+<li>A ties keeping to the neighbours and to the finished mark;</li>
+<li>C meets the telling clause with refusal;</li>
+<li>D shares and checks the keeping;</li>
+<li>F keeps the spot before there is a mark to keep.</li>
+</ul>
+<h5 id="d04-order-without-law">D04, Order without law</h5>
+<p>Written at D6a-04. Form lines in <code>fractal-forms-D6.jsonl</code>
+(120 lines: 20 units by six forms; 22 lean, 98 untouched); branch lines
+in <code>fractal-D6.jsonl</code>.</p>
+<p><strong>In the global model.</strong> Order without law is how rooms
+that cannot compel one another keep order between their works on one
+canvas. Five fourth-order themes sit under it. Live and let live is
+sparing: rooms spare their neighbours' work, rein in their own attackers
+and apologise for damage (P07), and members argue whether covering
+others' work is fair (P31, a candidate). Negotiated order is border
+terms: rooms propose, settle and contest borders, truces and deals
+(P08), through envoys (R02). Members say that one member's agreement
+does not bind every placer (P21), and some members belong to both rooms
+(K07, a candidate). Reciprocity is help between rooms (P16).
+Meta-organization is coalitions (P17). Territoriality is the spot: the
+room chooses where to build before any loss (P27, a candidate), moves
+after a loss (P10), and lives on a host's mark under the host's rule
+(P19). Nine arrows end here. Keeping the mark brings the room to its
+neighbours (A04), and an attack call is met with a truce (A17). A
+settled border is a line members keep (A05), and an attack call is
+refused inside the room (A16). Short of hands, a room turns to other
+rooms (A13), and a settled border opens a channel for help (A14). Under
+attack, works defend each other (A19). Too few hands, so the room moves
+(A10). A21 runs from an agreement to the dispute over who may commit the
+room. F-020 bounds the dimension: sparing rests mostly on the room's own
+norm, and help rests on a deal about as often as not.</p>
+<p><strong>Live and let live.</strong> Four forms specify sparing, each
+with its own condition.</p>
+<ul>
+<li>In A, Border terms and the announced plan, sparing rests on
+overlapping membership, valued neighbouring art or fear of retaliation,
+and on placers whom the negotiators admit they cannot control (r/foxes,
+r/twice, r/hellointernet; r/germany least well).</li>
+<li>In B, Behind the thread: chat, scripts, raids, sparing passes
+through the room's tools. An instruction to spare agreed space must
+reach script users as a target update, and admitted script damage brings
+apology and repair (r/PlaceNL, r/theitalyplace, r/monero; r/asexual
+least well).</li>
+<li>In C, The design reopened, the room states its reason for restraint:
+an apology after a complaint, or help and space received from the
+neighbour (r/bisexual, r/farmcarrots, r/metroid; r/kindafunny least
+well).</li>
+<li>In D, Keeping, with help or carrying on, restraint protects the
+room's own logo, repays earlier help, and does not reach every placer
+(r/gamindustri, r/denverbroncos, r/portugal; r/magictcg least
+well).</li>
+</ul>
+<p>A05, the settled border kept, changes in three forms. A restricts it
+in 39 of 135 defining rooms. Restraint often comes before any settlement
+is shown, and a treaty guides the members who learn and accept it while
+others keep placing against it (r/stardewvalley, r/furry, r/berserk;
+r/RelientK least well). F26 (the telling clause not shown at the border)
+explains the second half: its rooms keep a border only where placers
+learn and accept its terms (r/placetardis, r/furry, r/thailand). B and D
+add the condition that the terms reach the placer (B: r/quebec,
+r/reddevils, r/AmericanFlaginPlace; r/neu least well. D:
+r/bindingofisaac, r/denverbroncos, r/mylittlepony; r/pepe least well).
+In B, F08 (machine hands kept on one target) explains part of it: an
+accommodation needs compatible script targets (r/india,
+r/AmericanFlaginPlace). In D some placers do not learn of the truce
+(r/bindingofisaac, r/radiohead). Read together, these lines state F-026
+for the border. Told placers stop. Placers the terms do not reach keep
+placing, and a script keeps placing until its target is changed. The
+reading goes to <code>proposals-D6.jsonl</code> as PR-D6-07, a bound on
+A05, unvalidated.</p>
+<p>E, The sub's play, run as work, restricts A16. Its restraint answers
+reported harm, overlap or a planned enlargement, not a written attack
+call refused inside the room (r/uwaterloo, r/starlightstage,
+r/hunterxhunter; r/wow least well). No form changes P31. E comes
+nearest, with 8 restrict holders, one room under its floor of 9.</p>
+<p><strong>Negotiated order.</strong> Three forms specify border
+terms.</p>
+<ul>
+<li>In A, border terms take work and meet limits (r/FloydVsVoid,
+r/catalunya, r/twice; r/kurdistan least well). F10 (a deal carried out
+as work) explains it: 14 of its rooms hold the deciding lines. Members
+discuss a border inside the room before contact (r/drawhelix), check a
+request's consensus and credibility (r/switzerland), and carry the terms
+to placers and templates, a step members say is still incomplete
+(r/poland, r/transformers). Identity colours limit what members concede
+(r/twice), and uncontrolled placers can defeat a promise
+(r/littlewitchacademia).</li>
+<li>In B, border talk has steps before and after it: a treaty request
+before any damage, local consensus before a proposal, and a negotiated
+move relayed to builders (r/linux, r/czech, r/FederationPlace;
+r/duckgame least well).</li>
+<li>In C, agreements are kept apart from compliance: members report
+attacks after announced terms, and a truce needs a counterpart able to
+keep it (r/torontoraptors, r/gatech, r/suomi; r/earthbound least
+well).</li>
+</ul>
+<p>F, Moving for the spot, restricts A04. In 13 of its 34 defining rooms
+border talk comes before keeping. Rooms ask neighbours for permission or
+access while they seek a spot (r/dallasstars, r/sips, r/wildhockey;
+r/Northwestern least well), or a neighbour objects when the room's
+building or script crosses its work (r/KState, r/httyd). No branch
+explains the cell. F09's rooms hold 4 of the 13 lines, but F09's change
+is building again after a move. The two routes go to
+<code>proposals-D6.jsonl</code> as PR-D6-09: arrows from choosing the
+spot (P27) and from building (P03) into border terms, beside A04,
+unvalidated. R02, P21, K07, A17 and A21 are untouched in all six
+forms.</p>
+<p><strong>Reciprocity.</strong> Two forms specify help, and one branch
+specifies it where its form does not.</p>
+<ul>
+<li>In C help is part of the room's own building. Helpers alternate
+placements between the two works, and paired scripts give spare capacity
+to the neighbour (r/starbound, r/pitt, r/timbers; r/bretagne least
+well).</li>
+<li>In D help waits on the helper's own work (r/gamindustri, r/rutgers,
+r/mylittlepony; r/OneTrueEmilia least well). F22 (help conditional on
+the helper's own work and spare hands) explains it: 11 of its rooms hold
+the deciding lines. Donors give when their work is secure and pixels are
+spare (r/mylittlepony, r/OnePiece), and they weigh what the help does to
+a third room's mark (r/gamindustri).</li>
+<li>In A the form leaves P16 untouched, but F28 (help at the border
+conditional) specifies it: its rooms are 10 of the form's 22
+add-condition holders. The helper's home work must be safe (r/ripcity,
+r/utaustin), the neighbour must stop attacking (r/catalunya), and
+promised help stays apart from help delivered (r/lsu,
+r/necrodancer).</li>
+</ul>
+<p>C and D restrict A13, short of hands, a room turns to other rooms (C
+30 of 96 defining rooms, D 33 of 96). In C donors help from completed or
+well-kept work, and help comes with construction and overlap repair
+(r/bardmains, r/cubers, r/PUBATTLEGROUNDS; r/uvic least well). F07's
+rooms hold 12 of the 30 lines, but F07's change is the telling clause,
+not help, so it does not explain the cell. In D help comes from surplus
+more than shortage. Donors give after their own work is finished or
+safe, repay earlier protection, and put off help while their home
+defence is short (r/gamindustri, r/bindingofisaac, r/denverbroncos;
+r/cgpgrey least well). F22 explains part of it: aid repays earlier
+protection once the room's own image is finished (r/OnePiece), and
+donors weigh their own work's safety (r/mylittlepony). Read with F22 and
+F28, the lines say that a shortage brings the request, and the donor's
+spare hands decide whether help comes. This answers the D5 note on D's
+A13. It goes to <code>proposals-D6.jsonl</code> as PR-D6-08,
+unvalidated. In 12 other lines a request is recorded and arriving help
+is not shown; the record cannot tell whether it came.</p>
+<p>A restricts A14, a settled border opens a channel for help. In A help
+is part of the bargain more than its result: pixels and shared upkeep
+are offered as the terms, or help is under way when the bargaining
+starts (r/catalunya, r/jerma985, r/empiredidnothingwrong; r/norway least
+well).</p>
+<p><strong>Meta-organization.</strong> P17 and A19 are untouched in all
+six forms.</p>
+<p><strong>Territoriality.</strong> Three forms change the spot and the
+move.</p>
+<ul>
+<li>D restricts P19, hosting. Guests ask for space or depend on a host,
+but a grant, an approval procedure or a durable host rule is not shown
+(r/gorillaz, r/gamindustri, r/denverbroncos; r/sadboys least well). F
+restricts it the same way, at the request stage (r/sips, r/latin,
+r/UPenn; r/streetfighter least well). In A the form leaves P19
+untouched, but F31 (hosting as one-off permission) restricts it: its
+rooms are 8 of the form's 12 restrict holders. An overlap is permitted
+for one arrangement (r/foxes), a replacement permission is called
+provisional (r/malaysia), and an incorporation is offered and accepted
+on conditions (r/mindcrack). In all three forms hosting shows as a
+request and a single permission, not a standing host rule.</li>
+<li>F restricts P27. The choice of spot also comes after a loss: the
+room picks a new site or a backup while another of its works has been
+lost (r/penguins, r/twitch, r/ethoslab; r/dbz least well). The
+before-loss bound holds for the site decision, not for the room's whole
+history.</li>
+<li>E and F restrict A10, too few hands, so the room moves. In E a
+judgment of too few hands ends one member's part or one expansion, while
+the others keep repairing, recruit or finish (r/fivenightsatfreddys,
+r/mls, r/worldoftanks; r/battlecats least well). In F the move answers
+the spot more than the hands. A taken spot or a lack of permitted space
+moves the room, and where members name too few hands, the move is only
+proposed or hesitant (r/wildhockey, r/latin, r/twentyonepilots;
+r/warthunder least well). This answers the D5 note on F's A10. P10's
+statement already names the loss of the spot as the move's cause, so the
+reading needs no proposal. It bounds A10 as F-019 does, where the loss
+itself prompted the move in 10 of 21 rooms.</li>
+<li>P10 is untouched in all six forms. F comes nearest, with 3 restrict
+holders against a floor of 5.</li>
+</ul>
+<p><strong>What the forms add to the dimension.</strong> Every form
+keeps order between rooms as the model states it, by sparing, terms and
+help. What differs is how far the order reaches:</p>
+<ul>
+<li>A holds sparing and terms to the placers the terms reach, and makes
+help part of the bargain;</li>
+<li>B carries terms to placers and scripts;</li>
+<li>C states its reasons for restraint and helps from its own
+building;</li>
+<li>D gives help from surplus and keeps hosting at the request;</li>
+<li>E restrains without a refused attack call, and a judgment of too few
+hands ends a member's part, not the room's place;</li>
+<li>F talks with neighbours before it has a mark, and moves for the
+spot.</li>
+</ul>
+<p>Three unvalidated proposals come from this dimension: PR-D6-07,
+PR-D6-08 and PR-D6-09.</p>
+<h5 id="d05-collective-identity">D05, Collective identity</h5>
+<p>Written at D6a-05. Form lines in <code>fractal-forms-D6.jsonl</code>
+(36 lines: 6 elements by six forms; 0 lean, 36 untouched); no branch
+lines.</p>
+<p><strong>In the global model.</strong> Collective identity is what a
+room brings to the canvas as a body, and what it makes of itself there.
+Four fourth-order themes sit under it. Frame bridging, the carrying of a
+frame from outside the canvas into it, holds the quarrel the community
+carries in (K03) and the new jokes members make out of the canvas work
+(P26, a candidate). Flagging the nation holds the room acting as the
+body it was before the canvas (K04): it argues the nation's history and
+belonging, carries in the sub's lore, jokes or ideology, or professes a
+colour as a faith. The same theme holds C02: in some rooms a tie from
+before the canvas names the rival in the turn that calls for the attack,
+a claim untested for order. Neo-tribes, groups that form around a shared
+sign, holds the room that forms for the canvas around a mark (P28, a
+candidate) and K04's faith in a colour. Symbolic boundaries holds what
+members say offends: they refuse slurs and hate symbols and argue over
+jokes (P29, a candidate). No arrow ends here. C02 also sits under
+Contention and P28 under Host framing; their lines are written here
+once.</p>
+<p><strong>No form changes collective identity.</strong> All 36 cells
+are untouched. Changes to these elements are rare in the population.
+Across the 558 defining rooms the most common is a restrict line on C02,
+in 35 rooms; then P28 (18), P26 (13), and K04 and P29 (12 each). No form
+reaches its floor, which runs from 5 to 14 defining rooms. The nearest
+cells are C02 in B (9 restrict holders against a floor of 12) and P26 in
+D (6 against 10, at 2.68 times the share). Among the branches that lean
+to a form, the most any holds on one op is 4 rooms (F07 on C02 in
+C).</p>
+<p>Of the restrict lines I read (the nearest cells and form B's), nearly
+all say what the record cannot show, not that the element fails:</p>
+<ul>
+<li>on C02, a national, historical or lore frame names a target, but the
+record does not show that a tie from before the canvas selected it
+(r/austria and r/dwarffortress in B; r/switzerland and r/xcom in A;
+r/costa_rica in D);</li>
+<li>on K03, invoked national history does not show an earlier quarrel
+between the two subs (r/england and r/quebec in B);</li>
+<li>on P28, a venue or a chat is opened, but the record does not show
+the room's founding or its first recruits (r/osugame, r/prequelmemes and
+r/TheFarLeftSide in A; r/czech in B);</li>
+<li>on P26, a joke is made, but the record does not show that the room
+took it up or kept it (r/frc and r/gameattack in D; r/habs and
+r/paladins in E).</li>
+</ul>
+<p>A few lines say the element fails as stated: a rival named by some
+members divides the room instead of aligning it (r/chicago in C), and
+one member's ideological target is not the room's when another member
+turns that effort to helping allies (r/mylittlepony in D).</p>
+<p><strong>Where the forms differ: how often they hold it.</strong> The
+forms keep these elements as the model states them, but their rooms hold
+them at different rates (each form line gives its count):</p>
+<ul>
+<li>B, Behind the thread: chat, scripts, raids, holds every element of
+the dimension above the 558's rate. The largest gaps are C02, in 28 of
+113 defining rooms (25 per cent, against 16), and P28, in 20 (18 per
+cent, against 11). The carried quarrel is held in 31 (27 against 21),
+the room as a prior body in 91 (81 against 70), and the argument over
+offence in 30 (27 against 20).</li>
+<li>F, Moving for the spot, holds them least: K04 in 18 of 34 (53 per
+cent), C02 in 2, P28 in 1 and P29 in 4. Its records are the shortest of
+the six forms (median 64.5 coded concepts), so the low rates may follow
+from short records.</li>
+<li>E, The sub's play, run as work, has the longest records (median 222
+concepts) and still holds C02 in 9 of 84 (11 per cent) and P28 in 3 (4
+per cent). Record size does not explain B's high rates: B's median
+record (131 concepts) is shorter than D's (142) and E's.</li>
+<li>New jokes made from the canvas (P26) are held at about the same rate
+in every form, from 73 to 81 per cent, against 78.</li>
+</ul>
+<p>These are rates of instantiation, not changes, and the rule does not
+test them. They say where identity sits. In B, the form named for chats
+and raids, the room brings its prior quarrel and body to the canvas, and
+some rooms form around a mark: r/purplecorner sustains a split over
+which colour is legitimate, and r/thebluecorner, a day-old group, claims
+its own lore. r/thebluecorner is also the room that most threatens the
+account, a colour faction whose faith names its rivals and rules on
+guests. C02 is read again under Contention.</p>
+<p><strong>The D5 notes that touch this dimension.</strong></p>
+<ul>
+<li>F14 (D5a-14), kept damage beside P26 and P05: in three rooms the
+final damage became part of the emblem once the canvas was locked. P26
+is untouched in every form, and F14 has 7 members, so the case stays a
+particular of three histories, as the note said. F14's line comes with
+its key, P13, under Imprinting.</li>
+<li>F23 (D5a-23), a group outliving its task: rooms formed for the
+canvas asked whether to last, set goals or closed and reopened on a new
+canvas. P28 is untouched in every form. F23's line comes with its key,
+P13, under Imprinting.</li>
+</ul>
+<p><strong>What the forms add to the dimension.</strong> Nothing to its
+statements. No form specifies, restricts or replaces an element of
+collective identity, and no branch changes one inside a form. The forms
+differ in how often their rooms bring identity in: B holds it most and F
+least. No proposal comes from this dimension.</p>
+<h5 id="d06-host-framing">D06, Host framing</h5>
+<p>Written at D6a-06. Form lines in <code>fractal-forms-D6.jsonl</code>
+(24 lines: K01, P20, P34 and A20 by six forms; 5 lean, 19 untouched;
+P28's lines were written under D05); branch lines in
+<code>fractal-D6.jsonl</code>.</p>
+<p><strong>In the global model.</strong> Host framing is what the host
+sub does around the room's canvas work. Two fourth-order themes sit
+under it. Keying, the framing of an activity as something other than
+what it seems, holds K01: the host sub is keyed as play for April Fools,
+members post fakes and takeovers under the one-day licence, and a claim
+in it, a call to the canvas included, may be a joke. Boundary work, the
+drawing of a line around an activity, holds P20 and P34. The host sub
+draws a line around canvas talk (P20): moderators gather it into a
+megathread, remove canvas posts by rule or pause the sub's usual events,
+and members open a canvas sub or object to the flood. Members who object
+to the canvas posts can turn against the room's own mark (P34, a
+candidate held by two rooms). The room that forms for the canvas around
+a mark (P28) sits here too; it is told under D05. One arrow ends here:
+calls flood the host sub, and the host draws a line (A20, strong, 132 of
+155 rooms). Its bound says the line is partly constitutive, and that 23
+of the 155 rooms draw it before the room calls.</p>
+<p><strong>Keying.</strong> Three forms specify the frame, all by added
+steps.</p>
+<ul>
+<li>In E, The sub's play, run as work, the play is run as work
+(r/warframe, r/fivenightsatfreddys, r/mls; r/polandball least well).
+Moderators start it and set its rules, real removals and bots enforce
+them, members test claims and repair what the styling breaks, and they
+argue its end by the clock and the time zone. 58 of the 84 defining
+rooms hold these lines, 56 of them as added steps (66.7 per cent,
+against 18.5 per cent of the 558). F01 (the play administered) explains
+the cell: 54 of the 58 holders are its rooms. Each of its subforms
+explains one part of it:
+<ul>
+<li>F02 (the takeover run as a temporary regime): fictional rules
+enforced by real removals (r/battlecats, r/zelda), mock bans and
+resignations performed (r/acecombat, r/ontario), and the licence ended
+by restoring ordinary rules (r/MMA);</li>
+<li>F03 (the joke tested): claims checked by sources and the date
+(r/yugioh), an author's authenticity tested after the takeover ended
+(r/hunterxhunter), and a joke told from an earnest mistake
+(r/drumcorps);</li>
+<li>F04 (the licence policed): compulsory joke participation contested
+(r/monstercat), and the licence's end disputed (r/dankmemes);</li>
+<li>F05 (the styling ended): styles switched off or the font uninstalled
+(r/pcmasterrace, r/schoolidolfestival), and the joke period ended by a
+moderator (r/popheads);</li>
+<li>F06 (the joke kept): permanent flair, a real version of an invented
+reward, or the banner kept (r/mls, r/runescape, r/rust).</li>
+</ul></li>
+<li>In D, Keeping, with help or carrying on, the play is administered
+beside the keeping (r/bindingofisaac, r/denverbroncos, r/nyjets;
+r/yuyuyu least well). Members dispute when the joke ends, test fakes by
+date and source and police tasteless claims, and moderators restore the
+ordinary styling. 21 of the 24 holders are rooms of D.2, Keeping inside
+the sub's play, the split of form D whose rooms keep their canvas work
+inside the sub's play. F04 explains part of it: members demand
+restoration and dispute the prank's duration (r/chelseafc), and set
+tasteless death claims apart from jokes everyone can enjoy
+(r/bostonceltics).</li>
+<li>In F, Moving for the spot, members argue the play's limits more than
+they run it (r/dallasstars, r/wildhockey, r/stargate; r/streetfighter
+least well). F04 explains part of it: members contest a painful prank,
+and moderators apologise and remove an official-looking endorsement
+(r/stargate, r/nbaspurs).</li>
+<li>A, Border terms and the announced plan, B, Behind the thread: chat,
+scripts, raids, and C, The design reopened, leave K01 untouched.</li>
+</ul>
+<p>F01's rooms are 23 of D's 24 holders and all 9 of F's, but F01 leans
+to D and F at 1.32 and 1.22 times its share, under the rule's 1.5, so it
+is not named there. The form notes asked whether F01 and form E restate
+each other. They do in part: 59 of F01's 103 rooms are in E, all five
+subforms lean to E, and F01 explains E's only leaning cell in this
+dimension. The other 44 of F01's rooms lie in D (23), F (10), C (6) and
+B (5). F01 is therefore a facet that runs mostly inside E and reaches
+D's split D.2, not a second name for E.</p>
+<p>F21 (the canvas call not a joke) leans to E. Its rooms there restrict
+the frame, but few of them in F21's own terms. In r/scp the play does
+not show that the canvas calls were false, and in r/borussiadortmund a
+recognised prank does not make the canvas construction a fiction. The
+other lines bound details of the play, such as styling kept or the
+calendar. In r/osu the play reached the canvas work: a redirect blocked
+reinforcement and sent members to a chat. The record shows the play
+running beside the canvas work in most rooms and reaching it in a few
+(r/osu and r/polandball here; r/battlecats and r/bindingofisaac in the
+D5 notes).</p>
+<p>The form notes also said that the model holds the play only as a key.
+The cells bear it out: in E, D and F the play is organized work with the
+steps the model gives the canvas work, and the model has no element for
+those steps. The reading goes to <code>proposals-D6.jsonl</code> as
+PR-D6-10, a process element beside K01, unvalidated. It would bring into
+the model the sub's own business that the scope ruling of D3a-55 put
+outside it, so it is a change of scope as well as a new element.</p>
+<p><strong>Boundary work.</strong> D specifies P20: the host makes room
+for canvas talk inside the sub as well as drawing a line around it
+(r/denverbroncos, r/mylittlepony, r/nyjets; r/sabres least well).
+Moderators offer a sticky (r/texans), mark canvas posts with flair
+(r/kirby), refuse a requested ban while keeping the organising thread
+(r/chicubs) and reverse a removal after checking in their chat
+(r/mylittlepony). Members contest removals or move to another venue
+because of them (r/canada). No branch explains the cell.</p>
+<p>D also restricts A20 (r/rutgers, r/bindingofisaac, r/denverbroncos;
+r/polyamory least well). In its 10 lines the host's line is not shown to
+answer a flood of calls. Moderators route talk for visibility and
+timing, apply existing rules on duplicates and images, or decline a
+sticky for want of slots (r/radiohead, r/kpop, r/bostonceltics). The
+record does not show the calls flooding the sub first. This lies inside
+A20's bound, which already says the line is partly constitutive and
+sometimes comes first; no proposal. P34 is untouched in all six forms,
+and the held proposal beside it (members spoiling their own room's mark
+for fun, r/paladins and r/portugal) stays held.</p>
+<p><strong>What the forms add to the dimension.</strong> The forms
+differ on the frame, not on the host's line:</p>
+<ul>
+<li>E runs the April Fools play as work, and the frame family F01 to F06
+explains it;</li>
+<li>D administers the play in its split D.2 and is the one form that
+changes the host's line, which in D makes room for canvas talk and is
+not shown to answer a flood;</li>
+<li>F argues the play's limits;</li>
+<li>A, B and C hold the frame and the host's line as the model states
+them.</li>
+</ul>
+<p>One unvalidated proposal comes from this dimension: PR-D6-10.</p>
+<h5 id="d07-imprinting">D07, Imprinting</h5>
+<p>Written at D6a-07. Form lines in <code>fractal-forms-D6.jsonl</code>
+(54 lines: 6 elements and 3 arrows by six forms; 11 lean, 43 untouched;
+K05's lines were written under D02); branch lines in
+<code>fractal-D6.jsonl</code>.</p>
+<p><strong>In the global model.</strong> Imprinting is what the room
+does to make its temporary work last beyond the canvas. Four
+fourth-order themes sit under it. Completion ritual holds the marking:
+when a work is up, the room announces it, celebrates it, credits makers
+and helpers, and says what working with strangers meant (P11).
+Collective memory holds the record: screenshots, timelapses, reports of
+the work's fate, mourning, atlas entries and the end marked (P12). The
+same theme holds the contest over which version of the canvas and the
+event is kept, after placement ends (P22). Transition holds carrying on:
+near the close and after it, the room decides what of its effort to
+keep, such as a later canvas, a new purpose for its sub, the mark in its
+banner or the work remade elsewhere (P13). Visibility returns holds what
+the work brings back: new members who found the sub through the mark
+(P25, a candidate) and the notice of the people the mark shows or
+addresses (P30, a candidate). Three arrows run through the dimension in
+order. A finished mark is marked together (A07, 139 of 182 rooms), what
+is celebrated is kept on record (A08, 225 of 289), and the record is
+what passes on (A09, 113 of 145). Their bounds already admit the late
+side: a mark found already made, a work the close cut short, a record
+that comes first, and a next canvas planned while still building.</p>
+<p><strong>Completion ritual.</strong> Two forms specify the
+marking.</p>
+<ul>
+<li>In A, Border terms and the announced plan, the marking is
+provisional and contested (r/ripcity, r/utahjazz, r/opticgaming; r/halo
+least well). Success is judged and credit disputed while the work goes
+on, an announced finish reopens the work, and members celebrate a
+damaged remnant or partial progress. Three branches explain it:
+<ul>
+<li>F17 (the marking provisional and contested), 16 of the 21 holders:
+credit is checked and corrected during building (r/anime, r/vocaloid),
+and a finish is announced and the work reopened (r/taiwan);</li>
+<li>F19 (credit contested during the work): members challenge who may
+claim credit (r/opticgaming) and ask for the names of forgotten helpers
+for a memorial (r/SwissNeutralityZone);</li>
+<li>F18 (success judged while upkeep continues): celebration keeps the
+duty to maintain (r/ripcity), and success is weighed project by project
+(r/ftlgame).</li>
+</ul></li>
+<li>In D, Keeping, with help or carrying on, the marking is weighed
+(r/denverbroncos, r/yogscast, r/edmontonoilers; r/rojava least well).
+Members correct the room's name in the celebration, challenge and prove
+credit, and credit an effort that did not survive. F18 explains part of
+it: a mark recognizable and lasting enough counts as victory despite
+defects (r/kirby), and recognizable survival outranks perfect lettering
+while maintenance goes on (r/bostonceltics).</li>
+</ul>
+<p>E, The sub's play, run as work, and F, Moving for the spot, restrict
+A07. In E the marking does not wait for a finished mark. Rooms celebrate
+a surviving emblem with planned additions unfinished, an incomplete
+attempt or a milestone, and pride and disappointment share the thread
+(r/pcmasterrace, r/uwaterloo, r/hunterxhunter; r/homelab least well). In
+F the marking answers a partial or traced work (r/twentyonepilots,
+r/nbaspurs, r/penguins; r/warthunder least well). F09 (the move returns
+to building) explains part of it: two of its three rooms here mark an
+unfinished work after moving (r/penguins, r/warthunder).</p>
+<p><strong>Collective memory.</strong> A specifies P12: the record holds
+more than the result (r/furry, r/theexpanse, r/jerma985; r/DCFU least
+well). Members mourn a destroyed neighbour with a memorial artwork, keep
+an imagined version of the hoped-for design, and help a viewer find a
+small surviving mark in the final image. F specifies P12 by links
+(r/corridor, r/planetside, r/qotsa; r/streetfighter least well). A
+locating question draws a fate report, and unfinished construction at
+the close leads straight to a tally and mourning, with no celebration
+between. B leaves P12 untouched, but F20 (the close as news) specifies
+it there: its rooms are 3 of B's 10 add-step holders. A closure reply
+corrects a rebuild call (r/chibears), and a member learns of the end
+after offering to restart (r/stlouis).</p>
+<p>E restricts A08 (r/warframe, r/fivenightsatfreddys, r/mls; r/homelab
+least well). In its 24 lines the record does not wait for the
+celebration. Timelapses, live updates and reports of loss run before any
+celebration (r/minecraft, r/python, r/uoft). Where both appear, the
+lines show a sequence, not that the celebration caused the record. P22
+is untouched in all six forms; A comes nearest, with 10 restrict holders
+against a floor of 14.</p>
+<p><strong>Transition.</strong> D specifies P13: carrying on is new work
+begun before the close (r/gamindustri, r/bindingofisaac, r/portugal;
+r/cgpgrey least well). Five branches of the carrying-on family explain
+it:</p>
+<ul>
+<li>F11 (carrying on as renewed work, begun before the close), 18 of the
+30 holders: a successor canvas restarts recruiting, building and
+defence, and alternative canvases are discussed while placement is live
+(r/italy);</li>
+<li>F12 (the spine restarted on another canvas): construction, repair
+and destruction return on a live successor venue (r/furry_irl), and
+members weigh traffic and mobile access when they choose it
+(r/greyblob);</li>
+<li>F23 (the close scoped to the original canvas): hour 73 ends
+placement there while successor canvases allow more (r/rotmg,
+r/catholicism);</li>
+<li>F13 (the work remade in other media): a territorial claim lives on
+as copypasta (r/portugal), and members teach how to reproduce the image
+by hand (r/romania);</li>
+<li>F14 (the mark adopted as the room's emblem while it is still placed,
+damage included): an unwanted final blemish is valued as the emblem
+(r/cgpgrey).</li>
+</ul>
+<p>The D5 notes asked whether F11 and F23 are one set of events read
+with two ops. In this cell they share 4 of F23's 9 holders
+(r/bindingofisaac, r/cgpgrey, r/greyblob, r/naruto). This is the overlap
+expected of two groupings that meet at one node; it is not one branch.
+F14's kept damage, noted at D5 beside P26 and P05, shows here in
+r/cgpgrey, and in form A in r/utahjazz, where members joke about an
+imperfect finish and take shared pride in the damaged work.</p>
+<p>E restricts P13 (r/warframe, r/pcmasterrace, r/stevenuniverse;
+r/totallynotrobots least well). Carrying on is invited or proposed more
+than taken up: a successor canvas or a reused chat is offered, and
+adoption is not shown. F25 (carrying on in talk) explains it: 7 of the
+10 holders are its rooms (r/paladins, r/starcitizen).</p>
+<p>D and E restrict A09. In D carrying on does not wait for the record
+(r/rutgers, r/bindingofisaac, r/mylittlepony; r/magictcg least well).
+Successor invitations, reuse and remaking come before or beside the
+final image. F11 explains part of it: design reuse precedes the close
+(r/lovelive), and preservation starts from an interim image (r/texans).
+In E carrying on follows the record in order, but no line shows the
+record causing it, and uptake is not shown (r/warframe,
+r/starlightstage, r/stevenuniverse; r/homelab least well). Many of these
+lines deny that a saved record caused the room to carry on. A09 is an
+order and does not claim that, which bears out the D5 note that the
+account's words for A09 should state an order, not a cause.</p>
+<p><strong>Visibility returns.</strong> P25 and P30 are untouched in all
+six forms. P25 comes nearest in B, with 8 link holders at 2.32 times the
+share, against a floor of 12.</p>
+<p><strong>Read across the forms.</strong> The forms that change this
+dimension show one pattern. The marking, the record and carrying on
+often begin while the work is being built, and the rooms mark and record
+an attempt cut short or lost. The order of the three arrows still holds
+in most rooms, as their counts say. In 46 rooms of A, D, E and F the
+lines say the act came during the work, before a finish or after a loss
+(my reading). The reading goes to <code>proposals-D6.jsonl</code> as
+PR-D6-11, bounds on P11 and P13 and wider bounds on A07, A08 and A09,
+unvalidated. It answers the D5 notes that A07's bound does not cover
+marking during the work, before its finish, after its loss or on a spot
+held on leave (F27, F30 and F31).</p>
+<p><strong>What the forms add to the dimension.</strong></p>
+<ul>
+<li>A marks while the work goes on and disputes the credit, and its
+record holds mourning and imagined versions;</li>
+<li>D weighs the marking and carries on as new work begun before the
+close;</li>
+<li>E marks unfinished work, records before it celebrates and invites
+successors that the record does not show taken up;</li>
+<li>F marks partial work and records failure;</li>
+<li>B carries the end as news only in F20's rooms, and C leaves the
+dimension as the model states it.</li>
+</ul>
+<p>One unvalidated proposal comes from this dimension: PR-D6-11.</p>
+<h5 id="d08-contention">D08, Contention</h5>
+<p>Written at D6a-08. Form lines in <code>fractal-forms-D6.jsonl</code>
+(24 lines: P09, P18, A15 and A18 by six forms; 2 lean, 22 untouched;
+C02's lines were written under D05 and P33's under D02); no branch
+lines.</p>
+<p><strong>In the global model.</strong> Contention is how rooms fight
+over the canvas and over each other. Two fourth-order themes sit under
+it. Repertoire of contention, the set of moves a group has for attacking
+others, holds P09: rooms attack others' work by the moves the canvas
+affords, such as erasing, encroaching, converting a sign, raiding on a
+streamer's call, planting a script or altering a work as a joke. Rivalry
+holds P18: rooms carry a contest with a rival room in talk, trading
+taunts, flooding the rival's threads, claiming victory, saluting the
+rival after the fight and blaming attackers after the close. Both themes
+hold C02, the claim that a tie from before the canvas names the rival in
+the turn that calls for the attack, untested for order. Repertoire of
+contention also holds P33: rooms keep their plans from rivals who read
+their threads and reach into the rivals' venues (a candidate). Two
+arrows end here: a call's hands can turn on a rival (A15, strong, 93 of
+129 rooms), and an attack is carried on in taunts (A18, fair, 56 of 68).
+A15's bound says that where a room's first canvas act is an attack, the
+attack call is the first call. Two more arrows start here and end in
+Order without law: an attack call is refused inside the room (A16) and
+met with a truce (A17). They are told under D04.</p>
+<p><strong>Repertoire of contention.</strong> No form changes P09. Two
+forms restrict A15.</p>
+<ul>
+<li>In B, Behind the thread: chat, scripts, raids, the record does not
+show a call's builders turning on a rival (r/PlaceNL, r/virginiatech,
+r/india; r/shitredditsays least well). Of its 18 lines, 7 fall inside
+A15's bound by my reading. The attack call is the first call or shares
+the opening turn with recruitment (r/ohio, r/virginiatech,
+r/HomestarRunner), or an attack call recruits directly
+(r/shitredditsays). In the other 11 the lines show the order of the
+calls but not that the same recruited hands attacked (r/india, r/latvia,
+r/Russiaclan). The D5 notes on form B counted the same 11.</li>
+<li>In E, The sub's play, run as work, the attack talk sits inside the
+recruiting (r/fivenightsatfreddys, r/dota2, r/stevenuniverse; r/pokemon
+least well). Recruitment and attack proposals share a thread or a call,
+and the lines do not show that recruited builders became the attacking
+hands. In r/habs the switch ran the other way, from a rival's
+interference to helping the room's own mark.</li>
+</ul>
+<p>No branch explains either cell. F08 holds 4 of B's lines and F01 10
+of E's, but their changes concern machine hands and the April Fools
+play, not the turn from building to attack. The restrictions mostly say
+what the record cannot show. A15 is an order (93 of 129 rooms hold it),
+and its gloss, "a call's hands can turn on a rival", reads as if the
+same hands were followed from the build to the attack. They are not
+followed in the record. This is a wording item for A15, like A09's under
+D07, and it is held with the arrows' wording items; no proposal.</p>
+<p><strong>Rivalry.</strong> No form changes P18 or A18. A18 comes
+nearest in B and E, with 8 and 6 restrict holders at 1.7 times the
+share, against floors of 12 and 9.</p>
+<p><strong>Where the forms differ: how often they hold it.</strong> As
+with Collective identity, the forms keep these elements as the model
+states them but hold them at different rates (the form lines give each
+count). B holds contention most. P09 is held in 103 of its 113 defining
+rooms (91 per cent, against 79 of the 558), P18 in 88 (78 against 61),
+C02 in 28 (25 against 16) and P33 in 18 (16 against 9). F holds rivalry
+least: P18 in 10 of 34 (29 per cent), on the shortest records of the six
+forms. E holds P18 in 41 of 84 (49 per cent) on the longest. These are
+rates of instantiation, which the rule does not test. They put the
+fight, the taunts and the tie from before the canvas mostly in the form
+named for chats and raids.</p>
+<p><strong>What the forms add to the dimension.</strong> Nothing to its
+statements. Two forms restrict the arrow from the call to the attack,
+mostly on what the record cannot show, and B holds the dimension's
+elements more often than any other form. No proposal comes from this
+dimension.</p>
+<h4 id="part-2-the-telling">Part 2. The telling</h4>
+<p>Written at D6b and corrected at D6a-09 on J's rulings (27 October,
+09:27 Berlin). Part 1 read the model one dimension at a time. This part
+reads it across the dimensions, form by form, then says which forms kept
+the work alive, what the unadapted group is, what the rooms the model
+could not compose have in common, and what the forms show that the model
+lacks. The sensitivity of the form lines to the rule's thresholds
+follows this part. The figure is <code>figure-D6.md</code>. The
+proposals of this stage are listed at the end, apart from the telling,
+and none of them is part of the model. Local validation is not
+established (the frame says why): each room named as showing a pattern
+shows it in its ruled lines.</p>
+<h5 id="the-model-with-its-forms-inside-it">The model with its forms
+inside it</h5>
+<p>The model is the version frozen at D3. It has 30 standing elements,
+15 candidates and 21 arrows, and its spine runs from a member's start
+(R01) to the room's calls (P01), to building (P03), to keeping (P05),
+and on to the marking, the record and carrying on (P11, P12, P13). The
+six room forms were cut from what the rooms did to that model, not from
+the canvas. Read against the model unit by unit, each form changes the
+part of the model its name says and leaves most of the rest as the model
+states it. Of the 396 form lines (66 elements and arrows by six forms),
+37 specify, 35 restrict, 324 leave the unit untouched, and none replaces
+it.</p>
+<p>That last count says less than it seems. A form replaces a unit only
+where contradict lines lean, and the coding vocabulary made such lines
+nearly unreachable. The readers returned 11 contradict lines among
+42,243 at the first return and 4 among 53,493 at the re-check, and none
+stands in any form's selected lines. Restrict lines carried much of what
+a contradict line would have said. Of each form's restrict lines on
+arrows, as sorted at D5 (one reader's sort), 43 to 63 per cent say that
+the arrow fails in the room:</p>
+<ul>
+<li>A, 201 of 432 (47 per cent);</li>
+<li>B, 135 of 292 (46 per cent);</li>
+<li>C, 172 of 301 (57 per cent);</li>
+<li>D, 171 of 316 (54 per cent);</li>
+<li>E, 130 of 304 (43 per cent);</li>
+<li>F, 72 of 114 (63 per cent).</li>
+</ul>
+<p>A further 6 to 34 lines per form say both that the arrow fails and
+that the record cannot show it. So no form replaces an element, but
+"restricts" in this telling covers two things. One is a condition under
+which the unit holds. The other is a failure of the arrow in the room.
+The forms do not show that the level below never contradicts the level
+above. They show that the vocabulary offered almost no way to say so,
+and that the rooms' lines often said it as a restriction.</p>
+<p>Thirty-one units are held by every form as the model states them.
+Among them are the step from building to keeping (A03), the starter
+(R01), attack calls (P09), the move (P10), the bare answer (P15),
+coalitions (P17) and the contest in talk (P18).</p>
+<p><strong>How the forms differ in their functioning.</strong> Each form
+changes a different part of the model.</p>
+<ul>
+<li><strong>A, Border terms and the announced plan</strong> (11 units
+changed) works through terms and a plan kept current. It specifies the
+template (P04; F15), keeping (P05; F32), sparing (P07) and border terms
+(P08; F10), the marking and the record (P11, P12; F17, F18, F19), and
+the chat's upkeep (P23). It restricts the settled border kept (A05;
+F26), help after a settlement (A14), decided order (C01) and machine
+hands (P14). In A, terms and plans hold for the placers they reach. None
+of A's 11 changed cells survives the stricter thresholds (see the
+sensitivity section).</li>
+<li><strong>B, Behind the thread: chat, scripts, raids</strong> (7
+units) is a residual grouping, not a form, with three facets.
+<ul>
+<li>The facets are the scripts (Workarounds, held by 49 of its 113
+defining rooms), the chat (Backstage decision-making, 48) and the raids
+(Repertoire of contention, 40).</li>
+<li>Different rooms hold them, at about chance overlap. 19 rooms hold
+only the scripts, 22 only the chat and 15 only the raids. 30 hold two
+facets and 7 hold all three, against 7.4 if the facets were independent.
+20 hold none (<code>_analysis/d6a09_b_facets.json</code>;
+<code>room-form-B-account.md</code>, section 14).</li>
+<li>It is residual: 43 of its 113 defining rooms lie nearer another
+form's centre, the largest share of any form.</li>
+<li>B specifies the scripts (P14; F08), the chat (P23; F16, F29), and
+sparing, terms and the border kept (P07, P08, A05; F08). It restricts
+the turn from the call to the attack (A15) and stepping away under
+strain (P32). It holds the elements of collective identity and
+contention more often than any other form, without changing them (D05,
+D08).</li>
+</ul></li>
+<li><strong>C, The design reopened</strong> (10 units) works through the
+design. It specifies the call, which returns after each finish (P01),
+the design (P02; F07, F34), the template kept current (P04; F33),
+sparing and terms (P07, P08) and help woven into building (P16). It
+restricts keeping's telling clause, because informed members refuse a
+change (P05; F07), and it restricts the template settling the design
+(A11; F07, F33), help from shortage (A13) and decided order (C01).</li>
+<li><strong>D, Keeping, with help or carrying on</strong> (17 units)
+changes the most units. It specifies keeping, shared and checked (P05;
+F27), carrying on as new work begun before the close (P13; F11, F12,
+F13, F14, F23), help from a helper whose own work is safe (P16; F22),
+the call that returns from carrying on and loss (P01; F11, F12), the
+marking weighed (P11; F18), the sub's play administered in its split D.2
+(K01; F04), sparing (P07), the border kept where the terms reach (A05)
+and the host who makes room for canvas talk (P20). It restricts six
+arrows (A01, A02, A06, A09, A13, A20), the scripts (P14; F24) and
+hosting (P19).</li>
+<li><strong>E, The sub's play, run as work</strong> (13 units) specifies
+the April Fools frame (K01; F01 to F06, F21), the design (P02; F34) and
+the scripts (P14). Its other ten changes are restrictions, eight of them
+on arrows (A01, A02, A07, A08, A09, A10, A15, A16), with carrying on
+(P13; F25) and the chat (P23). Its records hold the play and the reports
+of the canvas work, and less of the work between them. Its lines often
+say the record cannot show an arrow's order, and it has the lowest share
+of restrict lines on arrows that say the arrow fails (43 per cent).</li>
+<li><strong>F, Moving for the spot</strong> (14 units) works through the
+spot. It specifies the call after a lost spot (P01), building again
+after a move (P03; F09), the template that moves with the spot (P04),
+keeping before the mark exists (P05; F08), the record of failure (P12),
+the scripts (P14; F08) and the play's limits (K01; F04). It restricts
+border talk after keeping (A04), scripts under strain (A06), the marking
+of a finished mark (A07; F09), the move for too few hands (A10), the
+bare answer (A12), hosting (P19) and choosing the spot before any loss
+(P27). Its restrict lines on arrows say most often that the arrow fails
+(63 per cent).</li>
+</ul>
+<p>Two patterns run across the forms. First, the four working forms
+specify where they work: A specifies 7 of its 11 changed units, C 6 of
+10, D 9 of 17 and F 7 of 14, while E restricts 10 of its 13. Second, the
+changes to arrows are nearly all restrictions. Of the 20 arrows in the
+figure, 16 are restricted in some form and one is specified (A05, by B
+and D). The order counts of the arrows still hold in most rooms across
+the population. Where a form restricts an arrow, its lines say one of
+four things: the arrow fails in the room, the order holds there only
+under a condition, the second act came first or at the same time, or the
+record cannot show the order. The sensitivity section gives how many of
+these cells survive a stricter rule: 20 of the 72.</p>
+<p><strong>One condition across the dimensions.</strong> Read together,
+the forms show one condition at four places in the model. A placer acts
+on a form or a term only where it reaches them. Keepers repair a change
+away until they are told of it or check it (P05, read under D03). A
+settled border holds for the placers who learn and accept its terms, and
+for the scripts whose targets are changed (A05, under D04). A script
+places the old target until its operator changes it (F08). A helper must
+know the allied picture to help it (F22). The model states the first of
+these, in P05's telling clause. The check and the terms are proposals of
+this stage (PR-D6-06, PR-D6-07), unvalidated, and the script's target
+and the allied picture are notes of branches F08 and F22.</p>
+<h5 id="which-forms-kept-the-work-alive">Which forms kept the work
+alive</h5>
+<p>These readings come from the record, by the fields stage A1 wrote for
+every room (prior.md section 5):</p>
+<ul>
+<li>when the room's coordinating ended
+(<code>organizing_end_hour</code>);</li>
+<li>how much of its talk after hour 73 coordinated rather than recounted
+(the aftermath share), with the rooms that coordinated after the close
+counted;</li>
+<li>the room's own last word on its work (<code>work_remained</code>:
+kept, lost or silent), with silence counted as an unknown outcome.</li>
+</ul>
+<p>Beside the field is the D5b re-reading for the members in a branch
+(stood or gone at the close, by a rule logged before the reading). The
+canvas is not read here (rule 7): its pixels show what stood, not whose
+work it was, and the forms were not cut from it. The figures are for
+each form's defining rooms
+(<code>_analysis/d6b_survival_forms.json</code>).</p>
+<table>
+<thead>
+<tr>
+<th>form</th>
+<th>defining rooms</th>
+<th>median end (hour)</th>
+<th>ended at 73 or later</th>
+<th>coordinated after 73</th>
+<th>mean aftermath share</th>
+<th>field: kept, lost, silent</th>
+<th>kept share</th>
+<th>re-read: stood, gone (of rooms in a branch)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>135</td>
+<td>72.18</td>
+<td>30</td>
+<td>29</td>
+<td>0.018</td>
+<td>67, 43, 25</td>
+<td>50 per cent</td>
+<td>33, 9 (of 99)</td>
+</tr>
+<tr>
+<td>B</td>
+<td>113</td>
+<td>72.58</td>
+<td>36</td>
+<td>35</td>
+<td>0.028</td>
+<td>60, 38, 15</td>
+<td>53 per cent</td>
+<td>28, 4 (of 80)</td>
+</tr>
+<tr>
+<td>C</td>
+<td>96</td>
+<td>72.09</td>
+<td>17</td>
+<td>16</td>
+<td>0.016</td>
+<td>58, 29, 9</td>
+<td>60 per cent</td>
+<td>25, 3 (of 75)</td>
+</tr>
+<tr>
+<td>D</td>
+<td>96</td>
+<td>72.26</td>
+<td>29</td>
+<td>29</td>
+<td>0.017</td>
+<td>55, 35, 6</td>
+<td>57 per cent</td>
+<td>28, 13 (of 73)</td>
+</tr>
+<tr>
+<td>E</td>
+<td>84</td>
+<td>72.16</td>
+<td>20</td>
+<td>20</td>
+<td>0.016</td>
+<td>39, 38, 7</td>
+<td>46 per cent</td>
+<td>18, 11 (of 77)</td>
+</tr>
+<tr>
+<td>F</td>
+<td>34</td>
+<td>71.23</td>
+<td>2</td>
+<td>2</td>
+<td>0.008</td>
+<td>15, 12, 7</td>
+<td>44 per cent</td>
+<td>7, 1 (of 24)</td>
+</tr>
+</tbody>
+</table>
+<p>Over all 705 rooms the median end is hour 72.02, 146 rooms
+coordinated after the close, and the field reads kept 347, lost 218 and
+silent 140 (49 per cent kept).</p>
+<p><strong>To the freeze.</strong> C and D keep most by their own word:
+60 and 57 per cent of their defining rooms say the work was kept,
+against 49 per cent of all rooms. D's split D.2, Keeping inside the
+sub's play, says kept in 27 of 42 (64 per cent). D's records also say
+most often what became of the work: 6 of its 96 defining rooms are
+silent, the fewest of any form, and its re-reading finds the most work
+gone (13). E keeps least among the large forms: 39 kept against 38 lost.
+F's defining rooms say kept in 15 of 34, and its other members are
+silent in 16 of 22.</p>
+<p><strong>After the freeze.</strong> B's defining rooms coordinate
+after the close more than any other form's (35 of 113), and their mean
+aftermath share is the highest (0.028). The lead belongs to B's chat and
+script rooms, not to B as a whole. Of the 35 rooms that coordinated
+after hour 73, 26 hold the chat or the scripts: that is 26 of the 78
+chat or script rooms, 33 per cent. Of the 15 rooms that hold only the
+raids, 3 did (20 per cent), and of the 20 that hold none of the three
+facets, 6 did. Across all 705 rooms, 146 did (21 per cent). A and D
+follow B, with 29 rooms each. F stops before the close: its median end
+is hour 71.23, and 2 of its 34 defining rooms coordinate after it.</p>
+<p><strong>What in the model separates them.</strong> The forms that
+keep most and speak most about their outcome change the keeping part of
+the model. D specifies keeping (P05), help from a helper whose work is
+safe (P16), carrying on begun before the close (P13) and the call that
+returns from carrying on (P01). C reopens the design and keeps the
+template current (P02, P04), and its keepers refuse changes they know of
+(P05). The rooms that coordinate most after the close are the chat and
+script rooms of B, which change the chat and the scripts (P23, P14), the
+means that outlast the canvas. The forms that keep least change other
+parts. E changes the sub's play, which ends with the day, and its
+records hold the canvas work thinly. F changes the spot and the move:
+its rooms lost or were refused a spot, built again, and stopped before
+the close. The call and the fight do not separate the forms: every form
+holds attack calls and the contest in talk as the model states them.</p>
+<p>These are readings, not tests. The differences in kept share are
+modest (44 to 60 per cent). The field was right in 25 of 34 rooms when
+prior.md measured it, and the D5b re-reading agrees with it in 248 of
+the 476 rooms in a branch. The forms' records differ in length (the
+median defining room holds 64.5 coded concepts in F and 222 in E), so
+silence and the end hour partly measure the record. A test that holds
+record size fixed is owed (below).</p>
+<h5
+id="the-unadapted-group-and-the-rooms-the-model-could-not-compose">The
+unadapted group, and the rooms the model could not compose</h5>
+<p><strong>The unadapted group is empty.</strong> No room returned
+<code>none</code>: all 705 rooms adapted the model. 229 adapted rooms
+sit in no branch (A 60, B 54, C 37, D 39, E 11, F 28). They are in the
+forms, and the forms' lines include them.</p>
+<p><strong>The rooms the model could not compose.</strong> Two counts
+apply. By the verdicts the forms carry (my last ruling at D3, else the
+readers' agreed verdict at the first return), one room does not compose
+and ten cannot be told. The one is r/picturegame (form E, 13 coded
+concepts). At the first return its record was, in the readers' words, "a
+subreddit game of SoundGame rounds, picture hints, guesses,
+correct-marking, Discord invitations, and emoji proposals, not a canvas
+mark". At the re-check no room failed to compose: both readers found
+r/picturegame composes with residue, and both could not tell 19 rooms.
+Those 19 are r/austriahungary, r/azerbaijan, r/azores,
+r/bannedfromanime_irl, r/bigbang, r/Braveryjerk, r/FlipnoteStudio3D,
+r/greenland, r/Lugarix, r/nonbinary, r/PokemonSage, r/polyamory,
+r/ReBoot, r/Redox, r/THE_R, r/TheID, r/wario, r/watchmen and
+r/yerbamate. What they have in common is a short record, not another way
+of organizing. Each holds 1 to 8 coded concepts, against a median of 101
+over the 705 rooms. Only r/polyamory is a defining member of its form;
+15 are silent on what became of their work, and 16 are in no branch.
+They sit in five forms (A 3, B 3, C 4, D 4, F 5) and in none of E. At
+D3a-56 I ruled two of them, r/polyamory and r/THE_R, to compose with
+residue. r/picturegame's first-return record differs in kind: it is the
+sub's own play, the work that form E runs beside the canvas and that the
+model holds only as a key (PR-D6-10).</p>
+<h5 id="what-the-forms-show-the-model-lacks-the-returns">What the forms
+show the model lacks: the returns</h5>
+<p>The model grounds no loop: no room's record runs a whole cycle, and
+no counted arrow runs back. The forms carry the material for three
+returns.</p>
+<ul>
+<li><strong>The call returns</strong> (C, D and F; PR-D6-01). After a
+finished part, a later canvas, damage, a loss or a move, the room calls
+for hands again.</li>
+<li><strong>The move returns to building</strong> (F; F09; PR-D6-04).
+After a relocation the room recruits, designs and builds again at the
+new spot.</li>
+<li><strong>The marking returns to keeping</strong> (A; F32). An
+announced finish is followed by repair and renewed defence.</li>
+</ul>
+<p>The first two are the returns this telling found missing at its first
+legs. The third is F32's. None is entered in the model. Each would need
+a return to the rooms and a new validation cycle.</p>
+<h5 id="the-held-proposals-qd4-001-stated-in-full">The held proposals
+(QD4-001), stated in full</h5>
+<p>Both were made at D4a-01 and reverted in the same leg (move 203).
+Neither was served to any room, and neither is re-checked. The model
+told here holds P05 and A11 as frozen at D3.</p>
+<ul>
+<li><strong>P05, move 198, history lines 173 to 176, reverted by line
+181.</strong> The statement would gain: "This holds where the keepers
+can learn of a planned change only by being told, and no informed member
+holds it." The status would be bounded. The bound would read: "It does
+not hold where the keepers read a planned change from its shape and stop
+repairing it with no telling: completeanarchy, polska, satania, halo,
+bangtan, thesilphroad (R-completeanarchy-c187508d7ae3-022,
+R-polska-dadda7358f9a-049, R-satania-84df196116f3-022,
+R-halo-b988854ba168-036, R-bangtan-7efe23da0d0c-070,
+R-thesilphroad-a3f86618e239-018), a candidate branch, 'the shape read'
+(F-024). It does not hold where informed members hold the change against
+keepers who do not know: armok, maryland, oneshot
+(R-armok-8852b2ab85f8-022, R-maryland-d1b6e2d1d5f3-017,
+R-oneshot-e840e127e9b2-013), a limit below the trigger, at three
+nodes."</li>
+<li><strong>A11, move 199, history lines 177 to 180, reverted by line
+182.</strong> The arrow from P02 to P04 (a template settles a design
+argued in a thread) would be withdrawn under rules 14 and 16. Its order
+between rooms never beat its null (111 of 185 rooms, 0.600, against a
+null 95th percentile of 0.670). Inside threads, the template came first
+in 98 rooms against the transition in 111, so the arrow carries no
+direction. The failure clause stands alone in 117 rooms, 31 of them talk
+only. And 261 accepted restrict lines say that a template does not
+settle the design for good. What remains supported, that design talk and
+layouts meet in threads, is held by P02's and P04's statements. The full
+text, with its rooms and lines, is in <code>tree-D4.md</code> ("The held
+proposals").</li>
+</ul>
+<p>Form C bears on both. Its keepers refuse changes they know of
+(F-025), a case the held P05 bound does not name, and it restricts A11
+in 40 of its 58 lines (Part 1, D02 and D03). Both stay held.</p>
+<h5 id="the-proposals-of-this-stage-apart-from-the-telling">The
+proposals of this stage, apart from the telling</h5>
+<p>Eleven proposals came from the form lines. Each is in
+<code>proposals-D6.jsonl</code> with its evidence and rooms, against the
+frozen model, with status unvalidated. None enters the model in this
+run, and E1 reports them.</p>
+<ul>
+<li>PR-D6-01, the call returns (23 rooms).</li>
+<li>PR-D6-02, the answer that asks for a task (4).</li>
+<li>PR-D6-03, a proposal that is itself the call (8).</li>
+<li>PR-D6-04, after the move, the room builds again (9).</li>
+<li>PR-D6-05, the room sizes its design to its hands before any loss
+(9).</li>
+<li>PR-D6-06, the check before repair (6).</li>
+<li>PR-D6-07, the terms bind the placers they reach (24).</li>
+<li>PR-D6-08, help comes from the hands a helper can spare (21).</li>
+<li>PR-D6-09, border talk before keeping (12).</li>
+<li>PR-D6-10, the play run as work (89). It stays unvalidated and is
+flagged for E1 against the scope ruling of D3a-55, which put the sub's
+own business outside the model.</li>
+<li>PR-D6-11, imprinting runs with the work (46).</li>
+</ul>
+<h5 id="what-is-owed">What is owed</h5>
+<p>These items are recorded at D6a-09 on J's rulings.</p>
+<ul>
+<li><strong>The size-held test.</strong> Done at D6a-10, in the section
+after the sensitivity section. With each form's rooms matched to rooms
+of the other forms on record size and, separately, on canvas-work
+concepts, 62 of the 72 changed cells keep their lean and 10 are
+size-dependent (A 4, E 3, and one each in B, C and F; none in D).</li>
+<li><strong>prior.md section 3's element-reach half</strong> moves to
+E1. Until it is computed, local validation is not established.</li>
+<li><strong>Defects 100 and 101 stay open</strong>, with no rewrite. The
+account's survival paragraph rests on the <code>work_remained</code>
+field, and four timings are contradicted by the canvas.</li>
+<li><strong>The branch-naming rule</strong> is recorded as a dated
+amendment (<code>departures.jsonl</code> line 21), applying backwards.
+Of the 50 branch lines, 38 stand on the rule as stated and 12 on its
+widened readings.</li>
+</ul>
+<h5 id="the-answer-to-the-theory-question">The answer to the theory
+question</h5>
+<p>When strangers organize on a clock they did not set, with no way to
+compel anyone, organizing takes six forms in this record.</p>
+<ul>
+<li><strong>Four are working forms</strong>, each named by the part of
+the work its rooms changed: the terms with neighbours (A), the design
+(C), keeping with help and carrying on (D) and the spot (F).</li>
+<li><strong>One is a residual grouping (B)</strong> of the rooms whose
+work ran behind the thread, in three facets held by different rooms: the
+chat, the scripts and the raids.</li>
+<li><strong>One is a form whose record is mostly the host sub's April
+Fools play (E)</strong>, run as work beside the canvas.</li>
+</ul>
+<p>The forms differ in their functioning by which part of the shared
+model they change. None replaces an element, but the coding vocabulary
+left almost no way to replace one. Where a form restricts an arrow, its
+rooms' lines often say the arrow fails there. Of the 72 changed cells,
+20 survive a stricter rule, and 62 keep their lean when record size is
+held fixed; form A is the most fragile on both counts.</p>
+<p>By the rooms' own word, the forms that kept the work alive to the
+freeze were the ones that changed keeping (D, with C). After it, the
+rooms that coordinated most were the chat and script rooms of B, then
+rooms of A and D. The forms built on the spot (F) and on the play (E)
+kept least. What separates them in the model is keeping and its returns,
+not the call or the fight: every form holds the call and the fight as
+the model states them. These readings rest on the rooms' ruled lines,
+not on validated local accounts.</p>
+<h4 id="the-sensitivity-of-the-form-lines-to-the-rules-thresholds">The
+sensitivity of the form lines to the rule's thresholds</h4>
+<p>Written at D6a-09 on J's ruling 1b (27 October, 09:27 Berlin) by
+<code>_analysis/d6a09_sensitivity.py</code>, which re-runs the rule of
+D6a-01 on the same facts files. The rule names a cell changed where an
+op is held by at least the floor (the larger of 5 and a share of the
+form's defining rooms) at the ratio threshold or more times the 558
+defining rooms' share. Run at the rule's own thresholds (ratio 1.2,
+floor 10 per cent), the script gives back all 396 written relations. The
+table counts the changed cells at each setting, all forms first, then by
+form.</p>
+<table>
+<thead>
+<tr>
+<th>ratio threshold</th>
+<th>changed cells, floor 10 per cent</th>
+<th>changed cells, floor 15 per cent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>99 (A 19, B 12, C 15, D 22, E 16, F 15)</td>
+<td>67 (A 11, B 8, C 9, D 16, E 10, F 13)</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>82 (A 14, B 7, C 12, D 20, E 14, F 15)</td>
+<td>53 (A 8, B 4, C 6, D 14, E 8, F 13)</td>
+</tr>
+<tr>
+<td>1.2 (the rule)</td>
+<td>72 (A 11, B 7, C 10, D 17, E 13, F 14)</td>
+<td>45 (A 5, B 4, C 5, D 12, E 7, F 12)</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>57 (A 6, B 7, C 6, D 15, E 11, F 12)</td>
+<td>36 (A 3, B 4, C 2, D 11, E 6, F 10)</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>42 (A 4, B 4, C 3, D 9, E 10, F 12)</td>
+<td>29 (A 2, B 2, C 1, D 8, E 6, F 10)</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>27 (A 1, B 3, C 2, D 6, E 6, F 9)</td>
+<td>20 (A 0, B 2, C 1, D 6, E 4, F 7)</td>
+</tr>
+</tbody>
+</table>
+<p>Raising either threshold only removes cells: at every setting
+stricter than the rule, each cell still changed keeps its written
+relation. Lowering the ratio adds cells the rule leaves untouched (27
+more at 1.0 with the 10 per cent floor).</p>
+<p><strong>The cells kept at the stricter rule.</strong> J's ruling
+names two marks. A changed cell is marked "robust" if it keeps its
+written relation at ratio 1.5 and floor 15 per cent, and "marginal"
+otherwise. Of the 72 changed cells, 20 are kept and 52 are marginal.
+Each cell's mark, holders, ratio and relation at the stricter settings
+are in <code>form-cells-sensitivity-D6.tsv</code>.</p>
+<ul>
+<li><strong>A, Border terms and the announced plan:</strong> 0 of 11
+kept.</li>
+<li><strong>B, Behind the thread: chat, scripts, raids:</strong> 2 of 7
+kept: P14 (specifies), P23 (specifies).</li>
+<li><strong>C, The design reopened:</strong> 1 of 10 kept: P02
+(specifies).</li>
+<li><strong>D, Keeping, with help or carrying on:</strong> 6 of 17 kept:
+P01 (specifies), P14 (restricts), P05 (specifies), P20 (specifies), P13
+(specifies), A09 (restricts).</li>
+<li><strong>E, The sub's play, run as work:</strong> 4 of 13 kept: A01
+(restricts), K01 (specifies), A07 (restricts), A15 (restricts).</li>
+<li><strong>F, Moving for the spot:</strong> 7 of 14 kept: P01
+(specifies), P03 (specifies), P04 (specifies), A06 (restricts), P19
+(restricts), A04 (restricts), A07 (restricts).</li>
+</ul>
+<p>Most single cells do not survive the stricter rule, though D, E and F
+keep their central changes: D its keeping and carrying on (P05, P13), E
+the play run as work (K01), F building again after a move and border
+talk before keeping (P03, A04). B keeps its scripts and its chat (P14,
+P23), and C keeps the design (P02). A keeps none of its changes at ratio
+1.5 and floor 15 per cent, and 1 of 11 at ratio 1.5 with the 10 per cent
+floor, so A's telling (terms, plans and their reach) rests on cells that
+do not survive a stricter rule. A cell marked marginal is a lean of the
+form at the rule's thresholds, not a finding that survives a change of
+rule.</p>
+<h4 id="the-size-held-test">The size-held test</h4>
+<p>Written at D6a-10 on J's word (27 October, 09:27 Berlin) by
+<code>_analysis/d6a10_size_test.py</code>; each cell's result is in
+<code>form-cells-size-D6.tsv</code>. The test asks whether a form's lean
+on a unit survives when the form's rooms are compared with rooms of the
+same record size, rather than with all 558 defining rooms. The rule was
+logged in the diary before the script ran:</p>
+<ul>
+<li>each of a form's defining rooms is matched, with replacement, to the
+5 defining rooms of the other five forms nearest to it in size (by the
+logarithm of the count), ties broken by room name;</li>
+<li>two measures are run separately: record size (coded concepts) and
+canvas-work concepts (concepts whose theme sits under Critical mass,
+Coordination without command, Maintenance or Order without law);</li>
+<li>an op survives where the form's share of rooms holding it is 1.2
+times the matched rooms' share or more (the rule's own ratio), and a
+cell survives where one of its deciding ops survives both matchings; a
+cell that fails either is size-dependent.</li>
+</ul>
+<p><strong>The result.</strong> 62 of the 72 changed cells survive both
+matchings; 10 are size-dependent. None of the 20 cells the sensitivity
+section keeps at ratio 1.5 and floor 15 per cent is size-dependent.</p>
+<ul>
+<li><strong>A, Border terms and the announced plan</strong> (median
+record 99 coded concepts, 79 of them canvas work): 7 of 11 cells
+survive. Size-dependent: C01 (restricts; size-held ratio on canvas-work
+concepts 1.18); P23 (specifies; size-held ratio on canvas-work concepts
+0.93); P07 (specifies; size-held ratio on record size 1.07 and
+canvas-work concepts 0.98); P12 (specifies; size-held ratio on record
+size 1.18). Matching on record size raises the ratio above the unmatched
+comparison with the other forms in 7 of the 11 cells.</li>
+<li><strong>F, Moving for the spot</strong> (median record 64.5 coded
+concepts, 50 of them canvas work): 13 of 14 cells survive.
+Size-dependent: A12 (restricts; size-held ratio on record size 1.16).
+Matching on record size raises the ratio above the unmatched comparison
+with the other forms in 10 of the 14 cells.</li>
+<li><strong>B, Behind the thread: chat, scripts, raids</strong> (median
+record 131 coded concepts, 91 of them canvas work): 6 of 7 cells
+survive. Size-dependent: A05 (specifies; size-held ratio on canvas-work
+concepts 1.14). Matching on record size raises the ratio above the
+unmatched comparison with the other forms in 3 of the 7 cells.</li>
+<li><strong>C, The design reopened</strong> (median record 119.5 coded
+concepts, 90.5 of them canvas work): 9 of 10 cells survive.
+Size-dependent: P04 (specifies; size-held ratio on canvas-work concepts
+1.18). Matching on record size raises the ratio above the unmatched
+comparison with the other forms in 7 of the 10 cells.</li>
+<li><strong>D, Keeping, with help or carrying on</strong> (median record
+142 coded concepts, 92 of them canvas work): 17 of 17 cells survive.
+Matching on record size raises the ratio above the unmatched comparison
+with the other forms in 11 of the 17 cells.</li>
+<li><strong>E, The sub's play, run as work</strong> (median record 222
+coded concepts, 75.5 of them canvas work): 10 of 13 cells survive.
+Size-dependent: A02 (restricts; size-held ratio on canvas-work concepts
+1.12); A10 (restricts; size-held ratio on record size 1.16); A09
+(restricts; size-held ratio on record size 0.96). Matching on record
+size raises the ratio above the unmatched comparison with the other
+forms in 3 of the 13 cells.</li>
+</ul>
+<p><strong>How firm the marks are.</strong> With 3 or 10 matches instead
+of 5, 12 cells change outcome at one setting or the other: A02 in D, A02
+in E, C01 in A, P04 in C, A01 in D, P23 in E, P05 in C, P08 in B, A05 in
+B, A13 in C, A10 in E, P12 in A. At 5 matches their deciding ratios (the
+lower of the two matchings) lie between 1.12 and 1.27, close to the 1.2
+line. The mark follows the logged rule (5 matches).</p>
+<p><strong>What it means.</strong> The forms' leans are not, in the
+main, an effect of record size. A and F were the forms whose scores
+might rest on size: F's rooms have the shortest records and A's the next
+shortest. F keeps 13 of its 14 changes, and in 10 of them matching on
+record size raises the ratio: F's rooms change these units more often
+than other rooms whose records are as short. A keeps 7 of its 11, and
+none at the stricter thresholds, so A's telling is the most fragile of
+the six. E, whose records hold the play and less canvas work, keeps 7 of
+its 8 restrictions on arrows when matched on canvas-work concepts, so
+those restrictions are not only an effect of a thin record of canvas
+work. The size-dependent cells are named above and marked in
+<code>form-cells-sensitivity-D6.tsv</code> (column
+<code>size_mark</code>).</p>
+</section></details><details class="saved-file" id="05-_head"><summary>out/_head.md</summary><p class="saved-meta"><a href="files/0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158.reading.md" download>Download the reading copy</a> · Original GitHub file. Original SHA-256 <code>0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158</code>; reading copy <code>0f22695894bf539e256012fbc250712fa936da88c129743ff6a7d4f4ff8a3158</code>.</p><section class="record-copy" data-agent="reading copy"><h3 id="head-claude-v43-1-branch-claude-v43-1--c4-field">Head,
+claude-v43-1 (branch claude-v43-1--C4-field)</h3>
+<p>Written at E1c, 2026-10-27 UTC: the packets. The model stands frozen
+at D3c, 46384686…, re-checked in all 705 rooms. The return was served at
+pass 15 (e15f9647…b3fecd).</p>
+<h4 id="the-method-question-in-one-sentence">The method question, in one
+sentence</h4>
+<p>Can independently reconstructed case histories be composed into a
+shared dynamic account that supports explanations at successive levels
+of specificity, from population-wide patterns, through forms and
+subforms, to particular organizational histories, while keeping access
+to the evidence from which those explanations were developed?</p>
+<p>The theory question: when strangers organize on a clock they did not
+set, with no way to compel anyone and no goal given to them, what forms
+does organizing take, how do they differ in their functioning, and which
+of them keep the work alive?</p>
+<h4
+id="js-rulings-for-stage-d-1740-amsterdam-through-the-pi-carry-them">J's
+rulings for stage D (17:40 Amsterdam, through the PI; carry them)</h4>
+<ul>
+<li>"No second coder on your solo reads: Codex did not read all rooms,
+so its evidence is thin; your reads stand, with their limits stated as
+you stated them." Stage D and every later stage run at xhigh effort.
+"Keep the room, or groups of rooms, as the unit, and keep the contract's
+two questions in view." <strong>QD1-001, QD2-001, QD3-001 (J):</strong>
+an element may sit in more than one dimension; a dimension may stand as
+the element of restrict, add-condition and add-step; packets are read
+whole. Absent lines are counted by observation (J, 16 October).
+<strong>QD3-002 (J; carry it):</strong> "the analyst is doing
+induction." I place codes where the population's evidence leads, say
+why, and ask for the changes I need: "Not the rules bound their
+understanding." <strong>J, 16 October, 19:08 Berlin, on drift (carry
+it):</strong> re-orient at every leg start and after every compaction; a
+ruling rule changes only by a dated amendment that says whether it
+applies backwards. <strong>QD3-003 to QD3-008:</strong> G4a applies
+forward and backwards; A07's bound keeps its words; wording questions
+without a correction are mine, logged. <strong>QD3-011 (J):</strong>
+option (b): freeze 46384686; keep R01 as it is; hold the paladins and
+portugal proposal beside P34.</li>
+<li><strong>J after the D3c interview (24 October, 13:39 Berlin; carry
+it):</strong> no further re-check, no labelers and no readers for the
+rest of the run. Do not rely on the kind of add-condition, add-step and
+restrict lines (kappa 0.08); run the distance once with kind collapsed
+for them (done). Report local validation as not established unless
+prior.md section 3's measure is computed (not computed). <strong>QD4-001
+(J, 24 October, 15:05 Berlin):</strong> option (b): the P05 and A11
+amendments are reverted, so the model is 46384686 again, and both are
+held proposals, stated in full wherever the model is reported; keep
+F-024's and F-017's re-examination lines. <strong>QD4-002 (J, 25
+October, 19:48 and 19:54 Berlin):</strong> option (a): the engine is
+patched to chunk-comparison-v1.1 (residue-only placements counted
+apart); run it, report each room's residue share, and declare the
+version as a departure (done: <code>departures.jsonl</code> line
+10).</li>
+</ul>
+<h4 id="the-return-and-the-tree-d1a-to-d4a-01">The return and the tree
+(D1a to D4a-01)</h4>
+<ul>
+<li><strong>D1a to D3c.</strong> 705 rooms returned 42,243 lines, then
+53,493 at the re-check; all ruled. Moves 172 to 197 revised R01, P05,
+P21, P22 and A21, stood five candidates, entered fifteen, and decided
+P05's scope (F-024). Verdicts, first return then re-check: composes 201
+and 630, with residue 489 and 56, cannot tell 14 and 19, does not
+compose 1 and 0.</li>
+<li><strong>D4a-01 to D4a-04.</strong> Delta 0.4227; the dendrogram is a
+chain; shared corrections reach 5 rooms only at the bare target. F01
+(103 rooms) and five subforms came first (moves 200 to 207); the other
+31 element keys of 20 rooms or more gave 29 cuts (24 branches, 5
+subforms), 8 keys set aside and 759 cross-links. The branches are
+facets: 200 rooms are in one branch, the rest in two or more.
+Accounting: 476 in a branch, 229 in none; 705. Top-level branches cannot
+be joined (J asked): they meet only at a dimension or the bare
+target.</li>
+<li><strong>D5a-01 to D5a-35, F01 to F35.</strong> Families state one
+change at several nodes: the April Fools frame (F01 and five subforms,
+F21), P05's telling clause (F07, F26, F27; F-025 to F-027), the
+instruction kept current (F08, F15, F33), carrying on (F11 to F14, F23,
+F25), the chat (F16, F29, F30), help on conditions (F22, F28). All
+groupings. Narrow forms: F09 (54), rooms rebuild after moving; F32 (21),
+rooms keep after marking.</li>
+<li><strong>D5b.</strong> work_remained, re-read for the 476 rooms,
+agrees with the field in 248.</li>
+<li><strong>D4a-05 to D4a-08 (J, 26 October; not a recut).</strong> Six
+room forms by changes and codes, ruled by J and standing (22:51);
+accounts in <code>room-form-*-account.md</code>, final names in
+<code>room-forms-names.md</code> (moves 314 to 319).</li>
+<li><strong>The retelling (D6a-01 onward).</strong> Each form changes
+the part of the model its name says (37 lines specify, 35 restrict). No
+form replaces an element, a relation the vocabulary nearly barred; 43 to
+63 per cent of each form's restrict lines on arrows say the arrow fails.
+20 of 72 changed cells survive ratio 1.5 and floor 15 per cent (A's
+none); 62 survive size matching. C and D kept most to the freeze; B's
+chat and script rooms coordinated most after it.</li>
+</ul>
+<h4 id="the-held-proposals-qd4-001-never-served-not-re-checked">The held
+proposals (QD4-001; never served, not re-checked)</h4>
+<ul>
+<li><strong>P05 (move 198, history lines 173 to 176; reverted by move
+203, line 181).</strong> The statement would gain: "This holds where the
+keepers can learn of a planned change only by being told, and no
+informed member holds it." Status bounded. The bound names
+completeanarchy, polska, satania, halo, bangtan and thesilphroad (the
+keepers read the change from its shape) and armok, maryland and oneshot
+(informed members hold it), with their nine re-check lines. The full
+text is in the tree file ("The held proposals").</li>
+<li><strong>A11 (move 199, history lines 177 to 180; reverted by move
+203, line 182).</strong> The arrow from P02 to P04 would be withdrawn
+under rule 14. It never beat its null; template first (98 rooms) is
+nearly as common as the transition (111); the failure clause stands
+alone in 117 rooms, 31 of them talk only; 261 accepted restrict lines
+say that a template does not settle the design for good.</li>
+</ul>
+<h4 id="the-current-account-and-the-contrary-rooms">The current account,
+and the contrary rooms</h4>
+<p>The account is <code>account.md</code>, pass 15, with the readers'
+disagreements in <code>account-readers-C5.md</code>. A room, or a group
+of rooms, is the actor where its members spoke or acted for it.</p>
+<ul>
+<li><strong>The spine.</strong> A member starts a mark [R01]. The room's
+calls follow the start in 64 of 89 rooms [A02], building follows calls
+in 81 of 126 [A01], and keeping follows building in 148 of 190 [A03].
+<strong>Keeping holds the known form</strong> [P05]. Repair restores the
+form the keepers know, so a change the room planned [P02] is repaired
+away until they are told of it. In six rooms the keepers read the change
+from its shape, and in three informed members hold it (F-024; the bound
+is a held proposal).</li>
+<li><strong>The bare answer.</strong> Most calls get no written reply.
+Written acceptances come bare (25 of 31, F-023), and refusals give a
+reason (attack calls 23 of 38, F-014). <strong>The host's line.</strong>
+It follows the calls in 132 of 155 rooms [A20].</li>
+<li><strong>Alignment without decision</strong> (theorised, thin). 233
+of 370 rooms with calls report a work up after the first call (F-021). A
+template settles a design inside a thread [A11, its withdrawal held].
+Decided order is coded in 46 rooms [C01, F-006], and the return shows it
+in about 119. <strong>Direct information sharing (T4-007).</strong>
+Members post the mark's state [P03; F-018], largely apart from sharing
+templates (F-022).</li>
+<li><strong>Other rooms.</strong> Keeping brings neighbour talk in 235
+of 401 rooms [A04], mostly offering terms first. Help names a deal in 63
+of 127 such rooms, against 23 of 67 [A14; F-020]. Sparing rests on the
+room's own norm (A05 theorised). Coalitions [A19] cannot bind every
+placer, and members say so [P21], after an agreement or at the making of
+terms [A21].</li>
+<li><strong>The contest.</strong> A call can turn members against a
+rival [A15]. Rooms meet attack calls with restraint [A16] or terms
+[A17]. <strong>Loss</strong> (thin). A room that judges its hands too
+few moves [A10]; after doubt and a loss, 10 moved and 11 gave up
+(F-019). No loop is grounded. <strong>The close.</strong> The room
+celebrates, records and carries the work on [A07, A08, A09]. Placement
+stops at hour 73. After it, rooms record the work [P12] and contest
+which version is kept [P22]. Carrying on stays apart [P13]. <strong>The
+frame</strong> [K01]. The room is keyed as April Fools play beside the
+work, and in 103 rooms its members administer that play (F01).
+<strong>Machine hands.</strong> Scripts follow upkeep under strain
+[A06]. <strong>C02</strong> (untested for order): a tie the room had
+before the canvas names the rival in the attack turn. <strong>Fifteen
+candidates</strong> (P23 to P34, K05 to K07), from chats and explaining
+the canvas to members of both rooms.</li>
+</ul>
+<p><strong>The room that best supports the account: day9.</strong> It
+offers a neighbour terms before any damage, loses its border at hour 48,
+moves within two hours, and finishes the new work at hour 53.
+<strong>For the return's claim: monsterhunter</strong>, where a member
+tells the keepers to stop repairing [monsterhunter/c0138].</p>
+<p><strong>The room that most threatens it: thebluecorner.</strong> It
+is a colour faction whose faith names its rivals and rules on guests.
+<strong>For the return's claim: halo</strong>, whose keepers saw what
+the work was and protected it, with no telling [halo/c0402].</p>
+<p><strong>The condition between them</strong> is what decides whom a
+room fights and whom it admits. Where the work decides, the model tells
+the room. Where a faith or a host's rule decides, it does not. For the
+return: how the keepers can learn that a change is planned.</p>
+<h4 id="the-reasons-for-the-last-revisions">The reasons for the last
+revisions</h4>
+<ul>
+<li><strong>Moves 198, 199 and 203</strong> reverted the refused
+amendments (QD4-001); <strong>200 to 237</strong> cut the branches and
+cross-links; <strong>238 to 313</strong> named the room forms of D4a-05
+to D4a-08 and withdrew 32 sub-forms (J).</li>
+</ul>
+<h4 id="where-the-run-stands">Where the run stands</h4>
+<ul>
+<li><strong>The tree's files:</strong> <code>branches.jsonl</code> (35),
+<code>forms/</code> (35), <code>crosslinks.jsonl</code> (759), and the
+stage's other files. <strong>Ledgers (lines):</strong> adjudications
+96,568; verdicts 1,029; tier history 1,026; model history 182; findings
+45 (27 findings); elements 45 (30 standing, 15 candidates); arrows 21.
+<strong>Still open:</strong> the account's survival paragraph rests on
+the work_remained field (defects line 100); four timings the canvas
+contradicts (line 101); the fields the prose rule did not read;
+<code>structure-C4.md</code>'s stale prose; Critical mass flagged; the
+border coders' kappa, 0.19. <strong>Questions:</strong> none open
+(QE1-001 answered).</li>
+</ul>
+<h4
+id="j-on-language-c4-1820-berlin-restated-15-october-carry-into-every-head">J
+on language (C4, 18:20 Berlin; restated 15 October; carry into every
+head)</h4>
+<p>"It is important to me that the language is descriptive." "They
+should use academic writing. As in White and Strunk. Short cohesive
+sentences." Ask Orwell's six questions. Follow ASD-STE100 about 80% of
+the time: one idea per sentence, active voice, common words, the actor
+and the act named. Describe what members did, in what order, in how many
+rooms, and write no figures of speech. Gloss each construct name in
+plain words where it first appears.</p>
+<h4 id="stage-c2">Stage C2</h4>
+<ul>
+<li><strong>J's ruling on QC2-002:</strong> "from here the criterion is
+a guide, not the judge, and a rise in residue is not a failure. Keep
+each change the evidence leads you to believe, and say why; drop one
+only if you stop believing it. Never loosen an element to fit a room.
+Where the rooms show membership naming the rival in the same turn as the
+attack, carry it as a claim in their words, marked as untested for
+order. Close by saying what you are sure of, what you are not, and why."
+<strong>Pass 1 (C2a-01).</strong> J at 23:24 Berlin: "Remember Gioia
+Corley Hamilton and the job the agent has. Remember we need to give it
+confidence so they can gain intuition and trust on the model."</li>
+</ul>
+<h4 id="stage-c1-carry-the-rulings">Stage C1 (carry the rulings)</h4>
+<ul>
+<li><strong>QC1-001 (J).</strong> C1 rechecks place each item by the
+amended gates over the whole scheme. <strong>QC1-002 (J).</strong> Lean
+to one placement; a second theme needs three concepts of its own (J's
+floor). <strong>QC1-003 (the handler, for J).</strong> Five
+revision-rate errors stay in
+<code>out/_analysis/c1_unapplied.jsonl</code>; all 34 count.
+<strong>Reading rules (<code>scheme_v2.md</code>).</strong> A theme
+names an act in the record of the room whose threads hold the words (the
+visitor rule). "The work" is the room's own unless a field names
+another's. A bare mention of the event holds no act. Help between rooms
+is read from either room's record.</li>
+</ul>
+<h4 id="js-rulings-on-how-a-ruling-is-made-13-october-carry-them">J's
+rulings on how a ruling is made (13 October; carry them)</h4>
+<ul>
+<li><strong>QB4-001 (J, 06:43 Berlin):</strong> "Ask it to stop. The
+point is to try to adjudicate. I imagine that the additions are really
+just the analyst trying to be nice. And not go back on what others
+said". <strong>J's rulings (06:45 and 06:47 Berlin):</strong> a ruling
+chooses among the placements and adds no theme beyond them; it takes the
+union only when it names, for each theme it keeps, the separate concept
+that carries it. <strong>also_present (J, 09:09; QB4-002, 09:20;
+QB4-003, 11:29):</strong> lists only themes a reader placed, a reader
+listed, or my B1 named; themes a reader listed count in the bag test.
+<strong>Lone B1 themes (J, 12:28):</strong> "Whatever the agent feels
+more comfortable with." A theme only my B1 placed stands only with three
+concepts of its own. Rule 0 and the bag test are in stage B's
+notes.</li>
+</ul>
+<h4 id="js-rulings-that-bind-carry-them">J's rulings that bind (carry
+them)</h4>
+<ul>
+<li><strong>Bags.</strong> No one cuts the bags (J, 12:24 Berlin). A bag
+stays one item: one theme placed, its others under
+<code>also_present</code>, each with three concepts of its own.
+<strong>The bound (J, 13:47).</strong> <code>also_present</code> names
+"twenty themes at most". <strong>The not-flagged bag (J,
+QB2-013).</strong> With no other theme at the floor,
+<code>item_is_a_bag</code> is false and <code>also_present</code>
+<code>{}</code>. <strong>Fleet ids (J, 09:14 and 12:15).</strong>
+Packets carry only fleet ids; my files keep room ids.</li>
+</ul>
+<h4 id="standing-words-from-j-and-the-pi-carry-into-every-head">Standing
+words from J and the PI (carry into every head)</h4>
+<p><strong>J's words for B1 (7 October 2026):</strong> "national
+elements are very important here"; "we need to get as much variance on
+organizing behavior early on so that later we have enough to create the
+model". National, political and conflict content is study material,
+named as plainly as any other. <strong>The handler's rule:</strong> a
+choice to leave out or soften content for any reason other than the
+study's goes to J first with <code>mem.py ask</code>, and the content
+stays meanwhile.</p>
+<p><strong>J on reading (11 October, 16:54 Berlin).</strong> Stop
+cutting room reads to a line length. Read room lines whole. Page a long
+read by line ranges or offset, never by truncating lines. Use
+<code>--width N</code> on a <code>mem.py</code> read if a clip is ever
+needed.</p>
+<p><strong>J on asking (11 October, 17:01 Berlin).</strong> Ask J with
+<code>mem.py ask</code> whenever a question is needed; asking does not
+stop the run.</p>
+<p><strong>The PI's clarifications (8 October, approved by J):</strong>
+the thresholds are the design's heuristic; the rule is unchanged.</p>
+<p><strong>How to work, from J (8 October, 23:45 Berlin, "can you do a
+hot change for the batching?"; relayed by the handler at 22:03Z; carry
+this paragraph into every head).</strong> A change in how I work, not in
+what I read or decide. Fewer turns. When two or more tool calls do not
+depend on each other's output, make them in one turn. Chain ordered
+commands in one Bash call with &amp;&amp;, so that a failure stops the
+rest; for example, the <code>mem.py log</code> or note just decided,
+then the next <code>mem.py codes</code>. Never put a write in the same
+turn as the read it depends on. Never run two writes to the same file as
+separate parallel calls. Keep one room's material per read, as now.
+Every tool still writes its own record; nothing about what I read or
+decide changes.</p>
+<p><strong>Two rules from J at B1b-29 (through the handler, 20:10Z;
+carry them into every head).</strong> Write rule 0 lines and bags with
+<code>b1_multiplace_write4.py</code> and
+<code>b1_bags_from_file2.py</code>, not the old, slow scripts. Never end
+a turn while a job runs in the background; run every write and check in
+the foreground.</p>
+<h4 id="open-carried">Open, carried</h4>
+<ul>
+<li><strong>The tree.</strong> The size confound (branches lean to large
+rooms); the element change keys at level 4 held by 5 to 19 rooms,
+unread; prior.md section 3's local measure; the two held proposals.</li>
+<li><strong>Held from D3c and earlier</strong> (listed in the handbacks
+with their rooms): R01's added sentence; the paladins and portugal
+proposal; A11's 'settled'; the spine's links; the arrows' wording items;
+the rewrite of the account, the figure and the data structure; the
+colour-faction doubt [PurplePixels/c0165].</li>
+</ul>
+<h4 id="rules-kept">Rules kept</h4>
+<ul>
+<li><strong>Checking.</strong> Never type an id, an order, a name or a
+count from memory; check with a script. Never log a write before the
+tool answers. Count a ledger's lines after appending. Check a claim
+against its source before writing. <strong>Logging.</strong> There is no
+<code>--kind close</code>; log closes as notes. Log every move with
+<code>--kind move</code>, naming one of Grodal, Anteby and Holm's eight
+("stabilizing" is not one), and snap it. <strong>Writing and
+checks.</strong> Never put a placeholder or a no-op in a command. Never
+put an Edit or Write and its check in one turn. Never run two writes or
+Edits to one file in parallel, nor in one turn. Count the head's words
+before the closing line. <strong>Ledger formats.</strong> A superseding
+finding's <code>supersedes</code> is the bare id. The head never names a
+proposition id. A re-ruling, or a history correction, is an appended
+line; the earlier line stays. <strong>The permission check
+refuses</strong> deleting any file or link; shell variables, loops,
+functions, brace groups, heredocs and words beginning "for_";
+<code>find -exec</code> with braces; awk with system() or <code>$</code>
+fields; env-var prefixes; cat or jq on <code>out/diary/</code>;
+<code>cut</code> after a read or a helper; <code>head -n -N</code>.
+Write a script in <code>out/_analysis/</code> instead.
+<strong>Output.</strong> Bash output above 30 KB is cut; measure first.
+<strong>Files.</strong> Read the field only from
+<code>out/field</code>.</li>
+</ul>
+<h4 id="the-next-comparison">The next comparison</h4>
+<p>Next: the dispatch, then E1d, the check.</p>
+</section></details><details class="saved-file" id="06-notes-E1"><summary>out/notes-E1.md</summary><p class="saved-meta"><a href="files/6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450.reading.md" download>Download the reading copy</a> · Original GitHub file. Original SHA-256 <code>6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450</code>; reading copy <code>6a757bee58d4d7bd94e51d8587537ea8f122016e56cf6f30d761b22481e93450</code>.</p><section class="record-copy" data-agent="reading copy"><h3 id="notes-stage-e1-the-audit">Notes, stage E1: the audit</h3>
+<h4 id="e1a-the-scripts">E1a: the scripts</h4>
+<p><strong>The close-check report of D6a-18</strong>
+(<code>_closes/D6-D6a-18-20261027T153104Z.validate.txt</code>): 0
+errors, 0 warnings.</p>
+<p><strong>What this leg did.</strong> It wrote the scripts of stage E1
+section 1, as the stage file declares them, and ran each once. Every
+script is in <code>audit-E1/</code>, with its rule in its docstring,
+declared before it ran, and its output beside it under the same stem. A
+stranger reruns one with
+<code>python3 out/audit-E1/&lt;script&gt;.py &gt; out/audit-E1/&lt;output&gt;</code>.
+Where a first run had a fault, the output was kept under a
+<code>.superseded-N</code> name and the fault is named in the script's
+docstring or in the diary. The readings by hand that the scripts call
+for are left to the audit sections.</p>
+<table>
+<thead>
+<tr>
+<th>script</th>
+<th>output</th>
+<th>what it computes</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>quotes_resolve.py</code></td>
+<td><code>.json</code></td>
+<td>every quote in every output, resolved against the store's
+participant words, labels, case accounts, the instrument's texts and the
+instructions</td>
+<td>3,230 cited concept quotes; 3,218 resolve to the concept they cite;
+12 do not (2 to nothing, 2 to another concept, 1 to a label, 7 return
+lines quoted beside an evidence citation); 2,042 uncited spans of five
+words or more resolve to nothing; five spot-checks drawn by seed</td>
+</tr>
+<tr>
+<td><code>links_check.py</code></td>
+<td><code>.txt</code></td>
+<td><code>links.py</code> and <code>validate.py --links</code></td>
+<td>both exit 0; 3 files checked, all ids resolve</td>
+</tr>
+<tr>
+<td><code>quote_check_raw.py</code></td>
+<td><code>.json</code></td>
+<td>the handler's <code>quote-check-E1.json</code> (seed 13, 80
+rooms)</td>
+<td>code_quote_found_share 1.0; case_quote_found_share 0.6573; 389
+missing strings listed against 548 by the file's count; 227 of the 389
+are in the room's coded passages once case and end punctuation are set
+aside</td>
+</tr>
+<tr>
+<td><code>store_figures.py</code></td>
+<td><code>.tsv</code></td>
+<td>README-store.md, A1's recomputation and now, three columns</td>
+<td>all 16 figures agree; the 158,227 item lines hold 137,732 distinct
+ids, 21,011 in the unnamed state <code>collapsed</code> (A1's
+defect)</td>
+</tr>
+<tr>
+<td><code>coverage.py</code></td>
+<td><code>.json</code></td>
+<td>room, forest and case records in the read logs, by log</td>
+<td>705 rooms read by <code>room</code>, 705 by <code>forest</code> (704
+whole), 705 case accounts; no room unread; the fleets apart</td>
+</tr>
+<tr>
+<td><code>canvas_uses.py</code></td>
+<td><code>.json</code></td>
+<td>rule 7's uses, by log</td>
+<td><code>mem.py room</code> with the canvas shown: A1 715, B1 1,874, C2
+22, C5 218, D3 4, D5 5; canvas files named in commands at C2a-03, D3b,
+D5a-40, D5b, D6b</td>
+</tr>
+<tr>
+<td><code>orderings.py</code></td>
+<td><code>.json</code></td>
+<td>the orderings by snap, and every key file's hash history</td>
+<td>the scheme before B3, prior.md before B1's first theme, the D1 seal
+before the return, and the branch cuts before the projection all held;
+82 D4 snaps after the projection (the room forms)</td>
+</tr>
+<tr>
+<td><code>moves.py</code></td>
+<td><code>.json</code></td>
+<td>both history ledgers by stage and move; the move snaps against the
+diary's move lines</td>
+<td>diary move lines equal move snaps by count from C2 to D6;
+'sequencing' (C2) and 'stabilizing' (D3) are not among the eight</td>
+</tr>
+<tr>
+<td><code>probes_score.py</code></td>
+<td><code>.json</code></td>
+<td>the recall probe, as filed and re-read</td>
+<td>283 of 300 answer files are in bold markdown, which probe.py does
+not parse; goal right 17 as filed, 298 re-read</td>
+</tr>
+<tr>
+<td><code>element_reach.py</code></td>
+<td><code>.json</code></td>
+<td>prior.md section 3's element-reach half</td>
+<td>4,759 of 5,380 themes with a coordinating turn (88.46 per cent)
+reached by a standing element; 297 of 696 rooms in full</td>
+</tr>
+<tr>
+<td><code>unplaced.py</code></td>
+<td><code>.json</code></td>
+<td>the unplaced at each tier</td>
+<td>151 second-order themes unplaced (407 concepts); T3-017 and T3-133
+in no fourth-order theme; every fourth-order theme in a dimension</td>
+</tr>
+<tr>
+<td><code>manifest.py</code></td>
+<td><code>.json</code></td>
+<td><code>run_manifest.json</code>, whole</td>
+<td>19 entries with model, seed and decoding; the D3 re-check return has
+none</td>
+</tr>
+<tr>
+<td><code>counts_rule.py</code></td>
+<td><code>.json</code></td>
+<td>the census twice, D4 section 4's four counts, the ledgers against
+the head, the handbacks' count phrases</td>
+<td>705 and 705; 476 + 0 + 229 + 0 = 705; tier history 1,026 against the
+head's 1,020; 361 count phrases to check</td>
+</tr>
+<tr>
+<td><code>clocks.py</code></td>
+<td><code>.json</code></td>
+<td>the coder's time against the item's; datings in written order</td>
+<td>equal in all 115,350 joined concepts; 237 of 598 case chronologies
+step back; 14 of 21 arrows name such a room</td>
+</tr>
+<tr>
+<td><code>claims.py</code></td>
+<td><code>.json</code></td>
+<td>propositions and branches by kind, evidence, rival and
+validation</td>
+<td>9 propositions (pattern 7, both 2), each with a rival; 35 branches
+(33 groupings, 2 forms)</td>
+</tr>
+<tr>
+<td><code>diary_transcript.py</code></td>
+<td><code>.json</code></td>
+<td>the diary against the transcript, one leg per stage by seed</td>
+<td>17 legs; 392 of 905 diary lines found word for word; the rest are
+tool-written lines, to be read</td>
+</tr>
+<tr>
+<td><code>fleet_figures.py</code></td>
+<td><code>.json</code></td>
+<td>the fleet figures beside FLEET.md section 2</td>
+<td>the verdict fleet's readers differ in 163 of 705 rooms (0.2312)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Carried for this stage, and where each goes.</strong></p>
+<ul>
+<li><strong>prior.md section 3's measure, the element-reach
+half.</strong> It is computed here, at E1a
+(<code>audit-E1/element_reach.py</code>). It will be reported in the
+audit section on composition (section 3). The other half, a validated
+adaptation or a theme listed as unresolved with its reason, is not
+computed, so local validation stays not established.</li>
+<li><strong>Defects 100 and 101</strong> (the survival paragraph rests
+on work_remained; four timings the canvas contradicts) are reported open
+in the ledgers section, not rewritten.</li>
+<li><strong>PR-D6-10</strong> stays an unvalidated proposal. It is
+checked against the D3a-55 ruling in the moves and provenance section.
+The script shows that all eleven proposals are 'unvalidated' on the base
+model 46384686…, the D3 freeze, and that
+<code>amendments-D6.jsonl</code> holds no line.</li>
+<li><strong>The D6 extra legs, D6a-09 to D6a-18</strong>, are audited as
+part of the run. One of them, D6a-17, is in the diary draw. Their moves,
+snaps and outputs are read in the moves and provenance section.</li>
+</ul>
+<p><strong>QE1-001, asked of J at this leg.</strong> Stage E1's
+close-check counts each D4 snap that lists the projection as an error.
+There are 82 such snaps, which give 246 lines. They are the D4a-03
+interview cut, the closes of D4a-04 to D4a-08, and the move snaps 238 to
+313: the room forms, made after the projection at J's instruction. The
+branch cuts, moves 200 to 237, were all snapped before it. Rule 18 bars
+changing the snaps, and the snaps belong to the harness. So every E1 leg
+would fail its close-check on these lines until the check was changed or
+J ruled. My assumption, logged with the question: the check is changed
+to print these snaps as the audit's finding. The first done.sh of this
+leg failed on these 246 lines alone
+(<code>_closes/E1-E1a-20261027T172649Z.validate.txt</code>).</p>
+<p><strong>QE1-001, answered</strong> (J, 27 October 18:45 Berlin,
+through the PI): "Yes. I would not change the structure of the journey
+for bookkeeping." The handler amended <code>check_orderings</code>. A D4
+snap now counts as a branch cut only where it changed
+<code>branches.jsonl</code> from the previous snap. A snap that lists
+the projection with <code>branches.jsonl</code> unchanged is printed as
+a finding, and the error stays for any snap that changed the branches
+after the projection. My assumption held as the answer states it, so
+nothing that rested on it changes. I checked the answer against the
+snaps by script: 82 D4 snaps list the projection, and none of them
+changed <code>branches.jsonl</code> from the previous snap.
+<code>validate.py E1</code> now gives 0 errors, 246 findings on those 82
+snaps, and 1 warning for the stage's later outputs
+(<code>_analysis/e1a_validate_E1-2.txt</code>). The audit reports the 82
+snaps, in the orderings section (E1b-02), as the finding they are: the
+room forms were made after the projection, by J's ruling, and they are
+not a recut of the branches.</p>
+<p><strong>The audit sections I plan: eight, E1b-01 to E1b-08.</strong>
+Each leg writes its section to its own file,
+<code>audit-E1/section-NN.md</code>. The reason: the close-check reads
+<code>audit-E1.md</code> whole as soon as it exists, and it requires the
+composition line and the methods paragraph, which can only be written
+last. <code>audit-E1.md</code> is assembled from the eight files at the
+check leg, E1d. That leg adds stage section 5, the methods paragraph and
+the <code>composition_status</code> line, all of which need the
+reconstruction's fidelity.</p>
+<ol type="1">
+<li><strong>E1b-01, the quotes and the clocks</strong> (section 1): the
+12 cited-quote defects and the 2,042 unresolved spans, read; the five
+spot-checks by hand; the 389 missing case-account strings, read, and the
+548 against 389; links; the store's figures in three columns; the
+clocks, with relations.jsonl by hand.</li>
+<li><strong>E1b-02, the orderings, the counts, coverage and the
+canvas</strong> (section 1): each ordering held or broken; the 361 count
+phrases of the handbacks against their files; coverage by stage; every
+canvas use named, declared or not, with the places the canvas may have
+shaped unseen; QE1-001's answer.</li>
+<li><strong>E1b-03, the moves and provenance</strong> (section 1): the
+moves by stage and by the eight, including 'sequencing' and
+'stabilizing'; the recuts after C5; the D6 proposals against their
+evidence, with PR-D6-10 against D3a-55; D6a-09 to D6a-18; the manifest;
+the figures restated with FLEET.md section 2's definitions.</li>
+<li><strong>E1b-04, claims against their evidence</strong> (section 1):
+<code>claims-E1.md</code>, every proposition and branch by kind and
+validation; prior.md section 3's declaration against what each level
+rests on; the switch records of <code>literature-C3.md</code>.</li>
+<li><strong>E1b-05, the diary, the probes and the unplaced</strong>
+(section 1): the 17 drawn legs read against their transcripts;
+<code>probes-E1.md</code>, per stage and per question, as filed and
+re-read, with notes apart from defects and n/a apart from recall; the
+151 unplaced themes, T3-017 and T3-133, read.</li>
+<li><strong>E1b-06, the ledgers, the stories and what a reader was
+given</strong> (section 2): findings by status, warrant and refuted_by;
+every ledger's lines; new kinds per hundred themes; the stories and the
+account's passes; the five things a reader was given; the departures
+with their costs; the defects, the material's apart from the
+instrument's, 100 and 101 open; the forks (none arrived); rule 9.</li>
+<li><strong>E1b-07, composition and expectations</strong> (section 3):
+the diagnostics recomputed against prior.md section 3, with the element
+reach; local validation and unresolved evidence apart; clusters and
+distinct global changes; prior.md section 2's expectations;
+<code>expectations-E1.md</code> with the field's entries; the onset
+contrast.</li>
+<li><strong>E1b-08, what bore the load and what the study cannot
+say</strong> (sections 6 and 7): stage by stage, the replay of
+<code>tools/chunk_compare.py</code>, the data-structure view at C2's
+last snap against <code>data_structure-C5.md</code>, the tiers' work;
+the absences, the ungrounded, the coder conflicts, the standing
+departures; the critique shelf; the one thing to say plainly.</li>
+</ol>
+<p><strong>Licences exercised at E1a.</strong></p>
+<ul>
+<li>probe.py's <code>--score</code> was not rerun. It writes into
+<code>_probe/</code>, which belongs to the harness, and it scores the
+open distinctions against the question files as they stand now. I read
+the filed scores and re-read the answers by its rules against the
+expected values the harness stored at each close.</li>
+<li>The scripts read <code>package/&lt;sub&gt;/case.md</code> and the
+store's files directly, as stage A1's checks did under the departure in
+<code>departures.jsonl</code> line 1. They print only counts and the
+strings the stage asks to be read.</li>
+<li>The coordinating rule is A1's own code
+(<code>_analysis/a1_ends.py</code>), imported, not rewritten. It
+reproduces <code>organizing_end-A1.jsonl</code> in all 705 rooms.</li>
+</ul>
+<p><strong>Slips at E1a.</strong></p>
+<ul>
+<li>A survey command piped a helper through <code>cut -c</code> and was
+refused; it was re-run without it. A shell loop was refused too; I used
+the peek script instead.</li>
+<li>Two Edits to <code>moves.py</code> went in one turn. They touched
+separate lines and both applied.</li>
+<li>Five scripts needed a second run, and the first output of each is
+kept: <code>quotes_resolve</code> (twice: the pairing of quotes, and a
+citation taken from the next quote), <code>store_figures</code>
+(distinct ids counted as lines), <code>canvas_uses</code> ('placements'
+matched theme placements), <code>moves</code> (twice: 'move N' in lower
+case only, and the eighth move bucketed as dropping) and
+<code>probes_score</code> (one leading mark stripped).</li>
+</ul>
+<h4 id="e1b-01-the-quotes-and-the-clocks">E1b-01: the quotes and the
+clocks</h4>
+<p><strong>The close-check report of E1a</strong>
+(<code>_closes/E1-E1a-20261027T174924Z.validate.txt</code>): 0 errors, 1
+warning (the stage's later outputs not yet written), and 246 findings on
+the 82 D4 snaps after the projection (QE1-001). <strong>QE1-001</strong>
+was read again at this leg's start, as the leg message asked. The answer
+had been reconciled at E1a, and nothing else rested on my assumption, so
+no work changed.</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>audit-E1/section-01.md</code>, part 1 of the audit's section 1, on
+four items: the quotes and ids against the logs, the quotes against the
+raw record, the store's figures, and the clocks. It wrote seven scripts,
+each with its rule in its docstring, declared before the run, and its
+output beside it:</p>
+<ul>
+<li><code>unresolved_read.py</code>: what the 2,042 spans resolved to
+nothing are;</li>
+<li><code>unresolved_hand.py</code>: where the 84 left over first appear
+in the transcripts;</li>
+<li><code>quote_sources_check.py</code>: quotes of a named source,
+beside the source;</li>
+<li><code>labels_read.py</code>: the 3,641 spans that resolve to a
+label;</li>
+<li><code>case_missing_read.py</code>: the handler's 389 missing
+case-account strings;</li>
+<li><code>relations_clock.py</code>: two rooms' records of one
+encounter;</li>
+<li><code>links_views.py</code>: <code>links.py</code>'s resolver over
+the views.</li>
+</ul>
+<p>The readings by hand are logged one by one in the diary.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>Cited quotes.</strong> 3,218 of 3,230 cited concept quotes
+resolve to the concept cited. Of the 12 that do not, 2 are faults of
+form and 10 are faults of the script.</li>
+<li><strong>Invented quotes.</strong> I found no invented quote in my
+files.</li>
+<li><strong>Defects of mine.</strong> Two D6 quotes give the coder's
+wording as members' words, carried from the case accounts. Two small
+misquotes of the instrument's own text. Three examples of my own wording
+in quotation marks.</li>
+<li><strong>The handler's file.</strong> It gives code_quote_found_share
+1.0 and case_quote_found_share 0.6573. Its 389 listed strings are mostly
+participant words missed on punctuation and markup, the coder's own
+labels and phrases, and translations. 33 come from uncoded items, beyond
+my reach.</li>
+<li><strong>The store's figures.</strong> All 16 agree with
+README-store.md and with A1.</li>
+<li><strong>Ids.</strong> No id of the model, the scheme or the store
+fails to resolve in the head, the questions or the views.</li>
+<li><strong>The clocks.</strong> The coder's time equals the item's in
+all 115,350 joined concepts. The store's builder is absent, so this may
+hold by construction. No pair of two rooms' records dates one encounter
+at two times.</li>
+<li><strong>Defects ledger.</strong> Eight lines were appended to
+<code>defects.jsonl</code>: 5 the instrument's, 1 provenance, 2 the
+material's.</li>
+</ul>
+<p><strong>Licences exercised at E1b-01.</strong></p>
+<ul>
+<li>I read <code>_transcripts/</code>, open at this stage, by script for
+where a span first appears.</li>
+<li>The handler's <code>quote-check-E1.json</code> is read from the
+folder root, where it arrived.</li>
+<li>I count the readers' room models, which the E1a rule did not leave
+out, as outputs. Their quotes are reported apart from mine.</li>
+</ul>
+<p><strong>Slips at E1b-01.</strong></p>
+<ul>
+<li>The first <code>unresolved_read.py</code> run kept the earlier class
+and so moved nothing. Its output is kept as
+<code>.superseded-1</code>.</li>
+<li>Two <code>unresolved_hand.py</code> runs with <code>grep</code> were
+too slow and were stopped. Their empty outputs are kept as
+<code>.superseded-1</code> and <code>-2</code>.</li>
+<li>A survey command piped <code>tail</code> into <code>cut</code> and
+was refused; it was re-run without the cut.</li>
+<li>Two diary lines needed correcting lines after them: the count of the
+instrument's defects lines (5, not 6), and the r/argentina and r/uruguay
+pair, which I first read as one encounter.</li>
+</ul>
+<h4 id="e1b-02-the-orderings-the-counts-coverage-and-the-canvas">E1b-02:
+the orderings, the counts, coverage and the canvas</h4>
+<p><strong>The close-check report of E1b-01</strong>
+(<code>_closes/E1-E1b-01-20261027T191229Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>audit-E1/section-02.md</code>, part 2 of the audit's section 1. It
+wrote four scripts, each with its rule in its docstring, declared before
+the run, and its output beside it:</p>
+<ul>
+<li><code>prior_sections.py</code>: <code>prior.md</code> rebuilt from
+the transcripts' writes, matched to the snaps and compared section by
+section;</li>
+<li><code>snap_order.py</code>: the move snaps in number order, the D4
+branch cuts against the projection, and the D6 proposals;</li>
+<li><code>counts_phrases.py</code>: the 361 handback count phrases
+sorted, a seeded sample of 36, and the head's ledgers;</li>
+<li><code>counts_sample_check.py</code>: the 36 recomputed where a
+governing file can be counted.</li>
+</ul>
+<p>It read E1a's <code>orderings</code>, <code>counts_rule</code>,
+<code>coverage</code> and <code>canvas_uses</code> outputs, and it
+appended 2 lines to <code>defects.jsonl</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>Orderings.</strong> All seven orderings the stage names
+held. <code>prior.md</code> sections 1 to 6 are byte for byte what was
+snapped before B1's first theme. The model moved after C5's hash only by
+D3's declared amendments. The D4 branch cuts all came before the
+projection, and the 82 snaps after it are the room forms by J's ruling
+(QE1-001). One move snap is a declared duplicate.</li>
+<li><strong>Counts.</strong>
+<ul>
+<li>The census is 705 twice, with 0 drops, and the four D4 counts sum to
+705.</li>
+<li>The head's seven ledger figures agree.</li>
+<li>Of the 36 sampled handback counts: 27 recompute and agree, 4 agree
+with a stated parameter or list, and 3 rest on a judgment by hand.</li>
+<li>2 sampled counts disagree: handback-B1's 107 and handback-C5-p14's
+31. 293 counts were not checked.</li>
+</ul></li>
+<li><strong>Coverage.</strong> All 705 rooms were read by
+<code>room</code>, <code>forest</code> and their case account. 704
+forests were read whole; r/COSI's skipped its ten header lines.</li>
+<li><strong>The canvas.</strong> No undeclared use was found. The canvas
+was on the page in 2,118 room reads at B1, C2, C5 and D3, and whether it
+shaped anything there is self-reported.</li>
+</ul>
+<p><strong>Licences exercised at E1b-02.</strong></p>
+<ul>
+<li>I checked the handback counts by a seeded sample of 36 and not all
+329. The sample and the 293 unchecked counts are both reported.</li>
+<li>I rebuilt <code>prior.md</code> from the transcripts' tool calls,
+which are open at this stage, to tell its sections apart where a hash
+cannot.</li>
+</ul>
+<p><strong>Slips at E1b-02.</strong></p>
+<ul>
+<li><code>counts_phrases.py</code>'s first run took any comma into the
+number and set aside nothing.</li>
+<li><code>counts_sample_check.py</code> had three faults, fixed over two
+reruns (the first two together):
+<ul>
+<li>it read a key the B3 defects lack;</li>
+<li>it read the analyst's D3 rulings in place of the re-check readers'
+verdicts;</li>
+<li>it grouped those verdicts by the readers' own spelling of the
+room.</li>
+</ul></li>
+<li>The first outputs are kept as <code>.superseded-1</code> and
+<code>-2</code>.</li>
+</ul>
+<h4
+id="e1b-03-the-moves-provenance-the-manifest-and-the-figures">E1b-03:
+the moves, provenance, the manifest and the figures</h4>
+<p><strong>The close-check report of E1b-02</strong>
+(<code>_closes/E1-E1b-02-20261027T193841Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>audit-E1/section-03.md</code>, part 3 of the audit's section 1,
+and one script, <code>provenance_D6.py</code>, with its rule in its
+docstring and its output beside it. The script covers the D6 proposals'
+evidence and diary lines, the data files across D6a-09 to D6a-18, and
+the tier history by stage and tier. The leg read E1a's
+<code>moves</code>, <code>manifest</code> and <code>fleet_figures</code>
+outputs and the files they name, and appended 2 lines to
+<code>defects.jsonl</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>The moves.</strong> Every move after C5 is either a rule 11
+amendment with its D3 cause or a held proposal, and no coding tier was
+recut after C5. Move snaps and diary move lines agree from C2 to D6. 18
+C2 model-history lines are named "sequencing", which is not one of the
+eight and was never corrected. This is a defect.</li>
+<li><strong>The D6 proposals.</strong> All eleven are unvalidated on the
+D3 freeze, their 254 concept ids resolve, and each has its diary line.
+PR-D6-10 names the D3a-55 ruling it would widen, and it changes
+nothing.</li>
+<li><strong>The extra legs.</strong> No data file moved across D6a-09 to
+D6a-18 except <code>departures.jsonl</code> line 21. That line is the
+dated amendment of the branch-naming rule, in use before it was written;
+it goes to the departures section.</li>
+<li><strong>The manifest.</strong> It gives complete provenance for
+every fleet figure but the D3 re-check, whose runs name a model with no
+seed or decoding. This is a defect.</li>
+<li><strong>The figures.</strong> They are restated with FLEET.md
+section 2's definitions and licence. None is called reliability.</li>
+</ul>
+<p><strong>Licences exercised at E1b-03.</strong></p>
+<ul>
+<li>I read the diary whole by script, for the proposals' lines and C1's
+move lines.</li>
+<li>I counted C1's 185 reassignment lines by their first word, not one
+by one.</li>
+</ul>
+<p><strong>Slips at E1b-03.</strong></p>
+<ul>
+<li>Two Edits to <code>section-03.md</code> went in one turn. They
+touched separate lines and both applied.</li>
+<li>A first draft of the section said the tier history used six of the
+eight moves; it uses seven.</li>
+<li>The same draft said, before I had read them, that C1's 185 extra
+move lines were re-placements under the amended gates. They are
+reassignments, read by their first word. Both were corrected before the
+checks.</li>
+</ul>
+<h4 id="e1b-04-claims-against-their-evidence">E1b-04: claims against
+their evidence</h4>
+<p><strong>The close-check report of E1b-03</strong>
+(<code>_closes/E1-E1b-03-20261027T195759Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>claims-E1.md</code>, the table the stage asks for and the methods
+paragraph cites, and <code>audit-E1/section-04.md</code>, part 4 of the
+audit's section 1. It wrote one script, <code>claims_returns.py</code>:
+the return's accepted lines by op on each arrow, and whether each
+arrow's order test is read against a bracket, the onset contrast and
+held size. It read E1a's <code>claims.json</code>, <code>prior.md</code>
+sections 3 and 4, and the switch records of
+<code>literature-C3.md</code>. It resolved the arrows' 57 support quotes
+against the store, and appended 1 line to
+<code>defects.jsonl</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>No claim is validated with the other kind's
+evidence.</strong></li>
+<li><strong>The pattern propositions</strong> rest on counts with
+denominators and beaten nulls.</li>
+<li><strong>N07</strong> declares both, and its pattern half is not
+established. It says so.</li>
+<li><strong>The branches</strong> rest on both kinds, as
+<code>prior.md</code> section 3 asks.</li>
+<li><strong>The one gap against the declaration:</strong> the population
+pattern was never tested at held size, and only A20's order is read
+inside a bracket.</li>
+<li><strong>The two switch records</strong> agree with the findings
+ledger.</li>
+</ul>
+<p><strong>Licences exercised at E1b-04.</strong></p>
+<ul>
+<li>I counted the return's verdicts per arrow from the last ruling of
+each line, across the first return and the re-check together.</li>
+<li>I named N07 half-validated, not a defect, because it declares itself
+theorised and thin.</li>
+</ul>
+<p><strong>Slips at E1b-04.</strong></p>
+<ul>
+<li>The first draft of <code>claims-E1.md</code> said "18 of the 20
+counted arrows" where A21 has counts but no null test. It now says the
+20 arrows the propositions rest on. Corrected before the checks.</li>
+</ul>
+<h4 id="e1b-05-the-diary-the-probes-and-the-unplaced">E1b-05: the diary,
+the probes and the unplaced</h4>
+<p><strong>The close-check report of E1b-04</strong>
+(<code>_closes/E1-E1b-04-20261027T201650Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>probes-E1.md</code> and <code>audit-E1/section-05.md</code>, part
+5 of the audit's section 1. It wrote three scripts, each with its rule
+in its docstring and its output beside it:</p>
+<ul>
+<li><code>diary_tool_lines.py</code>: the diary lines E1a could not find
+word for word, against their leg's tool calls;</li>
+<li><code>probes_notes.py</code>: every wrong probe answer, sorted into
+a note or a defect;</li>
+<li><code>unplaced_kinds.py</code>: the 151 unplaced themes, by
+kind.</li>
+</ul>
+<p>It appended 2 lines to <code>defects.jsonl</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>The diary.</strong> All 905 diary lines of the 17 drawn legs
+are borne out by the transcript: 392 word for word, 185 by a nearby tool
+call, 282 as rows of the files a B1 script read, 19 in
+<code>b1_place.py</code> commands, and 27 written by one C5 script.</li>
+<li><strong>The probes.</strong> The method question was right in 298 of
+300 re-read answers. 269 wrong answers are notes the record answered. 18
+are defects no record answered: the rooms of 14 legs, and the changes of
+4.</li>
+<li><strong>The unplaced.</strong> 151 themes: 42 April Fools play, 72
+talk about the event, 18 lost posts and 19 naming an act. 10 of the 19
+should have been placed. T3-017 is outside the scope by design. T3-133
+is one rare host act.</li>
+</ul>
+<p><strong>Licences exercised at E1b-05.</strong></p>
+<ul>
+<li>I did not rerun <code>probe.py --score</code>: it writes into the
+harness's <code>_probe/</code>.</li>
+<li>I added a second test for the rooms question beside the declared
+one, once the first run showed the harness's expected rooms repeat
+across legs. Both counts are kept.</li>
+<li>I counted the unplaced kinds by a keyword rule, then read them.</li>
+</ul>
+<p><strong>Slips at E1b-05.</strong></p>
+<ul>
+<li>A first draft of <code>probes-E1.md</code> said every missed answer
+stayed in the read logs and the ledgers, which I had not checked.
+Corrected before the checks.</li>
+<li>A B1 check by script first used the wrong separator. It found none
+of the 301 rows, against 282 by the regular test, and the regular test
+stands.</li>
+</ul>
+<h4 id="e1b-06-the-ledgers-the-stories-what-a-reader-was-given">E1b-06:
+the ledgers, the stories, what a reader was given</h4>
+<p><strong>The close-check report of E1b-05</strong>
+(<code>_closes/E1-E1b-05-20261027T203818Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>audit-E1/section-06.md</code>, the audit's section 2, with one
+script, <code>ledgers_stories.py</code>, whose rule is in its docstring
+and whose output is beside it. It appended 3 lines to
+<code>defects.jsonl</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>Findings.</strong> 45 lines over 27 findings. Six changed
+from standing to bounded. 8 have no statable
+<code>refuted_by</code>.</li>
+<li><strong>Ledgers.</strong> The append-only ledgers never shrink. Nine
+files do: six state files by design, two pilot files at B2, and
+<code>fractal-D6.jsonl</code> by a declared move.</li>
+<li><strong>Kinds.</strong> 2.51 new kinds per hundred themes.</li>
+<li><strong>The stories.</strong> Five passes, and 67 distinct rooms
+read against a story. The one room that does not compose at the first
+return is among the 638 no story was read against. The account's loop
+ran 15 passes.</li>
+<li><strong>What a reader was given.</strong> Two of the five things
+held. The account is 3,326 words, 3 of its quotes are undated, and it
+lists the residue rather than explaining it.</li>
+<li><strong>The departures.</strong> 18 of 21 state no cost, and 2 were
+acted on before they were written.</li>
+<li><strong>Forks and rule 9.</strong> There are no forks to compare.
+Rule 9's handed-over findings are P21, P22 and A21, from the field,
+replicated at D3.</li>
+</ul>
+<p><strong>Licences exercised at E1b-06.</strong></p>
+<ul>
+<li>I sorted the defects by a keyword rule, and the E1 lines by my own
+labels.</li>
+<li>I read the residue and the departures' costs from their files' own
+words.</li>
+</ul>
+<p><strong>Slips at E1b-06.</strong> None noticed.</p>
+<h4 id="e1b-07-composition-and-expectations">E1b-07: composition and
+expectations</h4>
+<p><strong>The close-check report of E1b-06</strong>
+(<code>_closes/E1-E1b-06-20261027T205719Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>expectations-E1.md</code> and <code>audit-E1/section-07.md</code>,
+the audit's section 3. It wrote one script,
+<code>expectations.py</code>. Its first run ordered rooms by name and
+read only the readers' verdicts, and is kept as
+<code>.superseded-1</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>Verdicts.</strong> The ruled fixed-global verdicts are 201,
+489, 14 and 1 at the first return, and 630, 56, 19 and 0 at the
+re-check.</li>
+<li><strong>Particulars and shared changes.</strong> 2,749 particular
+lines in 545 rooms. 223 distinct shared changes, whose curve in A1's
+seeded order flattens over the last third (184, 211, 223).</li>
+<li><strong>The expectations.</strong> The in-sample replication score
+is 0.924, with C01's 81 rooms the largest failure.</li>
+<li><strong>The field's entries.</strong> They were taken up in 112 to
+223 rooms and never contradicted, against a mean of 383 for the other
+elements.</li>
+<li><strong>The onset contrast.</strong> Untested: the late side holds 0
+to 15 rooms per arrow.</li>
+<li><strong>Composition.</strong> The population level is supported in
+the return's terms. Below it the population compiles. The leaf is
+unresolved until the reconstruction.</li>
+</ul>
+<p><strong>Licences exercised at E1b-07.</strong></p>
+<ul>
+<li>I counted an arrow as "taken up" when any accepted line changes or
+instantiates it, and as "absent" only when no line takes it up.</li>
+<li>I put off the <code>composition_status</code> line to
+<code>audit-E1.md</code>, after the reconstruction's check.</li>
+</ul>
+<p><strong>Slips at E1b-07.</strong></p>
+<ul>
+<li>Two Edits to <code>expectations.py</code> went in one turn. They
+touched separate lines and both applied.</li>
+<li>Two glosses in <code>expectations-E1.md</code> went beyond what I
+had checked, and were cut before the checks.</li>
+<li>One watch-word ("stands as") was rewritten.</li>
+</ul>
+<h4 id="e1b-08-what-bore-the-load-and-what-the-study-cannot-say">E1b-08:
+what bore the load, and what the study cannot say</h4>
+<p><strong>The close-check report of E1b-07</strong>
+(<code>_closes/E1-E1b-07-20261027T211544Z.validate.txt</code>): 0
+errors, 1 warning (the stage's later outputs not yet written).</p>
+<p><strong>What this leg did.</strong> It wrote
+<code>audit-E1/section-08.md</code>, the audit's sections 6 and 7. It
+wrote two scripts, each with its rule in its docstring and its output
+beside it:</p>
+<ul>
+<li><code>load_limits.py</code>: the outputs named downstream by stage,
+the chunk-comparison receipt, the data-structure view's hashes, the
+dimensions' work and the limits' counts;</li>
+<li><code>shelf_terms.py</code>: the critique files' passages, by
+objection and page.</li>
+</ul>
+<p>It read Jowsey et al. (2025) and the call for papers whole, and
+appended 1 line to <code>defects.jsonl</code>.</p>
+<p><strong>What it found.</strong></p>
+<ul>
+<li><strong>The stages.</strong> Every stage was load-bearing for
+something downstream. Nine files look read by nothing (not sure).</li>
+<li><strong>The chunk comparison.</strong> It matches its receipt and
+can be rerun.</li>
+<li><strong>The data-structure view.</strong> It moved at C5 and has
+been unchanged since.</li>
+<li><strong>The dimensions.</strong> They do no work in the account, the
+arrows or the branches.</li>
+<li><strong>The critique shelf.</strong> The run answers the
+invented-quotes objection in large part, and the opacity objection for
+its record of decisions. It does not answer the objections on
+offloading, reflexivity, more output, or harm.</li>
+<li><strong>What the study produced.</strong> A model with a typology.
+The strongest size argument is D4's volume verdict. A sample of 30
+uncoded rooms with 4 or more not composing would overturn the population
+claim.</li>
+</ul>
+<p><strong>Licences exercised at E1b-08.</strong></p>
+<ul>
+<li>I searched O'Sullivan and Ravasi (2026) and Schildt (2026) by the
+objections' terms with their pages, rather than reading them whole.</li>
+<li>I named files read by nothing from their names and the commands, not
+from every tool's inputs.</li>
+</ul>
+<p><strong>Slips at E1b-08.</strong></p>
+<ul>
+<li>A diary read piped through <code>cut</code> was refused by the
+guard; it was re-run whole.</li>
+<li>My first read of the stage file began at section 6; the rest was
+read before any write.</li>
+</ul>
+<h4 id="e1c-the-reconstruction-build">E1c: the reconstruction build</h4>
+<p><strong>The close-check report of E1b-08</strong>
+(<code>_closes/</code> for E1b-08): 0 errors, 1 warning (the stage's
+later outputs not yet written).</p>
+<p><strong>The sample, named before any room is opened.</strong>
+<code>audit-E1/reconstruction_draw.py</code> drew it from the ledgers
+alone and wrote it to <code>reconstruction-sample-E1.jsonl</code>. Its
+rule is in its docstring, declared before the run:</p>
+<ul>
+<li><strong>Verdict:</strong> the first return's ruled fixed-global
+verdict.</li>
+<li><strong>Branch:</strong> the room's most specific branch, or
+none.</li>
+<li><strong>Strata:</strong> does-not-compose 1, cannot-tell 2, composes
+8, composes-with-residue 19.</li>
+<li><strong>Draw:</strong> a seeded shuffle (<code>out/seed.txt</code>)
+that spreads the rooms over branches, with at most 10 rooms in no
+branch.</li>
+</ul>
+<p>The thirty rooms (room, branch, verdict):</p>
+<table>
+<thead>
+<tr>
+<th>verdict</th>
+<th>rooms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>does-not-compose</td>
+<td>picturegame (F25)</td>
+</tr>
+<tr>
+<td>cannot-tell</td>
+<td>sakartvelo (none); quq (none)</td>
+</tr>
+<tr>
+<td>composes</td>
+<td>hunterxhunter (F03); ethoslab (F01); python (F26); kirby (F18); ucf
+(F15); penguins (F34); ReBoot (none); sonicthehedgehog (none)</td>
+</tr>
+<tr>
+<td>composes-with-residue</td>
+<td>mamamoo (F35); superman (F33); physical_removal (F23);
+thenetherlands (F02); tagpro (F29); gameboy (none); necrodancer (F28);
+simonfraser (F30); Goodboye (none); Madeon (none); dwarffortress (F16);
+TeamYellowPlace (none); hyperlightdrifter (F24); puzzleanddragons (F07);
+seolhyun (F10); pansexual (none); PinkUnion (none); mls (F06); slovenia
+(F08)</td>
+</tr>
+</tbody>
+</table>
+<p>They spread over 20 branches, and 10 are in no branch.</p>
+</section></details></div><p id="unavailable-link" class="notice">Some references name files outside this reading selection. Use the full checkpoint manifest and verified restore for them.</p><h2>Compare with the saved parent</h2><p><a href="aggregator--claude-v43-1--C4-field--E1.E1b-08.html">Read the parent checkpoint</a>. This comparison uses the original hashes of the selected files, before display substitutions. A file absent from this selection is not evidence of deletion from the saved workspace.</p><details><summary>Additional reading files: 0</summary><ul></ul></details><details><summary>Files with changed bytes: 2</summary><ul><li><code>workspace/out/_head.md</code></li><li><code>workspace/out/notes-E1.md</code></li></ul></details><details><summary>Files with unchanged bytes: 4</summary><ul><li><code>workspace/out/claims-E1.md</code></li><li><code>workspace/out/probes-E1.md</code></li><li><code>workspace/out/expectations-E1.md</code></li><li><code>workspace/out/retelling-D6.md</code></li></ul></details><details><summary>Recorded verification limits</summary><ul><li>Reading-file verification is separate from native interview acceptance and release availability.</li></ul></details><p><a href="aggregator--claude-v43-1--C4-field--E1.E1c.json" download>Reading-file manifest</a> · <a href="../history-evidence/E1.E1c-reading-source.json" download>Reading-file source map</a> · <a href="index.html">All shared reading records</a></p></main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

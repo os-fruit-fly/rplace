@@ -1,0 +1,32 @@
+{
+ "run": "claude-v43-1--C4-field",
+ "first_start_utc": "2026-10-06T12:15:00.449000+00:00",
+ "last_close_utc": "2026-10-28T00:38:46+00:00",
+ "wall_clock_h": 516.4,
+ "wall_clock_days": 21.52,
+ "claude_legs": 314,
+ "analyst_active_h": 247.91,
+ "billable_tokens_total": 51822392299,
+ "api_cost_usd_total": 20496.6,
+ "deepseek_reprice_usd": {
+  "peak": 1059.77,
+  "offpeak": 529.89,
+  "openrouter": 2562.37
+ },
+ "actual_cash_usd_known": 67.67,
+ "by_provider": {
+  "Anthropic": {
+   "billable_tokens": 21447007283,
+   "api_cost_usd": 6721.06
+  },
+  "OpenAI Codex": {
+   "billable_tokens": 30122919653,
+   "api_cost_usd": 13707.86
+  },
+  "DeepSeek via OpenRouter": {
+   "billable_tokens": 252465363,
+   "api_cost_usd": 67.68
+  }
+ },
+ "cached_input_share": 0.9666
+}

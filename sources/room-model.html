@@ -1,0 +1,642 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contract: the case aggregator, one room | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="contract-the-case-aggregator-one-room">Contract: the case
+aggregator, one room</h1><p class="notice">Original document, reproduced unchanged. <a href="room-model.md" target="_blank" rel="noopener">Exact Markdown</a>. Carried by all 14 R6 checkpoints (<code>workspace/</code>). It is not in the repository. sha256 <code>ef116a840835667f</code>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Target length: under 3,900 words. Fifth version, 7 October 2026:
+theory names for coder themes at R3 (J). Fourth version, the same day:
+what a count is for, search, the organizing-end record and typed episode
+kinds, after Claude's audit of the siblings and OpenAI's repair (J: "go
+ahead", 7 October). Third version, 5 October: Codex's sibling review,
+J's rule on theory; recovery from hidden snapshots (J, 6 October).</p>
+<h2 id="what-you-are-here-to-do">What you are here to do</h2>
+<p>You are the case lead who coded this room. Coding is closed: never
+edit a code, a coder theme or any file the coding wrote. Now you build
+this room's model of organizing as Gioia, Corley and Hamilton (2013)
+describe it: theoretical themes above your coder themes, aggregate
+dimensions where the material carries them, a data structure, and a
+dynamic model that sets the structure in motion. Then you put it to the
+literature, write the account, grade your confidence, and close.</p>
+<p>You are the global aggregator's sibling, working on one case. It
+models all the rooms together and has never seen yours; later the study
+compares the two models element by element. So you build with its
+questions, tiers, rules and file formats. This file holds only what
+differs for one room; for the rest, read the global text.</p>
+<h2 id="what-you-are-given-and-how-to-read-it">What you are given, and
+how to read it</h2>
+<p>These files ship unchanged from the aggregator's instrument;
+<code>PINNED.tsv</code> holds each one's hash, and a check fails if any
+differs. <code>PROFILE.md</code>, marked *, is the siblings' own.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What binds you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>global/CONTRACT-aggregator.md</code></td>
+<td>§1 the two questions, composition, the standing claim; §2 the tiers
+and the typed model; §3 the rules, as the table below says; §5's "mark
+every absence claim as weak"; §6's stopping rule for passes. Read §1 and
+§2 whole at R1.</td>
+</tr>
+<tr>
+<td><code>global/METHOD.md</code></td>
+<td>the first section, "What the method says, held at every stage", read
+whole at R1 and again at R4; and the paragraph on the four licences, for
+rule 17</td>
+</tr>
+<tr>
+<td><code>global/WRITING.md</code></td>
+<td>every sentence you write in your own words</td>
+</tr>
+<tr>
+<td><code>global/SCHEMA-adaptations.md</code></td>
+<td>§1, the elements of the model</td>
+</tr>
+<tr>
+<td><code>global/stages/STAGE-C1</code>, <code>C2</code>,
+<code>C3</code>, <code>C5</code></td>
+<td>the procedures R3 to R6 follow, read through the key below</td>
+</tr>
+<tr>
+<td><code>global/stages/STAGE-E1</code></td>
+<td>the claims table <code>claims.md</code> follows</td>
+</tr>
+<tr>
+<td><code>PROFILE.md</code>*</td>
+<td>every file you write: the global definition it follows, its path,
+its IDs, and the few fields it adds</td>
+</tr>
+<tr>
+<td><code>shelf/gioia-corley-hamilton-2013.md</code></td>
+<td>in full, from R1</td>
+</tr>
+<tr>
+<td><code>shelf/puranam-alexy-reitzig-2014.md</code></td>
+<td>in full, arriving at R5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The reading key.</strong> The global texts speak of rooms,
+stages and tools you do not have. Read them through this key.</p>
+<table>
+<thead>
+<tr>
+<th>Global text says</th>
+<th>For you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the rooms, the analysed set</td>
+<td>this room</td>
+</tr>
+<tr>
+<td>a community count; carries / had the opportunity / had no
+opportunity</td>
+<td>one declared unit per count (codes, coded items, threads or authors
+in this room) and its population; the three numbers only for a
+prevalence claim (rule 5)</td>
+</tr>
+<tr>
+<td>stage A1</td>
+<td>R2, reading</td>
+</tr>
+<tr>
+<td>stage B1 <code>prior.md</code></td>
+<td>R1</td>
+</tr>
+<tr>
+<td>stages B1 to B4, the third-order tier, its gates, the fleet</td>
+<td>none: one case has no cross-case tier</td>
+</tr>
+<tr>
+<td>stage C1 §7, the form pass</td>
+<td>R3, over this room's codes</td>
+</tr>
+<tr>
+<td>stage C1 §8, cutting fourth-order themes</td>
+<td>R3, <code>T4</code> themes cut from your coder themes</td>
+</tr>
+<tr>
+<td>stage C2</td>
+<td>R4, the model in passes</td>
+</tr>
+<tr>
+<td>C2's "three rooms first", <code>within_case.md</code></td>
+<td>episodes first, in <code>within_case.md</code>: one ordinary, one
+the structure could not have predicted, one that stopped early; as many
+as the record holds, up to three, as the global check takes
+<code>min(3, available)</code>, and each missing kind named as
+unavailable; the three kinds typed in
+<code>within_case.jsonl</code></td>
+</tr>
+<tr>
+<td>stage C3</td>
+<td>R5, the literature, with two papers</td>
+</tr>
+<tr>
+<td>stage C4, the field</td>
+<td>none</td>
+</tr>
+<tr>
+<td>stage C5</td>
+<td>R6, the account and the close</td>
+</tr>
+<tr>
+<td>stages D1 to E2</td>
+<td>none in this run</td>
+</tr>
+<tr>
+<td><code>cite.py</code>, <code>mem.py</code>, <code>counts.py</code>,
+<code>snap.py</code></td>
+<td><code>tool.py</code>: <code>context</code> (also by ID),
+<code>read</code>, <code>find</code> (a search grounds a claim and never
+chooses a reading: rule 2), <code>cite</code> (a code's span or a
+verbatim part of it, or a seeded draw from a declared set),
+<code>note</code>, <code>head</code>, <code>count</code> (three modes,
+below), <code>move</code>, <code>check</code>; r/place adds
+<code>snap</code></td>
+</tr>
+<tr>
+<td><code>story_rooms-pN.jsonl</code>, rooms read against the story</td>
+<td><code>story_episodes-pN.jsonl</code>, episodes read against the
+story</td>
+</tr>
+<tr>
+<td><code>sampled_against</code> rooms</td>
+<td><code>sampled_against</code> episodes</td>
+</tr>
+<tr>
+<td><code>early_late</code>, the onset contrast across rooms</td>
+<td>none: one room has one onset. On each strong arrow, where C2 asks
+<code>early_late</code>, you add <code>live_aftermath</code>, the
+arrow's evidence at or before hour 73 and strictly after it, as a
+declared extension</td>
+</tr>
+</tbody>
+</table>
+<h2 id="your-part-in-the-two-questions">Your part in the two
+questions</h2>
+<p>Global §1 states both questions. Here is what they ask of one
+room.</p>
+<p><strong>The theory question.</strong> Did organizing happen here, and
+what form did it take? How did it work? Did it keep the work alive, as
+the room's own record tells it? The four things global §1 says the model
+has to say apply to this room: how a scattered readership became
+something that could act and settled what to act on; what sent it back
+to that beginning; what brought organizing about when it came, and what
+followed; and what it left behind. None is assumed. A room that did not
+organize is a finding, and so is one whose organizing lived
+elsewhere.</p>
+<p><strong>The method question.</strong> Your model is one of the
+independently reconstructed case histories the study tests for
+composition: you see no other room and no global model before you close.
+When the global model returns, the difference between the two, element
+by element, shows whether this room composes, and your model keeps the
+room's supported particulars. Both uses need the global schema, with
+evidence on every element.</p>
+<h2 id="theory-and-where-it-may-enter">Theory, and where it may
+enter</h2>
+<p>J, 5 October 2026: in Gioia, Corley and Hamilton, the first order
+carries no theory. This instrument has three levels, so theory enters at
+the second.</p>
+<ul>
+<li><strong>First order, no theory.</strong> Your codes stay in the
+participants' terms.</li>
+<li><strong>A coder theme may take a theory name, at R3's
+opening</strong> (J, 7 October 2026). The coding named them
+descriptively, for the global model; your model may use apt names, or
+keep these. Each name is declared in <code>names.jsonl</code> as a
+<code>T4</code> name is, beside the coded label. A theme's ID, label,
+codes and note never change, and every file the global reads keeps the
+label as coded.</li>
+<li><strong><code>T4</code> themes and dimensions are constructs from
+the moment you cut them</strong>, as global §2 says of fourth-order
+themes and dimensions. Any literature may name them, the four problems'
+vocabulary included, declared as global §2 says (borrowed,
+<code>recalled</code> until R5, adapted or coined; what would disconfirm
+it; the grounded phrase as gloss).</li>
+<li><strong>The standing claim</strong> (global §1): an organization is
+a group with a goal, and every such group must solve task division, task
+allocation, reward provision and information provision. You know it from
+R1. <strong>Do not build the <code>T4</code> tier as a copy of the
+framework</strong>: four themes matching four problems is the framework
+restated, and so are coder themes renamed after them. <strong>Whether a
+goal was inherited, negotiated, contested or changed here is a finding,
+never a premise.</strong> R5 puts the frame to your structure.</li>
+</ul>
+<h2 id="the-tiers">The tiers</h2>
+<p>Global §2 binds you, with one tier fewer and the IDs of
+<code>PROFILE.md</code>. When your files leave this room, the controller
+adds <code>sub:</code> to each ID.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>IDs</th>
+<th>Who</th>
+<th>Gioia's name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first-order concepts</td>
+<td><code>c0042</code></td>
+<td>coding, closed</td>
+<td>first-order concepts</td>
+</tr>
+<tr>
+<td>coder themes</td>
+<td><code>t07</code></td>
+<td>coding, closed</td>
+<td>first-order concepts, consolidated within a case</td>
+</tr>
+<tr>
+<td><code>T4</code> themes</td>
+<td><code>T4-001</code></td>
+<td>you</td>
+<td>second-order themes</td>
+</tr>
+<tr>
+<td>aggregate dimensions</td>
+<td><code>D01</code></td>
+<td>you</td>
+<td>aggregate dimensions</td>
+</tr>
+<tr>
+<td>the model</td>
+<td><code>P01</code>, <code>K01</code>, <code>C01</code>,
+<code>R01</code>, <code>A01</code>, <code>L01</code>; findings
+<code>F-001</code>; propositions <code>N01</code></td>
+<td>you</td>
+<td>the grounded model</td>
+</tr>
+</tbody>
+</table>
+<p>There is no <code>T3</code> tier: it consolidates across cases, and a
+room has none to consolidate across. You cut <code>T4</code> themes
+straight from your coder themes. Each <code>T4</code> theme carries a
+gate, as a third-order theme does in the global (§2): the condition a
+coder theme's material must meet, a discriminator against the nearest
+theme, what varies inside it, what it is not,
+<code>decide_when_both</code>, and <code>gate_parts</code> for a
+two-part move. Each coder theme sits in one <code>T4</code> theme by its
+gate (rule 0), or is split code by code with a recorded move, or is
+marked contextual, out of scope or unresolved with a reason. The gate
+places coder themes; it is never a count of the codes they carry. No
+number is set. Zero <code>T4</code> themes, zero or one dimension, are
+findings to report, with the partitions you tried.</p>
+<h2 id="the-rules">The rules</h2>
+<p>Global §3, rule by rule. "Binds" means the whole pinned rule, not its
+heading.</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>For you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 single placement</td>
+<td>binds, for coder themes on <code>T4</code> themes by the
+<code>T4</code> gates, with <code>why_not_one</code>, the dispensable
+placement and the cap of three;
+<code>multiplacement_log.jsonl</code></td>
+</tr>
+<tr>
+<td>1 the log is an output</td>
+<td>binds and does not move. Every read, of the record or of your own
+files, goes through <code>tool.py</code></td>
+</tr>
+<tr>
+<td>2 search does not choose</td>
+<td>binds: say what chose your reading, each time</td>
+</tr>
+<tr>
+<td>3 quote from the bottom tier</td>
+<td>binds and does not move: through <code>tool.py cite</code>; an
+exemplar passes its <code>T4</code> theme's gate on the quote alone</td>
+</tr>
+<tr>
+<td>4 counts are of communities</td>
+<td>replaced: each count declares one unit (codes, coded items, threads
+or authors), never a mix, and its population</td>
+</tr>
+<tr>
+<td>5 gate before count</td>
+<td>binds where counting is the claim: the gate is the claim's own,
+named in the count; the population is this room's units in the window;
+the three numbers sum to the testable units, and units that are not
+testable are listed and counted beside them, never as zero</td>
+</tr>
+<tr>
+<td>6 unmeasured is not zero</td>
+<td>binds and does not move</td>
+</tr>
+<tr>
+<td>7 the canvas</td>
+<td>replaced: you see text only (J: "They just see the text."). No
+canvas field, no atlas, no artwork. A participant's report of the canvas
+is their words, cited as such</td>
+</tr>
+<tr>
+<td>8 looked for and not found</td>
+<td>binds: the critic comes inside R4, before the final passes</td>
+</tr>
+<tr>
+<td>9 no worked example decides</td>
+<td>binds and does not move</td>
+</tr>
+<tr>
+<td>10 departures</td>
+<td>binds: <code>departures.jsonl</code> before you act. Rules 1, 3, 6,
+9, 13 and §5's weak-absence rule do not move</td>
+</tr>
+<tr>
+<td>11 recutting</td>
+<td>binds for <code>T4</code> and <code>D</code> through R6, with
+<code>tier_history.jsonl</code> (the move, <code>was</code>,
+<code>prompted_by</code>, why); coder themes are never recut</td>
+</tr>
+<tr>
+<td>12 validate locally</td>
+<td>at the return, not in this run; there the fixed-global verdict, your
+local judgment and the joint elaboration stay separate</td>
+</tr>
+<tr>
+<td>13 what a challenge decides</td>
+<td>binds and does not move: an error is fixed; a disagreement is
+answered; no vote is a warrant</td>
+</tr>
+<tr>
+<td>14 findings are held</td>
+<td>binds: <code>findings.jsonl</code>, append-only; a recut re-examines
+every finding it touches</td>
+</tr>
+<tr>
+<td>15 a display owes its file</td>
+<td>binds: the controller renders figures and tables</td>
+</tr>
+<tr>
+<td>16 counterexamples</td>
+<td>binds at R4 to R6, with <code>counterexample_response</code></td>
+</tr>
+<tr>
+<td>17 final messages</td>
+<td>one, at the close: the claim, the episode that best supports it, the
+episode that most threatens it, the condition that separates them, the
+counts, and which of METHOD.md's four licences you exercised and which
+not</td>
+</tr>
+<tr>
+<td>18 working files</td>
+<td>binds, with one declared difference: you take no move snapshots.
+Every move is a <code>tier_history.jsonl</code> or
+<code>model/history.jsonl</code> line stamped by the controller. The
+controller's hidden recovery snapshots (below) are not yours</td>
+</tr>
+<tr>
+<td>19 counts and amendments</td>
+<td>binds: counts from <code>tool.py count</code> in the same act, in
+the mode the claim needs (below); an override names what it
+overrides</td>
+</tr>
+<tr>
+<td>20 the diary</td>
+<td>binds: through <code>tool.py note</code> as you work, stamped by the
+controller with the time and the stage; a closing line is the last
+entry, not the diary</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-a-count-is-for">What a count is for</h2>
+<p>J, 7 October 2026. A count does one of three jobs, and
+<code>tool.py count</code> has a mode for each.</p>
+<ul>
+<li><strong>Coverage</strong>: how far a search or a reading reached, as
+matched IDs over a named population. Report it wherever it says how far
+a pass went. It never gates a claim, and no prevalence or adequacy
+follows from it.</li>
+<li><strong>Prevalence</strong>: a claim that is itself a quantity
+(most, rare, the commonest act). Rule 5 applies.</li>
+<li><strong>Aftermath</strong>: R2's share, as global A1 counts it (R2
+below).</li>
+</ul>
+<p>Every other claim (a <code>T4</code> theme, an arrow, a mechanism, a
+form-pass finding) rests on episodes, sequences, contrasts and
+counterexamples, and a count beside it is context. A dated sequence in
+this room warrants a process claim without a denominator; a claim about
+how often a sequence occurs needs one. A form-pass finding never carries
+a gate or a prevalence count; its reach may be reported as coverage.</p>
+<h2 id="one-session">One session</h2>
+<p>You do R1 to R6 in one session, in order. Keep your memory in files:
+<code>tool.py note</code> as you work; <code>tool.py head</code> at each
+stage's end and whenever you pause. The controller keeps your files and
+the session as you go, and one archive at the close. Your context will
+be compacted when it fills: after a compaction, run
+<code>tool.py context</code> before anything else, and fetch by ID what
+you need. Before you leave a stage, run
+<code>tool.py check &lt;stage&gt;</code> and fix what it lists; two
+failed repairs stop the room for J.</p>
+<h2 id="recovery">Recovery</h2>
+<p>J, 6 October 2026: "Keep hidden snapshots as long as the resumed
+agent can be shown to be accurate to what was running before". This
+section binds both siblings.</p>
+<p><strong>When.</strong> After <code>tool.py check &lt;stage&gt;</code>
+passes, end your turn: that completed turn is a stage boundary. The
+controller snapshots it, and the turn you end before the critic, only
+when no tool is running. A snapshot holds your folder, the native
+session, the model and effort, the CLI version, the installed contract
+and instruction files, the tool manifest, the permission profile and the
+controller's position. The message that opens each stage carries a
+random boundary token, recorded with the snapshot that closes the stage,
+and the controller repeats it after each compaction; never write it
+anywhere. In the field, every leg's opening message carries it. You
+never see a snapshot.</p>
+<p><strong>Resuming.</strong> After an interruption the controller keeps
+the interrupted state for diagnosis, restores the last snapshot and
+resumes the same session, never a fork. Before your next turn it shows
+that the resumed agent is the one that was running, and records each
+check in <code>recovery.jsonl</code>:</p>
+<ol type="1">
+<li>identity: the session ID and everything else the snapshot holds, but
+the folder and the transcript, match;</li>
+<li>state: the interrupted transcript begins with the snapshot's
+transcript byte for byte, and the restored transcript and folder match
+the snapshot's hashes and manifest;</li>
+<li>recall: a fork of the restored session, given no tools and then
+discarded, is asked for the boundary token and three questions the
+controller draws from the turns after the last compaction before the
+boundary, on what the transcript holds and the folder does not. A fresh
+agent scores the answers against the transcript. It passes with the
+token exact and two of the three right.</li>
+</ol>
+<p>Any failure stops the room for J; a fresh agent is never presented as
+you. Where fewer than three questions can be drawn, every one drawn must
+be right; with none, the token and checks 1 and 2 decide, and
+<code>recovery.jsonl</code> says so. These checks show that the resumed
+agent holds the same record and context; they do not prove an identical
+internal state.</p>
+<p><strong>What was lost.</strong> Work after the boundary is redone.
+The controller says so in its first message and marks its own copies of
+the log and history lines written after the boundary
+<code>lost: true</code>, outside the stamps and counts; the restore
+removes them from your folder. A critic that already ran is not
+dispatched again: its recorded return is served once more. J is told
+which of his messages came after the boundary and chooses which to
+deliver again. Snapshots are dropped only after the close's archive
+verifies. The field runs these checks after any interruption, from its
+last leg close or named snapshot.</p>
+<h2 id="the-stages">The stages</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Global counterpart</th>
+<th>What you do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1 prior</td>
+<td>B1 <code>prior.md</code></td>
+<td>Read global §1 and §2, METHOD.md's first section, WRITING.md and the
+Gioia paper. Then write <code>prior.md</code>, before you reopen the
+codes. You coded this room, so this is not a prior to the data: it
+records what the coding taught you to expect, so that the model's
+findings can be told from what you already believed. Say what you
+expect, what would surprise you, the coordinating-turn rule, the
+bracketing rule for episodes, and which expected findings rest on words
+and which on patterns.</td>
+</tr>
+<tr>
+<td>R2 reading</td>
+<td>A1</td>
+<td>Your codes in clock order, block by block; threads opened where
+meaning needs them. One note per block. <code>episodes.jsonl</code> kept
+current; a block boundary is not an episode boundary. At the end, in
+<code>organizing_end.json</code> (<code>PROFILE.md</code>): the hour of
+the last coordinating act; the aftermath share as global A1 counts it,
+distinct coded items strictly after hour 73 that coordinate rather than
+recount, over distinct coded items strictly after hour 73, unavailable
+when there are none; whether the record says the work remained. Then
+where it reads differently from your <code>case.md</code>.</td>
+</tr>
+<tr>
+<td>R3 structure</td>
+<td>C1 §7 and §8, C2 part A</td>
+<td>First, if you choose, the naming step (Theory, above). Then the form
+pass, global C1 §7: your codes read directly, three sweeps (form,
+register, what is not said); findings <code>FP-01</code> on, in
+<code>form_pass.md</code> prose only, outside the arithmetic. Then the
+<code>T4</code> themes in <code>fourth/fourth.jsonl</code> and
+<code>fourth/fourth.md</code>, <code>dimensions.jsonl</code>,
+<code>assignments.jsonl</code> (each coder theme, or each code of a
+split one, to a <code>T4</code> theme or a status),
+<code>structure.md</code>, computed counts, and a move for every
+cut.</td>
+</tr>
+<tr>
+<td>R4 the model</td>
+<td>C2 §1, parts B and C, §5 and §6</td>
+<td>C2 §1 first: the criterion in <code>notes-R4.md</code> before pass
+1, every pass numbered and kept, and the pass kept that best meets the
+criterion, not the last. Passes as global C2 runs them: the puzzle
+first; <code>model/elements.jsonl</code>, <code>arrows.jsonl</code>,
+<code>loops.jsonl</code>, <code>history.jsonl</code>;
+<code>concept.md</code>; <code>model.md</code>;
+<code>model/story-pN.md</code> read against every episode. Arrows as
+global C2 §4 defines them. When the pass you expect to keep is written,
+end the turn. The critic, a fresh agent served the packet global C2 §6
+names, returns errors and one rival partition of your coder themes into
+<code>T4</code> themes; its session is not kept. The packet carries C2
+§6's instruction unchanged and, beside it, a versioned sibling reading
+key: coder themes stand where the instruction says third-order themes,
+the local ID domains of <code>PROFILE.md</code>, and for r/place the
+three extra checks and error kinds. A model over the 50 KB ceiling is
+served in parts to the same critic, with a receipt naming every file
+served; nothing is cut in silence. Where no defensible alternative
+exists, the critic may return "no alternative partition supported" with
+its reasons. Answer every item in <code>notes-R4.md</code> under rule
+13; a fix reopens the loop, and the stopping rule counts from after it.
+Stop under global §6: two consecutive passes with no
+<code>tier_history.jsonl</code> event, no arrow added, bounded, demoted
+or withdrawn, and no changed story sentence that names an arrow or
+element; or a declared stop from the third pass, with written
+reasons.</td>
+</tr>
+<tr>
+<td>R5 literature</td>
+<td>C3 §1 and §5</td>
+<td>The Puranam, Alexy and Reitzig paper arrives. The global C3
+sequence: restate <code>prior.md</code> and log the read count in
+<code>notes-R5.md</code>, mark abductive reads, write switch records; a
+change a paper prompted carries <code>abductive: true</code> and
+<code>prompted_by</code> naming the paper (author, year). Then global
+C3's leg 3: for every <code>T4</code> theme, which of the four problems
+it is a way of handling, or none, with what this room's version cannot
+do; the unmapped set is the remainder. C3's legs 1 and 2 need shelves
+you do not hold, so they do not run. <em>Declared departure from global
+§2</em>: a <code>recalled</code> name the paper cannot check stays
+<code>recalled</code>, marked unverified, instead of being verified or
+withdrawn; <code>literature-C3.md</code> lists each.
+<code>literature-C3.md</code> and <code>mapping-C3.jsonl</code> in the
+global formats.</td>
+</tr>
+<tr>
+<td>R6 account and close</td>
+<td>C5, E1's claims</td>
+<td><code>account.md</code> before any drawing;
+<code>propositions.jsonl</code>; <code>data_structure.md</code> (quote,
+first-order concept, coder theme as coded, its name where you gave one,
+<code>T4</code> theme, dimension), rows showing the range; the
+controller renders the figure, which you read and correct at the source;
+<code>claims.md</code>; <code>INTERVIEW.md</code> under 800 words; then
+<code>confidence.jsonl</code> (below), the last file;
+<code>tool.py check close</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A room that did not organize</strong> runs every stage. Its
+structure may hold no <code>T4</code> theme and its model no arrow; each
+empty file is valid and says why in the account or the notes, and the
+account states the finding with the counts that carry it. A quota the
+record cannot meet (episodes, exemplars, a rival partition) is met as
+far as the record goes and the rest named unavailable; nothing is
+invented to fill it. An empty model with evidence is a result the study
+needs.</p>
+<h2 id="your-confidence-before-anyone-sees-the-global-model">Your
+confidence, before anyone sees the global model</h2>
+<p>J, 5 October 2026: the global aggregator should know, from a source
+the global model has not touched, whether you believe what you say.
+<code>confidence.jsonl</code> is the last file you write, one line per
+object:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;kind&quot;</span><span class="fu">:</span> <span class="st">&quot;room&quot;</span><span class="fu">,</span> <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;&quot;</span><span class="fu">,</span> <span class="dt">&quot;something_to_explain&quot;</span><span class="fu">:</span> <span class="st">&quot;yes|partly|no&quot;</span><span class="fu">,</span> <span class="dt">&quot;why&quot;</span><span class="fu">:</span> <span class="st">&quot;did this room organize around r/place, and how much of the record shows it&quot;</span><span class="fu">,</span> <span class="dt">&quot;evidence&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;codes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;c0042&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;episodes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;E-03&quot;</span><span class="ot">]</span><span class="fu">}}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;kind&quot;</span><span class="fu">:</span> <span class="st">&quot;T4&quot;</span><span class="fu">,</span> <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;T4-003&quot;</span><span class="fu">,</span> <span class="dt">&quot;grade&quot;</span><span class="fu">:</span> <span class="st">&quot;high|medium|low&quot;</span><span class="fu">,</span> <span class="dt">&quot;why&quot;</span><span class="fu">:</span> <span class="st">&quot;how well it holds the material: where it is firm, where thin&quot;</span><span class="fu">,</span> <span class="dt">&quot;would_change_it&quot;</span><span class="fu">:</span> <span class="st">&quot;the observation that would most lower this grade&quot;</span><span class="fu">,</span> <span class="dt">&quot;evidence&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;codes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;c0042&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;episodes&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;E-03&quot;</span><span class="ot">]</span><span class="fu">}}</span></span></code></pre></div>
+<p>Add one line for the model as a whole (<code>kind: "model"</code>,
+<code>id</code> empty) and one for every <code>T4</code> theme,
+dimension, element and arrow (<code>kind</code> <code>T4</code>,
+<code>dimension</code>, <code>element</code> or <code>arrow</code>, with
+its ID), in <code>PROFILE.md</code>'s format. Say what you think, not
+what would look good: a room with little to explain says <code>no</code>
+or <code>partly</code>, and a model you doubt says <code>low</code>.
+These grades are your belief about your own model, not the
+<code>clear|arguable</code> confidence a dimension carries in
+<code>dimensions.jsonl</code>, and never evidence or a vote at the
+return.</p>
+<p>The controller seals the file at the close, hashed with your model's
+version and kept where no agent can write, before any global model
+reaches this room. At the return it is read beside the grades given
+then, never overwritten.</p>
+<h2 id="what-you-may-not-do">What you may not do</h2>
+<p>Read another room's record or model, or anything the global
+aggregator wrote; see the canvas or the atlas; edit the coding; launch
+agents; use a global ID as if it were yours.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

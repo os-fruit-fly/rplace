@@ -1,0 +1,193 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case-lead checkpoints | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="case-lead-checkpoints">Case-lead checkpoints</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coder-checkpoints.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coder-checkpoints.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Only the <strong>case lead</strong> has a persisted native agent
+session. Brief writers and fleet coders continue to use the existing
+workflow. Their completed files and transcripts are inputs to the lead's
+filesystem snapshot; their native agent state is not needed.</p>
+<p><code>_tools/codex_lead.py</code> is the Codex adapter.
+<code>_tools/checkpoints.py</code> is the local, content-addressed
+filesystem store. Neither replaces the research instrument. The copies
+in <code>_instrument/v30</code> and <code>rooms/*/instrument</code> are
+unchanged.</p>
+<h2 id="start-a-room">Start a room</h2>
+<p>Finish/check the room's brief first. From the yard directory:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset init <span class="dt">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--room</span> rooms/Dorset <span class="at">--model</span> gpt-6-astra <span class="at">--effort</span> xhigh</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset turn <span class="dt">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--message</span> lead <span class="at">--label</span> lead-first</span></code></pre></div>
+<p><code>init</code> copies the room into
+<code>&lt;store&gt;/workspace/room</code>, then builds its run there. It
+never changes the source room or its brief. All subsequent coders,
+collection, checks and lead work for this reading must use this managed
+room, not <code>rooms/Dorset</code>. <code>init</code> refuses a source
+room with an existing run; it does not silently import an old lead's
+state. Set the chosen model explicitly. The same model belongs in coder
+manifests.</p>
+<p>The adapter uses the existing Codex file login, borrowed into a
+private runtime home for each invocation. The default source is
+<code>~/.codex/auth.json</code>; <code>--auth-source</code> can select
+another login file. Authentication is removed when the runtime exits and
+is excluded from checkpoint objects. A valid login is required when
+resuming later.</p>
+<p>Normally the agent uses Codex's workspace-write sandbox. If the
+runner is already inside an enclosing sandbox, such as a Codex desktop
+tool execution, macOS may refuse to nest seatbelt. In that specific
+environment, pass <code>--host-sandbox</code> <strong>at init</strong>.
+This uses the API's <code>externalSandbox</code> mode, relying on the
+enclosing sandbox's access restrictions. Never use that flag from an
+ordinary unsandboxed terminal. It does not create a per-room security
+boundary; scope restrictions still come from the contracts and the
+host's permissions. No bypass-approvals or danger-full-access flag is
+used. This Codex version returns its workspace-write config default on
+cold resume/fork; the adapter reapplies and verifies the recorded
+external policy on every turn before accepting the checkpoint.</p>
+<h2 id="what-one-turn-saves">What one turn saves</h2>
+<p>The runner starts/resumes the native lead, sends the scheduler
+message, and waits for <code>turn/completed</code> with status
+<code>completed</code>. It verifies a final reply in the native history,
+checks that no background terminals remain, shuts down the runtime, and
+verifies the persisted rollout's matching <code>task_complete</code>
+marker. It then exports the complete native history segments (including
+fork ancestors) as <code>run/out/_transcript.jsonl</code>, saves the
+final reply as <code>run/out/final_message.md</code>, and commits one
+checkpoint binding:</p>
+<ul>
+<li>the native lead ID, completed turn ID, final reply, and exact native
+rollout;</li>
+<li>all files under <code>workspace/</code> (whole managed room,
+including state, instrument, source records, brief, run, fleet outputs,
+hidden files and empty directories);</li>
+<li>the isolated native Codex home, including saved history, fork
+ancestry, configuration and databases;</li>
+<li>runner state and the effective model, effort, sandbox,
+instruction-source hashes, runtime fingerprint, and absolute working
+directory.</li>
+</ul>
+<p>A completed reply can report a problem. A checkpoint is evidence of a
+restorable conversation boundary, <strong>not</strong> certification
+that the reading passed its checks. Run
+<code>_tools/verify_room.py --room &lt;store&gt;/workspace/room</code>
+after the lead closes.</p>
+<p>Objects are SHA-256 addressed and shared between checkpoints within
+the store, so unchanged corpora and fleet outputs are not duplicated on
+every turn. Manifests and named references are never overwritten.
+<code>HEAD</code> identifies the last committed state. Capture scans
+twice to reject concurrent file changes. Every object is checked before
+restore changes any live file. Credentials, logs, runtime tmp files and
+sockets are excluded from the native home; workspace content has no such
+exclusion. Workspace symlinks and special files fail closed, rather than
+creating uncaptured dependencies.</p>
+<h2 id="branch-b-existing-coders-persistent-lead">Branch B: existing
+coders, persistent lead</h2>
+<p>After the first lead turn, use the managed room's
+<code>run/fleet/batch_NN</code> directory for the external coder. Save
+its transcript and final reply and run the existing batch checks. Native
+coder sessions are not required. Then:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/COMMUNITY turn <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--message</span> collect <span class="at">--batch</span> 01 <span class="at">--summary</span> <span class="st">&#39;mechanical check counts&#39;</span> <span class="at">--label</span> collected-01</span></code></pre></div>
+<p>The lead collects and dispatches the next batch. Its session and the
+whole room are checkpointed when its reply completes. After the
+<strong>last</strong> batch, <code>collect</code> now tells the lead to
+collect, record its remarks, and STOP without consolidating. Give that
+turn the label <code>after-fleet</code>. This is the saved native fork
+point.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/COMMUNITY turn <span class="dt">\</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--message</span> collect <span class="at">--batch</span> NN <span class="at">--summary</span> <span class="st">&#39;mechanical check counts&#39;</span> <span class="at">--label</span> after-fleet</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/COMMUNITY turn <span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--message</span> finish <span class="at">--batch</span> NN <span class="at">--label</span> lead-closed</span></code></pre></div>
+<p><code>finish</code> assumes the last batch was already collected and
+does not collect it twice. Do not start a coder or edit the managed room
+while a lead turn, capture, fork, or restore is running. The runner
+locks out other runner operations on this store; external
+coder/scheduler processes must respect this same serial workflow.</p>
+<h2 id="resume-fork-and-switch-branches">Resume, fork, and switch
+branches</h2>
+<p>Use a text file to send an arbitrary follow-up without shell quoting
+hazards:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset turn <span class="dt">\</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--prompt-file</span> follow-up.txt <span class="at">--label</span> next-reply</span></code></pre></div>
+<p>The runtime is a new process on every invocation. This command
+resumes the saved lead at its stable directory; it is not a new lead
+reading a handoff note.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset fork <span class="dt">\</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--checkpoint</span> lead-first <span class="at">--name</span> alternative-a</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset turn <span class="dt">\</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--prompt-file</span> follow-up-a.txt <span class="at">--label</span> alternative-a-reply</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset fork <span class="dt">\</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--checkpoint</span> lead-first <span class="at">--name</span> alternative-b</span></code></pre></div>
+<p><code>fork</code> first restores the specified checkpoint. It calls
+native <code>thread/fork</code> through the recorded completed turn,
+verifies the inherited final reply and configuration, and saves the
+independent native thread without sending a new model message. The child
+can remain idle until another day. The parent checkpoint remains
+immutable.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset restore <span class="dt">\</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--checkpoint</span> alternative-a-reply</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-B</span> _tools/codex_lead.py <span class="at">--store</span> _lead_sessions/Dorset verify <span class="dt">\</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--checkpoint</span> alternative-a-reply</span></code></pre></div>
+<p>Restore materializes the files and native state at the <strong>same
+absolute paths</strong> used in the conversation. It does not rewrite
+history, file paths, contracts, or hash baselines. Thus branches of one
+store run serially; separate room stores can run in parallel. Existing
+live trees are retained under <code>displaced/</code> during a switch.
+The checkpoints themselves are deduplicated; these displaced recovery
+trees are full copies and can be archived/removed later after
+verification.</p>
+<h2 id="recovery-and-portability">Recovery and portability</h2>
+<p><code>RUNNING.json</code> blocks another operation after an
+interrupted or failed run. Inspect its audit and process IDs.
+<code>recover-run</code> clears it only once those processes have
+exited, preserving the failure record. Then restore a known checkpoint
+and retry. No failed/interrupted turn is committed as a successful
+completed-turn checkpoint.</p>
+<p>A filesystem restore stages all incoming files before replacing any
+live tree and keeps <code>RESTORE.json</code> until verification
+finishes. After an interruption, <code>recover</code> rolls the
+partially applied restore back using the retained trees. It does not
+delete the displaced work. All runner operations on a managed room share
+one OS lock.</p>
+<p>Back up the <strong>whole store</strong>, including
+<code>objects</code>, <code>checkpoints</code>, <code>refs</code>,
+<code>STORE.json</code>, and any evidence you want from
+<code>audit</code>. Preserve the original store path when moving
+machines (or use an environment mounted at that exact path). The Codex
+binary digest, Python version/executable and OS platform are checked;
+changed runtimes fail closed. Keep the matching runtime available and
+retain a valid account login separately.</p>
+<p>The runtime may encode forks as copy-on-write links to ancestor
+rollouts. The whole native home is saved, so those links and their
+history database remain intact. The instrument transcript is an audit
+export of the native segments at their recorded byte boundaries; it is
+never fed back as replacement model history.</p>
+<p>This preserves durable native conversation state and files at
+completed-turn boundaries. It does not promise to preserve live
+processes/REPL memory, machine clock, remote services, or an
+unavailable/replaced model. It cannot recover information already lost
+to prior compaction. It does not claim literal indistinguishability or
+identical future answers. Native resume/fork fields are
+version-dependent, so the installed runtime and the restore
+demonstration must be checked before an upgrade.</p>
+<h2 id="legacy-research-forks">Legacy research forks</h2>
+<p><code>room.py snapshot</code> and <code>room.py fork</code> still
+implement the earlier <strong>filesystem-only, fresh-lead</strong>
+research comparison. They are not native case-lead checkpoints. Their
+last-collect/finish/fork messages are now consistent with the
+pre-consolidation boundary; snapshot creation refuses an invalid
+<code>after-fleet</code> stage. Legacy forks reject instrument drift
+before rewriting allowed paths, rather than adopting every changed hash
+as a new baseline. Use the native adapter above for conversational
+continuity. Do not send <code>room.py message fork</code> to a native
+fork; that message belongs to the older fresh-lead comparison.</p>
+<h2 id="tests">Tests</h2>
+<p><code>python3 -B _tools/test_checkpoints.py</code> covers content
+restoration, branch independence, credential exclusion, corruption,
+immutable labels, deduplication, special-file rejection, inter-process
+locking, fixed-path enforcement, interrupted-restore recovery, and the
+last-batch boundary. The instrument's existing <code>selftest.py</code>
+and <code>selftest_brief.py</code> remain separate. A real Dorset
+cold-resume/fork demonstration is recorded separately, with its native
+sessions and checkpoint IDs retained in its store.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

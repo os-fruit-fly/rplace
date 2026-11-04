@@ -1,0 +1,79 @@
+{
+  "checkpoint_id": "aggregator--claude-v43-1--C4-field--B1.B1b-32",
+  "bundle_sha256": "cc196b40bc79fc1ce3868a022bab819a4bddb9bee2183fc92730a8ab506f6330",
+  "snapshot_manifest_sha256": null,
+  "recipe_sha256": "9d519281a912cd259b8cfb004424ecbf002b6d356ee9598d4870fc9891cf60fd",
+  "commit": "f4c2c6b8496e6fc7dbb5bf2fad13323897896b70",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/out/_head.md",
+      "sha256": "13dedf11156854db202d041412d96332ddea604ca81e4e4b0e9081984140cff5",
+      "bytes": 18104,
+      "source_file": "record-files/13dedf11156854db202d041412d96332ddea604ca81e4e4b0e9081984140cff5.md",
+      "origin": {
+        "blob": "244fff3fc2baf97be50beb73e693e9c2f9bebf4b",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md"
+      },
+      "reading_sha256": "848eb0f1cf9868b1c6088af55506cf788e5ec8f062df7b66546900c956d7fb69",
+      "reading_bytes": 18134,
+      "reading_file": "13dedf11156854db202d041412d96332ddea604ca81e4e4b0e9081984140cff5.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "01-_head",
+      "raw": "../files/13dedf11156854db202d041412d96332ddea604ca81e4e4b0e9081984140cff5.reading.md"
+    },
+    {
+      "path": "workspace/out/contrast.md",
+      "sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "bytes": 7599,
+      "source_file": "record-files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.md",
+      "origin": {
+        "blob": "e47aeca4dab7bb35c528ba9164327619b33f3f71",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/contrast.md"
+      },
+      "reading_sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "reading_bytes": 7599,
+      "reading_file": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-contrast",
+      "raw": "../files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md"
+    },
+    {
+      "path": "workspace/out/notes-B1.md",
+      "sha256": "27a817714c11556e35a83d3d019388a3e9af84e136877204757088443dc9b550",
+      "bytes": 471687,
+      "source_file": "record-files/27a817714c11556e35a83d3d019388a3e9af84e136877204757088443dc9b550.md",
+      "origin": {
+        "blob": "9fff184cb2435872d0ad942f100c11504f697775",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-B1.md"
+      },
+      "reading_sha256": "5313d32b64707012fdbe9ab3953eacf843e8c4d66d422fef2ed068b685f5009c",
+      "reading_bytes": 472277,
+      "reading_file": "27a817714c11556e35a83d3d019388a3e9af84e136877204757088443dc9b550.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "03-notes-B1",
+      "raw": "../files/27a817714c11556e35a83d3d019388a3e9af84e136877204757088443dc9b550.reading.md"
+    },
+    {
+      "path": "workspace/out/stopping-B1.md",
+      "sha256": "f38f8733c37b09c55839fb9a82961e1aaf40f9c7ebe25414c289cdc9d76bafe8",
+      "bytes": 10309,
+      "source_file": "record-files/f38f8733c37b09c55839fb9a82961e1aaf40f9c7ebe25414c289cdc9d76bafe8.md",
+      "origin": {
+        "blob": "eca4fd67b70463dd184baae8e6eecc5a75e18f4a",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/stopping-B1.md"
+      },
+      "reading_sha256": "f38f8733c37b09c55839fb9a82961e1aaf40f9c7ebe25414c289cdc9d76bafe8",
+      "reading_bytes": 10309,
+      "reading_file": "f38f8733c37b09c55839fb9a82961e1aaf40f9c7ebe25414c289cdc9d76bafe8.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-stopping-B1",
+      "raw": "../files/f38f8733c37b09c55839fb9a82961e1aaf40f9c7ebe25414c289cdc9d76bafe8.reading.md"
+    }
+  ],
+  "comparison": null
+}

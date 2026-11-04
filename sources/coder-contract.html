@@ -1,0 +1,722 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coder contract INSTRUMENT | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="coder-contract-instrument">Coder contract
+<strong>INSTRUMENT</strong></h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coder-contract.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coder-contract.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>v32 preserves the method, scope, register, evidence rules and outputs
+of v30. It adds executable pre-final checks and ordering guards so an
+agent can correct a preventable record defect before its final message.
+<code>CHANGELOG-v32.md</code> records the reasons and the exact
+operational changes.</p>
+<p><strong>Two roles sit around this contract, and one rule inside
+§8.</strong> A <em>case lead</em> owns a community's whole account and
+reads <code>CONTRACT-case-lead.md</code> after this file; a room too big
+for one reading, more than 500 items in the window, is coded by
+<em>fleet coders</em> under <code>CONTRACT-fleet-coder.md</code>. Each
+role file says only what differs from this one and wins on that. A fleet
+coder does steps 1 to 3 and writes its slice case; §7 and §8's search
+and verdict are the case lead's. After step 3 the case lead builds the
+forest with <code>tools/tree_builder.py</code> and uses it in step 5.
+The rule: no relation in <code>## Relations</code> may rest on reply
+adjacency alone; a reply is a reply.</p>
+<pre><code>community      r/__SUB__
+your corpus    __CORPUS__          served to you by read, in order. you never open it.
+your briefing  __BRIEF__
+your tools     __READ__            read.header(), read.windows(), read.thread(),
+                                   read.item() — see §3 and AGENT.md
+               __CITE__            cite() and find() — see §3
+               __EMIT__            emit.stage(), emit.code(), emit.theme(),
+                                   emit.thread() — see §3 and §9
+your window    2017-03-31 16:00  -&gt;  2017-04-04 17:00 UTC   (97 hours)
+your outputs   __OUTDIR__/{case.md, notes.md} — you write these two. The other
+               four files are written for you by emit, from what you recorded.</code></pre>
+<p>You are an independent qualitative coder.</p>
+<p><strong>Your case is this community's conduct of r/place</strong> —
+what these people did about the event, in their own venue, in this
+window. The community's ordinary life is context for the case, not the
+case. Work only from what you are given.</p>
+<hr />
+<h2 id="1-the-method">1. The method</h2>
+<p><strong>Gioia, two levels.</strong></p>
+<p><em>1st-order codes are informant-centric.</em> They stay close to
+how people put it, in their own words wherever those are vivid. There
+will be many, and that is correct: here you are being faithful, not
+economical.</p>
+<p><em>Themes are still descriptive.</em> You ask of a group of codes:
+<strong>what are these people doing?</strong> Name that, in their word
+where they have one and in a plain phrase where they do not. A theme is
+a phrasal descriptor, not a bin for near-duplicates and not a category
+from outside; codes that look nothing alike on the surface often belong
+to one, and a theme may gather many codes or one. In Gioia's terms your
+themes are his <em>first-order concepts</em>: the informants'
+categories, reduced to a manageable number and labelled in their terms.
+His second-order themes and aggregate dimensions are outside your task:
+they are made later, by a reader who sees every community. Do not gloss
+a theme with what it is "an instance of": naming the category above a
+theme is the level above yours.</p>
+<p><strong>Eisenhardt, the within-case account first.</strong> Each case
+is understood on its own terms and written up standalone before any
+comparison. Your within-case account is §8. Comparison, enfolding the
+literature and building propositions are not yours.</p>
+<p><strong>Write so another reader could follow you.</strong> Your
+outputs go to a reader that builds the account across three hundred
+communities and has not seen your corpus. It does the abstracting; what
+it needs from you is the description, faithful and checkable. Everything
+should stand without you there to explain it.</p>
+<hr />
+<h2 id="2-setting">2. Setting</h2>
+<p>This is Reddit, and the event is <strong>r/place</strong>: something
+the site ran as an April Fools' feature in 2017. A shared canvas of
+coloured pixels began blank; any logged-in user could place one pixel at
+a time, with a wait between placements, and any pixel could be
+overwritten by anyone. Placement was disabled on <strong>2017-04-03 at
+17:00 UTC</strong>. People chose what to place, and some of them talked
+about it in the subreddits they read. Your corpus might be one such
+subreddit's discussion.</p>
+<p><strong>Day markers are the corpus's, not calendar days.</strong>
+<code>d0</code> begins at the moment the canvas opened, 2017-03-31 16:00
+UTC, and each <code>d</code> is the twenty-four hours from there; every
+item line prints its marker, date and clock together,
+<code>d1 04-01 16:08</code>, and that is the only form you write them
+in. A day number on its own cannot be aligned with anything; a calendar
+date with a clock always can, and <code>t_utc</code> is what carries the
+time.</p>
+<p>Ordinary Reddit mechanics are also setting: posts and comment trees,
+scores and voting, flair, crossposts, stickied threads, moderator
+removals, <code>[deleted]</code> and <code>[removed]</code>. A score is
+a number taken at retrieval, weeks after the event, fuzzed by the
+platform, with no record of who voted or when: report it as a number
+beside an item where it matters, and never code it as something these
+people did. <code>voting down</code> is not a code and not a theme; a
+downvoted comment is a comment.</p>
+<p><strong>A community may run its own April Fools joke, and that is not
+the event.</strong> Subreddits recolour their stylesheet, swap their
+banner, rename themselves or restyle their flair on 1 April, and their
+members argue about it. Talk about <em>this subreddit looking different
+today</em> is talk about that, not about the canvas, however exactly the
+two coincide in time and however much the colours happen to match. Such
+talk is conduct and you code it — but never as conduct about r/place,
+and say in the code's note which of the two you took it to be. Where you
+cannot tell, say that instead of choosing. <strong>A thread that is the
+community's own joke is disposed <code>coded</code>, not
+<code>out_of_scope</code>: being a joke does not put it out of scope,
+being about nothing this community did does. §5's scope test says the
+same, and the note on every such code is not optional.</strong></p>
+<p><strong>You have not been given anyone else's account of what any
+community drew, defended, allied with or destroyed, and you must not
+reconstruct one.</strong> No maps, atlases, wikis, timelines or
+retrospectives — those are other people's codings of this event.</p>
+<p><strong>You may remember things about r/place.</strong> Code from the
+corpus regardless. A memory that happens to match what the corpus says
+is fine; a code that rests on the memory rather than on text
+<code>cite</code> can find is not. If you notice yourself reaching for
+something you know rather than something you read, say so in that code's
+note.</p>
+<hr />
+<h2 id="3-rules">3. Rules</h2>
+<ol type="1">
+<li><p><strong>Files.</strong> Your corpus, your briefing, nothing else.
+No web, no other file. <strong>The corpus reaches you through
+<code>read</code>, and you do not go around it.</strong> Your
+environment may well contain a general file tool; using it on anything
+here is a breach of this rule, and <code>read</code> records what it
+served, so a reading it never served is visible afterwards. Do not write
+a script to slice, count or batch your own reading either — everything
+you need is a call.</p></li>
+<li><p><strong>Grounding.</strong> Every code rests on text
+<code>cite</code> can find in your corpus. The briefing is a reading
+aid, never evidence; when you lean on it, say so in the code's
+note.</p></li>
+<li><p><strong>Quoting — you never invent a quote or an offset.</strong>
+<code>cite(item_id, "…")</code> takes the words you believe are there
+and returns the exact text and its offsets; you write back what it
+returns. If it refuses, your quote is wrong — fix it or pick another
+passage. Where an item has no body — an image post, a link post,
+<strong>or a post whose body has been removed or deleted while its title
+survives</strong> — its title is what <code>cite</code> searches; where
+there is no citable text at all, the item cannot carry a code and you
+say so in <code>notes.md</code>. Text a reply quotes from a deleted
+parent sits in the reply's own body, so it is citable like anything
+else. <strong>Cite everything in a batch before you emit any of
+it.</strong> <code>emit</code> is append-only: a <code>cite</code> that
+refuses partway through a run of <code>emit.code</code> calls leaves the
+codes already written on disk with no way to review or withdraw them —
+including the ones you would have changed had the batch resolved. A
+quote can fail for something as small as a superscript caret. Resolve
+every quote first, then emit the batch.</p></li>
+<li><p><strong>Searching goes through <code>find</code>.</strong>
+<code>find("regex")</code> returns matching items and logs the query, so
+your query log is produced for you and you never write one. Do not
+search by scrolling.</p></li>
+<li><p><strong>Search to test a reading, never to build one.</strong>
+<em>During §5's reading</em>, do not read what a search returns — the
+reading order is fixed so it cannot be shaped by what you expect.
+<em>From §8 onward</em>, searching for evidence against your own reading
+is required of you, and reading what it returns is the point.</p></li>
+<li><p><strong>Register — their words always win.</strong> Where these
+people have a word, use it, even if it is <code>raid</code>,
+<code>defend</code>, <code>ally</code>, <code>border</code> or
+<code>war</code>. The test applies only to words <em>you</em> supply:
+each load-bearing noun and verb you choose should be either a word they
+used or an ordinary everyday word. If you reached for one from a
+specialist vocabulary these people never used, you have imported a
+frame, and the frame is doing work your evidence is not.</p></li>
+<li><p><strong>Absence is data.</strong> <code>[deleted]</code> and
+<code>[removed]</code> are what the record says. Never reconstruct
+removed content and never code a removed <strong>body</strong>. A
+surviving <strong>title</strong> is not removed content — it is what
+that person published and it is still standing — so it is citable like
+any other body-less item under Rule 3. Code the surviving replies too,
+and note in each case that the body is gone.</p></li>
+<li><p><strong>Real names.</strong> Authors are real accounts, nothing
+is pseudonymised, and this is public data. Code what people did under
+the names they did it under, including things that reflect badly on
+them. Removing identifying detail happens later and is not your
+job.</p></li>
+<li><p><strong>Flag, never fetch.</strong> Suspected truncation or
+missing threads goes in <code>notes.md</code>. Never try to retrieve
+anything.</p></li>
+<li><p><strong>Record as you go. Revise nothing, ever.</strong>
+<code>emit</code> only ever appends: a code you record cannot be edited,
+reordered or withdrawn, so recording one early costs you nothing and
+conceals nothing. Mint a code at the moment you are ready to stand
+behind it, not before and not in a batch at the end.
+<code>case.md</code> and <code>notes.md</code> are different — those you
+write once, at the end, when everything is known.</p>
+<p><strong>Announce each step before you begin it</strong>, with
+<code>emit.stage()</code>. That is how the harness knows which step a
+code was minted in, so you are never asked to remember or declare
+it.</p></li>
+<li><p><strong>Machine-generated text is setting, not conduct.</strong>
+Some accounts post automatically: a bot anyone on the site can summon, a
+bot that answers whenever a subreddit is named. What such an account
+emits is platform behaviour, of a kind with a score or a timestamp, and
+it is never coded as something this community did. <strong>What a person
+did to summon it is conduct</strong>, and so is what people here go on
+to do with what it produced — both are codeable in the ordinary way.</p>
+<p><strong>The exception is a bot this community or its moderators
+operate</strong>: an automoderator carrying this subreddit's own rules,
+a stickied post a mod team schedules. That is an operator acting through
+a tool, and it is conduct. Code it, and name the operator rather than
+the bot in your note.</p>
+<p>The header lists accounts whose names end in <code>bot</code>.
+<strong>That is a flag, not a ruling.</strong> An account it missed is
+still a bot; an account it caught may be a person. Disagree with it in
+either direction and say so. Where you cannot tell which kind you have,
+code nothing from it and say that in <code>notes.md</code>.</p></li>
+</ol>
+<hr />
+<h2 id="4-step-1--the-briefing">4. Step 1 — the briefing</h2>
+<p>Your briefing describes this community's ordinary week before the
+event: vernacular, who talks, recurring formats, register, jokes with a
+history, moderation. It was written by a different reader working from a
+different week; it is a division of reading, not a secret. Read it for
+orientation. Where a claim has no quote behind it, treat it as
+unsupported and say so in <code>notes.md</code>.</p>
+<hr />
+<h2
+id="5-step-2--go-through-every-thread-and-decide-what-this-case-is">5.
+Step 2 — go through every thread, and decide what this case is</h2>
+<p><strong>This step finishes before you code anything.</strong> You
+pass over the whole corpus once and come out with a decision about every
+thread. Coding is §6 and begins afterwards.</p>
+<p><strong>The corpus runs in time order, oldest thread first, and
+nothing is reordered.</strong> Work straight down it.
+<code>read.windows(n)</code> hands you the next <code>n</code> threads
+in that order — a long thread as its triage window, a thread shorter
+than its window whole — and <code>read.thread(id)</code> hands you a
+thread entire. Twenty-five at a time is the intended size.</p>
+<p>That is not a convenience. It is the only order in which the week is
+legible as a week — which practice appears before which, what a thread
+is answering, when the room changes its mind. §8 asks you what set off
+what, and no rearrangement of this corpus could let you answer it.</p>
+<p>You may find yourself judging a very long thread early, before you
+have much sense of this community. Read its window, and if you cannot
+tell, keep reading — a long thread costs you its title, five hundred
+words and three replies wherever it falls, so there is nothing to be
+saved by putting it off.</p>
+<h3 id="the-triage-window">The triage window</h3>
+<p>Every thread carries one. It is:</p>
+<ul>
+<li>the <strong>title</strong>,</li>
+<li>the <strong>opening post</strong>, up to its first <strong>500
+words</strong>,</li>
+<li>and its <strong>three top-level replies with the most discussion
+under them</strong> — those replies themselves, not what hangs off
+them.</li>
+</ul>
+<p>Where a thread is shorter than its window, there is nothing to
+decide: you have read it.</p>
+<p>Otherwise read the window, then answer one question — <strong>does
+this touch the event?</strong></p>
+<ul>
+<li><strong>Yes.</strong> Read the whole thread, however long. A thread
+about this community's conduct of r/place is never abandoned for
+length.</li>
+<li><strong>No.</strong> Stop there and record it.</li>
+</ul>
+<p>Where you cannot tell, keep reading. Uncertainty is a reason to
+continue, never to stop.</p>
+<p><strong>What this deliberately gives up.</strong> A single stray
+mention buried deep in a long thread about something else will not reach
+you, and that is intended rather than regretted: scattered remarks
+inside a match thread are not this community organising, and treating
+them as the same object would make the case less true, not more
+complete. If such a thing matters, §8's disconfirmation search is where
+it surfaces.</p>
+<h3 id="recording-it">Recording it</h3>
+<p>Record every thread with <code>emit.thread</code> as you finish with
+it — that is what makes the reading watchable while it happens rather
+than only afterwards. Where you dispose of a run of threads in one
+sweep, <code>emit.threads_bulk</code> records the sweep as one pass and
+says so.</p>
+<p>For every out-of-scope thread of <strong>ten IN-WINDOW items or
+more</strong>, <code>cite</code> one line — the line that convinced you
+it was about something else. Below ten items a bare reason is enough.
+<em>An exclusion nobody has to defend is not a judgment.</em></p>
+<p>Reading the whole thread does not replace this cited line. The
+requirement is triggered by three facts only: the thread is
+<code>out_of_scope</code>, it was read rather than left
+<code>unread</code>, and it has ten or more in-window items.</p>
+<p><strong>In scope:</strong> what people do about the event, around it,
+in response to it. <strong>Also in scope</strong> — an ordinary
+community practice the event visibly <em>recruits</em>: an existing
+ritual, format, in-joke or role pressed into service. Code it as it
+appears in that service and note that it predates or exceeds the event.
+<strong>Also in scope, as conduct and not as the event</strong> — the
+room's own 1 April conduct, its own joke as §2 has it: disposed
+<code>coded</code>, every code on it carrying a note that says it is not
+about the canvas, so that the two jokes stay apart in the record instead
+of one being dropped.</p>
+<p><strong>After 2017-04-03 17:00 nobody could place a pixel</strong>,
+and the last twenty-four hours of your window fall after that moment.
+Everything there is people talking about something already finished —
+but <strong>recounting, arguing about what happened, mourning it,
+claiming credit for it and settling scores over it are all things people
+do, and all codeable.</strong> Do not treat that day as inert because
+nobody is placing pixels; it is where you will see this community's own
+first account of its own event. Never confuse that account with the
+event.</p>
+<h2 id="6-step-3--first-order-codes">6. Step 3 — first-order codes</h2>
+<p>One code per passage. <strong>A passage is one contiguous span within
+one item's body — a sentence or a paragraph, not a whole comment unless
+the comment is one thing.</strong> Passages do not overlap, and each is
+exactly the span <code>cite</code> returned. Cite the whole chunk the
+code is about, not a fragment of it: where three sentences do one thing,
+the passage is the three sentences. The forest hangs every code on its
+item in text order, so each turn reads as a sequence of chunks,
+<code>[c0012 na c0015]</code>: a code id where a chunk was coded,
+<code>na</code> where a stretch of the text was passed over. A thread's
+codes are therefore its items' chunks, in order, and nothing in the
+account rests on a code that is not on an item.</p>
+<p>Codes are minted <strong>per passage and stay close to the
+text.</strong> A label may repeat across passages when the same thing
+recurs, and that repetition is a signal worth having — but <strong>never
+widen a label so that it covers more passages.</strong> Generalising to
+economise is how the first level quietly becomes the second, and the
+second level is §7's job, not yours here.</p>
+<p>Gerund-led, concrete, of this case, in their words where they are
+vivid. Code actions and practices, not topics or feelings alone — but
+joking, thanking, mourning, celebrating, complaining and recounting
+<strong>are</strong> codeable when they are things people do together or
+to each other.</p>
+<p>Where something happens <em>between</em> people — an exchange, a call
+and its answer — code each turn as its own passage and give them a
+shared <code>exchange_id</code>, so the interaction survives without
+pretending it lives in one item.</p>
+<h3 id="what-a-code-looks-like">What a code looks like</h3>
+<p><em>From an unrelated study of home-baking forums. This shows the
+shape of a code and implies nothing about your community.</em></p>
+<blockquote>
+<p><strong>the passage</strong> —
+<code>"pulled it at 40 min like you said and the middle is still gummy, gonna blame the tin"</code></p>
+<p><strong>1st-order</strong>
+<code>blaming the tin for a gummy middle</code> — their words:
+<em>gummy</em>, <em>the tin</em>. Not
+<code>reporting a quality defect</code>, which is a category from
+outside, and not <code>expressing frustration</code>, which is not an
+action.</p>
+</blockquote>
+<blockquote>
+<p><strong>the passage</strong> —
+<code>"we all say 40 min but nobody agrees what done even means here"</code></p>
+<p><strong>1st-order</strong>
+<code>saying nobody agrees what done means</code></p>
+</blockquote>
+<p>Those two codes, with a dozen others like them, later gather into
+<strong>one theme</strong> —
+<code>working out what counts as done</code> — because that is what
+these people are doing, and they have no single word for it, so the
+phrase is plain. The theme is neither code reworded, and the two codes
+are not similar to each other at all.</p>
+<p><strong>Account for everything you read in a selected
+thread.</strong> Where a passage is not a practice it still gets a code,
+in your own words, and you may make as many such codes as the material
+needs — cluster the awkward material by <em>kind</em>; how you divide it
+is itself a reading. A stretch you leave uncoded shows in the forest as
+<code>na</code> and is a choice a reader can see: leave it when the
+words do nothing (a greeting, a signature, a quoted link), not to save
+time. Where a commenter describes what is in an image or at a link, that
+description is citable as <em>what that commenter said</em>, attributed
+to them, never as your own observation.</p>
+<p><strong>A passage may carry more than one code</strong> — two if it
+is doing two things or if you could not settle on one, three if your
+reading is more diffuse than that. Do not also grade your confidence;
+the labels are the grade.</p>
+<h3 id="anything-the-thread-points-at--one-list-one-line-each">Anything
+the thread points at — one list, one line each</h3>
+<p><strong>In a thread you kept, every time the record points at
+something outside it, record it with <code>emit.pointer</code> at the
+passage that names it.</strong> Another subreddit, a Discord, a
+strawpoll, a Google doc, a voice channel, another site — <strong>one
+list</strong>. A thread that names a Discord and a subreddit gives you
+<strong>two lines</strong>, one each.</p>
+<pre><code>emit.pointer(cited,                       # what cite() handed you: the words that name it,
+                                          # and the item they sit in
+             raw=&quot;discord.gg/xxxx&quot;,       # verbatim — the r/, the invite link, the typo
+             normalised=&quot;discord&quot;,        # your reading, or None
+             kind=&quot;off_platform&quot;,         # subreddit | off_platform
+             relation=&quot;gave-help-to&quot;,     # for a subreddit; see the vocabulary below
+             moved=&quot;partial&quot;,             # did organising move there: yes | partial | no
+             what_still_returns=&quot;target images and a nightly summary&quot;,
+             what_you_cannot_see=&quot;the decision that set the target&quot;,
+             thread_id=&quot;zzzz01&quot;,
+             code_ids=[&quot;c0011&quot;])</code></pre>
+<p><strong>Only from threads you kept.</strong> A pointer inside a
+thread you recorded <code>out_of_scope</code> is refused. This is a
+record of what these people pointed at <em>while doing the thing</em>,
+not of every link in the room's week. That restriction is what makes the
+list countable: a denominator of kept threads, rather than a search over
+everything.</p>
+<p><strong>Give the words, not only the item id.</strong> <em>An invite
+link in 6363ka</em> is a claim, and a reader has to take it. The words
+themselves, with the item they sit in, are a reference somebody can go
+back to and check. Going through <code>cite</code> means there is no way
+to record a pointer on words that are not in the body. <strong>If you
+cannot cite it, it does not go here</strong> — say it under §8's
+Saturation instead, because a venue you inferred is not a venue you
+saw.</p>
+<p><strong><code>raw</code> verbatim and <code>normalised</code>
+separately, and do not silently correct.</strong> A handle can reach you
+with a character missing or a letter wrong, and you will not be able to
+tell whether the participants wrote it that way or something before you
+dropped it. Correcting it in <code>raw</code> removes the evidence that
+it happened; never reading it at all leaves one place recorded under two
+names. Put the record in <code>raw</code> and your reading in
+<code>normalised</code>, and both questions — what was written, and what
+you took it to mean — stay answerable afterwards.</p>
+<p><strong>For a subreddit</strong>, <code>relation</code> is one of
+<code>allied · attacked · attacked-by · asked-help-from · gave-help-to · negotiated · mourned · destroyed-carelessly · mentioned-only</code>.
+<strong><code>mentioned-only</code> is a real value, not a
+fallback.</strong> Do not judge whether the relation mattered — you are
+reading one side and cannot see the other. Type it, quote it, move on.
+<code>moved</code> stays <code>no</code>.</p>
+<p><strong>For somewhere the talk went</strong>, <code>moved</code> and
+the two <em>what</em> fields are the ones that matter, and
+<code>relation</code> can stay at its default. Answer them as well as
+you can now; if you only work it out while writing §8, say it there and
+leave the field <code>None</code> — nothing is ever re-emitted.</p>
+<p><strong>Pointing at nothing is a finding.</strong> A community that
+organised without referring to anyone else is a case, not a case with
+something missing from it. If that is yours, the absence of these lines
+says so and you need do nothing.</p>
+<p>Where the same thing is pointed at more than once, one line is
+enough: use the passage that shows it best.</p>
+<hr />
+<h2 id="7-step-4--themes">7. Step 4 — themes</h2>
+<p>Group your codes into themes, asking of each group: <em>what are
+these people doing?</em> Each theme is gerund-led, concrete, bound to
+this case, passes the register test in Rule 6, and names the doing and
+not how it came out: <code>asking r/tagpro for room</code>, not
+<code>asking r/tagpro for room and taking no for an answer gracefully</code>.
+How it came out is §8's, with its passage.</p>
+<p>A code that belongs with nothing else stands as its own theme. That
+is a legitimate outcome, not a failure to consolidate.</p>
+<p><strong>Assign every code to exactly one theme.</strong> Grouping the
+codes once and finding that it holds is a normal outcome. <strong>Say so
+anyway, in one line</strong>: whether you regrouped, and if you did not,
+whether you went back and looked at the grouping again after §8. A blank
+<code>regrouped_from</code> cannot be told from a coder who never looked
+twice, which is the one thing the field exists to show. Where you do
+regroup — splitting a theme, merging two, lifting a code out of one and
+into another — record it on the theme itself in
+<code>regrouped_from</code>, naming what it came out of and what made
+you separate them. That record is how the reading you arrived at stays
+distinguishable from the reading you started with, and it matters most
+when the thing that made you regroup was §8.</p>
+<p>Every <code>code_id</code> resolves to exactly one
+<code>theme_id</code>, and every theme resolves downward to at least one
+code — a theme with nothing under it is a theme you brought with
+you.</p>
+<hr />
+<h2 id="8-step-5--the-within-case-account">8. Step 5 — the within-case
+account</h2>
+<p>Into <code>case.md</code>:</p>
+<p><strong>Use these headings exactly, as <code>##</code> lines and in
+this order:</strong> <code>## Chronology</code>,
+<code>## Relations — what set off what</code>,
+<code>## Posts against comments</code>, <code>## Counter-reading</code>,
+<code>## Saturation</code>, and then §9's <code>## Selection</code>,
+<code>## Other communities named</code>, <code>## Absence</code>. What
+reads your file finds each section by its heading, so <strong>the
+wording of the heading is not yours to improve</strong> — everything
+under it is.</p>
+<p><strong>Chronology.</strong> What happened, in order: when the event
+first shows up, the episodes that follow, how it ends inside your
+window. You supply the episodes: an episode is a stretch of the coded
+threads you can name by what the room was doing, bounded by the ids of
+its first and last item, and it may run across threads; what it rests on
+is the codes on those items, in the forest, and nothing else. Counting
+is done for you.</p>
+<p><strong>Relations.</strong> What set off what — which practice is a
+response to which. A link needs a passage in which the later turn
+answers, names or recalls the earlier one, or the same speaker says so;
+cite it, one passage per link. Order alone — one thread after another,
+one turn under another — is not a link: report it as <em>follows</em>,
+with the interval, and no more. Say when the corpus does not show a link
+you expected.</p>
+<p><strong>Posts against comments.</strong> Do the two layers tell the
+same story? Log every contradiction explicitly — <em>"the posts say X;
+the comment layer says Y"</em> — and where a claim lives in only one
+layer, say which.</p>
+<p><strong>Counter-reading.</strong> State your one-sentence reading of
+this case.</p>
+<p><strong>Then, before you search, write down what you would expect
+this corpus to contain if that reading were wrong.</strong> One or two
+sentences. Not what would be <em>missing</em> — what would be <em>there
+instead</em>. Searching for the absence of something mostly returns
+nothing, and nothing reads like agreement; searching for the presence of
+something contrary is a test your reading can actually fail. Your
+reading is in your own words, so its opposite is too: nothing here comes
+from outside this case, and if you find yourself reaching for a word
+these people never used, you have written the wrong sentence.</p>
+<p>Then use <code>find</code> to look for <strong>that</strong>, read
+what it returns, and record what you found — including that you found
+nothing, if that is what happened. Call
+<code>emit.stage("step5_counter")</code> before you start looking, so
+that anything this turns up is distinguishable from what you already
+had.</p>
+<p>Both sentences go in <code>case.md</code>: the reading, and what
+would have unseated it.</p>
+<p><strong>Saturation.</strong> Does the record look whole — truncation,
+removals heavy enough to hide practice, threads continuing where you
+cannot see, off-platform venues you can only glimpse?</p>
+<p><strong>A venue this community moved to is conduct, not a
+gap.</strong> If the talk went to a Discord, a strawpoll, a Google doc,
+private messages or a voice channel, that is something these people
+<em>did</em> — they chose where to organise and what would come back
+here — and it is coded like anything else you can cite. Report it as
+incomplete evidence only for the part you genuinely cannot see. The
+record of <em>which</em> venues is <code>pointers.jsonl</code>, emitted
+while you code — §6 — and the three questions it asks about each one are
+answered best here, once you have read the thread whole.</p>
+<p>Where the last genuinely new code fell in your reading is
+<strong>computed from what you recorded</strong> and is not yours to
+state. Do not estimate it.</p>
+<h3 id="the-counter-reading-can-turn-up-material-you-have-not-coded">The
+counter-reading can turn up material you have not coded</h3>
+<p>That is what it is for. <strong>Code it.</strong> Any code arising
+from the counter-reading carries <code>discovered_at: "step5"</code>,
+and if a searched thread turns out to be about the event, say so —
+<code>emit.thread</code> will not take it twice, so tell it in
+<code>notes.md</code> which thread changed and why. Nothing already
+recorded is revised, and the disagreement stays visible.</p>
+<p>If a late finding overturns your one-sentence reading, say so in
+<code>case.md</code>. Being wrong and recording it beats a tidy
+account.</p>
+<h3 id="the-verdict">The verdict</h3>
+<ul>
+<li><strong><code>full</code></strong> — this community's window shows
+practice around the event.</li>
+<li><strong><code>trace</code></strong> — the event is mentioned but
+nobody is visibly doing anything about it. Code the mentions and stop
+there.</li>
+<li><strong><code>none</code></strong> — nothing about the event at all.
+Say what the corpus does consist of and what you searched for before
+concluding it.</li>
+</ul>
+<p><strong>All six outputs exist under every verdict.</strong> A
+<code>none</code> verdict still records every thread through
+<code>emit.thread</code>, with a cited line for every excluded thread of
+ten or more items you read, and still has a <code>case.md</code> saying
+what the corpus was instead, and <code>notes.md</code>.</p>
+<hr />
+<h2 id="9-outputs">9. Outputs</h2>
+<p><strong>No minimum length and no maximum</strong> — length is set by
+the material, not by a target.</p>
+<p><strong>You do not write JSON.</strong> Four of the six outputs are
+built by <code>emit</code> from calls you make while working. You never
+open them, never format a line, and never compute a count.</p>
+<p><strong>Both tools are objects you construct once, at the top of your
+first python call.</strong> The lines below are the whole setup; nothing
+else imports and nothing is global:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys<span class="op">;</span> sys.path.insert(<span class="dv">0</span>, <span class="st">&quot;__RUNDIR__&quot;</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> emit <span class="im">import</span> Emit</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cite <span class="im">import</span> Corpus</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>emit <span class="op">=</span> Emit(<span class="st">&quot;__OUTDIR__&quot;</span>, corpus_path<span class="op">=</span><span class="st">&quot;__RECORD__&quot;</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>_c <span class="op">=</span> Corpus(<span class="st">&quot;__RECORD__&quot;</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>cite, find <span class="op">=</span> _c.cite, _c.find      <span class="co"># cite(item_id, &quot;…&quot;) and find(&quot;regex&quot;) from here on</span></span></code></pre></div>
+<p>Then, for the rest of the run:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>emit.stage(<span class="st">&quot;step3_codes&quot;</span>)                  <span class="co"># before each step. that is all it needs.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># step1_brief step2_read step3_codes</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># step4_themes step5_counter step6_account</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># step7_write</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># The seven names map onto the steps thus: step1_brief is §4; step2_read is §5; step3_codes</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># is §6; step4_themes is §7; step5_counter is §8&#39;s search; step6_account is writing case.md;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># step7_write is writing notes.md. A fleet coder announces step6_account before its slice</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># case and step7_write before its notes. discovered_at is stamped from the last name you</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># announced, so announce the right one before you write.</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>emit.code(cited,                           <span class="co"># exactly what cite() handed you, unchanged</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;blaming the tin for a gummy middle&quot;</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>          thread_id<span class="op">=</span><span class="st">&quot;zzzz01&quot;</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>          exchange_id<span class="op">=</span><span class="va">None</span>,                <span class="co"># or a shared id, for a call and its answer</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>          note<span class="op">=</span><span class="st">&quot;&quot;</span>)                         <span class="co"># -&gt; returns the code_id</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>emit.theme(<span class="st">&quot;&lt;the case-bound theme label&gt;&quot;</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;why this theme exists&quot;</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>           [<span class="st">&quot;c0007&quot;</span>, <span class="st">&quot;c0011&quot;</span>],             <span class="co"># the codes under it</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>           regrouped_from<span class="op">=</span><span class="va">None</span>)             <span class="co"># or: what it came out of, and why you split it</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>emit.retract(<span class="st">&quot;c0042&quot;</span>, <span class="st">&quot;emitted twice — a script re-run&quot;</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># withdraw a code by APPENDING a retraction.</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># nothing is edited, nothing is deleted; the row</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># stays with retracted: true and your reason.</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>emit.theme_add(<span class="st">&quot;t03&quot;</span>, [<span class="st">&quot;c0042&quot;</span>])           <span class="co"># put a later code into a theme that exists. a code</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># minted after §7 does NOT have to found a new</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># theme — say where it belongs.</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>emit.thread(<span class="st">&quot;zzzz01&quot;</span>,</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>            read<span class="op">=</span><span class="st">&quot;full&quot;</span>,                   <span class="co"># full | triaged | unread</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>            verdict<span class="op">=</span><span class="st">&quot;out_of_scope&quot;</span>,        <span class="co"># coded | out_of_scope</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>            reason<span class="op">=</span><span class="st">&quot;a running joke unrelated to the event&quot;</span>,</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>            excluded_quote<span class="op">=</span><span class="va">None</span>)            <span class="co"># what cite() returned, for a read out-of-scope</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># thread of ten IN-WINDOW items or more; None only</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>                                           <span class="co"># for unread or below-ten exclusions</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>emit.pointer(cited,                        <span class="co"># what cite() returned, unchanged</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>             raw<span class="op">=</span><span class="st">&quot;discord.gg/xxxx&quot;</span>,        <span class="co"># verbatim; or &quot;r/somewhere&quot;</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>             kind<span class="op">=</span><span class="st">&quot;off_platform&quot;</span>,          <span class="co"># subreddit | off_platform</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>             normalised<span class="op">=</span><span class="st">&quot;discord&quot;</span>,         <span class="co"># your reading, or None</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>             relation<span class="op">=</span><span class="st">&quot;mentioned-only&quot;</span>,    <span class="co"># subreddits; see §6</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>             moved<span class="op">=</span><span class="st">&quot;partial&quot;</span>,              <span class="co"># yes | partial | no</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>             what_still_returns<span class="op">=</span><span class="st">&quot;...&quot;</span>,</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>             what_you_cannot_see<span class="op">=</span><span class="st">&quot;...&quot;</span>,</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>             thread_id<span class="op">=</span><span class="st">&quot;zzzz01&quot;</span>,</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>             code_ids<span class="op">=</span>[<span class="st">&quot;c0011&quot;</span>],</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>             note<span class="op">=</span><span class="st">&quot;&quot;</span>)                      <span class="co"># -&gt; returns the pointer_id.  §6.</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>emit.threads_bulk([{...}, {...}])          <span class="co"># the sweep below your stopping point, as one pass</span></span></code></pre></div>
+<p>Three things follow from this and are worth knowing rather than
+discovering.</p>
+<p><strong>A retraction appends; it does not edit.</strong> Rule 10 does
+not move — you revise nothing. But if you emit something twice and
+notice, <code>emit.retract(code_id, reason)</code> is how you say so.
+The code stays in the file with <code>retracted: true</code> and your
+reason beside it, so what happened is visible in the file rather than
+lost in a note. Emitting the same thing twice is easy to do by running
+one call twice; saying so is one line.</p>
+<p><strong><code>discovered_at</code> is not a parameter.</strong> The
+harness stamps it from the last stage you announced, so announce the
+right one and you are never asked to label a code yourself. It reads
+<code>step3</code> for a code minted while reading, <code>step5</code>
+for one the counter-reading turned up, and otherwise the name of
+whatever step you were in — a code you mint while writing the account
+says so, rather than borrowing the credit of a discovery.</p>
+<p><strong>A code belongs to exactly one theme, and <code>emit</code>
+refuses a second.</strong> Every code must end up under one; a theme
+with nothing under it is refused. You will be told at the end if a code
+is still outside every theme.</p>
+<p><strong><code>text</code>, <code>start</code> and <code>end</code>
+come from <code>cite</code>, by construction.</strong> Pass its return
+value straight through. <code>emit</code> checks every quote against the
+record as it arrives and refuses one that is not a slice of the item's
+body, an empty one, or one whose item is not in the thread you named;
+the end-of-run checks verify them all again. The citation contract holds
+at the output end as well as the input end.</p>
+<p><code>item_kind</code>, <code>author</code> and
+<code>created_utc</code> are read from the record and added to the code
+for you.</p>
+<p><strong><code>case.md</code></strong> — §8, plus
+<strong>Selection</strong> (how you decided) · <strong>Other communities
+named</strong> (what this community makes of the places it points at —
+<em>which</em> places, and where each was named, is
+<code>pointers.jsonl</code> and is emitted at §6, so this section is for
+what you want to say about them and nothing above you depends on how you
+format it; omit if none) · <strong>Absence</strong> (what the removals
+look like and what the surviving replies still show).</p>
+<p><strong><code>notes.md</code></strong> — nothing in it is graded.
+<strong>What was hard</strong> — the genuinely difficult passages, what
+was ambiguous, what you nearly coded and did not, where their words
+defeated you. <strong>Data problems.</strong> <strong>Anomalies and
+leads.</strong> <strong>Complaints</strong> — <em>be blunt.</em> What
+here was unclear, contradictory, or asked something you could not
+sensibly do? What did you want and not have?</p>
+<p><strong>Which two of your themes nearly merged, and what kept them
+apart?</strong> One line. You are the only one who knows where that
+boundary was, and nothing in the files can recover it.</p>
+<p><strong>Which code would you defend hardest, and which is the
+thinnest you kept?</strong> Two names, no argument. Nothing else in the
+record carries that judgement.</p>
+<p><strong>How the reading held up</strong> — <em>this is a measurement
+we need, not a confession, and nothing here counts against you.</em>
+Somewhere above some corpus size a reader stops holding all of what it
+has read. The only way to find out where that point is, is to ask a
+reader who has just been there. So tell us:</p>
+<ul>
+<li>whether you at any point worked from your <strong>memory of a
+thread</strong> rather than from what <code>read</code> served you;</li>
+<li>whether you went back to something <strong>because you could not
+remember it</strong>;</li>
+<li>whether earlier threads <strong>went indistinct</strong> while later
+ones stayed sharp — or the reverse;</li>
+<li>whether this run was <strong>interrupted and resumed</strong> (AGENT
+§4), and if so what you did to pick the reading back up;</li>
+<li>and <strong>where</strong> in the corpus each of those happened: a
+thread id, or roughly how far down.</li>
+</ul>
+<p><strong>If none of it happened, say so.</strong> A clear no is as
+useful as a yes, and is what makes the yeses legible. <code>read</code>
+logs every re-read, so what you say here can be checked against the log
+— you are asked because the log can say what you did and never what you
+were doing, or why.</p>
+<p><strong>Final message.</strong> The community, your verdict, your two
+saturation statements, and anything that blocked you. Nothing else — no
+counts, no files.</p>
+<hr />
+<h2 id="10-what-you-are-given">10. What you are given</h2>
+<p>The corpus, served by <code>read</code>, threads oldest first and
+items oldest first within each thread. Nothing is sorted by size, by
+score or by anything else. A thread has to be readable as the thing that
+happened, and a corpus as the week it happened in. Above each thread
+that is longer than its triage window sits that window — the opening
+post's length, and the three most-discussed top-level replies with the
+line each begins at — so you can reach the substance of a long thread
+without anyone reordering it. Item bodies byte-identical to the
+collected record. Real usernames and ids. Threads whole and in order;
+where a thread's opening post falls outside your window it is included
+and marked, so everything you may quote is in your corpus and
+<code>cite</code> can find all of it.</p>
+<p><strong><code>read.header()</code> returns a block of <code>#</code>
+lines.</strong> Item and thread counts, the day-by-day activity
+histogram, every author with their item count and first and last
+appearance, the full thread index with cumulative text share, whether
+every reply's parent is present, how many bodies are
+<code>[deleted]</code>, and which accounts look automatic. It is all
+exact, it was computed before you arrived, and it is the first thing in
+the file.</p>
+<p>Thread sizes appear twice wherever the two differ: all characters,
+and characters written by people. The second is the real one.</p>
+<p>Counting, timing, language, participation, the phase of every
+passage, and the verification of every quote are done for you.
+<strong>Do not recompute any of it.</strong> If you find yourself about
+to write a script that counts, groups, sorts by date, or converts a
+timestamp, the answer is already in the header — and if it genuinely is
+not there, say so in <code>notes.md</code> rather than computing it,
+because that is a defect in the harness and someone needs to know.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

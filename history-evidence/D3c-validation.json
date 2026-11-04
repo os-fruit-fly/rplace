@@ -1,0 +1,10 @@
+{
+  "subject": "aggregator",
+  "complete": true,
+  "completed_turn": true,
+  "launcher_exited": true,
+  "validator_exit_code": 0,
+  "validator_sha256": "889d92f85edcb6314f8bdd867d78984ebbdb1afa6fd3815c1077f4d19bf19258",
+  "report_sha256": "29e6fa07ef7148cb8420e1970c9cb962efbec674e37d7b7c542fe66ff25e60c4",
+  "checked_utc": "2026-10-24T10:47:54.591893+00:00"
+}

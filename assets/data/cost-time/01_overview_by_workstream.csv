@@ -1,0 +1,20 @@
+workstream,provider,model,billable_tokens,uncached_input,cached_input,cache_write,output,reasoning,api_cost_usd,cost_basis,actual_cash_usd,deepseek_peak_usd,deepseek_offpeak_usd,deepseek_openrouter_usd
+Claude Aggregator Full A1 to E2,Anthropic,claude-opus-5-5,21446963146,86758,21222550248,167685376,56640764,,6719.16,"Opus 5.5 list: 4 input, 8 cache write (1 h), 0.20 cache read, 20 output USD/M",,245.6359,122.8179,943.8079
+Claude readers at C2 and C5 (4 calls),Anthropic,claude-opus-5-5,44137,8,0,0,44129,,1.9,"cost logged by fleet.py; the CLI route reported almost no input tokens, so tokens are understated",,0.053,0.0265,0.026
+r/place subreddit (Field): pilots,OpenAI Codex,GPT-6.1 Sol rates,1051674806,25688050,1022717568,0,3269188,593924,186.34,"GPT-6.1 Sol list: 2 / 0.10 / 10 USD/M, no long-context surcharge",,17.7657,8.8829,50.0254
+r/place subreddit (Field): production coding workers,OpenAI Codex,GPT-6.1 Sol rates,5684093400,134992402,5528094336,0,21006662,4746738,1032.86,"GPT-6.1 Sol list: 2 / 0.10 / 10 USD/M, no long-context surcharge",,98.8743,49.4371,271.444
+r/place subreddit (Field): lead before the C4 interview,OpenAI Codex,GPT-6.1 Sol rates,853315796,28250388,822197504,0,2867904,1498851,167.4,"GPT-6.1 Sol list: 2 / 0.10 / 10 USD/M, no long-context surcharge",,16.8498,8.4249,42.1823
+Interview C4 (Field answers),OpenAI Codex,GPT-6.1 Sol rates,12791631,632804,12125312,0,33515,16058,2.81,"GPT-6.1 Sol list: 2 / 0.10 / 10 USD/M, no long-context surcharge",,0.3028,0.1514,0.6688
+Interview C5 (Field answers),OpenAI Codex,GPT-6.1 Sol rates,13647571,418614,13175680,0,53277,25390,2.69,"GPT-6.1 Sol list: 2 / 0.10 / 10 USD/M, no long-context surcharge",,0.2686,0.1343,0.6721
+Interview C5b (Field answers),OpenAI Codex,GPT-6.1 Sol rates,921514,97910,817024,0,6580,3949,0.34,"GPT-6.1 Sol list: 2 / 0.10 / 10 USD/M, no long-context surcharge",,0.0422,0.0211,0.0609
+705 community coding: case leads,OpenAI Codex,gpt-5.6-sol medium,5214547887,156673241,5036451968,0,21422678,6438090,3069.73,"GPT-5.6 Sol list: 4 / 0.40 / 20 USD/M, short-context rates",,102.9279,51.4639,256.7355
+705 community coding: fleet coders,OpenAI Codex,gpt-5.6-sol medium,10526065002,488070982,9975800192,0,62193828,0,7186.48,"GPT-5.6 Sol list, short-context rates",,280.9087,140.4543,562.8392
+705 community interviews D2 (first return),OpenAI Codex,gpt-6.1-sol medium,3235790644,183369280,3040662016,0,11759348,1571033,859.25,GPT-6.1 Sol list with long-context surcharge per response,,87.366,43.683,175.6138
+705 community interviews D3 (re-check),OpenAI Codex,gpt-6.1-sol medium,3530071402,215738211,3303782912,0,10550279,1479448,1199.96,GPT-6.1 Sol list with long-context surcharge per response,,97.2045,48.6022,193.4569
+DeepSeek fleet during aggregator run: B2,DeepSeek via OpenRouter,deepseek-v4.1-flash (B2 partly v4-flash-0731),21215712,9588179,8325376,0,3302157,2940236,3.41,actual OpenRouter charge,3.4114,6.889,3.4445,4.5908
+DeepSeek fleet during aggregator run: B3,DeepSeek via OpenRouter,deepseek-v4.1-flash,162940280,23275194,98372976,0,41292110,35228024,33.75,actual OpenRouter charge,33.7492,57.1233,28.5617,33.9817
+DeepSeek fleet during aggregator run: B4,DeepSeek via OpenRouter,deepseek-v4.1-flash,12275647,2170270,7454208,0,2651169,2098124,3.46,actual OpenRouter charge,3.4568,3.8772,1.9386,2.3907
+DeepSeek fleet during aggregator run: D2v,DeepSeek via OpenRouter,deepseek-v4.1-flash,25552407,11116577,291060,0,14144770,13798027,13.03,actual OpenRouter charge,13.028,20.3104,10.1552,11.0253
+DeepSeek fleet during aggregator run: D3v,DeepSeek via OpenRouter,deepseek-v4.1-flash,27297638,13741326,9216,0,13547096,13186823,12.3,actual OpenRouter charge,12.2954,20.379,10.1895,11.2911
+DeepSeek fleet during aggregator run: E1,DeepSeek via OpenRouter,deepseek-v4.1-flash,3183679,916006,0,0,2267673,1885145,1.73,actual OpenRouter charge,1.7282,2.996,1.498,1.5578
+TOTAL,,,51822392299,1294826200,50092827596,167685376,267053127,,20496.6,,,1059.77,529.89,2562.37

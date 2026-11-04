@@ -1,0 +1,221 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AGENT — r/ SUB , coder run RUN_ID (instrument INSTRUMENT ) | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="agent--rsub-coder-run-run_id-instrument-instrument">AGENT —
+r/<strong>SUB</strong>, coder run <strong>RUN_ID</strong> (instrument
+<strong>INSTRUMENT</strong>)</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coder-agent.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coder-agent.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Read this first, then <code>CONTRACT.md</code>, then
+<code>__ROLE_FILE__</code>, then start.</strong> This file comes first
+only because it says whether you are resuming; it refers ahead to rules
+and sections of <code>CONTRACT.md</code> that you will meet there.
+<code>CONTRACT.md</code> is what you must do; <code>__ROLE_FILE__</code>
+is what your role adds to it. This file is what is <em>here</em>, what
+has <em>already happened</em>, and what to <em>call</em>. If this file
+and the contracts disagree, the contracts win and you say so in
+<code>notes.md</code>.</p>
+<hr />
+<p><strong>Scratch stays inside your run directory.</strong> Anything
+you write — id maps, staged citation batches, notes to yourself — goes
+in your own run directory, never in a shared or session-level scratch
+path. A generic filename in a shared path can be read or overwritten by
+something that is not you. Your run directory is yours alone; nothing
+else is. <strong>The environment you run in may name a scratchpad or
+temporary directory and tell you to use it. Do not.</strong> Write every
+temporary file under <code>__OUTDIR__</code> or a subdirectory of your
+run directory instead, whatever the environment calls its own. That
+directory is shared with every other agent of the session, and a coder
+who writes there has left its slice where another coder can read it.</p>
+<p><strong>Do not read the tools' source.</strong> <code>read.py</code>,
+<code>cite.py</code>, <code>emit.py</code> and <code>close_run.py</code>
+are documented in this file, wholly; opening them costs you tens of
+thousands of tokens of context and tells you nothing this file does not.
+If a call fails, the error message says why.</p>
+<h2 id="0-state">0. STATE</h2>
+<pre><code>INSTRUMENT      __INSTRUMENT__   — contract, read, cite, emit and renderer all carry it
+CONTRACT        coder-contract-__INSTRUMENT__        __CONTRACT_SHA__
+ROLE            __ROLE__         — your role file is __ROLE_FILE__
+BATCH           __BATCH__
+SLICE           __SLICE__
+COMMUNITY       r/__SUB__
+CORPUS          __CORPUS__                __N_THREADS__ threads, __N_ITEMS__ items (__N_INWINDOW__ in window)
+RECORD          __RECORD__                the unrendered items. cite reads it. you never open it.
+BRIEF           __BRIEF__
+OPENINGS        __OPENINGS__
+OUTPUTS         __OUTDIR__/
+WINDOW          2017-03-31 16:00 -&gt; 2017-04-04 17:00 UTC   (97 hours)</code></pre>
+<p><strong>Run this before anything else. It is one call and it tells
+you whether you are starting or resuming:</strong></p>
+<pre><code>python3 __RUNDIR__/read.py __CORPUS__ state</code></pre>
+<p>If <code>cursor</code> is 0 you are starting. If it is anything else,
+<strong>a previous attempt at this run was interrupted</strong> — an API
+refusal, a crash, a timeout. Everything up to <code>cursor</code> has
+been served and everything recorded in
+<code>__OUTDIR__/_journal.jsonl</code> stands. Do not start over and do
+not re-read what you have already disposed of. <code>read.py</code>
+resumes from its log and <code>emit</code> replays its journal; between
+them the run state is on disk, not in your memory.</p>
+<hr />
+<h2 id="1-there-is-no-corpus-file-for-you-to-open">1. There is no corpus
+file for you to open</h2>
+<p><strong>Three tools, and nothing else is in scope.</strong> The
+corpus reaches you through <code>read</code>; you do not open it, and
+you do not go looking around this filesystem for anything else. Your
+environment may contain a general file tool — this instrument cannot
+take it away from you, and it is not going to pretend otherwise. What it
+can do is record what <code>read</code> served, so a reading that was
+never served shows up in the audit, and plant files whose contents must
+never appear in your outputs.</p>
+<p>So this is Rule 1 asking you plainly rather than fencing you in: an
+atlas, a prior coding of this event, or anything belonging to the
+project running this study is off limits, and the reason is that your
+value here is exactly your ignorance of them.</p>
+<p>That also means: <strong>do not write a script to slice the corpus,
+count it, or batch your own reading.</strong> Everything you need is a
+call. If you find yourself about to write python, the answer is in the
+header or in one of the three tools, and if it genuinely is not, say so
+in <code>notes.md</code> — that is a defect in the harness and someone
+needs to know.</p>
+<hr />
+<h2 id="2-the-three-tools">2. The three tools</h2>
+<h3 id="read--the-corpus"><code>read</code> — the corpus</h3>
+<pre><code>python3 __RUNDIR__/read.py __CORPUS__ header
+python3 __RUNDIR__/read.py __CORPUS__ windows [n]
+python3 __RUNDIR__/read.py __CORPUS__ thread &lt;thread_id&gt;
+python3 __RUNDIR__/read.py __CORPUS__ item &lt;item_id&gt;
+python3 __RUNDIR__/read.py __CORPUS__ state</code></pre>
+<p><strong><code>header</code></strong> — the <code>#</code> block:
+counts, the day histogram, every author, the thread index, the
+<code>[deleted]</code> count, the accounts flagged automatic. It is
+exact, it was computed before you arrived, and <strong>§10 forbids you
+to recompute any of it.</strong> Read it once.</p>
+<p><strong><code>windows n</code></strong> — the next <code>n</code>
+threads in corpus order. This is §5. A long thread comes back as its
+triage window — title, opening post to 500 words, the three
+most-discussed top-level replies. A thread shorter than its window comes
+back whole, because there was nothing to decide about it. The batch
+stops early if it would get large, and it tells you how many threads
+remain.</p>
+<p><strong>Default to <code>n=25</code>.</strong> Dispose of the batch
+with <code>emit.threads_bulk</code> and call again; <code>windows</code>
+tells you how many threads remain. A batch stops at about 20,000
+characters so that what it serves fits in one tool result; if your tool
+result is still cut short, call <code>windows</code> with a smaller
+<code>n</code> rather than reading the overflow anywhere else. One
+thread at a time also works and costs you a hundredfold in calls; the
+batch is not a shortcut, it is the intended shape.</p>
+<p><strong><code>thread &lt;id&gt;</code></strong> — the whole thread,
+however long. §5: <em>a thread about this community's conduct of r/place
+is never abandoned for length.</em> If the window touched the event,
+call this. If you cannot tell from the window, call this — uncertainty
+is a reason to continue, never to stop.</p>
+<p><strong><code>item &lt;id&gt;</code></strong> — one item. For §8,
+where <code>find</code> has returned a hit and you must read what it
+returned.</p>
+<h3 id="cite--grounding"><code>cite</code> — grounding</h3>
+<pre><code>python3 __RUNDIR__/cite.py __RECORD__ &#39;&lt;item id&gt;&#39; &#39;&lt;the words you believe are there&gt;&#39;</code></pre>
+<p>Returns the exact text and its offsets, or refuses. You never invent
+a quote or an offset, and you pass what it returns straight to
+<code>emit.code</code> or
+<code>emit.thread(..., excluded_quote=...)</code> unchanged.
+<code>find("regex")</code> is in the same module and logs your query, so
+your query log is written for you.</p>
+<h3 id="emit--recording"><code>emit</code> — recording</h3>
+<p><strong><code>emit</code> and <code>cite</code> are classes, not
+modules.</strong> Construct them once, at the top of your first python
+call, exactly like this — CONTRACT §9 says the same thing and this is
+the whole setup:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys<span class="op">;</span> sys.path.insert(<span class="dv">0</span>, <span class="st">&quot;__RUNDIR__&quot;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> emit <span class="im">import</span> Emit</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cite <span class="im">import</span> Corpus</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>emit <span class="op">=</span> Emit(<span class="st">&quot;__OUTDIR__&quot;</span>, corpus_path<span class="op">=</span><span class="st">&quot;__RECORD__&quot;</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>_c <span class="op">=</span> Corpus(<span class="st">&quot;__RECORD__&quot;</span>)<span class="op">;</span> cite, find <span class="op">=</span> _c.cite, _c.find</span></code></pre></div>
+<p><code>emit.stage()</code> before each step, then <code>code</code>,
+<code>pointer</code>, <code>theme</code>, <code>theme_add</code>,
+<code>thread</code>, <code>threads_bulk</code>, <code>retract</code>;
+and <code>emit.close()</code> where your role file says so.
+<code>emit.thread</code> and <code>emit.threads_bulk</code> return the
+reading tally, and <code>emit.reading()</code> gives it on demand: how
+many threads are disposed, how many remain
+(<code>threads_undisposed</code>), how many were read in full. Zero
+undisposed is what the end of step 2 looks like. <code>emit</code>
+checks every quote against the record as it arrives and refuses a code
+or a pointer on an item <code>read.py</code> never served to you; a
+refusal names its reason and nothing is recorded.</p>
+<h3 id="tools--the-case-leads"><code>tools/</code> — the case
+lead's</h3>
+<p><code>tools/fleet.py</code>, <code>tools/tree_builder.py</code> and
+<code>tools/audit_fleet.py</code> are called by the case lead at the
+points <code>CONTRACT-case-lead.md</code> names, and by nobody else. A
+fleet coder has no use for them. Append-only: nothing you record can be
+edited, reordered or withdrawn, so recording early costs you nothing.
+<code>discovered_at</code> is stamped from the stage you announced — it
+is not a parameter and you are never asked to remember it.</p>
+<hr />
+<h2 id="3-what-the-harness-observes">3. What the harness observes</h2>
+<p><strong><code>read=</code> on <code>emit.thread</code> is checked
+against what you were actually served.</strong> <code>read.py</code>
+logs every service to <code>__OUTDIR__/_read.jsonl</code>, and
+<code>read.py … audit</code> compares that log against your
+<code>threads.jsonl</code> at the end of the run.</p>
+<p>This is not a trap and there is nothing to game. Say
+<code>triaged</code> when you read a window and <code>full</code> when
+you called <code>thread</code>. The check exists because a declaration
+is a claim and a log is a behaviour: recording only the claim leaves no
+way to tell a coder's error from an instrument's. Now both are
+recorded.</p>
+<p><strong>The corollary that matters to you:</strong> you cannot code a
+thread you only triaged. If a window makes you want to code something,
+call <code>thread</code> first and read it whole. That is what §5 asked
+for all along, and <code>emit</code> now refuses a code on an item it
+has not seen served: a code on a reply the window did not show, in a
+thread you never called <code>thread</code> on, is refused at the call,
+and <code>close_run</code> checks the same thing again at the end.</p>
+<hr />
+<h2 id="4-if-you-are-interrupted">4. If you are interrupted</h2>
+<p>You may be. A run can be terminated mid-triage by an API refusal that
+has nothing to do with your conduct or the material. If a fresh attempt
+starts and <code>state</code> shows a non-zero cursor, that is what
+happened.</p>
+<ol type="1">
+<li><code>read.py … state</code> — where the reading stopped.</li>
+<li><code>emit</code> replays <code>_journal.jsonl</code> on import —
+every code, theme and disposition already recorded is live, and your
+next <code>code_id</code> continues the sequence.</li>
+<li>Carry on from the cursor. Do not re-triage, do not re-code, do not
+rewrite.</li>
+<li>Note the resumption under <strong>How the reading held up</strong>
+in <code>notes.md</code> — that this run was resumed, at which thread,
+and what you did to pick the reading back up. §9 says why we ask.</li>
+</ol>
+<hr />
+<h2 id="5-outputs">5. Outputs</h2>
+<p><strong><code>emit.retract(code_id, reason)</code> appends a
+retraction.</strong> Rule 10 stands — you revise nothing — and this is
+not a revision: the code stays, with <code>retracted: true</code> and
+your reason beside it. It is how you say <em>that one was a mistake</em>
+without editing anything.</p>
+<p><code>case.md</code> and <code>notes.md</code> you write, once, at
+the end. <code>codes.jsonl</code>, <code>themes.jsonl</code>,
+<code>threads.jsonl</code> and <code>pointers.jsonl</code> are built for
+you from your calls — you never open them, never format a line and never
+compute a count. They are written when <code>emit.close()</code> runs:
+<strong>the case lead calls it at the two points
+<code>CONTRACT-case-lead.md</code> §2 names, the second time with the
+verdict; a fleet coder never calls it.</strong> The case lead's
+<code>_run.json</code> carries <code>out/_gate.json</code>.</p>
+<p><strong>Final message:</strong> as your role file has it. For the
+case lead: the community, the branch, your verdict, your two saturation
+statements, and anything that blocked you. Nothing else — no counts, no
+files.</p>
+<p>Before that final message, run the role-specific
+<code>close_run.py --preflight</code> command in your role contract and
+repair every failure. In particular, check the complete assignment:
+every <code>coded</code> thread has a live code; every read,
+out-of-scope thread of ten or more in-window items has the exact
+exclusion citation, even when you read the thread in full;
+<code>case.md</code> and <code>notes.md</code> are complete; and a
+branch-B lead repeats the gate values exactly. The ordinary post-exit
+close remains the scheduler's check.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

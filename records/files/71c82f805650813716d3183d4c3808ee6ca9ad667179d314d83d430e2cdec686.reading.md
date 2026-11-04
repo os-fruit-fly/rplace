@@ -1,0 +1,1 @@
+r/czech — branch B; verdict: full. Record saturation: complete for the supplied archive, limited by removals and off-platform coordination. Practice saturation: late; one new end-of-event practice appeared in batch 02. Blockers: none.

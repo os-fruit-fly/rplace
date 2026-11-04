@@ -1,0 +1,45 @@
+{
+  "community": "sweden",
+  "archive_sha256": "57f5b413c7150bd0d2812f89777b66b6f68d0b0d12b7deb1226df27497e1411c",
+  "archive_name": "sweden.tar.zst",
+  "session": "01a1431c-67dd-7620-8fd8-d00e2ff77df2",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T07-08-17-01a1431c-67dd-7620-8fd8-d00e2ff77df2.jsonl",
+      "sha256": "6697bea8aeda9bd49d14270199f7d2a065315f042c7269f4db9cb27efc8a5004",
+      "lines": 237,
+      "last_utc": "2026-10-16T05:15:11.672Z",
+      "identity": [
+        {
+          "id": "01a1431c-67dd-7620-8fd8-d00e2ff77df2",
+          "session_id": "01a1431c-67dd-7620-8fd8-d00e2ff77df2",
+          "timestamp": "2026-10-16T05:08:17.501Z",
+          "forked_from_id": "01a0d362-c5c0-7b33-9821-1f2bd7563278",
+          "forked_from_ordinal_exclusive": 1110,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T05:08:35.530Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T05:11:21.342Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "fb63d174d91a63ae9043d4329a05befab7af9984ca393ae92db6ca5435506936",
+    "source_archive_sha256": "991e76e7a40701ce8cb33b6fe3908f638d95b6a36fb26257727ddf364687d992",
+    "checkpoint": "2b8ed3fd230da2e12ab71ea6fa3cbd56883c8b9580cfb4195b1bfff07130af8c",
+    "source_finished": "2026-09-24T14:38:47.619426+00:00",
+    "source_archive_name": "sweden-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

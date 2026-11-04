@@ -1,0 +1,4168 @@
+{
+ "checkpoint_id": "community--blackmirror--coding-close",
+ "commit": "c070d990be88234ccd74101d4104160e71a28c5e",
+ "format": "rplace-original-github-map-v1",
+ "git_files": {
+  "workspace/room/ROOM.md": {
+   "blob": "c4fe2799310f285edf7b87f85601963dd4d04482",
+   "path": "coder/rooms/blackmirror/ROOM.md"
+  },
+  "workspace/room/brief/CONTRACT.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/CONTRACT.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/_manifest.json": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/_manifest.json",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/brief_corpus.jsonl": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/brief_corpus.jsonl",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/brief_corpus.queries.jsonl": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/brief_corpus.queries.jsonl",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/brief_corpus.txt": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/brief_corpus.txt",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/cite.py": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/cite.py",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/_read.jsonl": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/_read.jsonl",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/_transcript.jsonl": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/_transcript.jsonl",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/_validation.json": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/_validation.json",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/brief.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/brief.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/evidence.json": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/evidence.json",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/final_message.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/final_message.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/validation-after-relocation.txt": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/validation-after-relocation.txt",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/out/validation.txt": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/out/validation.txt",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/brief/read_brief.py": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "brief/read_brief.py",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/AGENT.v30.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/AGENT.v30.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/CHANGELOG-v30.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/CHANGELOG-v30.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/CONTRACT-brief-writer.v30.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/CONTRACT-brief-writer.v30.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/CONTRACT-case-lead.v30.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/CONTRACT-case-lead.v30.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/CONTRACT-fleet-coder.v30.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/CONTRACT-fleet-coder.v30.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/CONTRACT.v30.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/CONTRACT.v30.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/TOOLS-SPEC.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/TOOLS-SPEC.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/cut_window_v30.py": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/cut_window_v30.py",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/render_corpus_v30.py": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/render_corpus_v30.py",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/instrument/render_openings_v30.py": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "instrument/render_openings_v30.py",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/record/coder_corpus.jsonl.gz": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "record/coder_corpus.jsonl.gz",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/record/cut_stats.json": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "record/cut_stats.json",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/record/openings.md": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "record/openings.md",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/record/preweek.jsonl.gz": {
+   "blob": "0086e87b7afb8bb86777164991e7d847194bbc7b",
+   "format": "tar-zstd",
+   "member": "record/preweek.jsonl.gz",
+   "path": "coder/rooms/blackmirror/materials.tar.zst"
+  },
+  "workspace/room/run/AGENT.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/AGENT.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/CONTRACT-case-lead.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/CONTRACT-case-lead.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/CONTRACT.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/CONTRACT.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/_lead_citations.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/_lead_citations.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/_lead_step4.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/_lead_step4.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/_lead_times.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/_lead_times.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/_manifest.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/_manifest.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/brief.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/brief.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/cite.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/cite.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/close_run.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/close_run.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/coder_corpus.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/coder_corpus.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/coder_corpus.queries.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/coder_corpus.queries.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/corpus.txt": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/corpus.txt",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/corpus_manifest.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/corpus_manifest.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/emit.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/emit.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/AGENT.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/AGENT.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/CONTRACT-fleet-coder.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/CONTRACT-fleet-coder.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/CONTRACT.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/CONTRACT.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/_manifest.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/_manifest.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/brief.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/brief.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/cite.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/cite.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/close_run.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/close_run.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/coder_corpus.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/coder_corpus.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/corpus.txt": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/corpus.txt",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/emit.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/emit.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/lexicon.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/lexicon.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/_journal.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/_journal.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/_read.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/_read.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/_read_index.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/_read_index.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/_run.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/_run.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/_transcript.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/_transcript.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/case.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/case.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/codes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/codes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/final_message.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/final_message.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/notes.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/notes.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/pointers.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/pointers.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/themes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/themes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/out/threads.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/out/threads.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/read.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/read.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/timeline.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/timeline.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/tools/audit_fleet.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/tools/audit_fleet.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/tools/fleet.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/tools/fleet.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_01/tools/tree_builder.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_01/tools/tree_builder.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/AGENT.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/AGENT.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/CONTRACT-fleet-coder.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/CONTRACT-fleet-coder.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/CONTRACT.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/CONTRACT.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/_manifest.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/_manifest.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/brief.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/brief.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/cite.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/cite.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/close_run.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/close_run.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/coder_corpus.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/coder_corpus.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/corpus.txt": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/corpus.txt",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/emit.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/emit.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/lexicon.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/lexicon.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/_journal.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/_journal.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/_read.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/_read.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/_read_index.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/_read_index.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/_run.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/_run.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/_transcript.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/_transcript.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/case.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/case.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/codes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/codes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/final_message.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/final_message.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/notes.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/notes.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/pointers.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/pointers.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/themes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/themes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/out/threads.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/out/threads.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/read.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/read.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/timeline.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/timeline.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/tools/audit_fleet.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/tools/audit_fleet.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/tools/fleet.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/tools/fleet.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/fleet/batch_02/tools/tree_builder.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/fleet/batch_02/tools/tree_builder.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/openings.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/openings.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_gate.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_gate.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_journal.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_journal.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_lead_notes.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_lead_notes.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_read.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_read.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_read_index.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_read_index.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_run.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_run.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/_transcript.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/_transcript.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/case.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/case.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/codes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/codes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/final_message.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/final_message.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/ledger.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/ledger.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/lexicon.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/lexicon.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/notes.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/notes.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/pointers.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/pointers.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/themes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/themes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/threads.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/threads.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/out/timeline.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/out/timeline.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/package/codes.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/package/codes.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/package/codes_by_thread.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/package/codes_by_thread.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/package/forest.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/package/forest.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/package/pointers.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/package/pointers.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/package/threads.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/package/threads.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/package/tree_index.json": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/package/tree_index.json",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/read.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/read.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/codes_batch_01.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/codes_batch_01.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/codes_batch_02.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/codes_batch_02.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/pointers_batch_01.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/pointers_batch_01.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/pointers_batch_02.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/pointers_batch_02.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/read_batch_01.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/read_batch_01.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/read_batch_02.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/read_batch_02.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/threads_batch_01.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/threads_batch_01.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/staging/threads_batch_02.jsonl": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/staging/threads_batch_02.jsonl",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/tools/audit_fleet.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/tools/audit_fleet.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/tools/fleet.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/tools/fleet.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/tools/tree_builder.py": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/tools/tree_builder.py",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  },
+  "workspace/room/run/trees/blackmirror.md": {
+   "blob": "fab895f2bfeb545169b2fd9fef27a2693a54fc28",
+   "format": "tar-zstd",
+   "member": "run/trees/blackmirror.md",
+   "path": "coder/rooms/blackmirror/run.tar.zst"
+  }
+ },
+ "manifest": {
+  "backend": "codex",
+  "checkpoint_id": "community--blackmirror--coding-close",
+  "cli_version": "0.153.4",
+  "directories": {
+   "evidence": 448,
+   "native": 493,
+   "native/lead": 493,
+   "native/lead/cache": 493,
+   "native/lead/cache/codex_apps_server_info": 493,
+   "native/lead/cache/codex_apps_tools": 493,
+   "native/lead/cache/remote_plugin_catalog": 493,
+   "native/lead/plugins": 493,
+   "native/lead/plugins/.remote-plugin-install-staging": 493,
+   "native/lead/plugins/cache": 493,
+   "native/lead/plugins/cache/openai-curated-remote": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/.codex-plugin": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills/deep-research": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills/deep-research/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/tests": 493,
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/tests/__pycache__": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/.codex-plugin": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/agents": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/tests": 493,
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/tests/__pycache__": 493,
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management": 493,
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0": 493,
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/.codex-plugin": 493,
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/assets": 493,
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills": 493,
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management": 493,
+   "native/lead/sessions": 493,
+   "native/lead/sessions/2026": 493,
+   "native/lead/sessions/2026/09": 493,
+   "native/lead/sessions/2026/09/07": 493,
+   "native/lead/sessions/2026/09/08": 493,
+   "native/lead/skills": 493,
+   "native/lead/skills/.system": 493,
+   "native/lead/skills/.system/imagegen": 493,
+   "native/lead/skills/.system/imagegen/agents": 493,
+   "native/lead/skills/.system/imagegen/assets": 493,
+   "native/lead/skills/.system/imagegen/references": 493,
+   "native/lead/skills/.system/imagegen/scripts": 493,
+   "native/lead/skills/.system/openai-docs": 493,
+   "native/lead/skills/.system/openai-docs/agents": 493,
+   "native/lead/skills/.system/openai-docs/assets": 493,
+   "native/lead/skills/.system/openai-docs/references": 493,
+   "native/lead/skills/.system/openai-docs/scripts": 493,
+   "native/lead/skills/.system/plugin-creator": 493,
+   "native/lead/skills/.system/plugin-creator/agents": 493,
+   "native/lead/skills/.system/plugin-creator/assets": 493,
+   "native/lead/skills/.system/plugin-creator/references": 493,
+   "native/lead/skills/.system/plugin-creator/scripts": 493,
+   "native/lead/skills/.system/review-agent": 493,
+   "native/lead/skills/.system/review-agent/agents": 493,
+   "native/lead/skills/.system/skill-creator": 493,
+   "native/lead/skills/.system/skill-creator/agents": 493,
+   "native/lead/skills/.system/skill-creator/assets": 493,
+   "native/lead/skills/.system/skill-creator/references": 493,
+   "native/lead/skills/.system/skill-creator/scripts": 493,
+   "native/lead/skills/.system/skill-installer": 493,
+   "native/lead/skills/.system/skill-installer/agents": 493,
+   "native/lead/skills/.system/skill-installer/assets": 493,
+   "native/lead/skills/.system/skill-installer/scripts": 493,
+   "native/lead/thread-writer-locks": 493,
+   "workspace": 493,
+   "workspace/room": 493,
+   "workspace/room/brief": 493,
+   "workspace/room/brief/out": 493,
+   "workspace/room/instrument": 493,
+   "workspace/room/instrument/tools": 493,
+   "workspace/room/record": 493,
+   "workspace/room/run": 493,
+   "workspace/room/run/fleet": 493,
+   "workspace/room/run/fleet/batch_01": 493,
+   "workspace/room/run/fleet/batch_01/out": 493,
+   "workspace/room/run/fleet/batch_01/tools": 493,
+   "workspace/room/run/fleet/batch_02": 493,
+   "workspace/room/run/fleet/batch_02/out": 493,
+   "workspace/room/run/fleet/batch_02/tools": 493,
+   "workspace/room/run/out": 493,
+   "workspace/room/run/package": 493,
+   "workspace/room/run/staging": 493,
+   "workspace/room/run/tools": 493,
+   "workspace/room/run/trees": 493
+  },
+  "effort": "medium",
+  "files": {
+   "evidence/atlas-checkpoint.json": {
+    "mode": 384,
+    "sha256": "cd144bf0caf258a1f71fbe1b35ba082d20fb8a87043e46615f432b22b303398c",
+    "size": 121101
+   },
+   "evidence/export-source-custody.json": {
+    "mode": 384,
+    "sha256": "7f65a389cb16fddf6e7eb41c5705a37ceaf46b3bcc52593d675dbfac4a0b8400",
+    "size": 302
+   },
+   "native/lead/.sandbox_migration": {
+    "mode": 384,
+    "sha256": "2d27fbdf4e8ca207afbfa388ca9172fbcc6c70e534af2476b3b704f87debadcf",
+    "size": 3
+   },
+   "native/lead/cache/codex_apps_server_info/8864feeb62932cdb18efa82737378a21a8601529.json": {
+    "mode": 384,
+    "sha256": "f5e83c8930c8f6d836e30a364b508fc29ce7cd691551cb64239778686bf66b5c",
+    "size": 189
+   },
+   "native/lead/cache/codex_apps_tools/8864feeb62932cdb18efa82737378a21a8601529.json": {
+    "mode": 384,
+    "sha256": "80334ac99456fabd876d65f6f3e6057dafd34fb7457f0e1a9e25fa2baab4bcec",
+    "size": 733863
+   },
+   "native/lead/cache/remote_plugin_catalog/f5ea1838b67b6c39.json": {
+    "mode": 384,
+    "sha256": "232bcd1c405abcd8e2f726cc18e8498934656f0c4fd7fa95edab2bbb727783f0",
+    "size": 17701372
+   },
+   "native/lead/config.toml": {
+    "mode": 384,
+    "sha256": "1091d553e17ce44cffb9d536550980ebca93da6a43aa77829c0410305a8a9103",
+    "size": 495
+   },
+   "native/lead/goals_1.sqlite": {
+    "mode": 420,
+    "sha256": "6c30c496725889f77741ac4563f9851ec330081023296e614f0abcca300a9b02",
+    "size": 32768
+   },
+   "native/lead/goals_1.sqlite-shm": {
+    "mode": 420,
+    "sha256": "1169855ab516daf8df9ad209eba6f4025737b55d774d5c7f01423ff27265ebc7",
+    "size": 32768
+   },
+   "native/lead/goals_1.sqlite-wal": {
+    "mode": 420,
+    "sha256": "73d6eeebfd8d6401a92b0757fc29bcba12d1f336f3096ada17163344bbe39bb9",
+    "size": 16512
+   },
+   "native/lead/installation_id": {
+    "mode": 420,
+    "sha256": "7877652ad6bd45cbda70e48fc364b7d5535e2af992a6362d9bc6a615d3546c26",
+    "size": 36
+   },
+   "native/lead/logs_2.sqlite": {
+    "mode": 420,
+    "sha256": "78fd630dee74266ddcd7b1e7b4d11969d45d99caf995a38dd305ac0ec681de9a",
+    "size": 1830912
+   },
+   "native/lead/logs_2.sqlite-shm": {
+    "mode": 420,
+    "sha256": "cbe2d872f88a2a2ee7e2b5dfec28f31fd4217b11d79bec1dd2bc880684a01194",
+    "size": 32768
+   },
+   "native/lead/logs_2.sqlite-wal": {
+    "mode": 420,
+    "sha256": "425dfa3c63dcb3034c6c6eeb7f1edb4cda9306f61b81d53aec31d487de64f97a",
+    "size": 4161232
+   },
+   "native/lead/memories_1.sqlite": {
+    "mode": 420,
+    "sha256": "266f15276bbc8ed90f72d51724ce73d7dfd69d0afc73ee29f8a2ebf3afbdd382",
+    "size": 40960
+   },
+   "native/lead/models_cache.json": {
+    "mode": 420,
+    "sha256": "aef4662e291cd34809aa75eee8f94f447b07894a233d9a58ca17d1d045018b79",
+    "size": 266699
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/.codex-remote-plugin-install.json": {
+    "mode": 384,
+    "sha256": "25dc6f50aa8aa518692647ed27b3fa23bee7507202dbde230191c03c21312b0c",
+    "size": 104
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/.app.json": {
+    "mode": 420,
+    "sha256": "9e948cbc27c4afbfdad14e9180ed2764091d5657c480c02014428fe6022675cc",
+    "size": 128
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/.codex-plugin/plugin.json": {
+    "mode": 420,
+    "sha256": "6b888a64793882cbeacc10921a3fde7316058d905a404bbfb1356ba4e7208ba0",
+    "size": 1925
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/README.md": {
+    "mode": 420,
+    "sha256": "000efe61e41da5981a2a18adb109673783f3286ecc15c202b6f6ae40e2227837",
+    "size": 799
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/composer-icon.svg": {
+    "mode": 420,
+    "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+    "size": 1169
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/deep-research.svg": {
+    "mode": 420,
+    "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+    "size": 1169
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/logo-dark.svg": {
+    "mode": 420,
+    "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+    "size": 1169
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/logo.svg": {
+    "mode": 420,
+    "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+    "size": 1169
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills/deep-research/SKILL.md": {
+    "mode": 420,
+    "sha256": "c7b924a736d715bf90941c5e75460b3387ec90b1fdb3a7c79d3e9bfb10427dc6",
+    "size": 12344
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills/deep-research/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "d5644d8750be3b47e54ee2c5bad4c41e0892fa417b478064cfc1c4aaa64763a5",
+    "size": 314
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/tests/__pycache__/test_deep_research_work_plugin.cpython-312-pytest-9.0.3.pyc": {
+    "mode": 420,
+    "sha256": "dd34585272a568aeca85155db9e8fd0b19e1a263b645bdbb30e770d5fdf7b05a",
+    "size": 18755
+   },
+   "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/tests/test_deep_research_work_plugin.py": {
+    "mode": 420,
+    "sha256": "37275be114275c57b7e3d1d8334c36d18f590661a4fb22301260ac76b5086d66",
+    "size": 3478
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/.codex-remote-plugin-install.json": {
+    "mode": 384,
+    "sha256": "19277971b3d9154d117a44a5c461bb655164aee1777f86a44f90cf8d4fc073ac",
+    "size": 104
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/.app.json": {
+    "mode": 420,
+    "sha256": "99b8ba5f9f9ec198071ef338d2d0f621c91593ea5fa1fe324648e2a0533dfafc",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/.codex-plugin/plugin.json": {
+    "mode": 420,
+    "sha256": "d2cbbd434a5c8123a9e1612663f0598cdd13ba71bfb55e172e8132ed9e5d4474",
+    "size": 1610
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/README.md": {
+    "mode": 420,
+    "sha256": "3a742d5e415c2c3570463cd81a65fdc7edb0602dda8c6ca454a797bdb42fde10",
+    "size": 1190
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/assets/icon.svg": {
+    "mode": 420,
+    "sha256": "dbeb0de8f84fea16c89a9d00f83a71eef4a7062392d741ac5ba56b557e7649c3",
+    "size": 1049
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/SKILL.md": {
+    "mode": 420,
+    "sha256": "cf5360fd8b197673bb237c52c603c97fa319c875c3dfa2cd8efff52d4422f513",
+    "size": 1497
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "392f620a50c2a39bb3b3e80e376a27385d312ba7a8abf14cfabb7f02f761a273",
+    "size": 275
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/artifact-template.json": {
+    "mode": 420,
+    "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+    "size": 125
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/assets/preview.png": {
+    "mode": 420,
+    "sha256": "b5c458e744d46ef4211d167d3451864148853aa73708323068504da956ce03b3",
+    "size": 63062
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/assets/reference.xlsx": {
+    "mode": 420,
+    "sha256": "ab655c867ea1c9eed617ec0eeec643946c1e49e9d5227e9db740c95daba26e46",
+    "size": 26606
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/SKILL.md": {
+    "mode": 420,
+    "sha256": "27721fc1d67d1b41949caa75ac8f94f81952ff124406878af6524047929e60d2",
+    "size": 1475
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "cde1beac06ca33c9a0a12c1cbf2b5834dd208a5f732069fd790d7bf9483bcbdd",
+    "size": 269
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/assets/preview.png": {
+    "mode": 420,
+    "sha256": "af6b092987472013920bb251e0e9d60b97fdb02cc1fd3109abf2b0951bc6aa3c",
+    "size": 30573
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "595b9a314c7e8e9b5f22180e7c7db167afba2437c8623d57e3f9dbc20af392c1",
+    "size": 2035231
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/SKILL.md": {
+    "mode": 420,
+    "sha256": "563722f53854e606f8a9f87e37e72d7ef70a22d46d5836b8e4d6abfb1b79e9e0",
+    "size": 1437
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "bd8e8ba79937d8fc087ced20bab5f25fa9a160303762f7567ef2bdcb739d3f9a",
+    "size": 257
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/assets/preview.png": {
+    "mode": 420,
+    "sha256": "19cd1f36fbc8d7efbf27a674004f2c22145514e77bee3459fb8cc4a89caf870d",
+    "size": 202622
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "ba1e11258ff52659318a321462a5e598c7bed33cf991329eb91150788fcd1a7b",
+    "size": 2920999
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/SKILL.md": {
+    "mode": 420,
+    "sha256": "0b05effc47df0a14f8e0c3e3597e6722224747435546385d38a2cae279bd20b9",
+    "size": 1456
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "861a34c68d0d899bb17029316ca8a3d3951a20c206cb8c1890652c2ff06ca626",
+    "size": 269
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/assets/preview.png": {
+    "mode": 420,
+    "sha256": "847743ae181c5547e9244823c236408765cff5038e2264e3d72c9e958d30929c",
+    "size": 15138
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "d823cd0115186b34c01c6e4b4da3be28b64ee73cac849dbd62d6f4bb6385b0fb",
+    "size": 204643
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/SKILL.md": {
+    "mode": 420,
+    "sha256": "c0b6b7a62a15597aaf2b1ec679e21da48f533b756127f0aef957cdfe9f3da738",
+    "size": 1486
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "ac5c29e75dc2e335aa4cab9999d291c081cb07b3eaab6eaaae7f6e6068aba2a4",
+    "size": 269
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/artifact-template.json": {
+    "mode": 420,
+    "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+    "size": 125
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/assets/preview.png": {
+    "mode": 420,
+    "sha256": "ed0298a7e15051887ad2e9ca775314de1dfae41de33f7f82fee89f39cdcf20e3",
+    "size": 39032
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/assets/reference.xlsx": {
+    "mode": 420,
+    "sha256": "b15aecd03ee94fc3e29fb5c6de33c6090b75287845ab337afe0376cc0330e052",
+    "size": 38153
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/SKILL.md": {
+    "mode": 420,
+    "sha256": "68abd08cfe5e073e3c446a3f675f44c5bf98f57434dba679e8acd8a763379a8b",
+    "size": 1496
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "0264537a7b51ef28e41907d34bd09c3e0259045a84f0591e13fd2efd44a3ac69",
+    "size": 281
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/assets/preview.png": {
+    "mode": 420,
+    "sha256": "4f5efed31db5f4468e8619e6ca579be1c57d84d4a023fe9a7c5ec0deafb0812a",
+    "size": 30330
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "0a8a4c5b8b1d8c055e19c9eadcc7eac898899f067cbbd20602c4e7c078e545de",
+    "size": 285035
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/SKILL.md": {
+    "mode": 420,
+    "sha256": "51fb9d21baf6119c4ccb1903638a6bac0e859210de63460fffa7025d52e997e0",
+    "size": 1434
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "bfd77de2f34d5222e9db4b469aab576426c73b0850f5c3a628e4a5e8f8587887",
+    "size": 263
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/assets/preview.png": {
+    "mode": 420,
+    "sha256": "362e4d26521d6eadc5be3c0dec37d7000ef8c967883485e94db60149e4f28660",
+    "size": 64126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "d3006f9074e46823d103fe283be19901f55f75c19811558455d7a16c61797355",
+    "size": 593894
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/SKILL.md": {
+    "mode": 420,
+    "sha256": "d58d019b89cb6f292ac3ab991d561489eef477ff53ce05fb024a0c936f5af26a",
+    "size": 1498
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "fe84725e0c898778a5ed33bfab12a99beb171b08e98a834ebdc55860ac0d4efd",
+    "size": 279
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/assets/preview.png": {
+    "mode": 420,
+    "sha256": "a27d80525678a8b0b4e2242dd13aca95f7920ac790b1a66e96d8b39cc4a74e8f",
+    "size": 19232
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "52396c3a70dc11d35989bb4e3f9a96d2c728c5eba8a1aad96920cfe24cff59fa",
+    "size": 1972113
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/SKILL.md": {
+    "mode": 420,
+    "sha256": "880ef094d4d0c89a7bde5ce9bbe4086625c186651e9e6efc8ba8bdd7cc77f9d5",
+    "size": 1470
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "f5b9311a53150e4d19c5c90664942a1537a73cec687b128dc6c6301261b803ad",
+    "size": 267
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/assets/preview.png": {
+    "mode": 420,
+    "sha256": "827df9ab20cdcf07a62955c568343c27f1c597336444c84ad98d7c0ca7983b6b",
+    "size": 59454
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "5dd55e0f5bbdb603d98db5b8560b8babc6005cbb7f31ce8ed63569417c5cae86",
+    "size": 10301
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/SKILL.md": {
+    "mode": 420,
+    "sha256": "33bb660791a0b9a21628a42c34934932220203b6aabd84e98cb1b45327d0384c",
+    "size": 1500
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "cd41437c7fd39159b21d5decedcb3b53c9737e3854b7f9e46efcddfb73f610d5",
+    "size": 273
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/artifact-template.json": {
+    "mode": 420,
+    "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+    "size": 125
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/assets/preview.png": {
+    "mode": 420,
+    "sha256": "9511212decb870cdded2c5ef0388c1bf4b3ee1747020a61f1c3a7078b2cfa6f2",
+    "size": 91416
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/assets/reference.xlsx": {
+    "mode": 420,
+    "sha256": "fef758154889db179aa701a3916d6e6d30c61935b92ad259dd603322888e7f5f",
+    "size": 46268
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/SKILL.md": {
+    "mode": 420,
+    "sha256": "6d63c5cd025ffe936e7bab5db3023672bbaec26af55c2bb8b057d38c202c9c32",
+    "size": 1483
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "871a705a344c2461bb3fa43495ac9fb9724ee583649cafce9b97a054702b6cae",
+    "size": 271
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/assets/preview.png": {
+    "mode": 420,
+    "sha256": "e8f1dd91d1258c3bb06d2b1d0c52a49fce454e6682732e2e8f43b37c494e3c19",
+    "size": 37218
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "ec2084d143a4d52857cc06c24129abbb45c45d04b90cca06e319ac26d3cadd4f",
+    "size": 306716
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/SKILL.md": {
+    "mode": 420,
+    "sha256": "aa893ebd89e7c8d1db4261d01cc2b1add35d78d00785871ccaaa5fc8db783ec9",
+    "size": 1463
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "3f62c61df6cd23f81c6f412994f40ff176b006d40b913b3c423480279eb4aff5",
+    "size": 269
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/assets/preview.png": {
+    "mode": 420,
+    "sha256": "02823427c2552cc894d333fb96fd2fb3e3ac04503904ab6f73643ca877362df5",
+    "size": 25166
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "b1b15cb0c23ad524f9832749ec31b775719bae2bdba897de9c9d8556ca00a44c",
+    "size": 2082300
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/SKILL.md": {
+    "mode": 420,
+    "sha256": "d97d5be20189b7f53dd269b6e1c5f694eaf53e5a72f6559fcb1578911b7cda82",
+    "size": 1484
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "e858f66b2cd5a17a12ce7059be560d47c429faf34c1665b716c62e67b6b10496",
+    "size": 267
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/artifact-template.json": {
+    "mode": 420,
+    "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+    "size": 125
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/assets/preview.png": {
+    "mode": 420,
+    "sha256": "02811cec6d9b7d493342e03e08b6b56719af1eb6087a50dc6696c600ada90381",
+    "size": 40120
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/assets/reference.xlsx": {
+    "mode": 420,
+    "sha256": "dd8bd283784a189061a328040e845a6d26807e2ee1005a9a195e6dc7baeefe80",
+    "size": 14846
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/SKILL.md": {
+    "mode": 420,
+    "sha256": "15cfeeedf440021f16ed3f3ad8c7c1ef6d48898b9447741e223d2fb41cfc9800",
+    "size": 1482
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "ea4d9150379ec34447137c436a7459c5f8863e7532a6a87ef1d0871412ee4410",
+    "size": 265
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/artifact-template.json": {
+    "mode": 420,
+    "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+    "size": 125
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/assets/preview.png": {
+    "mode": 420,
+    "sha256": "3208ad8051412202774cfe3f34de468d89a6c1e27cf00166933085f6a167cabe",
+    "size": 53355
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/assets/reference.xlsx": {
+    "mode": 420,
+    "sha256": "a6ac1045a0602cbb4d90878949c2970d0e815dd9f98fe34d0ff92b69ebbb4db3",
+    "size": 16979
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/SKILL.md": {
+    "mode": 420,
+    "sha256": "b7c8d0c05f75878b9bc21e56a57c41ec1aa29700aca0a24822be0f9f1bd53207",
+    "size": 1478
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "a5c3103290b5e28efec73cf5ad7af7c5a9212ff422256e2e831f11b456e995b9",
+    "size": 271
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/assets/preview.png": {
+    "mode": 420,
+    "sha256": "2082897b4e30c9a2ed137e51fa32503b1e85afb53c8555521ba374b75df622ec",
+    "size": 115324
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "042ef2fcb8726524a1e773e3c73bf8b8c10b98f67ae675eb01c4501b9365a897",
+    "size": 3244996
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/SKILL.md": {
+    "mode": 420,
+    "sha256": "7c68430c6cf57b55b457d4735dbd1a46b889bef135a32222902dd0848b6e1752",
+    "size": 1487
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "82d2ce0edb52134049718151db345ad1748a358ae1d20c2efe9e274404a1d029",
+    "size": 273
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/assets/preview.png": {
+    "mode": 420,
+    "sha256": "9c12751105bbdea9e74df059b0b86c6eef22b3af34ba38c090edb7e2e4acf3ac",
+    "size": 28676
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "2ae8105571f68403f438458cd51e6ad14f0d989c7af64239e280437a4ac2a633",
+    "size": 1519451
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/SKILL.md": {
+    "mode": 420,
+    "sha256": "51d7882ac94e8e57b323394825728c33925af878806e37277217c2dc12a912e5",
+    "size": 1446
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "1a277cd3a6fd6be41fee1546183f5ea1119ea7c661e1cf156c6cce9b55c65bd3",
+    "size": 269
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/assets/preview.png": {
+    "mode": 420,
+    "sha256": "2a615bd6c983a2a747b8cb5ea82e47e92ff3b1736a1d94742c57a9ce42aa1d55",
+    "size": 16294
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "13bd3ae7aef4b3ae76c5d65200acd654c922782974dac18672e973fad93bd453",
+    "size": 2686019
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/SKILL.md": {
+    "mode": 420,
+    "sha256": "87f7b7ed1b0d8410f5e5971cd7f7db9a4165e2f37069e97e52dbfb469b75a57c",
+    "size": 1445
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "fe728562ab2857373f460a25b5954ef532034ab21e10c38b36c739bc5c5ffd77",
+    "size": 257
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/artifact-template.json": {
+    "mode": 420,
+    "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+    "size": 122
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/assets/preview.png": {
+    "mode": 420,
+    "sha256": "703c8a85a22ebaaa129dc99f82e530532b5b46ad862d7cb253716e9759d5dfe0",
+    "size": 23946
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/assets/reference.docx": {
+    "mode": 420,
+    "sha256": "13504f6c221a42c1726460a9e865e563355539ff97d702d6c9b2267b4b261d76",
+    "size": 501311
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/SKILL.md": {
+    "mode": 420,
+    "sha256": "26d7cafdcd1899a937b325c5d02ac57c162d45002153be33a934d35f81eb6110",
+    "size": 1473
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "dea3d32230b1e7e62d3f4844d3b1ddceb5f2855cd5fbe31e0849e51e1aa11c1d",
+    "size": 267
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/artifact-template.json": {
+    "mode": 420,
+    "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/assets/preview.png": {
+    "mode": 420,
+    "sha256": "8b91c66156be4dec9eca517ca330c246ca8e863ee9b97b3b93cc159eee362c2d",
+    "size": 66065
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/assets/reference.pptx": {
+    "mode": 420,
+    "sha256": "72b9f23a07bfd679cde36757acb11ec99900b4be0f5d393a5b4e8c6fdce4286d",
+    "size": 7330920
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/SKILL.md": {
+    "mode": 420,
+    "sha256": "74f4a5cccec0107b861548b157e04c51d9b58ec13a990c86394b4c529b8ecf41",
+    "size": 1552
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "240d75e1e7b2f33a16a10538e125342ee6c701637e12c0fbe0d8aad5919b48eb",
+    "size": 285
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/artifact-template.json": {
+    "mode": 420,
+    "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+    "size": 125
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/assets/preview.png": {
+    "mode": 420,
+    "sha256": "2fb61600384025e1266d5f8b9c641cba4b535b78a03173b5d051662f4df48e68",
+    "size": 53375
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/assets/reference.xlsx": {
+    "mode": 420,
+    "sha256": "4a4709ff9b860f762f4c3bb224c5084e9820d9a8d8085395aa121728c899d0c2",
+    "size": 136927
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/tests/__pycache__/test_openai_templates_plugin.cpython-312-pytest-9.0.3.pyc": {
+    "mode": 420,
+    "sha256": "291fdbce57a5836481ae303e51cea26ba116e37a69691f2d0b53c1019b55d22c",
+    "size": 31707
+   },
+   "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/tests/test_openai_templates_plugin.py": {
+    "mode": 420,
+    "sha256": "e2250e07a0e9f24e011a578eef4f801cf87cf5210c295ae31da0741e626044c2",
+    "size": 9266
+   },
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/.codex-remote-plugin-install.json": {
+    "mode": 384,
+    "sha256": "d076184ddee9188e7fc19a074b8e07f7a60ca6a4b038daaebd0c9f40f8eda1da",
+    "size": 104
+   },
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/.app.json": {
+    "mode": 420,
+    "sha256": "8392e042417a3de2db3a9f2e2385f4bd80f462c98ed2d8a6ef60dff002e2f06c",
+    "size": 126
+   },
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/.codex-plugin/plugin.json": {
+    "mode": 420,
+    "sha256": "5deb3b2f943fff03a928e1faed2b040bad7dabcf71c11f183fc67dcc0793e3c3",
+    "size": 1538
+   },
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/assets/plugin-management.svg": {
+    "mode": 420,
+    "sha256": "6776a53774519dab5c8e338a6e9fa058932e0ef4dfcc053735f10683081d30ef",
+    "size": 455
+   },
+   "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management/SKILL.md": {
+    "mode": 420,
+    "sha256": "653841cc21205269f08b0ce135891e1518dac616a766bcfb0b57d788d3f68b10",
+    "size": 2983
+   },
+   "native/lead/queue_1.sqlite": {
+    "mode": 420,
+    "sha256": "e69489d50db0383be8569933c3fb81280f096c29614c969630e7153d30dd1083",
+    "size": 40960
+   },
+   "native/lead/queue_1.sqlite-shm": {
+    "mode": 420,
+    "sha256": "a33df84f6ec805ccbe788bd8ace0a9daa02c2d679b7d461df59eefbeccee5dff",
+    "size": 32768
+   },
+   "native/lead/queue_1.sqlite-wal": {
+    "mode": 420,
+    "sha256": "05bd0529c7f64aa338a5bf7176de792e1eac83b0b11132e04e52e77c62b90613",
+    "size": 24752
+   },
+   "native/lead/sessions/2026/09/07/rollout-2026-09-07T23-50-38-01a07dda-1340-78c3-befa-654693c702c5.jsonl": {
+    "mode": 420,
+    "sha256": "bb8b3fb91241a70ab374a2ca8d5dc73b29e4e6bce46bd5878ed30c6dacd9f80b",
+    "size": 780701
+   },
+   "native/lead/sessions/2026/09/08/rollout-2026-09-08T16-34-08-01a08170-cd2f-7933-b61d-0f11423b3ea6.jsonl": {
+    "mode": 420,
+    "sha256": "380c60d17520bef9f6ef8afaf9645371fb5a38ad615c5be5ce621c1e0eb50342",
+    "size": 877602
+   },
+   "native/lead/skills/.system/.codex-system-skills.marker": {
+    "mode": 420,
+    "sha256": "af2d6853e26c9bf6a4ad2e9588586dba9f06fdc4b91864861b9866921abe98ac",
+    "size": 17
+   },
+   "native/lead/skills/.system/imagegen/LICENSE.txt": {
+    "mode": 420,
+    "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+    "size": 10776
+   },
+   "native/lead/skills/.system/imagegen/SKILL.md": {
+    "mode": 420,
+    "sha256": "681ddb4ad6d06a2acc78a3535b583f8d0c1ea800ecda3d56370d3310fd2cd4ba",
+    "size": 19201
+   },
+   "native/lead/skills/.system/imagegen/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "9ca574af14580dc7a2a3dc37a1796d17f93cb8850be66501f0799ef8603e9dc0",
+    "size": 275
+   },
+   "native/lead/skills/.system/imagegen/assets/imagegen-small.svg": {
+    "mode": 420,
+    "sha256": "cff5f34f57ff60b3ee92eaedd17b15e96dd4b9e776df3e78936c9e00d42be294",
+    "size": 2889
+   },
+   "native/lead/skills/.system/imagegen/assets/imagegen.png": {
+    "mode": 420,
+    "sha256": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20",
+    "size": 1711
+   },
+   "native/lead/skills/.system/imagegen/references/cli.md": {
+    "mode": 420,
+    "sha256": "ecfc2e09261a0feb3482517a5fa0ff410cb7d1958e3cbd2ac6b61586f5b81405",
+    "size": 9655
+   },
+   "native/lead/skills/.system/imagegen/references/codex-network.md": {
+    "mode": 420,
+    "sha256": "c88298ca4481f6116a16fa7987434fc977f8b311c1bbc0c3d862ffd0c5981148",
+    "size": 1779
+   },
+   "native/lead/skills/.system/imagegen/references/image-api.md": {
+    "mode": 420,
+    "sha256": "dc975d7af8a4888967251a0276014b4a71ea30455294944b762256373ce3e569",
+    "size": 6072
+   },
+   "native/lead/skills/.system/imagegen/references/prompting.md": {
+    "mode": 420,
+    "sha256": "b210b051c775860267080941eba968212bf0ac7fce581d75c5dcc217d8293f8b",
+    "size": 8282
+   },
+   "native/lead/skills/.system/imagegen/references/sample-prompts.md": {
+    "mode": 420,
+    "sha256": "70474177d151855b175c6133de2aae1d90b7f146b0dab50ec830972c47d72183",
+    "size": 17617
+   },
+   "native/lead/skills/.system/imagegen/scripts/image_gen.py": {
+    "mode": 420,
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "size": 34667
+   },
+   "native/lead/skills/.system/imagegen/scripts/remove_chroma_key.py": {
+    "mode": 420,
+    "sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "size": 13905
+   },
+   "native/lead/skills/.system/openai-docs/LICENSE.txt": {
+    "mode": 420,
+    "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+    "size": 10776
+   },
+   "native/lead/skills/.system/openai-docs/SKILL.md": {
+    "mode": 420,
+    "sha256": "7cb8fa1b2a0c635b5c61ffe1da7b8594a7ea0fce5b71e8d523e2025d88b2a05e",
+    "size": 5446
+   },
+   "native/lead/skills/.system/openai-docs/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "44b9efac6be1bae32d869aa2942fecbe4dcae82682ee03e4120f2f9b7d4658ec",
+    "size": 370
+   },
+   "native/lead/skills/.system/openai-docs/assets/openai-small.svg": {
+    "mode": 420,
+    "sha256": "45be1f0757eb18889eefb1e7db79668ef46a275dc4e0e78e8df5ebd7f6cdeadc",
+    "size": 1091
+   },
+   "native/lead/skills/.system/openai-docs/assets/openai.png": {
+    "mode": 420,
+    "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c",
+    "size": 1429
+   },
+   "native/lead/skills/.system/openai-docs/references/codex-self-knowledge.md": {
+    "mode": 420,
+    "sha256": "8c8fb00e6e5cb1977924f5164684a6095427fa828bbc765225f17d9aeb79a912",
+    "size": 7417
+   },
+   "native/lead/skills/.system/openai-docs/references/latest-model.md": {
+    "mode": 420,
+    "sha256": "f25e351e522dd6e30e82d482f31f44c992e794b11031cdcb6ac7c0e6b20c9d5d",
+    "size": 2094
+   },
+   "native/lead/skills/.system/openai-docs/references/mcp-diagnostics.md": {
+    "mode": 420,
+    "sha256": "49bbd2f73df7bbd7f86c80425dea4da2d301c22046080399a36bfc0ca49509e9",
+    "size": 2318
+   },
+   "native/lead/skills/.system/openai-docs/references/model-migration.md": {
+    "mode": 420,
+    "sha256": "5f20c38fbbb10319767b216d91ba74bae49c68fc1bfd6d1abd7c9b4cc9cb9ab0",
+    "size": 5054
+   },
+   "native/lead/skills/.system/openai-docs/references/model-selection.md": {
+    "mode": 420,
+    "sha256": "ba2d164abbca30435a460a0bc3a7d82398dce2bdf092705c98ba55b3f3af38a8",
+    "size": 1344
+   },
+   "native/lead/skills/.system/openai-docs/references/official-docs.md": {
+    "mode": 420,
+    "sha256": "7962f2dce55089b93bde4115bb89fd42f20993c1597a2b13edd4956f463875b9",
+    "size": 3337
+   },
+   "native/lead/skills/.system/openai-docs/references/prompting-guide.md": {
+    "mode": 420,
+    "sha256": "db913884cfe0fabf29bee1a139918f56e299decfa0a14d61c48596f23f76621d",
+    "size": 15747
+   },
+   "native/lead/skills/.system/openai-docs/references/upgrade-guide.md": {
+    "mode": 420,
+    "sha256": "ed1b75a89b8ec4d67787774ef6c4e8b98eace16c63348f42e969e6ffa67cb656",
+    "size": 1050
+   },
+   "native/lead/skills/.system/openai-docs/references/upgrading-to-gpt-5p6-sol.md": {
+    "mode": 420,
+    "sha256": "9a918a0c8dd051d574f2fd0309201afa8a9b9c08241c11ca1fb0ac2f4724e7ac",
+    "size": 23093
+   },
+   "native/lead/skills/.system/openai-docs/scripts/fetch-codex-manual.mjs": {
+    "mode": 420,
+    "sha256": "f53eb6d2f286e9efcc397e8bee93a938e37296c90953e4e06e94899ef1b6c363",
+    "size": 16085
+   },
+   "native/lead/skills/.system/openai-docs/scripts/resolve-latest-model-info": {
+    "mode": 420,
+    "sha256": "7354dbb030ca0736dd633a7ca1b930cf640abd40370725dea3a458cb51d49523",
+    "size": 1038
+   },
+   "native/lead/skills/.system/openai-docs/scripts/resolve-latest-model-info.cjs": {
+    "mode": 420,
+    "sha256": "eeb1bb486018e16b37edfc06b1a37179dbc672982d501040d4f7142f29dd2e64",
+    "size": 3937
+   },
+   "native/lead/skills/.system/plugin-creator/SKILL.md": {
+    "mode": 420,
+    "sha256": "71b95b8219644f95d633721e7f7cd3c469edfc8fe50f8415d400dfb2d74bc7b9",
+    "size": 11467
+   },
+   "native/lead/skills/.system/plugin-creator/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "fecaf35d692bd3d33d1a065648258d12e393afa9055d78adf6e57b42f4142f6d",
+    "size": 339
+   },
+   "native/lead/skills/.system/plugin-creator/assets/plugin-creator-small.svg": {
+    "mode": 420,
+    "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb",
+    "size": 1319
+   },
+   "native/lead/skills/.system/plugin-creator/assets/plugin-creator.png": {
+    "mode": 420,
+    "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+    "size": 1563
+   },
+   "native/lead/skills/.system/plugin-creator/references/installing-and-updating.md": {
+    "mode": 420,
+    "sha256": "91c4781d48568fcc708b45566b08fb610ad1c88672720ae512f9525a1cf9cb20",
+    "size": 6000
+   },
+   "native/lead/skills/.system/plugin-creator/references/plugin-json-spec.md": {
+    "mode": 420,
+    "sha256": "eeb640130f69636affaa299d4170d5a7ae6a0ff978296ddf75c409ce6dd87b91",
+    "size": 9179
+   },
+   "native/lead/skills/.system/plugin-creator/scripts/create_basic_plugin.py": {
+    "mode": 420,
+    "sha256": "272cb14e02ad7c76ac40777443c49cfecfa333ee28ab7f6214210b72c8fd02ae",
+    "size": 11731
+   },
+   "native/lead/skills/.system/plugin-creator/scripts/identifier_validation.py": {
+    "mode": 420,
+    "sha256": "a6d51ce4a9a7e8f85626ff5808a467a67574e7f8cdf1167ffb467c5f67e57223",
+    "size": 784
+   },
+   "native/lead/skills/.system/plugin-creator/scripts/read_marketplace_name.py": {
+    "mode": 420,
+    "sha256": "ba24e6d91eed6f778bde022a967be335c6253983b5ecd1c5e30c8483385887fd",
+    "size": 1644
+   },
+   "native/lead/skills/.system/plugin-creator/scripts/update_plugin_cachebuster.py": {
+    "mode": 420,
+    "sha256": "6a630dfbdc2bca6952580da9c2c7ece08030926819ccd81d9deb518c24c1b0ed",
+    "size": 3045
+   },
+   "native/lead/skills/.system/plugin-creator/scripts/validate_plugin.py": {
+    "mode": 420,
+    "sha256": "f4eeadb733b28b0c3e714de263a76d6542866a672f3e99bdffcf4dbcdf85e944",
+    "size": 21739
+   },
+   "native/lead/skills/.system/review-agent/SKILL.md": {
+    "mode": 420,
+    "sha256": "07079efd0dc76f05fade424e5dfb048dce1de2df7626e1a4f56292a4f3f92228",
+    "size": 2661
+   },
+   "native/lead/skills/.system/review-agent/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "4d867a46d15e36ac880176484aae160f59855340c6059b2ea6ab9fbc9af084de",
+    "size": 252
+   },
+   "native/lead/skills/.system/skill-creator/SKILL.md": {
+    "mode": 420,
+    "sha256": "6656e54755638e8efcf275a472b9672eaa8a9a1b9e59dc210e275b03b59e1e66",
+    "size": 15311
+   },
+   "native/lead/skills/.system/skill-creator/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "d07d21b93fcf3d4dc8d9a3399c05fc226a49a333a96d3e1c68b451b8dd9eade6",
+    "size": 183
+   },
+   "native/lead/skills/.system/skill-creator/assets/skill-creator-small.svg": {
+    "mode": 420,
+    "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb",
+    "size": 1319
+   },
+   "native/lead/skills/.system/skill-creator/assets/skill-creator.png": {
+    "mode": 420,
+    "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+    "size": 1563
+   },
+   "native/lead/skills/.system/skill-creator/license.txt": {
+    "mode": 420,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "size": 11358
+   },
+   "native/lead/skills/.system/skill-creator/references/openai_yaml.md": {
+    "mode": 420,
+    "sha256": "ffac39318e408108141d40f820968e59f70434a891694f9bf1d25be8237b150c",
+    "size": 2356
+   },
+   "native/lead/skills/.system/skill-creator/scripts/generate_openai_yaml.py": {
+    "mode": 420,
+    "sha256": "816df12072d74faf924d802a6599a139997e1441e90bfe4869ec304f2e5e2851",
+    "size": 6669
+   },
+   "native/lead/skills/.system/skill-creator/scripts/init_skill.py": {
+    "mode": 420,
+    "sha256": "bf0656a5f9d8d8cdecf0245eaf27e1df8e0e9b6d40ccdda814eb8e3d5f6992c8",
+    "size": 10314
+   },
+   "native/lead/skills/.system/skill-creator/scripts/quick_validate.py": {
+    "mode": 420,
+    "sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+    "size": 4249
+   },
+   "native/lead/skills/.system/skill-installer/LICENSE.txt": {
+    "mode": 420,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "size": 11358
+   },
+   "native/lead/skills/.system/skill-installer/SKILL.md": {
+    "mode": 420,
+    "sha256": "d68b77e5bbb34dedab89d134da52855f140fc4b4299b80104f534e3b9e98f8ee",
+    "size": 3367
+   },
+   "native/lead/skills/.system/skill-installer/agents/openai.yaml": {
+    "mode": 420,
+    "sha256": "5ce223d8b1070b82c42298538f1b8d376f788eb9e7a42a987e8c094070d73f0e",
+    "size": 221
+   },
+   "native/lead/skills/.system/skill-installer/assets/skill-installer-small.svg": {
+    "mode": 420,
+    "sha256": "3928703ff00dc1a681e7a22401843b7edcbd4b2051651ce4c43b75f7e140504e",
+    "size": 923
+   },
+   "native/lead/skills/.system/skill-installer/assets/skill-installer.png": {
+    "mode": 420,
+    "sha256": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605",
+    "size": 1086
+   },
+   "native/lead/skills/.system/skill-installer/scripts/github_utils.py": {
+    "mode": 420,
+    "sha256": "61c1bbe2ae217433b4b6f9f09f21aca4df52c12598068343ade719f706e4859b",
+    "size": 659
+   },
+   "native/lead/skills/.system/skill-installer/scripts/install-skill-from-github.py": {
+    "mode": 420,
+    "sha256": "38f311b75664bb063808f982c600271ebc4b560830f491705190f88a94e3e781",
+    "size": 11917
+   },
+   "native/lead/skills/.system/skill-installer/scripts/list-skills.py": {
+    "mode": 420,
+    "sha256": "9d6dfb2abf3afeee7f027a89fb1626b918a973da18f4eb6c25681286301beb41",
+    "size": 2948
+   },
+   "native/lead/state_5.sqlite": {
+    "mode": 420,
+    "sha256": "ea30fe95feec6799ce9f6d15fac7510b5c6ec578357105d38b7be64aa6568e4f",
+    "size": 278528
+   },
+   "native/lead/state_5.sqlite-shm": {
+    "mode": 420,
+    "sha256": "74eeabd571aded80eb8e10ef65bdd6beaed055bfd246c8952475fb6207ee8429",
+    "size": 32768
+   },
+   "native/lead/state_5.sqlite-wal": {
+    "mode": 420,
+    "sha256": "4f866119c49b172ca4b6f33f67c9d07314ef50887da4c0396f833ac10bbdffc1",
+    "size": 4181832
+   },
+   "native/lead/thread_history_1.sqlite": {
+    "mode": 420,
+    "sha256": "595c15b4afc9b1177864dd74f6949799dd41a8b5fa407d6040a68fffb97bf12b",
+    "size": 569344
+   },
+   "native/lead/thread_history_1.sqlite-shm": {
+    "mode": 420,
+    "sha256": "ad3fc0c1cf5ffb84fa43f17e9b227ba41fceb4449ad9ecf129b897148bd22be0",
+    "size": 32768
+   },
+   "native/lead/thread_history_1.sqlite-wal": {
+    "mode": 420,
+    "sha256": "845575ea332f761fcae412843dc66dc6a9078f7077b9ce9485f8201beda59cab",
+    "size": 4144752
+   },
+   "workspace/room/ROOM.md": {
+    "mode": 420,
+    "sha256": "1dd209f89326d2c77b93616f1c8ab08fcbc5270cfce214d9807e1dce9aa33c06",
+    "size": 1856
+   },
+   "workspace/room/STATE.json": {
+    "mode": 420,
+    "sha256": "b016154618f12a5704510ce4041911ffde7154ee08c7bb2dfda4ad0fa607f671",
+    "size": 1388
+   },
+   "workspace/room/brief/CONTRACT.md": {
+    "mode": 420,
+    "sha256": "4c531d2aa90f1b4303feba6c8e437b54fecdf82125b0e1c268af305810404fb2",
+    "size": 13620
+   },
+   "workspace/room/brief/_manifest.json": {
+    "mode": 420,
+    "sha256": "b69abfc22a9dd0dd334e487b98f31d2c0a4863150c305e738623657de579337b",
+    "size": 936
+   },
+   "workspace/room/brief/brief_corpus.jsonl": {
+    "mode": 420,
+    "sha256": "a2d2154fde0a32c54a092fb5bddd15c6288d056c6d901d68b543f3b04b1478c3",
+    "size": 1337947
+   },
+   "workspace/room/brief/brief_corpus.queries.jsonl": {
+    "mode": 420,
+    "sha256": "47fc3b8e8cfbb9b0d58c8f486ef47a242637cf7e2c167665d40197956ad4619d",
+    "size": 760
+   },
+   "workspace/room/brief/brief_corpus.txt": {
+    "mode": 420,
+    "sha256": "5b9d9ac3edb4a9089f8878734cf11a5d5242c6c24ac85a35af4ae24570d2250c",
+    "size": 517949
+   },
+   "workspace/room/brief/cite.py": {
+    "mode": 420,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "size": 15136
+   },
+   "workspace/room/brief/out/_read.jsonl": {
+    "mode": 420,
+    "sha256": "d605f8cc921f2cffdff6b86ce1a8d2e7bd9a4dd98df08a7dc716214c8c900419",
+    "size": 22031
+   },
+   "workspace/room/brief/out/_transcript.jsonl": {
+    "mode": 420,
+    "sha256": "68480ae6304ecc13a2e50424303271e14893bf6d3980ddd56cb2f9b37d579fd5",
+    "size": 1085682
+   },
+   "workspace/room/brief/out/_validation.json": {
+    "mode": 420,
+    "sha256": "605ded5501c2680a04c89757c8604a79477b8db17dc1d04e50aaa06fcf45fad1",
+    "size": 1237
+   },
+   "workspace/room/brief/out/brief.md": {
+    "mode": 420,
+    "sha256": "db7e684ccb253afc6e05a7d6db1a69815135f1d6092fc6b318d7f6642198fe66",
+    "size": 7788
+   },
+   "workspace/room/brief/out/evidence.json": {
+    "mode": 420,
+    "sha256": "0b0f99bd904f1bcdf39b9ebfdd1a8953400876ab697aec8796d8c8f5d2c428e7",
+    "size": 1856
+   },
+   "workspace/room/brief/out/final_message.md": {
+    "mode": 420,
+    "sha256": "d5519a3491ed72a06d0d1231d24cdec2915961a52da80b0934a7c2d903c57b41",
+    "size": 177
+   },
+   "workspace/room/brief/out/validation-after-relocation.txt": {
+    "mode": 420,
+    "sha256": "9f4fd18d9db97b61a10383cfde76f89b0d627f63f13f6ac9391c604b6b38523d",
+    "size": 433
+   },
+   "workspace/room/brief/out/validation.txt": {
+    "mode": 420,
+    "sha256": "9f4fd18d9db97b61a10383cfde76f89b0d627f63f13f6ac9391c604b6b38523d",
+    "size": 433
+   },
+   "workspace/room/brief/read_brief.py": {
+    "mode": 292,
+    "sha256": "e39200d1974cad4956377b40c770c1bbb3bcb8a4c0a835f1e14591c86a2db5b4",
+    "size": 19509
+   },
+   "workspace/room/instrument/AGENT.v30.md": {
+    "mode": 420,
+    "sha256": "c72461f997957658ffc2a11b9a0172bed33f400b9df77c7f7574336548104e89",
+    "size": 10402
+   },
+   "workspace/room/instrument/CHANGELOG-v30.md": {
+    "mode": 420,
+    "sha256": "487157dd826fd4e20b510fef0e64e4d7eb87848212052c7c871c3e1575345c8d",
+    "size": 21151
+   },
+   "workspace/room/instrument/CONTRACT-brief-writer.v30.md": {
+    "mode": 292,
+    "sha256": "03a227ddc54ba3bf4c46c08ffcc5ecafbe0f036b75db6b2cbf1d2ba663be2925",
+    "size": 13337
+   },
+   "workspace/room/instrument/CONTRACT-case-lead.v30.md": {
+    "mode": 420,
+    "sha256": "d472caa6ee824832d056a518570aa6063dddaa4956c119d17440ad0285e44991",
+    "size": 15952
+   },
+   "workspace/room/instrument/CONTRACT-fleet-coder.v30.md": {
+    "mode": 420,
+    "sha256": "ea62d867e549abcff3581ea84eea08fe51c929a99454612b6447a7eed330c1a5",
+    "size": 4748
+   },
+   "workspace/room/instrument/CONTRACT.v30.md": {
+    "mode": 420,
+    "sha256": "121b0472ebd612751ef1060e1b9f28f5db51e327cf2e07441032e3cd2163fe51",
+    "size": 38463
+   },
+   "workspace/room/instrument/README.md": {
+    "mode": 420,
+    "sha256": "521c3c50e58fd0aa7092040cfc55b1ed35ecb32ee4134c4de4f26a00e48610aa",
+    "size": 2321
+   },
+   "workspace/room/instrument/TOOLS-SPEC.md": {
+    "mode": 420,
+    "sha256": "345ecc3e886596f9a537b2e1728e0647063edd0854694c53aa0538a3cf17bf70",
+    "size": 7257
+   },
+   "workspace/room/instrument/cite.py": {
+    "mode": 420,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "size": 15136
+   },
+   "workspace/room/instrument/close_run.py": {
+    "mode": 420,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "size": 19944
+   },
+   "workspace/room/instrument/cut_window_v30.py": {
+    "mode": 292,
+    "sha256": "f2564f032488c255566781e8f5840a4d6e4847cf8f3995cd70a791e8ce44ac2c",
+    "size": 4859
+   },
+   "workspace/room/instrument/emit.py": {
+    "mode": 420,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "size": 51410
+   },
+   "workspace/room/instrument/newbrief.py": {
+    "mode": 292,
+    "sha256": "6488ae66f5707519b2fe960f2dab05f0c20e428a58963208fb8c02803c853967",
+    "size": 8324
+   },
+   "workspace/room/instrument/newrun.py": {
+    "mode": 420,
+    "sha256": "b7bdcc38346a3ec4ba49fe550e2d23d05e629c77c33dd268e2f0ef710bb2f571",
+    "size": 12682
+   },
+   "workspace/room/instrument/read.py": {
+    "mode": 420,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "size": 20864
+   },
+   "workspace/room/instrument/read_brief.py": {
+    "mode": 292,
+    "sha256": "e39200d1974cad4956377b40c770c1bbb3bcb8a4c0a835f1e14591c86a2db5b4",
+    "size": 19509
+   },
+   "workspace/room/instrument/render_corpus_v30.py": {
+    "mode": 292,
+    "sha256": "c7d08abf748336b3e74f41a6c82effd3b3456b61c5007238aee18339239f776a",
+    "size": 25472
+   },
+   "workspace/room/instrument/render_openings_v30.py": {
+    "mode": 420,
+    "sha256": "3d99890a91463ac416fcf438e3fe2319810f81766d5164a7148da4911242138b",
+    "size": 10895
+   },
+   "workspace/room/instrument/tools/audit_fleet.py": {
+    "mode": 420,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "size": 13007
+   },
+   "workspace/room/instrument/tools/fleet.py": {
+    "mode": 420,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "size": 33247
+   },
+   "workspace/room/instrument/tools/tree_builder.py": {
+    "mode": 384,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "size": 28400
+   },
+   "workspace/room/record/coder_corpus.jsonl": {
+    "mode": 420,
+    "sha256": "a6a16fd52c0239af4ae9ce09ae5fd134412bd52d5dd2c96273cc16b194f96911",
+    "size": 1327364
+   },
+   "workspace/room/record/coder_corpus.jsonl.gz": {
+    "mode": 420,
+    "sha256": "14449b5360d90018ee679902df7c3ea598b168c61c0a1bd017e0772b5efc6f98",
+    "size": 265083
+   },
+   "workspace/room/record/cut_stats.json": {
+    "mode": 420,
+    "sha256": "80f5895e948ea72ed44e9ea8695aa9796d9005d9a92b12eff0923433dbf426be",
+    "size": 658
+   },
+   "workspace/room/record/openings.md": {
+    "mode": 420,
+    "sha256": "48ae5b79b3f7d5de4481d5e099854a3d4ac023a9a33a17ecc1d1ebcfd469ace5",
+    "size": 54626
+   },
+   "workspace/room/record/preweek.jsonl.gz": {
+    "mode": 420,
+    "sha256": "3cae61ad1c89ede96ad22da9a42426fb8aa0791b361059a9ea55fd6513593728",
+    "size": 277245
+   },
+   "workspace/room/run/AGENT.md": {
+    "mode": 420,
+    "sha256": "b13e226743159367e5d7e9e00f06008b1faba0141363cd5d722f9d7fa0e66578",
+    "size": 13200
+   },
+   "workspace/room/run/CONTRACT-case-lead.md": {
+    "mode": 420,
+    "sha256": "157958bcfa07f76bca6198ca08c634b48e92f91da76fdc621ddfeb60b0af8121",
+    "size": 15957
+   },
+   "workspace/room/run/CONTRACT.md": {
+    "mode": 420,
+    "sha256": "f463f8c291deb66f58c7ec68a06505e5ebd2fc7a93c12ce4d57f2d3d9b31755e",
+    "size": 39603
+   },
+   "workspace/room/run/_lead_citations.py": {
+    "mode": 420,
+    "sha256": "057eab3292bb6e93f502a286fddcec64df76dab0986965391a40c12c3105bf61",
+    "size": 1369
+   },
+   "workspace/room/run/_lead_step4.py": {
+    "mode": 420,
+    "sha256": "2db2afcd32543cca973dd74cf5746324e8ee2aaed247de06a57d0c8021688959",
+    "size": 3794
+   },
+   "workspace/room/run/_lead_times.py": {
+    "mode": 420,
+    "sha256": "6c11d6b673e253602306e020347a1ff040673accacd123db45110a9a0e22605a",
+    "size": 1048
+   },
+   "workspace/room/run/_manifest.json": {
+    "mode": 420,
+    "sha256": "ff3aca50d14f0d53f8ff6912be3393c87d1f62a96df9ea27d78138e9131e5dfd",
+    "size": 1891
+   },
+   "workspace/room/run/brief.md": {
+    "mode": 420,
+    "sha256": "db7e684ccb253afc6e05a7d6db1a69815135f1d6092fc6b318d7f6642198fe66",
+    "size": 7788
+   },
+   "workspace/room/run/cite.py": {
+    "mode": 420,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "size": 15136
+   },
+   "workspace/room/run/close_run.py": {
+    "mode": 420,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "size": 19944
+   },
+   "workspace/room/run/coder_corpus.jsonl": {
+    "mode": 420,
+    "sha256": "a6a16fd52c0239af4ae9ce09ae5fd134412bd52d5dd2c96273cc16b194f96911",
+    "size": 1327364
+   },
+   "workspace/room/run/coder_corpus.queries.jsonl": {
+    "mode": 420,
+    "sha256": "44bb0b08e0f40d99d38575929727630a0499df6f99eacef1266b0f0651da8c54",
+    "size": 1784
+   },
+   "workspace/room/run/corpus.txt": {
+    "mode": 420,
+    "sha256": "716cb34fa3e9afe4b6c24d8497c3ff6852d107f79ae820543067fb678d2ed83d",
+    "size": 522814
+   },
+   "workspace/room/run/corpus_manifest.json": {
+    "mode": 420,
+    "sha256": "392890c48333bf5c90b8dcfbaa352c2e19f8e7f9238f77ecba98aabb0b782f76",
+    "size": 343
+   },
+   "workspace/room/run/emit.py": {
+    "mode": 420,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "size": 51410
+   },
+   "workspace/room/run/fleet/batch_01/AGENT.md": {
+    "mode": 420,
+    "sha256": "a9afc990e3d5ce39039b06f559bf62ab0baa13a800593d6b3dfa6181640195ca",
+    "size": 13851
+   },
+   "workspace/room/run/fleet/batch_01/CONTRACT-fleet-coder.md": {
+    "mode": 420,
+    "sha256": "5226ee621ece7a7fcce8bc58734f56e457ec7b11a40fb8a0485fdbc6b77b54ae",
+    "size": 4737
+   },
+   "workspace/room/run/fleet/batch_01/CONTRACT.md": {
+    "mode": 420,
+    "sha256": "5f80efbade89b6447ea37322c6890ed794d0534859af34d255b9f4fe9501aa16",
+    "size": 39753
+   },
+   "workspace/room/run/fleet/batch_01/_manifest.json": {
+    "mode": 420,
+    "sha256": "e91b172a415d20b5152b29a9aae185d83a6d980217618d1007223e2591b5265c",
+    "size": 2272
+   },
+   "workspace/room/run/fleet/batch_01/brief.md": {
+    "mode": 420,
+    "sha256": "db7e684ccb253afc6e05a7d6db1a69815135f1d6092fc6b318d7f6642198fe66",
+    "size": 7788
+   },
+   "workspace/room/run/fleet/batch_01/cite.py": {
+    "mode": 420,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "size": 15136
+   },
+   "workspace/room/run/fleet/batch_01/close_run.py": {
+    "mode": 420,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "size": 19944
+   },
+   "workspace/room/run/fleet/batch_01/coder_corpus.jsonl": {
+    "mode": 420,
+    "sha256": "06860d3b435f302aa660cb24917d909df6f131fd397484d0be92782c958f3699",
+    "size": 1078375
+   },
+   "workspace/room/run/fleet/batch_01/corpus.txt": {
+    "mode": 420,
+    "sha256": "0d9325ae2b0f20a46abeb9688784090cb82be035ee45471e9903da6fb3f2397e",
+    "size": 434841
+   },
+   "workspace/room/run/fleet/batch_01/emit.py": {
+    "mode": 420,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "size": 51410
+   },
+   "workspace/room/run/fleet/batch_01/lexicon.md": {
+    "mode": 420,
+    "sha256": "b5c5adf63ef1e51619bc163cad972663480d4b6ee62795925fbc6bef1213f109",
+    "size": 186
+   },
+   "workspace/room/run/fleet/batch_01/out/_journal.jsonl": {
+    "mode": 420,
+    "sha256": "20d81422d0378f41990fa489c13f3ff810a69d239531583f621546e96cb87e1a",
+    "size": 69959
+   },
+   "workspace/room/run/fleet/batch_01/out/_read.jsonl": {
+    "mode": 420,
+    "sha256": "ad9faf07c19fba3f259228106250f320aaf7b7a93726cc6d9e4a6306ef2afe07",
+    "size": 6533
+   },
+   "workspace/room/run/fleet/batch_01/out/_read_index.json": {
+    "mode": 420,
+    "sha256": "1b6a8a75df62a3f426297c867ffeebc9218fad6ce6514e8a9787d479dfedcdf5",
+    "size": 56319
+   },
+   "workspace/room/run/fleet/batch_01/out/_run.json": {
+    "mode": 420,
+    "sha256": "f947725f36d78a22e86b51e9b5695c28bcbbfa8e76b5beec45bc7d4c4ad8fd4a",
+    "size": 2925
+   },
+   "workspace/room/run/fleet/batch_01/out/_transcript.jsonl": {
+    "mode": 384,
+    "sha256": "5531ac95e212b2ca13d2eed5f7bab02c3d7617ceb4a3bba13ffe2c63c5b15efc",
+    "size": 470867
+   },
+   "workspace/room/run/fleet/batch_01/out/case.md": {
+    "mode": 420,
+    "sha256": "575996c26756ee2e88db4ab6bbd63b3367720a98236b5a841aad1f00f6d8a2e9",
+    "size": 6680
+   },
+   "workspace/room/run/fleet/batch_01/out/codes.jsonl": {
+    "mode": 420,
+    "sha256": "f4a8de42051f51c61856e9061301968189273295f62b609baf201fb51014fa56",
+    "size": 34044
+   },
+   "workspace/room/run/fleet/batch_01/out/final_message.md": {
+    "mode": 420,
+    "sha256": "d71ef0ef4af9f2872418bd23212cbbd371c04b980ef2828fe0966941dd21b5b4",
+    "size": 186
+   },
+   "workspace/room/run/fleet/batch_01/out/notes.md": {
+    "mode": 420,
+    "sha256": "153e4661294654d667bb5477c7a6ef2b1aed6929691747dfb3a143a15e9570ef",
+    "size": 4287
+   },
+   "workspace/room/run/fleet/batch_01/out/pointers.jsonl": {
+    "mode": 420,
+    "sha256": "7731c76c63ff3c1bab7ccdf5dd9e04d9e06d8ba033c8a4048e3240221c373e71",
+    "size": 1928
+   },
+   "workspace/room/run/fleet/batch_01/out/themes.jsonl": {
+    "mode": 420,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+   },
+   "workspace/room/run/fleet/batch_01/out/threads.jsonl": {
+    "mode": 420,
+    "sha256": "09fe77ecddfadff5d71b3de91e9456a7ce8e9bf1b235741035dfdab1c048c90a",
+    "size": 18284
+   },
+   "workspace/room/run/fleet/batch_01/read.py": {
+    "mode": 420,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "size": 20864
+   },
+   "workspace/room/run/fleet/batch_01/timeline.md": {
+    "mode": 420,
+    "sha256": "539f976d038f221d4794b87598f41f366c7755520fd3b208833a2dd6c09bcf86",
+    "size": 697
+   },
+   "workspace/room/run/fleet/batch_01/tools/audit_fleet.py": {
+    "mode": 420,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "size": 13007
+   },
+   "workspace/room/run/fleet/batch_01/tools/fleet.py": {
+    "mode": 420,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "size": 33247
+   },
+   "workspace/room/run/fleet/batch_01/tools/tree_builder.py": {
+    "mode": 384,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "size": 28400
+   },
+   "workspace/room/run/fleet/batch_02/AGENT.md": {
+    "mode": 420,
+    "sha256": "094d9abbabe2e4215f134f2c7578db6f7e5f8c54e0eaab4465ba8d1d9720d67f",
+    "size": 13852
+   },
+   "workspace/room/run/fleet/batch_02/CONTRACT-fleet-coder.md": {
+    "mode": 420,
+    "sha256": "5226ee621ece7a7fcce8bc58734f56e457ec7b11a40fb8a0485fdbc6b77b54ae",
+    "size": 4737
+   },
+   "workspace/room/run/fleet/batch_02/CONTRACT.md": {
+    "mode": 420,
+    "sha256": "f3f411352a5e589ad44e29996fed09523153d2e39232e4333f5761ba4613eb5e",
+    "size": 39753
+   },
+   "workspace/room/run/fleet/batch_02/_manifest.json": {
+    "mode": 420,
+    "sha256": "2c816d6e909bffb4990dd987bc19e3ff9be51bc5c007d0cd6d390d239090a7fd",
+    "size": 2274
+   },
+   "workspace/room/run/fleet/batch_02/brief.md": {
+    "mode": 420,
+    "sha256": "db7e684ccb253afc6e05a7d6db1a69815135f1d6092fc6b318d7f6642198fe66",
+    "size": 7788
+   },
+   "workspace/room/run/fleet/batch_02/cite.py": {
+    "mode": 420,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "size": 15136
+   },
+   "workspace/room/run/fleet/batch_02/close_run.py": {
+    "mode": 420,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "size": 19944
+   },
+   "workspace/room/run/fleet/batch_02/coder_corpus.jsonl": {
+    "mode": 420,
+    "sha256": "2b8f0257564bcea749f95234116fdc30ac530406e7038d55fdbbef4237fd5dbb",
+    "size": 292537
+   },
+   "workspace/room/run/fleet/batch_02/corpus.txt": {
+    "mode": 420,
+    "sha256": "6dc51f5684d7a80e8c0c79f9d90a4b765a53cfbf660b4183ea00ca430f4e96b2",
+    "size": 113154
+   },
+   "workspace/room/run/fleet/batch_02/emit.py": {
+    "mode": 420,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "size": 51410
+   },
+   "workspace/room/run/fleet/batch_02/lexicon.md": {
+    "mode": 420,
+    "sha256": "c50d326074e57f956085200da22ed7313a13a39694821194eb10cd33a220d4f8",
+    "size": 207
+   },
+   "workspace/room/run/fleet/batch_02/out/_journal.jsonl": {
+    "mode": 420,
+    "sha256": "df05afdab7e96158742ba84c33fc827f2a74426a6f054b4acf6eb1c634ebcc49",
+    "size": 17983
+   },
+   "workspace/room/run/fleet/batch_02/out/_read.jsonl": {
+    "mode": 420,
+    "sha256": "4e3a47946fabd9627ce9c08641f14c0c9a9a33cba4af11ccf4fc616e9aa8b8cd",
+    "size": 2969
+   },
+   "workspace/room/run/fleet/batch_02/out/_read_index.json": {
+    "mode": 420,
+    "sha256": "f0b547573fd98b1248a4f4204c359cc93dc8212db1ec0743c83207bb559f127b",
+    "size": 20541
+   },
+   "workspace/room/run/fleet/batch_02/out/_run.json": {
+    "mode": 420,
+    "sha256": "7161eeb709db748ffdacad4a4c93192234061e417b7d89ee984aed6a6ccc467d",
+    "size": 2337
+   },
+   "workspace/room/run/fleet/batch_02/out/_transcript.jsonl": {
+    "mode": 384,
+    "sha256": "e910b8e6eb082d818ab995e46d91d7f37120bc65928663db7414f1947ce4a74f",
+    "size": 208018
+   },
+   "workspace/room/run/fleet/batch_02/out/case.md": {
+    "mode": 420,
+    "sha256": "c70354a87743eb5beb225bbb55e230dec53fcaae3012cd38aa8feb185ddf12d2",
+    "size": 3592
+   },
+   "workspace/room/run/fleet/batch_02/out/codes.jsonl": {
+    "mode": 420,
+    "sha256": "cdecb10493886b072c00c844f4306fe6c7f3222e38bbe7bba5fb16e479e85224",
+    "size": 4620
+   },
+   "workspace/room/run/fleet/batch_02/out/final_message.md": {
+    "mode": 420,
+    "sha256": "f79c11cfc1b54ff375eb25c0eb9df0263b9d454adc6eec8dbe604ba793c31d01",
+    "size": 149
+   },
+   "workspace/room/run/fleet/batch_02/out/notes.md": {
+    "mode": 420,
+    "sha256": "4d4afb88797c3aabcf8e189396274c3274640d5b5e5b35828011349db1560f86",
+    "size": 2436
+   },
+   "workspace/room/run/fleet/batch_02/out/pointers.jsonl": {
+    "mode": 420,
+    "sha256": "d2e329b48918d948ec44bfe509a5bc905b3c8e915e5be53b1fe3f36294575542",
+    "size": 606
+   },
+   "workspace/room/run/fleet/batch_02/out/themes.jsonl": {
+    "mode": 420,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+   },
+   "workspace/room/run/fleet/batch_02/out/threads.jsonl": {
+    "mode": 420,
+    "sha256": "2a1775e5eb50c027cdebd6f8c21f71c6f9cc60606938da1dca13f77e6f0f39ef",
+    "size": 7601
+   },
+   "workspace/room/run/fleet/batch_02/read.py": {
+    "mode": 420,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "size": 20864
+   },
+   "workspace/room/run/fleet/batch_02/timeline.md": {
+    "mode": 420,
+    "sha256": "571664705f067959622bcebce2045b6ac1a628e2d17bb281eadf50562f85829c",
+    "size": 829
+   },
+   "workspace/room/run/fleet/batch_02/tools/audit_fleet.py": {
+    "mode": 420,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "size": 13007
+   },
+   "workspace/room/run/fleet/batch_02/tools/fleet.py": {
+    "mode": 420,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "size": 33247
+   },
+   "workspace/room/run/fleet/batch_02/tools/tree_builder.py": {
+    "mode": 384,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "size": 28400
+   },
+   "workspace/room/run/openings.md": {
+    "mode": 420,
+    "sha256": "48ae5b79b3f7d5de4481d5e099854a3d4ac023a9a33a17ecc1d1ebcfd469ace5",
+    "size": 54626
+   },
+   "workspace/room/run/out/_gate.json": {
+    "mode": 420,
+    "sha256": "f812abbd62220a8d9e93963e3bb795a777687e92ee1d1aa5b8dd5b3f7d66f85c",
+    "size": 3463
+   },
+   "workspace/room/run/out/_journal.jsonl": {
+    "mode": 420,
+    "sha256": "4521b71a9ce60438edf92ec18e8a0698b908a85daa194cfab216426d3c07138c",
+    "size": 97795
+   },
+   "workspace/room/run/out/_lead_notes.md": {
+    "mode": 420,
+    "sha256": "0281d1ef3e3218b64e4212df667cd4f4d627db07b694e6a111eb1825cf621f3f",
+    "size": 4367
+   },
+   "workspace/room/run/out/_read.jsonl": {
+    "mode": 420,
+    "sha256": "767ec58f95412670cca402895df8994ef99d8de5f51075a4da9a001d7eae4bad",
+    "size": 1684
+   },
+   "workspace/room/run/out/_read_index.json": {
+    "mode": 420,
+    "sha256": "5a6265109962d98272c3c911ad05e35978f413517dbde693d1aa2d5881260014",
+    "size": 72101
+   },
+   "workspace/room/run/out/_run.json": {
+    "mode": 420,
+    "sha256": "6c2ab4ac5979fdc1c47fc0bc3df13f51e9a57fa47fbfc81d93660ee12f9f9554",
+    "size": 6324
+   },
+   "workspace/room/run/out/_transcript.jsonl": {
+    "mode": 384,
+    "sha256": "8fccd9e0d0ad25a11c080d2311bb866c3a608bb539aba5f2cf2c25178663b241",
+    "size": 1658303
+   },
+   "workspace/room/run/out/case.md": {
+    "mode": 420,
+    "sha256": "89700cba9a9a8536f0965b60775eace0d845319a9ebeac52b066ee959f64d0af",
+    "size": 12425
+   },
+   "workspace/room/run/out/codes.jsonl": {
+    "mode": 420,
+    "sha256": "60a97020f002105ac6b9e0e212e7d49d98da00525e614701efe5057dfa42c0cb",
+    "size": 38726
+   },
+   "workspace/room/run/out/final_message.md": {
+    "mode": 384,
+    "sha256": "179c7a729dad820cb5938a4b80c24e59fe325357bf2aad8855247a68187336cc",
+    "size": 288
+   },
+   "workspace/room/run/out/ledger.md": {
+    "mode": 420,
+    "sha256": "deb0643f56202f4f948e191e8408862307e9f4583711eec7fdab44f6472c595b",
+    "size": 7060
+   },
+   "workspace/room/run/out/lexicon.md": {
+    "mode": 420,
+    "sha256": "c50d326074e57f956085200da22ed7313a13a39694821194eb10cd33a220d4f8",
+    "size": 207
+   },
+   "workspace/room/run/out/notes.md": {
+    "mode": 420,
+    "sha256": "7e99c5dc29936b62fce4c3dfac94afa266ffab433b8b027004ac9819131557cc",
+    "size": 4776
+   },
+   "workspace/room/run/out/pointers.jsonl": {
+    "mode": 420,
+    "sha256": "bb7f606f76128bb88e98798c4377ee23a5d5dc96928c4c5638a194681dffc892",
+    "size": 2534
+   },
+   "workspace/room/run/out/themes.jsonl": {
+    "mode": 420,
+    "sha256": "9e75da555b83224a6babc4ab149646d44638449f81faf4847ba4babca4d96033",
+    "size": 3711
+   },
+   "workspace/room/run/out/threads.jsonl": {
+    "mode": 420,
+    "sha256": "52da75f64e36efc1c047556661591251c3c75df8e1d86b4ee7061b232a8b6bca",
+    "size": 23749
+   },
+   "workspace/room/run/out/timeline.md": {
+    "mode": 420,
+    "sha256": "571664705f067959622bcebce2045b6ac1a628e2d17bb281eadf50562f85829c",
+    "size": 829
+   },
+   "workspace/room/run/package/codes.jsonl": {
+    "mode": 420,
+    "sha256": "81808a477338953011e54e98841c7a8d6a3e7d5bf3e5ae07a28e08a6b07ba6ee",
+    "size": 38664
+   },
+   "workspace/room/run/package/codes_by_thread.md": {
+    "mode": 420,
+    "sha256": "c003606ea785e10e77d89e9bfcdc1b9726278dc8dd73fdf219fde81d8187a623",
+    "size": 5549
+   },
+   "workspace/room/run/package/forest.jsonl": {
+    "mode": 420,
+    "sha256": "d0b4a8a74d325c9f51ee3b37100486c5cc7b012a078a8dfeb63112cf3c188292",
+    "size": 25282
+   },
+   "workspace/room/run/package/pointers.jsonl": {
+    "mode": 420,
+    "sha256": "bb7f606f76128bb88e98798c4377ee23a5d5dc96928c4c5638a194681dffc892",
+    "size": 2534
+   },
+   "workspace/room/run/package/threads.jsonl": {
+    "mode": 420,
+    "sha256": "993865c76de570d89969e11f7d1dff89c81109b83a9ab8b3d285a6b087bf6889",
+    "size": 25885
+   },
+   "workspace/room/run/package/tree_index.json": {
+    "mode": 420,
+    "sha256": "9d62ff9d49ef0d912d8576ecd112831ac3b57f99cf17ef904f41bf205b147bd9",
+    "size": 33168
+   },
+   "workspace/room/run/read.py": {
+    "mode": 420,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "size": 20864
+   },
+   "workspace/room/run/staging/codes_batch_01.jsonl": {
+    "mode": 420,
+    "sha256": "f4a8de42051f51c61856e9061301968189273295f62b609baf201fb51014fa56",
+    "size": 34044
+   },
+   "workspace/room/run/staging/codes_batch_02.jsonl": {
+    "mode": 420,
+    "sha256": "cdecb10493886b072c00c844f4306fe6c7f3222e38bbe7bba5fb16e479e85224",
+    "size": 4620
+   },
+   "workspace/room/run/staging/pointers_batch_01.jsonl": {
+    "mode": 420,
+    "sha256": "7731c76c63ff3c1bab7ccdf5dd9e04d9e06d8ba033c8a4048e3240221c373e71",
+    "size": 1928
+   },
+   "workspace/room/run/staging/pointers_batch_02.jsonl": {
+    "mode": 420,
+    "sha256": "d2e329b48918d948ec44bfe509a5bc905b3c8e915e5be53b1fe3f36294575542",
+    "size": 606
+   },
+   "workspace/room/run/staging/read_batch_01.jsonl": {
+    "mode": 420,
+    "sha256": "ad9faf07c19fba3f259228106250f320aaf7b7a93726cc6d9e4a6306ef2afe07",
+    "size": 6533
+   },
+   "workspace/room/run/staging/read_batch_02.jsonl": {
+    "mode": 420,
+    "sha256": "4e3a47946fabd9627ce9c08641f14c0c9a9a33cba4af11ccf4fc616e9aa8b8cd",
+    "size": 2969
+   },
+   "workspace/room/run/staging/threads_batch_01.jsonl": {
+    "mode": 420,
+    "sha256": "09fe77ecddfadff5d71b3de91e9456a7ce8e9bf1b235741035dfdab1c048c90a",
+    "size": 18284
+   },
+   "workspace/room/run/staging/threads_batch_02.jsonl": {
+    "mode": 420,
+    "sha256": "2a1775e5eb50c027cdebd6f8c21f71c6f9cc60606938da1dca13f77e6f0f39ef",
+    "size": 7601
+   },
+   "workspace/room/run/tools/audit_fleet.py": {
+    "mode": 420,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "size": 13007
+   },
+   "workspace/room/run/tools/fleet.py": {
+    "mode": 420,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "size": 33247
+   },
+   "workspace/room/run/tools/tree_builder.py": {
+    "mode": 384,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "size": 28400
+   },
+   "workspace/room/run/trees/blackmirror.md": {
+    "mode": 420,
+    "sha256": "fa03d323a293f3382892ee6c87f6a1a366dd509057429dac1b31d70b0c359c4c",
+    "size": 9267
+   }
+  },
+  "format": "rplace-interview-v1",
+  "model": "gpt-5.6-sol",
+  "provenance": {
+   "completed_boundary": true,
+   "parent_checkpoint": null,
+   "source_checkpoint": "cd144bf0caf258a1f71fbe1b35ba082d20fb8a87043e46615f432b22b303398c",
+   "source_sha256": "920355f5a755f101c139be1cccaac147096aca8fbd70836ce07eec8ab2d9c651"
+  },
+  "session_id": "01a08170-cd2f-7933-b61d-0f11423b3ea6",
+  "transcript": "native/lead/sessions/2026/09/08/rollout-2026-09-08T16-34-08-01a08170-cd2f-7933-b61d-0f11423b3ea6.jsonl",
+  "workspace_cwd": "room/run"
+ },
+ "primary_transcript_source": "supplement",
+ "remote_commit_verified": true,
+ "repository": "the research repository",
+ "supplement": {
+  "bytes": 36036362,
+  "format": "interview-tar",
+  "sha256": "71d04bb35c8d94abb78d886dcc565dbd208d2e9a13425442cec19dc1a23ea6ea",
+  "url": null
+ },
+ "supplement_files": {
+  "evidence/atlas-checkpoint.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "cd144bf0caf258a1f71fbe1b35ba082d20fb8a87043e46615f432b22b303398c",
+   "size": 121101
+  },
+  "evidence/export-source-custody.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "7f65a389cb16fddf6e7eb41c5705a37ceaf46b3bcc52593d675dbfac4a0b8400",
+   "size": 302
+  },
+  "native/lead/.sandbox_migration": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "2d27fbdf4e8ca207afbfa388ca9172fbcc6c70e534af2476b3b704f87debadcf",
+   "size": 3
+  },
+  "native/lead/cache/codex_apps_server_info/8864feeb62932cdb18efa82737378a21a8601529.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "f5e83c8930c8f6d836e30a364b508fc29ce7cd691551cb64239778686bf66b5c",
+   "size": 189
+  },
+  "native/lead/cache/codex_apps_tools/8864feeb62932cdb18efa82737378a21a8601529.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "80334ac99456fabd876d65f6f3e6057dafd34fb7457f0e1a9e25fa2baab4bcec",
+   "size": 733863
+  },
+  "native/lead/cache/remote_plugin_catalog/f5ea1838b67b6c39.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "232bcd1c405abcd8e2f726cc18e8498934656f0c4fd7fa95edab2bbb727783f0",
+   "size": 17701372
+  },
+  "native/lead/config.toml": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "1091d553e17ce44cffb9d536550980ebca93da6a43aa77829c0410305a8a9103",
+   "size": 495
+  },
+  "native/lead/goals_1.sqlite": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6c30c496725889f77741ac4563f9851ec330081023296e614f0abcca300a9b02",
+   "size": 32768
+  },
+  "native/lead/goals_1.sqlite-shm": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "1169855ab516daf8df9ad209eba6f4025737b55d774d5c7f01423ff27265ebc7",
+   "size": 32768
+  },
+  "native/lead/goals_1.sqlite-wal": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "73d6eeebfd8d6401a92b0757fc29bcba12d1f336f3096ada17163344bbe39bb9",
+   "size": 16512
+  },
+  "native/lead/installation_id": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7877652ad6bd45cbda70e48fc364b7d5535e2af992a6362d9bc6a615d3546c26",
+   "size": 36
+  },
+  "native/lead/logs_2.sqlite": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "78fd630dee74266ddcd7b1e7b4d11969d45d99caf995a38dd305ac0ec681de9a",
+   "size": 1830912
+  },
+  "native/lead/logs_2.sqlite-shm": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cbe2d872f88a2a2ee7e2b5dfec28f31fd4217b11d79bec1dd2bc880684a01194",
+   "size": 32768
+  },
+  "native/lead/logs_2.sqlite-wal": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "425dfa3c63dcb3034c6c6eeb7f1edb4cda9306f61b81d53aec31d487de64f97a",
+   "size": 4161232
+  },
+  "native/lead/memories_1.sqlite": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "266f15276bbc8ed90f72d51724ce73d7dfd69d0afc73ee29f8a2ebf3afbdd382",
+   "size": 40960
+  },
+  "native/lead/models_cache.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "aef4662e291cd34809aa75eee8f94f447b07894a233d9a58ca17d1d045018b79",
+   "size": 266699
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/.codex-remote-plugin-install.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "25dc6f50aa8aa518692647ed27b3fa23bee7507202dbde230191c03c21312b0c",
+   "size": 104
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/.app.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "9e948cbc27c4afbfdad14e9180ed2764091d5657c480c02014428fe6022675cc",
+   "size": 128
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/.codex-plugin/plugin.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6b888a64793882cbeacc10921a3fde7316058d905a404bbfb1356ba4e7208ba0",
+   "size": 1925
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/README.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "000efe61e41da5981a2a18adb109673783f3286ecc15c202b6f6ae40e2227837",
+   "size": 799
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/composer-icon.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+   "size": 1169
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/deep-research.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+   "size": 1169
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/logo-dark.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+   "size": 1169
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/assets/logo.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4729282cc57ceec35edb97164c806c5c3fd45ca0d8f3f6b745bd48ce1e6711fc",
+   "size": 1169
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills/deep-research/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "c7b924a736d715bf90941c5e75460b3387ec90b1fdb3a7c79d3e9bfb10427dc6",
+   "size": 12344
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/skills/deep-research/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d5644d8750be3b47e54ee2c5bad4c41e0892fa417b478064cfc1c4aaa64763a5",
+   "size": 314
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/tests/__pycache__/test_deep_research_work_plugin.cpython-312-pytest-9.0.3.pyc": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "dd34585272a568aeca85155db9e8fd0b19e1a263b645bdbb30e770d5fdf7b05a",
+   "size": 18755
+  },
+  "native/lead/plugins/cache/openai-curated-remote/deep-research-work/0.1.14/tests/test_deep_research_work_plugin.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "37275be114275c57b7e3d1d8334c36d18f590661a4fb22301260ac76b5086d66",
+   "size": 3478
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/.codex-remote-plugin-install.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "19277971b3d9154d117a44a5c461bb655164aee1777f86a44f90cf8d4fc073ac",
+   "size": 104
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/.app.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "99b8ba5f9f9ec198071ef338d2d0f621c91593ea5fa1fe324648e2a0533dfafc",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/.codex-plugin/plugin.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d2cbbd434a5c8123a9e1612663f0598cdd13ba71bfb55e172e8132ed9e5d4474",
+   "size": 1610
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/README.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "3a742d5e415c2c3570463cd81a65fdc7edb0602dda8c6ca454a797bdb42fde10",
+   "size": 1190
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/assets/icon.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "dbeb0de8f84fea16c89a9d00f83a71eef4a7062392d741ac5ba56b557e7649c3",
+   "size": 1049
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cf5360fd8b197673bb237c52c603c97fa319c875c3dfa2cd8efff52d4422f513",
+   "size": 1497
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "392f620a50c2a39bb3b3e80e376a27385d312ba7a8abf14cfabb7f02f761a273",
+   "size": 275
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+   "size": 125
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "b5c458e744d46ef4211d167d3451864148853aa73708323068504da956ce03b3",
+   "size": 63062
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard/assets/reference.xlsx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ab655c867ea1c9eed617ec0eeec643946c1e49e9d5227e9db740c95daba26e46",
+   "size": 26606
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "27721fc1d67d1b41949caa75ac8f94f81952ff124406878af6524047929e60d2",
+   "size": 1475
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cde1beac06ca33c9a0a12c1cbf2b5834dd208a5f732069fd790d7bf9483bcbdd",
+   "size": 269
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "af6b092987472013920bb251e0e9d60b97fdb02cc1fd3109abf2b0951bc6aa3c",
+   "size": 30573
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "595b9a314c7e8e9b5f22180e7c7db167afba2437c8623d57e3f9dbc20af392c1",
+   "size": 2035231
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "563722f53854e606f8a9f87e37e72d7ef70a22d46d5836b8e4d6abfb1b79e9e0",
+   "size": 1437
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "bd8e8ba79937d8fc087ced20bab5f25fa9a160303762f7567ef2bdcb739d3f9a",
+   "size": 257
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "19cd1f36fbc8d7efbf27a674004f2c22145514e77bee3459fb8cc4a89caf870d",
+   "size": 202622
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ba1e11258ff52659318a321462a5e598c7bed33cf991329eb91150788fcd1a7b",
+   "size": 2920999
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "0b05effc47df0a14f8e0c3e3597e6722224747435546385d38a2cae279bd20b9",
+   "size": 1456
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "861a34c68d0d899bb17029316ca8a3d3951a20c206cb8c1890652c2ff06ca626",
+   "size": 269
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "847743ae181c5547e9244823c236408765cff5038e2264e3d72c9e958d30929c",
+   "size": 15138
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d823cd0115186b34c01c6e4b4da3be28b64ee73cac849dbd62d6f4bb6385b0fb",
+   "size": 204643
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "c0b6b7a62a15597aaf2b1ec679e21da48f533b756127f0aef957cdfe9f3da738",
+   "size": 1486
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ac5c29e75dc2e335aa4cab9999d291c081cb07b3eaab6eaaae7f6e6068aba2a4",
+   "size": 269
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+   "size": 125
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ed0298a7e15051887ad2e9ca775314de1dfae41de33f7f82fee89f39cdcf20e3",
+   "size": 39032
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget/assets/reference.xlsx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "b15aecd03ee94fc3e29fb5c6de33c6090b75287845ab337afe0376cc0330e052",
+   "size": 38153
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "68abd08cfe5e073e3c446a3f675f44c5bf98f57434dba679e8acd8a763379a8b",
+   "size": 1496
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "0264537a7b51ef28e41907d34bd09c3e0259045a84f0591e13fd2efd44a3ac69",
+   "size": 281
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4f5efed31db5f4468e8619e6ca579be1c57d84d4a023fe9a7c5ec0deafb0812a",
+   "size": 30330
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "0a8a4c5b8b1d8c055e19c9eadcc7eac898899f067cbbd20602c4e7c078e545de",
+   "size": 285035
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "51fb9d21baf6119c4ccb1903638a6bac0e859210de63460fffa7025d52e997e0",
+   "size": 1434
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "bfd77de2f34d5222e9db4b469aab576426c73b0850f5c3a628e4a5e8f8587887",
+   "size": 263
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "362e4d26521d6eadc5be3c0dec37d7000ef8c967883485e94db60149e4f28660",
+   "size": 64126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d3006f9074e46823d103fe283be19901f55f75c19811558455d7a16c61797355",
+   "size": 593894
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d58d019b89cb6f292ac3ab991d561489eef477ff53ce05fb024a0c936f5af26a",
+   "size": 1498
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "fe84725e0c898778a5ed33bfab12a99beb171b08e98a834ebdc55860ac0d4efd",
+   "size": 279
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a27d80525678a8b0b4e2242dd13aca95f7920ac790b1a66e96d8b39cc4a74e8f",
+   "size": 19232
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "52396c3a70dc11d35989bb4e3f9a96d2c728c5eba8a1aad96920cfe24cff59fa",
+   "size": 1972113
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "880ef094d4d0c89a7bde5ce9bbe4086625c186651e9e6efc8ba8bdd7cc77f9d5",
+   "size": 1470
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "f5b9311a53150e4d19c5c90664942a1537a73cec687b128dc6c6301261b803ad",
+   "size": 267
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "827df9ab20cdcf07a62955c568343c27f1c597336444c84ad98d7c0ca7983b6b",
+   "size": 59454
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "5dd55e0f5bbdb603d98db5b8560b8babc6005cbb7f31ce8ed63569417c5cae86",
+   "size": 10301
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "33bb660791a0b9a21628a42c34934932220203b6aabd84e98cb1b45327d0384c",
+   "size": 1500
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cd41437c7fd39159b21d5decedcb3b53c9737e3854b7f9e46efcddfb73f610d5",
+   "size": 273
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+   "size": 125
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "9511212decb870cdded2c5ef0388c1bf4b3ee1747020a61f1c3a7078b2cfa6f2",
+   "size": 91416
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar/assets/reference.xlsx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "fef758154889db179aa701a3916d6e6d30c61935b92ad259dd603322888e7f5f",
+   "size": 46268
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6d63c5cd025ffe936e7bab5db3023672bbaec26af55c2bb8b057d38c202c9c32",
+   "size": 1483
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "871a705a344c2461bb3fa43495ac9fb9724ee583649cafce9b97a054702b6cae",
+   "size": 271
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "e8f1dd91d1258c3bb06d2b1d0c52a49fce454e6682732e2e8f43b37c494e3c19",
+   "size": 37218
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ec2084d143a4d52857cc06c24129abbb45c45d04b90cca06e319ac26d3cadd4f",
+   "size": 306716
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "aa893ebd89e7c8d1db4261d01cc2b1add35d78d00785871ccaaa5fc8db783ec9",
+   "size": 1463
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "3f62c61df6cd23f81c6f412994f40ff176b006d40b913b3c423480279eb4aff5",
+   "size": 269
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "02823427c2552cc894d333fb96fd2fb3e3ac04503904ab6f73643ca877362df5",
+   "size": 25166
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "b1b15cb0c23ad524f9832749ec31b775719bae2bdba897de9c9d8556ca00a44c",
+   "size": 2082300
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d97d5be20189b7f53dd269b6e1c5f694eaf53e5a72f6559fcb1578911b7cda82",
+   "size": 1484
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "e858f66b2cd5a17a12ce7059be560d47c429faf34c1665b716c62e67b6b10496",
+   "size": 267
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+   "size": 125
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "02811cec6d9b7d493342e03e08b6b56719af1eb6087a50dc6696c600ada90381",
+   "size": 40120
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker/assets/reference.xlsx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "dd8bd283784a189061a328040e845a6d26807e2ee1005a9a195e6dc7baeefe80",
+   "size": 14846
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "15cfeeedf440021f16ed3f3ad8c7c1ef6d48898b9447741e223d2fb41cfc9800",
+   "size": 1482
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ea4d9150379ec34447137c436a7459c5f8863e7532a6a87ef1d0871412ee4410",
+   "size": 265
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+   "size": 125
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "3208ad8051412202774cfe3f34de468d89a6c1e27cf00166933085f6a167cabe",
+   "size": 53355
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline/assets/reference.xlsx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a6ac1045a0602cbb4d90878949c2970d0e815dd9f98fe34d0ff92b69ebbb4db3",
+   "size": 16979
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "b7c8d0c05f75878b9bc21e56a57c41ec1aa29700aca0a24822be0f9f1bd53207",
+   "size": 1478
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a5c3103290b5e28efec73cf5ad7af7c5a9212ff422256e2e831f11b456e995b9",
+   "size": 271
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "2082897b4e30c9a2ed137e51fa32503b1e85afb53c8555521ba374b75df622ec",
+   "size": 115324
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "042ef2fcb8726524a1e773e3c73bf8b8c10b98f67ae675eb01c4501b9365a897",
+   "size": 3244996
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7c68430c6cf57b55b457d4735dbd1a46b889bef135a32222902dd0848b6e1752",
+   "size": 1487
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "82d2ce0edb52134049718151db345ad1748a358ae1d20c2efe9e274404a1d029",
+   "size": 273
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "9c12751105bbdea9e74df059b0b86c6eef22b3af34ba38c090edb7e2e4acf3ac",
+   "size": 28676
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "2ae8105571f68403f438458cd51e6ad14f0d989c7af64239e280437a4ac2a633",
+   "size": 1519451
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "51d7882ac94e8e57b323394825728c33925af878806e37277217c2dc12a912e5",
+   "size": 1446
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "1a277cd3a6fd6be41fee1546183f5ea1119ea7c661e1cf156c6cce9b55c65bd3",
+   "size": 269
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "2a615bd6c983a2a747b8cb5ea82e47e92ff3b1736a1d94742c57a9ce42aa1d55",
+   "size": 16294
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "13bd3ae7aef4b3ae76c5d65200acd654c922782974dac18672e973fad93bd453",
+   "size": 2686019
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "87f7b7ed1b0d8410f5e5971cd7f7db9a4165e2f37069e97e52dbfb469b75a57c",
+   "size": 1445
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "fe728562ab2857373f460a25b5954ef532034ab21e10c38b36c739bc5c5ffd77",
+   "size": 257
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "54586c722449d873eb16ed211e8591a179f31da5e245dcc82800df649380b127",
+   "size": 122
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "703c8a85a22ebaaa129dc99f82e530532b5b46ad862d7cb253716e9759d5dfe0",
+   "size": 23946
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design/assets/reference.docx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "13504f6c221a42c1726460a9e865e563355539ff97d702d6c9b2267b4b261d76",
+   "size": 501311
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "26d7cafdcd1899a937b325c5d02ac57c162d45002153be33a934d35f81eb6110",
+   "size": 1473
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "dea3d32230b1e7e62d3f4844d3b1ddceb5f2855cd5fbe31e0849e51e1aa11c1d",
+   "size": 267
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "809c64b42be1f603434873698306295e5344a7871d8a173d6665b89470f62b78",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "8b91c66156be4dec9eca517ca330c246ca8e863ee9b97b3b93cc159eee362c2d",
+   "size": 66065
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment/assets/reference.pptx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "72b9f23a07bfd679cde36757acb11ec99900b4be0f5d393a5b4e8c6fdce4286d",
+   "size": 7330920
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "74f4a5cccec0107b861548b157e04c51d9b58ec13a990c86394b4c529b8ecf41",
+   "size": 1552
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "240d75e1e7b2f33a16a10538e125342ee6c701637e12c0fbe0d8aad5919b48eb",
+   "size": 285
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/artifact-template.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7aea630ddafb1add3869c6c046e2b8c83464771a29f7e47a59d482480d13d0be",
+   "size": 125
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/assets/preview.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "2fb61600384025e1266d5f8b9c641cba4b535b78a03173b5d051662f4df48e68",
+   "size": 53375
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast/assets/reference.xlsx": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4a4709ff9b860f762f4c3bb224c5084e9820d9a8d8085395aa121728c899d0c2",
+   "size": 136927
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/tests/__pycache__/test_openai_templates_plugin.cpython-312-pytest-9.0.3.pyc": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "291fdbce57a5836481ae303e51cea26ba116e37a69691f2d0b53c1019b55d22c",
+   "size": 31707
+  },
+  "native/lead/plugins/cache/openai-curated-remote/openai-templates/0.1.1/tests/test_openai_templates_plugin.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "e2250e07a0e9f24e011a578eef4f801cf87cf5210c295ae31da0741e626044c2",
+   "size": 9266
+  },
+  "native/lead/plugins/cache/openai-curated-remote/plugin-management/.codex-remote-plugin-install.json": {
+   "mode": 384,
+   "reason": "Not present in the original community publication",
+   "sha256": "d076184ddee9188e7fc19a074b8e07f7a60ca6a4b038daaebd0c9f40f8eda1da",
+   "size": 104
+  },
+  "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/.app.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "8392e042417a3de2db3a9f2e2385f4bd80f462c98ed2d8a6ef60dff002e2f06c",
+   "size": 126
+  },
+  "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/.codex-plugin/plugin.json": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "5deb3b2f943fff03a928e1faed2b040bad7dabcf71c11f183fc67dcc0793e3c3",
+   "size": 1538
+  },
+  "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/assets/plugin-management.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6776a53774519dab5c8e338a6e9fa058932e0ef4dfcc053735f10683081d30ef",
+   "size": 455
+  },
+  "native/lead/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "653841cc21205269f08b0ce135891e1518dac616a766bcfb0b57d788d3f68b10",
+   "size": 2983
+  },
+  "native/lead/queue_1.sqlite": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "e69489d50db0383be8569933c3fb81280f096c29614c969630e7153d30dd1083",
+   "size": 40960
+  },
+  "native/lead/queue_1.sqlite-shm": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a33df84f6ec805ccbe788bd8ace0a9daa02c2d679b7d461df59eefbeccee5dff",
+   "size": 32768
+  },
+  "native/lead/queue_1.sqlite-wal": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "05bd0529c7f64aa338a5bf7176de792e1eac83b0b11132e04e52e77c62b90613",
+   "size": 24752
+  },
+  "native/lead/sessions/2026/09/07/rollout-2026-09-07T23-50-38-01a07dda-1340-78c3-befa-654693c702c5.jsonl": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "bb8b3fb91241a70ab374a2ca8d5dc73b29e4e6bce46bd5878ed30c6dacd9f80b",
+   "size": 780701
+  },
+  "native/lead/sessions/2026/09/08/rollout-2026-09-08T16-34-08-01a08170-cd2f-7933-b61d-0f11423b3ea6.jsonl": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "380c60d17520bef9f6ef8afaf9645371fb5a38ad615c5be5ce621c1e0eb50342",
+   "size": 877602
+  },
+  "native/lead/skills/.system/.codex-system-skills.marker": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "af2d6853e26c9bf6a4ad2e9588586dba9f06fdc4b91864861b9866921abe98ac",
+   "size": 17
+  },
+  "native/lead/skills/.system/imagegen/LICENSE.txt": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+   "size": 10776
+  },
+  "native/lead/skills/.system/imagegen/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "681ddb4ad6d06a2acc78a3535b583f8d0c1ea800ecda3d56370d3310fd2cd4ba",
+   "size": 19201
+  },
+  "native/lead/skills/.system/imagegen/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "9ca574af14580dc7a2a3dc37a1796d17f93cb8850be66501f0799ef8603e9dc0",
+   "size": 275
+  },
+  "native/lead/skills/.system/imagegen/assets/imagegen-small.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cff5f34f57ff60b3ee92eaedd17b15e96dd4b9e776df3e78936c9e00d42be294",
+   "size": 2889
+  },
+  "native/lead/skills/.system/imagegen/assets/imagegen.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20",
+   "size": 1711
+  },
+  "native/lead/skills/.system/imagegen/references/cli.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ecfc2e09261a0feb3482517a5fa0ff410cb7d1958e3cbd2ac6b61586f5b81405",
+   "size": 9655
+  },
+  "native/lead/skills/.system/imagegen/references/codex-network.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "c88298ca4481f6116a16fa7987434fc977f8b311c1bbc0c3d862ffd0c5981148",
+   "size": 1779
+  },
+  "native/lead/skills/.system/imagegen/references/image-api.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "dc975d7af8a4888967251a0276014b4a71ea30455294944b762256373ce3e569",
+   "size": 6072
+  },
+  "native/lead/skills/.system/imagegen/references/prompting.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "b210b051c775860267080941eba968212bf0ac7fce581d75c5dcc217d8293f8b",
+   "size": 8282
+  },
+  "native/lead/skills/.system/imagegen/references/sample-prompts.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "70474177d151855b175c6133de2aae1d90b7f146b0dab50ec830972c47d72183",
+   "size": 17617
+  },
+  "native/lead/skills/.system/imagegen/scripts/image_gen.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+   "size": 34667
+  },
+  "native/lead/skills/.system/imagegen/scripts/remove_chroma_key.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+   "size": 13905
+  },
+  "native/lead/skills/.system/openai-docs/LICENSE.txt": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+   "size": 10776
+  },
+  "native/lead/skills/.system/openai-docs/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7cb8fa1b2a0c635b5c61ffe1da7b8594a7ea0fce5b71e8d523e2025d88b2a05e",
+   "size": 5446
+  },
+  "native/lead/skills/.system/openai-docs/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "44b9efac6be1bae32d869aa2942fecbe4dcae82682ee03e4120f2f9b7d4658ec",
+   "size": 370
+  },
+  "native/lead/skills/.system/openai-docs/assets/openai-small.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "45be1f0757eb18889eefb1e7db79668ef46a275dc4e0e78e8df5ebd7f6cdeadc",
+   "size": 1091
+  },
+  "native/lead/skills/.system/openai-docs/assets/openai.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c",
+   "size": 1429
+  },
+  "native/lead/skills/.system/openai-docs/references/codex-self-knowledge.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "8c8fb00e6e5cb1977924f5164684a6095427fa828bbc765225f17d9aeb79a912",
+   "size": 7417
+  },
+  "native/lead/skills/.system/openai-docs/references/latest-model.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "f25e351e522dd6e30e82d482f31f44c992e794b11031cdcb6ac7c0e6b20c9d5d",
+   "size": 2094
+  },
+  "native/lead/skills/.system/openai-docs/references/mcp-diagnostics.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "49bbd2f73df7bbd7f86c80425dea4da2d301c22046080399a36bfc0ca49509e9",
+   "size": 2318
+  },
+  "native/lead/skills/.system/openai-docs/references/model-migration.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "5f20c38fbbb10319767b216d91ba74bae49c68fc1bfd6d1abd7c9b4cc9cb9ab0",
+   "size": 5054
+  },
+  "native/lead/skills/.system/openai-docs/references/model-selection.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ba2d164abbca30435a460a0bc3a7d82398dce2bdf092705c98ba55b3f3af38a8",
+   "size": 1344
+  },
+  "native/lead/skills/.system/openai-docs/references/official-docs.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7962f2dce55089b93bde4115bb89fd42f20993c1597a2b13edd4956f463875b9",
+   "size": 3337
+  },
+  "native/lead/skills/.system/openai-docs/references/prompting-guide.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "db913884cfe0fabf29bee1a139918f56e299decfa0a14d61c48596f23f76621d",
+   "size": 15747
+  },
+  "native/lead/skills/.system/openai-docs/references/upgrade-guide.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ed1b75a89b8ec4d67787774ef6c4e8b98eace16c63348f42e969e6ffa67cb656",
+   "size": 1050
+  },
+  "native/lead/skills/.system/openai-docs/references/upgrading-to-gpt-5p6-sol.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "9a918a0c8dd051d574f2fd0309201afa8a9b9c08241c11ca1fb0ac2f4724e7ac",
+   "size": 23093
+  },
+  "native/lead/skills/.system/openai-docs/scripts/fetch-codex-manual.mjs": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "f53eb6d2f286e9efcc397e8bee93a938e37296c90953e4e06e94899ef1b6c363",
+   "size": 16085
+  },
+  "native/lead/skills/.system/openai-docs/scripts/resolve-latest-model-info": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "7354dbb030ca0736dd633a7ca1b930cf640abd40370725dea3a458cb51d49523",
+   "size": 1038
+  },
+  "native/lead/skills/.system/openai-docs/scripts/resolve-latest-model-info.cjs": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "eeb1bb486018e16b37edfc06b1a37179dbc672982d501040d4f7142f29dd2e64",
+   "size": 3937
+  },
+  "native/lead/skills/.system/plugin-creator/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "71b95b8219644f95d633721e7f7cd3c469edfc8fe50f8415d400dfb2d74bc7b9",
+   "size": 11467
+  },
+  "native/lead/skills/.system/plugin-creator/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "fecaf35d692bd3d33d1a065648258d12e393afa9055d78adf6e57b42f4142f6d",
+   "size": 339
+  },
+  "native/lead/skills/.system/plugin-creator/assets/plugin-creator-small.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb",
+   "size": 1319
+  },
+  "native/lead/skills/.system/plugin-creator/assets/plugin-creator.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+   "size": 1563
+  },
+  "native/lead/skills/.system/plugin-creator/references/installing-and-updating.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "91c4781d48568fcc708b45566b08fb610ad1c88672720ae512f9525a1cf9cb20",
+   "size": 6000
+  },
+  "native/lead/skills/.system/plugin-creator/references/plugin-json-spec.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "eeb640130f69636affaa299d4170d5a7ae6a0ff978296ddf75c409ce6dd87b91",
+   "size": 9179
+  },
+  "native/lead/skills/.system/plugin-creator/scripts/create_basic_plugin.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "272cb14e02ad7c76ac40777443c49cfecfa333ee28ab7f6214210b72c8fd02ae",
+   "size": 11731
+  },
+  "native/lead/skills/.system/plugin-creator/scripts/identifier_validation.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a6d51ce4a9a7e8f85626ff5808a467a67574e7f8cdf1167ffb467c5f67e57223",
+   "size": 784
+  },
+  "native/lead/skills/.system/plugin-creator/scripts/read_marketplace_name.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ba24e6d91eed6f778bde022a967be335c6253983b5ecd1c5e30c8483385887fd",
+   "size": 1644
+  },
+  "native/lead/skills/.system/plugin-creator/scripts/update_plugin_cachebuster.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6a630dfbdc2bca6952580da9c2c7ece08030926819ccd81d9deb518c24c1b0ed",
+   "size": 3045
+  },
+  "native/lead/skills/.system/plugin-creator/scripts/validate_plugin.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "f4eeadb733b28b0c3e714de263a76d6542866a672f3e99bdffcf4dbcdf85e944",
+   "size": 21739
+  },
+  "native/lead/skills/.system/review-agent/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "07079efd0dc76f05fade424e5dfb048dce1de2df7626e1a4f56292a4f3f92228",
+   "size": 2661
+  },
+  "native/lead/skills/.system/review-agent/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4d867a46d15e36ac880176484aae160f59855340c6059b2ea6ab9fbc9af084de",
+   "size": 252
+  },
+  "native/lead/skills/.system/skill-creator/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6656e54755638e8efcf275a472b9672eaa8a9a1b9e59dc210e275b03b59e1e66",
+   "size": 15311
+  },
+  "native/lead/skills/.system/skill-creator/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d07d21b93fcf3d4dc8d9a3399c05fc226a49a333a96d3e1c68b451b8dd9eade6",
+   "size": 183
+  },
+  "native/lead/skills/.system/skill-creator/assets/skill-creator-small.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb",
+   "size": 1319
+  },
+  "native/lead/skills/.system/skill-creator/assets/skill-creator.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+   "size": 1563
+  },
+  "native/lead/skills/.system/skill-creator/license.txt": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+   "size": 11358
+  },
+  "native/lead/skills/.system/skill-creator/references/openai_yaml.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ffac39318e408108141d40f820968e59f70434a891694f9bf1d25be8237b150c",
+   "size": 2356
+  },
+  "native/lead/skills/.system/skill-creator/scripts/generate_openai_yaml.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "816df12072d74faf924d802a6599a139997e1441e90bfe4869ec304f2e5e2851",
+   "size": 6669
+  },
+  "native/lead/skills/.system/skill-creator/scripts/init_skill.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "bf0656a5f9d8d8cdecf0245eaf27e1df8e0e9b6d40ccdda814eb8e3d5f6992c8",
+   "size": 10314
+  },
+  "native/lead/skills/.system/skill-creator/scripts/quick_validate.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+   "size": 4249
+  },
+  "native/lead/skills/.system/skill-installer/LICENSE.txt": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+   "size": 11358
+  },
+  "native/lead/skills/.system/skill-installer/SKILL.md": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d68b77e5bbb34dedab89d134da52855f140fc4b4299b80104f534e3b9e98f8ee",
+   "size": 3367
+  },
+  "native/lead/skills/.system/skill-installer/agents/openai.yaml": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "5ce223d8b1070b82c42298538f1b8d376f788eb9e7a42a987e8c094070d73f0e",
+   "size": 221
+  },
+  "native/lead/skills/.system/skill-installer/assets/skill-installer-small.svg": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "3928703ff00dc1a681e7a22401843b7edcbd4b2051651ce4c43b75f7e140504e",
+   "size": 923
+  },
+  "native/lead/skills/.system/skill-installer/assets/skill-installer.png": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605",
+   "size": 1086
+  },
+  "native/lead/skills/.system/skill-installer/scripts/github_utils.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "61c1bbe2ae217433b4b6f9f09f21aca4df52c12598068343ade719f706e4859b",
+   "size": 659
+  },
+  "native/lead/skills/.system/skill-installer/scripts/install-skill-from-github.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "38f311b75664bb063808f982c600271ebc4b560830f491705190f88a94e3e781",
+   "size": 11917
+  },
+  "native/lead/skills/.system/skill-installer/scripts/list-skills.py": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "9d6dfb2abf3afeee7f027a89fb1626b918a973da18f4eb6c25681286301beb41",
+   "size": 2948
+  },
+  "native/lead/state_5.sqlite": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ea30fe95feec6799ce9f6d15fac7510b5c6ec578357105d38b7be64aa6568e4f",
+   "size": 278528
+  },
+  "native/lead/state_5.sqlite-shm": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "74eeabd571aded80eb8e10ef65bdd6beaed055bfd246c8952475fb6207ee8429",
+   "size": 32768
+  },
+  "native/lead/state_5.sqlite-wal": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "4f866119c49b172ca4b6f33f67c9d07314ef50887da4c0396f833ac10bbdffc1",
+   "size": 4181832
+  },
+  "native/lead/thread_history_1.sqlite": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "595c15b4afc9b1177864dd74f6949799dd41a8b5fa407d6040a68fffb97bf12b",
+   "size": 569344
+  },
+  "native/lead/thread_history_1.sqlite-shm": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "ad3fc0c1cf5ffb84fa43f17e9b227ba41fceb4449ad9ecf129b897148bd22be0",
+   "size": 32768
+  },
+  "native/lead/thread_history_1.sqlite-wal": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "845575ea332f761fcae412843dc66dc6a9078f7077b9ce9485f8201beda59cab",
+   "size": 4144752
+  },
+  "workspace/room/STATE.json": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "b016154618f12a5704510ce4041911ffde7154ee08c7bb2dfda4ad0fa607f671",
+   "size": 1388
+  },
+  "workspace/room/instrument/README.md": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "521c3c50e58fd0aa7092040cfc55b1ed35ecb32ee4134c4de4f26a00e48610aa",
+   "size": 2321
+  },
+  "workspace/room/instrument/cite.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+   "size": 15136
+  },
+  "workspace/room/instrument/close_run.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+   "size": 19944
+  },
+  "workspace/room/instrument/emit.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+   "size": 51410
+  },
+  "workspace/room/instrument/newbrief.py": {
+   "mode": 292,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "6488ae66f5707519b2fe960f2dab05f0c20e428a58963208fb8c02803c853967",
+   "size": 8324
+  },
+  "workspace/room/instrument/newrun.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "b7bdcc38346a3ec4ba49fe550e2d23d05e629c77c33dd268e2f0ef710bb2f571",
+   "size": 12682
+  },
+  "workspace/room/instrument/read.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+   "size": 20864
+  },
+  "workspace/room/instrument/read_brief.py": {
+   "mode": 292,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "e39200d1974cad4956377b40c770c1bbb3bcb8a4c0a835f1e14591c86a2db5b4",
+   "size": 19509
+  },
+  "workspace/room/instrument/tools/audit_fleet.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+   "size": 13007
+  },
+  "workspace/room/instrument/tools/fleet.py": {
+   "mode": 420,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+   "size": 33247
+  },
+  "workspace/room/instrument/tools/tree_builder.py": {
+   "mode": 384,
+   "reason": "Saved file differs from the original publication",
+   "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+   "size": 28400
+  },
+  "workspace/room/record/coder_corpus.jsonl": {
+   "mode": 420,
+   "reason": "Not present in the original community publication",
+   "sha256": "a6a16fd52c0239af4ae9ce09ae5fd134412bd52d5dd2c96273cc16b194f96911",
+   "size": 1327364
+  }
+ },
+ "tested_bundle_sha256": "71d04bb35c8d94abb78d886dcc565dbd208d2e9a13425442cec19dc1a23ea6ea",
+ "workspace_prefix": "coder/rooms/blackmirror"
+}

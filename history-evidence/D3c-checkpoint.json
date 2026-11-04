@@ -1,0 +1,59 @@
+{
+  "checkpoint_id": "1b924d17c7d6e164",
+  "label": "D3.D3c",
+  "stage": "D3",
+  "stage_file": "stages/STAGE-D3-adaptation-adjudication.md",
+  "kind": "agent-and-files",
+  "run": {
+    "instrument_version": "v43",
+    "fingerprint": "74db41ef9490edae"
+  },
+  "arm": {
+    "analyst": "claude-opus-5-5",
+    "effort": "xhigh"
+  },
+  "lineage": {
+    "resume_session": null,
+    "resumed_session": "6d1418b0-342f-4721-811f-7384a8508540",
+    "child_session": "2e68ce44-b119-40d5-b7c4-d766daf2e669",
+    "inherited_lines": 37639
+  },
+  "parent_checkpoint": "dc4cf0c57d144f8c",
+  "parent_label": "D3.D3b",
+  "session": {
+    "session_id": "2e68ce44-b119-40d5-b7c4-d766daf2e669",
+    "mode": "fork",
+    "transcript_sha256": "3f5e379a1aa0a39a74612962ac9f345f55e48f2c532120c7e86726b49cde15bf",
+    "boundary_line": 3927,
+    "boundary_verified": true,
+    "transcript_path_at_close": "CONTROL/.cc/projects/run/2e68ce44-b119-40d5-b7c4-d766daf2e669.jsonl"
+  },
+  "cli_version": "2.1.300 (Claude Code)",
+  "fs": {
+    "files_in_out": 54603,
+    "manifest_sha256": "d3a3cc384d3e776116fe1ca9f60e61f168e8f7d4b011749349f8090c57577268"
+  },
+  "subject": "aggregator",
+  "filesystem_root": "00_GIVE-THE-AGENT",
+  "handler_conversation_included": false,
+  "validation": {
+    "subject": "aggregator",
+    "complete": true,
+    "completed_turn": true,
+    "launcher_exited": true,
+    "validator_exit_code": 0,
+    "validator_sha256": "889d92f85edcb6314f8bdd867d78984ebbdb1afa6fd3815c1077f4d19bf19258",
+    "report_sha256": "29e6fa07ef7148cb8420e1970c9cb962efbec674e37d7b7c542fe66ff25e60c4",
+    "checked_utc": "2026-10-24T10:47:54.591893+00:00",
+    "handed": true,
+    "notes_present": true,
+    "handback_present": true,
+    "validate_report_in_notes": true
+  },
+  "forced": null,
+  "cost": {
+    "tokens_in": 201869434,
+    "tokens_out": 624700
+  },
+  "published_utc": "2026-10-24T10:54:09Z"
+}

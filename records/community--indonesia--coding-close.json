@@ -1,0 +1,87 @@
+{
+  "checkpoint_id": "community--indonesia--coding-close",
+  "bundle_sha256": "2543a6f6638da32e176659cff3935c86256227a67924c8e8b9a08e53b8935598",
+  "snapshot_manifest_sha256": null,
+  "recipe_sha256": "3fe3ea27c8a853872c6fb960af5aae44214a6c1ed041735973bb856a167743e6",
+  "commit": "c070d990be88234ccd74101d4104160e71a28c5e",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/room/run/out/case.md",
+      "sha256": "c5726327385c6dd529871afeee0fae922c529479c35c2962b0ae0d5467ad7065",
+      "bytes": 12027,
+      "source_file": "record-files/c5726327385c6dd529871afeee0fae922c529479c35c2962b0ae0d5467ad7065.md",
+      "origin": {
+        "blob": "80723c8179c22087f532182044e5948f1409c5fa",
+        "format": "tar-zstd",
+        "member": "run/out/case.md",
+        "path": "coder/rooms/indonesia/run.tar.zst"
+      },
+      "reading_sha256": "97f644d04f9f384ae58733f27d76c9c7b59c939e36788a02ee595b6c6a68c108",
+      "reading_bytes": 12045,
+      "reading_file": "c5726327385c6dd529871afeee0fae922c529479c35c2962b0ae0d5467ad7065.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "01-case",
+      "raw": "../files/c5726327385c6dd529871afeee0fae922c529479c35c2962b0ae0d5467ad7065.reading.md"
+    },
+    {
+      "path": "workspace/room/run/out/lexicon.md",
+      "sha256": "5a306f735aa7d894039788b899eb9d2eeb346313ce3f095732f039153eb223fb",
+      "bytes": 710,
+      "source_file": "record-files/5a306f735aa7d894039788b899eb9d2eeb346313ce3f095732f039153eb223fb.md",
+      "origin": {
+        "blob": "80723c8179c22087f532182044e5948f1409c5fa",
+        "format": "tar-zstd",
+        "member": "run/out/lexicon.md",
+        "path": "coder/rooms/indonesia/run.tar.zst"
+      },
+      "reading_sha256": "5a306f735aa7d894039788b899eb9d2eeb346313ce3f095732f039153eb223fb",
+      "reading_bytes": 710,
+      "reading_file": "5a306f735aa7d894039788b899eb9d2eeb346313ce3f095732f039153eb223fb.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-lexicon",
+      "raw": "../files/5a306f735aa7d894039788b899eb9d2eeb346313ce3f095732f039153eb223fb.reading.md"
+    },
+    {
+      "path": "workspace/room/run/out/timeline.md",
+      "sha256": "8089a2dad743f55d0664a968cd8ce5481d4609e237f9ef3ce0c2b9200a942f40",
+      "bytes": 1655,
+      "source_file": "record-files/8089a2dad743f55d0664a968cd8ce5481d4609e237f9ef3ce0c2b9200a942f40.md",
+      "origin": {
+        "blob": "80723c8179c22087f532182044e5948f1409c5fa",
+        "format": "tar-zstd",
+        "member": "run/out/timeline.md",
+        "path": "coder/rooms/indonesia/run.tar.zst"
+      },
+      "reading_sha256": "85b6ddb6a526484a2ef87a313622967dc04cbebb4492387cc1ea77f5d2463cbf",
+      "reading_bytes": 1944,
+      "reading_file": "8089a2dad743f55d0664a968cd8ce5481d4609e237f9ef3ce0c2b9200a942f40.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "03-timeline",
+      "raw": "../files/8089a2dad743f55d0664a968cd8ce5481d4609e237f9ef3ce0c2b9200a942f40.reading.md"
+    },
+    {
+      "path": "workspace/room/run/out/final_message.md",
+      "sha256": "fbb5aefe308b919de4cc2ea4dfe0ab7f4bec26f41e57f91380a1a1ddea7b73a6",
+      "bytes": 328,
+      "source_file": "record-files/fbb5aefe308b919de4cc2ea4dfe0ab7f4bec26f41e57f91380a1a1ddea7b73a6.md",
+      "origin": {
+        "blob": "80723c8179c22087f532182044e5948f1409c5fa",
+        "format": "tar-zstd",
+        "member": "run/out/final_message.md",
+        "path": "coder/rooms/indonesia/run.tar.zst"
+      },
+      "reading_sha256": "fbb5aefe308b919de4cc2ea4dfe0ab7f4bec26f41e57f91380a1a1ddea7b73a6",
+      "reading_bytes": 328,
+      "reading_file": "fbb5aefe308b919de4cc2ea4dfe0ab7f4bec26f41e57f91380a1a1ddea7b73a6.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-final_message",
+      "raw": "../files/fbb5aefe308b919de4cc2ea4dfe0ab7f4bec26f41e57f91380a1a1ddea7b73a6.reading.md"
+    }
+  ],
+  "comparison": null
+}

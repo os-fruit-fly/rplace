@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>activity-week-before.csv | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="activity-week-beforecsv">activity-week-before.csv</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="data-activity.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/data-activity.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>One row per room of the frame: how active it was in the 168 hours
+before the canvas opened (2017-03-24 16:00 to 2017-03-31 16:00 UTC).</p>
+<pre><code>sub, posts_week_before, comments_week_before, distinct_posters_week_before,
+first_record_utc, existed_before_window, founded_during_event</code></pre>
+<p><code>distinct_posters_week_before</code> counts the accounts that
+posted or commented in the room that week, less <code>[deleted]</code>,
+<code>[removed]</code> and <code>AutoModerator</code>.
+<code>first_record_utc</code> is the room's first item in the 24-day
+record; <code>existed_before_window</code> is 1 if that falls before the
+canvas opened; <code>founded_during_event</code> is 1 if the room's
+first item falls inside the event. A room with no poster that week has 0
+there.</p>
+<p>Counted from each room's full 24-day record (raw24) as collected in
+August 2026, the same record the coders' rooms were cut from, and the
+same scan whose author lists define <code>px_by_pre_members</code> in
+<code>pixels.csv</code>. It measures size before the event, not anything
+the room did on the canvas. Stage D4 uses it for the volume check:
+<code>log(1 + distinct_posters_week_before)</code>.</p>
+<h2 id="provenance-by-row-2026-10-04">Provenance by row
+(2026-10-04)</h2>
+<p>705 rooms. 690 rows come from the study's pre-window list
+(<code>_pre_progress.jsonl</code>, LINK.md; sha256
+ee3f8eebbfaf427b9351457363256e01cb3dcfd1d2bf63903a1320e4f4fc743e): 679
+that <code>build_pixels.py --activity</code> reproduces byte for byte
+from it; r/dota2, r/globaloffensive, r/leagueoflegends and r/overwatch,
+appended from it on 2026-10-02; and r/anime, r/DestinyTheGame,
+r/hearthstone, r/masseffect, r/pcmasterrace, r/rickandmorty and r/wow,
+appended from it on 2026-10-04 when they joined the frame. r/lehigh and
+r/upvote left the frame on 2026-10-04 and their rows with them.
+r/chelseafc and r/hyperlightdrifter were remade from their full records
+on 2026-09-27, and 13 communities added to the census on 2026-09-26 and
+27 come from their raw24 lists (<code>--lists-from-raw24</code>).</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

@@ -1,0 +1,450 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The scheduler&#x27;s contract, run yard v31 | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-schedulers-contract-run-yard-v31">The scheduler's contract,
+run yard v31</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="scheduler.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/scheduler.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><em>Written for yard v31 and kept as the scheduler ran under it. The
+instrument shipped here is v32, which replaced v31 in the same yard (why);
+read "v31" below as the current reference instrument.</em></p>
+<p>Completed and in-progress v30 rooms retain their original instrument.
+New rooms use v31. The scheduler never updates an instrument inside a
+dispatched run.</p>
+<p>You run the yard. One room at a time or several at once, you take a
+room from <code>rooms/</code>, launch the agents its
+<code>ROOM.md</code> names in the order the instrument fixes, check each
+agent's work with the checks below the moment it ends, keep
+<code>STATUS.tsv</code> true, set aside what failed, take the snapshot
+the forks are made from, and tell J what only J can decide. You are the
+part of the study that a person did by hand until now, written down so
+that any agent, on any provider, can do it the same way.</p>
+<p>You are not a reader. You never judge a coder's reading, never
+rewrite a line an agent wrote, never tell a coder what the material
+means, and never let one agent's output reach another except through the
+files the instrument says travel (<code>timeline.md</code>,
+<code>lexicon.md</code>, the pool). The instrument was built so that its
+checks can be run by something that has not read the room; that
+something is you.</p>
+<p>What you need from whatever runs you: a way to start an agent session
+in a given directory with an opening message, a way to know when it has
+ended and to read its final message, a shell to run
+<code>python3</code>, and, when the platform keeps one, the agent's
+transcript. Nothing else. The opening messages are printed by
+<code>room.py message</code>, so the text every agent receives is the
+same on every platform.</p>
+<hr />
+<h2 id="1-what-you-may-read-and-write">1. What you may read and
+write</h2>
+<p>Read freely: every <code>STATE.json</code>, <code>STATUS.tsv</code>,
+<code>ROOM.md</code>; a run's <code>_manifest.json</code>,
+<code>out/_gate.json</code>, <code>out/_journal.jsonl</code>,
+<code>out/_read.jsonl</code>, <code>out/_run.json</code>,
+<code>out/notes.md</code>, <code>out/case.md</code> and the facts files;
+the outputs of the checks; the agents' final messages.</p>
+<p>Read only to settle a mechanical question, never to form a view of
+the room: <code>corpus.txt</code>, <code>coder_corpus.jsonl</code> and
+<code>openings.md</code>. If a check says an id is not in the record,
+you may look for it. You do not read a thread to decide whether a coder
+read it well.</p>
+<p>Write: <code>STATE.json</code> through <code>room.py</code>
+(<code>note</code>, and the fields §6 gives you),
+<code>STATUS.tsv</code> through <code>status.py</code>, and two files
+inside an agent's directory, both placed after the agent has ended:
+<code>out/_transcript.jsonl</code>, and, for a fleet coder,
+<code>out/final_message.md</code> through
+<code>room.py final --batch NN "&lt;message&gt;"</code>, so that
+<code>collect</code> can copy it into the lead's ledger. Nothing else in
+any <code>run/</code>, <code>brief/</code> or
+<code>fleet/batch_NN/</code> is yours to touch. A file an agent should
+have written and did not is a failed check, not a file for you to
+write.</p>
+<h2 id="2-the-cycle-for-one-room">2. The cycle for one room</h2>
+<p><code>T</code> is <code>_tools/room.py</code>, run from the room's
+directory. <code>room.py status</code> tells you where the room stands
+and what is next; trust it over your memory.</p>
+<p><strong>Brief.</strong> Every room carries what the brief stage
+needs: the pre-week record, the brief writer's contract and tools in
+<code>instrument/</code>. If <code>STATE.json</code> says the brief is
+to write: <code>python3 $T brief --model &lt;id&gt;</code> builds
+<code>brief/</code> (the pre-week rendered, the contract, the tools, a
+manifest; a room whose pre-week is empty gets a harness-written brief
+here and nothing runs). Launch an agent in <code>brief/</code> with
+<code>python3 $T message brief</code>, wait for it to end, place its
+transcript in <code>brief/out/_transcript.jsonl</code>, and run
+<code>python3 $T check --brief</code>: F1 to F6 in §3 (the brief exists
+and is over 300 words, the nine headings, the read log, every quote
+verbatim in the record, the transcript, the manifest's hashes). A brief
+that fails is set aside (<code>brief/</code> moved to
+<code>brief_failed_&lt;time&gt;/</code>) and written again; twice,
+escalate. A room that arrived with a brief from an earlier run skips
+this stage; <code>STATE.json</code> says which run. Rooms are briefed in
+the order of §8, and a room is not built (<code>run</code>) until its
+brief has passed.</p>
+<p><strong>Build.</strong>
+<code>python3 $T run --model &lt;id&gt;</code>. The model id is a
+condition of the reading and goes into the manifest; every agent of this
+room runs on it unless J says otherwise, in which case you note the
+exception in <code>STATE.json</code> before launching. The build also
+writes <code>run/openings.md</code> (and, above 1,500 threads, the
+titles and digest files) for the lead; check that it exists and that its
+thread count in <code>AGENT.md</code>'s STATE block equals
+<code>record/cut_stats.json</code>'s.</p>
+<p><strong>The lead, first launch.</strong>
+<code>python3 $T message lead</code>, in <code>run/</code>. Wait for it
+to end.</p>
+<ul>
+<li>Branch A (500 items or fewer): the lead reads the room and closes it
+in one session. When it ends, go to <strong>Close</strong>.</li>
+<li>Branch B: the lead reports the branch, the counts, the slice count,
+and that batch 01 is dispatched. Check that <code>out/_gate.json</code>
+exists, that its <code>branch</code>, <code>threshold</code> (500) and
+<code>items_in_window</code> match <code>record/cut_stats.json</code>
+within the harness's own note (bots are excluded from
+<code>items_by_people</code>, not from <code>items_in_window</code>),
+and that <code>fleet/batch_01/</code> exists. Then the loop.</li>
+</ul>
+<p><strong>The loop, branch B, for NN = 01 to the last
+slice.</strong></p>
+<ol type="1">
+<li>Launch a coder in <code>run/fleet/batch_NN/</code> with
+<code>python3 $T message coder --batch NN</code>. One at a time: the
+fleet is serial because each coder inherits the facts files of the one
+before.</li>
+<li>When it ends, place its transcript at
+<code>run/fleet/batch_NN/out/_transcript.jsonl</code> (§6) and its final
+message with
+<code>python3 $T final --batch NN "&lt;message&gt;"</code>.</li>
+<li><code>python3 $T check --batch NN</code>. On PASSED, go on. On
+FAILED, §5.</li>
+<li>Send the lead
+<code>python3 $T message collect --batch NN --summary "&lt;codes, pointers, threads disposed by verdict, lines added to each facts file&gt;"</code>.
+For the last batch this message collects and stops, without dispatch or
+consolidation. The summary is the check's own numbers; you do not
+describe the reading. The lead collects, reads the facts lines, strikes
+any that are readings, and dispatches NN+1, and replies with what
+<code>collect</code> and <code>dispatch</code> printed. Check that
+<code>out/_gate.json</code> now carries <code>collected_utc</code> for
+NN and a coder line for NN+1, that <code>fleet/batch_NN+1/</code>
+exists, and that <code>out/ledger.md</code> gained an entry for NN under
+which the lead wrote its strikes (a ledger entry with the harness's
+lines only is a lead that skipped its own record; say so in the next
+message).</li>
+<li><code>python3 ../../_tools/status.py --yard ../..</code> after every
+step, so <code>STATUS.tsv</code> says which batch is running.</li>
+</ol>
+<p><strong>The fork point.</strong> When the last coder has passed its
+check and been collected, and before the lead does anything else:
+<code>python3 $T snapshot after-fleet</code>. This is the state the
+forks are cut from: every slice coded, the facts files complete, nothing
+pooled, nothing themed. If J has declared forks for this room (§7), make
+them now with <code>python3 $T fork &lt;name&gt;</code>; each gets a
+fresh lead with
+<code>python3 $T message fork --fork &lt;name&gt;</code>. The original
+lead goes on regardless:
+<code>python3 $T message finish --batch NN --summary "..."</code> tells
+it to consolidate and do step 4 and step 5.</p>
+<p><strong>Close.</strong> When a lead ends with its final message:
+place its transcript at <code>run/out/_transcript.jsonl</code> (or the
+fork's), then <code>python3 $T check</code> (or
+<code>check --fork &lt;name&gt;</code>). On PASSED:
+<code>python3 $T note "verified; &lt;minutes&gt;, &lt;tokens if known&gt;"</code>,
+set <code>verified_utc</code> in <code>STATE.json</code>, and
+<code>status.py</code>. On FAILED, §5.</p>
+<h2 id="3-the-checks">3. The checks</h2>
+<p>Every check is a command; every failure names a file and a reason.
+<code>verify_room.py</code> runs them and prints <code>PASSED</code> or
+the list. You run it; you do not run its parts by hand unless it
+cannot.</p>
+<table>
+<thead>
+<tr>
+<th>when</th>
+<th>check</th>
+<th>what a failure means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>after the brief writer</td>
+<td>F1 <code>brief/out/brief.md</code> exists, over 300 words unless the
+harness wrote it</td>
+<td>the writer stopped early or wrote elsewhere; set <code>brief/</code>
+aside and write again</td>
+</tr>
+<tr>
+<td></td>
+<td>F2 the nine headings of the brief writer's contract</td>
+<td>the writer did not finish the form; write again</td>
+</tr>
+<tr>
+<td></td>
+<td>F3 <code>brief/out/_read.jsonl</code> is non-empty and opens with
+<code>header</code>; the note says how many days it touched</td>
+<td>the writer read around its tool, or read one day; write again, and
+if the days touched are few, say so in the launch message</td>
+</tr>
+<tr>
+<td></td>
+<td>F4 every quoted string of twenty characters or more is in the
+pre-week record verbatim (one in ten tolerated and listed)</td>
+<td>invented or paraphrased quotes; read the listed ones; over the
+tolerance, write again</td>
+</tr>
+<tr>
+<td></td>
+<td>F5 a transcript is present</td>
+<td>you have not placed it yet</td>
+</tr>
+<tr>
+<td></td>
+<td>F6 <code>brief/_manifest.json</code> present, its files
+unchanged</td>
+<td>the writer edited its contract or tools; write again and
+escalate</td>
+</tr>
+<tr>
+<td>after a coder</td>
+<td>B1 the journal disposes exactly the slice's threads, none twice</td>
+<td>the coder stopped short, or coded outside its slice; redispatch</td>
+</tr>
+<tr>
+<td></td>
+<td>B2 <code>read.py audit</code>: no thread claims more reading than
+was served</td>
+<td>the coder wrote <code>full</code> on a thread it saw only as a
+window; redispatch</td>
+</tr>
+<tr>
+<td></td>
+<td>B3 no code or pointer on an opening given as context</td>
+<td><code>emit</code> should have refused; if it did not, the instrument
+has a defect: escalate</td>
+</tr>
+<tr>
+<td></td>
+<td>B4 <code>case.md</code> with the contract's sections and edge tags,
+<code>notes.md</code> present</td>
+<td>the coder did not finish writing; relaunch in place (the harness
+resumes) and, if it ends the same way, redispatch</td>
+</tr>
+<tr>
+<td></td>
+<td>B5 every line added to the facts files carries an item id of the
+record's shape</td>
+<td>the coder wrote a reading or a gloss; the lead will strike it; two
+or more such lines, note it against the coder</td>
+</tr>
+<tr>
+<td></td>
+<td>B6 the instrument files unchanged since dispatch</td>
+<td>the coder edited its own contract or tools; redispatch and
+escalate</td>
+</tr>
+<tr>
+<td></td>
+<td>B7 a transcript is present</td>
+<td>you have not placed it yet</td>
+</tr>
+<tr>
+<td>after close</td>
+<td>E1 <code>audit_fleet</code> PASSED</td>
+<td>offsets, forest, slices or the gate record are wrong; escalate with
+the output</td>
+</tr>
+<tr>
+<td></td>
+<td>E2 <code>close_run</code> every check (C1 to C10) for the lead and
+every batch</td>
+<td>as it says; C2 is your transcript, C7 is a changed instrument, C8 an
+invented pointer or exclusion quote, C9 a code on an item
+<code>read.py</code> never served, C10 something recorded after the
+final <code>close()</code></td>
+</tr>
+<tr>
+<td></td>
+<td>E3 branch B: the lead neither read nor searched before
+consolidation</td>
+<td>the lead read raw threads or ran <code>find</code> while the fleet
+ran; the account is contaminated: set the run aside, fork from
+<code>after-fleet</code>, and escalate</td>
+</tr>
+<tr>
+<td></td>
+<td>E4 every thread and item id in <code>case.md</code> is in the
+record</td>
+<td>the lead cited an id that does not exist (the r/muse lead did once);
+note it in STATE and escalate: only a reader can repair a citation</td>
+</tr>
+<tr>
+<td></td>
+<td>E5 branch B: <code>notes.md</code> repeats the gate and names the
+strikes</td>
+<td>the lead skipped its own record; relaunch the lead in place with the
+message <code>finish</code> and the sentence "notes.md lacks the gate
+line"</td>
+</tr>
+<tr>
+<td></td>
+<td>E6 (a note) an hour written beside a thread id disagrees with the
+record</td>
+<td>read the lines it names; a restated hour goes into STATE as a defect
+of the account</td>
+</tr>
+</tbody>
+</table>
+<p>What the checks cannot see, and you are not asked to see either:
+whether the reading is right. That is the second coder's job, and the
+aggregator's, not yours.</p>
+<h2 id="4-what-agents-do-wrong">4. What agents do wrong</h2>
+<p>Seen on the r/liverpoolfc and r/muse runs of v29, in order of how
+often:</p>
+<ul>
+<li><strong>Writing outside the run directory.</strong> Platforms name a
+scratchpad and tell agents to use it; the coder does, and its scripts
+and its slice sit where the next coder can read them. The opening
+message forbids it and AGENT.md now forbids it; if a coder's final
+message mentions a path outside its directory, note it, and delete
+nothing (files outside the yard are not yours; tell J).</li>
+<li><strong>Reading the tools' source</strong>, three times over, for
+nothing. Harmless to the record, costly in tokens; note the count if you
+can see it. AGENT.md now forbids it.</li>
+<li><strong>Coding against scope.</strong> One Fable coder coded 49
+items of football talk in a derby thread that never mentions the canvas.
+The sign is a code count out of all proportion to the slice's in-window
+text about the event; B1 to B7 do not catch it. When a batch's code
+count is above a third of its in-window items, read the coder's
+<code>case.md</code> selection section and its ten first codes'
+<code>first_order</code> lines: if they are the ordinary week,
+redispatch and note the model.</li>
+<li><strong>Ruling the community's own April Fools joke out of
+scope.</strong> The contract says code it, never as conduct about
+r/place. The sign is a disposition reason containing "April Fools" with
+verdict <code>out_of_scope</code>; note it, since only a redispatch
+repairs it and it is rarely worth one.</li>
+<li><strong>The lead restating a coder's number.</strong> "A roughly
+nine-hour gap the coder measured" where the coder measured 51 minutes.
+E6 notes the cheap cases; the rest is for a reader.</li>
+<li><strong>The lead citing an id that does not exist.</strong> E4.</li>
+<li><strong>The lead deleting its own helper script.</strong> The
+contract now says keep it under <code>_lead_</code>.</li>
+<li><strong>A coder ending without <code>case.md</code></strong>, on a
+platform that cut the session. Relaunch in place;
+<code>read.py state</code> tells the coder it is resuming and the
+journal stands.</li>
+<li><strong>A coder or lead answering you at length.</strong> Keep your
+messages short and say "one line" when one line is what you need; an
+agent that narrates costs the same as one that works.</li>
+</ul>
+<h2 id="5-when-a-check-fails">5. When a check fails</h2>
+<ul>
+<li><strong>A coder, before collect:</strong>
+<code>python3 tools/fleet.py redispatch --batch NN --model &lt;id&gt;</code>
+in <code>run/</code>. The failed directory goes whole to
+<code>fleet/_failed/</code>; the slice is dispatched again with the same
+ids; the gate record keeps the set-aside. Then launch a coder as in §2.
+Only the last dispatched, uncollected batch can be redone. Twice on the
+same slice: stop and escalate; the slice or the model is the problem,
+not the coder.</li>
+<li><strong>A coder interrupted</strong> (no final message, journal
+present, <code>case.md</code> absent): relaunch in the same directory
+with the same message. The harness resumes from the journal.</li>
+<li><strong>A lead interrupted before consolidation:</strong> launch a
+new lead in <code>run/</code> with the message <code>lead</code> plus
+one sentence: "The gate is decided and batches 01 to NN are dispatched;
+NN has finished and awaits collection. Resume from there." Its context
+is gone; the files are enough. Note it.</li>
+<li><strong>A lead that fails after consolidation</strong> (E1 to E5):
+the fleet's work stands in the <code>after-fleet</code> snapshot. Move
+<code>run/</code> to <code>_failed/run_&lt;time&gt;/</code>,
+<code>python3 $T fork retry</code> from the snapshot, and launch a fresh
+lead with the <code>fork</code> message; when it passes, note in STATE
+that <code>forks/retry</code> is the room's carried run. Do not repair
+<code>case.md</code> by hand and do not ask the failed lead to.</li>
+<li><strong>A brief writer that fails:</strong> set <code>brief/</code>
+aside and write again; twice, escalate.</li>
+<li><strong>A room that cannot be built</strong>
+(<code>room.py run</code> fails): note the error; escalate.</li>
+</ul>
+<p>A failure is never fixed by editing an agent's output. It is fixed by
+running the agent again under the rule it broke, or by telling J.</p>
+<h2 id="6-the-record-you-keep">6. The record you keep</h2>
+<p><code>STATE.json</code>, per room, through <code>room.py</code> where
+it can and by hand for the fields below:</p>
+<ul>
+<li><code>model</code>, and any exception per agent
+(<code>agents</code>: a list of
+<code>{role, batch, model, started, ended, minutes, tokens, agent_id}</code>;
+tokens when the platform reports them);</li>
+<li><code>started</code>, <code>finished</code>,
+<code>verified_utc</code>;</li>
+<li><code>failed</code>: one line when the room is stopped on a failure,
+cleared when it is resolved;</li>
+<li><code>carried</code>: <code>run</code> or
+<code>forks/&lt;name&gt;</code>, set by J's carry rule before the forks
+run (§7);</li>
+<li><code>notes</code>: dated lines, through <code>room.py note</code>,
+for everything §4 and §5 tell you to note.</li>
+</ul>
+<p><code>STATUS.tsv</code>: regenerated by <code>status.py</code> after
+every step; never edited.</p>
+<p><strong>Transcripts.</strong> <code>close_run</code> C2 requires a
+non-empty <code>out/_transcript.jsonl</code> in every agent's directory.
+Where the platform keeps a transcript, copy it there whole when the
+agent ends (in Claude Code it is
+<code>~/.claude/projects/&lt;encoded working directory&gt;/&lt;session&gt;.jsonl</code>;
+in a Cowork session, the subagent's file under <code>subagents/</code>).
+Where it does not, write one JSON line
+<code>{"type": "assistant", "message": {"model": "&lt;model id&gt;", "content": "&lt;the agent's final message&gt;"}}</code>
+and say in <code>notes</code> that the transcript is the final message
+only. A run with no transcript at all does not close.</p>
+<p><strong>Costs.</strong> Minutes from the session; tokens when
+reported. On v29, a Sonnet fleet coder took 12 to 38 minutes and 8 to 35
+million cached input tokens; a case lead's phase 3 about 25 minutes.
+Note anything twice that.</p>
+<h2 id="7-snapshots-and-forks">7. Snapshots and forks</h2>
+<p><strong>Native case-lead continuation (2026-09-07).</strong> When the
+requirement is to resume the same lead later, or branch its saved
+conversation, use <code>_tools/codex_lead.py</code> and
+<code>CHECKPOINTS.md</code>. Only the case lead's native session is
+required. The managed room contains the brief and coder outputs; brief
+writers and coders need no native sessions. Each completed lead turn is
+checkpointed with the filesystem after its final reply. The last
+<code>collect</code> message explicitly stops before consolidation; save
+it with label <code>after-fleet</code>, then send <code>finish</code>.
+<code>finish</code> does not re-collect that batch. A native fork
+inherits the saved conversation: do not send the fresh-lead
+<code>message fork</code> below.</p>
+<p>The rest of this section describes the older <strong>filesystem-only
+fresh-lead comparison</strong>:</p>
+<p>The one fork point is <code>after-fleet</code>, taken when the last
+coder is collected and before the lead consolidates. A fork is a copy of
+that snapshot under <code>forks/&lt;name&gt;/run</code>, with its paths
+rewritten and its lineage in <code>forks/&lt;name&gt;/FORK.json</code>,
+in which a fresh lead does everything from <code>emit.close()</code> on.
+Forks share the pool and differ in the lead; that is what they are
+for.</p>
+<p>J declares, before any fork runs, which run the record carries
+(<code>carried</code> in <code>STATE.json</code>) and on what rule; you
+do not choose after seeing them. <code>compare_forks.py</code> sets them
+side by side. Branch A rooms have no fork point inside the reading; a
+second reading of a branch A room is a second run of the room, in a
+second copy of it.</p>
+<h2 id="8-order-parallel-work-the-giants">8. Order, parallel work, the
+giants</h2>
+<p>Rooms are independent; run as many at once as the platform allows,
+one coder per room at a time. Within the yard, take the rooms as J
+orders them; absent an order, the uncoded rooms first, smallest first,
+and the 300 rooms coded on earlier instruments last. The four rooms
+above 50,000 items (place, the_donald, leagueoflegends, hearthstone) are
+100 to 400 slices each; do not start one without J's word, and when you
+do, run it as a job of days with <code>STATUS.tsv</code> updated after
+every coder.</p>
+<h2 id="9-what-is-js-to-decide">9. What is J's to decide</h2>
+<p>Tell J, and wait, when: a room's gate departs from 500 (the lead may
+depart with a reason; you report it before the first coder runs); a
+slice fails twice; a lead's account fails E1, E3 or E4; a brief writer
+fails twice; a giant is next; a room's
+<code>record/cut_stats.json</code> disagrees with the census by more
+than a tenth; anything an agent reports as blocking it; and anything you
+do not understand. A question to J costs less than a room re-run.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

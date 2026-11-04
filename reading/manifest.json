@@ -1,0 +1,836 @@
+{
+ "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+ "sources": [
+  {
+   "key": "data-README",
+   "path": "data/README.md",
+   "sha256": "f9dc5427c2d96a786379eee2e8f80ab8420bef84dadae12fd38fe86759e02a6a",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "pixels/README.md",
+     "repository_path": "data/pixels/README.md",
+     "target": "data-pixels.md",
+     "status": "pinned"
+    },
+    {
+     "original": "atlas/README.md",
+     "repository_path": "data/atlas/README.md",
+     "target": "data-atlas.md",
+     "status": "pinned"
+    },
+    {
+     "original": "users/README.md",
+     "repository_path": "data/users/README.md",
+     "target": "data-users.md",
+     "status": "pinned"
+    },
+    {
+     "original": "venues-placers/README.md",
+     "repository_path": "data/venues-placers/README.md",
+     "target": "data-venues-placers.md",
+     "status": "pinned"
+    },
+    {
+     "original": "raw24/README.md",
+     "repository_path": "data/raw24/README.md",
+     "target": "data-raw24.md",
+     "status": "pinned"
+    },
+    {
+     "original": "pixels-hourly/README.md",
+     "repository_path": "data/pixels-hourly/README.md",
+     "target": "data-pixels-hourly.md",
+     "status": "pinned"
+    },
+    {
+     "original": "pixels-per-artwork/README.md",
+     "repository_path": "data/pixels-per-artwork/README.md",
+     "target": "data-pixels-per-artwork.md",
+     "status": "pinned"
+    },
+    {
+     "original": "_lib/rplace_window.py",
+     "repository_path": "data/_lib/rplace_window.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "../Manual/data-and-collection.md#terms-of-use",
+     "repository_path": "Manual/data-and-collection.md",
+     "target": null,
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "b48dc451addc1cb0c4070cc3d6c8b1a8bcafc533993bad2d6bd4461dcb1da890"
+  },
+  {
+   "key": "coder-README",
+   "path": "coder/README.md",
+   "sha256": "4db02db5a8c7206e575f9b2a404082b1a8447b285d746876b0a35faa15762488",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "census/README.md",
+     "repository_path": "coder/census/README.md",
+     "target": "census-README.md",
+     "status": "pinned"
+    },
+    {
+     "original": "../Manual/census.md",
+     "repository_path": "Manual/census.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "handler/CHECKPOINTS.md",
+     "repository_path": "coder/handler/CHECKPOINTS.md",
+     "target": "coder-checkpoints.md",
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "369932900d5f75a9dfc36febc6f58e8f0eb8ac89d7dab8b7cce2438068bafb84"
+  },
+  {
+   "key": "data-for-agents",
+   "path": "data/FOR-AGENTS.md",
+   "sha256": "a9d4e95c5869e763520ffba42bc1e5b646f1864b095c566fc575e0399a798fa3",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "README.md",
+     "repository_path": "data/README.md",
+     "target": "data-README.md",
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "204df45537cf35369037eedc6a95085ff4c329c07d7a39ffc569280c2259a416"
+  },
+  {
+   "key": "data-lib",
+   "path": "data/_lib/README.md",
+   "sha256": "3e022e8978de1e7211705a5f189050c8d8880542a90d91c322c2ba898e2f4583",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "9e6e927831c9e04564893a697db391a2b5d6391a6826096aceaf94571287b6d0"
+  },
+  {
+   "key": "data-pixels",
+   "path": "data/pixels/README.md",
+   "sha256": "ee5ba42ff6f5aa8220ed0a4604327ba5c89480f691c224df35ff91a74e90f424",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "387813159f66030b56a3e60698bf1d7823a566bbc5b4c8161e60b34f98d4d809"
+  },
+  {
+   "key": "data-pixels-link",
+   "path": "data/pixels/LINK.md",
+   "sha256": "70e527ac45e26ecf506179fca156b072f5feae54b26e882db96811bcbb798da2",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "c806a0f9f5462107fcb7f963c3145c47d0c026827b013987f49651dc05f8adc8"
+  },
+  {
+   "key": "data-atlas",
+   "path": "data/atlas/README.md",
+   "sha256": "fcaae3b2d4fe51970795fba4b6316f52caf013e4e80f2cb1cb2609bde550939a",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "5acc09f86f9c810b664fe362baff3eaad948bd2950471f169a12db9ad27cd279"
+  },
+  {
+   "key": "data-users",
+   "path": "data/users/README.md",
+   "sha256": "539141bd7b6696e63616cb3a05bb7ea04a7727a7e68eb205ac5561c5bc41dd46",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "c8601d1de7b51009b8092df745e83fd1f76cc1a00d52ed962a572c48392b3bfa"
+  },
+  {
+   "key": "data-users-link",
+   "path": "data/users/LINK.md",
+   "sha256": "25b8eacd0c21af4b5aa3dd86b301e953e215e72520e6e129cceb801755059b16",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "fdf9acb536ef84e1bfee8d144076a1d41d3c49c13176719849bed6fc8e305174"
+  },
+  {
+   "key": "data-venues-placers",
+   "path": "data/venues-placers/README.md",
+   "sha256": "1810bdeeb0128db206d0417a335cdc79e2ce50d894a0c76dd7712bfc0e1365e0",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "60a862527625dd92fcc58b015febf9f96db86b95d620a1bfdbedba680b349df6"
+  },
+  {
+   "key": "data-venues-placers-link",
+   "path": "data/venues-placers/LINK.md",
+   "sha256": "7cbfc435775c014616841cb5fa4081ad525ca78a373814741d5075cdef55ba17",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "8166704c72b717108266d53f9ce83e7b56fa30da6798d2babce825c501b7fd77"
+  },
+  {
+   "key": "data-raw24",
+   "path": "data/raw24/README.md",
+   "sha256": "195b932e28a22a8b5089950418baaa358d463f616a90bf6cae7536fe91edc7c0",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "af77c47c8560ae8496c9458ffd027c8f7b9341e989c5333d1a4255ca527a0d77"
+  },
+  {
+   "key": "data-raw24-link",
+   "path": "data/raw24/LINK.md",
+   "sha256": "2167bae982489bbf76c27b9db0ced7c8b21c1298e281ab75c27001e0cbf18197",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "8d45e1f325f537530ca9f3e461ce63168b454f75500866df28d97c6b7b62d626"
+  },
+  {
+   "key": "data-pixels-per-artwork",
+   "path": "data/pixels-per-artwork/README.md",
+   "sha256": "f39897930625819db42b9a7112e233c6cf2cf5a0e9930868073ce16a77819c1f",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "9d11c888aea39d068516d471686ac5fe8949342c886df976c66de9cadd6e79d4"
+  },
+  {
+   "key": "data-pixels-per-artwork-link",
+   "path": "data/pixels-per-artwork/LINK.md",
+   "sha256": "1ffb53b84df5af629bf64d3e43ba77012cf72a8a61b8d072cc134a2290fc332c",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "2231451741fecf5300ce0c5f54915fb0766864c15260609c256df794f8021df7"
+  },
+  {
+   "key": "data-pixels-hourly",
+   "path": "data/pixels-hourly/README.md",
+   "sha256": "bf1ace8f69ed7d37eb3d5ef36fe3322de65bd826bee41cfacba0199085f1c3bc",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "e8405a9505649c16ac396ef5c6e320ad180cbf00f0a90f95ef472e8675549812"
+  },
+  {
+   "key": "data-pixels-hourly-link",
+   "path": "data/pixels-hourly/LINK.md",
+   "sha256": "0d53131da2b618a544c9baad8719d694d92c7a54693eb68fda5b26dae64f7a4b",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "4f874b82233022ddb97be9687564aa3e67027c4245e373e5d746ab302d89839e"
+  },
+  {
+   "key": "data-activity",
+   "path": "data/pixels-hourly/README-activity.md",
+   "sha256": "ca95c4106c8c71c23eba51ef52be5016a6b435638a607dab7cec8ec2b230e5e8",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "0e053c24b428ac559cf657923eaad7bc4e1d1599dc23582dc104464ca29e404c"
+  },
+  {
+   "key": "census-README",
+   "path": "coder/census/README.md",
+   "sha256": "3ac647004d0d458ddb73238040ed96eb763bad5cd2d76ba757709b197a25099c",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "../../Manual/census.md",
+     "repository_path": "Manual/census.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "../../Manual/artworks-outside-the-population.md",
+     "repository_path": "Manual/artworks-outside-the-population.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "builders/README.md",
+     "repository_path": "coder/census/builders/README.md",
+     "target": "census-builders.md",
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "bc71ac8632fb393d60fc6ebb83a41445bed271ebd09de815ebc015fdaa6c06d5"
+  },
+  {
+   "key": "census-builders",
+   "path": "coder/census/builders/README.md",
+   "sha256": "ca2eefc0509ab311117491f04cdee153a8ed2042c7eb9273841622e432d3de70",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "507450e3613978d12d814277352c2660ab9ad90f5b50e40c0696f517e1c5023c"
+  },
+  {
+   "key": "coder-contract",
+   "path": "coder/instrument/v32/CONTRACT.v32.md",
+   "sha256": "986f8b520bce808eebe5b93c317f73e60f747b8bfab34f8ad51e600ae48218e1",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "dca3067e26c694025182e305ee23a79a2b1dbae035f3651be8bd3afc32176e23"
+  },
+  {
+   "key": "case-lead",
+   "path": "coder/instrument/v32/CONTRACT-case-lead.v32.md",
+   "sha256": "7b84da1d4ca2a5f3375bdefbb0881a9d738e5273480eecc2cddb8b1c77e16974",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "9ebe6b7bc12eeadf1da70a1bb0438ab2f8efd33108522fc3fef163cc0565aa0a"
+  },
+  {
+   "key": "fleet-coder",
+   "path": "coder/instrument/v32/CONTRACT-fleet-coder.v32.md",
+   "sha256": "79c8ad2f723af36a296601fe9ea63b9c5b679e20e83bd66c2387ba1e9be42af3",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "72827be24136fea9fe2a42746c2defb1f0a075d9e797bf883d800bf0418851a5"
+  },
+  {
+   "key": "scheduler",
+   "path": "coder/handler/CONTRACT-scheduler.md",
+   "sha256": "7e5fbadee821e22351543d42546d0663a9b2b0fcdad58ad220739a47d7f63a56",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "../instrument/v32/rationale/V32-C5-PREVENTION-RATIONALE.md",
+     "repository_path": "coder/instrument/v32/rationale/V32-C5-PREVENTION-RATIONALE.md",
+     "target": "coder-v32-rationale.md",
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "cf6bd3ab4b09e14c4e86a9c6223fe5131b44ab5be594289cbe78357e7d3e1f9b"
+  },
+  {
+   "key": "brief-writer",
+   "path": "coder/instrument/v32/CONTRACT-brief-writer.v32.md",
+   "sha256": "0b6139ce0c9d11e09e978911db1aafa3520985ecdff050d5e6f53108dcb7f122",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "edf9c95138a76a396eb3366bdd1fd0332306fdefb6a7452c97715998abbc9bd2"
+  },
+  {
+   "key": "coder-agent",
+   "path": "coder/instrument/v32/AGENT.v32.md",
+   "sha256": "f428e33ead41ba54ae06d7001b6fb729b60e4ea6990b1d251b0521062594c82f",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "2e35a1d91434a44d2c036609b23251e292509f5b52ae7cf59d4cdba2dbecb6e5"
+  },
+  {
+   "key": "coder-tools",
+   "path": "coder/instrument/v32/TOOLS-SPEC.md",
+   "sha256": "345ecc3e886596f9a537b2e1728e0647063edd0854694c53aa0538a3cf17bf70",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "e31e5f76d757de6f906104cd86702b8095e7d66ce409911cb6a8ad0038443b77"
+  },
+  {
+   "key": "coder-instrument",
+   "path": "coder/instrument/v32/README.md",
+   "sha256": "980387f6c055f495ec2804bc3e43a602b2fb9a88cbf9dd41e0d00d9a4662ed65",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "354f8ad62ad22ebed6a36cff6f4f221060393f8b4f5b6c91fde19b3089d068aa"
+  },
+  {
+   "key": "coder-changelog",
+   "path": "coder/instrument/v32/CHANGELOG-v32.md",
+   "sha256": "de3f6de8b2db827b2372982409f116206c88fb028c7fcfb9629bd12ce60eb933",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "f547873b590f6524a77df92794bb8f816af10d8fe531d97d0ebc59c06741d6b9"
+  },
+  {
+   "key": "coder-v31-rationale",
+   "path": "coder/instrument/v32/rationale/V31-PREVENTION-RATIONALE.md",
+   "sha256": "076c254784cbc43c0163ea3756dc8bb029c38f51f0b8c165280b5736554a554f",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "a92d975ea0bb81b02c00cb7a2d1214716d4164f62cdcac3a9b34ce5c72808ae3"
+  },
+  {
+   "key": "coder-v32-rationale",
+   "path": "coder/instrument/v32/rationale/V32-C5-PREVENTION-RATIONALE.md",
+   "sha256": "8fd2a2a842b0d9ecd540e38b454c4db0081cf8870a0b4afffc558968b5bcd4a2",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "3d81367ee9a8b0a9d422a2612d6d675745239c107219e99ddc08250c56b6ecf1"
+  },
+  {
+   "key": "coding-scheduler",
+   "path": "coder/handler/CODING-SCHEDULER.md",
+   "sha256": "22eb395d7e79a10570846846d68db9ea3a85fad8a411fb1e43fa23d7e58a1952",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "473bacaa7a0f78a6e834fdf8a5403ca37c28854caf995aa7639a7eaefe2e4599"
+  },
+  {
+   "key": "case-lead-prompt",
+   "path": "coder/handler/CASE-LEAD-PROMPT.md",
+   "sha256": "72b66473307467a8cf1dadfcada45bcf164a4139f53db4c374cc249839d3858a",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "f1d33645e3ffae15688e41b6a57cefe33a0b0389d43feb227f1ed443ae47fd9d"
+  },
+  {
+   "key": "coder-checkpoints",
+   "path": "coder/handler/CHECKPOINTS.md",
+   "sha256": "0578b05a13106bc55d8f8b27cda5701c2eb7d264acffe36927f7c8dbe3812575",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "1bde48df8dcb86809e63b99cdfa46794b93814630d00e45199c122c3e35567dc"
+  },
+  {
+   "key": "brief-coordinator",
+   "path": "coder/handler/BRIEF-COORDINATOR.md",
+   "sha256": "0276e9a00b18f373de3f949debda16e9e40b9a8f0db07d9eeaf4d32af9ca92ab",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "d97b8052e7d64e45ba06735f3d4f2de7ce909f2c657528a27bd74ed5b469f30b"
+  },
+  {
+   "key": "brief-writer-prompt",
+   "path": "coder/handler/BRIEF-WRITER-PROMPT.md",
+   "sha256": "d30dae43e1cb3a99973d29e579af5ad8561375a822a6ba1d2c2df7c87356393b",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "952f5b22ef821e5d623aab1bedb9a727960339d6c2044fbfd42327b90a800cba"
+  },
+  {
+   "key": "repair-queue",
+   "path": "coder/handler/REPAIR-QUEUE-RESTART-RULES.md",
+   "sha256": "f3f3ea9ed355a050134d9540387d16353dacf376be4b7bbc2456397eacf94d46",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "0d89a68897c2ad2d1049b05529ad8b2cdc6edad279909b121748eeead8c67e82"
+  },
+  {
+   "key": "verified-archives",
+   "path": "coder/handler/VERIFIED-RUN-ARCHIVES.md",
+   "sha256": "c13ef3e5fbe4bfa6d664e3d788b31f34af876e2e81c26e2bc60b206ad6158a07",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "f4dab09e94c040a157b98a39c8690ef7ba7339c0a67d1cfbbc4ba49af81915e9"
+  },
+  {
+   "key": "handler",
+   "path": "aggregator/handler/HANDLER.md",
+   "sha256": "0aa8f43ae8886a9b4d99ec1300c74c8cc819919207905cf3562210118c281b62",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "claude-adapter/LEGS.md",
+     "repository_path": "aggregator/handler/claude-adapter/LEGS.md",
+     "target": "legs.md",
+     "status": "pinned"
+    },
+    {
+     "original": "claude/READ-ME-FIRST.md",
+     "repository_path": "aggregator/handler/claude/READ-ME-FIRST.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "../../coder/handler/CONTRACT-scheduler.md",
+     "repository_path": "coder/handler/CONTRACT-scheduler.md",
+     "target": "scheduler.md",
+     "status": "pinned"
+    },
+    {
+     "original": "../../Manual/files/coder/yard-structure.md",
+     "repository_path": "Manual/files/coder/yard-structure.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "../instrument/tools/version_log.py",
+     "repository_path": "aggregator/instrument/tools/version_log.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "paths.py",
+     "repository_path": "aggregator/handler/paths.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "import_rooms.py",
+     "repository_path": "aggregator/handler/import_rooms.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "extract_legacy.py",
+     "repository_path": "aggregator/handler/extract_legacy.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "build_outcome.py",
+     "repository_path": "aggregator/handler/build_outcome.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "build_canvas.py",
+     "repository_path": "aggregator/handler/build_canvas.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "../instrument/tools/build_shelves.py",
+     "repository_path": "aggregator/instrument/tools/build_shelves.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "../instrument/shelves/make_meta.py",
+     "repository_path": "aggregator/instrument/shelves/make_meta.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "claude/build.sh",
+     "repository_path": "aggregator/handler/claude/build.sh",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "claude/acceptance.sh",
+     "repository_path": "aggregator/handler/claude/acceptance.sh",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "claude-adapter/probe_lifecycle.py",
+     "repository_path": "aggregator/handler/claude-adapter/probe_lifecycle.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "claude-adapter/LEGS.md",
+     "repository_path": "aggregator/handler/claude-adapter/LEGS.md",
+     "target": "legs.md",
+     "status": "pinned"
+    },
+    {
+     "original": "build_raw_record.py",
+     "repository_path": "aggregator/handler/build_raw_record.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "check_quotes.py",
+     "repository_path": "aggregator/handler/check_quotes.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "gather_collection.py",
+     "repository_path": "aggregator/handler/gather_collection.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "bundle_history.py",
+     "repository_path": "aggregator/handler/bundle_history.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "claude-adapter/LEGS.md",
+     "repository_path": "aggregator/handler/claude-adapter/LEGS.md",
+     "target": "legs.md",
+     "status": "pinned"
+    },
+    {
+     "original": "paths.py",
+     "repository_path": "aggregator/handler/paths.py",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "paths.example.json",
+     "repository_path": "aggregator/handler/paths.example.json",
+     "target": null,
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "1734ac21752e42165d076a9a4766a8dd91098aa0236994c3cb31138f09f35171"
+  },
+  {
+   "key": "legs",
+   "path": "aggregator/handler/claude-adapter/LEGS.md",
+   "sha256": "9bac7939c271749d66513149ff0b2f8b5b9c1d2d14c5fa8d237a99af041a5d10",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "c47ccbcb493adc0e956f2398f55f255e771ca4ae85778777ee65949eaefc3071"
+  },
+  {
+   "key": "codex",
+   "path": "OPENAI.md",
+   "sha256": "551b4a33f76745967d0883dd50f5512e11b62f7cd77579119bb2881320d51242",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [
+    {
+     "original": "aggregator/handler/codex/BLOCKS.md",
+     "repository_path": "aggregator/handler/codex/BLOCKS.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "aggregator/handler/codex/REMOTE.md",
+     "repository_path": "aggregator/handler/codex/REMOTE.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "aggregator/handler/codex/BRANCHES.md",
+     "repository_path": "aggregator/handler/codex/BRANCHES.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "aggregator/handler/codex/HANDLER-CHAT.md",
+     "repository_path": "aggregator/handler/codex/HANDLER-CHAT.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "FLEET-ARMS.md",
+     "repository_path": "FLEET-ARMS.md",
+     "target": null,
+     "status": "pinned"
+    },
+    {
+     "original": "aggregator/instrument/PLATFORM-codex.md",
+     "repository_path": "aggregator/instrument/PLATFORM-codex.md",
+     "target": "platform-codex.md",
+     "status": "pinned"
+    },
+    {
+     "original": "aggregator/instrument/stages/STAGE-A1-reading-room-notes.md",
+     "repository_path": "aggregator/instrument/stages/STAGE-A1-reading-room-notes.md",
+     "target": "stage-A1.md",
+     "status": "pinned"
+    },
+    {
+     "original": "aggregator/instrument/METHOD.md",
+     "repository_path": "aggregator/instrument/METHOD.md",
+     "target": "method.md",
+     "status": "pinned"
+    }
+   ],
+   "reading_sha256": "3d5f4c0d919c466c52caa89f9c87d7c7cd049574f6daf1c900fdb0726d76bbc3"
+  },
+  {
+   "key": "contract",
+   "path": "aggregator/instrument/CONTRACT-aggregator.md",
+   "sha256": "ec92317becd24b53eecf35faa87b629893b0649a6037a59020ddea9dd9d929ef",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "daa1c68062e2dea510edf742fddc7677cbe575d70087562dd9bfdb04551bc6ff"
+  },
+  {
+   "key": "method",
+   "path": "aggregator/instrument/METHOD.md",
+   "sha256": "5daaeb2319f61a54cfa4d9acbcd077e3a1405edd470795005fb0e152e27fc415",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "4d53110cfbbeb149508316b775ba0de893b680556b9595259deaf8b3b55710f1"
+  },
+  {
+   "key": "writing",
+   "path": "aggregator/instrument/WRITING.md",
+   "sha256": "df6718d74c3a296de39288f338541dad1126651255b573ee3e5de6681ff5026d",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "a4530bf5465e78e3eb7c0e40117ac19bec01a80deaeb4880feb811bf9880661c"
+  },
+  {
+   "key": "standing",
+   "path": "aggregator/instrument/STANDING-INSTRUCTIONS.md",
+   "sha256": "ccd2b0839511624273133f66466c7721a361e45b69e60617a131d44a0a7c8ecb",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "18365e33293738a1fab2946c14dd4c6750e3ec395f2b52e106bc9af7c624986c"
+  },
+  {
+   "key": "how-to-run",
+   "path": "aggregator/instrument/HOW-TO-RUN.md",
+   "sha256": "d505880783e8d13966e29e64d4b91fc94823f3d4135461af0d7338dfcaeabd2b",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "0cca3d2b6aed47c5873f205de4ed31e69fa3da94732807dcb462f2ffd32851c9"
+  },
+  {
+   "key": "platform-claude",
+   "path": "aggregator/instrument/PLATFORM-claude.md",
+   "sha256": "c7b542f7e4578bcf4856a852e16c5e0feb55f3dcd3cdd10e0e91a98038bb09d1",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "e57aeabd4227344d6f496b37a9a934d467b5f897de214cb934f22d478beda28a"
+  },
+  {
+   "key": "platform-codex",
+   "path": "aggregator/instrument/PLATFORM-codex.md",
+   "sha256": "184d65e91d1886d9cd89403f73cba5fd9d5ef9baa09897971c4d421f3f8103ac",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "f404616c7b0bdefa0d5b911f0c9ba1789664e98696a26a94a41c417150f80a02"
+  },
+  {
+   "key": "adaptations",
+   "path": "aggregator/instrument/SCHEMA-adaptations.md",
+   "sha256": "88aac5a1b16141f3914a3994b2d881a8274b012f050e8ccd6cc47e319c514914",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "cf9971ac9e6880e3baf3e2b8683c19861675c98a47c9ec2610920de87adda454"
+  },
+  {
+   "key": "stage-A1",
+   "path": "aggregator/instrument/stages/STAGE-A1-reading-room-notes.md",
+   "sha256": "9a8ba05c6754cf316fd0fad43bedf08701a067a872c4cfad5809d3ff01653a76",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "1b4cd7874e0b0c1cde85970528ee0e2880baa4f0ffd89897f1b76fa68677350d"
+  },
+  {
+   "key": "stage-B1",
+   "path": "aggregator/instrument/stages/STAGE-B1-coding-third-order-scheme.md",
+   "sha256": "a2b733dded3046ba611c65e979beb597ef8ef26e8b625dea28469a254219f8a0",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "857db5ec4cb88c661764b1614eaef0baa4229f97ab68ceaf10e740a7d564e1e4"
+  },
+  {
+   "key": "stage-B2",
+   "path": "aggregator/instrument/stages/STAGE-B2-coding-pilot.md",
+   "sha256": "79c92744bb7b7b26941cf7738a849cf64f121caae77e8a940af97c0e570c8808",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "612bfe1c3e8a03ce9987782b50d1b207c5ef0f67393c60cc6e77616198dd7b80"
+  },
+  {
+   "key": "stage-B3",
+   "path": "aggregator/instrument/stages/STAGE-B3-coding-fleet.md",
+   "sha256": "31fd906762e1d2ebf478bcf621410fad82d17a1432defed958a75cb8c07adcc7",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "5a49f5cc10e6da730a140310e4913dc9549c7728358e4893b2c86ee9ea60934d"
+  },
+  {
+   "key": "stage-B4",
+   "path": "aggregator/instrument/stages/STAGE-B4-coding-adjudication-and-freeze.md",
+   "sha256": "7fb68adfcd6a1dab15368728559d3eb3c91162c555a8a69b26a53571dfd16ebe",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "f2cb3d292b5b1511d3c1f88a9a7c6c1d0453465dc3c6b1b4b11adb641831822b"
+  },
+  {
+   "key": "stage-C1",
+   "path": "aggregator/instrument/stages/STAGE-C1-model-structuring.md",
+   "sha256": "04bfb71195594cbaa2dd500b592419c539c2ea7afdde92d2db2de7ec25183b58",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "ebf0dc7a31229435b58e663a0ba75ba84f9ef32fd4eccf45ab44a41ba2766f6b"
+  },
+  {
+   "key": "stage-C2",
+   "path": "aggregator/instrument/stages/STAGE-C2-model-the-loop.md",
+   "sha256": "e9a2ee259d281a421640230c300d693a7f07d3081ec1549bfa097202269ecd17",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "8e09392f386e202c5f60b2e34c410e8b55413e6d7f68b418c272e1a24d7eb7b7"
+  },
+  {
+   "key": "stage-C3",
+   "path": "aggregator/instrument/stages/STAGE-C3-model-literature.md",
+   "sha256": "9232e37ea6cda07a6eb28bef367ce7202231b37cc3121dfa051d82a5b3cf2641",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "154ac8f80b9c08f28ffcac5aab04393a66ff9b7f89a7b844b75aab92cd05ff3d"
+  },
+  {
+   "key": "stage-C4",
+   "path": "aggregator/instrument/stages/STAGE-C4-model-the-field.md",
+   "sha256": "dec5968155f6420e1b758384681cf0d20406c7680217e1ece452270212c43f7f",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "7b3163a2d2906dbfd42f7c9862669a2a2f14b04fb881027b90f8a23ef61df76e"
+  },
+  {
+   "key": "stage-C5",
+   "path": "aggregator/instrument/stages/STAGE-C5-model-account.md",
+   "sha256": "c0904fc40910da0b2d37fa801159ea39d85b84df09263c343aec2c36104756c4",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "3dfd12a96f2caf7705b27ce9e779c58f6d5ad4b2dab7c3e7d2d0fafc9c841e5c"
+  },
+  {
+   "key": "stage-D1",
+   "path": "aggregator/instrument/stages/STAGE-D1-adaptation-return-build.md",
+   "sha256": "e7f7a3da33a3603708b1c320337ce205f55d4ae6500807d4558c3a94853fdc4d",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "87ad8f33191e19f47aaeb55a0364de9ec00fb1cf0054d822a607c6ea6751b925"
+  },
+  {
+   "key": "stage-D2",
+   "path": "aggregator/instrument/stages/STAGE-D2-adaptation-labelers-and-verdicts.md",
+   "sha256": "2fe159d9d0967d09e425785ecba74e0e07f9220e4d4fed63ddaa8f622c3f81de",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "dc31aa2406dff9398a2e04b27eb4fb83d65dad87893127c4240b8bb0afdce0d8"
+  },
+  {
+   "key": "stage-D3",
+   "path": "aggregator/instrument/stages/STAGE-D3-adaptation-adjudication.md",
+   "sha256": "3dc71c70120dae278ea87958a4b45f2ac02b44eacbd1a2ba2e3534884b623338",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "d65fbc94df0d29a568bc331005bcd3031de37514ca9b13b3d4320670cb10d2e2"
+  },
+  {
+   "key": "stage-D4",
+   "path": "aggregator/instrument/stages/STAGE-D4-forming-the-tree.md",
+   "sha256": "a28da602661375431d68a7fdf90920ef62bca59fddfe37fde9462a8f891cb3c9",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "890cba049f2951c4e5d1f8697a94fa0a4a942c1b652b29be92b224522e8986bf"
+  },
+  {
+   "key": "stage-D5",
+   "path": "aggregator/instrument/stages/STAGE-D5-forming-branch-accounts.md",
+   "sha256": "d00fff0cabc3825eb40949f2e19c0421140116c13b0b17b5fa33d3c875cf1640",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "ce423f172dea82d5c4350d2e6ebc607ea3b431d93573a06670c020eefe9099ba"
+  },
+  {
+   "key": "stage-D6",
+   "path": "aggregator/instrument/stages/STAGE-D6-forming-the-retelling.md",
+   "sha256": "b82b0af634ba86053b074d7f0ddedab99830e4fe324fcd079ded914b0d0d2485",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "5feb8c8916e1b59388d09fdd8565e2c44e6e09e4d144680ede285f1aaa02e83b"
+  },
+  {
+   "key": "stage-E1",
+   "path": "aggregator/instrument/stages/STAGE-E1-formalizing-audit.md",
+   "sha256": "7c5d45ab13dbdde7e28373dcbc2a6c26447da0c060e1b54acee1a08460173bc3",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "6ebf50074c95cf644b66dadeb4e68020485b7f0960d6667ffb288fa9bbc26245"
+  },
+  {
+   "key": "stage-E2",
+   "path": "aggregator/instrument/stages/STAGE-E2-formalizing-feedback.md",
+   "sha256": "19de4da8d6adc78bb837a997065744d5f3ba5ef6b8a8e10144d7a3cd051a4501",
+   "commit": "7c788ae58ce0d4ae171d65e7550cf55b83a22624",
+   "links": [],
+   "reading_sha256": "7f417ca158f6ac2eca8df943bf1bb56fed37447e94e12879e42f2d136b5ca013"
+  }
+ ]
+}

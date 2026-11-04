@@ -1,0 +1,45 @@
+{
+  "community": "armenia",
+  "archive_sha256": "ad8f00be2985404b1fea4f03f47bb6e559dbc6ce079c1785369d5455bfbc07e1",
+  "archive_name": "armenia.tar.zst",
+  "session": "01a14350-7f6b-79a1-b67e-3d549107b303",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T08-05-11-01a14350-7f6b-79a1-b67e-3d549107b303.jsonl",
+      "sha256": "14efaba224d9e4ee3d593fed2a8600aa3720657bfc3a7d9c0eb00d20d1a18fcf",
+      "lines": 230,
+      "last_utc": "2026-10-16T06:15:05.300Z",
+      "identity": [
+        {
+          "id": "01a14350-7f6b-79a1-b67e-3d549107b303",
+          "session_id": "01a14350-7f6b-79a1-b67e-3d549107b303",
+          "timestamp": "2026-10-16T06:05:11.403Z",
+          "forked_from_id": "01a086cc-dd05-7161-acc7-45f42cf6c81a",
+          "forked_from_ordinal_exclusive": 752,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T06:05:46.994Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T06:09:20.952Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "395a715a407b739ec61c7c72e12d17cd31e52e069f78de2e9e6fc61653274177",
+    "source_archive_sha256": "66d94a302f635584da7232776611c432910eed16dcd9877b37f27cfa7b60bb44",
+    "checkpoint": "5fcaea113c12f14a2f5a1a15f75a34ddfc89ddf12516c53c1e1ae3c89e564048",
+    "source_finished": "2026-09-09T16:37:07.407003+00:00",
+    "source_archive_name": "armenia-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

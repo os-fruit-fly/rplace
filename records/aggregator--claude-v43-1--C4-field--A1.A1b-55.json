@@ -1,0 +1,130 @@
+{
+  "checkpoint_id": "aggregator--claude-v43-1--C4-field--A1.A1b-55",
+  "bundle_sha256": "f0599af6b3227246a17f0dcda3f11463f716865c3bdedf7afc0489baddac6b08",
+  "snapshot_manifest_sha256": null,
+  "recipe_sha256": "127b0bf6f621506c36897e9f8cf87933f057203c6fd1b779f7e0b9826393efb8",
+  "commit": "d0b53f5dc3249d9f4415395db99276cd143519fc",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/out/_head.md",
+      "sha256": "448c747290f8f3653c01312f898d551a08bcc6f600239c4b7b6ff54025eb9256",
+      "bytes": 19023,
+      "source_file": "record-files/448c747290f8f3653c01312f898d551a08bcc6f600239c4b7b6ff54025eb9256.md",
+      "origin": {
+        "blob": "ee68cfc443999dd57f376672375307991f32b404",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md"
+      },
+      "reading_sha256": "448c747290f8f3653c01312f898d551a08bcc6f600239c4b7b6ff54025eb9256",
+      "reading_bytes": 19023,
+      "reading_file": "448c747290f8f3653c01312f898d551a08bcc6f600239c4b7b6ff54025eb9256.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "01-_head",
+      "raw": "../files/448c747290f8f3653c01312f898d551a08bcc6f600239c4b7b6ff54025eb9256.reading.md"
+    },
+    {
+      "path": "workspace/out/contrast.md",
+      "sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "bytes": 7599,
+      "source_file": "record-files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.md",
+      "origin": {
+        "blob": "e47aeca4dab7bb35c528ba9164327619b33f3f71",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/contrast.md"
+      },
+      "reading_sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "reading_bytes": 7599,
+      "reading_file": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-contrast",
+      "raw": "../files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md"
+    },
+    {
+      "path": "workspace/out/coordinating-rule-A1.md",
+      "sha256": "a7540933550a2072fb2624f96b5dae3a883cd1553acac8b596ca3673fe288248",
+      "bytes": 10481,
+      "source_file": "record-files/a7540933550a2072fb2624f96b5dae3a883cd1553acac8b596ca3673fe288248.md",
+      "origin": {
+        "blob": "d923de9dff5819e21bd5869fc08a8ceaf3ac9bda",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/coordinating-rule-A1.md"
+      },
+      "reading_sha256": "a7540933550a2072fb2624f96b5dae3a883cd1553acac8b596ca3673fe288248",
+      "reading_bytes": 10481,
+      "reading_file": "a7540933550a2072fb2624f96b5dae3a883cd1553acac8b596ca3673fe288248.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "03-coordinating-rule-A1",
+      "raw": "../files/a7540933550a2072fb2624f96b5dae3a883cd1553acac8b596ca3673fe288248.reading.md"
+    },
+    {
+      "path": "workspace/out/handback-A1.md",
+      "sha256": "7b667f31cb55d0e6f90305e9d0124edba0fcac3966d38b89a356a409aca9eaee",
+      "bytes": 9207,
+      "source_file": "record-files/7b667f31cb55d0e6f90305e9d0124edba0fcac3966d38b89a356a409aca9eaee.md",
+      "origin": {
+        "blob": "edf2fa9ffb7a31b150ac4ac599832aeaeac6c4c1",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/handback-A1.md"
+      },
+      "reading_sha256": "7b667f31cb55d0e6f90305e9d0124edba0fcac3966d38b89a356a409aca9eaee",
+      "reading_bytes": 9207,
+      "reading_file": "7b667f31cb55d0e6f90305e9d0124edba0fcac3966d38b89a356a409aca9eaee.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-handback-A1",
+      "raw": "../files/7b667f31cb55d0e6f90305e9d0124edba0fcac3966d38b89a356a409aca9eaee.reading.md"
+    },
+    {
+      "path": "workspace/out/lexicon-A1.md",
+      "sha256": "6c57cc7718a7674c65701d4b6b0acc0594239d4e3b7d5c9aced72ccd3cabd3b0",
+      "bytes": 68222,
+      "source_file": "record-files/6c57cc7718a7674c65701d4b6b0acc0594239d4e3b7d5c9aced72ccd3cabd3b0.md",
+      "origin": {
+        "blob": "44ca8614da30c4f6aeaab46616e077fd0ebbbc8d",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/lexicon-A1.md"
+      },
+      "reading_sha256": "f15e59c8fdacce240eecf15d1baffa01d507e9bca10954f91155bcaabafbdfea",
+      "reading_bytes": 68262,
+      "reading_file": "6c57cc7718a7674c65701d4b6b0acc0594239d4e3b7d5c9aced72ccd3cabd3b0.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "05-lexicon-A1",
+      "raw": "../files/6c57cc7718a7674c65701d4b6b0acc0594239d4e3b7d5c9aced72ccd3cabd3b0.reading.md"
+    },
+    {
+      "path": "workspace/out/notes-A1.md",
+      "sha256": "8e6500ec2e88642db09c41bc60031993432ed3b8dc8b4251b0eb0655ad8b2f54",
+      "bytes": 131073,
+      "source_file": "record-files/8e6500ec2e88642db09c41bc60031993432ed3b8dc8b4251b0eb0655ad8b2f54.md",
+      "origin": {
+        "blob": "9246e3299776486d7226fda7fbd2ce4e130a16fc",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-A1.md"
+      },
+      "reading_sha256": "8e6500ec2e88642db09c41bc60031993432ed3b8dc8b4251b0eb0655ad8b2f54",
+      "reading_bytes": 131073,
+      "reading_file": "8e6500ec2e88642db09c41bc60031993432ed3b8dc8b4251b0eb0655ad8b2f54.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "06-notes-A1",
+      "raw": "../files/8e6500ec2e88642db09c41bc60031993432ed3b8dc8b4251b0eb0655ad8b2f54.reading.md"
+    },
+    {
+      "path": "workspace/out/running-A1.md",
+      "sha256": "832bfde3955055f8cfefa43871a744871c59d11e5c0a17b9ecb4662e2a48c8bf",
+      "bytes": 138416,
+      "source_file": "record-files/832bfde3955055f8cfefa43871a744871c59d11e5c0a17b9ecb4662e2a48c8bf.md",
+      "origin": {
+        "blob": "c02891f83911848cd1ba52f2a9f94fe32b10cd3a",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/running-A1.md"
+      },
+      "reading_sha256": "c08d733e2cdc104c6ce5602123200aa9491e7095181b8cfe713f02f8d1a290d5",
+      "reading_bytes": 138518,
+      "reading_file": "832bfde3955055f8cfefa43871a744871c59d11e5c0a17b9ecb4662e2a48c8bf.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "07-running-A1",
+      "raw": "../files/832bfde3955055f8cfefa43871a744871c59d11e5c0a17b9ecb4662e2a48c8bf.reading.md"
+    }
+  ],
+  "comparison": null
+}

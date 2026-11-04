@@ -1,0 +1,113 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Start from coded communities | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a  href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-agents" data-layer="Full reference"><h1 id="start-from-coded-communities">Start from coded communities</h1>
+<p>Target length: under 750 words. Reading key for the existing
+Aggregator handler.</p>
+<section class="spec"><h2 id="start-here">Start here</h2>
+<p>Open one Aggregator handler chat in Codex or Claude, with shell and
+folder access. Give it the prompt in the <a
+href="../guides/aggregator.md" target="_blank" rel="noopener">aggregator guide</a>, the instrument
+version and checked community-output paths. Prepare a new run outside
+the instrument checkout. Do not operate the shipped historical run.</p>
+<p>Obtain the <a
+href="../guides/download.md#get-the-instrument" target="_blank" rel="noopener">pristine prepared
+run</a>, or use the chosen repository version's
+<code>aggregator/input/</code> with its documented paths. Both are in
+the public research repository. The pristine archive is a starting
+filesystem, not a resumable conversation or a complete collection of all
+source data.</p>
+</section><section class="spec"><h2 id="required-inputs">Required inputs</h2>
+<p>Provide the census, community coder outputs, versions,
+collection/coding handoffs and declared context. The handler must check
+these against the chosen instrument before building. A prepared input
+table is not proof that every later stage can run.</p>
+<p>Write <code>HANDOFF-aggregator.md</code> with this preflight table.
+Use actual paths and results, not assumed readiness:</p>
+<table>
+<thead>
+<tr>
+<th>Point</th>
+<th>Required material</th>
+<th>If absent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build and A1</td>
+<td>Instrument version, census, checked community outputs and startup
+context specified by the contract</td>
+<td>Do not build or open A1 until the chosen handler's checks pass.</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>Field package, or the recorded decision allowed by the C4 card</td>
+<td>Stop at the C4 boundary and resolve the missing package or
+decision.</td>
+</tr>
+<tr>
+<td>D1 close and D3b</td>
+<td>Give <code>out/handoff-D/HANDLER.md</code>, then
+<code>out/handoff-D/recheck/HANDLER.md</code>, to the chat holding the
+original community leads. That chat acts as adaptation handler. The PI
+dispatches the verdict fleet through <code>dispatch.sh</code>.</td>
+<td>Stop the relevant handoff until its owner, lead packages and brief
+are confirmed.</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>Original community sessions, matching saved files, runtime
+provenance and handler registration</td>
+<td>Stop the affected returns. Do not replace original leads with fresh
+agents.</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Proposal/design and feedback materials required by its card</td>
+<td>Stop before E2 until the handler has delivered them.</td>
+</tr>
+</tbody>
+</table>
+<p>The interview catalogue shares 14 community coding closes and 14
+local-model closes. It does not establish availability of all original
+leads for the 705-community frame. A read-only interview bundle is not
+automatic admission to a research continuation. Request any unshared
+original lead packages from the study owner and verify them through the
+handler. If they are unavailable, record the limit and the last runnable
+stage rather than claim a complete reproduction.</p>
+</section><section class="spec"><h2 id="read-in-this-order">Read in this order</h2>
+<ol type="1">
+<li><a href="../reading/handler.md" target="_blank" rel="noopener">Handler contract</a>, including its
+own head and memory in the selected run.</li>
+<li>Choose one handler: <a href="../reading/legs.md" target="_blank" rel="noopener">Claude legs</a> or
+<a href="../reading/codex.md" target="_blank" rel="noopener">Codex</a>. Resolve author-specific example
+paths to this new study.</li>
+<li><a href="../reading/how-to-run.md" target="_blank" rel="noopener">Build and run</a>, <a
+href="../reading/contract.md" target="_blank" rel="noopener">contract</a>, <a
+href="../reading/method.md" target="_blank" rel="noopener">method</a>, <a
+href="../reading/standing.md" target="_blank" rel="noopener">standing instructions</a>.</li>
+<li><a href="../reading/manifest.json" download>Pinned source and dependency
+map</a>, then each stage's reading key and full card.</li>
+</ol>
+<p>The reading copies resolve links; exact canonical Markdown remains in
+<code>sources/</code>. Use one version throughout. An instrument/source
+hash identifies instructions; the historical checkpoint manifest
+separately identifies saved agent state.</p>
+</section><section class="spec"><h2 id="check-deliver-and-advance">Check, deliver and advance</h2>
+<p>Run the chosen handler's build, acceptance and lifecycle checks.
+Record their versions and outcomes before launching A1. Verify
+original-lead availability early, even though D2 comes later. The Codex
+route provides <code>lead-status</code> and <code>register-lead</code>;
+use the selected controller's documented registration rules.</p>
+<p>Deliver stage cards and startup inputs in order. The aggregator
+interprets; the handler checks deliverables and records the close. Keep
+the head, decisions and gaps on disk. Use only the prescribed checkpoint
+boundaries.</p>
+</section><section class="spec"><h2 id="stop-when">Stop when</h2>
+<p>Stop at the relevant boundary for a missing input, failed acceptance,
+incompatible runtime or unmatched native session. Report the exact gap
+and who can resolve it. Historical publication status is never launch
+permission. This reading key does not waive scientific rules or change
+any stage.</p>
+<p><a href="aggregator.md" target="_blank" rel="noopener">Download this brief</a></p></section></main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

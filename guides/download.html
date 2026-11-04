@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1. Open the collection handler | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-run" data-layer="Guide"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="1-open-the-collection-handler">1. Open the collection
+handler</h1>
+<p>Open a new Codex or Claude chat that can work with files and a shell.
+Name it <strong>Collection handler</strong>. Use an empty working folder
+for this study. A chat without file or shell access cannot run the
+collection scripts.</p>
+<p><a href="../agents/collection.md" target="_blank" rel="noopener">Download the collection handler
+brief</a>, attach it to the chat, then paste this prompt:</p>
+<pre class="text"><code>You are the Collection handler for my r/place study. Read the attached Collection handler brief first. Obtain the instrument from the research repository into a separate working folder, record its version, and follow that brief and the repository&#39;s data recipes.
+
+Help me choose between the archived study inputs and a fresh collection. Obtain and check the required raw24, pixel, atlas and other inputs. Ask only for missing access or research decisions. Keep your head and action log on disk. Leave a checked handoff for the existing coding handler. Do not start coding or aggregation.</code></pre>
+<p>The handler can download the instrument and data, so the folders need
+no assembly first. Credentials go in the provider's sign-in flow, never
+in the prompt.</p>
+<h2 id="get-the-instrument">Get the instrument</h2>
+<p>Open the research
+repository, then choose <strong>Code → Download ZIP</strong>, or
+clone it if you use Git. The repository is public.</p>
+<p>To use the original starting point, download the verified
+starting package and extract it in an empty folder. It holds the
+first instrument and the prepared run at commit
+<code>f6588ae37d807884af5fdcc9f7e27a03b4ff253a</code>, with no
+aggregator conversation. The archive SHA-256 is
+<code>1755f467ec0e2a3753a616b5eb19ccfa5b5e1af187a61ceef4ec449274a89b4c</code>.
+Give this folder to the existing aggregator handler to start from the
+prepared inputs. A new collection still begins with the collection
+handler.</p>
+<p>The repository holds the instruments, scripts and recorded outputs.
+Large data stores and resumable checkpoint bundles are separate
+downloads. The interview launcher opens saved checkpoints and installs
+nothing of the research workflow.</p>
+<p>Research runs need a computer with a shell, Python 3.11, the
+dependencies the package lists, and the model access your chosen
+platform requires. Each handler's instructions name the requirements of
+its own part. The starting package passed all eight offline checks in a
+fresh Python 3.11 environment on the author's Mac, with its documented
+numpy, scipy and pandas dependencies; the test used a simulated model.
+Provider access, recollection and installation on another operating
+system remain untested.</p>
+<h2 id="prepare-the-records">Prepare the records</h2>
+<p>This step starts from the public pixel record, the atlas, the Reddit
+archives and the study's census decisions. Follow the collection
+recipes, keep the selected time window, then build each community's
+record. The census rests on judgments recorded in its files, and
+downloading the source data does not repeat them. Keep the prepared
+records, source versions, time window and census decisions. Move on when
+the recipes' checks pass and the inputs and versions are recorded.</p>
+<p>The handler keeps the archived study inputs apart from a new
+collection. Some archived stores still have no published download link.
+A recollection can lose records removed since the study, so it may
+differ from the archived bytes. The handler records each such gap and
+substitutes no input without saying so.</p>
+<h2 id="open-the-next-chat">Open the next chat</h2>
+<p>The collection handler leaves <code>HANDOFF-collection.md</code> with
+input paths, versions, checks and unresolved gaps. Open the <a
+href="communities.html">coding handler</a> and give it that file. Keep
+this collection chat for data questions.</p>
+<h2 id="documents-for-this-handler">Documents for this handler</h2>
+<ul>
+<li><a href="../agents/collection.html">Collection handler brief</a>:
+the brief attached above, as a page.</li>
+<li><a href="../sources/data-README.html">Data recipes</a>: how each
+input is obtained and checked.</li>
+<li><a href="../agents/download.html">Agent reading key</a>: what the
+handler must read, in order.</li>
+</ul>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

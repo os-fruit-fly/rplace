@@ -1,0 +1,330 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage D4. The taxonomy from adaptations. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-d4-the-taxonomy-from-adaptations">Stage D4. The taxonomy
+from adaptations.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-D4.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-D4.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort); <code>[1m]</code>
+context allowed for the first cut only. <strong>Legs:</strong> one per
+pass over the ledger, closed at the pass's end or earlier when you
+choose. Every move (a branch named, a subform declared, a cross-link
+declared) is logged and snapped when it is made (§2).
+<strong>Fleet:</strong> none. The clusters are yours; no blind cluster
+maker.</p>
+<p><strong>Steps:</strong> <code>D4a-01</code>, <code>D4a-02</code> ...
+one per pass over the ledger (a cut); the last ends with the handback
+and the interview. Each leg is named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each logged move (a branch, a
+subform or a cross-link). At a safe stop, check for <code>.pause</code>
+(<code>ls .pause</code>); if it is there, log where to pick up, your
+working hypothesis and the next room or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh D4 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+<code>SCHEMA-adaptations.md</code> §7, the last five diary entries,
+<code>validate.py --open D4</code>; the hierarchy shelf arrives
+(METHOD.md). First leg: the tree-likeness statistic and the key
+frequencies, before any tree.</p>
+<p><strong>Reads allowed:</strong>
+<code>_views/rooms-x-adaptations.&lt;level&gt;.&lt;kind&gt;.tsv</code>
+and the combined matrix; the distance matrix, the per-room deltas and
+the dendrogram as views; <code>mem.py rooms --with &lt;key&gt;</code>,
+<code>contrast</code>, <code>adaptations --element</code>; the member
+rooms' material through the verbs (<code>mem.py room</code>,
+<code>forest</code>, <code>case</code>, <code>codes --sub</code>), when
+you declare it as a ground (§2); <code>forms/</code> as it grows;
+<code>_views/relations.tsv</code>; <code>dropped.jsonl</code> and
+<code>RUN.json</code> for the accounting of §4.
+<strong>Forbidden:</strong> the chunk-share tree before your cuts are
+made (it is the comparison, built by script after); the canvas as an
+undeclared ground (rule 7); a list of which rooms belong together from
+anywhere but the ledger; a room's prose, a concept's text or a coder's
+note as an undeclared ground for a cut (a branch is grounded on keys,
+and on its member rooms' material only where the cut's line names
+it).</p>
+<p><strong>Outputs:</strong>
+<code>_views/adaptation-tree.{html,svg,json}</code>;
+<code>branches.jsonl</code>; <code>forms/&lt;id&gt;.md</code> (generated
+from the accepted definitions); <code>crosslinks.jsonl</code>;
+<code>tier_history.jsonl</code> per cut; <code>tree-D4.md</code> (the
+statistic, the views, what you drew and did not, the accounting of §4);
+<code>chunk-share-D4.md</code>, <code>chunk-share-D4.jsonl</code> and
+<code>chunk-share-D4.py</code> (the comparison, by script);
+<code>projections-D4.jsonl</code> (the verdicts and the canvas per
+branch and per cluster, by <code>tools/projections.py</code>);
+<code>notes-D4.md</code>.</p>
+<h2 id="1-read-the-statistic-and-the-frequencies-first">1. Read the
+statistic and the frequencies first</h2>
+<p><code>gen_views.py</code> computed the distance (SCHEMA §7, weights
+from <code>prior.md</code>) at every level and per kind, through
+<code>distance.py</code>: the delta score on the combined matrix and
+each room's own delta (<code>_views/delta-by-room.tsv</code>, Holland et
+al. 2002's per-taxon score), and an average-linkage dendrogram
+(<code>_views/dendrogram.nwk</code>, with the rooms at 2, 3, 5, 8 and 12
+clusters in <code>dendrogram.txt</code>). The NeighborNet is drawn
+outside the run, in SplitsTree, from <code>_views/distance.nex</code>;
+the operator adds it to the handback if asked, and nothing here waits on
+it. <code>distance.py</code> writes the distance. Normalizing by targets
+reduces one volume effect; it does not remove unequal coverage or all
+effects of size. Confirm from <code>_views/tree-likeness.json</code>
+that the weights and grades are <code>prior.md</code>'s.</p>
+<p>The quartet delta ranges from 0 to 1 for nondegenerate quartets:
+larger values mean greater departure from additive tree distances.
+Equal-sum quartets are uninformative and excluded, not evidence of a
+star or a special 0.5 threshold. A tree is a view of the
+dissimilarities, not proof of a hierarchy or ancestry. Report its
+limitations and cross-links. Read the key frequencies: which keys are
+shared by many rooms, at which level, of which kind; how many rooms hold
+no accepted key. Log both before any cut.</p>
+<h3 id="the-leaf-to-root-view">The leaf-to-root view</h3>
+<p><code>python3 tools/adaptation_tree.py --out out</code> writes
+<code>_views/adaptation-tree.html</code>, <code>.svg</code> and
+<code>.json</code> from the carried distance and records input hashes.
+It also runs automatically after <code>distance.py</code>. Each leaf is
+an individual case. The conceptual root is the frozen global model; the
+connecting trunk is explicitly unscaled. The global model is not a case,
+a centroid or an inferred ancestor. Join heights show adaptation
+dissimilarity.</p>
+<p>Internal joins propose connections at different levels. Name a branch
+only after its shared adaptations, mechanism and supporting cases have
+been adjudicated. The JSON carries branch membership and cross-links,
+including memberships that cannot nest. Case-specific particulars remain
+attached to the local account, even when excluded from portable shared
+coordinates. Missing returns must never enter the no-adaptation group. A
+room with no accepted shared keys is not necessarily a room that needed
+no local adaptation.</p>
+<p>The carried ladder distance is a declared nonmetric
+operationalization: its best match at a target can hide additional
+differences. The export flags zero-distance pairs with different key
+sets and reports the same cuts under exact-key Jaccard distance. The
+export also lists incomplete lifts and shared keys with different
+condition text for review. Identical observed absences agree at the
+target; <code>unobserved</code> and <code>not-testable</code> absence
+records do not enter shared coordinates. Additional placements require
+inspection beyond the primary lift. Neither sensitivity aligns the
+substantive meaning of conditions automatically. Compare operation kinds
+and ladder levels, explain unstable branches, and inspect substantively
+opposite conditions that share a coarse key. No cut, minimum group size
+or low delta by itself establishes a form. Do not read this dendrogram
+as a chronology or claim that the hierarchy was independently
+validated.</p>
+<h2 id="2-cut-by-element-by-level-by-kind">2. Cut by element, by level,
+by kind</h2>
+<p>For each element with many adaptations,
+<code>mem.py rooms --with &lt;key&gt;</code> at the third-order level:
+rooms sharing a key are a candidate group. Keys that co-occur across
+rooms are a branch's definition; name the branch by what its keys change
+in the global model, never by a member's name. Read the kinds apart: a
+group held by shared corrections is rooms where the model fails the same
+way, the strongest form signal; shared elaborations the subform signal;
+shared specifications the weakest. Walk up the ladder: rooms that meet
+only at the fourth-order or dimension level are cousins, not siblings,
+and a branch is declared at the level where its members meet. The
+minimum group size below which a shared meeting is variation, not a
+subform, is a default of five; you may change it with a reason written
+in <code>tree-D4.md</code> before the first cut, and a number set in
+<code>prior.md</code> by the operator stands in for the default.</p>
+<p>The ladder walk is the tier check: a group that meets at the
+third-order level meets at every level above it by construction of the
+lift, so the question for every candidate is the deepest level it holds
+at. At the dimension level or the bare target the aggregation is doing
+the work, and the group is a grouping, not a branch. Say which
+candidates moved level when walked.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;F03&quot;</span><span class="fu">,</span> <span class="dt">&quot;parent&quot;</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">&quot;level&quot;</span><span class="fu">:</span> <span class="st">&quot;third&quot;</span><span class="fu">,</span> <span class="dt">&quot;kind&quot;</span><span class="fu">:</span> <span class="st">&quot;correction|elaboration|specification&quot;</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;keys&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;restrict:P07:T3-014&quot;</span><span class="ot">,</span> <span class="st">&quot;...&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;members&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;denmark&quot;</span><span class="ot">,</span> <span class="st">&quot;...&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;what_it_changes&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;since&quot;</span><span class="fu">:</span> <span class="st">&quot;D4-cut-4&quot;</span><span class="fu">}</span></span></code></pre></div>
+<p>Subforms nest by adding keys. A room whose adaptations meet different
+groups at different targets is a cross-link, declared in
+<code>crosslinks.jsonl</code>, never forced. Rooms that returned
+<code>none</code> are the unadapted group. If represented as a branch,
+mark <code>type: "unadapted"</code>, use empty keys and no parent, and
+include only explicit current <code>none</code> returns. Missing
+returns, pending lines and empty portable profiles do not qualify. A
+negative result with no warranted branches is valid: write an empty
+<code>branches.jsonl</code> and <code>taxonomy-status.json</code> with
+<code>status: "no-supported-forms"</code>, a substantive
+<code>reason</code>, and every returned <code>reviewed_rooms</code> id.
+Cross-links carry <code>sub</code>, at least two distinct
+<code>branches</code> ids containing that case, and <code>reason</code>.
+Parents must be acyclic. A finer key inherits a broader key when
+operation and target agree and the finer node lifts to the broader node;
+literal id equality across tiers is not required.</p>
+<p><strong>The member rooms as a ground.</strong> Besides the keys, you
+may ground a cut on what the member rooms' material shows, read with the
+verbs: what the rooms did that the keys only point at. Name that ground
+in the cut's <code>tier_history.jsonl</code> line
+(<code>"ground": "keys"</code> or
+<code>"ground": "keys and material: &lt;rooms and what they showed&gt;"</code>)
+and log each read. The material never stands alone: a branch still has
+keys. A member that lacks one of them may stand in the branch on its
+material only under that declared ground, and <code>tree-D4.md</code>
+says what in its material puts it there.</p>
+<p>Every cut is a move, named from Grodal, Anteby and Holm's eight. Log
+it when you make it
+(<code>mem.py log --kind move --ids &lt;branch&gt;</code>, the move
+named), write its line in <code>tier_history.jsonl</code>, and snap it
+(<code>python3 tools/snap.py D4 move-&lt;move&gt;-&lt;n&gt;</code>). A
+leg may carry several moves. You hold the canvas and cannot unknow it,
+so every cut is snapped before anything is projected onto it (§6); the
+snap line is the record. Say in <code>tree-D4.md</code> whether any cut
+was attractive because of what its members had made, the grounds for
+each cut, and what would have made you choose differently. Never give
+every room its own label (contract §1).</p>
+<h2 id="3-what-each-branch-is-before-d5-writes-it">3. What each branch
+is, before D5 writes it</h2>
+<p>For each branch, in <code>forms/&lt;id&gt;.md</code> (generated from
+<code>branches.jsonl</code> and the ledger): members, shared keys with
+their lines' <code>how</code> sentences, the elements shared with the
+global model unchanged, representative concepts from <code>LADDER</code>
+projected to the branch, and, from <code>_views/relations.tsv</code>,
+whether members connect in the mention graph, distinguishing hostile and
+cooperative mentions. Connectivity alone does not establish a coalition.
+That label requires cited joint commitments or coordinated tasks with a
+stated scope; report the graph only as a relational diagnostic. Present
+branches in the order cut, never by size.</p>
+<h2 id="4-every-room-accounted-for">4. Every room accounted for</h2>
+<p>Reconcile against <code>dropped.jsonl</code> and the D2 counts in
+<code>RUN.json</code>. Every room of the analysed set is in exactly one
+of: a member of a declared branch; the unadapted group (returned
+<code>none</code>); adapted but in no branch, because every accepted
+line is a key no other room holds or every line is a particular; out by
+name, <code>unreturned</code> at D2. The four counts sum to
+<code>n_analysed</code> from <code>counts.py</code>. The rooms in no
+branch are named, with why.</p>
+<h2 id="5-the-fixed-composition-comparison">5. The fixed composition
+comparison</h2>
+<p>After the final branch cut is snapped, declare the comparison in
+<code>notes-D4.md</code>, then run:</p>
+<pre><code>python3 tools/chunk_compare.py --out out --store package/store</code></pre>
+<p>This versioned engine writes <code>chunk-share-D4.result.json</code>,
+<code>.jsonl</code>, <code>.md</code> and a replay entry script. It
+reads only the concept store, placements, tiers, dropped cases and
+prior. It does not read adaptations, branch definitions, verdicts or
+outcomes. Its comparison shares the inductively built coding structure;
+it is a non-adaptation baseline, not theory-free evidence. Do not recut
+branches after seeing it. The D4 validator replays the trusted engine
+under isolated Python and compares numerical results, inputs,
+dependencies and cluster membership. A missing NumPy/SciPy installation
+or a script stub fails acceptance. Replay can take several minutes.</p>
+<p><strong>Features and units.</strong> One row per room, columns
+fourth-tier themes. Count unique unretracted concept ids by their theme
+links, never file order or unverified <code>n_codes</code>; fail on
+unresolved or conflicting links. Unplaced concepts contribute no
+observed category and are counted separately. Split a multiply placed
+theme's weight equally over distinct fourth-tier destinations. Report
+split themes, placed concepts, all concepts and placed themes by room.
+Empty compositions are excluded by name. Fewer than five placed themes
+is a low-information flag, not an exclusion in the primary diagnostic;
+rerun the full pipeline without flagged rooms.</p>
+<p><strong>Smoothing.</strong> Use <code>P=(x+a*m)/(n+a)</code>, with
+corpus mean <code>m</code> and finite positive <code>a</code> declared
+in <code>prior.md</code> as <code>chunk_concentration = 1.0</code> (1.0
+if the line is absent). This is fractional pseudo-count smoothing, an
+explicit heuristic, not a Dirichlet-multinomial maximum likelihood fit
+or calibrated posterior uncertainty. Remove zero columns before
+logarithms. Hold <code>a</code> and <code>m</code> fixed within
+resampling. Report the median own-data weight and sensitivity to
+<code>a/10</code> and <code>10*a</code>. Ward acts on Euclidean CLR
+vectors; Jaccard presence and Hellinger share sensitivities use average
+linkage, with adjusted Rand indices at each eligible cut.</p>
+<p><strong>Null and resampling.</strong> The null permutes complete
+theme allocation patterns among themes, retaining each room's concept
+weights and number of themes and the corpus frequencies of theme
+allocation patterns. It does not hold concept-weighted category totals
+fixed. This tests a specific diagnostic null, not every size or coverage
+effect. Use at least 200 accepted bootstrap draws and 100 permuted
+copies under each of two distinct declared integer seeds (defaults 0,1).
+Fit each bootstrap including duplicate case weights, then compute ARI on
+unique sampled case identities once. A draw enters k's statistic only
+when more than k distinct cases were sampled. The low-information
+threshold of five themes and k ceiling of twelve are declared heuristic
+defaults, not methodological necessities. The fixed engine records them.
+Eligible k is 2 through min(12, floor(n/2)); fewer than four cases, one
+feature or identical profiles supports no partition. Report actual
+sample counts and Monte Carlo standard errors.</p>
+<p>Each k carries silhouette, real/null stability means and medians,
+both margins, and null 95th percentile. A k clears only when both
+margins are positive under both seeds. The carried k maximizes the worst
+margin, with smaller k breaking a tie. If none clears, retain the
+complete diagnostic table and state <code>no-supported-partition</code>;
+an empty cluster file is then valid. These exploratory selection rules
+do not give a significance level after searching k.</p>
+<p><strong>Tier and size checks.</strong> Report dimension and
+third-tier ARI at every eligible k, the third-tier column count and mean
+nonzero count, without calling tier agreement proof of form. Third-tier
+weights split over all recorded placements. Inspect sparse profiles,
+unequal concept coverage, concepts within themes and the low-information
+contrast. Record cross-tables of branch and cluster memberships against
+observed volume fields, with units and missing denominators. A
+correlation or this null alone cannot establish that a difference is
+independent of size.</p>
+<p><strong>Overlapping forms.</strong> The computational clusters are a
+partition; substantive branches may nest or overlap. Best-match
+member-set Jaccard is descriptive and valid for those sets. Compute
+ordinary ARI against branches only for an explicitly named exclusive cut
+with one membership per eligible case; otherwise report that ARI is
+undefined. Do not force cross-links into a partition or use outcomes to
+select that cut. Clusters have deterministic two-letter codes, no
+inferred mechanism labels. Shared mechanisms remain a separate
+case-grounded judgment.</p>
+<h2 id="6-projected-on-afterwards">6. Projected on afterwards</h2>
+<p>After the cuts are snapped and the comparison is built,
+<code>python3 tools/projections.py</code> writes
+<code>projections-D4.jsonl</code>, which carries per branch and per
+cluster: the D2 verdicts counted (<code>composes</code>,
+<code>composes-with-residue</code>, <code>does-not-compose</code>,
+<code>cannot-tell</code>) with the percentile of that distribution
+against the permutation null; and the six canvas fields summarised, with
+contract §5's sentence on what they measure and the same null. A branch
+holding the rooms the model cannot compose is a result for stages D5 and
+E1, not a reason to recut; whether branches differ in what they kept on
+the canvas is reported; a cut that rests on it says so (rule 7).</p>
+<h2 id="7-what-this-stage-cannot-show">7. What this stage cannot
+show</h2>
+<p>The taxonomy is computed from your own adjudicated lines and cannot
+corroborate them: it can show patterns in the changes recorded and test
+specific size diagnostics, not that the elements are the right elements.
+The tiers are closed after stage C5 except through D3's amendment regime
+(rule 11); a ledger that looks wrong is a finding for
+<code>notes-D4.md</code>, <code>defects.jsonl</code> and stage E1, never
+a recut here.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>The statistic read, with the frequencies; each candidate group and
+what you did with it; each cut by name, with its level and move; each
+cross-link; the accounting of §4; the comparison's method declared
+before its script runs; the comparison read, with its two verdicts by
+number; the projections read.</p>
+<h2 id="final-message">Final message</h2>
+<p>The claim (what the branches say the forms are), the room that best
+supports it, the room that most threatens it, the condition; then:
+branches by level and kind, subforms, cross-links, the unadapted group's
+size, the rooms in no branch, the four counts summing to
+<code>n_analysed</code>, the tree-likeness value and whether a tree was
+drawn, the comparison's figures (the empties, <code>a</code> and the
+median weight, the Rand indices among the three distances, the
+third-order tier's sparsity, the tier verdict by number with its index,
+the volume verdict with its percentile, the k carried, each with and
+without the low-information rows), the verdict and canvas percentiles
+per branch, confirmation that no verdict, canvas field or branch entered
+the comparison's feature space; the licences exercised.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh D4</code> at the end of each pass, or earlier when you
+choose, each move logged and snapped as it was made; the last leg closes
+at the interview point below; <code>handback-D4.md</code>; the head; the
+closing diary line.</p>
+<p><strong>Interview point.</strong> The last <code>D4a</code> leg
+writes <code>out/interview/&lt;its leg id&gt;.md</code> (for example
+<code>D4a-03.md</code>) (under 800 words: what you did, what you found,
+what surprised you, what you doubt, and the three questions you would
+most like to be asked) and closes with
+<code>done.sh D4 --cut interview</code>: the tree of branches, subforms,
+cross-links and rooms, before D5 writes a word about it. The principal
+investigator may talk with you here, in a fork of this leg, run in a
+copy of your folder as it stood at the close (not read-only; nothing
+done there reaches the run); the run goes on from the cut either way.
+<code>done.sh</code> files the brief under the leg, the stage, the step
+and the minute, and refuses the cut without the brief (and, at a stage's
+end, without the handback).</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

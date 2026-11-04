@@ -1,0 +1,409 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The three model-building instruments, side by side | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-three-model-building-instruments-side-by-side">The three
+model-building instruments, side by side</h1><p class="notice">Original document, reproduced unchanged. <a href="room-crosswalk.md" target="_blank" rel="noopener">Exact Markdown</a>. Carried by all 14 R6 checkpoints (<code>workspace/</code>). It is not in the repository. sha256 <code>71be757f136a3b62</code>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Target length: under 1,950 words. Sixth, 7 October: coder-theme names
+at R3; C4 not given to the field lead (J). Fifth, 7 October: the tools
+and the organizing-end record, after Claude's audit and OpenAI's repair.
+Fourth, 5 October: after Codex's sibling-contract review
+(<code>REVIEW-codex.md</code>), J's rule on theory and an independent
+check; then the field's Part I set to J's order and Codex's field
+review; recovery from hidden snapshots (J, 6 October).</p>
+<p>Three instruments build models: the global aggregator (the rooms
+together), the case aggregator (one room, run per room) and the field
+model (r/place, run once). The two new ones are siblings of the global
+one. They share its questions, tiers, rules and file formats by shipping
+the same files, pinned by hash in <code>PINNED.tsv</code>, never by
+paraphrase. Each sibling's contract holds a reading key, a rule table
+and its own stages; <code>PROFILE.md</code> holds the fields its files
+add or replace. If a pinned file changes, the siblings fail their check
+until rebuilt, so the three cannot drift apart unnoticed.</p>
+<h2 id="shared-files">Shared files</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Global aggregator</th>
+<th>Case aggregator</th>
+<th>Field model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CONTRACT-aggregator.md</code></td>
+<td>the contract</td>
+<td>§1 to §3, §5's weak-absence rule, §6's stopping rule</td>
+<td>the same, through the room contract</td>
+</tr>
+<tr>
+<td><code>METHOD.md</code></td>
+<td>whole</td>
+<td>first section</td>
+<td>first section</td>
+</tr>
+<tr>
+<td><code>WRITING.md</code></td>
+<td>whole</td>
+<td>whole</td>
+<td>whole</td>
+</tr>
+<tr>
+<td><code>SCHEMA-adaptations.md</code></td>
+<td>whole, from D1</td>
+<td>§1</td>
+<td>§1</td>
+</tr>
+<tr>
+<td>stage cards C1, C2, C3, C5</td>
+<td>the stages</td>
+<td>R3 to R6 follow them</td>
+<td>the same</td>
+</tr>
+<tr>
+<td><code>FLEET.md</code>, stage cards B2, B3, B4</td>
+<td>at fleet stages</td>
+<td>none</td>
+<td>Part I's pilot, placement fleet and adjudication</td>
+</tr>
+<tr>
+<td>v32 coder contracts and tools (<code>emit.py</code>,
+<code>close_run.py</code>, <code>cite.py</code>, <code>read.py</code>,
+<code>fleet.py</code>, <code>audit_fleet.py</code>,
+<code>tree_builder.py</code>)</td>
+<td>none</td>
+<td>none: the coding is closed</td>
+<td>Part I, from F0 through the fleet</td>
+</tr>
+<tr>
+<td>stage card E1</td>
+<td>the claims audit</td>
+<td><code>claims.md</code></td>
+<td><code>claims.md</code></td>
+</tr>
+<tr>
+<td>stage card C4; <code>HANDLER.md</code> on the field</td>
+<td>the stage</td>
+<td>none</td>
+<td>not given; <code>field/</code> follows it</td>
+</tr>
+<tr>
+<td><code>room-model/CONTRACT.md</code></td>
+<td>none</td>
+<td>the contract</td>
+<td>Part II</td>
+</tr>
+<tr>
+<td><code>PROFILE.md</code></td>
+<td>none</td>
+<td>every file</td>
+<td>every file</td>
+</tr>
+<tr>
+<td>full papers</td>
+<td>the shelves</td>
+<td>Gioia, Corley and Hamilton; Puranam, Alexy and Reitzig</td>
+<td>its own shelf and <code>READING.md</code>: Gioia, Corley and
+Hamilton at FA; Puranam, Alexy and Reitzig, Padgett and Powell, Lewin
+and Volberda, and Ostrom at R5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-tiers-the-ids-and-where-theory-enters">The tiers, the IDs,
+and where theory enters</h2>
+<table>
+<thead>
+<tr>
+<th>Gioia's name</th>
+<th>Global aggregator</th>
+<th>Case aggregator</th>
+<th>Field model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first-order concepts</td>
+<td><code>sub:c0042</code></td>
+<td><code>c0042</code></td>
+<td><code>c0042</code></td>
+</tr>
+<tr>
+<td>first-order, consolidated within a case</td>
+<td>coder themes <code>sub:t07</code></td>
+<td>coder themes <code>t07</code>, closed</td>
+<td>coder themes <code>t01</code> on, v32's IDs: gates <code>g01</code>
+built after every return is read, placed by a fleet, adjudicated, then
+emitted</td>
+</tr>
+<tr>
+<td>first-order, consolidated across cases</td>
+<td><code>T3-</code>, never a construct's name</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>second-order themes</td>
+<td><code>T4-</code>, constructs</td>
+<td><code>T4-</code>, constructs</td>
+<td><code>T4-</code>, constructs</td>
+</tr>
+<tr>
+<td>aggregate dimensions</td>
+<td><code>D</code>, constructs</td>
+<td><code>D</code>, constructs</td>
+<td><code>D</code>, constructs</td>
+</tr>
+<tr>
+<td>the model</td>
+<td><code>P K C R A L</code>, findings <code>F</code>, propositions
+<code>N</code></td>
+<td>the same</td>
+<td>the same, with <code>field_level</code>, <code>groups</code>,
+<code>room_side</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Theory</strong> (J, 5 October 2026: "In gch one cannot use
+theory for the first order ... Only first order get no theory in the
+labeling"). In all three, the first order carries no theory: codes,
+coder themes as coded, and the global third-order themes. Second-order
+themes (<code>T4</code>) and dimensions are constructs from the cut,
+declared borrowed (recalled until the literature stage), adapted or
+coined, and may take any literature's names, the four problems'
+included; no <code>T4</code> tier copies the four problems. The siblings
+have three levels to the global's four, so theory enters one step
+earlier in their build, at the same Gioia tier. From R3 a sibling may
+also give a coder theme a theory name (<code>names.jsonl</code>),
+exports keeping its label (J).</p>
+<p>IDs are bare inside each instrument. On export the controller
+prefixes every ID and reference with <code>sub:</code> or
+<code>field:</code>, so <code>denmark:T4-002</code> and the global
+<code>T4-002</code> can share a ledger line.</p>
+<p>r/place's coder themes are built after reading every return, under
+gates, placed by a fleet: a declared difference. Its unresolved codes
+form one residue theme, marked in <code>theme_map.jsonl</code> and never
+read as a kind. The global aggregator receives only
+<code>field/</code>.</p>
+<h2 id="deliverables">Deliverables</h2>
+<table>
+<thead>
+<tr>
+<th>Global aggregator (stage)</th>
+<th>Case aggregator</th>
+<th>Field model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>none</td>
+<td>F0: v32 steps 1 to 3 through the fleet; snap
+<code>after-fleet</code></td>
+</tr>
+<tr>
+<td><code>prior.md</code> (B1)</td>
+<td>R1, written after the coding, and so marked</td>
+<td>FA, after the v32 boundary steps and before the returns are read,
+saying what the lead had seen; with the group and phase rules</td>
+</tr>
+<tr>
+<td>reading notes and <code>organizing_end-A1.jsonl</code> (A1)</td>
+<td>R2: block notes, <code>episodes.jsonl</code>,
+<code>organizing_end.json</code></td>
+<td>FA: block notes, <code>episodes.jsonl</code>,
+<code>groups.jsonl</code>, <code>interactions.jsonl</code>,
+<code>phases.jsonl</code>, <code>organizing_end.json</code></td>
+</tr>
+<tr>
+<td>scheme, gates, pilot, fleet, adjudication (B1 to B4)</td>
+<td>none</td>
+<td>FB and FC: the gates; pilot with fresh readers; a placement fleet
+over whole threads; snap <code>after-placement</code></td>
+</tr>
+<tr>
+<td>none</td>
+<td>none</td>
+<td>FD: adjudication and the blind sample; emission with
+<code>theme_map.jsonl</code>; counter-reading; the six v32 outputs,
+<code>INTERVIEW-coding.md</code>; snap <code>coding-closed</code></td>
+</tr>
+<tr>
+<td>form pass (C1 §7)</td>
+<td>R3, over the room's codes</td>
+<td>R3, over r/place's codes</td>
+</tr>
+<tr>
+<td><code>fourth/fourth.jsonl</code>, <code>dimensions.jsonl</code>,
+<code>assignments_final.jsonl</code>, <code>structure.md</code> (C1,
+C2)</td>
+<td>R3, <code>assignments.jsonl</code> placing coder themes</td>
+<td>R3, the same, with <code>field_level</code></td>
+</tr>
+<tr>
+<td><code>concept.md</code>, <code>model/</code> files,
+<code>model.md</code>, stories (C2)</td>
+<td>R4; stories read against episodes</td>
+<td>R4, with levels and room side; read against episodes and phases</td>
+</tr>
+<tr>
+<td>one reviewer, before the final passes (C2 §6)</td>
+<td>one critic inside R4, before the final passes; its session
+discarded</td>
+<td>the same, its session kept</td>
+</tr>
+<tr>
+<td><code>literature-C3.md</code>, <code>mapping-C3.jsonl</code>, switch
+records (C3)</td>
+<td>R5: C3 §1 and leg 3; legs 1 and 2 do not run</td>
+<td>R5, with levels and the four works of <code>READING.md</code></td>
+</tr>
+<tr>
+<td><code>field-C4.md</code> (C4)</td>
+<td>none</td>
+<td>supplies <code>field/</code></td>
+</tr>
+<tr>
+<td><code>account.md</code>, <code>propositions.jsonl</code>,
+<code>data_structure-C5.md</code>, <code>figure-C5.md</code> (C5)</td>
+<td>R6; no third-order column</td>
+<td>R6</td>
+</tr>
+<tr>
+<td>three readers (C5)</td>
+<td>none</td>
+<td>two readers</td>
+</tr>
+<tr>
+<td><code>findings.jsonl</code></td>
+<td>same</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>claims-E1.md</code> (E1)</td>
+<td><code>claims.md</code></td>
+<td><code>claims.md</code> and the audit scripts</td>
+</tr>
+<tr>
+<td>none</td>
+<td><code>confidence.jsonl</code>, sealed</td>
+<td><code>confidence.jsonl</code>, sealed</td>
+</tr>
+<tr>
+<td>interview briefs</td>
+<td><code>INTERVIEW.md</code> at the close</td>
+<td><code>INTERVIEW-coding.md</code> at <code>coding-closed</code>,
+<code>INTERVIEW.md</code> at the close</td>
+</tr>
+<tr>
+<td>D1 to D6, E2</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-critic">The critic</h2>
+<p>J, 5 October 2026: every room gets the critic where the global
+reviewer sits (C2 §6): inside R4, after the pass the lead expects to
+keep and before the final passes, so its fixes can reopen the loop.
+r/place's runs the same way.</p>
+<h2 id="order-sealing-and-confidence">Order, sealing, and
+confidence</h2>
+<ol type="1">
+<li>The case aggregators and the field model close, and the controller
+seals each <code>confidence.jsonl</code> (hashed with the model version,
+kept where no agent can write) before anyone sees the global model.</li>
+<li>The global aggregator reads no case-aggregator output before its own
+freeze. It reads <code>field/</code> at C4 and nothing else from the
+field.</li>
+<li>At the return, D2 sends the case aggregators if enough rooms have
+one by then, else the case leads (J, 5 October 2026).</li>
+</ol>
+<p>The siblings implement points 1 and 2. Point 3 and the use of the
+sealed grades change the global aggregator; they are listed for J, not
+made:</p>
+<ul>
+<li><strong>D1</strong> writes a routing manifest: which rooms go to a
+case aggregator and which to the original case lead, with each sibling's
+checkpoint and model version. J defines "enough", and whether routing is
+per room (mixed) or for the whole cohort.</li>
+<li><strong>D2</strong> resumes the matching case-aggregator session
+(its model already in the global schema), else the original case lead,
+keeping the original codes' and coder themes' provenance and the global
+lift beside the local ladder. The fixed-global verdict readers stay as
+they are and never see the sealed grades.</li>
+<li><strong>Ex-post grades</strong>: each adaptation's confidence at D2
+needs a ledger field in <code>SCHEMA-adaptations.md</code> or a keyed
+sidecar, D1's return specification and ingest to match.</li>
+<li><strong>D3</strong> reads the sealed and ex-post grades side by side
+as cues, never evidence or votes, and rechecks what an amendment
+touches.</li>
+<li><strong>E1</strong> audits seal hashes, exposure order, routing
+coverage, paired grades and model versions.</li>
+<li><strong>C4</strong> checks <code>field/</code> before reading it:
+<code>MANIFEST.tsv</code> against the sealed hash, every evidence line
+joined to its quote. <code>stage_C4.py</code> does neither.</li>
+</ul>
+<h2 id="what-the-runtime-has-to-do">What the runtime has to do</h2>
+<p>The contracts assume a controller the community-coder runtime
+(<code>coder_model/</code>) does not yet have; the coding handler
+confirms and sizes this:</p>
+<ul>
+<li>One session per room through R1 to R6, with compaction; recovery
+from hidden stage-boundary snapshots, shown accurate before the next
+turn (room contract), tested by a cold restore; one archive at the
+close.</li>
+<li>The critic inside R4: the lead ends its turn, a worker reads a
+packet, the lead resumes.</li>
+<li>The confidence seal, outside every agent's write scope.</li>
+<li><code>tool.py</code>: <code>context</code> (also by ID),
+<code>read</code>, <code>find</code>, <code>cite</code> (whole span,
+verbatim part or seeded draw), <code>note</code>, <code>head</code>,
+<code>count</code> in three modes (coverage, prevalence, aftermath),
+<code>move</code> and <code>check</code>, and <code>snap</code> for
+r/place; read logs; the controller's stamp on history lines.</li>
+<li>A validator and renderer from <code>PROFILE.md</code>, in place of
+<code>model.py</code>'s single <code>model.json</code>.</li>
+<li>A room with no codes still runs, and its empty model is valid
+(<code>evidence.build</code> now refuses it).</li>
+<li>For r/place: v32 from the verified brief through the fleet (about
+415 slices expected), snap <code>after-fleet</code>; the boundary steps
+under v32 tools and branch B permissions; the pilot and the placement
+fleet, snap <code>after-placement</code>; adjudication, the blind sample
+and emission; <code>coding-closed</code>; then Part II in legs. The
+package is built, read by the lead, then sealed with
+<code>confidence.jsonl</code> and the model hash; a correction after the
+seal is a new version.</li>
+<li>A pause and resume rule for long rooms, beyond the 30-minute turn
+and 200-turn default.</li>
+<li>The export prefixer, recursive through every reference, and the
+<code>field/</code> package writer.</li>
+<li>For r/place's Part I: a packet builder and return validator at the
+grain of a code, for the pilot, the placement fleet and the blind
+sample, in place of the global stage tools.</li>
+<li>A build lock: <code>PINNED.tsv</code> lists everything a sibling
+build copies, imports or runs (v32's whole fingerprinted set and
+<code>newrun.py</code>, the reused global checkers, <code>vlib.py</code>
+and the three modules it loads); a changed dependency is refused before
+dispatch, and v32's run fingerprint is recorded with the lock.</li>
+<li>Fixtures before a real trial: one per waiver; cold restore after a
+compaction and after an interruption; no tool running at capture; a
+recall probe denied tools; the parent unchanged; the critic's return
+replayed, not redispatched; J's re-delivery choice; seal write denial;
+the final archive restored; a model over the critic's ceiling; rooms
+with zero, one and two episodes and no defensible arrow; a boundary with
+fewer than three recall questions. For r/place also every named
+snapshot, the paired-reader allocation, adjudication, v32's close and C4
+reading <code>field/</code> in isolation, with a transition-only arrow,
+a coder theme as a <code>T4</code> member and an <code>FP-</code>
+element, which fails when either definition is removed. Forks for
+interviews, source isolation and recall probes stay; only recovery stops
+forking.</li>
+<li><code>protocol.py</code> installing these contracts in place of
+<code>CODER-MODEL.md</code>; routes for the field's critic and its two
+R6 readers.</li>
+<li>Before a lead is resumed: its runtime still exists, and its history
+shows no earlier canvas or global exposure. A fresh agent is never
+presented as the original lead.</li>
+</ul>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

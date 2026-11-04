@@ -1,0 +1,319 @@
+{
+  "checkpoints": {
+    "aggregator--claude-v43-1--C4-field--A1.A1b-55": {
+      "page": "records/aggregator--claude-v43-1--C4-field--A1.A1b-55.html",
+      "files": 7,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--A1.A1b-55.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B1.B1b-32": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B1.B1b-32.html",
+      "files": 4,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B1.B1b-32.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B1.B1d-07": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B1.B1d-07.html",
+      "files": 4,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B1.B1d-07.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B1.B1e": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B1.B1e.html",
+      "files": 6,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B1.B1e.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B2.B2a-r3-p2": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B2.B2a-r3-p2.html",
+      "files": 5,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B2.B2a-r3-p2.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B2.B2b-r3-p3": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B2.B2b-r3-p3.html",
+      "files": 5,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B2.B2b-r3-p3.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B2.B2d": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B2.B2d.html",
+      "files": 7,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B2.B2d.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B3.B3a-p2": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B3.B3a-p2.html",
+      "files": 5,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B3.B3a-p2.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B3.B3b": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B3.B3b.html",
+      "files": 10,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B3.B3b.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B4.B4a-07": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B4.B4a-07.html",
+      "files": 5,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B4.B4a-07.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B4.B4b-p4": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B4.B4b-p4.html",
+      "files": 6,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B4.B4b-p4.json"
+    },
+    "aggregator--claude-v43-1--C4-field--B4.B4c": {
+      "page": "records/aggregator--claude-v43-1--C4-field--B4.B4c.html",
+      "files": 8,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--B4.B4c.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C1.C1a-11": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C1.C1a-11.html",
+      "files": 7,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C1.C1a-11.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C2.C2a-03": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C2.C2a-03.html",
+      "files": 8,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C2.C2a-03.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C2.C2d-02": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C2.C2d-02.html",
+      "files": 11,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C2.C2d-02.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C3.C3c": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C3.C3c.html",
+      "files": 12,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C3.C3c.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C4.C4a": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C4.C4a.html",
+      "files": 11,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C4.C4a.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C5.C5a-04": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C5.C5a-04.html",
+      "files": 10,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C5.C5a-04.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C5.C5c-13": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C5.C5c-13.html",
+      "files": 16,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C5.C5c-13.json"
+    },
+    "aggregator--claude-v43-1--C4-field--C5.C5d-p2": {
+      "page": "records/aggregator--claude-v43-1--C4-field--C5.C5d-p2.html",
+      "files": 16,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--C5.C5d-p2.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D1.D1a": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D1.D1a.html",
+      "files": 11,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D1.D1a.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D2.D2a": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D2.D2a.html",
+      "files": 10,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D2.D2a.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D3.D3a-57": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D3.D3a-57.html",
+      "files": 9,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D3.D3a-57.json"
+    },
+    "community--PlaceNL--coding-close": {
+      "page": "records/community--PlaceNL--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--PlaceNL--coding-close.json"
+    },
+    "community--PlaceNL--R6": {
+      "page": "records/community--PlaceNL--R6.html",
+      "files": 13,
+      "manifest": "records/community--PlaceNL--R6.json"
+    },
+    "community--thenetherlands--coding-close": {
+      "page": "records/community--thenetherlands--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--thenetherlands--coding-close.json"
+    },
+    "community--thenetherlands--R6": {
+      "page": "records/community--thenetherlands--R6.html",
+      "files": 13,
+      "manifest": "records/community--thenetherlands--R6.json"
+    },
+    "community--cirkeltrek--coding-close": {
+      "page": "records/community--cirkeltrek--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--cirkeltrek--coding-close.json"
+    },
+    "community--cirkeltrek--R6": {
+      "page": "records/community--cirkeltrek--R6.html",
+      "files": 12,
+      "manifest": "records/community--cirkeltrek--R6.json"
+    },
+    "community--norge--coding-close": {
+      "page": "records/community--norge--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--norge--coding-close.json"
+    },
+    "community--norge--R6": {
+      "page": "records/community--norge--R6.html",
+      "files": 13,
+      "manifest": "records/community--norge--R6.json"
+    },
+    "community--norway--coding-close": {
+      "page": "records/community--norway--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--norway--coding-close.json"
+    },
+    "community--norway--R6": {
+      "page": "records/community--norway--R6.html",
+      "files": 13,
+      "manifest": "records/community--norway--R6.json"
+    },
+    "community--sweden--coding-close": {
+      "page": "records/community--sweden--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--sweden--coding-close.json"
+    },
+    "community--sweden--R6": {
+      "page": "records/community--sweden--R6.html",
+      "files": 13,
+      "manifest": "records/community--sweden--R6.json"
+    },
+    "community--greece--coding-close": {
+      "page": "records/community--greece--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--greece--coding-close.json"
+    },
+    "community--greece--R6": {
+      "page": "records/community--greece--R6.html",
+      "files": 13,
+      "manifest": "records/community--greece--R6.json"
+    },
+    "community--czech--coding-close": {
+      "page": "records/community--czech--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--czech--coding-close.json"
+    },
+    "community--czech--R6": {
+      "page": "records/community--czech--R6.html",
+      "files": 12,
+      "manifest": "records/community--czech--R6.json"
+    },
+    "community--armenia--coding-close": {
+      "page": "records/community--armenia--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--armenia--coding-close.json"
+    },
+    "community--armenia--R6": {
+      "page": "records/community--armenia--R6.html",
+      "files": 13,
+      "manifest": "records/community--armenia--R6.json"
+    },
+    "community--indonesia--coding-close": {
+      "page": "records/community--indonesia--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--indonesia--coding-close.json"
+    },
+    "community--indonesia--R6": {
+      "page": "records/community--indonesia--R6.html",
+      "files": 13,
+      "manifest": "records/community--indonesia--R6.json"
+    },
+    "community--placehearts--coding-close": {
+      "page": "records/community--placehearts--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--placehearts--coding-close.json"
+    },
+    "community--placehearts--R6": {
+      "page": "records/community--placehearts--R6.html",
+      "files": 13,
+      "manifest": "records/community--placehearts--R6.json"
+    },
+    "community--mindcrack--coding-close": {
+      "page": "records/community--mindcrack--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--mindcrack--coding-close.json"
+    },
+    "community--mindcrack--R6": {
+      "page": "records/community--mindcrack--R6.html",
+      "files": 13,
+      "manifest": "records/community--mindcrack--R6.json"
+    },
+    "community--blackmirror--coding-close": {
+      "page": "records/community--blackmirror--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--blackmirror--coding-close.json"
+    },
+    "community--blackmirror--R6": {
+      "page": "records/community--blackmirror--R6.html",
+      "files": 13,
+      "manifest": "records/community--blackmirror--R6.json"
+    },
+    "community--Goodboye--coding-close": {
+      "page": "records/community--Goodboye--coding-close.html",
+      "files": 4,
+      "manifest": "records/community--Goodboye--coding-close.json"
+    },
+    "community--Goodboye--R6": {
+      "page": "records/community--Goodboye--R6.html",
+      "files": 13,
+      "manifest": "records/community--Goodboye--R6.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D3.D3c": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D3.D3c.html",
+      "files": 10,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D3.D3c.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D4.D4a-08": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D4.D4a-08.html",
+      "files": 7,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D4.D4a-08.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D5.D5b": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D5.D5b.html",
+      "files": 5,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D5.D5b.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D5.D5a-41": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D5.D5a-41.html",
+      "files": 12,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D5.D5a-41.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D6.D6b": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D6.D6b.html",
+      "files": 6,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D6.D6b.json"
+    },
+    "aggregator--claude-v43-1--C4-field--D6.D6a-18": {
+      "page": "records/aggregator--claude-v43-1--C4-field--D6.D6a-18.html",
+      "files": 6,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--D6.D6a-18.json"
+    },
+    "aggregator--claude-v43-1--C4-field--E1.E1b-08": {
+      "page": "records/aggregator--claude-v43-1--C4-field--E1.E1b-08.html",
+      "files": 6,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--E1.E1b-08.json"
+    },
+    "aggregator--claude-v43-1--C4-field--E1.E1c": {
+      "page": "records/aggregator--claude-v43-1--C4-field--E1.E1c.html",
+      "files": 6,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--E1.E1c.json"
+    },
+    "aggregator--claude-v43-1--C4-field--E1.E1d": {
+      "page": "records/aggregator--claude-v43-1--C4-field--E1.E1d.html",
+      "files": 7,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--E1.E1d.json"
+    },
+    "aggregator--claude-v43-1--C4-field--E1.E1e": {
+      "page": "records/aggregator--claude-v43-1--C4-field--E1.E1e.html",
+      "files": 9,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--E1.E1e.json"
+    },
+    "aggregator--claude-v43-1--C4-field--E2.E2a": {
+      "page": "records/aggregator--claude-v43-1--C4-field--E2.E2a.html",
+      "files": 5,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--E2.E2a.json"
+    },
+    "aggregator--claude-v43-1--C4-field--E2.E2b": {
+      "page": "records/aggregator--claude-v43-1--C4-field--E2.E2b.html",
+      "files": 7,
+      "manifest": "records/aggregator--claude-v43-1--C4-field--E2.E2b.json"
+    }
+  }
+}

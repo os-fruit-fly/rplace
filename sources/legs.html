@@ -1,0 +1,303 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The leg handler (legs.py) | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-leg-handler-legspy">The leg handler (legs.py)</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="legs.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/legs.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Target length: under 1,800 words. As it stands on 6 October 2026,
+before the first research leg.</p>
+<p>Status, 6 October 2026: offline tests pass (handler 14 of 14, adapter
+20 of 20); the live check <code>probe_lifecycle.py</code> passed 14 of
+14 on J's Mac (claude 2.1.289); no research leg has run through it yet.
+A branch replaces its own <code>publish.sh</code> and
+<code>step.sh</code> (below).</p>
+<p>J, 2026-10-05: "I need just a handler i can access via claude
+code/cowork that opens and close the sessions plus the ability to talk
+to EACH AGGREGATOR STAGE.LEG". No website.</p>
+<h2 id="what-it-is">What it is</h2>
+<ul>
+<li>One process on the Mac, <code>legs.py serve</code>, owns the
+analyst's sessions.</li>
+<li>Every other command is a client, the same from Terminal, Claude Code
+(on the Mac, or from the phone through Remote Control) and Cowork. It
+writes a request into the run's <code>CONTROL/legs/requests/</code> and
+reads the answer in <code>CONTROL/legs/results/</code>.</li>
+<li>The run's harness does the work: <code>step.sh --prepare</code>, one
+headless turn (<code>actor.py</code>), then <code>close.sh</code>, as
+when you type them.</li>
+</ul>
+<h2 id="start-it-once">Start it once</h2>
+<p>In Terminal, in the repository folder:</p>
+<pre><code>python3 aggregator/handler/claude-adapter/legs.py serve</code></pre>
+<p>Leave the window open; the Mac stays awake. Ctrl-C stops the handler,
+not a turn: the next <code>serve</code> follows the turn again and
+pauses the list. Beside it: a Terminal window with
+<code>legs.py chat claude-v43-1</code>, where you talk to the agents,
+and Claude Code as the handler for the rest.</p>
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status [RUN]</code></td>
+<td>the list, running legs, questions, what needs you</td>
+</tr>
+<tr>
+<td><code>legs RUN</code></td>
+<td>every leg, its state and its interviews</td>
+</tr>
+<tr>
+<td><code>open RUN LEG</code></td>
+<td><code>step.sh</code>, then the leg's first turn</td>
+</tr>
+<tr>
+<td><code>close RUN LEG [--force]</code></td>
+<td><code>close.sh</code>, once, also for a leg opened in Terminal</td>
+</tr>
+<tr>
+<td><code>run RUN LEGS... [--through-interviews] [--accept LABEL]</code></td>
+<td>several legs in order (below)</td>
+</tr>
+<tr>
+<td><code>stop RUN [--now]</code></td>
+<td>the list stops after this leg; <code>--now</code> interrupts the
+turn</td>
+</tr>
+<tr>
+<td><code>pause RUN</code></td>
+<td>the running leg stops at its next safe stop
+(<code>done.sh --pause</code>)</td>
+</tr>
+<tr>
+<td><code>chat RUN [--full]</code></td>
+<td>one Terminal window to talk to every agent of the run (below)</td>
+</tr>
+<tr>
+<td><code>say RUN LEG TEXT</code></td>
+<td>one line to a leg, without the chat; TEXT <code>-</code> reads
+standard input</td>
+</tr>
+<tr>
+<td><code>interview RUN LEG TEXT [--new]</code></td>
+<td>an interview of a closed leg (below)</td>
+</tr>
+<tr>
+<td><code>note RUN TEXT</code></td>
+<td>the handler's line in the chat</td>
+</tr>
+<tr>
+<td><code>reply RUN LEG [--interview]</code></td>
+<td>the leg's last reply, or its interview's</td>
+</tr>
+<tr>
+<td><code>watch RUN [LEG] [-f] [--full]</code></td>
+<td>the analyst's words and tool calls; <code>-f</code> live, leg after
+leg; <code>--full</code> whole, with every output</td>
+</tr>
+<tr>
+<td><code>answer RUN QID TEXT</code></td>
+<td>answer a <code>mem.py ask</code> question: beside the running leg's
+next tool result, an open leg's next turn, and in any case the next
+leg's first message</td>
+</tr>
+<tr>
+<td><code>wait RUN [--timeout S]</code></td>
+<td>at once with every notice you have not seen through
+<code>wait</code>, else when one comes, or after S seconds (default
+540)</td>
+</tr>
+<tr>
+<td><code>branch</code>, <code>branch-put</code>,
+<code>branch-status</code>, <code>prepare-branch</code>,
+<code>publish-branch</code></td>
+<td>an analysis branch (below)</td>
+</tr>
+</tbody>
+</table>
+<p>RUN is the run's folder name (<code>claude-v43-1</code>); LEG a leg
+id (<code>A1b-02</code>) or label (<code>A1.A1b-02</code>).
+<code>open</code> leaves the close to you; <code>run RUN A1a</code>
+closes one leg by itself. <code>--wait S</code> bounds how long
+<code>open</code>, <code>close</code>, <code>say</code> and
+<code>interview</code> wait; <code>wait</code> takes
+<code>--timeout S</code>. Cowork's shell stops after about three
+minutes, so it passes <code>--wait 150</code> or
+<code>--timeout 150</code> and reads the rest with <code>status</code>
+or <code>reply</code>. <code>wait</code> shows every notice not yet
+shown.</p>
+<h2 id="talking-to-a-leg">Talking to a leg</h2>
+<p>Talk in one window, apart from the handler:
+<code>legs.py chat claude-v43-1</code> in Terminal (J, 2026-10-05: "a
+single chat where I talk to all the agents"). A line goes to the leg the
+prompt names; <code>@A1b-02 text</code> goes to that leg and keeps it;
+<code>?A1a text</code> goes to an interview of A1a, and
+<code>?A1a+ text</code> opens a new one. Every agent's words, tool calls
+and answers come back there live, each marked with its leg, and the
+handler's notices between them. <code>/tools</code> and
+<code>/full</code> show less or more. What a line to a leg does depends
+on the leg:</p>
+<ul>
+<li><strong>Its turn runs.</strong> Your words reach the analyst beside
+its next tool result, with a receipt.</li>
+<li><strong>It is open and its turn has ended.</strong> Your words start
+a new turn in the leg's own session.</li>
+<li><strong>It is the last close.</strong> Its conversation goes on in
+the next leg, so the next leg gets your words: live or in a new turn
+when it is open, else in its first message, after the leg's own. Words
+that missed a closing leg's turn go there too.</li>
+<li><strong>It is an older close.</strong> Refused: the run has moved
+on. Talk to it as it was in an interview.</li>
+</ul>
+<p>An interview is you opening a closed leg to talk to it (J,
+2026-10-05: "an interview is me, asking to open leg/stage x and talking
+to it"): a fork of its checkpoint in a copy of its folder, recorded in
+<code>CONTROL/interviews.tsv</code>. It remembers the leg; nothing said
+there reaches the run. Later words continue the leg's latest interview;
+<code>--new</code> opens another. At E2a, <code>step.sh</code> copies
+the listed interviews into the analyst's
+<code>handling/interviews/</code>; only the interviews you open count. A
+transcript is committed only if you decide so, interview by interview
+(HANDLER.md).</p>
+<p>Your words to a leg, and their delivery, go into the run's
+<code>CONTROL/messages-to-legs.jsonl</code>, which
+<code>publish.sh</code> commits at every close. A message has at most
+8,000 characters; send a longer one in parts.</p>
+<h2 id="a-list-of-legs">A list of legs</h2>
+<p><code>legs.py run claude-v43-1 A1</code> runs A1a, one A1b leg per
+block declared in <code>out/order-A1.txt</code>, then A1c. Other
+repeated steps take a range (<code>B1b-01..B1b-06</code>). A closed leg
+is skipped and a paused one continues as <code>-p2</code>, so naming the
+same list again picks up where it stopped. A closed leg is skipped only
+if its snapshot verifies and its close can advance the run; a forced or
+incomplete close stops the list again until you name it with
+<code>--accept</code>.</p>
+<p>It stops, and <code>status</code> and <code>wait</code> say why and
+what to do, when:</p>
+<ul>
+<li><code>step.sh</code> refuses a leg;</li>
+<li>a turn fails, is interrupted, or is <code>uncertain</code> (it ended
+while another owner held the run's lock; opening the leg again finishes
+it);</li>
+<li>the analyst ends its turn without closing the leg;</li>
+<li><code>close.sh</code> refuses;</li>
+<li>a leg closes at a pause, at its packets (you run the dispatch in
+Terminal), or at an interview point (unless
+<code>--through-interviews</code>);</li>
+<li>a close cannot advance the run (forced, or validation
+incomplete);</li>
+<li>a stage finishes before the listed legs run out;</li>
+<li>you stop it;</li>
+<li>the list ends.</li>
+</ul>
+<p>A question the analyst asks does not stop the list: you are told, and
+you answer it.</p>
+<h2 id="an-analysis-branch">An analysis branch</h2>
+<p>J, 2026-10-05: fork a run and do a new C2 with all else equal, from a
+new card and files, the fork plain in Git. <code>branches.py</code>
+makes branches as the Codex controller does: the same verbs, records,
+rules, notice and Git refs.</p>
+<pre><code>legs.py branch claude-v43-1 C1a-03 claude-v43-1--C2-1 --leg C2a-01
+legs.py branch-put claude-v43-1--C2-1 stages/STAGE-C2-model-the-loop.md --file NEW.md --stage C2
+legs.py branch-put claude-v43-1--C2-1 shelves/NAME.csv --file NAME.csv --stage C2
+legs.py prepare-branch claude-v43-1--C2-1
+legs.py run claude-v43-1--C2-1 C2a-01</code></pre>
+<ul>
+<li><code>branch</code> builds
+<code>aggregator/runs/claude-v43-1--C2-1/</code> from one verified close
+(C1's last, say <code>C1a-03</code>). The run comes as
+<code>publish.sh</code> committed it at that close, checked against the
+close's archives; the analyst's folder and sessions come from the
+checkpoint. Nothing later comes along. The first leg must come right
+after the close.</li>
+<li><code>branch-put</code>, while the branch is a draft, replaces a
+stage's card (same file name) or adds data (<code>package</code>,
+<code>trees</code>, <code>shelves</code>, <code>handling</code>,
+<code>attachments</code>), never code. A stage already handed changes in
+the analyst's folder too. <code>BRANCH.json</code> records each change
+with both hashes. Supply E2's <code>handling</code> files now: a
+branch's drops never change after it is made.</li>
+<li><code>prepare-branch</code> seals the branch and commits its setup
+to the Git branch <code>analysis/claude-v43-1--C2-1</code>, whose parent
+is the close's commit on main (tagged
+<code>analysis-checkpoints/&lt;id&gt;</code>). It pushes when a remote
+is set, and prepares the first leg without starting it.</li>
+<li>The first leg continues the close's conversation. Its first message
+starts with Codex's notice: a branch, and what changed.</li>
+<li>Each later close is committed there as "Analysis RUN: verified LEG".
+Main never holds the branch (<code>.gitignore</code>:
+<code>aggregator/runs/*--*/</code>). A close not committed, or not
+pushed while a remote is set, stops the next leg until
+<code>publish-branch</code>.</li>
+<li><code>git log --graph main analysis/claude-v43-1--C2-1</code> shows
+the fork.
+<code>git diff &lt;fork commit&gt; analysis/claude-v43-1--C2-1</code>
+shows the new card, the data and every leg after.</li>
+<li>The parent's interviews stay with the parent: their rows move from
+<code>interviews.tsv</code> to <code>BRANCH.json</code>, and a branch
+never publishes an interview. Its harness, arms and settings template
+are frozen like its drops, with their modes.</li>
+<li>The branch has its own Claude folder: log in once
+(<code>branch</code> prints the command). Run its legs through
+<code>legs.py</code>: its <code>step.sh</code> refuses the first leg
+from Terminal.</li>
+</ul>
+<h2 id="from-the-phone-from-cowork">From the phone, from Cowork</h2>
+<ul>
+<li><strong>Phone.</strong> On the Mac:
+<code>claude --remote-control "r/place handler"</code> in the repository
+folder. In the Claude app, that session runs the commands, or waits on
+<code>legs.py wait RUN</code> and tells you. The chat window stays on
+the Mac.</li>
+<li><strong>Cowork.</strong> Its shell reaches the Jail folder, not the
+Mac's programs: it runs the same commands, and <code>serve</code> does
+the work.</li>
+</ul>
+<h2 id="where-things-are-kept">Where things are kept</h2>
+<ul>
+<li>The run's <code>CONTROL/legs/</code>: <code>legs.json</code>,
+<code>job.json</code>, <code>events.log</code>,
+<code>needs-you.json</code>, <code>actors/&lt;id&gt;/</code> (each
+session's stream, events and inbox), <code>requests/</code>,
+<code>results/</code>. The analyst's settings deny it
+<code>CONTROL</code>; <code>.gitignore</code> keeps it out of git (added
+2026-10-05).</li>
+<li>Beside the repository, <code>.rplace-claude-legs/</code> holds the
+heartbeat, lock and key.</li>
+</ul>
+<h2 id="not-verified">Not verified</h2>
+<ul>
+<li>The adapter's items (README).</li>
+<li>That the analyst's sandbox cannot write <code>CONTROL/legs/</code>,
+while the hook can.</li>
+<li>That a headless turn compacts its context as a terminal leg does,
+with the after-compaction hook. A long leg depends on it.</li>
+<li>That Cowork's clock and the Mac's agree.</li>
+</ul>
+<h2 id="before-the-first-real-leg">Before the first real leg</h2>
+<ol type="1">
+<li><code>probe_lifecycle.py</code> passes on the Mac (README, Live
+acceptance): done on 6 October; again after a CLI update.</li>
+<li>The run's <code>acceptance.sh</code> and
+<code>acceptance_v41.sh</code> end ALL CLEAR after the last change to
+its <code>CONTROL/harness/</code>.</li>
+<li>The repository's first commit and push.</li>
+<li>Start <code>serve</code> and, at the Mac, run A1a through it. A
+headless turn passes <code>--settings</code> with the inbox hook only;
+the run's own settings still applied in the probe (its
+<code>dontAsk</code> turn ran Bash under the run's allow rules), but
+that the run's guard hook fires in a headless turn is not yet seen. A
+refusal in A1a shows in <code>out/_closes/guard.log</code>.</li>
+</ol>
+<p><strong>Fast mode</strong> (J, 9 October 2026).
+<code>fast-mode.json</code> beside <code>actor.py</code> switches the
+analyst's fast mode: with <code>{"fastMode": true}</code>, each headless
+turn's <code>--settings</code> carries <code>"fastMode": true</code> (a
+<code>-p</code> session takes <code>/fast</code> only that way). It is
+read at each turn's launch; set it to false to turn fast mode off from
+the next turn. Fast mode is billed from usage credits, outside the
+plan's limits.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

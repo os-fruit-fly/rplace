@@ -1,0 +1,128 @@
+{
+  "checkpoint_id": "aggregator--claude-v43-1--C4-field--B1.B1e",
+  "bundle_sha256": "85f692f366fa5c31e132be1048a30480f2c25017fd4282cb52be217ea238c781",
+  "snapshot_manifest_sha256": null,
+  "recipe_sha256": "46ddefe68590cc9a29141edad4c440f0e384cc40419ad874702f2bdaddf6b261",
+  "commit": "ee869034fb5846375de85ee9b6860fa85bd5a77a",
+  "selection": "Selected narrative outputs and saved notes only. These are reading copies, not the whole checkpoint or new interviews.",
+  "files": [
+    {
+      "path": "workspace/out/_head.md",
+      "sha256": "aa417c0fb555f5f0096fc32c89dddf8713235291f601c87bf0018ff03377049b",
+      "bytes": 14187,
+      "source_file": "record-files/aa417c0fb555f5f0096fc32c89dddf8713235291f601c87bf0018ff03377049b.md",
+      "origin": {
+        "blob": "97322ff8cda415008b694d0960ecc15dc1f07c92",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md"
+      },
+      "reading_sha256": "22b22c8390587b5343dba0b8637008421732d1633631fabb25a01a6610232c8c",
+      "reading_bytes": 14202,
+      "reading_file": "aa417c0fb555f5f0096fc32c89dddf8713235291f601c87bf0018ff03377049b.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "01-_head",
+      "raw": "../files/aa417c0fb555f5f0096fc32c89dddf8713235291f601c87bf0018ff03377049b.reading.md"
+    },
+    {
+      "path": "workspace/out/contrast.md",
+      "sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "bytes": 7599,
+      "source_file": "record-files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.md",
+      "origin": {
+        "blob": "e47aeca4dab7bb35c528ba9164327619b33f3f71",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/contrast.md"
+      },
+      "reading_sha256": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a",
+      "reading_bytes": 7599,
+      "reading_file": "afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "02-contrast",
+      "raw": "../files/afd301e1209c5aca0abce57203325d44f19a99b7b44406737e6bb85f8825c07a.reading.md"
+    },
+    {
+      "path": "workspace/out/handback-B1.md",
+      "sha256": "43c68c271c6800ea892711ff30f8efd8532c12907aebeff2555ac54feab1428d",
+      "bytes": 5319,
+      "source_file": "record-files/43c68c271c6800ea892711ff30f8efd8532c12907aebeff2555ac54feab1428d.md",
+      "origin": {
+        "blob": "760e6f687d3e76e8df89090bcb60655fde481443",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/handback-B1.md"
+      },
+      "reading_sha256": "ce36ea60637b9cfbbda88becbe98d7f721fc2c138f29a8815b42718cc324a90e",
+      "reading_bytes": 5334,
+      "reading_file": "43c68c271c6800ea892711ff30f8efd8532c12907aebeff2555ac54feab1428d.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "03-handback-B1",
+      "raw": "../files/43c68c271c6800ea892711ff30f8efd8532c12907aebeff2555ac54feab1428d.reading.md"
+    },
+    {
+      "path": "workspace/out/saturation-B1.md",
+      "sha256": "e127519d635bb85efd2ae70ae826cf1e0c2fb6ebbedeb8829c21bf4921b3b96b",
+      "bytes": 37154,
+      "source_file": "record-files/e127519d635bb85efd2ae70ae826cf1e0c2fb6ebbedeb8829c21bf4921b3b96b.md",
+      "origin": {
+        "blob": "c5ba34befb8b902664d9507c51be59b2eaa252ce",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/saturation-B1.md"
+      },
+      "reading_sha256": "e127519d635bb85efd2ae70ae826cf1e0c2fb6ebbedeb8829c21bf4921b3b96b",
+      "reading_bytes": 37154,
+      "reading_file": "e127519d635bb85efd2ae70ae826cf1e0c2fb6ebbedeb8829c21bf4921b3b96b.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "04-saturation-B1",
+      "raw": "../files/e127519d635bb85efd2ae70ae826cf1e0c2fb6ebbedeb8829c21bf4921b3b96b.reading.md"
+    },
+    {
+      "path": "workspace/out/scheme.md",
+      "sha256": "92168f48f8a86f303ee0a5297be52ee1c85a066d83590bb2ee70c18ae812276b",
+      "bytes": 341571,
+      "source_file": "record-files/92168f48f8a86f303ee0a5297be52ee1c85a066d83590bb2ee70c18ae812276b.md",
+      "origin": {
+        "blob": "de42790957376a51a3500effdef664b98a3a4b37",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/scheme.md"
+      },
+      "reading_sha256": "6f3e2639a5dfab6dffb9c7ec0a6fdc86c730eb1b9f394a2817dd008c124dd23b",
+      "reading_bytes": 341613,
+      "reading_file": "92168f48f8a86f303ee0a5297be52ee1c85a066d83590bb2ee70c18ae812276b.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": true,
+      "page": "05-scheme",
+      "raw": "../files/92168f48f8a86f303ee0a5297be52ee1c85a066d83590bb2ee70c18ae812276b.reading.md"
+    },
+    {
+      "path": "workspace/out/stopping-B1.md",
+      "sha256": "c40809c2560d54807c6c54e7bf4930e905cc27285e2b5742741fadacdf24beed",
+      "bytes": 14900,
+      "source_file": "record-files/c40809c2560d54807c6c54e7bf4930e905cc27285e2b5742741fadacdf24beed.md",
+      "origin": {
+        "blob": "1529e15e5eb83a71425629644d73f951f9d66e2c",
+        "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/stopping-B1.md"
+      },
+      "reading_sha256": "c40809c2560d54807c6c54e7bf4930e905cc27285e2b5742741fadacdf24beed",
+      "reading_bytes": 14900,
+      "reading_file": "c40809c2560d54807c6c54e7bf4930e905cc27285e2b5742741fadacdf24beed.reading.md",
+      "participant_identifiers": "base64(SHA1(UTF-8 username)), case preserved, no salt",
+      "names_substituted": false,
+      "page": "06-stopping-B1",
+      "raw": "../files/c40809c2560d54807c6c54e7bf4930e905cc27285e2b5742741fadacdf24beed.reading.md"
+    }
+  ],
+  "comparison": {
+    "parent": "aggregator--claude-v43-1--C4-field--B1.B1d-07",
+    "added": [
+      "workspace/out/handback-B1.md",
+      "workspace/out/scheme.md"
+    ],
+    "changed": [
+      "workspace/out/_head.md",
+      "workspace/out/saturation-B1.md",
+      "workspace/out/stopping-B1.md"
+    ],
+    "unchanged": [
+      "workspace/out/contrast.md"
+    ],
+    "not_selected_here": []
+  }
+}

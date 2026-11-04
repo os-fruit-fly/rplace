@@ -1,0 +1,40 @@
+{
+  "community": "indonesia",
+  "archive_sha256": "8ebc8011eb847da63631b3e11c80b3ce255d4c6953b1673cb4c0e1829405037b",
+  "archive_name": "indonesia.tar.zst",
+  "session": "01a142c7-81d9-7931-8acf-ad9b41c8045f",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T05-35-33-01a142c7-81d9-7931-8acf-ad9b41c8045f.jsonl",
+      "sha256": "716ffb6949d5a70e9932ca8efe6484131dabe6e66882821eb5770dfce9403f52",
+      "lines": 188,
+      "last_utc": "2026-10-16T03:42:48.214Z",
+      "identity": [
+        {
+          "id": "01a142c7-81d9-7931-8acf-ad9b41c8045f",
+          "session_id": "01a142c7-81d9-7931-8acf-ad9b41c8045f",
+          "timestamp": "2026-10-16T03:35:33.593Z",
+          "forked_from_id": "01a0a9a5-76cc-7693-b1c8-6fbeb802b110",
+          "forked_from_ordinal_exclusive": 710,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-16T03:35:39.237Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "b182bcafc426a429d3423e13b3fffe116f7706b1a8161eeb85b81c0cd3c461da",
+    "source_archive_sha256": "8877860028c2789bac10da48f86ee496e3f3c400bba6074c5237fa2f05bd50cf",
+    "checkpoint": "29acf0854b7b1cb636acfcbf6bb1e1f3483cbc56a4ee49bb916948a6cccf11dc",
+    "source_finished": "2026-09-16T10:52:38.437105+00:00",
+    "source_archive_name": "indonesia-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

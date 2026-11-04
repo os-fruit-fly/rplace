@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage D5. The branch accounts, at every level. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-d5-the-branch-accounts-at-every-level">Stage D5. The
+branch accounts, at every level.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-D5.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-D5.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+one per branch, then one for the waterfall and survival.
+<strong>Fleet:</strong> none.</p>
+<p><strong>Steps:</strong> <code>D5a-01</code>, <code>D5a-02</code> ...
+one per branch; <code>D5b</code> the waterfall and survival. Each leg is
+named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each branch's account. At a safe
+stop, check for <code>.pause</code> (<code>ls .pause</code>); if it is
+there, log where to pick up, your working hypothesis and the next room
+or item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh D5 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+the last five diary entries, <code>validate.py --open D5</code>; the
+branch's <code>forms/&lt;id&gt;.md</code>; the hierarchy shelf. First
+leg only: <code>branches.jsonl</code>, <code>crosslinks.jsonl</code>,
+<code>tree-D4.md</code>, <code>chunk-share-D4.md</code>.</p>
+<p><strong>Reads allowed:</strong> the branch's members by query
+(<code>rooms/&lt;sub&gt;/model-D.md</code>, <code>case.md</code>,
+concepts through <code>cite.py</code>, <code>mem.py note</code>,
+<code>adaptations --element</code>, <code>contrast</code>);
+<code>verdicts-D.jsonl</code> and <code>exception-report-D.md</code>;
+<code>account.md</code>; <code>model/arrows.jsonl</code>;
+<code>propositions.jsonl</code>; <code>rebuild.py &lt;sub&gt;</code>;
+<code>_views/</code>; the <code>organizing_end_hour</code> and aftermath
+share per room. <strong>Forbidden:</strong> rooms outside the branch
+except as the contrast the account names; the canvas as an undeclared
+ground (rule 7), projected on afterwards; recutting a branch or changing
+the model; the chunk-share tree as a ground.</p>
+<p><strong>Outputs:</strong> <code>forms/&lt;id&gt;-account.md</code>
+per branch; <code>branches-D5.jsonl</code>;
+<code>waterfall-D5.md</code>; <code>survival-D5.md</code>; lines in
+<code>findings.jsonl</code> and <code>defects.jsonl</code>;
+<code>notes-D5.md</code>.</p>
+<p>The branches are the forms organizing took under your own return;
+read their members as rooms, in any order, through any file. Two things
+are fixed: a claim about absence carries §1's arithmetic, and the
+branches were cut from adaptations your own model provoked and cannot
+vouch for it. If stage D4 drew no tree, or the population is one form
+with variation, write this stage anyway, about what the branches do
+track, and say in every account that they are groupings. The unadapted
+group gets an account of its own; a branch mostly
+<code>cannot-tell</code> is said to be so before it is described.</p>
+<h2 id="1-before-you-call-anything-absent">1. Before you call anything
+absent</h2>
+<p>Rule 6. Declare here, before any comparison, the minimum count of
+within-case datings an arrow stands on, from your own <code>subs</code>
+counts. For every arrow you compare across branches, compute the
+expectation: its corpus-wide <code>subs</code> count over the analysed
+set from <code>counts.py</code>, times the branch's <code>n</code>;
+smallest and largest branch first. Below one the arrow is
+<code>not-testable-here</code>, and no boundary condition and no
+<code>propositions_fail</code> may be written from it. Arrow presence
+inside a branch is arithmetic about your own model, cut on the
+adaptations it provoked: <em>present here, absent there</em> describes a
+form and never bounds a proposition, unless you can say what
+distinguishes the difference from a restatement of the cut.</p>
+<h2 id="2-per-branch-the-account">2. Per branch, the account</h2>
+<p><code>forms/&lt;id&gt;-account.md</code>, in this order:</p>
+<ol type="1">
+<li><strong>How these rooms organized, as a narrative</strong>: a few
+hundred words a stranger to the model could follow, with participants'
+words through <code>cite.py</code>, written before the comparisons.</li>
+<li><strong>What the branch does</strong>: the elements it shares with
+the global model unchanged, as the model's prose says them.</li>
+<li><strong>What it does differently</strong>: the shared keys read as
+prose, each with the rooms and the <code>how</code> sentences that carry
+it, and what a room of this branch does that the global model would not
+predict. Say what the branch's claim rests on (contract §1): the shared
+keys are a pattern across rooms and are validated as one, by the
+ledger's counts and D4's alternatives; what the rooms did with them is a
+claim on their words and is validated by <code>cite.py</code>. One kind
+of evidence does not stand in for the other. Then stage D4's name read
+against the members: the strongest argument that it names the keys
+rather than what the rooms did, and what a reader who suspected so would
+look for; a name you cannot defend from the members is a renaming
+proposal in <code>notes-D5.md</code>.</li>
+<li><strong>The concepts it employs</strong>: representative first-order
+concepts from the members, through <code>cite.py</code>, at least one
+per shared key.</li>
+<li><strong>Composition here.</strong> Keep three versioned judgments
+separate. <code>verdicts-D.jsonl</code> diagnoses the original unadapted
+global model and remains historical.
+<code>adaptation-returns.jsonl</code>, the current model hash and D3's
+unaffected-case reasons establish each adapted-local status. Name all
+unresolved or insufficient-evidence local accounts and their limits.
+Then state whether the shared branch explanation is supported,
+unsupported or unresolved and why. An original global failure is not a
+current local or shared failure.</li>
+<li><strong>How the model runs here</strong>: which elements do the
+work, which sit idle (<code>absent</code>), which fit badly, what these
+rooms do that it has no place for (<code>propose</code> and particular
+lines). Where the room models and your reading disagree, say which you
+believe.</li>
+<li><strong>The one relationship that runs differently here</strong>:
+one arrow, both sides quoted.</li>
+<li><strong>Fourth-order themes over- and under-represented</strong>
+against the population base rate (no v38 view yet; by script, logged),
+in the rooms' own words; never a property of the rooms (contract
+§5).</li>
+<li><strong>Arrows present, absent or
+<code>not-testable-here</code></strong> with the expectation on each;
+propositions that hold, fail against a real expectation, or are not
+testable.</li>
+<li><strong>How representative members do the work</strong>: two or
+three rooms, by a rule you state, each told in a paragraph in the
+branch's terms with citations, one the member that fits worst, one read
+at length with why you chose it and what is unrepresentative about
+it.</li>
+<li><strong>The nearest branch and what separates them</strong>, with
+the room that could have gone either way; every cross-link touching this
+branch, named.</li>
+<li><strong>The form test</strong> (contract §1, Doty and Glick): the
+constructs the branch binds, the relations among them. Map them to the
+four organizing problems where justified, allowing an empty mapping and
+a supported theoretical remainder. Then, for what varies among members,
+whether the form accommodates it, a subform is warranted (a candidate
+for stage D4, written to <code>notes-D5.md</code>, never cut here), or
+it is a particular of one history. A branch for which you cannot write
+this is reported as a grouping, not a form.</li>
+<li><strong>What would make you doubt this is a form at
+all.</strong></li>
+</ol>
+<p><code>branches-D5.jsonl</code>, one line per branch:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;branch&quot;</span><span class="fu">:</span> <span class="st">&quot;F03&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;n&quot;</span><span class="fu">:</span> <span class="dv">23</span><span class="fu">,</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;verdicts&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;composes&quot;</span><span class="fu">:</span> <span class="dv">14</span><span class="fu">,</span> <span class="dt">&quot;composes-with-residue&quot;</span><span class="fu">:</span> <span class="dv">5</span><span class="fu">,</span> <span class="dt">&quot;does-not-compose&quot;</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span> <span class="dt">&quot;cannot-tell&quot;</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">},</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;global_model_version&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;original handoff VERSION&gt;&quot;</span><span class="fu">,</span> <span class="dt">&quot;local_model_version&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;current hash&gt;&quot;</span><span class="fu">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;local_statuses&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;room&quot;</span><span class="fu">:</span> <span class="st">&quot;validated|unresolved|insufficient-evidence&quot;</span><span class="fu">},</span> <span class="dt">&quot;unresolved_members&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;shared_status&quot;</span><span class="fu">:</span> <span class="st">&quot;supported|unsupported|unresolved&quot;</span><span class="fu">,</span> <span class="dt">&quot;shared_warrant&quot;</span><span class="fu">:</span> <span class="st">&quot;evidence and scope&quot;</span><span class="fu">,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;construct_bindings&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;P07&quot;</span><span class="ot">,</span> <span class="st">&quot;T4-005&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;binding_account&quot;</span><span class="fu">:</span> <span class="st">&quot;relations and conditions&quot;</span><span class="fu">,</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;binds&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;leaves_free&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;over&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;T4-005&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;under&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;arrows_present&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span><span class="dt">&quot;arrow&quot;</span><span class="fu">:</span> <span class="st">&quot;A03&quot;</span><span class="fu">,</span> <span class="dt">&quot;expected&quot;</span><span class="fu">:</span> <span class="fl">2.1</span><span class="fu">}</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;arrows_absent&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;arrows_not_testable&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;propositions_hold&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;N12&quot;</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;propositions_fail&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span> <span class="dt">&quot;propositions_not_testable&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="er">...</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;survival&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;median_organizing_end_hour&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span> <span class="dt">&quot;aftermath_share&quot;</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>              <span class="dt">&quot;work_remained&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;kept&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span> <span class="dt">&quot;lost&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span> <span class="dt">&quot;silent&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">}},</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;canvas&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;median_area_px&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span> <span class="dt">&quot;rooms_with_artwork&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span> <span class="dt">&quot;read&quot;</span><span class="fu">:</span> <span class="st">&quot;one clause&quot;</span><span class="fu">},</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a> <span class="dt">&quot;unmodelled&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">,</span> <span class="dt">&quot;form_or_grouping&quot;</span><span class="fu">:</span> <span class="st">&quot;form&quot;</span><span class="fu">,</span> <span class="dt">&quot;confidence&quot;</span><span class="fu">:</span> <span class="st">&quot;...&quot;</span><span class="fu">}</span></span></code></pre></div>
+<h2 id="3-the-waterfall">3. The waterfall</h2>
+<p><code>waterfall-D5.md</code>: one reader's walk from the account,
+through one branch, through one subform, to one room's model, to its
+adaptations, to the quotes; and the walk back up. Say at each step what
+was added and whether it contradicted the level above (contract §1, the
+check in both directions), and read the walk against
+<code>prior.md</code>'s expectation of what the lower levels describe.
+Choose the branch and the room by a rule stated before the walk.</p>
+<h2 id="4-survival-per-branch">4. Survival, per branch</h2>
+<p><code>survival-D5.md</code>: <code>organizing_end_hour</code>, the
+aftermath share and <code>work_remained</code> (how many members'
+records say the work was kept, lost, or say nothing: silence counts,
+contract §1) per branch, from the record and never from the canvas, with
+the branch's ending described in its own terms: what stopped the
+coordinating, and what the rooms did after. The canvas fields are
+projected on afterwards and read against this, with the direction of the
+bias named (rule 7): what the rooms of this form left on the canvas,
+against the narrative in §2 and the account's paragraph on what the
+model implies a room keeps. Where the §2 narrative dates a change in
+what the members did, say which bracket of <code>prior.md</code> §4 it
+falls in and whether the members' placements by hour
+(<code>canvas</code>) move at that hour: a timing the canvas
+corroborates is said to be, a mechanism never is, and a timing it
+contradicts is named as a question for the account. The contract's §5
+sentence on what the canvas measures stands beside it; nothing here is a
+score.</p>
+<h2 id="5-what-you-must-refuse-to-do">5. What you must refuse to do</h2>
+<p>Do not characterise rooms stage D4 declared cousins as siblings. Do
+not treat a network stage D4 could not draw as a tree of forms. Do not
+let branch size become importance. Do not recut anything or change the
+model here: a fourth-order theme that lumps two things a branch
+separates, a renaming, a subform, goes to <code>notes-D5.md</code> for
+stage D6, which may act on it as an amendment, and to
+<code>defects.jsonl</code> for stage E1; a claim a branch bounds is a
+<code>findings.jsonl</code> line under rule 14. A closed branch's
+account is not edited; a description later found wrong is superseded by
+a new file with what showed it (rule 18).</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>Each branch opened; the expectations computed; the representative
+members chosen with the rule; the form test's result; the survival
+figures; the waterfall's steps; what the members showed that the room
+notes did not predict.</p>
+<h2 id="final-message">Final message</h2>
+<p>The claim (what the forms are and how they differ in their
+functioning), the branch that best supports it, the branch that most
+threatens it, the condition; then: branches accounted; branches that
+failed the form test; names that survived the members' reading; the
+branch whose reading disagreed most with the room models; where the
+uncomposed rooms sit; arrow absences real and
+<code>not-testable-here</code>, by count; propositions that failed
+against a real expectation, and the <code>findings.jsonl</code> lines
+they bounded; the waterfall's contradictions if any; survival by branch;
+the most consequential difference between two forms; the licences
+exercised.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh D5</code> at every branch; <code>handback-D5.md</code>;
+the head; the closing diary line.</p>
+<h2 id="negative-shared-result">Negative shared result</h2>
+<p>If D4 finds no supported shared branch, keep
+<code>branches-D5.jsonl</code> empty and explain the result in
+<code>notes-D5.md</code>. The waterfall goes from the global model
+directly to a selected local account and its evidence. Report remaining
+local evidence and unresolved cases. Do not invent a branch.
+<code>binds</code> and <code>leaves_free</code> contain only optional
+four-problem mappings; <code>construct_bindings</code> must resolve to
+empirical construct ids, and a form requires their
+<code>binding_account</code>.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

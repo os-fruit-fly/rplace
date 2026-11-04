@@ -1,0 +1,45 @@
+{
+  "community": "Goodboye",
+  "archive_sha256": "45c532a1e979dc41fce1eae97a6867ea62557be4263439717ea372e32a180dfc",
+  "archive_name": "Goodboye.tar.zst",
+  "session": "01a141fc-3add-7930-bc30-026a20eb44fe",
+  "transcripts": [
+    {
+      "member": "room/current/native/lead/sessions/2026/10/16/rollout-2026-10-16T01-53-31-01a141fc-3add-7930-bc30-026a20eb44fe.jsonl",
+      "sha256": "0a0b22eac0208ada5b44cfbf3136b6594485fa19fbcc5513d0ec378114d2afe8",
+      "lines": 197,
+      "last_utc": "2026-10-16T00:01:01.120Z",
+      "identity": [
+        {
+          "id": "01a141fc-3add-7930-bc30-026a20eb44fe",
+          "session_id": "01a141fc-3add-7930-bc30-026a20eb44fe",
+          "timestamp": "2026-10-15T23:53:31.613Z",
+          "forked_from_id": "01a0f295-1f79-7d02-bb16-5c79d3474690",
+          "forked_from_ordinal_exclusive": 362,
+          "cli_version": "0.160.0"
+        }
+      ],
+      "turn_settings": [
+        {
+          "utc": "2026-10-15T23:53:34.884Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "utc": "2026-10-16T00:00:29.542Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ]
+    }
+  ],
+  "source_proof": {
+    "member": "room/SOURCE-PROOF.json",
+    "sha256": "ffefa5dae0fa440cf5a11e1083081ac11e360b7b599efb137daa01622bc3e81f",
+    "source_archive_sha256": "ed96d7e956134aaa158e1c131322582d9e9cb48ecf6e48b379e774ec3c6693cd",
+    "checkpoint": "7116fa99db5d48d1e9a97f113fbf740cbd00687453283066a7d4a862e2e87c5c",
+    "source_finished": "2026-09-30T14:16:37.879269+00:00",
+    "source_archive_name": "Goodboye-gpt56-calibration-v1.tar.zst",
+    "metadata": {}
+  }
+}

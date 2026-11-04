@@ -1,0 +1,175 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The tools, one way across the tiers | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="the-tools-one-way-across-the-tiers">The tools, one way across
+the tiers</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coder-tools.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coder-tools.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Three agents read this study's material through tools: the brief
+writer (the seven days before the canvas), the coder (one community's
+week, or a slice of it), and the aggregator (the coders' cases, codes
+and notebooks across three hundred communities). Each has a reading
+tool, a citing tool and a search; a fourth, <code>emit</code>, records
+what the coder decides. This page says what every one of them does the
+same way, so that an agent that has used one is not surprised by
+another, and it lists the differences that remain and why. It binds
+<code>read.py</code>, <code>read_brief.py</code>, <code>cite.py</code>
+and <code>emit.py</code> now; the aggregator's <code>cite_case.py</code>
+and <code>mem.py</code> are to be brought to it at v37, and their
+present differences are listed at the end.</p>
+<h2 id="the-shell-grammar">The shell grammar</h2>
+<pre><code>python3 &lt;tool&gt;.py &lt;CORPUS&gt; &lt;verb&gt; [arg] [--flag ...]</code></pre>
+<p><code>CORPUS</code> is the file the agent was told is its corpus; the
+verb comes second; one positional argument at most. <code>--help</code>
+prints the docstring, which lists every verb. Nothing else is
+positional. A refusal prints one line,
+<code>&lt;Error&gt;: &lt;why&gt;</code>, to stderr and exits 2:
+<code>ReadError: no thread 'x' in this corpus</code>,
+<code>CiteError: not found in dfnrqjq. ...</code>. A refusal is the tool
+saying the call was wrong, never the tool breaking; a traceback is a
+defect.</p>
+<h2 id="the-reading-tools-readpy-coder-read_briefpy-brief-writer">The
+reading tools: <code>read.py</code> (coder), <code>read_brief.py</code>
+(brief writer)</h2>
+<p>Both serve the rendered corpus verbatim and log every service. Shared
+verbs, same meaning:</p>
+<table>
+<thead>
+<tr>
+<th>verb</th>
+<th>serves</th>
+<th>logs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>header</code></td>
+<td>the block of <code>#</code> lines: every count, exact</td>
+<td><code>kind: header, chars</code></td>
+</tr>
+<tr>
+<td><code>thread ID</code></td>
+<td>one thread, whole</td>
+<td><code>kind: thread, thread_id, items, chars</code></td>
+</tr>
+<tr>
+<td><code>item ID</code></td>
+<td>one item, verbatim, for what <code>find</code> returned</td>
+<td><code>kind: item, item_id, chars</code></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>where you are:
+<code>tool, corpus, threads_in_corpus, threads_served, chars_served</code>,
+then the tool's own fields</td>
+<td>not logged</td>
+</tr>
+</tbody>
+</table>
+<p>Own verbs, because the two agents ask different questions of the
+text: the coder asks <em>does this thread touch the event</em>, so
+<code>read.py</code> has <code>windows [n]</code> (the next n threads as
+triage windows, or whole when shorter than a window) and
+<code>audit</code> (served against declared); the brief writer asks
+<em>what is ordinary here</em>, so <code>read_brief.py</code> has
+<code>titles [n] [--day d]</code> and <code>sample [n]</code> (whole
+threads drawn to fill the thinnest days first). <code>read.py</code> has
+a cursor that advances on serving; <code>read_brief.py</code> has a
+reference budget and a hard ceiling. Those are the differences, and each
+has its reason in the tool's docstring.</p>
+<p>The log is <code>out/_read.jsonl</code> beside the corpus for both,
+one JSON record per service:
+<code>{seq, t, kind, tool, chars, ...}</code> with the verb's own keys
+as in the table. The log is the record of what the agent saw; it is
+replayed on construction, so every call is a fresh process and nothing
+lives in memory. The environment variable <code>READ_LOG_DIR</code>
+moves the log and is the scheduler's, never the agent's: the shell form
+has no <code>--out</code>.</p>
+<h2 id="the-citing-tool-citepy-the-same-file-in-both-tiers">The citing
+tool: <code>cite.py</code>, the same file in both tiers</h2>
+<pre><code>from cite import Corpus
+C = Corpus(RECORD); cite, find = C.cite, C.find
+cite(item_id, &quot;the words you believe are there&quot;)   -&gt; {item_id, start, end, text}
+find(&quot;regex&quot;, limit=200)                            -&gt; FindResult</code></pre>
+<p><code>cite</code> searches the item's body (a post:
+<code>title + "\n\n" + selftext</code>), returns the exact span cut from
+the body with its offsets in Unicode code points, and refuses a quote
+that is not there, that occurs twice (extend it), or that matches only
+after normalising quotes and dashes when that match is ambiguous. What
+the agent typed is discarded; what comes back is the record's. The agent
+never computes an offset. The shell form is
+<code>cite.py RECORD ITEM_ID '&lt;quote&gt;'</code> and
+<code>cite.py RECORD --find '&lt;regex&gt;' [limit]</code>.</p>
+<p><code>find</code> returns a <code>FindResult</code>: a list of
+<code>{item_id, thread_id, start, end, text, snippet}</code>, one hit
+per item, first match only, that also carries <code>truncated</code>,
+<code>limit</code>, <code>scanned</code> and <code>not_scanned</code>;
+the flag, not the hit count, says whether the scan was complete. Every
+call is appended to <code>&lt;record&gt;.queries.jsonl</code> as
+<code>{t, kind: find, tool, pattern, n_items_matched, limit, items_scanned, items_not_scanned, truncated}</code>.
+<code>find</code> grounds a claim; it does not choose what the agent
+reads (coder Rule 5; brief writer rule 3 allows it freely because the
+brief describes rather than samples).</p>
+<h2 id="the-recording-tool-emitpy-coder-only">The recording tool:
+<code>emit.py</code>, coder only</h2>
+<p><code>emit.code</code>, <code>emit.pointer</code> and
+<code>emit.thread(excluded_quote=...)</code> take <code>cite</code>'s
+return value unchanged and verify it against the record at the call; a
+code or a pointer is refused on an item <code>read.py</code> never
+served. Everything is appended to <code>out/_journal.jsonl</code> as
+<code>{seq, t, stage, kind, ...}</code>; nothing is edited. The brief
+writer records nothing through a tool: its brief is prose, checked
+afterwards by the scheduler (<code>verify_room.py --brief</code>, which
+resolves every quoted string in the brief through <code>cite</code>
+against the pre-week record).</p>
+<h2 id="what-stays-different-and-why">What stays different, and why</h2>
+<ul>
+<li>The coder's <code>read.py</code> serves triage windows and keeps a
+cursor; the brief writer's serves samples and keeps a budget. Two
+questions, two tools; the verbs they share behave the same.</li>
+<li>The brief writer has no <code>emit</code> and no dispositions: a
+brief is a description with quotes, and the quotes are checked where
+they land.</li>
+<li>Neither Layer A tool has <code>count</code>: coder Rule 10 says
+counting is done for the coder in the header, and a brief writer is told
+the same.</li>
+</ul>
+<h2 id="the-aggregators-tools-as-they-stand-to-align-at-v37">The
+aggregator's tools, as they stand (to align at v37)</h2>
+<p><code>cite_case.py</code> reads the coders' outputs, not a corpus, so
+its address is <code>(case, section)</code> rather than
+<code>item_id</code>:</p>
+<ul>
+<li><code>Cases.cite(case, section, quote, collection="cases")</code>
+returns <code>{case, collection, section, start, end, text}</code>; the
+coder's returns <code>{item_id, start, end, text}</code>. Same rule
+(verbatim or refuse, ambiguous refused), different address. To align:
+the same key names for what is shared (<code>start, end, text</code>)
+hold already; the log record should carry <code>kind: cite</code> the
+way the reading tools name their kinds.</li>
+<li><code>Cases.find(pattern, collection, section, limit=2000)</code>
+returns a <code>FindResult</code> with <code>truncated</code>; the
+coder's now does too. The aggregator's hit is
+<code>{case, collection, text, snippet}</code> without offsets; the
+coder's carries <code>start, end</code>. To align: add offsets.</li>
+<li><code>Cases.count(pattern, ...)</code> exists for the aggregator's
+form pass and has no Layer A counterpart, by design.</li>
+<li>Its log is one file per stage,
+<code>out/_aggregator_reads-NN.jsonl</code>, records
+<code>{seq, t, kind, tool, ...}</code> with <code>cited: true</code> on
+a cite; the Layer A reading tools log to <code>out/_read.jsonl</code>
+and <code>cite</code> to <code>&lt;record&gt;.queries.jsonl</code>. To
+align: one log per tool per directory, the same base record, and
+<code>kind: cite</code> rather than a flag.</li>
+<li>Its shell grammar is <code>cite_case.py ROOT --find PATTERN</code>,
+<code>--count</code>, <code>--section CASE NAME</code>, and a bare
+<code>cite_case.py ROOT CASE SECTION QUOTE</code>; the Layer A grammar
+is <code>TOOL CORPUS verb [arg]</code>. To align: verbs without dashes,
+one positional argument.</li>
+<li>Errors: <code>CiteError</code> raised and, from the shell, a
+traceback. To align: print and exit 2.</li>
+<li><code>mem.py</code> has no Layer A counterpart (the store is the
+aggregator's).</li>
+</ul>
+<p>The aggregator's v36 run is built and stage 00 has run; these changes
+wait for v37 so the run's tools stay what its manifest recorded.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

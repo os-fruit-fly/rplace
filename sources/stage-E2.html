@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage E2. Formalizing: feedback. | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="stage-e2-formalizing-feedback">Stage E2. Formalizing:
+feedback.</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="stage-E2.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/stage-E2.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p><strong>Model:</strong> as <code>arm.json</code> sets for this stage
+(your platform file lists the model and effort). <strong>Legs:</strong>
+two, one per step, each closed at its end or earlier when you choose.
+<strong>Fleet:</strong> none.</p>
+<p><strong>Steps:</strong> <code>E2a</code> the handling;
+<code>E2b</code> the next instrument, the handback and the interview.
+Each leg is named by its step (STANDING §2).</p>
+<p><strong>Safe stops:</strong> after each section of
+<code>handling-E2.md</code>, and after each part of the next instrument.
+At a safe stop, check for <code>.pause</code> (<code>ls .pause</code>);
+if it is there, log where to pick up, your working hypothesis and the
+next item
+(<code>mem.py log "&lt;hypothesis&gt;; next: &lt;item&gt;" --kind pause</code>),
+and close with <code>done.sh E2 --pause</code> (STANDING §2).</p>
+<p><strong>Startup packet:</strong> <code>_head.md</code>, this file,
+the last five diary entries, <code>validate.py --open E2</code>. First
+leg only: <code>experience-E1.md</code>, <code>handback-E1.md</code>,
+<code>handling/proposal.md</code>,
+<code>handling/design-note.md</code>.</p>
+<p><strong>Reads allowed:</strong> everything in <code>out/</code>,
+<code>_transcripts/</code>, <code>_probe/</code> and
+<code>_snap/</code>; <code>handling/</code> whole: the interview
+transcripts in <code>handling/interviews/</code>, the harness log in
+<code>handling/harness-log/</code> (with every first message the harness
+sent, in <code>first-messages/</code>); the package and the store
+through the verbs; every document you were given.
+<strong>Forbidden:</strong> changing any earlier file (rule 18);
+anything that is not the handling or the next instrument.</p>
+<p><strong>Outputs:</strong> <code>handling-E2.md</code>;
+<code>next-instrument-E2.md</code>; <code>notes-E2.md</code>;
+<code>handback-E2.md</code>; the interview brief
+<code>out/interview/E2b.md</code>.</p>
+<h2 id="why-this-stage-exists">Why this stage exists</h2>
+<p>E1 audited the run and your account of it. This stage audits the
+other side: what you were told, by whom, and what it did to the work;
+and then it asks you, having done the whole thing, to design the
+instrument that should have been. The next version of this instrument is
+written from this file, E1's experience and the handbacks.</p>
+<h2 id="1-the-handling-step-e2a">1. The handling (step E2a)</h2>
+<p><code>handling/</code> arrives with this stage, placed by the
+handler: <code>proposal.md</code>, the study's proposal as it stands
+now, updated since you began; <code>design-note.md</code>, why this
+instrument is built as it is; <code>interviews/</code>, the transcript
+of every interview the principal investigator held with you, with
+<code>interviews.tsv</code>; and <code>harness-log/</code>, the handover
+events, the pauses, the forced closes and every first message the
+harness sent.</p>
+<p>Three parties spoke to you during the run: the principal investigator
+(in interviews, and in reply files), the handler (the harness's
+messages, the answers to your questions, the pauses and forced closes),
+and the instrument's author (the contract, the standing instructions,
+the stage files, the tools' messages, and the design note you now read
+for the first time). Audit what they said, not what you did; your own
+work was the subject of E1's experience. <code>handling-E2.md</code> has
+four sections, each point cited to a file, a line, a transcript turn or
+a diary entry:</p>
+<ul>
+<li><strong>Where what you were told was inconsistent</strong>: between
+two documents, between a document and a tool, between a stage file and
+the handler, between what the principal investigator said in an
+interview and what the instrument then asked. For each: what each side
+said, which you followed, and what following it cost.</li>
+<li><strong>What made the work harder</strong>: an instruction you could
+not carry out as written, a ceiling or a count that fought the material,
+a tool that did not do what its help said, a cut in the wrong place, a
+reply that arrived too late, anything that sent you back.</li>
+<li><strong>What helped</strong>: what you would keep, and why.</li>
+<li><strong>Freedom given and taken</strong>: where you were free to
+judge as Gioia, Corley and Hamilton and Gioia, Anand and Hamilton ask of
+the researcher, and where that freedom was taken; whether taking it was
+right.</li>
+</ul>
+<p>A point you cannot cite is stated as such, never dressed as a
+finding. Where the handling was right and you were wrong, say so.</p>
+<h2 id="2-the-next-instrument-step-e2b">2. The next instrument (step
+E2b)</h2>
+<p><code>next-instrument-E2.md</code>: read
+<code>handling/proposal.md</code> whole first. Then theorize the
+instrument you would build to deliver that proposal next time, from what
+this run taught you: what the proposal claims and what this instrument
+could and could not deliver of it; the stages you would keep, cut, merge
+or add, and where the stops and the interviews should fall; the division
+of labour between you, the fleets, the handler and the principal
+investigator; the tools you would want; what should be fixed in advance
+and what should be left to judgement; and the one thing not to change.
+It is a design argument, not a wish list: give each change the evidence
+from this run that motivates it, and the risk it brings. Where the
+proposal itself should change in the light of the run, say so.</p>
+<h2 id="moments-to-log">Moments to log</h2>
+<p>Each section of the handling finished; the proposal read; each part
+of the next instrument drafted; the one thing not to change named.</p>
+<h2 id="final-message">Final message</h2>
+<p>Three sentences: the inconsistency in the handling that cost most;
+the first change you would make to the instrument; the one thing not to
+change.</p>
+<h2 id="close">Close</h2>
+<p><code>done.sh E2</code> at the end of <code>E2a</code>; at the end of
+<code>E2b</code>, <code>handback-E2.md</code>, the head, the closing
+diary line, then the interview.</p>
+<p><strong>Interview point.</strong> <code>E2b</code> writes
+<code>out/interview/E2b.md</code> (under 800 words: what you did, what
+you found, what surprised you, what you doubt, and the three questions
+you would most like to be asked) and closes with
+<code>done.sh E2 --cut interview</code>: the whole run, how you were
+handled, and the instrument you would build next. The principal
+investigator may talk with you here, in a fork of this leg, run in a
+copy of your folder as it stood at the close (not read-only; nothing
+done there reaches the run); the run goes on from the cut either way.
+<code>done.sh</code> files the brief under the leg, the stage, the step
+and the minute, and refuses the cut without the brief and the
+handback.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

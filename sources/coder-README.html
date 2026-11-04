@@ -1,0 +1,188 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run yard, coder instrument v32 | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="run-yard-coder-instrument-v32">Run yard, coder instrument
+v32</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coder-README.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coder-README.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<blockquote>
+<p><strong>Layout in this repository (2026-10-02).</strong> The yard's
+folders sit here under other names: <code>_instrument/</code> is
+<code>instrument/</code>, <code>_tools/</code> is
+<code>handler/tools/</code>, <code>_lead_sessions/</code> is
+<code>lead-sessions/</code>, and the scheduler's documents
+(CONTRACT-scheduler.md, CHECKPOINTS.md and the rest) are in
+<code>handler/</code>. <code>census/</code> and <code>rooms/</code> keep
+their names. The text below describes a working yard. The tools expect
+that layout (<code>_tools/</code> beside <code>_instrument/</code> and
+<code>rooms/</code>): to run them, copy these folders into a yard folder
+of yours under the yard's names.
+<code>handler/refresh_examples.py</code> refreshes <code>rooms/</code>
+here from the study's yard.</p>
+</blockquote>
+<p>One folder per community of the r/place census, each holding
+everything a case lead and its fleet need to code that community's week:
+the instrument, the record, the seven days before, the brief where one
+exists, and the state of the work. Nothing here depends on which model
+runs the agents or on which program launches them; a folder is complete
+on its own and runs from any machine with <code>python3</code>.</p>
+<pre><code>coder/
+  README.md                  this file
+  CONTRACT-scheduler.md      what the scheduler does between the agents (the job that
+                             was done by hand on v29, written down)
+  STATUS.tsv                 one line per room; regenerated, never edited
+  _instrument/v32/           the reference instrument (every room carries its own copy; rooms
+                             coded on v30 keep v30, which is in archive/)
+  census/                    which communities are rooms, and why
+  _tools/
+    room.py                  one room, driven from outside: status, brief, run, message,
+                             check, snapshot, fork, note
+    verify_room.py           the scheduler&#39;s checks: the brief, each batch, the end
+    status.py                rebuilds STATUS.tsv from every room&#39;s STATE.json
+    compare_forks.py         a room&#39;s run and its forks side by side
+    build_room.py            how a room was made from raw24 (to rebuild one)
+    update_instrument.py     copy the reference instrument into every room, in place
+    add_openings.py          write record/openings*.md into rooms that lack them
+    selftest.py, simcoder.py a scripted run of the whole procedure, no model called
+    selftest_brief.py, simbrief.py   the same for the brief stage
+  rooms/&lt;sub&gt;/
+    ROOM.md                  the room&#39;s numbers and the commands, in order
+    STATE.json               the room&#39;s memory
+    instrument/              the room&#39;s version, whole
+    record/coder_corpus.jsonl.gz   the 97-hour cut: threads whole, context marked
+    record/preweek.jsonl.gz        the seven days before the canvas opened
+    record/cut_stats.json          the counts, computed at build
+    record/openings.md             every thread&#39;s metadata, counts, title and opening text,
+                                   for the case lead (plus titles-only and digest files
+                                   above 1,500 threads); `room.py run` copies it into run/
+    brief/                   built by `room.py brief` where no brief exists: the pre-week
+                             rendered, the brief writer&#39;s contract and tools, out/brief.md
+                             when written (298 rooms arrived with one from an earlier run)
+    run/                     built by `room.py run`: the case lead&#39;s directory, the fleet
+                             under run/fleet/batch_NN/
+    snapshots/after-fleet.tgz      the fork point
+    forks/&lt;name&gt;/run/        a fresh lead&#39;s copy of the snapshot</code></pre>
+<p><strong>Which rooms.</strong> The population is the 706 communities
+with <code>handable = 1</code> in census/MASTER-census.csv; the census page explains the judgements
+that made that list. The scheduler codes the rooms listed in
+<code>STATUS.tsv</code> (rebuilt by <code>_tools/status.py</code>) from
+the bottom up, smallest first. The study's yard held 741 rooms on 27
+September 2026, 33 of them outside the 708 of that day: r/place, the
+field, coded apart (Manual/census.md), and 32 because they were built
+before the screen closed them. On 4 October 2026 r/lehigh and r/upvote
+left the population (no writing about the event while the canvas was
+open), so 35 of the yard's 741 are outside the 706.</p>
+<h2 id="persistent-case-lead-continuation">Persistent case-lead
+continuation</h2>
+<p>For a snapshot of both the <strong>case lead's native conversation
+and the whole room's filesystem</strong>, use
+<code>_tools/codex_lead.py</code> as described in CHECKPOINTS.md. Only the case lead
+needs a saved native session; brief writers and fleet coders do not. The
+adapter works in an isolated managed copy and checkpoints each completed
+lead reply.</p>
+<p>The <code>room.py snapshot</code>/<code>fork</code> commands below
+are the older filesystem-only, fresh-lead research comparison. They do
+not restore the original agent's conversation. On the last batch,
+<code>message collect</code> now stops the lead before consolidation;
+checkpoint there, then send <code>message finish</code>, which no longer
+collects the same batch a second time.</p>
+<h2
+id="what-was-done-to-a-room-before-the-yard-prior-runstsv-and-four-columns-of-statustsv">What
+was done to a room before the yard (<code>PRIOR-RUNS.tsv</code>, and
+four columns of <code>STATUS.tsv</code>)</h2>
+<p><code>_tools/prior_runs.py</code> reads every earlier coder run under
+<code>50_coding_runs/</code> (the batch tarballs and the run folders,
+the hub runs too) and
+<code>40_analysis/coder_version/coder_version.csv</code>, and writes
+<code>PRIOR-RUNS.tsv</code>: one line per (room, run) with the
+instrument version and fingerprint, the variant, the model that did the
+reading, when it ran, whether it completed, and whether it is the run
+whose codes are in the v35 aggregator package. It also stamps
+<code>prior_runs</code> into each room's <code>STATE.json</code>, and
+<code>status.py</code> summarises that into four columns of
+<code>STATUS.tsv</code>: <code>coded_before</code> (the runs, oldest
+first; <code>(partial)</code> where a run did not close),
+<code>coded_under</code> (the instrument version of each),
+<code>coded_by</code> (the model of each) and
+<code>in_v35_package</code> (yes for the 298 package rooms the yard
+holds; <code>hyperlightdrifter</code> and <code>PokemonSage</code> have
+no room). Re-run <code>prior_runs.py</code> when a run is added under
+<code>50_coding_runs/</code>; <code>status.py</code> keeps the
+columns.</p>
+<p>Where the model comes from: the manifests from v26 on record it;
+before v26 no manifest has a model field, and the model is read from the
+run's transcript (<code>out/_transcript.jsonl</code>, the first
+assistant message), which is how the rank-band runs of v19 to v24 are
+known to have run on <code>claude-opus-5</code>, the dispatcher having
+passed no model argument; <code>unrecorded</code> where neither exists
+(the hub runs, the v15 pilot). Of the 298 package rooms in the yard, 281
+were coded by Opus and 17 (the tail of the v27 draw) by Sonnet.</p>
+<h2 id="before-anything-runs-on-a-machine">Before anything runs on a
+machine</h2>
+<pre><code>python3 _tools/selftest.py --instrument _instrument/v32 \
+    --record &lt;any room&gt;/record/coder_corpus.jsonl --sub &lt;sub&gt;</code></pre>
+<p>(<code>gunzip -k</code> the record first.) It runs a room through the
+gate, the fleet, the pool, the forest, the audit and the close with
+scripted agents in under a minute and prints
+<code>SELFTEST PASSED</code>.
+<code>python3 _tools/selftest_brief.py --room rooms/&lt;sub&gt;</code>
+does the same for the brief stage on a copy of the room and prints
+<code>SELFTEST-BRIEF PASSED</code>. If either does not, nothing else
+should run.</p>
+<h2 id="running-one-room-by-hand">Running one room by hand</h2>
+<p>From <code>rooms/&lt;sub&gt;/</code>, with
+<code>T=../../_tools/room.py</code>:</p>
+<pre><code>python3 $T status                    where the room stands, and what is next
+python3 $T brief --model &lt;id&gt;        if the brief is to write; then launch an agent in
+python3 $T message brief             brief/ with this message
+python3 $T check --brief             when the writer ends (place its transcript first)
+python3 $T run --model &lt;id&gt;          builds run/
+python3 $T message lead              launch the case lead in run/ with this message
+  branch A: it reads and closes the room; then `check`
+  branch B: it dispatches batch 01 and stops; then, for each batch:
+python3 $T message coder --batch NN  launch a coder in run/fleet/batch_NN/
+python3 $T check --batch NN          when it ends (place its transcript first)
+python3 $T message collect --batch NN --summary &quot;...&quot;   send to the lead
+python3 $T snapshot after-fleet      when the last batch is collected
+python3 $T message finish --batch NN send to the lead: consolidate, steps 4 and 5
+python3 $T check                     when the lead has closed
+python3 ../../_tools/status.py --yard ../..</code></pre>
+<p><code>CONTRACT-scheduler.md</code> is the whole of it, with what to
+look for and what to do when a check fails.</p>
+<h2 id="in-claude-code">In Claude Code</h2>
+<p>Each agent is a session in its directory. Open a terminal in
+<code>rooms/&lt;sub&gt;/run</code> (or <code>run/fleet/batch_NN</code>,
+or <code>brief/</code>), start <code>claude</code> with the model you
+chose, paste the message <code>room.py message ...</code> printed, and
+let it run to its final message. The scheduler can be a person doing
+this, or a Claude Code session opened in the yard's root with
+<code>CONTRACT-scheduler.md</code> as its instructions and permission to
+run <code>python3</code> and to start the agent sessions. The transcript
+of a session is under <code>~/.claude/projects/</code>; copy it to the
+agent's <code>out/_transcript.jsonl</code> before the check.</p>
+<p>The same holds for any other runner that can start an agent in a
+directory with a message: the messages, the checks and the files are the
+same; only the launching differs.</p>
+<h2 id="the-instrument">The instrument</h2>
+<p>v30 is v29 with the threshold and budget at 500, a slice floor of 25,
+the read audit reading the journal, four rules for the case lead's step
+5, <code>redispatch</code>, two sentences in AGENT.md, the openings file
+the case lead reads before the gate (<code>CONTRACT-case-lead.md</code>
+§1a), a timeline seeded by the harness from the record's sticky and
+moderator marks, the lead's ledger, and, after the audit of 2026-09-06,
+<code>emit</code> checking every quote and every coded item against the
+record and the read log as it arrives, <code>close_run</code> C8 to C10,
+and the contract edits the audit asked for.
+<code>_instrument/v30/CHANGELOG-v30.md</code> has the list and the
+reasons; the r/muse pilot and the liverpoolfc batches that produced them
+are in <code>Layer A/50_coding_runs/</code> and in the project notes.
+The instrument fingerprint every run records is over the files in
+<code>newrun.py</code>'s <code>INSTRUMENT_FILES</code>; a room whose
+fingerprint differs from another's was not coded on the same instrument,
+and <code>close_run</code> C7 fails a run whose files changed after
+dispatch.</p>
+<h2 id="sizes">Sizes</h2>
+<p>The record and the pre-week are gzipped; <code>room.py run</code> and
+<code>room.py brief</code> unpack them beside their <code>.gz</code>
+when a room starts. The four rooms above 50,000 items unpack to hundreds
+of megabytes and cut into 100 to 400 slices each.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

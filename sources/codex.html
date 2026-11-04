@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run r/place with Codex | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="run-rplace-with-codex">Run r/place with Codex</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="codex.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/codex.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>Guides: automatic leg
+blocks, remote
+access, analysis
+branches and Git lineage.</p>
+<p>Target length: under 1,250 words. Installation does not start
+research.</p>
+<h2 id="start">Start</h2>
+<p>From Terminal:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">&quot;</span><span class="va">$HOME</span><span class="st">/Jail&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py login</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py serve</span></code></pre></div>
+<p>Login credentials and runtime state stay in
+<code>Jail/.rplace-runtime-v43/</code> (the folder that holds r-place).
+The controller prints a private loopback URL. Open it, or open
+<code>~/Jail/.rplace-runtime-v43/OPENAI-LIVE.html</code> while the
+controller runs. Do not share that URL: it controls the local agents.
+Closing a browser tab detaches; it does not stop an agent.</p>
+<p>The controller owns all native sessions. Start it once. A second
+controller is refused. Independent studies, readers and interviews may
+overlap. Two processes cannot own the same actor; conflicting study
+operations are refused rather than racing.</p>
+<h2 id="handler-and-aggregator">Handler and aggregator</h2>
+<p>Open a separate ordinary Codex chat as the handler and give it HANDLER-CHAT.md.
+Keep this instrument-development chat separate. The handler reads state
+and operates the controller; it does not need a website actor or native
+checkpoint. Stage and leg agents keep their full native checkpoints.</p>
+<p>Prepare a new study from the supplied material:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py build study-01 <span class="at">--fleet-arm</span> codex</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py status</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py step study-01 A1a</span></code></pre></div>
+<p>Choose <code>--fleet-arm openrouter</code> for the alternative packet
+reader arm, or select it in the panel. See two
+reader arms for routing, credentials and recovery.</p>
+<p>The panel offers stage/step dropdowns, <strong>Prepare leg</strong>,
+then <strong>Start prepared leg</strong>. Or use
+<code>step study-01 A1a --start</code>, then attach:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py chat ACTOR_ID</span></code></pre></div>
+<p>You can send messages while it works. Terminal <code>/pause</code>
+asks for a safe boundary; <code>/stop</code> interrupts and saves;
+<code>/save</code> archives an idle agent; <code>/quit</code> detaches.
+The panel has the same controls. Scientific work stays in
+<code>workspace/out/</code>. Instrument and input files are read-only.
+Actor scratch is private and excluded from archives; keep durable work
+in <code>out/</code>.</p>
+<p>Talk to current analysts and interviews in the panel; the handler
+stays in its Codex chat. Messages and expandable tools stream live.
+Consequential questions show a reply form. Nothing is answered
+automatically. Native replies go to the exact turn. Drafts survive
+refresh. Terminal: <code>/answer text</code>, or
+<code>/answer {"question_id":"answer"}</code> for several questions.
+Stop interrupts a pending question. Private reasoning is not shown.</p>
+<h2 id="close-and-advance">Close and advance</h2>
+<p>The analyst closes its work with <code>tools/done.sh</code>. The
+controller detects the completed exit and closes it automatically. To
+retry closure after resolving a reported problem:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py close study-01 ACTOR_ID</span></code></pre></div>
+<p>The controller runs trusted validation and the recall probe, verifies
+the native boundary, and commits the archive. Failed validation returns
+to the same actor. A stopped or diagnostic archive does not count as a
+verified study leg.</p>
+<p>A verified <code>packets-out</code> cut starts the declared fleet
+automatically. Each reader has an independent history and files.
+Multipart packets stay with the same reader. Concurrency defaults to
+three readers, configured in the study state. D2 labelers and verdicts
+remain separate jobs. Inspect asynchronous operations with
+<code>status</code> or <code>job JOB_ID</code>.</p>
+<p>The next leg opens through <code>step</code> after its prerequisites
+pass, forking the preceding native checkpoint with its history and
+files. Notes orient the continuing actor; they do not replace it. Use
+<code>run-block STUDY --first A1b-01 --last A1b-03</code> for an
+explicitly approved range, with the actual last leg from the declared
+plan. The controller prepares and starts each leg after validation,
+stops at the range boundary or a required decision, and does not conduct
+the whole study. C4 may record an absent field model as its card
+permits. E2 requires the proposal and design note in the study's
+<code>drops/E2/handling/</code> folder.</p>
+<h2 id="resume-and-interviews">Resume and interviews</h2>
+<p>Codex checkpoints bind native history, files and the pinned runtime.
+Keep each complete folder under
+<code>.rplace-runtime-v43/checkpoints/</code>, including archives,
+receipts and its COMMITTED marker. Restores preserve the parent and its
+transcript. OpenRouter readers use API history replay.</p>
+<p>Click <strong>Resume as interview</strong> on a checkpoint, or:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py resume CHECKPOINT_ID <span class="at">--actor</span> interview-01</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py chat interview-01</span></code></pre></div>
+<p>Restore verifies hashes, creates a separate workspace, and forks the
+saved history using the recorded backend. The parent stays unchanged.
+Saved paths are mapped to the restored workspace and recorded in the
+continuation notice. Saving that interview creates another resumable
+checkpoint with parent lineage. No interview files enter the study
+without an explicit handoff.</p>
+<p>Authentication is excluded. Restoring needs the recorded operating
+system and architecture, Python 3.11 or later, and access to the
+recorded model. Archives preserve persisted history and files, not a
+promise of the same next token. Historical Claude sessions remain
+historical; they are not converted into native Codex histories.</p>
+<h2 id="original-case-leads-at-d2">Original case leads at D2</h2>
+<p>D2 restores each original case lead on its recorded model and effort.
+D3 continues that returned lead. Both fleet arms use this rule. A new
+reader cannot substitute for a missing lead.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py lead-status</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py register-lead SUBREDDIT CHECKPOINT_ID</span></code></pre></div>
+<p><code>import-lead</code> can capture a completed native CLI lead
+whose home, workspace and runtime are already inside the workspace (the
+folder that holds r-place). It requires <code>--home</code>,
+<code>--workspace</code>, <code>--executable</code>,
+<code>--thread</code>, <code>--model</code> and <code>--effort</code>.
+It preserves original files and verifies the three coded files against
+the current case snapshot. Old versions or missing native histories
+block the return.</p>
+<p>The current 705-room dataset is present. Its matching native lead
+archives still need to be registered before D2. Run the lead check
+before committing to the full study. The proposal and design note are
+delivered only at E2.</p>
+<h2 id="models-and-tests">Models and tests</h2>
+<p><code>aggregator/handler/claude/arm.codex.json</code> sets exact
+models and effort by leg. Defaults use Astra for the aggregator and Sol
+medium for routine fleets. The per-step schedule is
+a pilot allocation, not a measured optimum. The A1
+card gives the first stage. Do not substitute models silently.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> r-place/aggregator/handler/codex/run.py test</span></code></pre></div>
+<p>Use <code>stop-run STUDY</code> to stop the study and prevent pending
+jobs from starting. <code>continue-run STUDY</code> clears an actor-only
+stop without starting work. <code>recover DISPATCH_ID</code> or
+<code>recover-plan STUDY</code> resumes a blocked phase plan, retaining
+accepted returns and models. New dispatch cannot bypass a blocked
+plan.</p>
+<p><code>python3 r-place/aggregator/handler/codex/run.py acceptance --live</code>
+runs a small authenticated conversation and two archive/restore
+interviews. Run it after login before research.
+<code>bash r-place/verify.sh</code> checks the runtime, scientific tests
+and all 705 prepared room packages. Keep at least 8 GiB free.
+<code>prune</code> verifies committed archives before removing released
+redundant workspaces. It preserves checkpoint folders, current study
+files and interrupted stores. Restoring an evicted actor uses its
+checkpoint. D4 numeric comparison requires NumPy and SciPy in the
+controller Python environment.</p>
+<p>Offline fixtures test lifecycle and concurrency; they do not prove
+real model continuation. Coordinator records live in
+<code>~/Jail/Orchestrator/OpenAI/</code> and
+<code>~/Jail/Orchestrator/HEAD.md</code>, outside the repository.
+Reusable checks and protocols stay in the repository's
+<code>orchestrator/</code>. New builds use the v41 method and its stage
+cards.</p>
+<h2 id="v43-isolation-and-questions">v43 isolation and questions</h2>
+<p>The v43 controller uses port 8767 and private state in
+<code>~/Jail/.rplace-runtime-v43</code>. Phone ports are 8768 and HTTPS
+8444. v42 stays separate. New login is required; startup starts no
+research.</p>
+<p>The default build source is
+<code>~/Jail/.rplace-runtime-v43/prepared/openai-v43-1</code>, a
+pristine input build, never a copy of research outputs. Prepare it with
+the reusable check
+<code>python3 orchestrator/OpenAI/checks/prepare_v43.py --build</code>.
+Inspect the receipt before requesting
+<code>build openai-v43-1</code>.</p>
+<p><code>mem.py ask</code> questions appear alongside live questions,
+with their stated assumptions. Their answers persist in the study and
+are delivered to later legs. Answering alone never starts a turn. After
+closure, answers wait outside the immutable saved workspace until the
+next leg. A reply stops any automatic block for review. Native blocking
+questions still require their exact live request.</p>
+<p>Claude's adapter remains a disabled v44 draft pending live lifecycle
+acceptance. This panel cannot yet operate a Claude CLI run.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

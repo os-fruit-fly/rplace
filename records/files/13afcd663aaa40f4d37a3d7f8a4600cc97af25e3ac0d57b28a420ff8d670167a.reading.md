@@ -1,0 +1,1 @@
+r/norge — branch B; verdict: full. Topical saturation: new practice appeared through batch 6, none in batch 7. Evidentiary saturation: limited by removals, off-platform coordination, and split-slice reading. Blockers: none.

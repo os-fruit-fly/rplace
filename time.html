@@ -1,0 +1,532 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Time and costs | r/place</title><link rel="stylesheet" href="assets/site.css"><script defer src="assets/local-setup.js"></script><script defer src="assets/site.js"></script><script defer src="assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="check.html">Check the papers</a><a data-reviewer-entry href="open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="index.html">Overview</a><a  href="organism.html">Model organism</a><a  href="instrument.html">Instrument</a><a aria-current=location href="results.html">Findings</a><a  href="interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-time" data-layer="Overview"><nav class="parts" aria-label="Findings"><a  href="results.html">Findings</a><a  href="results/placenl.html">One community: r/PlaceNL</a><a  href="results/population.html">The population model</a><a aria-current=page href="time.html">Time and costs</a></nav><h1 id="time-and-costs">Time and costs</h1>
+<p>How long each part of the study took and what it consumed, where it
+was recorded. All dates are 2026 and all times UTC; money is in US
+dollars. From the first recorded community coding run on 18 August to
+the last aggregator session on 28 October is 71 days. The figures come
+from the cost and time dataset that the run's handler, the conversation
+that ran the aggregator's stages, built on 29 October, built from the
+session transcripts, the Codex receipts and the OpenRouter export,
+unless a line says otherwise. The records are in the research repository.</p>
+<table><caption>The study in five numbers</caption>
+<tbody>
+<tr>
+<td>The aggregator's run</td>
+<td>516.4 hours, 21.5 days, 6 Oct 12:15 to 28 Oct 00:38, in 314
+sessions</td>
+</tr>
+<tr>
+<td>The aggregator working</td>
+<td>247.9 hours, 10.3 days</td>
+</tr>
+<tr>
+<td>Tokens, all work</td>
+<td>51.82 billion, 96.7% of them cached input</td>
+</tr>
+<tr>
+<td>Value at list prices</td>
+<td>$20,497: Anthropic $6,721, OpenAI Codex $13,708, DeepSeek $68</td>
+</tr>
+<tr>
+<td>Paid in cash</td>
+<td>$68, to DeepSeek through OpenRouter; Claude and Codex ran on
+subscriptions</td>
+</tr>
+</tbody>
+</table>
+<p>The value at list prices is the tokens times each model's published
+price. It values the work; the cash paid is in the table's last
+line.</p>
+<h2 id="by-part-of-the-work">By part of the work</h2>
+<table><caption>Tokens and their value, by part of the work</caption>
+<thead>
+<tr>
+<th>Part</th>
+<th>Model</th>
+<th style="text-align: right;">Tokens</th>
+<th style="text-align: right;">Value at list prices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Community coding, 705 communities</td>
+<td>gpt-5.6-sol</td>
+<td style="text-align: right;">15.74 billion</td>
+<td style="text-align: right;">$10,256</td>
+</tr>
+<tr>
+<td>The return, D2</td>
+<td>gpt-6.1-sol</td>
+<td style="text-align: right;">3.24 billion</td>
+<td style="text-align: right;">$859</td>
+</tr>
+<tr>
+<td>The re-check, D3</td>
+<td>gpt-6.1-sol</td>
+<td style="text-align: right;">3.53 billion</td>
+<td style="text-align: right;">$1,200</td>
+</tr>
+<tr>
+<td>The aggregator, A1 to E2</td>
+<td>Claude Opus 5.5</td>
+<td style="text-align: right;">21.45 billion</td>
+<td style="text-align: right;">$6,719</td>
+</tr>
+<tr>
+<td>Independent readers, B2 to E1</td>
+<td>DeepSeek V4.1 Flash</td>
+<td style="text-align: right;">252.5 million</td>
+<td style="text-align: right;">$68, paid</td>
+</tr>
+<tr>
+<td>The r/place subreddit, read for C4 and its interviews</td>
+<td>gpt-6.1-sol</td>
+<td style="text-align: right;">7.62 billion</td>
+<td style="text-align: right;">$1,392</td>
+</tr>
+<tr>
+<td>Readers at C2 and C5</td>
+<td>Claude Opus 5.5</td>
+<td style="text-align: right;">not recorded in full</td>
+<td style="text-align: right;">$2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="community-coding">Community coding</h2>
+<p>Earlier contracts coded 347 communities in 462 runs between 18 August
+and 5 September, mostly with Claude Opus 5; that coding was later
+redone. The final coding ran from 7 September to 4 October with
+gpt-5.6-sol: 5,097 agents at medium reasoning effort and 65 at extra
+high.</p>
+<p>The selected medium runs of the 705 communities used 15.74 billion
+tokens: 5.21 billion for the community coders and 10.53 billion for the
+fleet coders, worth $10,256 at list prices. The coding handler's own
+count, 15.89 billion, also includes runs that were not selected. The
+September coding has no start and end times in these sources, so coding
+hours are not known. The earlier contracts' tokens were not
+recorded.</p>
+<p><a href="how-coding-works.html">How community coding works</a> · <a
+href="results/population-coding.html">The population: community
+coding</a></p>
+<h2 id="the-return-to-the-model">The return to the model</h2>
+<table><caption>The return, step by step</caption>
+<thead>
+<tr>
+<th>Step</th>
+<th>When</th>
+<th>Communities</th>
+<th style="text-align: right;">Tokens</th>
+<th style="text-align: right;">Value at list prices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1, tasks prepared</td>
+<td>15 Oct, 15:54 to 19:49</td>
+<td>705</td>
+<td style="text-align: right;">in the aggregator's line</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>D2, first return</td>
+<td>first answer 15 Oct 21:41, last 16 Oct 08:01</td>
+<td>705</td>
+<td style="text-align: right;">3.24 billion</td>
+<td style="text-align: right;">$859</td>
+</tr>
+<tr>
+<td>D3, re-check</td>
+<td>first answer 21 Oct 15:19, last 22 Oct 19:10; 472 back by 21 Oct
+19:26, when the account ran out of tokens</td>
+<td>705</td>
+<td style="text-align: right;">3.53 billion</td>
+<td style="text-align: right;">$1,200</td>
+</tr>
+</tbody>
+</table>
+<p>Each community coder answered with gpt-6.1-sol at medium effort; its
+answers took a median of about six minutes at each pass. Two DeepSeek
+readers judged every community's fit: 25.6 million tokens at D2 and 27.3
+million at D3.</p>
+<p><a href="how-coding-works.html#after-the-coding-the-return">How
+community coding works: the return</a> · <a
+href="results/population-return.html">The population: the return</a></p>
+<h2 id="the-aggregator">The aggregator</h2>
+<p>Run claude-v43-1, with Claude Opus 5.5, from 6 October to 28 October.
+A session runs from its first transcript entry to its close; working
+hours count only intervals of five minutes or less between entries. Each
+API call is counted once.</p>
+<table><caption>The aggregator, stage by stage</caption>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Start</th>
+<th>End</th>
+<th style="text-align: right;">Sessions</th>
+<th style="text-align: right;">Hours in sessions</th>
+<th style="text-align: right;">Working hours</th>
+<th style="text-align: right;">Tokens, millions</th>
+<th style="text-align: right;">Value at list prices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="stages/A1.html">A1</a></td>
+<td>6 Oct 12:15</td>
+<td>7 Oct 13:02</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">3,506</td>
+<td style="text-align: right;">$954</td>
+</tr>
+<tr>
+<td><a href="stages/B1.html">B1</a></td>
+<td>7 Oct 13:11</td>
+<td>11 Oct 14:49</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">91.2</td>
+<td style="text-align: right;">82.3</td>
+<td style="text-align: right;">6,012</td>
+<td style="text-align: right;">$1,758</td>
+</tr>
+<tr>
+<td><a href="stages/B2.html">B2</a></td>
+<td>11 Oct 14:57</td>
+<td>12 Oct 14:09</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7.5</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">339</td>
+<td style="text-align: right;">$110</td>
+</tr>
+<tr>
+<td><a href="stages/B3.html">B3</a></td>
+<td>12 Oct 14:17</td>
+<td>12 Oct 21:18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">$22</td>
+</tr>
+<tr>
+<td><a href="stages/B4.html">B4</a></td>
+<td>12 Oct 21:19</td>
+<td>13 Oct 17:47</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">18.5</td>
+<td style="text-align: right;">17.5</td>
+<td style="text-align: right;">1,087</td>
+<td style="text-align: right;">$461</td>
+</tr>
+<tr>
+<td><a href="stages/C1.html">C1</a></td>
+<td>13 Oct 18:17</td>
+<td>14 Oct 00:56</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">462</td>
+<td style="text-align: right;">$162</td>
+</tr>
+<tr>
+<td><a href="stages/C2.html">C2</a></td>
+<td>14 Oct 06:04</td>
+<td>14 Oct 13:49</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">5.0</td>
+<td style="text-align: right;">762</td>
+<td style="text-align: right;">$245</td>
+</tr>
+<tr>
+<td><a href="stages/C3.html">C3</a></td>
+<td>14 Oct 13:59</td>
+<td>14 Oct 15:16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">134</td>
+<td style="text-align: right;">$41</td>
+</tr>
+<tr>
+<td><a href="stages/C4.html">C4</a></td>
+<td>14 Oct 22:43</td>
+<td>14 Oct 23:03</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr>
+<td><a href="stages/C5.html">C5</a></td>
+<td>14 Oct 23:30</td>
+<td>15 Oct 15:00</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">559</td>
+<td style="text-align: right;">$169</td>
+</tr>
+<tr>
+<td><a href="stages/D1.html">D1</a></td>
+<td>15 Oct 15:54</td>
+<td>15 Oct 19:49</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">$14</td>
+</tr>
+<tr>
+<td><a href="stages/D2.html">D2</a></td>
+<td>16 Oct 08:59</td>
+<td>16 Oct 10:21</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">$9</td>
+</tr>
+<tr>
+<td><a href="stages/D3.html">D3</a></td>
+<td>16 Oct 11:00</td>
+<td>24 Oct 10:54</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">171.6</td>
+<td style="text-align: right;">81.6</td>
+<td style="text-align: right;">6,003</td>
+<td style="text-align: right;">$2,032</td>
+</tr>
+<tr>
+<td><a href="stages/D4.html">D4</a></td>
+<td>24 Oct 11:39</td>
+<td>26 Oct 22:05</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">$128</td>
+</tr>
+<tr>
+<td><a href="stages/D5.html">D5</a></td>
+<td>25 Oct 21:01</td>
+<td>27 Oct 03:20</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">23.4</td>
+<td style="text-align: right;">16.0</td>
+<td style="text-align: right;">1,288</td>
+<td style="text-align: right;">$370</td>
+</tr>
+<tr>
+<td><a href="stages/D6.html">D6</a></td>
+<td>27 Oct 03:28</td>
+<td>27 Oct 15:41</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">6.7</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">458</td>
+<td style="text-align: right;">$141</td>
+</tr>
+<tr>
+<td><a href="stages/E1.html">E1</a></td>
+<td>27 Oct 18:22</td>
+<td>27 Oct 23:52</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">$77</td>
+</tr>
+<tr>
+<td><a href="stages/E2.html">E2</a></td>
+<td>27 Oct 23:55</td>
+<td>28 Oct 00:38</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">$13</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>6 Oct</td>
+<td>28 Oct</td>
+<td style="text-align: right;"><strong>314</strong></td>
+<td style="text-align: right;"><strong>376.2</strong></td>
+<td style="text-align: right;"><strong>247.9</strong></td>
+<td style="text-align: right;"><strong>21,447</strong></td>
+<td style="text-align: right;"><strong>$6,719</strong></td>
+</tr>
+</tbody>
+</table>
+<p>D4 and D5 overlap on 26 October. The earlier count of 316 sessions
+came from the run's session log; this dataset counts 314.</p>
+<p><a href="how-it-works.html">How the aggregator works</a></p>
+<h3 id="where-the-5164-hours-went">Where the 516.4 hours went</h3>
+<table><caption>Where the aggregator's hours went</caption>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Hours</th>
+<th style="text-align: right;">Days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The aggregator working</td>
+<td style="text-align: right;">247.9</td>
+<td style="text-align: right;">10.3</td>
+</tr>
+<tr>
+<td>Usage limits of the Claude subscription</td>
+<td style="text-align: right;">93.9</td>
+<td style="text-align: right;">3.9</td>
+</tr>
+<tr>
+<td>Waiting for us: rulings, go-aheads, pushes, interviews</td>
+<td style="text-align: right;">39.9</td>
+<td style="text-align: right;">1.7</td>
+</tr>
+<tr>
+<td>Waiting for the Codex coders at D2 and D3</td>
+<td style="text-align: right;">30.0</td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td>Waiting for the independent readers</td>
+<td style="text-align: right;">14.0</td>
+<td style="text-align: right;">0.6</td>
+</tr>
+<tr>
+<td>Waiting for both the readers and the Codex coders</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">0.3</td>
+</tr>
+<tr>
+<td>Waiting for the r/place reading at C4 and C5</td>
+<td style="text-align: right;">9.4</td>
+<td style="text-align: right;">0.4</td>
+</tr>
+<tr>
+<td>Handovers under 30 minutes and short pauses</td>
+<td style="text-align: right;">53.4</td>
+<td style="text-align: right;">2.2</td>
+</tr>
+<tr>
+<td>The handler: late checks and publishing</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">0.3</td>
+</tr>
+<tr>
+<td>Disk, network and a computer off</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">0.2</td>
+</tr>
+<tr>
+<td>Not recorded</td>
+<td style="text-align: right;">9.7</td>
+<td style="text-align: right;">0.4</td>
+</tr>
+<tr>
+<td><strong>Wall clock</strong></td>
+<td style="text-align: right;"><strong>516.4</strong></td>
+<td style="text-align: right;"><strong>21.5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Without delays the run would have taken between 10.3 days, counting
+working time only, and 15.1 days, counting also handovers, short pauses
+and the fleet and Codex waits as they ran.</p>
+<h2 id="the-rplace-subreddit">The r/place subreddit</h2>
+<p>r/place itself, read by a separate agent for C4, used 7.62 billion
+tokens in its pilots, its production coding, its lead and the interviews
+at C4 and C5, worth $1,392 at list prices. Work on r/place after C5 is
+not counted.</p>
+<h2 id="prices-used">Prices used</h2>
+<details class="fold"><summary>Show the prices used and what is not counted</summary>
+
+<table><caption>Prices used, US dollars per billion tokens</caption>
+<thead>
+<tr>
+<th>Model</th>
+<th style="text-align: right;">Uncached input</th>
+<th style="text-align: right;">Cached input</th>
+<th style="text-align: right;">Cache write</th>
+<th style="text-align: right;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Opus 5.5</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">8,000</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+<tr>
+<td>gpt-5.6-sol, community coding</td>
+<td style="text-align: right;">4,000</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+<tr>
+<td>gpt-6.1-sol, D2, D3 and r/place</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2,500</td>
+<td style="text-align: right;">10,000</td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash through OpenRouter, as paid</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">590</td>
+</tr>
+</tbody>
+</table>
+<p>D2 and D3 carry the long-context surcharge on 6,964 responses with
+input over 272,000 tokens. The community coding is priced at
+short-context rates, since its receipts give no context size; at
+long-context rates it would cost $19,676 more.</p>
+<p>Not counted: the handler's own sessions, Claude's side of the
+interviews at C4 and C5, a Codex arm at B4 (9.6 million tokens),
+community coding runs other than the selected medium runs, and work on
+r/place after C5.</p>
+</details>
+
+<h2 id="accounts">Accounts</h2>
+<p>The work ran on a Claude subscription (the aggregator and the earlier
+coding), a Codex account (the final coding, the returns and r/place) and
+OpenRouter (DeepSeek).</p>
+<h2 id="files">Files</h2>
+<p><a href="assets/data/cost-time/00_headline.json" download>The headline</a> ·
+<a href="assets/data/cost-time/01_overview_by_workstream.csv" download>By part of
+the work</a> · <a href="assets/data/cost-time/02_claude_legs.csv" download>Every
+aggregator session</a> · <a
+href="assets/data/cost-time/03_stages.csv" download>By stage</a> · <a
+href="assets/data/cost-time/04_waits.csv" download>Every wait of 30 minutes or
+more</a> · <a href="assets/data/cost-time/05_time_budget.csv" download>The time
+budget</a> · <a
+href="assets/data/cost-time/06_deepseek_dispatches.csv" download>The DeepSeek
+dispatches</a> · <a
+href="assets/data/cost-time/07_codex_705_by_community_and_pass.csv" download>Every
+community and pass</a> · <a
+href="assets/data/cost-time/09_codex_d2_d3_timing.csv" download>D2 and D3
+timing</a> · <a href="assets/data/cost-time/README.md" target="_blank" rel="noopener">What each file
+holds</a></p>
+<h2 id="sources">Sources</h2>
+<p>The handler's cost and time dataset of 29 October 2026: the session
+transcripts and the handler's per-session file; the Codex token and cost
+reports for the 705 communities and r/place; the DeepSeek dispatch logs
+and the OpenRouter export of 13 October. For the earlier coding: the
+coding handler's <code>STATUS.tsv</code>,
+<code>CODING-PROGRESS.json</code> and <code>PRIOR-RUNS.tsv</code>.</p>
+</main><footer><div><a href="check.html">Check the papers</a><a href="agents.html">For agents</a><a href="reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

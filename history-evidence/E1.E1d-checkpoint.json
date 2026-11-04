@@ -1,0 +1,69 @@
+{
+  "checkpoint_id": "d8cbc4c93dd89069",
+  "label": "E1.E1d",
+  "stage": "E1",
+  "stage_file": "stages/STAGE-E1-formalizing-audit.md",
+  "kind": "agent-and-files",
+  "run": {
+    "instrument_version": "v43",
+    "fingerprint": "74db41ef9490edae"
+  },
+  "arm": {
+    "analyst": "claude-opus-5-5",
+    "effort": "xhigh",
+    "readers": {
+      "route": "gateway",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "n": 1,
+      "shared": "",
+      "declared_served": "deepseek/deepseek-v4.1-flash",
+      "max_tokens": 128000,
+      "reasoning_effort": "medium",
+      "note": "handler 2026-10-27 23:30 Berlin, on J's ruling of 2026-10-12 07:34 (bypass the preset, it 400s on every call; V4.1 Flash direct, medium effort) after the E1 dispatch's probe of @preset/cheap returned HTTP 400; n=1 as the arm had it"
+    }
+  },
+  "lineage": {
+    "resume_session": null,
+    "resumed_session": "62f6203d-2a6a-4442-94f8-841a4c76b033",
+    "child_session": "7800c4df-9498-45d0-9740-e779a816ff02",
+    "inherited_lines": 1726
+  },
+  "parent_checkpoint": "f26cf452870e3709",
+  "parent_label": "E1.E1c",
+  "session": {
+    "session_id": "7800c4df-9498-45d0-9740-e779a816ff02",
+    "mode": "fork",
+    "transcript_sha256": "d7c782ae51cb96bfe09cce543690180dab748c0250d800aa0379dd0ac8f7ab8a",
+    "boundary_line": 2461,
+    "boundary_verified": true,
+    "transcript_path_at_close": "CONTROL/.cc/projects/run/7800c4df-9498-45d0-9740-e779a816ff02.jsonl"
+  },
+  "cli_version": "2.1.300 (Claude Code)",
+  "fs": {
+    "files_in_out": 58311,
+    "manifest_sha256": "ae8f519c2a0b268afc46cd5925a2936ed306b682335ad73f0c91a5110f1d7981"
+  },
+  "subject": "aggregator",
+  "filesystem_root": "00_GIVE-THE-AGENT",
+  "handler_conversation_included": false,
+  "validation": {
+    "subject": "aggregator",
+    "complete": true,
+    "completed_turn": true,
+    "launcher_exited": true,
+    "validator_exit_code": 0,
+    "validator_sha256": "889d92f85edcb6314f8bdd867d78984ebbdb1afa6fd3815c1077f4d19bf19258",
+    "report_sha256": "347ac9a0fa18c4644872103c91d3a650ecd07d2d92ba8896575a000db1185ae7",
+    "checked_utc": "2026-10-27T23:19:48.432439+00:00",
+    "handed": true,
+    "notes_present": true,
+    "handback_present": false,
+    "validate_report_in_notes": true
+  },
+  "forced": null,
+  "cost": {
+    "tokens_in": 49453777,
+    "tokens_out": 370816
+  },
+  "published_utc": "2026-10-27T23:27:03Z"
+}

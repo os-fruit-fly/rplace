@@ -1,0 +1,80 @@
+# lexicon — r/sweden
+
+One term per line, with the item id of its first use. No gloss. Started by the case lead from the brief; extended by each coder.
+
+- fana — 62mukf
+- SwedenOnPlace — 62mukf
+- stormaktstid — dfnw3c2
+- vaktmästare — dfo8vrq
+- morgonbrigaden — dfomydq
+- välfärd — dfoo96v
+- Lilla Bält — dfp8lzi
+- Eftermiddagsfika-freden — dfpfeap
+- tre kronor — dfq2t9e
+- jantelag — dfo0rho
+- nattskiftet — dfof3xu
+- knugen — dfoqal6
+- kebab — 62rzba
+- blitzattack — dfosmrl
+- rövarspråket — dfosy0v
+- unionshjärta — dfoyp24
+- GSP Gulsprutepistol — dfq33sq
+- fuktiga mejmejs — 62sz2v
+- Det stora Reddit kriget 2017 — 62sz2v
+- kavalerianfall — 62t6iv
+- Kalmarunionen — 62tdi9
+- Swexit — 62tzel
+- spiddekagan — 62tww9
+- Norrsken — 62uc1h
+- totalförsvaret — dfp6mhd
+- PlaceNL — dfpfe50
+- DPP — dfpfe50
+- osthyveln — 62uj8l
+- snapphane — dfpidx9
+- välfärdskrigare — 62va3y
+- Operation Beaver — 62w2ck
+- morgonskiftet — dfpxrpp
+- klottersanering — dfq01al
+- renfana — dfq1ptm
+- mellannivå dino — 62ylxb
+- Välfärds-blå — dfpz2ri
+- turf wars — dfq1r7w
+- svenska dansken — 62yz1f
+- pixelkrigföring — dfrge8j
+- Brit git — dfq3w6c
+- runket — 62z6os
+- allsmäktige — 62zkeh
+- duttar — dfq7q2o
+- svenska vandaler — dfqqkh4
+- Överklocka — 62zvl4
+- lagom — dfrh3hi
+- Svenska imperiet — dfrh6y5
+- Pippi Långstrump — 62zznb
+- Madotsuki — 630coj
+- The Button — dfrmuvw
+- Lilla Pält — 630pve
+- Operation Hollandaisesås — 631018
+- Sverigemorot — 6310oc
+- Sverigeboll — 6323pt
+- sillsalladshjärtat — dfsdxyd
+- Satanistknugen — dfqu5l1
+- swEvil — dft9b95
+- Sverigi — dft9b95
+- Stora Bält — 633lln
+- Dödens lammunge — 633m8w
+- bygglov — dfreynl
+- Dalahäst — 635q81
+- ForsenE — 635qrh
+- dassracket — dfrxmbj
+- Gachigasm — 635yq1
+- The Void — 6365dq
+- Operation Dalahäst — 636a8n
+- cyborgknugen — dfrmrer
+- hitlar — 636wcg
+- ZULUL VI VON — dfrv814
+- klompen — dfs9ytp
+- alliansfria — dfsaitw
+- Fredrik meme — dfsn46z
+- Maryland-flair — dfti7qa
+- Moco — dftkizs
+- New Sweden — 63eg8s

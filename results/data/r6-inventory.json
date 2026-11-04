@@ -1,0 +1,2602 @@
+[
+  {
+    "checkpoint": "coding-close",
+    "member": "evidence/atlas-checkpoint.json",
+    "bytes": 118651,
+    "sha256": "0b3330e7368142ede0720cd177be4aebcc4bf1e92a0c358180cfa3b539106982",
+    "purpose": "Completed coding checkpoint and file index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "evidence/export-source-custody.json",
+    "bytes": 297,
+    "sha256": "9fb00f627b3d7ddd84775aaa2d09278a5fde1269224c6a67e5c2ac6192127883",
+    "purpose": "Recorded source archive verification",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/brief/out/_validation.json",
+    "bytes": 723,
+    "sha256": "9edbdfa92cbd669f8dc598c667aaa990f1a6f0dec6c93d498fd19eaf9c58c11b",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/brief/out/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/brief/out/validation-after-relocation.txt",
+    "bytes": 277,
+    "sha256": "3c02ea8e7d90e6317658c54ebea06ef28986e040175fdb9a3537d3f51ae55d3f",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/brief/out/validation.txt",
+    "bytes": 277,
+    "sha256": "3c02ea8e7d90e6317658c54ebea06ef28986e040175fdb9a3537d3f51ae55d3f",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/record/coder_corpus.jsonl",
+    "bytes": 553389,
+    "sha256": "521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/record/coder_corpus.jsonl.gz",
+    "bytes": 90323,
+    "sha256": "9bf3e83d47aecdcb5ff3f639d8b6f70621aff84d79ed16cd78e19e6c2ddc3a46",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/record/cut_stats.json",
+    "bytes": 644,
+    "sha256": "4e13f3934b5aea3a951bf070a5345c9d081fcf609fbff0e7fadf6d5f542fb087",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/record/openings.md",
+    "bytes": 36999,
+    "sha256": "5d621b32820d3cd800588194bb28e4dcecc9b14e71bf5e460c64dc8614262146",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/record/preweek.jsonl.gz",
+    "bytes": 39,
+    "sha256": "07017561f3f5a2945956ee20656027fdac14f89b10817faa78c604233d0e747c",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/AGENT.md",
+    "bytes": 13091,
+    "sha256": "cc69ae2249df4e508daa15bc0bf6dac23d6b8625c0b48644e9bcb17d6a6c00bd",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/CONTRACT-case-lead.md",
+    "bytes": 15941,
+    "sha256": "1cb1d4d7b2ea1a4d33824dc815be32ca271da5f94fce9212ee36f38df7cd3fdd",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/CONTRACT.md",
+    "bytes": 39559,
+    "sha256": "7f562de7c7ce6e1dc969b7fe9c355f683d99a30670c9b8d165941778fa54c3d2",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/_lead_quotes.py",
+    "bytes": 2729,
+    "sha256": "a654b9c443e012755e699e422288ed766c4823561698022158e7ca9b8a3fc5f4",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/_lead_themes.py",
+    "bytes": 8326,
+    "sha256": "5ea1f3da4cac7f33fc05483c4db020dcc7fd3034a2375feda15ec488f1d64113",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/_lead_times.py",
+    "bytes": 1538,
+    "sha256": "d92cd28b4ac842b3d55d8d308960d56bc83f2cab1e367fbbe3bf15a77cd94219",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/_manifest.json",
+    "bytes": 1882,
+    "sha256": "137474c4b32f356026a484583e0ed0e608614ca4cc74cfb567d046e042a01b52",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/cite.py",
+    "bytes": 15136,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/close_run.py",
+    "bytes": 19944,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/coder_corpus.jsonl",
+    "bytes": 553389,
+    "sha256": "521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/coder_corpus.queries.jsonl",
+    "bytes": 1304,
+    "sha256": "b51240eb6c59bc6c162ccd83843da8c51e836728068f27da39c46e3c31c8be54",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/corpus.txt",
+    "bytes": 162156,
+    "sha256": "39abb2e0f6e5ea5b208c7643ffd082345ef5ba127e2f5ad5c2589ed934cc5a5e",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/corpus_manifest.json",
+    "bytes": 337,
+    "sha256": "19d0a8a7b14c9705c9ce25cac37551f3cd0ac0b414bd3b16029a69f6dc97318e",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/emit.py",
+    "bytes": 51410,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/AGENT.md",
+    "bytes": 13743,
+    "sha256": "8f51f3020e84ecdf6462485d9121d9fbe18fc35afef4d404e4ad488b6f2a1331",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/CONTRACT-fleet-coder.md",
+    "bytes": 4737,
+    "sha256": "5226ee621ece7a7fcce8bc58734f56e457ec7b11a40fb8a0485fdbc6b77b54ae",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/CONTRACT.md",
+    "bytes": 39709,
+    "sha256": "016571ac784eb8d91bcb93524a82374ae2c26c5f73d829d15439520c6ab6c808",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/_manifest.json",
+    "bytes": 2264,
+    "sha256": "15e9317ae4859c02b2ef53afa147665cdc11f617a859dac647496ce2876b399f",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/cite.py",
+    "bytes": 15136,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/close_run.py",
+    "bytes": 19944,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/coder_corpus.jsonl",
+    "bytes": 350558,
+    "sha256": "76acf83d6aab87f4812c553ef021a34f00a8133f802757a79c3213f6f09ffe1b",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/corpus.txt",
+    "bytes": 108692,
+    "sha256": "973ad1030cd73a87ad11739ef7c8466c336ee67ac99d0235d7c6483d045368a9",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/emit.py",
+    "bytes": 51410,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/lexicon.md",
+    "bytes": 515,
+    "sha256": "5ea81a5d7c302c3d48c3ea933f1f527b49a23b7179804970e8fc741c26ed67a9",
+    "purpose": "Local terms",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/_journal.jsonl",
+    "bytes": 112037,
+    "sha256": "a05dc709dbc160ba2c35d89c78e40244a7ab0f0bc256c32c818b62a09f60a520",
+    "purpose": "Historical operation ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/_read.jsonl",
+    "bytes": 5454,
+    "sha256": "26c4d8cc203002eb203c9b3686270cbccfd9019a26afa46cc420d7a8e684d6a0",
+    "purpose": "Reading receipts",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/_read_index.json",
+    "bytes": 24354,
+    "sha256": "25f85547420d8bff39a5c6f2262d643c9aa116eb99865cf9ffca1c0c0db869a8",
+    "purpose": "Read-coverage index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/_run.json",
+    "bytes": 3865,
+    "sha256": "b1d12dde468e78969865756f734d3e089d6f547bddddf686f2c3deb732804a4c",
+    "purpose": "Coding completion, counts and integrity record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/_transcript.jsonl",
+    "bytes": 234372,
+    "sha256": "95663f164059fa1a8907f0538123ba7f7d14149ceeb952a91bc11e1dc56d4f41",
+    "purpose": "Recorded coding transcript",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/case.md",
+    "bytes": 10229,
+    "sha256": "f608ec2c24ff6f98dcecd27060a55b9130798e9dd38f55b790a990b4fa5d139c",
+    "purpose": "Coding case account, counterevidence and limits",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/codes.jsonl",
+    "bytes": 69561,
+    "sha256": "668b5b12dfa8babe7f3f62336dba3e32fa3adae90b9a0c851018bd9f66718afe",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/final_message.md",
+    "bytes": 242,
+    "sha256": "99b8ec2a72ab060a9d7462d8f9a6f8cf0c6f3775f1749c737ae3c174ca4f17cb",
+    "purpose": "Saved coding verdict",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/notes.md",
+    "bytes": 5078,
+    "sha256": "043e7cdd3e0dafe01cff96dfe3f01de77d8d3fa8041bdf08c48fc1c87b46993b",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/pointers.jsonl",
+    "bytes": 10687,
+    "sha256": "526ca98a01c1f4a2682ebd2a26164baba1574fc88ae601c3526272c6a87ac268",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/themes.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Closed second-order themes and code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/threads.jsonl",
+    "bytes": 11830,
+    "sha256": "a676caaa616b2f9f7fa383abe85325d47d3154b2d55b5981379733cf933cd7fa",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/out/tmp/xcrun_db",
+    "bytes": 182,
+    "sha256": "b027da94f43f53bd96f1c5b7ba101213e5b6185a2f92a9fb0891b55745917a86",
+    "purpose": "Incidental tool cache retained in the source inventory; not an analytical output",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/read.py",
+    "bytes": 20864,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/timeline.md",
+    "bytes": 1801,
+    "sha256": "18f2e95ba57f32ba326710a5e2f7cdf54144529d79fee3343fef8346af144ea8",
+    "purpose": "Recorded case chronology",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/tools/audit_fleet.py",
+    "bytes": 13007,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/tools/fleet.py",
+    "bytes": 33247,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_01/tools/tree_builder.py",
+    "bytes": 28400,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/AGENT.md",
+    "bytes": 13744,
+    "sha256": "d03a4bca68b7f11e77296af86de9613be6ef13ab856bc6b07a30adfebab88b6e",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/CONTRACT-fleet-coder.md",
+    "bytes": 4737,
+    "sha256": "5226ee621ece7a7fcce8bc58734f56e457ec7b11a40fb8a0485fdbc6b77b54ae",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/CONTRACT.md",
+    "bytes": 39709,
+    "sha256": "e1e14bb60ac09411a548ff85c007570d972f067337f98e6ff3f4ce580672f4b1",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/_manifest.json",
+    "bytes": 2268,
+    "sha256": "aede2f63bcbfed9684ade1c946e30b9e006e881b908bfc96b0baa3c0379a1358",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/cite.py",
+    "bytes": 15136,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/close_run.py",
+    "bytes": 19944,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/coder_corpus.jsonl",
+    "bytes": 237509,
+    "sha256": "7c6dddd00477dac48045f37b8d9d79f7110b7b4dd0c36ba871d8df50ddbb00ce",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/corpus.txt",
+    "bytes": 72415,
+    "sha256": "a4a4b87d927aac42d75cf953e37b14fd9bf6b6e4acdde9f207e35f70aa0f5098",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/emit.py",
+    "bytes": 51410,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/lexicon.md",
+    "bytes": 672,
+    "sha256": "2ffe1295628192f1d85cf96b6522194ce3c739a6eb8b41fc08729a492f08f375",
+    "purpose": "Local terms",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/_journal.jsonl",
+    "bytes": 120567,
+    "sha256": "829cc4e235cd82abf2dd893ddb9e22a6eb8a8416954a74642af6632938b12fc0",
+    "purpose": "Historical operation ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/_read.jsonl",
+    "bytes": 3257,
+    "sha256": "bb3af1e29b7116c3cb12446fe25fd1a01977f5cddfbcf072bda19173479ea60d",
+    "purpose": "Reading receipts",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/_read_index.json",
+    "bytes": 18521,
+    "sha256": "adae9c903da4d353ad5782d06c7ea73b1856db31ee1b96c27df9bbf549cb707d",
+    "purpose": "Read-coverage index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/_run.json",
+    "bytes": 4041,
+    "sha256": "084b97764d2006334c6b7037692b3c31833b9240201cec75354384fe6e5c0419",
+    "purpose": "Coding completion, counts and integrity record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/_transcript.jsonl",
+    "bytes": 167665,
+    "sha256": "f055f648744e181457dc4b4c939fbc1064a4e87ed95094dd587c40ca4b6eb0ab",
+    "purpose": "Recorded coding transcript",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/case.md",
+    "bytes": 10470,
+    "sha256": "bacd4ba8802df9d2f0c15370437ac50e617208b36ece5ade5bb6372117700fa7",
+    "purpose": "Coding case account, counterevidence and limits",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/codes.jsonl",
+    "bytes": 75761,
+    "sha256": "937d607b692ed6d4b9ae96ff1788cb0a15c9185619af0de42342414858bdba51",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/final_message.md",
+    "bytes": 167,
+    "sha256": "0d29a8af6db0ae9f4d0e6ed50f9d462d3c6321c9ce7e6ca554fdf44b88cf9d61",
+    "purpose": "Saved coding verdict",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/notes.md",
+    "bytes": 4881,
+    "sha256": "5b955908dc9465fc4e2a2c2207b1e8b4852c06e16230273b051605c7f9d8ee27",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/pointers.jsonl",
+    "bytes": 17571,
+    "sha256": "5affe10376010d1731a4e368041dde290aecaa589f40c0db866a772c09f97fc1",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/themes.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Closed second-order themes and code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/threads.jsonl",
+    "bytes": 8168,
+    "sha256": "f98ce3d72b27d9b894f364247d6953db8a04ff97875e4d12af00e084c731eddf",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/out/tmp/xcrun_db",
+    "bytes": 182,
+    "sha256": "b027da94f43f53bd96f1c5b7ba101213e5b6185a2f92a9fb0891b55745917a86",
+    "purpose": "Incidental tool cache retained in the source inventory; not an analytical output",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/read.py",
+    "bytes": 20864,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/timeline.md",
+    "bytes": 2978,
+    "sha256": "ae4f5f2f3bcffe23b00dffec994d6b3644dcb15e648428c0de885f9ea96bbd2a",
+    "purpose": "Recorded case chronology",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/tools/audit_fleet.py",
+    "bytes": 13007,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/tools/fleet.py",
+    "bytes": 33247,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/fleet/batch_02/tools/tree_builder.py",
+    "bytes": 28400,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/openings.md",
+    "bytes": 36999,
+    "sha256": "5d621b32820d3cd800588194bb28e4dcecc9b14e71bf5e460c64dc8614262146",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_gate.json",
+    "bytes": 3369,
+    "sha256": "303b3364c5b899084b1dbbf7b63c81a70d37fee8339fa842fec3d871ef66f9b3",
+    "purpose": "Branch and slice boundary record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_journal.jsonl",
+    "bytes": 254373,
+    "sha256": "4cd21633d3313bba33bcc5d81e608ecc7486018acffc7fb87eebcea6d25d2fdd",
+    "purpose": "Historical operation ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_lead_notes.md",
+    "bytes": 2162,
+    "sha256": "83fd2624a2bb078fa9a70b1b455bc182e34b126c690517ed2c3ebca60188a5d3",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_read.jsonl",
+    "bytes": 3484,
+    "sha256": "fc1fab23dd48563393973fb38aed78eca1dbeaf5cbdf0fda41aa802392a3256a",
+    "purpose": "Reading receipts",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_read_index.json",
+    "bytes": 39694,
+    "sha256": "114f502a00f93e31f947a30a4af8fc3d57e316ec0d032e30f4495c5e4c2d2976",
+    "purpose": "Read-coverage index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_run.json",
+    "bytes": 6146,
+    "sha256": "2126219892c19cd03039d36baad53489a3e7ea11e5ba06d1bbca6392d781df6b",
+    "purpose": "Coding completion, counts and integrity record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/_transcript.jsonl",
+    "bytes": 2123659,
+    "sha256": "dd0efa8de5e5c835f4adb082a746665b2c406b097cd2b73d8446598ba44284dc",
+    "purpose": "Recorded coding transcript",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/case.md",
+    "bytes": 15415,
+    "sha256": "d437a9bc4ed0abe87e91814cb848743adc305092b74b658657d2d40888d6dcc0",
+    "purpose": "Coding case account, counterevidence and limits",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/codes.jsonl",
+    "bytes": 146312,
+    "sha256": "52ee8060ad2f6932920d2df59f7980a65ccb13d171009d83e98d94048ea1ae04",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/final_message.md",
+    "bytes": 286,
+    "sha256": "779d55eaa4b2549986ee2bf00ceaf5dbec865c55499569449561ec3233777059",
+    "purpose": "Saved coding verdict",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/ledger.md",
+    "bytes": 9160,
+    "sha256": "e9d034d918dbfc588baac8360cb589449d3980ff66fa729a2dcc9b4f944ecbc6",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/lexicon.md",
+    "bytes": 672,
+    "sha256": "2ffe1295628192f1d85cf96b6522194ce3c739a6eb8b41fc08729a492f08f375",
+    "purpose": "Local terms",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/notes.md",
+    "bytes": 7775,
+    "sha256": "729bca39415e66868086d7e2842d418c293915b6c38b03fc94d1a9ced19c36df",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/pointers.jsonl",
+    "bytes": 28258,
+    "sha256": "1384b751ec4699614108face7fad59cef6ed11f77a9053e3a673e6221f46c15f",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/themes.jsonl",
+    "bytes": 7181,
+    "sha256": "a3ff8f851344fbecb515ae5b78f2eb3753423829667f92372085862df0ed276c",
+    "purpose": "Closed second-order themes and code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/threads.jsonl",
+    "bytes": 18102,
+    "sha256": "c1e850403aaad3e2893c7693ad5888580f0de97afd066ce8f36018cdd02fb68d",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/out/timeline.md",
+    "bytes": 2978,
+    "sha256": "ae4f5f2f3bcffe23b00dffec994d6b3644dcb15e648428c0de885f9ea96bbd2a",
+    "purpose": "Recorded case chronology",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/package/codes.jsonl",
+    "bytes": 145322,
+    "sha256": "0ac2f4d4f1371e802283a1498a7ba4dbf1137e3dc99576e076cf7f11ce4a0b5d",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/package/codes_by_thread.md",
+    "bytes": 26609,
+    "sha256": "8dc7610294313c30ab6d99415c24f2a836264c2ce0e9df7fe6f94e7ef616d225",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/package/forest.jsonl",
+    "bytes": 128772,
+    "sha256": "1642ad7db7077027a1b39cc4aef3105d994f810362a966cacb2a3cc76bd7cd9a",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/package/pointers.jsonl",
+    "bytes": 28258,
+    "sha256": "1384b751ec4699614108face7fad59cef6ed11f77a9053e3a673e6221f46c15f",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/package/threads.jsonl",
+    "bytes": 19998,
+    "sha256": "3030fd8534f5d2576b772841dd13e3312963f408a34938165693615aeadddaad",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/package/tree_index.json",
+    "bytes": 136914,
+    "sha256": "35aea3134eecdc29ef042f6f676b4a3f93c901ac5d05e5174771939391ad0d8f",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/read.py",
+    "bytes": 20864,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/codes_batch_01.jsonl",
+    "bytes": 69561,
+    "sha256": "668b5b12dfa8babe7f3f62336dba3e32fa3adae90b9a0c851018bd9f66718afe",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/codes_batch_02.jsonl",
+    "bytes": 75761,
+    "sha256": "937d607b692ed6d4b9ae96ff1788cb0a15c9185619af0de42342414858bdba51",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/pointers_batch_01.jsonl",
+    "bytes": 10687,
+    "sha256": "526ca98a01c1f4a2682ebd2a26164baba1574fc88ae601c3526272c6a87ac268",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/pointers_batch_02.jsonl",
+    "bytes": 17571,
+    "sha256": "5affe10376010d1731a4e368041dde290aecaa589f40c0db866a772c09f97fc1",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/read_batch_01.jsonl",
+    "bytes": 5454,
+    "sha256": "26c4d8cc203002eb203c9b3686270cbccfd9019a26afa46cc420d7a8e684d6a0",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/read_batch_02.jsonl",
+    "bytes": 3257,
+    "sha256": "bb3af1e29b7116c3cb12446fe25fd1a01977f5cddfbcf072bda19173479ea60d",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/threads_batch_01.jsonl",
+    "bytes": 11830,
+    "sha256": "a676caaa616b2f9f7fa383abe85325d47d3154b2d55b5981379733cf933cd7fa",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/staging/threads_batch_02.jsonl",
+    "bytes": 8168,
+    "sha256": "f98ce3d72b27d9b894f364247d6953db8a04ff97875e4d12af00e084c731eddf",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/tools/audit_fleet.py",
+    "bytes": 13007,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/tools/fleet.py",
+    "bytes": 33247,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/tools/tree_builder.py",
+    "bytes": 28400,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "coding-close",
+    "member": "workspace/room/run/trees/PlaceNL.md",
+    "bytes": 39451,
+    "sha256": "0ef00204bab43a2104b3867ea97af4eef15206b8bfb080153f0ea2efee7d0a9c",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "evidence/ARCHIVE.json",
+    "bytes": 1105412,
+    "sha256": "ed6bac42ebd9bc71e166db2691225c4dc28abf0a127068cb0fbbb329e8224daf",
+    "purpose": "Complete controller close archive index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "evidence/SEAL.json",
+    "bytes": 15769,
+    "sha256": "0b5805047aec7b5d86670f322cdc31d4fab4106a746c9e272bb5f6c7987c6a25",
+    "purpose": "Seal binding of final output content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "evidence/close-runtime.json",
+    "bytes": 269,
+    "sha256": "38651726da126de9823e70e05d8769da9a73ef852ae7ea7349604679a6ef5c5e",
+    "purpose": "Retained runtime identity proof",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "evidence/confidence.jsonl",
+    "bytes": 10922,
+    "sha256": "3d4690be36adf536c194ba952edfeeeb9ad94c45c3608867023741c6a26c0f88",
+    "purpose": "Analyst confidence and would-change observations",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "evidence/export-source-custody.json",
+    "bytes": 816,
+    "sha256": "5fd0233e1a96b3f5adb6376a6f822cb8b84763f63eef0da4572bb7bb51cd3e82",
+    "purpose": "Recorded source archive verification",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "evidence/sibling-snapshot.json",
+    "bytes": 195112,
+    "sha256": "eb3c68b0a27bfb7264a439d025341196886e23243eedbeffacfecf65eeb45701",
+    "purpose": "Completed R6 boundary, identity and source checkpoint",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/INTERVIEW.md",
+    "bytes": 2811,
+    "sha256": "bb46698d5597f1c8bacf40bf9facc7f9496845b71bb33957ae67c0fa84ac71aa",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/RETURN-C2.md",
+    "bytes": 9080,
+    "sha256": "e4de5f00aadf06c6a5ef2390cf74d903c427e5a4ddfda3dde616801dc8b328f4",
+    "purpose": "Recorded critic material or review disposition",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0001.md",
+    "bytes": 51200,
+    "sha256": "17a058e44cbd7cfa10d626c62fed7e85ae4b74bb1687c8282bcce4929da89e05",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0002.md",
+    "bytes": 25384,
+    "sha256": "67a33b48b5c3d44533ea4727cd170f97ec28112ab17a0c1f9b3bab94bb73fb0f",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0003.md",
+    "bytes": 18706,
+    "sha256": "a427cf9db92f71feb0eda1713cf07092af557e595b41f03cc78e06deaf022bc5",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0004.md",
+    "bytes": 9731,
+    "sha256": "e471c03a09dc8dfb1e3a51fa44edfde4da502de15a431cebb56a9ca2940c89a7",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0005.md",
+    "bytes": 34647,
+    "sha256": "5bad78c25732169059872e1c48c37f330b02c8eb102f8a7bf3f233c43eb44a6d",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0006.md",
+    "bytes": 11788,
+    "sha256": "e7aba4c256ff7e424b0fb6b209cfba03c0ef6cd494255f80894f3abaaf7ec449",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0007.md",
+    "bytes": 17671,
+    "sha256": "ee325cd0dc39d219f7090383c39b9a7476b8a5ab20d3ce905cc81c9c8e38aa39",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0008.md",
+    "bytes": 7917,
+    "sha256": "bf463399fadaec3112228412b7cfa42fdc8e6d3fe09014eec1264845e5dd62fa",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0009.md",
+    "bytes": 42271,
+    "sha256": "2f945b3a39bb7326e43cc6103a4c4875886f77f6e3e5142315da8941192759af",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0010.md",
+    "bytes": 11704,
+    "sha256": "12ba033f20985bdf8d06911a7d85e614ac1c706fd9934b0c943121522043401e",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/_packets-C2/part-0011.md",
+    "bytes": 8481,
+    "sha256": "8d095cca64569afdba7f211aa6c7230f832edaa88ef5cb2ae707b5da8b88252b",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/account.md",
+    "bytes": 8386,
+    "sha256": "6c1158d63872feec7c2eaec2ec34a7acb91640f0a8ff35235c22060abf7b0e9c",
+    "purpose": "R6 prose account",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/account_passes.jsonl",
+    "bytes": 318,
+    "sha256": "24fde3957dd4ac9994c37336c9230ad39382a89f905e84069baaa0c258b39eec",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/assignments.jsonl",
+    "bytes": 4538,
+    "sha256": "6b8e235d91ab681351444f4195bf4cce13c032d91096b4c3cbc3f2ae46871849",
+    "purpose": "Closed-theme to higher-theme placements and residue",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/author_claims.jsonl",
+    "bytes": 909,
+    "sha256": "03b8680ef6f1e434582f249e8854871490a11f2970991910484ce55962bf5ffb",
+    "purpose": "Seven intended author claims, not independently recovered claims",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/claims.md",
+    "bytes": 4074,
+    "sha256": "f467eed29e89efe9bc74050389ad9de4e68170969f9ecd9dd5b5d5c4a03dca0e",
+    "purpose": "Proposition evidence, rival and validation ledger",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/concept.md",
+    "bytes": 3605,
+    "sha256": "d954716db7c04d19f28180cabc21873a5aafa72b698518824f62cb26b719b574",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/confidence.jsonl",
+    "bytes": 10922,
+    "sha256": "3d4690be36adf536c194ba952edfeeeb9ad94c45c3608867023741c6a26c0f88",
+    "purpose": "Analyst confidence and would-change observations",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/data_structure.md",
+    "bytes": 15256,
+    "sha256": "030f63ddd6574b30d9b8fc9afd370d409f01aab69a8e4b1931e1e8c7b8c5571d",
+    "purpose": "Display table with selected exact code exemplars",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/dimensions.jsonl",
+    "bytes": 1815,
+    "sha256": "1c641829acbe46e9fd852096d749707aea7f0ccf56081a87d8c1d088cac6029c",
+    "purpose": "Higher-theme groupings with evidence and bounds",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/105c87276669abf820c171c9c88ab5e80ba5f37f09702c94433a0d46a7565125/DISPLAY.json",
+    "bytes": 1871,
+    "sha256": "5ca19f5cdc5aadaba84beae5c0bb6f66e2936dcab4449f58e9553ac12c15c3df",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/105c87276669abf820c171c9c88ab5e80ba5f37f09702c94433a0d46a7565125/data-structure.html",
+    "bytes": 30676,
+    "sha256": "bf292e1f29ff500b0dd435af69427e88252d9e408976b6356b73063ca6acc071",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/105c87276669abf820c171c9c88ab5e80ba5f37f09702c94433a0d46a7565125/model.dot",
+    "bytes": 1387,
+    "sha256": "9cc4b6a846e60fd78299743392b84ac79cb8d1b1c213b4a6b9cfa96d28d0abe0",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/105c87276669abf820c171c9c88ab5e80ba5f37f09702c94433a0d46a7565125/model.png",
+    "bytes": 55700,
+    "sha256": "54ecec1f5bc00ddb7ffb4041e2501579683970946609ac910c6f45c7d3acf05c",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/105c87276669abf820c171c9c88ab5e80ba5f37f09702c94433a0d46a7565125/model.svg",
+    "bytes": 8433,
+    "sha256": "d5041c2331f19f4eab70e994204f75f9a76d7b14564d9a7b3e495550b77684a7",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/ace42768204b7a42a696a316ca2bf2e9e9c2e11ceb50dde4b1fae5049e5e09c3/DISPLAY.json",
+    "bytes": 1871,
+    "sha256": "c0cfe1a4571945e08334b437a8baa758411894e8a7f81b613dc6424eaab5edab",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/ace42768204b7a42a696a316ca2bf2e9e9c2e11ceb50dde4b1fae5049e5e09c3/data-structure.html",
+    "bytes": 30614,
+    "sha256": "8a83e43691328c726e42d62ceb2663e31820f0df197725926f0a3c83adcc6251",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/ace42768204b7a42a696a316ca2bf2e9e9c2e11ceb50dde4b1fae5049e5e09c3/model.dot",
+    "bytes": 1387,
+    "sha256": "9cc4b6a846e60fd78299743392b84ac79cb8d1b1c213b4a6b9cfa96d28d0abe0",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/ace42768204b7a42a696a316ca2bf2e9e9c2e11ceb50dde4b1fae5049e5e09c3/model.png",
+    "bytes": 55700,
+    "sha256": "54ecec1f5bc00ddb7ffb4041e2501579683970946609ac910c6f45c7d3acf05c",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/display/ace42768204b7a42a696a316ca2bf2e9e9c2e11ceb50dde4b1fae5049e5e09c3/model.svg",
+    "bytes": 8433,
+    "sha256": "d5041c2331f19f4eab70e994204f75f9a76d7b14564d9a7b3e495550b77684a7",
+    "purpose": "Rendered model or data-structure view and source binding",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/episodes.jsonl",
+    "bytes": 7936,
+    "sha256": "769e713cc0d3e44706e495b7886607ce2c402737f5e9b6cce98d9cf7bd69fefb",
+    "purpose": "Episode register linked to coded evidence",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/figure-C5.md",
+    "bytes": 5754,
+    "sha256": "1022ffda2676c65285b94540b811b0b7d9a4a342144fa81d86519fa229c1b69c",
+    "purpose": "Figure explanation and limits",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/findings.jsonl",
+    "bytes": 2968,
+    "sha256": "a34495d0d457fc8103acb2af84673f2c85059d4aa65e0601bfa08de41aac6339",
+    "purpose": "Findings, evidence, status and adverse checks",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/form_pass.md",
+    "bytes": 6123,
+    "sha256": "d5bc4837e8ca4bc7ca1237e0531860083d7d3198aedfdbbdaa28739a3901550b",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/fourth/fourth.jsonl",
+    "bytes": 10787,
+    "sha256": "3aecf476f8d9b995641b60c67e61e802a695fa1c02c5e10c60b0e52ea2ffec4c",
+    "purpose": "Higher-theme definitions and closed-theme membership",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/fourth/fourth.md",
+    "bytes": 12646,
+    "sha256": "bd45bfe5594e8204d19505dee988665ca262bc3c9fa9ffe85fee8914cec3e51b",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/handback-C2.md",
+    "bytes": 4524,
+    "sha256": "d02159659e555a3279fe24fdfe075ceb84f5cf0bfb88aa6704dcb4e87e6881bf",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/handback-C3.md",
+    "bytes": 4312,
+    "sha256": "59fb266cea35071974d1232e7e53e8302ba87a5056efc6d376bef4fecb0385ad",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/handback-C5.md",
+    "bytes": 5287,
+    "sha256": "8773d6a133cb1dc318307af88a483f55ac9ad7427b03a5bcab0ca1e1cc8a1733",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/implications-C5.md",
+    "bytes": 2185,
+    "sha256": "b92bea25d47687a0dd8f1d7e6f31868b23325d5c186f7c774c2c00442556e72c",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/interview/C2c.md",
+    "bytes": 3409,
+    "sha256": "3ad6d257783beffa22777efbe2459906f9f8c1aa436c175d348bc937c47e5cde",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/interview/C3c.md",
+    "bytes": 3767,
+    "sha256": "3505545b87ae9a835f583de2ea780493e097e95f5f3bfe347e786c93de3d9123",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/literature-C3.md",
+    "bytes": 17009,
+    "sha256": "8bbf5eba63685455c98427a0f2f178b2ebaa11e6cd46fe9da26b634186a42c87",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/manifest-C3.txt",
+    "bytes": 168,
+    "sha256": "b94600e58beb9c63635dcb85b0624d477f0e52af939e79ead4bf41fb6ae831a8",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/mapping-C3.jsonl",
+    "bytes": 2859,
+    "sha256": "4abbbc02675cbf6a4f2bf20134ec40160426629f4fd787a11fd76530dad83f96",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model.md",
+    "bytes": 27985,
+    "sha256": "23ad4cdec31da47187e799e73a343b4bce2f1862e7d6ace22fb2b9a234b8251d",
+    "purpose": "Local model and warrants",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/arrows.jsonl",
+    "bytes": 9992,
+    "sha256": "79edbadf9f3804697018dc53f22b2ec016a15e944ea3e4633c4adbeeebf6d5bb",
+    "purpose": "Relations, support codes, rivals, scope and inclusion",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/elements.jsonl",
+    "bytes": 3868,
+    "sha256": "682d8672b186ea4f1262a896ef400216a5e789043308fd09b893abed0c5b2d04",
+    "purpose": "Typed model elements and direct evidence",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/history.jsonl",
+    "bytes": 43217,
+    "sha256": "5bdb404f2d27228dbbf14dc30ea0de4c00e8ffae8816852a723a500044f1fc71",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/loops.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Loop register; empty here",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/story-p1.md",
+    "bytes": 3785,
+    "sha256": "0e2444fd4c294e9ee05ca9abfd946f4c79fde514da6f75028f05b48a1a8e9a43",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/story-p2.md",
+    "bytes": 5156,
+    "sha256": "d199aecfabcefcaa93f6a7d36ce650d996f3664a41e0cb9a40bb10d0577e9a69",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/story-p3.md",
+    "bytes": 5156,
+    "sha256": "70d983b468ce8131a538265f868a0436248313c715dd07367d0f8330e23cea7a",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/model/story-p4.md",
+    "bytes": 5156,
+    "sha256": "315f543556b586ca81863a58f42c4c816eec06a3ae79fe017931484d016a9164",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/multiplacement_log.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/names.jsonl",
+    "bytes": 4798,
+    "sha256": "a5dd9e350e27b777a09edca609201b9165d9800f5867b10c57e2c5c4d700ed95",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/notes-R2.md",
+    "bytes": 14231,
+    "sha256": "6a40be43441fcf030ce7351f449c10740c6283dfc46ba7a7bc319a45253791c5",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/notes-R3.md",
+    "bytes": 6628,
+    "sha256": "f468b77f72c33b548835a7d3c38b6b0aa9df1560e839a2bcbe6580b646b2db2e",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/notes-R4.md",
+    "bytes": 34616,
+    "sha256": "ebeb9d9d04127a07bda9cee13c5b944b6646feb758b1161e169fb9a596908bde",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/notes-R5.md",
+    "bytes": 10316,
+    "sha256": "450980b760e74290b1d9695825a04210c64de9805f1cce78d2043320649dc682",
+    "purpose": "Stage reasoning, decisions and handoff",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/notes-R6.md",
+    "bytes": 10377,
+    "sha256": "8b00746d9f755e50934b5400803dd79511ed08e73dc26f5f0ffecb5845deb01b",
+    "purpose": "Closing decisions, technical limits and presentation repair",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/organizing_end.json",
+    "bytes": 378,
+    "sha256": "c39273ded0787f0230c4410adcfc1e5368bbd857c81e384a836080b966bd36be",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/prior.md",
+    "bytes": 16559,
+    "sha256": "700edc80be8be6f2a7cea19468fb9ebe6a601279880f098989273c1169f039b7",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/propositions.jsonl",
+    "bytes": 1520,
+    "sha256": "c4858642f83f524a837819ce6cabbb5a2de3eba6453f0067a1ff297c4f708453",
+    "purpose": "Proposition to finding and arrow links",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/prose-test-C5.md",
+    "bytes": 2100,
+    "sha256": "2e7e195aae891c155de856e2ce58dbe5258508b7d71153d2ff5f600e5066575a",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/review-C2.md",
+    "bytes": 5833,
+    "sha256": "04bf4fe2ffb872fff0940e699b54e4eb362e8d5d862f37222debdc067078e2c0",
+    "purpose": "Recorded critic material or review disposition",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/saturation.jsonl",
+    "bytes": 1764,
+    "sha256": "782ccd27e7c3a696b7e98bd4eddbcd79a518eacd6f23520991274423cc43b8b6",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/sketches.md",
+    "bytes": 1893,
+    "sha256": "5cf2eeefdafd1050810c97792a81c2205e022ebc0ed2ef4165f18230a702632a",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/story_episodes-p1.jsonl",
+    "bytes": 6095,
+    "sha256": "7db67413a9d5f955a85b4fb7c31a43f7049beb7dbaefc94b616cdd90aae0c482",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/story_episodes-p2.jsonl",
+    "bytes": 5636,
+    "sha256": "b00d059441a6be7e2f9d5158e530ccc968d07916ea2680890b2d95d21622160e",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/story_episodes-p3.jsonl",
+    "bytes": 7775,
+    "sha256": "7b84ade3201ffb7d289741fe3154e4ee242d1c088ceb68edb9b4877bf1bd5545",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/story_episodes-p4.jsonl",
+    "bytes": 6893,
+    "sha256": "f4298a4c6a48f895d69a9791f0805690440dbe50da37436fdd985ce801f1cab7",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/structure.md",
+    "bytes": 61023,
+    "sha256": "6480f6b97ad699b7229562782a1fda8b8f518c3b848f495645e5c85e02d5e3a4",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/theory-labels.md",
+    "bytes": 3753,
+    "sha256": "e515b39af72a5b5e278d3bd758bcfc3213ba79a8c496189540729a24d18578e4",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/tier_history.jsonl",
+    "bytes": 46411,
+    "sha256": "151c3f1bb1f22c0979a2fe42c8de624bcd0dbadd164d26403f9247fa7067beef",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/within_case.jsonl",
+    "bytes": 176,
+    "sha256": "378d061dd966f8f60e9d37398e21745d9a0e7adfb9a391bd532ec3ec89d00148",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/out/within_case.md",
+    "bytes": 7423,
+    "sha256": "014d27bc9261da8947354fbf7049f7f59251d446600c3c4f702bd9d5c1314672",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/brief/out/_validation.json",
+    "bytes": 723,
+    "sha256": "9edbdfa92cbd669f8dc598c667aaa990f1a6f0dec6c93d498fd19eaf9c58c11b",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/brief/out/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/brief/out/validation-after-relocation.txt",
+    "bytes": 277,
+    "sha256": "3c02ea8e7d90e6317658c54ebea06ef28986e040175fdb9a3537d3f51ae55d3f",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/brief/out/validation.txt",
+    "bytes": 277,
+    "sha256": "3c02ea8e7d90e6317658c54ebea06ef28986e040175fdb9a3537d3f51ae55d3f",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/record/coder_corpus.jsonl",
+    "bytes": 553389,
+    "sha256": "521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/record/coder_corpus.jsonl.gz",
+    "bytes": 90323,
+    "sha256": "9bf3e83d47aecdcb5ff3f639d8b6f70621aff84d79ed16cd78e19e6c2ddc3a46",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/record/cut_stats.json",
+    "bytes": 644,
+    "sha256": "4e13f3934b5aea3a951bf070a5345c9d081fcf609fbff0e7fadf6d5f542fb087",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/record/openings.md",
+    "bytes": 36999,
+    "sha256": "5d621b32820d3cd800588194bb28e4dcecc9b14e71bf5e460c64dc8614262146",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/record/preweek.jsonl.gz",
+    "bytes": 39,
+    "sha256": "07017561f3f5a2945956ee20656027fdac14f89b10817faa78c604233d0e747c",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/AGENT.md",
+    "bytes": 13091,
+    "sha256": "cc69ae2249df4e508daa15bc0bf6dac23d6b8625c0b48644e9bcb17d6a6c00bd",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/CONTRACT-case-lead.md",
+    "bytes": 15941,
+    "sha256": "1cb1d4d7b2ea1a4d33824dc815be32ca271da5f94fce9212ee36f38df7cd3fdd",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/CONTRACT.md",
+    "bytes": 39559,
+    "sha256": "7f562de7c7ce6e1dc969b7fe9c355f683d99a30670c9b8d165941778fa54c3d2",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/_lead_quotes.py",
+    "bytes": 2729,
+    "sha256": "a654b9c443e012755e699e422288ed766c4823561698022158e7ca9b8a3fc5f4",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/_lead_themes.py",
+    "bytes": 8326,
+    "sha256": "5ea1f3da4cac7f33fc05483c4db020dcc7fd3034a2375feda15ec488f1d64113",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/_lead_times.py",
+    "bytes": 1538,
+    "sha256": "d92cd28b4ac842b3d55d8d308960d56bc83f2cab1e367fbbe3bf15a77cd94219",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/_manifest.json",
+    "bytes": 1882,
+    "sha256": "137474c4b32f356026a484583e0ed0e608614ca4cc74cfb567d046e042a01b52",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/cite.py",
+    "bytes": 15136,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/close_run.py",
+    "bytes": 19944,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/coder_corpus.jsonl",
+    "bytes": 553389,
+    "sha256": "521a9c22fea21f4275569be8c63b7ebdcc2fc6dadbba2984219a93ed77d0a4bd",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/coder_corpus.queries.jsonl",
+    "bytes": 1304,
+    "sha256": "b51240eb6c59bc6c162ccd83843da8c51e836728068f27da39c46e3c31c8be54",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/corpus.txt",
+    "bytes": 162156,
+    "sha256": "39abb2e0f6e5ea5b208c7643ffd082345ef5ba127e2f5ad5c2589ed934cc5a5e",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/corpus_manifest.json",
+    "bytes": 337,
+    "sha256": "19d0a8a7b14c9705c9ce25cac37551f3cd0ac0b414bd3b16029a69f6dc97318e",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/emit.py",
+    "bytes": 51410,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/AGENT.md",
+    "bytes": 13743,
+    "sha256": "8f51f3020e84ecdf6462485d9121d9fbe18fc35afef4d404e4ad488b6f2a1331",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/CONTRACT-fleet-coder.md",
+    "bytes": 4737,
+    "sha256": "5226ee621ece7a7fcce8bc58734f56e457ec7b11a40fb8a0485fdbc6b77b54ae",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/CONTRACT.md",
+    "bytes": 39709,
+    "sha256": "016571ac784eb8d91bcb93524a82374ae2c26c5f73d829d15439520c6ab6c808",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/_manifest.json",
+    "bytes": 2264,
+    "sha256": "15e9317ae4859c02b2ef53afa147665cdc11f617a859dac647496ce2876b399f",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/cite.py",
+    "bytes": 15136,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/close_run.py",
+    "bytes": 19944,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/coder_corpus.jsonl",
+    "bytes": 350558,
+    "sha256": "76acf83d6aab87f4812c553ef021a34f00a8133f802757a79c3213f6f09ffe1b",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/corpus.txt",
+    "bytes": 108692,
+    "sha256": "973ad1030cd73a87ad11739ef7c8466c336ee67ac99d0235d7c6483d045368a9",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/emit.py",
+    "bytes": 51410,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/lexicon.md",
+    "bytes": 515,
+    "sha256": "5ea81a5d7c302c3d48c3ea933f1f527b49a23b7179804970e8fc741c26ed67a9",
+    "purpose": "Local terms",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/_journal.jsonl",
+    "bytes": 112037,
+    "sha256": "a05dc709dbc160ba2c35d89c78e40244a7ab0f0bc256c32c818b62a09f60a520",
+    "purpose": "Historical operation ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/_read.jsonl",
+    "bytes": 5454,
+    "sha256": "26c4d8cc203002eb203c9b3686270cbccfd9019a26afa46cc420d7a8e684d6a0",
+    "purpose": "Reading receipts",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/_read_index.json",
+    "bytes": 24354,
+    "sha256": "25f85547420d8bff39a5c6f2262d643c9aa116eb99865cf9ffca1c0c0db869a8",
+    "purpose": "Read-coverage index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/_run.json",
+    "bytes": 3865,
+    "sha256": "b1d12dde468e78969865756f734d3e089d6f547bddddf686f2c3deb732804a4c",
+    "purpose": "Coding completion, counts and integrity record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/_transcript.jsonl",
+    "bytes": 234372,
+    "sha256": "95663f164059fa1a8907f0538123ba7f7d14149ceeb952a91bc11e1dc56d4f41",
+    "purpose": "Recorded coding transcript",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/case.md",
+    "bytes": 10229,
+    "sha256": "f608ec2c24ff6f98dcecd27060a55b9130798e9dd38f55b790a990b4fa5d139c",
+    "purpose": "Coding case account, counterevidence and limits",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/codes.jsonl",
+    "bytes": 69561,
+    "sha256": "668b5b12dfa8babe7f3f62336dba3e32fa3adae90b9a0c851018bd9f66718afe",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/final_message.md",
+    "bytes": 242,
+    "sha256": "99b8ec2a72ab060a9d7462d8f9a6f8cf0c6f3775f1749c737ae3c174ca4f17cb",
+    "purpose": "Saved coding verdict",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/notes.md",
+    "bytes": 5078,
+    "sha256": "043e7cdd3e0dafe01cff96dfe3f01de77d8d3fa8041bdf08c48fc1c87b46993b",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/pointers.jsonl",
+    "bytes": 10687,
+    "sha256": "526ca98a01c1f4a2682ebd2a26164baba1574fc88ae601c3526272c6a87ac268",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/themes.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Closed second-order themes and code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/threads.jsonl",
+    "bytes": 11830,
+    "sha256": "a676caaa616b2f9f7fa383abe85325d47d3154b2d55b5981379733cf933cd7fa",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/out/tmp/xcrun_db",
+    "bytes": 182,
+    "sha256": "b027da94f43f53bd96f1c5b7ba101213e5b6185a2f92a9fb0891b55745917a86",
+    "purpose": "Incidental tool cache retained in the source inventory; not an analytical output",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/read.py",
+    "bytes": 20864,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/timeline.md",
+    "bytes": 1801,
+    "sha256": "18f2e95ba57f32ba326710a5e2f7cdf54144529d79fee3343fef8346af144ea8",
+    "purpose": "Recorded case chronology",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/tools/audit_fleet.py",
+    "bytes": 13007,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/tools/fleet.py",
+    "bytes": 33247,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_01/tools/tree_builder.py",
+    "bytes": 28400,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/AGENT.md",
+    "bytes": 13744,
+    "sha256": "d03a4bca68b7f11e77296af86de9613be6ef13ab856bc6b07a30adfebab88b6e",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/CONTRACT-fleet-coder.md",
+    "bytes": 4737,
+    "sha256": "5226ee621ece7a7fcce8bc58734f56e457ec7b11a40fb8a0485fdbc6b77b54ae",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/CONTRACT.md",
+    "bytes": 39709,
+    "sha256": "e1e14bb60ac09411a548ff85c007570d972f067337f98e6ff3f4ce580672f4b1",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/_manifest.json",
+    "bytes": 2268,
+    "sha256": "aede2f63bcbfed9684ade1c946e30b9e006e881b908bfc96b0baa3c0379a1358",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/brief.md",
+    "bytes": 493,
+    "sha256": "6ba1b705fec986a2d5a303c62b44293d77ff1c81e7441d8ba9012f689632cb92",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/cite.py",
+    "bytes": 15136,
+    "sha256": "c6a93331220bf4eff6a74980148f5d5ae9a39a100b9511cfd3192138f4f9c423",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/close_run.py",
+    "bytes": 19944,
+    "sha256": "a0052053bcccbde003da3477505aa51992356202e023985132e43485f695cd3c",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/coder_corpus.jsonl",
+    "bytes": 237509,
+    "sha256": "7c6dddd00477dac48045f37b8d9d79f7110b7b4dd0c36ba871d8df50ddbb00ce",
+    "purpose": "Source items plus corpus metadata header",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/corpus.txt",
+    "bytes": 72415,
+    "sha256": "a4a4b87d927aac42d75cf953e37b14fd9bf6b6e4acdde9f207e35f70aa0f5098",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/emit.py",
+    "bytes": 51410,
+    "sha256": "aa3b5a4f948f3db84250f1694d9195c25ba23ea9164910207023a4aa04aaaf7a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/lexicon.md",
+    "bytes": 672,
+    "sha256": "2ffe1295628192f1d85cf96b6522194ce3c739a6eb8b41fc08729a492f08f375",
+    "purpose": "Local terms",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/_journal.jsonl",
+    "bytes": 120567,
+    "sha256": "829cc4e235cd82abf2dd893ddb9e22a6eb8a8416954a74642af6632938b12fc0",
+    "purpose": "Historical operation ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/_read.jsonl",
+    "bytes": 3257,
+    "sha256": "bb3af1e29b7116c3cb12446fe25fd1a01977f5cddfbcf072bda19173479ea60d",
+    "purpose": "Reading receipts",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/_read_index.json",
+    "bytes": 18521,
+    "sha256": "adae9c903da4d353ad5782d06c7ea73b1856db31ee1b96c27df9bbf549cb707d",
+    "purpose": "Read-coverage index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/_run.json",
+    "bytes": 4041,
+    "sha256": "084b97764d2006334c6b7037692b3c31833b9240201cec75354384fe6e5c0419",
+    "purpose": "Coding completion, counts and integrity record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/_transcript.jsonl",
+    "bytes": 167665,
+    "sha256": "f055f648744e181457dc4b4c939fbc1064a4e87ed95094dd587c40ca4b6eb0ab",
+    "purpose": "Recorded coding transcript",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/case.md",
+    "bytes": 10470,
+    "sha256": "bacd4ba8802df9d2f0c15370437ac50e617208b36ece5ade5bb6372117700fa7",
+    "purpose": "Coding case account, counterevidence and limits",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/codes.jsonl",
+    "bytes": 75761,
+    "sha256": "937d607b692ed6d4b9ae96ff1788cb0a15c9185619af0de42342414858bdba51",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/final_message.md",
+    "bytes": 167,
+    "sha256": "0d29a8af6db0ae9f4d0e6ed50f9d462d3c6321c9ce7e6ca554fdf44b88cf9d61",
+    "purpose": "Saved coding verdict",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/notes.md",
+    "bytes": 4881,
+    "sha256": "5b955908dc9465fc4e2a2c2207b1e8b4852c06e16230273b051605c7f9d8ee27",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/pointers.jsonl",
+    "bytes": 17571,
+    "sha256": "5affe10376010d1731a4e368041dde290aecaa589f40c0db866a772c09f97fc1",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/themes.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Closed second-order themes and code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/threads.jsonl",
+    "bytes": 8168,
+    "sha256": "f98ce3d72b27d9b894f364247d6953db8a04ff97875e4d12af00e084c731eddf",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/out/tmp/xcrun_db",
+    "bytes": 182,
+    "sha256": "b027da94f43f53bd96f1c5b7ba101213e5b6185a2f92a9fb0891b55745917a86",
+    "purpose": "Incidental tool cache retained in the source inventory; not an analytical output",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/read.py",
+    "bytes": 20864,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/timeline.md",
+    "bytes": 2978,
+    "sha256": "ae4f5f2f3bcffe23b00dffec994d6b3644dcb15e648428c0de885f9ea96bbd2a",
+    "purpose": "Recorded case chronology",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/tools/audit_fleet.py",
+    "bytes": 13007,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/tools/fleet.py",
+    "bytes": 33247,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/fleet/batch_02/tools/tree_builder.py",
+    "bytes": 28400,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "purpose": "Historical slice output; do not add to consolidated code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/openings.md",
+    "bytes": 36999,
+    "sha256": "5d621b32820d3cd800588194bb28e4dcecc9b14e71bf5e460c64dc8614262146",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_gate.json",
+    "bytes": 3369,
+    "sha256": "303b3364c5b899084b1dbbf7b63c81a70d37fee8339fa842fec3d871ef66f9b3",
+    "purpose": "Branch and slice boundary record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_journal.jsonl",
+    "bytes": 254373,
+    "sha256": "4cd21633d3313bba33bcc5d81e608ecc7486018acffc7fb87eebcea6d25d2fdd",
+    "purpose": "Historical operation ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_lead_notes.md",
+    "bytes": 2162,
+    "sha256": "83fd2624a2bb078fa9a70b1b455bc182e34b126c690517ed2c3ebca60188a5d3",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_read.jsonl",
+    "bytes": 3484,
+    "sha256": "fc1fab23dd48563393973fb38aed78eca1dbeaf5cbdf0fda41aa802392a3256a",
+    "purpose": "Reading receipts",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_read_index.json",
+    "bytes": 39694,
+    "sha256": "114f502a00f93e31f947a30a4af8fc3d57e316ec0d032e30f4495c5e4c2d2976",
+    "purpose": "Read-coverage index",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_run.json",
+    "bytes": 6146,
+    "sha256": "2126219892c19cd03039d36baad53489a3e7ea11e5ba06d1bbca6392d781df6b",
+    "purpose": "Coding completion, counts and integrity record",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/_transcript.jsonl",
+    "bytes": 2123659,
+    "sha256": "dd0efa8de5e5c835f4adb082a746665b2c406b097cd2b73d8446598ba44284dc",
+    "purpose": "Recorded coding transcript",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/case.md",
+    "bytes": 15415,
+    "sha256": "d437a9bc4ed0abe87e91814cb848743adc305092b74b658657d2d40888d6dcc0",
+    "purpose": "Coding case account, counterevidence and limits",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/codes.jsonl",
+    "bytes": 146312,
+    "sha256": "52ee8060ad2f6932920d2df59f7980a65ccb13d171009d83e98d94048ea1ae04",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/final_message.md",
+    "bytes": 286,
+    "sha256": "779d55eaa4b2549986ee2bf00ceaf5dbec865c55499569449561ec3233777059",
+    "purpose": "Saved coding verdict",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/ledger.md",
+    "bytes": 9160,
+    "sha256": "e9d034d918dbfc588baac8360cb589449d3980ff66fa729a2dcc9b4f944ecbc6",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/lexicon.md",
+    "bytes": 672,
+    "sha256": "2ffe1295628192f1d85cf96b6522194ce3c739a6eb8b41fc08729a492f08f375",
+    "purpose": "Local terms",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/notes.md",
+    "bytes": 7775,
+    "sha256": "729bca39415e66868086d7e2842d418c293915b6c38b03fc94d1a9ced19c36df",
+    "purpose": "Saved analytical output or audit support; purpose given by filename and content",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/pointers.jsonl",
+    "bytes": 28258,
+    "sha256": "1384b751ec4699614108face7fad59cef6ed11f77a9053e3a673e6221f46c15f",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/themes.jsonl",
+    "bytes": 7181,
+    "sha256": "a3ff8f851344fbecb515ae5b78f2eb3753423829667f92372085862df0ed276c",
+    "purpose": "Closed second-order themes and code totals",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/threads.jsonl",
+    "bytes": 18102,
+    "sha256": "c1e850403aaad3e2893c7693ad5888580f0de97afd066ce8f36018cdd02fb68d",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/out/timeline.md",
+    "bytes": 2978,
+    "sha256": "ae4f5f2f3bcffe23b00dffec994d6b3644dcb15e648428c0de885f9ea96bbd2a",
+    "purpose": "Recorded case chronology",
+    "presentation": "display_candidate"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/package/codes.jsonl",
+    "bytes": 145322,
+    "sha256": "0ac2f4d4f1371e802283a1498a7ba4dbf1137e3dc99576e076cf7f11ce4a0b5d",
+    "purpose": "Recorded first-order code applications and cited spans",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/package/codes_by_thread.md",
+    "bytes": 26609,
+    "sha256": "8dc7610294313c30ab6d99415c24f2a836264c2ce0e9df7fe6f94e7ef616d225",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/package/forest.jsonl",
+    "bytes": 128772,
+    "sha256": "1642ad7db7077027a1b39cc4aef3105d994f810362a966cacb2a3cc76bd7cd9a",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/package/pointers.jsonl",
+    "bytes": 28258,
+    "sha256": "1384b751ec4699614108face7fad59cef6ed11f77a9053e3a673e6221f46c15f",
+    "purpose": "External venue and community references linked to codes",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/package/threads.jsonl",
+    "bytes": 19998,
+    "sha256": "3030fd8534f5d2576b772841dd13e3312963f408a34938165693615aeadddaad",
+    "purpose": "Reading and thread disposition ledger",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/package/tree_index.json",
+    "bytes": 136914,
+    "sha256": "35aea3134eecdc29ef042f6f676b4a3f93c901ac5d05e5174771939391ad0d8f",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/read.py",
+    "bytes": 20864,
+    "sha256": "8a3905a8dea0be7d04fb8ad159d599439e5b870d11bd358e15100ab8d398558a",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/codes_batch_01.jsonl",
+    "bytes": 69561,
+    "sha256": "668b5b12dfa8babe7f3f62336dba3e32fa3adae90b9a0c851018bd9f66718afe",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/codes_batch_02.jsonl",
+    "bytes": 75761,
+    "sha256": "937d607b692ed6d4b9ae96ff1788cb0a15c9185619af0de42342414858bdba51",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/pointers_batch_01.jsonl",
+    "bytes": 10687,
+    "sha256": "526ca98a01c1f4a2682ebd2a26164baba1574fc88ae601c3526272c6a87ac268",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/pointers_batch_02.jsonl",
+    "bytes": 17571,
+    "sha256": "5affe10376010d1731a4e368041dde290aecaa589f40c0db866a772c09f97fc1",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/read_batch_01.jsonl",
+    "bytes": 5454,
+    "sha256": "26c4d8cc203002eb203c9b3686270cbccfd9019a26afa46cc420d7a8e684d6a0",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/read_batch_02.jsonl",
+    "bytes": 3257,
+    "sha256": "bb3af1e29b7116c3cb12446fe25fd1a01977f5cddfbcf072bda19173479ea60d",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/threads_batch_01.jsonl",
+    "bytes": 11830,
+    "sha256": "a676caaa616b2f9f7fa383abe85325d47d3154b2d55b5981379733cf933cd7fa",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/staging/threads_batch_02.jsonl",
+    "bytes": 8168,
+    "sha256": "f98ce3d72b27d9b894f364247d6953db8a04ff97875e4d12af00e084c731eddf",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/tools/audit_fleet.py",
+    "bytes": 13007,
+    "sha256": "dad99a6e741a35c7bbfa341bddb1d6c660414df1891cac44c299bcadfe34a698",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/tools/fleet.py",
+    "bytes": 33247,
+    "sha256": "7aebaf18424314499a041aae90725475b07ab4acc1a286584f3f6d9fd31b81d0",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/tools/tree_builder.py",
+    "bytes": 28400,
+    "sha256": "0507646d1c0e05fb33cba5fe42f714a690a173c8b4c39e13c212a8b8ad564bb9",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  },
+  {
+    "checkpoint": "R6",
+    "member": "workspace/room/run/trees/PlaceNL.md",
+    "bytes": 39451,
+    "sha256": "0ef00204bab43a2104b3867ea97af4eef15206b8bfb080153f0ea2efee7d0a9c",
+    "purpose": "Source, method or closure support",
+    "presentation": "supporting_download"
+  }
+]

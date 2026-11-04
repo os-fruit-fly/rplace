@@ -1,0 +1,130 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coding scheduler | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-reference" data-layer="Full reference"><nav class="parts" aria-label="Instrument"><a  href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a aria-current=location href="../run.html">Run the study</a></nav><h1 id="coding-scheduler">Coding scheduler</h1><p class="notice">Authoritative source, reproduced unchanged. <a href="coding-scheduler.md" target="_blank" rel="noopener">Exact Markdown</a> · <a href="../reading/coding-scheduler.md" target="_blank" rel="noopener">Agent copy with resolved links</a>. These instructions govern research runs, not checkpoint interviews. They keep the run's own words: a <em>room</em> is a community, a <em>mark</em> an artwork, the <em>analyst</em> the aggregator, the <em>case lead</em> the community coder and the <em>global model</em> the population model.</p>
+<p>The coordinator supports up to twenty rooms at once. The current
+storage-safe cap is six because a twenty-worker launch exhausted the
+volume during concurrent archive restoration. New case leads and
+temporary fleet coders use <strong>GPT-5.6 Sol, medium</strong>.
+Existing rooms retain the effort recorded in their native lead store, so
+an in-flight xhigh room remains internally consistent. Changing the
+coordinator's model does not change those workers. Only case leads
+retain native sessions and filesystem checkpoints.</p>
+<p><code>_tools/coding_queue.py</code> chooses the smallest event-window
+item count among rooms with a currently passing brief (or an eligible
+legacy imported brief), breaking ties by subreddit name. The authorised
+range is 500 through 50,000 items inclusive. It excludes rooms below
+500, earlier coder runs, existing runs/stores, failed queue attempts and
+rooms above 50,000 items. Large rooms require a separate scheduling
+review. It notices new briefs while work is active and stops when no
+active or ready rooms remain.</p>
+<p><code>liverpoolfc</code> is an explicit recode exception to the
+earlier-coder-run exclusion. Its older v16 and partial v29 Claude runs
+do not satisfy the current contract, so the coordinator admits it at its
+normal smallest-first position based on 8,929 items.</p>
+<p>Queued repairs launch before new upward rooms. A repair that is
+already running only occupies its own worker slot; it does not freeze
+the other slots. When any worker ends, the coordinator checks that room,
+records the outcome, archives the case-lead store when verified, then
+fills the free slot from queued repairs first and otherwise from the
+smallest ready upward room.</p>
+<p>For each room, correct checker failures in the same coder or
+case-lead session before closing. If that run still fails, preserve it
+and restart the whole room from the contract. A second consecutive
+failed run stops that subreddit, records
+<code>repair-stopped-after-two-failures</code>, and requires a progress
+report. The scheduler must not launch a third consecutive attempt.</p>
+<p>BritishColumbia (300 items) and Connery (276 items) were completed
+during initial validation before the lower-bound guard was encoded.
+Their preserved runs are scope exceptions and do not count toward
+completion of the authorised missing-room set.</p>
+<p>Each launch uses the existing
+<code>start_yard_lead.py --complete</code> pipeline: first lead
+checkpoint, serial temporary fleet coders where required, a saved lead
+checkpoint after the final collection and before consolidation, final
+verification, then an exact archival mirror into
+<code>rooms/&lt;sub&gt;/run/</code> with validation receipts. Each fleet
+coder keeps its isolated session only until the authoritative batch
+check runs. A failed batch check goes back to that same coder for up to
+two correction turns. An append-only disposition failure first restores
+the clean dispatched batch, then asks the same coder to redo the slice
+with its prior reading context. The temporary coder session and clean
+batch snapshot are deleted after validation. Only the case lead remains
+forkable. If the final room check fails, the coordinator likewise keeps
+the original case lead available and sends it the exact checker output
+for up to two correction turns. The coordinator reruns checkpoint and
+room validation after each turn. It archives the store only after
+validation passes or both correction turns fail. Transport failures keep
+their existing repair path. Failures retain their evidence for
+review.</p>
+<p>The queue can adopt existing room controllers after an interruption.
+It groups nested controllers by room, checks live process identity,
+reserves a room before launch, and uses one operating-system lock to
+prevent duplicate queue drivers. New controllers run in separate process
+sessions with retained logs, so stopping the queue does not stop their
+current work. Independent duplicate controllers or unexplained exits
+pause new launches. Existing stores are never silently restarted.</p>
+<p>Runtime state and event history are under
+<code>_coding_queue/STATE.json</code> and
+<code>_coding_queue/EVENTS.jsonl</code>; new controller logs are under
+<code>_coding_queue/logs/</code>. <code>CODING-PROGRESS.md</code> lists
+running rooms and reported completed-run tokens, including cached input.
+Failed-attempt totals remain separate where recorded.</p>
+<p>The <code>Atlas Yard coding coordinator</code> heartbeat checks this
+task every 15 minutes, including newly arriving briefs after the queue
+becomes idle. It reports new completions or material failures. Before
+reporting, read <code>_coding_queue/REPORT-STATE.json</code>; after
+reporting newly completed rooms, record their receipt token totals there
+so later checks do not repeat them.</p>
+<p>The external verifier documents one narrow v30 compatibility rule: a
+fleet slice with no exported or journal codes, matching nonempty
+all-out-of-scope dispositions, an archived record, and every other close
+check passed can satisfy E2 when raw C3 is the sole failure. Raw C3
+otherwise requires a verdict that fleet coders are forbidden to give.
+The copied instrument, contract, and research outputs remain unchanged.
+Buffalo's original failed check and the repair receipt are preserved in
+its validation directory and
+<code>_changes/coding-zero-code-fleet-2026-09-07</code>.</p>
+<p>Read-only inspection:
+<code>python3 -B _tools/coding_queue.py --inspect</code>.</p>
+<p>Current user setting: six GPT-5.6 Sol medium rooms at a time, queued
+repairs first, then untouched rooms ascending by items_in_window. Refill
+one freed slot immediately after that room finishes and validates; do
+not wait for the other workers in the batch. Current restart command:
+<code>python3 -B _tools/coding_queue.py --parallel 6 --requeue-failed</code>.
+Change the cap only on a new user request. The scheduler waits when a
+launch would breach its 8 GiB free-space floor. The parent needs
+authorized access to this canonical yard; model workers retain their
+ordinary workspace sandbox. A second driver exits without launching
+work. Native lead continuation or forks use the original
+<code>_lead_sessions/&lt;sub&gt;-gpt56-calibration-v1</code> store, not
+its archival room mirror.</p>
+<p>If a Codex turn reports a usage or credit limit, the coordinator
+records a pause without counting a coding failure or launching the next
+room. Leave the failed store intact for repair when the user later
+authorizes resumption. A temporary model-capacity error remains a
+repairable service interruption, not a token-limit stop.</p>
+<p>After diagnosing and resolving a recorded launch pause,
+<code>--clear-pause</code> permits a new launch check; unresolved
+conditions immediately pause again. This does not erase failed attempts
+or authorize restarting an existing native store.</p>
+<p>A <code>serverOverloaded</code> or "Selected model is at capacity"
+turn is a service interruption, not a failed coding run. Preserve the
+failed attempt. After confirming the runner and server processes have
+exited, archive the stale <code>RUNNING.json</code> with
+<code>codex_lead.py recover-run</code>, fork the last completed lead
+checkpoint, and redo the interrupted slice or finish turn. The rejected
+turn may have changed native history, so do not resume it directly. Do
+not count this toward the two-run coding limit or change models.</p>
+<p>An explicit user stop during drain mode is a pause, not a failed
+coding run. Stop both the room controller group and any detached Codex
+coder process, then preserve the partial store as an extraction-tested
+<code>.tar.zst</code> with its SHA-256 in room <code>STATE.json</code>
+and <code>status.tsv</code>. Record the pause in
+<code>_coding_queue/USER-STOPPED.json</code>, clear any false failure
+streak after the coordinator exits, and use a clean completed lead
+checkpoint when the user later authorizes resumption. Do not resume a
+partial fleet coder session or launch a replacement during drain
+mode.</p>
+</main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

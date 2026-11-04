@@ -1,0 +1,101 @@
+{
+ "checked_utc": "2026-10-24T06:34:30.339532+00:00",
+ "scope": "Bounded website evidence crosswalk. Published C2 records only. No full-run scientific audit or live research checks.",
+ "commit": "c070d990be88234ccd74101d4104160e71a28c5e",
+ "run_in_catalogue": "claude-v43-1--C4-field",
+ "records_from_parent": "aggregator/runs/claude-v43-1",
+ "checks": {
+  "close_report_sha256_matches": true,
+  "reviewer_packet_sha256_matches": true,
+  "reviewer_served_model_sha256_matches": true,
+  "reviewer_error_count": 9,
+  "corrected_order_label_present_in_p4": true,
+  "close_validator_exit_code": 0,
+  "close_report_has_warning": true
+ },
+ "records": [
+  {
+   "principle": "T",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/model/history.jsonl",
+   "sha256": "3339a17a4bf43a7321cd9e1d87b8d41499c287c624b68c913e3f8f59da52f1f7",
+   "bytes": 385375,
+   "url": null
+  },
+  {
+   "principle": "R",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/review-C2.md",
+   "sha256": "70f010e0f03b902639ad8affd207252620b58bec355e1958ea119c14151e4925",
+   "bytes": 19785,
+   "url": null
+  },
+  {
+   "principle": "R",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_fleet_raw/C2/C2-reviewer/r1.meta.json",
+   "sha256": "6d42324de13a798e0a9b51f27c06af85d7b6d30d558ebec6221cf16b9a02c4f9",
+   "bytes": 430,
+   "url": null
+  },
+  {
+   "principle": "R",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_packets-C2/C2-reviewer.md",
+   "sha256": "08c64c7ae25ac29ccd164b57a01c36848fa190412219b4d74598e7351fc6bfbd",
+   "bytes": 51116,
+   "url": null
+  },
+  {
+   "principle": "R",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/model-p3.md",
+   "sha256": "aa75ee6c6230348f916b1e2fa6f2eacf0864d5f1750d657d5d5a21a005011b3e",
+   "bytes": 51723,
+   "url": null
+  },
+  {
+   "principle": "A",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_answers/QC2-001.md",
+   "sha256": "7f241cff0b7b002a505afa24bc46071c6c096f44e0823cfda645d0527c156ce2",
+   "bytes": 1105,
+   "url": null
+  },
+  {
+   "principle": "C",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_answers/QC2-002.md",
+   "sha256": "a98a649f0a8063d3423a33c27818eb510319592ed9b1b2ce06bbac78df92a6d1",
+   "bytes": 534,
+   "url": null
+  },
+  {
+   "principle": "E",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-C2.md",
+   "sha256": "6a7bc6ec80b0242ef9c08186a0d833c7d438108e35456c7676b2a6cf986e2326",
+   "bytes": 116990,
+   "url": null
+  },
+  {
+   "principle": "E",
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/model-p4.md",
+   "sha256": "7a28cd935b24cdad21d2059c6e891cd8a2b440708ba7a4f757450c846bc19c5e",
+   "bytes": 65538,
+   "url": null
+  },
+  {
+   "principle": "E",
+   "path": "aggregator/runs/claude-v43-1/CONTROL/close-status-C2.C2d-02.json",
+   "sha256": "2fdf40c42b4f8b93c0aa0abc6eebf1da2def7210b9572f6bbc91940f14b94fb7",
+   "bytes": 361,
+   "url": null
+  },
+  {
+   "principle": "E",
+   "path": "aggregator/runs/claude-v43-1/CONTROL/validation-C2.C2d-02.txt",
+   "sha256": "577407c2e75e1e769acb5910f341fd28fb7233966bc10a2cb8e61422c72c5834",
+   "bytes": 305,
+   "url": null
+  }
+ ],
+ "limits": [
+  "Repository access is required for these source links.",
+  "Recorded analyst responses are not independent scientific acceptance.",
+  "No actor-independent targeted recheck for every correction was established.",
+  "No claim about all stages or all communities."
+ ]
+}

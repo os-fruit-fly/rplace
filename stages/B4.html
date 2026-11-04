@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resolve placements by returning to evidence | r/place</title><link rel="stylesheet" href="../assets/site.css"><script defer src="../assets/local-setup.js"></script><script defer src="../assets/site.js"></script><script defer src="../assets/reviewer.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">r/place<span>An organizational fruit fly</span></a>
+<div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="../check.html">Check the papers</a><a data-reviewer-entry href="../open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a  href="../index.html">Overview</a><a  href="../organism.html">Model organism</a><a aria-current=location href="../instrument.html">Instrument</a><a  href="../results.html">Findings</a><a  href="../interviews.html">Checkpoint interviews</a></nav></header>
+<main id="main" class="page-instrument" data-layer="Stage guide"><nav class="parts" aria-label="Instrument"><a aria-current=location href="../instrument.html">Instrument</a><a  href="../how-collection-works.html">Collection</a><a  href="../how-coding-works.html">Community coding</a><a  href="../how-it-works.html">Aggregation</a><a  href="../versions.html">Versions</a><a  href="../run.html">Run the study</a></nav><article class="stage-explanation"><p class="kicker">B4 · Coding: adjudication and freeze</p><h1 id="resolve-placements-by-returning-to-evidence">Resolve placements
+by returning to evidence</h1>
+<p>B4 turns the independent readings into a reasoned set of placements.
+For each disputed theme, it asks what the source material supports under
+the existing scheme.</p>
+<h2 id="where-this-stage-starts">Where this stage starts</h2>
+<p><a href="B3.html">B3</a> has returned two readings for each
+second-order theme. B4 compares them with each other and with the
+author's earlier grouping. It also has the scheme, the first-order codes
+and the reasons readers gave. Two readers can agree with each other and
+still differ from the author's first interpretation.</p>
+<h2 id="what-the-aggregator-does">What the aggregator does</h2>
+<p>The aggregator first separates failed deliveries from real
+differences in interpretation. It then examines each disputed placement
+on its evidence, whichever reader made it. It asks whether the problem
+lies in an ambiguous category rule, a theme that bundles several acts, a
+reader's error, the author's error, or material that belongs in more
+than one category.</p>
+<p>An adjudication is a written decision with a reason. It can keep a
+reader's answer, choose a category neither reader picked, keep several
+justified placements, or leave the uncertainty explicit. The original
+answers stay in the record. Where two community coders disagree about a
+case, both readings and the affected claims are named.</p>
+<p>The aggregator leaves the frozen scheme unchanged here. This
+separates two questions: where an item belongs under the present rules,
+and whether the rules need changing. C1 takes the second question, with
+the whole pattern of problems in view.</p>
+<p>Finally, fresh readers check samples of the settled placements: a
+random sample and a sample of adjudicated items. Their results are
+reported separately from the original agreement rate between independent
+readers.</p>
+<h2 id="what-the-next-stage-receives">What the next stage receives</h2>
+<p><a href="C1.html">C1</a> receives a complete placement record, the
+reasons behind disputed decisions, and evidence on which category
+boundaries failed. It can revise the scheme with a stated reason for
+each change.</p>
+<section class="stage-outputs" aria-labelledby="stage-outputs-title"><h2 id="stage-outputs-title">What the output files contain</h2><p>Markdown files hold prose; JSONL files hold one structured record per line.</p><details class="stage-output"><summary><span class="output-purpose">The decisions and settled placements</span><span class="output-filenames"><code>disagreements.jsonl</code>, <code>assign_final.jsonl</code>, <code>adjudication_report.md</code></span></summary><div class="output-description"><p><code>disagreements.jsonl</code> records each ruling, diagnosis and
+supporting evidence. <code>assign_final.jsonl</code> records the
+resulting placements under the current scheme.
+<code>adjudication_report.md</code> explains the pattern of rulings and
+what remains uncertain.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Author, reader and community coder differences</span><span class="output-filenames"><code>transmission-B4.md</code>, <code>coder_conflicts.jsonl</code></span></summary><div class="output-description"><p><code>transmission-B4.md</code> separates kinds of disagreement
+between author and readers. <code>coder_conflicts.jsonl</code> records
+conflicts in the community coding, so a later claim shows any
+incompatible readings of the same material.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">The fresh check</span><span class="output-filenames"><code>RETURN-B4.md</code>, <code>reassign.jsonl</code>, <code>transmission-after-revision-B4.md</code></span></summary><div class="output-description"><p><code>RETURN-B4.md</code> tells the new readers how to answer.
+<code>reassign.jsonl</code> keeps their placements for comparison with
+the settled record. <code>transmission-after-revision-B4.md</code>
+reports that comparison, including the separate samples; despite its
+file name, B4 leaves the category scheme as B2 froze it.</p>
+</div></details><details class="stage-output"><summary><span class="output-purpose">Decisions that travel forward</span><span class="output-filenames"><code>notes-B4.md</code>, <code>run_manifest.json</code></span></summary><div class="output-description"><p><code>notes-B4.md</code> records choices of method, remaining
+problems and open questions for C1. The stage's
+<code>run_manifest.json</code> entry records the reader setup. Together
+these let a reviewer tell a technical repair from a judgment on
+substance and from a scheme revision left for C1.</p>
+</div></details></section><section class="stage-reference" aria-labelledby="stage-reference-title"><h2 id="stage-reference-title"><a href="../sources/stage-B4.html">Full stage description</a></h2><p>Read the complete technical card for exact tasks, reading boundaries, checks and closing rules. The explanation above is a guide; the card holds the instructions.</p><details><summary>Show how the stage is divided into its 3 legs</summary><ul>
+<li><code>B4a</code>: adjudicate packet. Repeats: yes. Interview point:
+-.</li>
+<li><code>B4b</code>: sample build. Repeats: no. Interview point:
+-.</li>
+<li><code>B4c</code>: check and final placements. Repeats: no. Interview
+point: end.</li>
+</ul>
+</details><details><summary>Show the changes recorded for this run</summary><h2 id="historical-instructions-and-settings">Historical instructions
+and settings</h2>
+<p>The three shared B4 checkpoints keep a stage-file copy that differs
+from the current canonical card. Decision row 96 introduced
+three-placement adjudication on 12 October. The 21:19Z delivery
+explicitly opens B4a-01 under that amended rule, and notes-B4 records
+its use. A further rule changed packet 4 at item 401; earlier affected
+rulings were revisited at B4a-05. The handler's deliveries record these
+amendments; the saved file hash does not include them. Saved card
+SHA-256:
+<code>bb5cc6a5690643e43d2e8a600efb4c750fc499bf2c2abea6c90a94861f0e1357</code>.
+Current canonical card SHA-256:
+<code>7fb68adfcd6a1dab15368728559d3eb3c91162c555a8a69b26a53571dfd16ebe</code>.</p>
+<p><a href="../guides/history.md" target="_blank" rel="noopener">Historical context and
+evidence</a>.</p>
+</details><p><a href="../sources/manifest.json" download>Source versions and hashes</a> identify the exact technical documents reproduced here.</p></section></article><div class="actions chat-actions"><button type="button" class="talk-action talk-local" data-local-checkpoint="aggregator--claude-v43-1--C4-field--B4.B4c" aria-expanded="false" aria-controls="local-setup-aggregator--claude-v43-1--C4-field--B4.B4c">Chat Locally</button><a class="talk-action" href="../online-chat.html?checkpoint=aggregator--claude-v43-1--C4-field--B4.B4c" target="_blank" rel="noopener" aria-label="Chat Online at B4.B4c, opens in a new tab">Chat Online</a></div><section id="local-setup-aggregator--claude-v43-1--C4-field--B4.B4c" class="local-setup" hidden></section><noscript><p><a href="../guides/interviews.html#open-an-interview-on-your-computer">Local setup instructions</a></p></noscript><nav class="stage-navigation" aria-label="Stage navigation"><a class="stage-neighbour" rel="prev" href="B3.html" aria-label="Previous stage: B3"><span>Previous stage</span><strong>B3</strong></a><a class="stage-all" href="../guides/aggregator.html#stage-map">See all stages</a><a class="stage-neighbour" rel="next" href="C1.html" aria-label="Next stage: C1"><span>Next stage</span><strong>C1</strong></a></nav><aside class="stage-agent-key" aria-labelledby="stage-agent-key-title"><h2 id="stage-agent-key-title">For an agent running this stage</h2><p><a href="../agents/B4.html">Open the agent reading key</a> for the required reading order. <a href="../agents/B4.md" target="_blank" rel="noopener">Download that key as Markdown</a>, or <a href="../sources/stage-B4.md" target="_blank" rel="noopener">download the full stage card as Markdown</a>.</p><p><a href="../guides/agent-roles.html">Agents and their roles</a> explains who does each part of the work.</p></aside></main><footer><div><a href="../check.html">Check the papers</a><a href="../agents.html">For agents</a><a href="../reference.html">Full reference</a><a href="https://github.com/os-fruit-fly/rplace">Repository</a></div></footer></body></html>

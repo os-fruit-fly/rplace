@@ -1,0 +1,166 @@
+{
+  "community.html": {
+    "sha256": "f3f61661806b537102dcb163414d72616e11783d6533bca0de74f626c048e8be",
+    "bytes": 389861
+  },
+  "population.html": {
+    "sha256": "a071b34f1f5f712df7e3a016e4733060fb2914c4cd292ee8ce38f763a32cb145",
+    "bytes": 1438053
+  },
+  "rooms_table.js": {
+    "sha256": "b8ee8b6c5302cd85f7bf93d45fd93061f7708e1e22c34225c947f47bcf92e250",
+    "bytes": 3077
+  },
+  "population-data.json": {
+    "sha256": "eb5d3972d0bf9688cfa70117416eb0b1579dc14db753d96e8251c4b5787ba764",
+    "bytes": 117652
+  },
+  "population-means.json": {
+    "sha256": "15321db1c12e7e5a8cd9680862d591978f384b453eb394e6bb492dfdb458dcdb",
+    "bytes": 3570
+  },
+  "communities.csv": {
+    "sha256": "4d285e98e2edfa15f5c22b99d0f8e25c00e4777efd26ef25fc08d6a1a59206f5",
+    "bytes": 83003
+  },
+  "population-rows.csv": {
+    "sha256": "c881c7792421796feb54280600a70796fb580a153cbf53e62fc18ab553d99884",
+    "bytes": 119613
+  },
+  "a1-display.md": {
+    "sha256": "d5ccaa6e4a51ef31fc9971d2af342be84666d53dab11fbb4e2c2f306e1914ab7",
+    "bytes": 15698
+  },
+  "a1-note.md": {
+    "sha256": "ba92fd3c50a756acf25fadf632fc2d298e38a816c32e0750784648e06ba06a0e",
+    "bytes": 3076
+  },
+  "coding/case.md": {
+    "sha256": "d437a9bc4ed0abe87e91814cb848743adc305092b74b658657d2d40888d6dcc0",
+    "bytes": 15415
+  },
+  "coding/timeline.md": {
+    "sha256": "ae4f5f2f3bcffe23b00dffec994d6b3644dcb15e648428c0de885f9ea96bbd2a",
+    "bytes": 2978
+  },
+  "coding/codes.jsonl": {
+    "sha256": "52ee8060ad2f6932920d2df59f7980a65ccb13d171009d83e98d94048ea1ae04",
+    "bytes": 146312
+  },
+  "coding/themes.jsonl": {
+    "sha256": "a3ff8f851344fbecb515ae5b78f2eb3753423829667f92372085862df0ed276c",
+    "bytes": 7181
+  },
+  "coding/lexicon.md": {
+    "sha256": "2ffe1295628192f1d85cf96b6522194ce3c739a6eb8b41fc08729a492f08f375",
+    "bytes": 672
+  },
+  "gioia-PlaceNL.csv": {
+    "sha256": "29d1414735551ad83c2e2deca62c8433a9564a17f0465f816f49f34fdc7d9248",
+    "bytes": 79832
+  },
+  "returns/adaptations-D2.jsonl": {
+    "sha256": "72436592e4c666851b7ab9b545d0986422c9627522a32d73f8bff8fb4726bfe5",
+    "bytes": 22162
+  },
+  "returns/rulings-D2-PlaceNL.jsonl": {
+    "sha256": "0f386471d8c726c8b453582e309472fee091dafa3b06fc24c003d49c01e38c64",
+    "bytes": 36823
+  },
+  "returns/model-D2-by-case-lead.md": {
+    "sha256": "f1a3bce6c135ec99efd6e1e485a928d0df1009cf3dbb19e323e6da4e21747f77",
+    "bytes": 17630
+  },
+  "returns/verdict-D2-PlaceNL.jsonl": {
+    "sha256": "3c693eed0035fc3a105823929b8a5b8d70d009fc1a16d43c9fb5689fb409a5ae",
+    "bytes": 2734
+  },
+  "returns/adaptations-D3.jsonl": {
+    "sha256": "bc6d3fbd4a827c83c8436285fd8128a17a9eaefec35fdb8e7f5f4b27e799ca4c",
+    "bytes": 27582
+  },
+  "returns/rulings-D3-PlaceNL.jsonl": {
+    "sha256": "86bdda8e310218ca565bc8f52211873e83bafb8d869a78fb05c38f406ce589c0",
+    "bytes": 33966
+  },
+  "returns/model-D3-by-case-lead.md": {
+    "sha256": "52783c94a5f2f8c689ec08d670416dfcda185a5512d82073ddcc15f769a1825a",
+    "bytes": 21041
+  },
+  "returns/verdict-D3-PlaceNL.jsonl": {
+    "sha256": "f8985291c7c3cfa966cf4037ee30b01e225d9c13f82c1c9324952d76f5c3b4ad",
+    "bytes": 1435
+  },
+  "population/MODEL-D3.md": {
+    "sha256": "6c20f254185506ad2931a3cdc24e825186bc583fe1297f67b83c5dcb6171d8cd",
+    "bytes": 27297
+  },
+  "population/history.jsonl": {
+    "sha256": "30b0da963748363cfdf39a2767f1af87ada0adf6bff19170440989fad33e7e77",
+    "bytes": 459138
+  },
+  "population/LADDER.md": {
+    "sha256": "f236868eeb9978446201bee932e11382ab5574d6e0af049caad9c4e90b0b9d1f",
+    "bytes": 142195
+  },
+  "population/data_structure-C5.md": {
+    "sha256": "ec42011c313944c38cab9f9033e449fe0f7ae73d604a0cf7f2f283eaef4142e7",
+    "bytes": 64553
+  },
+  "population/scheme_final.md": {
+    "sha256": "dd144eed01f8dd5c100ee5e5a6dbd493d47e79727a25dea14a82ec08470420be",
+    "bytes": 379947
+  },
+  "room-B-PlaceNL.md": {
+    "sha256": "700578f5e3c3248b2bab458a53a8f30f834a84e2287e371fa1695acad9669263",
+    "bytes": 9488
+  },
+  "media/dutch_artworks_freeze.png": {
+    "sha256": "af33e4109dacbe5e86830bb67fdd18a9938282c46029eabb5bd47e010bfdac8c",
+    "bytes": 170346
+  },
+  "media/dutch_artworks_15min.mp4": {
+    "sha256": "67a2d827894f2eb52dc69c53045fa49ddf1227679ee97660cdd044f9d76e1517",
+    "bytes": 4848452
+  },
+  "r6-model.svg": {
+    "sha256": "d5041c2331f19f4eab70e994204f75f9a76d7b14564d9a7b3e495550b77684a7",
+    "bytes": 8433
+  },
+  "r6-inventory.json": {
+    "sha256": "406a8b1e3202bb717011ba15cd7a4833022128f70c53b36b39a9dc4c1f98844c",
+    "bytes": 99878
+  },
+  "media/dutch_artworks_15min_first.png": {
+    "sha256": "f1e03819806214b84265eb3bd21f0dbd21b5faca4de60c276606acd09e28f352",
+    "bytes": 135105
+  },
+  "media/dutch_artworks_15min_freeze.png": {
+    "sha256": "af33e4109dacbe5e86830bb67fdd18a9938282c46029eabb5bd47e010bfdac8c",
+    "bytes": 170346
+  },
+  "replication/dutch_replay_15min.md": {
+    "sha256": "164f62cabafc6c258b90628cba9a646016b7cf51860ff64deff44fa137ec2283",
+    "bytes": 1059
+  },
+  "replication/armenia_lion_incident.md": {
+    "sha256": "2380b8a70c741b31720d8350146e6e257f6dcf53b801704f7e97a32bc868ef51",
+    "bytes": 1864
+  },
+  "media/dutch_artworks_15min_dark.mp4": {
+    "sha256": "49c390abe7289102241ea02d415f6d10332ff6337de16274746118b7d4cf6bf3",
+    "bytes": 4717409
+  },
+  "media/dutch_artworks_15min_dark_first.png": {
+    "sha256": "31c502d9ba3ac00f77e7b22332872a1bd917954d9353529bf4a07f605f30aff7",
+    "bytes": 131612
+  },
+  "media/dutch_artworks_15min_dark_freeze.png": {
+    "sha256": "46c618bb3cc64986ab7357fa82208e13deff7ef198c38870e0745833744d160b",
+    "bytes": 167633
+  },
+  "dimension-model.svg": {
+    "sha256": "f2b964d53f50912961a444cfd1304a932128dd1011c4787f249b07d8d758185a",
+    "bytes": 24880
+  }
+}

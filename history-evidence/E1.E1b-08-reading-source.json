@@ -1,0 +1,69 @@
+{
+ "format": "rplace-saved-reading-v1",
+ "checkpoint_id": "aggregator--claude-v43-1--C4-field--E1.E1b-08",
+ "repository": "the research repository",
+ "commit": "0aeb7c4c0c2ea05123a0eb78bf12ce71788aee82",
+ "metadata_sha256": "e0bd8f83a342e16dcfcb0b602f15e5a9ccee69c93a8db75d9b8c93aafa76e782",
+ "snapshot_manifest_sha256": "6b9e097b479b9099bb46c731a7e99b92112009055c2a8a9c0a45cf7f419d610d",
+ "manifest": {
+  "files": {
+   "workspace/out/claims-E1.md": {
+    "sha256": "41ccfaddfabbf60d297125c4fadf389b7aa0c812d78be983a0dc6e8f8124bb7d",
+    "size": 11302,
+    "mode": 420
+   },
+   "workspace/out/probes-E1.md": {
+    "sha256": "62eda8bc3545c210e9541ac9bb333f7e71d05446d100165ee764b42e6447138f",
+    "size": 5318,
+    "mode": 420
+   },
+   "workspace/out/expectations-E1.md": {
+    "sha256": "f7851595adc8a0b41b546aee99d641c312de4c0c1af1678f342736fcdb2a24c9",
+    "size": 4435,
+    "mode": 420
+   },
+   "workspace/out/retelling-D6.md": {
+    "sha256": "21e30cd2905ae9d0a3bb6eebc75923bff1e2dc15b38f25dd414f950a661ca895",
+    "size": 85056,
+    "mode": 420
+   },
+   "workspace/out/_head.md": {
+    "sha256": "0daeb29e631bf15e5936acc06eb355d054cb263f206a711e61afbec99a808654",
+    "size": 17614,
+    "mode": 420
+   },
+   "workspace/out/notes-E1.md": {
+    "sha256": "8d8f20b6518fb044096e6145e274c9544bdc18bdf46924ae5063197856c1830b",
+    "size": 29549,
+    "mode": 420
+   }
+  }
+ },
+ "git_files": {
+  "workspace/out/claims-E1.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/claims-E1.md",
+   "blob": "f777682dfae831de468a76e5c6bf637b3d9f9746"
+  },
+  "workspace/out/probes-E1.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/probes-E1.md",
+   "blob": "4b234dabb753b4e6e6e0ff5eaa5da93409b505f7"
+  },
+  "workspace/out/expectations-E1.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/expectations-E1.md",
+   "blob": "f802fc31dedd19dc68d48ff7cd8dc04d6f3cf0f3"
+  },
+  "workspace/out/retelling-D6.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/retelling-D6.md",
+   "blob": "309e20ec6fceaff94566b69f2677124e1b1cc9f2"
+  },
+  "workspace/out/_head.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/_head.md",
+   "blob": "6e1ee09e125695971d8dc6e79291112e5f0f1c5c"
+  },
+  "workspace/out/notes-E1.md": {
+   "path": "aggregator/runs/claude-v43-1/00_GIVE-THE-AGENT/out/notes-E1.md",
+   "blob": "7a1d552a1ef5daaf7c92bd892cea15784901ad54"
+  }
+ },
+ "scope": "Selected narrative files verified against the immutable external snapshot and original Git objects. Not an interview restore recipe."
+}

@@ -15,6 +15,8 @@ data/raw24/*.jsonl
 data/raw24/*.manifest.json
 data/raw24/_collected/
 data/raw24/venues.txt
+data/raw24/census.txt
+data/raw24/_census/
 data/pixels-per-artwork/_work/
 data/pixels-per-artwork/inputs/
 data/pixels-per-artwork/data/

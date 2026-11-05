@@ -7,6 +7,14 @@ One file per subreddit: every post and comment by anyone, 2017-03-24 16:00 to 20
 2. `python3 raw24/12_collect_subreddits.py --list raw24/venues.txt --out raw24/_collected`: one continuous fetch per venue, split by period. A venue over 60,000 records is set aside in `_capped.jsonl` rather than truncated. Resumable. Days.
 3. `python3 raw24/flatten_to_raw24.py --from-dir raw24/_collected --out raw24`: one sorted file and manifest per venue.
 
+**For the census communities** (the 777 in `pixels-hourly/CENSUS.csv`, whose raw24 the member lists and the coders' rooms come from), collect without the cap: they include giants such as r/leagueoflegends, which the study collected whole.
+
+    tail -n +2 pixels-hourly/CENSUS.csv > raw24/census.txt
+    python3 raw24/12_collect_subreddits.py --list raw24/census.txt --out raw24/_census --cap 0
+    python3 raw24/flatten_to_raw24.py --from-dir raw24/_census --out raw24
+
+Then `python3 pixels-hourly/build_pixels.py --lists-from-raw24 raw24/` makes the member lists. A raw24 collected later lacks accounts deleted since, so its lists can be a little shorter than the study's.
+
 **How the study's copy was made:** in two parts, disjoint. The 740 venues the atlas names (9.8 GB) were collected by an earlier collector, `collect_v6`, one period at a time, and assembled by a step whose script has not been identified. The other 23,367 (41.2 GB) came through the route above. Both share this format, so one reader reads both.
 
 **Tested 2026-09-26:** r/KarabakhConflict collected and assembled: 884 records (335 before, 139 during, 410 after), no gaps, none outside the span.

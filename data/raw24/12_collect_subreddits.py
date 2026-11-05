@@ -48,6 +48,8 @@ SPAN_LO, SPAN_HI = _a.SPAN_LO, _a.SPAN_HI
 PRE_START, OPEN, FRZ, AFTER_END = _a.PRE_START, _a.OPEN, _a.FRZ, _a.AFTER_END
 
 CAP = 60_000            # records; above this the subreddit is a base-rate giant
+# --cap overrides it, and --cap 0 removes it: the census communities, the 740 the atlas names among them,
+# were collected uncapped (by collect_v6), so a giant such as r/leagueoflegends is collected whole.
 BATCH = 10              # subreddits per checkpoint
 
 
@@ -55,11 +57,11 @@ def collect_one(sess, sub, outdir):
     t0 = time.time()
     g0 = len(sess.gaps)
     posts = walk(sess, "posts/search", SPAN_LO, SPAN_HI, subreddit=sub)
-    if len(posts) > CAP:
+    if CAP and len(posts) > CAP:
         return {"sub": sub, "status": "capped", "n_posts": len(posts),
                 "note": f"posts alone exceed CAP={CAP}"}
     comments = walk(sess, "comments/search", SPAN_LO, SPAN_HI, subreddit=sub)
-    if len(posts) + len(comments) > CAP:
+    if CAP and len(posts) + len(comments) > CAP:
         return {"sub": sub, "status": "capped",
                 "n_posts": len(posts), "n_comments": len(comments),
                 "note": f"total exceeds CAP={CAP}"}
@@ -125,12 +127,16 @@ def collect_one(sess, sub, outdir):
 
 
 def main():
+    global CAP
     ap = argparse.ArgumentParser()
     ap.add_argument("--list", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--conc", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--cap", type=int, default=CAP,
+                    help="records above which a subreddit is set aside (default %(default)s); 0 = no cap")
     a = ap.parse_args()
+    CAP = a.cap
 
     os.makedirs(a.out, exist_ok=True)
     lock = os.path.join(a.out, "_lock")

@@ -3,7 +3,8 @@
 
     python3 pixels-hourly/build_pixels.py                      (from data/; about 1 minute)
     python3 pixels-hourly/build_pixels.py --lists-from-raw24 raw24/
-    python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv
+    python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv --pre pixels-hourly/_pre_activity.jsonl
+        (_pre_activity.jsonl: the Drive's _pre_progress.jsonl with pre-additions.jsonl appended; README)
 
 One row per community per hour, hours -16 to 72 from the canvas opening (2017-03-31 16:00 UTC):
     sub, hour_since_open, px_in_region_any, px_by_pre_members, px_by_window_members

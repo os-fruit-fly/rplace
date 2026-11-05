@@ -18,6 +18,11 @@ and, for stage D4's size measure, the table of each room's activity in the week 
 
     python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv
 
+The Drive's pre-window list (27 August) lacks 15 of these rooms' rows: the 13 added to the census in late September, and r/chelseafc and r/hyperlightdrifter, remade from their full records (`README-activity.md`). Their counts, made from raw24, are in `pre-additions.jsonl`: counts only, no names or hashes. Append them first; the table then equals `activity-week-before.csv` byte for byte (tested 5 November 2026):
+
+    cat pixels-hourly/_pre_progress.jsonl pixels-hourly/pre-additions.jsonl > pixels-hourly/_pre_activity.jsonl
+    python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv --pre pixels-hourly/_pre_activity.jsonl
+
 `ROOMS.tsv` lists the 705 rooms of the frame (the first column of the study's `aggregator/input/coders/ROOMS.tsv`); `CENSUS.csv` lists the census's 777 communities, which `--lists-from-raw24` reads when no member lists are here (the `sub` column of the study's `coder/census/MASTER-census.csv`).
 
 **The member lists.** `_pre_progress.jsonl` and `_win_progress.jsonl`, one line per community. The rule: every author in raw24 inside the span, less `[deleted]`, `[removed]` and `AutoModerator`. The study's lists were made from its raw24 on 27 August 2026; the pre-window list holds usernames, the window list their hashes. `--lists-from-raw24` writes hashes only. A raw24 collected later lacks accounts deleted since: on r/thenetherlands one account of 2,815 was gone, and it had placed nothing in the room's region, so the room's rows came out the same.

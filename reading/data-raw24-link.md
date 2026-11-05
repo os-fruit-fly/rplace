@@ -6,5 +6,5 @@ Links below are resolved against commit `7c788ae58ce0d4ae171d65e7550cf55b83a2262
 
 # Where the study's copy is
 
-- The 740 atlas venues: [Drive folder](https://drive.google.com/drive/folders/1itd-IZsAhBq9lMzCnrQERlO2vfxdT9g6).
-- The other 23,367: the Drive, to be added.
+- The 740 atlas venues: not public.
+- The other 23,367: not public.

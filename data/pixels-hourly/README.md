@@ -6,7 +6,7 @@
 
 A placement counts for a community if it lands in the union of the atlas artworks that link to it. `px_by_pre_members` counts those by people who posted in the subreddit in the 168 hours before the opening; `px_by_window_members`, by people who posted from the opening to seven days after the freeze. Members are matched to placers by hashing the username as the record does. Regions overlap (1,231,586 pixel-community pairs on 921,826 pixels), so a rate per community is sound and a sum across communities is not.
 
-**Build it** (from `data/`; needs the record, `pixels/get_pixels.sh`, and the two member lists, `LINK.md`; numpy and Pillow, pandas optional; about a minute):
+**Build it** (from `data/`; needs the record, `pixels/get_pixels.sh`, and member lists: the study's are not public (`LINK.md`), so the second command makes them from raw24; numpy and Pillow, pandas optional; about a minute):
 
     python3 pixels-hourly/build_pixels.py
 
@@ -16,12 +16,7 @@ or, to make the member lists from raw24 instead of taking the study's:
 
 and, for stage D4's size measure, the table of each room's activity in the week before (counts only), written beside `pixels.csv`; the handler's `build_canvas.py` cuts it to the frame and puts it in the run's `DROPS/D4/data/`:
 
-    python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv
-
-The Drive's pre-window list (27 August) lacks 15 of these rooms' rows: the 13 added to the census in late September, and r/chelseafc and r/hyperlightdrifter, remade from their full records (`README-activity.md`). Their counts, made from raw24, are in `pre-additions.jsonl`: counts only, no names or hashes. Append them first; the table then equals `activity-week-before.csv` byte for byte (tested 5 November 2026):
-
-    cat pixels-hourly/_pre_progress.jsonl pixels-hourly/pre-additions.jsonl > pixels-hourly/_pre_activity.jsonl
-    python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv --pre pixels-hourly/_pre_activity.jsonl
+    python3 pixels-hourly/build_pixels.py --lists-from-raw24 raw24/ --activity pixels-hourly/ROOMS.tsv
 
 `ROOMS.tsv` lists the 705 rooms of the frame (the first column of the study's `aggregator/input/coders/ROOMS.tsv`); `CENSUS.csv` lists the census's 777 communities, which `--lists-from-raw24` reads when no member lists are here (the `sub` column of the study's `coder/census/MASTER-census.csv`).
 

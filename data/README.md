@@ -4,13 +4,13 @@ How to get every piece of data the study used, and the scripts that made each. S
 
 | Store | Folder | What one file is | Size in the study | Study's copy |
 |---|---|---|---|---|
-| the pixel record | [pixels/](pixels/README.md) | Reddit's 2017 tile dump: every placement, with the placer's hashed name | 16,559,897 placements | public source; Drive |
+| the pixel record | [pixels/](pixels/README.md) | Reddit's 2017 tile dump: every placement, with the placer's hashed name | 16,559,897 placements | public source |
 | the atlas | [atlas/](atlas/README.md) | the 2017 atlas: 1,473 artworks, their outlines and the subreddits they name | 675 KB | public, pinned; the run's copy is in `aggregator/input/canvas/` |
-| the placer accounts | [users/](users/README.md) | one account: everything it wrote on Reddit in 24 days around the canvas | 1,101,801 accounts, about 14 GB | Drive |
-| venues, placers only | [venues-placers/](venues-placers/README.md) | one subreddit: only what placers wrote there | 50,936 venues, 13.6 GB | Drive |
-| venues in full (raw24) | [raw24/](raw24/README.md) | one subreddit: everything anyone wrote there in the 24 days | 24,093 venues, about 51 GB | Drive (the atlas venues: [folder](https://drive.google.com/drive/folders/1itd-IZsAhBq9lMzCnrQERlO2vfxdT9g6)) |
-| hourly pixels per community | [pixels-hourly/](pixels-hourly/README.md) | one row per community and hour: placements in its region, by anyone and by its own members | 67,907 rows, 1.4 MB | built here in a minute; member lists on the Drive |
-| pixels per artwork | [pixels-per-artwork/](pixels-per-artwork/README.md) | one artwork: every placement inside its outline; and a 30-minute panel per artwork | 23,058,857 rows, 1.1 GB | built here in minutes; Drive |
+| the placer accounts | [users/](users/README.md) | one account: everything it wrote on Reddit in 24 days around the canvas | 1,101,801 accounts, about 14 GB | not public |
+| venues, placers only | [venues-placers/](venues-placers/README.md) | one subreddit: only what placers wrote there | 50,936 venues, 13.6 GB | not public |
+| venues in full (raw24) | [raw24/](raw24/README.md) | one subreddit: everything anyone wrote there in the 24 days | 24,093 venues, about 51 GB | not public |
+| hourly pixels per community | [pixels-hourly/](pixels-hourly/README.md) | one row per community and hour: placements in its region, by anyone and by its own members | 67,907 rows, 1.4 MB | built here in a minute; the study's member lists are not public |
+| pixels per artwork | [pixels-per-artwork/](pixels-per-artwork/README.md) | one artwork: every placement inside its outline; and a 30-minute panel per artwork | 23,058,857 rows, 1.1 GB | built here in minutes |
 
 ## If you want all of it, in order
 
@@ -24,9 +24,9 @@ From this folder, with Python 3 (numpy and Pillow for the last step), curl and x
 6. `python3 raw24/venue_list.py`, `python3 raw24/12_collect_subreddits.py --list raw24/venues.txt --out raw24/_collected`, then `python3 raw24/flatten_to_raw24.py --from-dir raw24/_collected --out raw24`: every venue a placer wrote in during the canvas, in full. Days; resumable.
 7. `python3 pixels-per-artwork/code/fetch_sources.py`, then `bash pixels-per-artwork/run_all.sh`: the pixel record split by artwork, and the panel the aggregator's canvas step reads. About 4 minutes; this step alone needs no other.
 
-8. `python3 pixels-hourly/build_pixels.py`, with the two member lists from `pixels-hourly/LINK.md` (or `--lists-from-raw24 raw24/`): the hourly series the aggregator's canvas step reads. About a minute.
+8. `python3 pixels-hourly/build_pixels.py --lists-from-raw24 raw24/`, with member lists made from raw24 (the study's are not public: `pixels-hourly/LINK.md`): the hourly series the aggregator's canvas step reads. About a minute once raw24 is built.
 
-Or take the study's copies from the Drive, store by store; each `LINK.md` says which.
+The study's own copies are not public; each `LINK.md` says so, and names a public source where there is one.
 
 Paths under `aggregator/`, `coder/`, `Manual/` and the `Layer` folders name the study's research repository and folders, which are not public. No script here needs them: the two lists one script read from there are in `pixels-hourly/` (`ROOMS.tsv`, `CENSUS.csv`).
 
@@ -47,7 +47,7 @@ On 2026-09-26, every step above ran end to end on a small sample, in a Linux she
 
 Not tested: the full collections, which take days.
 
-Not rebuildable from here: the step that assembled the study's raw24 for the 740 atlas venues (its script has not been found); `raw24/flatten_to_raw24.py` does the same job for any list, and the study's copy is on the Drive (`raw24/LINK.md`).
+Not rebuildable from here: the step that assembled the study's raw24 for the 740 atlas venues (its script has not been found); `raw24/flatten_to_raw24.py` does the same job for any list, and the study's copy is not public (`raw24/LINK.md`).
 
 ## Terms
 

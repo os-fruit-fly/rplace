@@ -3,8 +3,7 @@
 
     python3 pixels-hourly/build_pixels.py                      (from data/; about 1 minute)
     python3 pixels-hourly/build_pixels.py --lists-from-raw24 raw24/
-    python3 pixels-hourly/build_pixels.py --activity pixels-hourly/ROOMS.tsv --pre pixels-hourly/_pre_activity.jsonl
-        (_pre_activity.jsonl: the Drive's _pre_progress.jsonl with pre-additions.jsonl appended; README)
+    python3 pixels-hourly/build_pixels.py --lists-from-raw24 raw24/ --activity pixels-hourly/ROOMS.tsv
 
 One row per community per hour, hours -16 to 72 from the canvas opening (2017-03-31 16:00 UTC):
     sub, hour_since_open, px_in_region_any, px_by_pre_members, px_by_window_members
@@ -25,7 +24,7 @@ INPUTS
     --atlas   atlas/atlas_2017.json         the run's atlas
     --pre     pixels-hourly/_pre_progress.jsonl   one line per community: "sub" and "authors"
     --win     pixels-hourly/_win_progress.jsonl   (names) or "hashes"; the study's two lists are
-                                                  on its Drive (pixels-hourly/LINK.md)
+                                                  not public (pixels-hourly/LINK.md)
 The communities are those in the --pre list: the 763 of the census the lists were made for.
 
 --lists-from-raw24 DIR first writes both lists from raw24 (DIR/<sub>.jsonl), hashes only, with the
@@ -192,7 +191,7 @@ def main(argv=None):
         cp = os.path.join(HERE, "CENSUS.csv")
         census = [r["sub"] for r in csv.DictReader(open(cp, encoding="utf-8"))]
     else:
-        sys.exit("no member lists: download them (pixels-hourly/LINK.md) or pass --lists-from-raw24 raw24/")
+        sys.exit("no member lists: the study's are not public (pixels-hourly/LINK.md); pass --lists-from-raw24 raw24/")
     if a.lists_from_raw24:
         a.pre, a.win = a.pre + ".raw24", a.win + ".raw24"
         lists_from_raw24(a.lists_from_raw24, census, a.pre, a.win)

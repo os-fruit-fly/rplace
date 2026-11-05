@@ -18,7 +18,7 @@ The aggregator develops the account, and the authors remain responsible for its 
 
 You can open this handler directly with checked coded inputs; no new collection is needed. Use the agent reading key, under Documents for this handler, to list the inputs and boundaries before launch. It covers the untouched starting folder, the original community coders for D2, the Field package or the recorded decision for C4, and the proposal material for E2.
 
-The 14 shared community checkpoint pairs do not include every original community coder of the 705-community frame. Missing community coders limit the later returns, even when the earlier aggregator stages can run. The handler requests the missing packages, records the last stage that can run, and never replaces a saved community coder with a fresh agent.
+The 12 shared community checkpoint pairs do not include every original community coder of the 705-community frame. Missing community coders limit the later returns, even when the earlier aggregator stages can run. The handler requests the missing packages, records the last stage that can run, and never replaces a saved community coder with a fresh agent.
 
 ## Return the model to communities
 

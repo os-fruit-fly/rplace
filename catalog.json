@@ -13657,6 +13657,29 @@
    }
   },
   {
+   "id": "community--FloydVsVoid--R6",
+   "kind": "community",
+   "entity": "FloydVsVoid",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-FloydVsVoid-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-R6",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
    "id": "community--cubers--coding-close",
    "kind": "community",
    "entity": "cubers",
@@ -13676,6 +13699,29 @@
     "archive": "community-cubers-coding-close",
     "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
     "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--cubers--R6",
+   "kind": "community",
+   "entity": "cubers",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-cubers-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -13703,6 +13749,29 @@
    }
   },
   {
+   "id": "community--gorillaz--R6",
+   "kind": "community",
+   "entity": "gorillaz",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-gorillaz-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-R6",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
    "id": "community--warframe--coding-close",
    "kind": "community",
    "entity": "warframe",
@@ -13726,6 +13795,29 @@
    }
   },
   {
+   "id": "community--warframe--R6",
+   "kind": "community",
+   "entity": "warframe",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-warframe-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-R6",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
    "id": "community--dallasstars--coding-close",
    "kind": "community",
    "entity": "dallasstars",
@@ -13745,6 +13837,29 @@
     "archive": "community-dallasstars-coding-close",
     "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
     "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--dallasstars--R6",
+   "kind": "community",
+   "entity": "dallasstars",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-dallasstars-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -13814,6 +13929,29 @@
     "archive": "community-GreyBlob-coding-close",
     "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
     "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--GreyBlob--R6",
+   "kind": "community",
+   "entity": "GreyBlob",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-GreyBlob-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   }

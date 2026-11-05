@@ -22,7 +22,7 @@ The words this site uses, as the paper and the instrument's contract define them
 
 **Field agent.** A separate agent that reads the central r/place subreddit. At stage C4 it supplied an interim reading; its own analysis is unfinished.
 
-**Handler.** Opens and closes the stages in order and checks what they deliver. The agents it runs do the interpretation.
+**Handler.** Opens and closes the stages in order and checks what they deliver. The agents it runs do the analysis; the interpretation stays with the authors.
 
 ## Layers of coding
 

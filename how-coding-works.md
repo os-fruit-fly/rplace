@@ -37,7 +37,7 @@ A script checks every return, and the same session repairs what fails. Two separ
 
 ## After the coding: the local model (R6)
 
-The local model is a second branch from the coding close, and the aggregator did not use it. Admissions stopped on 28 October; by 29 October, 173 communities had finished it and the other 532 had not run it. The site shares 14 of the 173. For each, a copy of the closed community coder resumed its own session under [the local model's contract](sources/room-model.html), fifth version of 7 October 2026, and [a pilot amendment](sources/pilot-amendment.html) authorized on 11 October. r/Goodboye, the first, ran without the amendment.
+The local model is a second branch from the coding close, and the aggregator did not use it. Admissions stopped on 28 October; by 29 October, 173 communities had finished it and the other 532 had not run it. The site shares the local models of 12 communities. For each, a copy of the closed community coder resumed its own session under [the local model's contract](sources/room-model.html), fifth version of 7 October 2026, and [a pilot amendment](sources/pilot-amendment.html) authorized on 11 October. r/Goodboye, the first, ran without the amendment.
 
 The contract tells the coder that coding is closed and that no code, theme or coding file may change. It asks for the community's own model in the manner of Gioia, Corley and Hamilton (2013): themes above the coder's themes, aggregate dimensions where the material carries them, a coding structure and a dynamic model. The coder then sets the model against the literature, writes an account, grades its confidence and closes. Each of its six stages follows a stage of the aggregator; R6, the last, names the checkpoint.
 

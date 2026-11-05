@@ -18,6 +18,7 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 
 - [One community coder per community, reading only its own record](how-coding-works.html): Proposal, the instrument; Appendix 5.2 and 5.4.
 - [115,388 first-order codes and 7,844 second-order themes](results/population-coding.html): Appendix 5.2.
+- [Figure 1: first-order codes per hour, by aggregate dimension](results/population-coding.html#when-the-codes-fall): Appendix 5.2, Figure 1.
 - [Every cited quotation resolved against the source record](how-coding-works.html#the-steps): Proposal, the three levels of checks; Appendix 5.4. The link gives the procedure; no census-wide result is on the site. The E1 audit's check of a seeded sample of 80 communities found all 14,587 code quotations in their items, and 1,051 of 1,599 longer quotations in the case accounts verbatim.
 - [Absent, not needed, unobserved or not testable](sources/adaptations.html#2-operations): Appendix 5.4. The coders' instructions for the return: only an observed absence or an element not needed counts against the model.
 
@@ -25,8 +26,8 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 
 - [197 third-order themes, 28 fourth-order themes and eight aggregate dimensions](results/population-aggregation.html#ladder): Appendix 5.2. The coding structure, from members' words to the dimensions.
 - [Table 1: the eight dimensions and related literature](results/population-aggregation.html#eight-aggregate-dimensions): Appendix 5.2, Table 1.
-- [Figure 1: the population model across the eight dimensions](results/population-aggregation.html#model): Appendix 5.2, Figure 1.
-- [Decided order: 46 of the 705 communities](results/population-aggregation.html#decided-order): Appendix 2. What the 46 counts, the stricter 44, and about 119 at the return.
+- [Figure 2: the population model across the eight dimensions](results/population-aggregation.html#model): Appendix 5.2, Figure 2.
+- [Decided order: 44 of the 705 communities while coding, about 119 at the return](results/population-aggregation.html#decided-order): Appendix 2. Where each count comes from.
 
 ## The return
 
@@ -38,9 +39,9 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 
 ## Organizational forms
 
-- [Figure 2: six forms, by Ward clustering of the 558 communities with five or more selected changes](results/population-forms.html#forms): Appendix 5.3, Figure 2.
-- [Figure 3: each form's selected changes by dimension, against the 684 communities with changes](results/population-forms.html#figure-3): Appendix 5.3, Figure 3.
-- [Form C: 40.3% of selected changes on coordination without command, against 27.6%](results/population-forms.html#figure-3): Appendix 5.3. In the caption of Figure 3.
+- [Figure 3: six forms, by Ward clustering of the 558 communities with five or more selected changes](results/population-forms.html#forms): Appendix 5.3, Figure 3.
+- [Figure 4: each form's selected changes by dimension, against the 684 communities with changes](results/population-forms.html#figure-3): Appendix 5.3, Figure 4.
+- [Form C: 40.3% of selected changes on coordination without command, against 27.6%](results/population-forms.html#figure-3): Appendix 5.3. In the caption of Figure 4.
 
 ## The instrument and its checks
 
@@ -48,7 +49,7 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 - [Completed checks and planned comparisons](guides/study.html#how-the-model-is-checked): Proposal, the three levels of checks; Appendix 5.4.
 - [The r/place subreddit, left out of the population model](results/population-record.html#the-rplace-subreddit): Proposal, the three levels of checks.
 - [Checkpoint interviews: Chat Locally and Chat Online](interviews.html): Proposal, the repository; Appendix 5.5. Choose a stage, then Chat Locally; Chat Online is not connected yet.
-- [18 aggregator checkpoints, one at the close of each stage, and 18 community checkpoints from 12 communities](launch-commands.html): Appendix 5.5. One archive and command for each of the 36. The repository holds hundreds of saved checkpoints, among them intermediate pauses and the communities' D2 and D3 returns: [the checkpoint list](checkpoint-index.html) gives 314 from the aggregator and 64 from 21 communities. The other communities' checkpoints, about 2,000, exist offline: they were saved before the repository existed, and are too many for anyone to read.
+- [18 aggregator checkpoints, one at the close of each stage, and 24 community checkpoints from 12 communities](launch-commands.html): Appendix 5.5. One archive and command for each of the 42. The repository holds hundreds of saved checkpoints, among them intermediate pauses and the communities' D2 and D3 returns: [the checkpoint list](checkpoint-index.html) gives 314 from the aggregator and 70 from 21 communities. The other communities' checkpoints, about 2,000, exist offline: they were saved before the repository existed, and are too many for anyone to read.
 
 ## Not on the site yet
 

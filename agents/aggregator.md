@@ -42,7 +42,7 @@ The reading copies resolve links; exact canonical Markdown remains in `sources/`
 
 Run the chosen handler's build, acceptance and lifecycle checks. Record their versions and outcomes before launching A1. Verify original-lead availability early, even though D2 comes later. The Codex route provides `lead-status` and `register-lead`; use the selected controller's documented registration rules.
 
-Deliver stage cards and startup inputs in order. The aggregator interprets; the handler checks deliverables and records the close. Keep the head, decisions and gaps on disk. Use only the prescribed checkpoint boundaries.
+Deliver stage cards and startup inputs in order. The aggregator does the analysis; the handler checks deliverables and records the close. Keep the head, decisions and gaps on disk. Use only the prescribed checkpoint boundaries.
 
 ## Stop when
 

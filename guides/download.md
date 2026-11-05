@@ -1,6 +1,6 @@
 # 1. Open the collection handler
 
-The data scripts and their READMEs: [data/](https://github.com/os-fruit-fly/rplace/tree/main/data/) in this site's repository.
+The data scripts and their READMEs: [data/](https://github.com/os-fruit-fly/rplace/tree/main/data) in this site's repository.
 
 Open a new Codex or Claude chat that can work with files and a shell. Name it **Collection handler**. Use an empty working folder for this study. A chat without file or shell access cannot run the collection scripts.
 

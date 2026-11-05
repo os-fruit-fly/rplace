@@ -5,6 +5,8 @@ title: "Start from raw data"
 
 # Start from raw data
 
+The data scripts and their READMEs: [data/](https://github.com/os-fruit-fly/rplace/tree/main/data/) in this site's repository.
+
 Target length: under 650 words. Reading key for the Collection handler.
 
 ## Start here

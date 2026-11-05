@@ -1,5 +1,7 @@
 # 1. Open the collection handler
 
+The data scripts and their READMEs: [data/](https://github.com/os-fruit-fly/rplace/tree/main/data/) in this site's repository.
+
 Open a new Codex or Claude chat that can work with files and a shell. Name it **Collection handler**. Use an empty working folder for this study. A chat without file or shell access cannot run the collection scripts.
 
 [Download the collection handler brief](../agents/collection.md), attach it to the chat, then paste this prompt:

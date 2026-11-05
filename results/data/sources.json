@@ -186,5 +186,9 @@
   "dimension-model-form-F.svg": {
     "sha256": "9655458c64c429c343b0ef86d418c88ced685606ad92462e909ca108de68aadb",
     "bytes": 24396
+  },
+  "dimension-model-final.svg": {
+    "sha256": "0fab33b05442143757cdb22e876fc49e41c4c1879c6cff814f8c7f35920801b4",
+    "bytes": 24143
   }
 }

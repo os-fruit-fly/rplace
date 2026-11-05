@@ -27,10 +27,10 @@
     "title": "The population model as instantiated in PlaceNL"
   },
   "population-1.svg": {
-    "source_svg_sha256": "b6ad9768346e3e846d061ac7a8e93c173f223d112993fe7a96f58c1a696229b6",
-    "reading_svg_sha256": "8d0686c125adcfd7ede490a83179aa09bc406f8e039bd45c4a898595feea273b",
+    "source_svg_sha256": "c7fe4b6ae3156ce25c13f18c326748753a9d0d13284b6fae1f7ff961020bd6d8",
+    "reading_svg_sha256": "97935160459d65caa173a6039844411973cd728550db05e90044751892ec6b05",
     "text_labels": 47,
-    "geometric_elements": 38,
+    "geometric_elements": 31,
     "geometry_and_labels_unchanged": true,
     "font": "Archivo",
     "title": "The population model across eight dimensions"
@@ -151,60 +151,6 @@
     "geometry_and_labels_unchanged": true,
     "font": "Archivo",
     "title": "Grouping profile: Coordination Maintenance Order Identity Imprinting Host framing Critical mass Contention +169% \u221250% 0 +50% F Moving for the spot 56 rooms"
-  },
-  "population-15.svg": {
-    "source_svg_sha256": "e184c32fe316bacc6d8e896c7ee60cc96325654edfac0b4c3c33b15dbb496ab1",
-    "reading_svg_sha256": "10552c477e3565decaa9cbc38d0cd039231cae17794cb601978c77eeac253693",
-    "text_labels": 136,
-    "geometric_elements": 71,
-    "geometry_and_labels_unchanged": true,
-    "font": "Archivo",
-    "title": "Population model, form A"
-  },
-  "population-16.svg": {
-    "source_svg_sha256": "a18877df63e507f29f5dba5916bc4e46c98c61e9f377b59f339e140740d8a87e",
-    "reading_svg_sha256": "98f16bb1096abf45e7505ebc17472d8df1586e78754c27b48c16ce8f0b6613d8",
-    "text_labels": 112,
-    "geometric_elements": 70,
-    "geometry_and_labels_unchanged": true,
-    "font": "Archivo",
-    "title": "Population model, form B"
-  },
-  "population-17.svg": {
-    "source_svg_sha256": "a5dc34ac203a5a358c3551a73d8ef5ebf623e563a60552056136055b9d3e2bfa",
-    "reading_svg_sha256": "829bbd64dfc66751318a626c254934af707310659cae4618ebec9549f3ac4202",
-    "text_labels": 128,
-    "geometric_elements": 70,
-    "geometry_and_labels_unchanged": true,
-    "font": "Archivo",
-    "title": "Population model, form C"
-  },
-  "population-18.svg": {
-    "source_svg_sha256": "4310d4f7cb477db502e4bd252605c2d7977d74c0f46c2963594282b2fe301c92",
-    "reading_svg_sha256": "bcfd7a711bd6ec5a76871fe1a635fda9ef58a76b83a4badbeddba2c97ec85e98",
-    "text_labels": 149,
-    "geometric_elements": 69,
-    "geometry_and_labels_unchanged": true,
-    "font": "Archivo",
-    "title": "Population model, form D"
-  },
-  "population-19.svg": {
-    "source_svg_sha256": "9e4982e194369da2c62694e8cf286859dddaa2818d3448b16ea184947c0c6875",
-    "reading_svg_sha256": "54f2e431f906fb0f1a6052cbd38a17e19078045294f1170f2f445bd420edb189",
-    "text_labels": 123,
-    "geometric_elements": 69,
-    "geometry_and_labels_unchanged": true,
-    "font": "Archivo",
-    "title": "Population model, form E"
-  },
-  "population-20.svg": {
-    "source_svg_sha256": "69d5bb9e416aa4b5271e779cf01e82bc1d514d09b979ecbd124cf7c492cf15b1",
-    "reading_svg_sha256": "c0982d4b576cfa85b8a74e63fbc72422241e20a1b66c6de3aede96eefc7213a4",
-    "text_labels": 140,
-    "geometric_elements": 70,
-    "geometry_and_labels_unchanged": true,
-    "font": "Archivo",
-    "title": "Population model, form F"
   },
   "population-form-A-dimensions.svg": {
     "source_svg_sha256": "2f5625dc0ccce5489f7cd2d9066f899178c098e43b65185a79a9b47d15746d5f",

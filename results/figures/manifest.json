@@ -205,5 +205,59 @@
     "geometry_and_labels_unchanged": true,
     "font": "Archivo",
     "title": "Population model, form F"
+  },
+  "population-form-A-dimensions.svg": {
+    "source_svg_sha256": "2f5625dc0ccce5489f7cd2d9066f899178c098e43b65185a79a9b47d15746d5f",
+    "reading_svg_sha256": "6c15615912fb484668aa35d96a22193cda50270de88832cf2b52987584651cc0",
+    "text_labels": 47,
+    "geometric_elements": 31,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Form A across the eight dimensions"
+  },
+  "population-form-B-dimensions.svg": {
+    "source_svg_sha256": "bd7a3244e4e093c54415c7b871435ecaf9e01bfd8a5fb2f1eedb47559f3605b7",
+    "reading_svg_sha256": "d8cb3b23793cf6f1237859582cea9139c58e2892e093bf04fcca4b2b71d1f847",
+    "text_labels": 47,
+    "geometric_elements": 31,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Form B across the eight dimensions"
+  },
+  "population-form-C-dimensions.svg": {
+    "source_svg_sha256": "c87c16bbc5e06a7c78da3e8c09e27895032c6913c28d7e2a4a83b224b45df6af",
+    "reading_svg_sha256": "f3e7e2cfbe198ca91663ca864b12ee0417f00cdb5c287af3e5cac28313f33959",
+    "text_labels": 47,
+    "geometric_elements": 31,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Form C across the eight dimensions"
+  },
+  "population-form-D-dimensions.svg": {
+    "source_svg_sha256": "0bc8581e1d79736c819700d64b0f325baf3de80fd78fa3c70345162d046c92d5",
+    "reading_svg_sha256": "d50771a8883b8e376686c0ead80c0cbd1940c84e54fbb8b0ec3ff0b7e37fcde9",
+    "text_labels": 50,
+    "geometric_elements": 34,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Form D across the eight dimensions"
+  },
+  "population-form-E-dimensions.svg": {
+    "source_svg_sha256": "15c09cc92e1ba473a2ebd323786539581020b37246933ca67f69451b651e31eb",
+    "reading_svg_sha256": "b4364ac9fc2fa1289a4de44b96169a9bcb789d1b659decf7e4615e63bed0c6bb",
+    "text_labels": 47,
+    "geometric_elements": 31,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Form E across the eight dimensions"
+  },
+  "population-form-F-dimensions.svg": {
+    "source_svg_sha256": "9655458c64c429c343b0ef86d418c88ced685606ad92462e909ca108de68aadb",
+    "reading_svg_sha256": "77741ac287ea4d2f980d55b5ac6f8dbe329fb025d03171ef1d85277cfe2af54b",
+    "text_labels": 47,
+    "geometric_elements": 31,
+    "geometry_and_labels_unchanged": true,
+    "font": "Archivo",
+    "title": "Form F across the eight dimensions"
   }
 }

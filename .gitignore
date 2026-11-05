@@ -1,0 +1,25 @@
+# data/: the downloaded and built stores stay out of git; the scripts, READMEs, LINKs and the atlas are in
+data/pixels/*.xz
+data/pixels/*.png
+data/pixels/*.csv
+data/pixels/*.part
+data/pixels/reddit-place-username-hashes/
+data/users/*/
+!data/users/
+data/users/worklist.csv.gz
+data/users/_users.csv
+data/venues-placers/*.jsonl
+data/venues-placers/*.manifest.json
+data/venues-placers/_shards/
+data/raw24/*.jsonl
+data/raw24/*.manifest.json
+data/raw24/_collected/
+data/raw24/venues.txt
+data/pixels-per-artwork/_work/
+data/pixels-per-artwork/inputs/
+data/pixels-per-artwork/data/
+data/pixels-hourly/_*.jsonl*
+data/pixels-hourly/pixels.csv
+data/atlas/*.json
+
+!data/atlas/derived_regions.json

@@ -6,6 +6,7 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 
 ## The record
 
+- [Table 1: the four characteristics of a model organism in the fruit fly, chess, ImageNet and r/place](organism.html#three-examples-and-rplace): Appendix, introduction, Table 1.
 - [16,559,897 pixel changes by 1,166,924 users](data.html#pixel-changes): Appendix 5.1; the proposal's abstract gives 16.6 million. Reddit's log of every pixel change, counted.
 - [7.5 million posts and comments across 2,796 subreddits](results/population-record.html): Appendix 5.1; Proposal, abstract. The wider dataset, before the census.
 - [777 subreddits credited with 1,236 of the 1,473 artworks](results/population-record.html#census): Appendix 5.1; Proposal, note 1. The Place Atlas, where the census starts.
@@ -25,7 +26,7 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 ## The population model
 
 - [197 third-order themes, 28 fourth-order themes and eight aggregate dimensions](results/population-aggregation.html#ladder): Appendix 5.2. The coding structure, from members' words to the dimensions.
-- [Table 1: the eight dimensions and related literature](results/population-aggregation.html#eight-aggregate-dimensions): Appendix 5.2, Table 1.
+- [Table 2: the eight dimensions and related literature](results/population-aggregation.html#eight-aggregate-dimensions): Appendix 5.2, Table 2.
 - [Figure 2: the population model across the eight dimensions](results/population-aggregation.html#model): Appendix 5.2, Figure 2.
 - [Decided order: 44 of the 705 communities while coding, about 119 at the return](results/population-aggregation.html#decided-order): Appendix 2. Where each count comes from.
 

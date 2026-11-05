@@ -14,15 +14,16 @@ We assess four characteristics of model organisms: material accessibility, repre
 
 ## Three examples and r/place
 
-Biology is not the only field to work this way. Chess became that environment for the psychology of expertise, and ImageNet2012 a common benchmark for computer vision.
+Model organisms have been foundational to the accumulation of knowledge in genetics, and objects built the same way have played that part in other fields: chess in cognitive psychology (Simon & Chase, 1973) and ImageNet in machine learning (Deng et al., 2009). A model organism lets a field accumulate knowledge in a way that other organisms, so-called experimental organisms, do not (Leonelli & Ankeny, 2013). Table 1 of the Technical Appendix compares them with r/place:
 
 On a small screen, scroll the table sideways to compare fields.
 
-| Characteristic | Fruit fly: biology | Chess: cognitive psychology | ImageNet2012: computer vision | r/place: organization science |
+| Characteristic | Fruit fly | Chess | ImageNet | r/place |
 |---|---|---|---|---|
-| **Material accessibility** | Standard fly strains that laboratories obtain, breed and examine. | A game with explicit rules, recorded positions and recorded games. | A defined collection of images in 1,000 categories, open for download. | Public records of the 72-hour event: 16.6 million pixel changes and 7.5 million posts and comments. LLM agents reduce the cost of reading them. |
+| **Field** | Genetics | Cognitive psychology | Machine learning | Organization science |
+| **Material accessibility** | Standard fly strains that laboratories obtain, breed and examine. | A game with explicit rules, recorded positions and recorded games. | A defined collection of labeled images in thousands of categories, open for download. | Public records of the 72-hour event: 16.6 million pixel changes and 7.5 million posts and comments. LLM agents reduce the cost of reading them. |
 | **Representational scope** | Genetics, development, physiology and behavior in the same organism. | Perception, memory, learning and search behind expertise in one task. | Classification and localization as related parts of object recognition. | Coordination, maintenance, contention and alliances in the same communities: eight dimensions and six candidate organizational forms. |
-| **Standardization** | Strains raised under the same laboratory conditions. | Fixed rules and measurable differences in skill. | Agreed labels, data splits and evaluation rules. | The same rules for all: one pixel every five minutes, and anyone could overwrite it. Coder contracts are held constant within a run. |
+| **Standardization** | Strains raised under the same laboratory conditions. | Fixed rules and measurable differences in skill. | Agreed labels, data splits and evaluation rules. | The same rules for all: one pixel every five minutes, and anyone could overwrite it. Each community is coded under a single contract. |
 | **Research community** | Stock centers and databases such as FlyBase connect strains and findings. | Published position tasks and game records let later work revisit findings. | Development kits and a public challenge put new methods to common tests. | Download scripts, coded records, contracts and agent checkpoints are shared, so others can rerun or extend the analysis. |
 
 ## Material accessibility
@@ -33,13 +34,13 @@ The record has limits. Each community's life is longer than the event: groups ex
 
 ## Representational scope
 
-The model provides a basis for comparison with open-source communities and self-managing firms (O'Mahony & Ferraro, 2007; Lee & Edmondson, 2017). Few communities show a clear signal of authority or order, such as a leader, a vote, an oath, a sanction or a division of work. The coders found one in 44 of the 705 communities while coding, and in about 119 when the returned model asked them to check for it ([how each count is made](results/population-aggregation.html#decided-order)). These indicators describe different arrangements and do not form a single measure of formal authority. Extending the model to hierarchical firms requires further evidence. Within this scope, eight dimensions relate aspects of organizing in the same communities ([the population model](results/population.html)), and six candidate organizational forms describe recurring differences among them ([the forms](results/population-forms.html)).
+The model provides a basis for comparison with open-source communities and self-managing firms (O'Mahony & Ferraro, 2007; Lee & Edmondson, 2017). Few communities show a clear signal of authority, such as a leader, a vote, an oath, a sanction or a division of work. The coders found one in 44 of the 705 communities while coding, and in about 119 when the returned model asked the community coders to check explicitly for it ([how each count is made](results/population-aggregation.html#decided-order)). These indicators describe different arrangements and do not form a single measure of formal authority. Extending the model to hierarchical firms requires further evidence. Within this scope, eight dimensions relate aspects of organizing in the same communities ([the population model](results/population.html)), and six candidate organizational forms describe recurring differences among them ([the forms](results/population-forms.html)).
 
 ## Standardization
 
 All communities worked under the same pixel-placement rules: each user could change one pixel's color every five minutes, and anyone could overwrite it (Simpson et al., 2017). On a canvas of 1,000 by 1,000 pixels, a design therefore depended on many people placing pixels and responding to changes, and neighbors, agreements and competing designs were part of the task.
 
-Communities nevertheless differed in their histories and circumstances: their numbers of participants, their aims and their links to other groups. We held the coders' contract constant within a run ([versions](versions.html)). Later runs can change a specified component, such as the literature, community coder or aggregator, and compare the results with the baseline. Repeated coding of 300 communities will assess variation between LLMs, and we plan a run with an open-weight model to lower the replication cost of the analysis.
+Communities nevertheless differed in their histories and circumstances: their numbers of participants, their aims and their links to other groups. Each community was coded under a single contract ([versions](versions.html)). Later runs can change a specified component, such as the literature, community coder or aggregator, and compare the results with the baseline. Repeated coding of 298 communities will assess variation between LLMs, and we plan a run with an open-weight model to lower the replication cost of the analysis.
 
 ## Research community
 
@@ -57,7 +58,7 @@ As with biology's understanding of the fruit fly, our understanding of what happ
 
 - Fruit fly: [Ankeny and Leonelli's analysis](https://doi.org/10.1016/j.shpsa.2010.11.039) and the [Bloomington stock center](https://bdsc.indiana.edu/about/index.html).
 - Chess: [Simon and Chase, Skill in chess (1973)](https://iiif.library.cmu.edu/file/Simon_box00066_fld05052_bdl0001_doc0001/Simon_box00066_fld05052_bdl0001_doc0001.pdf).
-- ImageNet2012: [the original tasks and evaluation rules](https://ftp.image-net.org/challenges/LSVRC/2012/index.php).
+- ImageNet: [the 2012 challenge's tasks and evaluation rules](https://ftp.image-net.org/challenges/LSVRC/2012/index.php).
 - r/place: [the data collection](sources/data-README.html), [the study and its limits](guides/study.html), and [one claim traced to its evidence](records/example-PlaceNL.html).
 
 ## References
@@ -75,6 +76,8 @@ Cronin, M. A., Stouten, J., & van Knippenberg, D. (2021). The theory crisis in m
 Daft, R. L., & Lewin, A. Y. (1990). Can organization studies begin to break out of the normal science straitjacket? An editorial essay. *Organization Science*, 1(1), 1–9.
 
 Davis, G. F. (2010). Do theories of organizations progress? *Organizational Research Methods*, 13(4), 690–709.
+
+Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., & Fei-Fei, L. (2009). ImageNet: A large-scale hierarchical image database. In *2009 IEEE Conference on Computer Vision and Pattern Recognition* (pp. 248–255). IEEE.
 
 Dong, J., March, J. G., & Workiewicz, M. (2017). On organizing: An interview with James G. March. *Journal of Organization Design*, 6, 14.
 

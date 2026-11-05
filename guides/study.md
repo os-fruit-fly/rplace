@@ -24,7 +24,7 @@ An account can read well and still misread the record. The paper groups its chec
 
 ### Coding: does the account fit its evidence?
 
-Scripts check cited quotations against source items. A resolved quotation shows that the text exists; whether the reading of it is sound is a separate question. The paper also reports paired coding of 300 communities with two models. This site does not yet present a scored comparison of those codings, and the count is no estimate of reliability.
+Scripts check cited quotations against source items. A resolved quotation shows that the text exists; whether the reading of it is sound is a separate question. The paper also reports paired coding of 298 communities with two models. This site does not yet present a scored comparison of those codings, and the count is no estimate of reliability.
 
 ### Composition: do claims hold across cases?
 

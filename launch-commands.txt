@@ -3,105 +3,111 @@
 
 ## The aggregator
 # A1.A1b-55, reading block (aggregator--claude-v43-1--C4-field--A1.A1b-55)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-A1b-55
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-A1b-55
 
 # B1.B1e, scheme standing (aggregator--claude-v43-1--C4-field--B1.B1e)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B1e
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B1e
 
 # B2.B2d, gold and stability check (aggregator--claude-v43-1--C4-field--B2.B2d)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B2d
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B2d
 
 # B3.B3b, check (aggregator--claude-v43-1--C4-field--B3.B3b)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B3b
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B3b
 
 # B4.B4c, check and final placements (aggregator--claude-v43-1--C4-field--B4.B4c)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B4c
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B4c
 
 # C1.C1a-11, pass (aggregator--claude-v43-1--C4-field--C1.C1a-11)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C1a-11
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C1a-11
 
 # C2.C2d-02, closing pass (aggregator--claude-v43-1--C4-field--C2.C2d-02)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C2d-02
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C2d-02
 
 # C3.C3c, the four problems (aggregator--claude-v43-1--C4-field--C3.C3c)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C3c
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C3c
 
 # C4.C4a, the field (aggregator--claude-v43-1--C4-field--C4.C4a)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C4a
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C4a
 
 # C5.C5d-p2, table, model and figure (aggregator--claude-v43-1--C4-field--C5.C5d-p2)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C5d-p2
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C5d-p2
 
 # D1.D1a, build (aggregator--claude-v43-1--C4-field--D1.D1a)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D1a
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D1a
 
 # D2.D2a, check (aggregator--claude-v43-1--C4-field--D2.D2a)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D2a
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D2a
 
 # D3.D3c, D3c (aggregator--claude-v43-1--C4-field--D3.D3c)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D3c
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D3c
 
 # D4.D4a-08, cut (aggregator--claude-v43-1--C4-field--D4.D4a-08)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D4a-08
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D4a-08
 
 # D5.D5a-41, branch (aggregator--claude-v43-1--C4-field--D5.D5a-41)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D5a-41
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D5a-41
 
 # D6.D6a-18, dimension (aggregator--claude-v43-1--C4-field--D6.D6a-18)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D6a-18
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D6a-18
 
 # E1.E1e, experience (aggregator--claude-v43-1--C4-field--E1.E1e)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-E1e
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-E1e
 
 # E2.E2b, next instrument (aggregator--claude-v43-1--C4-field--E2.E2b)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-E2b
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-E2b
 
 ## Community coders
 # r/PlaceNL, 5.6 case-lead close (community--PlaceNL--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-PlaceNL-coding-close
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-PlaceNL-coding-close
 
 # r/PlaceNL, 6.1 local model, R6 (community--PlaceNL--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-PlaceNL-R6
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-PlaceNL-R6
 
 # r/thenetherlands, 5.6 case-lead close (community--thenetherlands--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-thenetherlands-coding-close
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-thenetherlands-coding-close
 
 # r/thenetherlands, 6.1 local model, R6 (community--thenetherlands--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-thenetherlands-R6
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-thenetherlands-R6
 
 # r/cirkeltrek, 5.6 case-lead close (community--cirkeltrek--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-cirkeltrek-coding-close
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cirkeltrek-coding-close
 
 # r/cirkeltrek, 6.1 local model, R6 (community--cirkeltrek--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-cirkeltrek-R6
-
-# r/sweden, 5.6 case-lead close (community--sweden--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-sweden-coding-close
-
-# r/sweden, 6.1 local model, R6 (community--sweden--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-sweden-R6
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cirkeltrek-R6
 
 # r/greece, 5.6 case-lead close (community--greece--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-greece-coding-close
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-greece-coding-close
 
 # r/greece, 6.1 local model, R6 (community--greece--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-greece-R6
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-greece-R6
 
 # r/armenia, 5.6 case-lead close (community--armenia--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-armenia-coding-close
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-armenia-coding-close
 
 # r/armenia, 6.1 local model, R6 (community--armenia--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-armenia-R6
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-armenia-R6
 
-# r/blackmirror, 5.6 case-lead close (community--blackmirror--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-blackmirror-coding-close
+# r/FloydVsVoid, 5.6 case-lead close (community--FloydVsVoid--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-coding-close
 
-# r/blackmirror, 6.1 local model, R6 (community--blackmirror--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-blackmirror-R6
+# r/cubers, 5.6 case-lead close (community--cubers--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-coding-close
 
-# r/Goodboye, 5.6 case-lead close (community--Goodboye--coding-close)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-Goodboye-coding-close
+# r/gorillaz, 5.6 case-lead close (community--gorillaz--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-coding-close
 
-# r/Goodboye, 6.1 local model, R6 (community--Goodboye--R6)
-curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-Goodboye-R6
+# r/warframe, 5.6 case-lead close (community--warframe--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-coding-close
+
+# r/dallasstars, 5.6 case-lead close (community--dallasstars--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-coding-close
+
+# r/ik_ihe, 5.6 case-lead close (community--ik_ihe--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-coding-close
+
+# r/ik_ihe, 6.1 local model, R6 (community--ik_ihe--R6)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-R6
+
+# r/GreyBlob, 5.6 case-lead close (community--GreyBlob--coding-close)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-coding-close
 

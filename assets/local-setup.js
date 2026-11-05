@@ -37,16 +37,16 @@
   }
   /* The review copy: one archive per checkpoint, downloaded, checked, unpacked and resumed by get-checkpoint.sh. */
   function renderArchive(panel,c,r){
-    if(!/^[A-Za-z0-9][A-Za-z0-9_.-]*$/.test(r.archive)||!['codex','claude'].includes(c.backend)||r.command!=='curl -fsSL '+r.script_url+' | bash -s '+r.archive)throw Error('This checkpoint needs a manually checked launch command.');
+    if(!/^[A-Za-z0-9][A-Za-z0-9_.-]*$/.test(r.archive)||!['codex','claude'].includes(c.backend)||r.command!=='curl -fL '+r.script_url+' -o get-checkpoint.sh && bash get-checkpoint.sh '+r.archive)throw Error('This checkpoint needs a manually checked launch command.');
     const cli=c.backend==='claude'?'Claude Code':'Codex';
-    panel.append(node('p','Paste this command into Terminal on your Mac or Linux computer. It downloads this checkpoint\'s archive, checks its SHA-256, unpacks it in ~/rplace-checkpoints and runs its resume.sh, which checks every file and opens a private interview page on your computer.'));
+    panel.append(node('p','Paste this command into Terminal on your Mac or Linux computer. It downloads the release helper, then this checkpoint\'s archive, which it checks, unpacks in ~/rplace-checkpoints and opens as a private interview page on your computer. Large archives come in parts, joined automatically.'));
     command(panel,r.command);
     const version=(c.cli_version||'').replace(/\s*\(Claude Code\)/,'').replace(/^codex-cli\s+/,'');
-    panel.append(node('p','Use Python 3.11 or newer and '+cli+' '+version+'. Allow about three times the archive\'s size in free disk space. No model turn begins until you ask a question; questions use your own account.'));
+    panel.append(node('p','Use Python 3.11 or newer and '+cli+(version?' '+version:'')+'. Allow about three times the archive\'s size in free disk space. No model turn begins until you ask a question; questions use your own account.'));
     panel.append(node('h4','Or follow these steps'));
     const steps=node('ol');steps.className='local-setup-steps';
-    const get=node('li');const rel=node('a','Download the archive '+r.archive);rel.href=r.release_url;get.append(rel,node('p','From the review release. A large archive comes in numbered parts; join them in order with cat.'));
-    const open=node('li');open.append(node('p','Unpack it and run its resume script.'));command(open,'tar -xf '+r.archive+'.tar && ./'+r.archive+'/resume.sh','Copy the two steps');
+    const get=node('li');const rel=node('a','Download get-checkpoint.sh');rel.href=r.script_url;get.append(rel,node('p','The release helper; read it before running it if you like. The release also lists every archive and its checksum.'));
+    const open=node('li');open.append(node('p','Run it with this checkpoint\'s archive name.'));command(open,'bash get-checkpoint.sh '+r.archive,'Copy the step');
     steps.append(get,open);panel.append(steps);
     panel.append(link('Full setup instructions','guides/interviews.html#open-an-interview-on-your-computer'));
   }

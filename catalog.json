@@ -1772,8 +1772,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-A1b-55",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-A1b-55",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-A1b-55",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -3203,8 +3203,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-B1e",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B1e",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B1e",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -3738,8 +3738,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-B2d",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B2d",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B2d",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -3966,8 +3966,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-B3b",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B3b",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B3b",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -4512,8 +4512,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-B4c",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-B4c",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-B4c",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -4894,8 +4894,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-C1a-11",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C1a-11",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C1a-11",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -5221,8 +5221,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-C2d-02",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C2d-02",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C2d-02",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -5379,8 +5379,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-C3c",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C3c",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C3c",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -5482,8 +5482,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-C4a",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C4a",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C4a",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -6214,8 +6214,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-C5d-p2",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-C5d-p2",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-C5d-p2",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -6294,8 +6294,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-D1a",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D1a",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D1a",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -6374,8 +6374,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-D2a",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D2a",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D2a",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8129,8 +8129,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-PlaceNL-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-PlaceNL-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-PlaceNL-coding-close",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8214,8 +8214,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-PlaceNL-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-PlaceNL-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-PlaceNL-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8335,8 +8335,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-thenetherlands-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-thenetherlands-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-thenetherlands-coding-close",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8421,8 +8421,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-thenetherlands-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-thenetherlands-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-thenetherlands-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8542,8 +8542,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-cirkeltrek-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-cirkeltrek-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cirkeltrek-coding-close",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8626,8 +8626,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-cirkeltrek-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-cirkeltrek-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cirkeltrek-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -8676,7 +8676,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "8615d495850a1bcba3c035b23e9a186d55560659421dd4c83e25bc93d3b92539",
@@ -8755,7 +8755,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "8d3194b2dbd7925e8bbb44004c70d90725e2c059bb44d400332c953343cdda58",
@@ -8869,7 +8869,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "f237758d04383a9335b81eedf1247eb98287c938abb256f662439daf29224986",
@@ -8948,7 +8948,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "3e2525a115d1d3ff1e66e6024bba356133ed30f4cc8a3fdc1a5f22fa13640db3",
@@ -9061,8 +9061,8 @@
    "title": "5.6 case-lead close",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "56470f781bd3b1c80ca3562bf9ff9102c429d8ab696c029b84f40f1e6d3ad1c0",
@@ -9130,13 +9130,7 @@
    "cli_version": "0.155.0-alpha.9.2",
    "restored_cli_version": "codex-cli 0.164.0-alpha.11.1",
    "original_source": null,
-   "local_route": {
-    "kind": "review-archive",
-    "archive": "community-sweden-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-sweden-coding-close",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+   "unselected_validated": true
   },
   {
    "id": "community--sweden--R6",
@@ -9146,8 +9140,8 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "5359dfb260fb210aee1fe171636e9612f5aa2eeb01ac71d796bd3457314f3bbf",
@@ -9215,13 +9209,7 @@
    "cli_version": "codex-cli 0.160.0",
    "restored_cli_version": "codex-cli 0.164.0-alpha.11.1",
    "original_source": null,
-   "local_route": {
-    "kind": "review-archive",
-    "archive": "community-sweden-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-sweden-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+   "unselected_validated": true
   },
   {
    "id": "community--sweden--D2",
@@ -9339,8 +9327,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-greece-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-greece-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-greece-coding-close",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -9423,8 +9411,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-greece-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-greece-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-greece-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -9473,7 +9461,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "c01efc63bb6809ab72c87a92d9eada3777e4fa672b80aa9b2d3ec71367a6b07f",
@@ -9552,7 +9540,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "d9880610e0349fa540f539b51df4c352693dbc3f68acf3c2f59836f77670ab41",
@@ -9737,8 +9725,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-armenia-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-armenia-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-armenia-coding-close",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -9822,8 +9810,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "community-armenia-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-armenia-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-armenia-R6",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -9872,7 +9860,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "2543a6f6638da32e176659cff3935c86256227a67924c8e8b9a08e53b8935598",
@@ -9951,7 +9939,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "c7b8aea21ff7e27ccb0d9f3843664ac2542dd82570f454599cab0350718be93b",
@@ -10065,7 +10053,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "e6f9dbcf23e2e7b6bf31e4498f30e8a0e9752422ae35aa18bf95f1595aec99ee",
@@ -10172,7 +10160,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "9dbac787d8300642dd47918961d39381aa0b8ba03586dfa264e888e186c520a0",
@@ -10286,7 +10274,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "784ff4b634663fc193bfdfe6b4105508dd78cbfd9b16385ea78ef66bfffab371",
@@ -10365,7 +10353,7 @@
    "backend": "codex",
    "featured": true,
    "availability": "record-only",
-   "reason": "Not among the 8 communities in this review copy. Its saved record is on this site.",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "06937c66b1dfef98fb885468089dcf00f0f5130c1315ac6bfd00827668873801",
@@ -10478,8 +10466,8 @@
    "title": "5.6 case-lead close",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "71d04bb35c8d94abb78d886dcc565dbd208d2e9a13425442cec19dc1a23ea6ea",
@@ -10547,13 +10535,7 @@
    "cli_version": "0.153.4",
    "restored_cli_version": "codex-cli 0.164.0-alpha.11.1",
    "original_source": null,
-   "local_route": {
-    "kind": "review-archive",
-    "archive": "community-blackmirror-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-blackmirror-coding-close",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+   "unselected_validated": true
   },
   {
    "id": "community--blackmirror--R6",
@@ -10563,8 +10545,8 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "352c973ba15358d3fe1a35979c4580eb4ba246b34202a1e902f23229ae42ef3d",
@@ -10631,13 +10613,7 @@
    "cli_version": "codex-cli 0.160.0",
    "restored_cli_version": "codex-cli 0.164.0-alpha.11.1",
    "original_source": null,
-   "local_route": {
-    "kind": "review-archive",
-    "archive": "community-blackmirror-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-blackmirror-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+   "unselected_validated": true
   },
   {
    "id": "community--blackmirror--D2",
@@ -10683,8 +10659,8 @@
    "title": "5.6 case-lead close",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "4cc9c027fce0fc79423b66c0c492d86266640db5c5c3b80b035782f29200ce30",
@@ -10752,13 +10728,7 @@
    "cli_version": "0.158.0-alpha.2.1",
    "restored_cli_version": "codex-cli 0.164.0-alpha.11.1",
    "original_source": null,
-   "local_route": {
-    "kind": "review-archive",
-    "archive": "community-Goodboye-coding-close",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-Goodboye-coding-close",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+   "unselected_validated": true
   },
   {
    "id": "community--Goodboye--R6",
@@ -10768,8 +10738,8 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "Not among the 12 communities in this review copy. Its saved record is on this site.",
    "bundle": {
     "url": null,
     "sha256": "dcd31ebc3c4de2613046240191b002749a3b27be3d484cc6b2a6c4f4dca23bea",
@@ -10836,13 +10806,7 @@
    "cli_version": "codex-cli 0.160.0",
    "restored_cli_version": "codex-cli 0.164.0-alpha.11.1",
    "original_source": null,
-   "local_route": {
-    "kind": "review-archive",
-    "archive": "community-Goodboye-R6",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s community-Goodboye-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+   "unselected_validated": true
   },
   {
    "id": "community--Goodboye--D2",
@@ -10953,8 +10917,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-D3c",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D3c",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D3c",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -12261,8 +12225,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-D4a-08",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D4a-08",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D4a-08",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -12470,8 +12434,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-D5a-41",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D5a-41",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D5a-41",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -13078,8 +13042,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-D6a-18",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-D6a-18",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-D6a-18",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -13532,8 +13496,8 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-E1e",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-E1e",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-E1e",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   },
@@ -13664,8 +13628,192 @@
    "local_route": {
     "kind": "review-archive",
     "archive": "aggregator-E2b",
-    "script_url": "https://os-fruit-fly.github.io/rplace/get-checkpoint.sh",
-    "command": "curl -fsSL https://os-fruit-fly.github.io/rplace/get-checkpoint.sh | bash -s aggregator-E2b",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh aggregator-E2b",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--FloydVsVoid--coding-close",
+   "kind": "community",
+   "entity": "FloydVsVoid",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-FloydVsVoid-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--cubers--coding-close",
+   "kind": "community",
+   "entity": "cubers",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-cubers-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--gorillaz--coding-close",
+   "kind": "community",
+   "entity": "gorillaz",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-gorillaz-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--warframe--coding-close",
+   "kind": "community",
+   "entity": "warframe",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-warframe-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--dallasstars--coding-close",
+   "kind": "community",
+   "entity": "dallasstars",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-dallasstars-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--ik_ihe--coding-close",
+   "kind": "community",
+   "entity": "ik_ihe",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-ik_ihe-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-coding-close",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--ik_ihe--R6",
+   "kind": "community",
+   "entity": "ik_ihe",
+   "milestone": "R6",
+   "title": "6.1 local model, R6",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-ik_ihe-R6",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-R6",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
+   }
+  },
+  {
+   "id": "community--GreyBlob--coding-close",
+   "kind": "community",
+   "entity": "GreyBlob",
+   "milestone": "coding-close",
+   "title": "5.6 case-lead close",
+   "backend": "codex",
+   "featured": true,
+   "availability": "ready",
+   "reason": "",
+   "bundle": null,
+   "record_url": null,
+   "model": null,
+   "effort": null,
+   "cli_version": null,
+   "local_route": {
+    "kind": "review-archive",
+    "archive": "community-GreyBlob-coding-close",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-coding-close",
     "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
    }
   }

@@ -2,6 +2,20 @@
 
 What the completed run found, and the records behind each claim.
 
+## What the run found
+
+Three findings stand out so far. Each is stated as the papers state it, with its evidence and its limit. The current model's insights are not settled.
+
+**Four roles.** From our preliminary findings, we observe that recruitment, coordination, maintenance and relations with neighbors form distinctive roles in how communities organize. Evidence: [the eight dimensions](results/population-aggregation.html#eight-aggregate-dimensions) and [the model's account](results/population-aggregation.html#the-population-model-and-its-account). Limit: the same agents produced the coding and assessed fit, so the fit results are an internal check.
+
+**Repair erases a planned change.** An initial iteration of the population model stated that communities keep their work by repairing changed pixels. The coder of r/PlaceNL objected with its community's record: its own defense script kept erasing the canal houses members had agreed to build. The aggregator found similar evidence in 67 communities and revised the model: repair restores the form the keepers know, so a planned change is erased as damage until the keepers learn of it. Evidence: [r/PlaceNL's return](results/placenl-return.html#repair-and-change) and [the return for all 705](results/population-return.html). Limit: the 67 is the aggregator's reading of the coders' returns; human audits can test selected cross-case inferences.
+
+**Little formal authority.** Few communities show a clear signal of authority, such as a leader, a vote, an oath, a sanction or a division of work. The coders found one in 44 of the 705 communities while coding, and in about 119 when the returned model asked the community coders to check explicitly for it. Evidence: [decided order](results/population-aggregation.html#decided-order). Limit: these indicators describe different arrangements and do not form a single measure of formal authority.
+
+<figure class="data-figure"><img src="results/figures/population-1.svg" alt="The population model after the return, across eight aggregate dimensions, with the arrows between them." loading="lazy"><figcaption>Figure 2 of the Technical Appendix: the population model after the return, across eight aggregate dimensions. <a href="results/population-aggregation.html#the-population-model-and-its-account">Read the model and its account</a>.</figcaption></figure>
+
+The two journeys below take one community and then all 705 through the same parts of the study.
+
 ## One community: r/PlaceNL
 
 One community, part by part: r/PlaceNL, founded for the event to coordinate the Dutch artworks.

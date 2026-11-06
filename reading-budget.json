@@ -2,11 +2,11 @@
   "scope": "Overview text, including headings and link labels; excludes navigation, catalogue records and full documents",
   "pages": {
     "index": 302,
-    "instrument": 637,
+    "instrument": 661,
     "run": 230,
-    "interviews": 27
+    "interviews": 299
   },
-  "total_words": 1196,
+  "total_words": 1492,
   "limit": 1600,
   "homepage_limit": 400,
   "structure": "The home page plus three task introductions"

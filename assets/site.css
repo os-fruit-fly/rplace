@@ -523,3 +523,9 @@ main .stage-list p{margin:0 0 .25rem}
 #main .reference-index{columns:1;max-width:72ch}
 @media(max-width:860px){#main ol.stage-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){#main ol.stage-list{grid-template-columns:minmax(0,1fr)}}
+/* Part pages: provenance folded under the short account (site review, 6 November 2026). */
+.facts-fold{margin:1rem 0 1.4rem;max-width:72ch}
+.facts-fold>summary{cursor:pointer;font-size:var(--fs-small,.9rem);color:var(--muted)}
+.facts-fold[open]>summary{margin-bottom:.6rem}
+/* Four steps sit two by two rather than three and one. */
+@media(min-width:681px){#main ol.stage-list:has(>li:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}}

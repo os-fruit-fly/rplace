@@ -8,7 +8,7 @@ Gathers the public record once, then hashes and freezes every file. Scripts coll
 
 - [The pixel record](sources/data-pixels.html): Reddit's log of all 16,559,897 pixel changes, each with the placer's hashed name.
 - [The atlas](sources/data-atlas.html): the 1,473 artworks of the finished canvas, their outlines and the subreddits they name.
-- [What was written](how-collection-works.html#the-steps): everything the placers wrote on Reddit in the 24 days around the canvas, and everything anyone wrote in 24,093 subreddits in those days. The study reads a narrower window: the event and the day after.
+- [What was written](how-collection-works.html#the-steps): everything the placers wrote on Reddit in the 24 days around the canvas, and everything anyone wrote in 24,093 subreddits in those days. The study reads a narrower window, the event and the day after, for the 2,796 subreddits that took part in the event; the census keeps 705 of them as cases ([from 2,796 to 705](census.html)).
 - [Pixels by artwork and by hour](sources/data-pixels-per-artwork.html): every pixel change inside each artwork's outline, and each community's area hour by hour.
 - [The census](results/population-record.html#census): which subreddits count as cases. For the population model we started from the 777 subreddits the atlas credits with an artwork and kept 705 communities.
 

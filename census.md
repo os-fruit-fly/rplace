@@ -1,6 +1,6 @@
 # From 2,796 subreddits to 705 communities
 
-The wider dataset holds 7.5 million posts and comments across 2,796 subreddits that took part in the event. The population model covers 705 of them. This page shows each step between the two, and marks which steps took a judgment and which a count. The judgments are recorded with their evidence in the census files, so each can be checked or reversed.
+The collection is wider than the study: it holds everything anyone wrote in 24,093 subreddits over 24 days around the canvas. The papers' wider dataset is the event window, the 72 hours and the day after, of the 2,796 subreddits that took part in the event: 7.5 million posts and comments. The population model covers 705 of them. This page shows each step between the two, and marks which steps took a judgment and which a count. The judgments are recorded with their evidence in the census files, so each can be checked or reversed.
 
 ## Where the census starts
 

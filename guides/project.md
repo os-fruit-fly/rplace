@@ -48,4 +48,4 @@ Checkpoint interviews depend on access to compatible models and software. The pa
 
 Reruns also need time, storage and model access. The paper reports roughly three months on a US$200 monthly subscription for coding the 705 communities and one composition run. A new run may differ in cost and time, and extending the census needs a new estimate.
 
-The [Model organism](../organism.html) page applies [Ankeny and Leonelli's four characteristics of model organisms](https://doi.org/10.1016/j.shpsa.2010.11.039) to r/place: material accessibility, representational scope, standardization and a research community.
+The [Model organism](../organism.html) page applies four features that [Ankeny and Leonelli](https://doi.org/10.1016/j.shpsa.2010.11.039) discuss in model organism research to r/place: material accessibility, integrative understanding, standardization and a research community.

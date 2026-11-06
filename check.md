@@ -6,7 +6,7 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 
 ## The record
 
-- [Table 1: the four characteristics of a model organism in the fruit fly, chess, ImageNet and r/place](organism.html#three-examples-and-rplace): Appendix, introduction, Table 1.
+- [Table 1: features of model organism research and related practices in chess, ImageNet 2012 and r/place](organism.html#three-examples-and-rplace): Appendix, introduction, Table 1.
 - [16,559,897 pixel changes by 1,166,924 users](data.html#pixel-changes): Appendix 5.1; the proposal's abstract gives 16.6 million. Reddit's log of every pixel change, counted.
 - [7.5 million posts and comments across 2,796 subreddits](results/population-record.html): Appendix 5.1; Proposal, abstract. The wider dataset, before the census.
 - [777 subreddits credited with 1,236 of the 1,473 artworks](results/population-record.html#census): Appendix 5.1; Proposal, note 1. The Place Atlas, where the census starts.

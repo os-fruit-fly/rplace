@@ -4,13 +4,14 @@ Choose a stage or community to question its saved agent. Answers are new; the or
 
 ## Where to start
 
-Four aggregator checkpoints (B4, C5, D3 and D4) and two r/PlaceNL checkpoints (after coding and at D3) are already unpacked on the interview server. The other 42 unpack when you open them. A large checkpoint can take several minutes.
+Five aggregator checkpoints (A1, B4, C5, D3 and D4) and two r/PlaceNL checkpoints (after coding and at D3) are already unpacked on the interview server. The other 41 unpack when you open them. A large checkpoint can take several minutes.
 
 
-You do not need to open every checkpoint. These seven mark where the analysis took shape. Each opens the saved agent at that moment; its record shows what it had done.
+You do not need to open every checkpoint. These eight mark where the analysis took shape. Each opens the saved agent at that moment; its record shows what it had done.
 
 ### Across communities
 
+- [After reading the 705 community records (A1)](interviews.html?checkpoint=aggregator--claude-v43-1--C4-field--A1.A1b-55). The aggregator wrote a note on each community, tracing what its members did and what the evidence left unclear. Ask what stood out about r/PlaceNL before the aggregator built its coding scheme. [Read the A1 record](records/aggregator--claude-v43-1--C4-field--A1.A1b-55.html).
 - [After the coding scheme was fixed (B4)](interviews.html?checkpoint=aggregator--claude-v43-1--C4-field--B4.B4c): the aggregator has settled the readers' disagreements and frozen the scheme of themes. Ask why a theme sits where it does. [Its record](records/aggregator--claude-v43-1--C4-field--B4.B4c.html).
 - [After the first population model (C5)](interviews.html?checkpoint=aggregator--claude-v43-1--C4-field--C5.C5d-p2): the aggregator has written the integrated account, with its table, model and figure. Ask how the dimensions connect and where the account is weakest. [Its record](records/aggregator--claude-v43-1--C4-field--C5.C5d-p2.html).
 - [After the final population model (D3)](interviews.html?checkpoint=aggregator--claude-v43-1--C4-field--D3.D3c): every community coder has tested the model against its case, and the aggregator has revised it where the evidence supported a change. Ask what the return changed and what it refused. [Its record](records/aggregator--claude-v43-1--C4-field--D3.D3c.html).

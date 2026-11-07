@@ -13,6 +13,25 @@
   const picker=document.getElementById('stage-picker');if(picker)picker.onsubmit=e=>{e.preventDefault();location.href=document.getElementById('stage-choice').value;};
   const search=document.getElementById('reference-search');
   if(search){const rows=[...document.querySelectorAll('#reference-index li')];const filter=()=>{const terms=search.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);let count=0;rows.forEach(row=>{const text=row.textContent.toLocaleLowerCase();row.hidden=!terms.every(term=>text.includes(term));if(!row.hidden)count++;});document.getElementById('reference-count').textContent=`${count} of ${rows.length} manual entries`;document.getElementById('reference-empty').hidden=count>0;};search.addEventListener('input',filter);filter();}
+  const resources=document.querySelector('.interview-parts details');
+  if(resources){
+    document.addEventListener('click',event=>{if(!resources.contains(event.target))resources.open=false;});
+    resources.addEventListener('keydown',event=>{
+      if(event.key==='Escape'&&resources.open){resources.open=false;resources.querySelector('summary').focus();}
+    });
+  }
+  // Published links to a selected checkpoint keep their query and anchor on the directory.
+  if(document.querySelector('.page-interviews #talk-to-a-saved-agent')){
+    const url=new URL(location.href);
+    const direct=['checkpoint','stage','entity','scope','page','local'].some(key=>url.searchParams.has(key));
+    const oldMap=['#catalogue','#checkpoint-results','#community-map','#aggregator-map'].includes(url.hash);
+    if(direct||oldMap||url.hash.startsWith('#checkpoint-')){
+      if(!direct&&url.hash.startsWith('#checkpoint-')&&!oldMap)url.searchParams.set('checkpoint',url.hash.slice('#checkpoint-'.length));
+      if(!direct&&url.hash==='#aggregator-map')url.searchParams.set('kind','aggregator');
+      const next=new URL('all-interviews.html',url);next.search=url.search;next.hash=url.hash;
+      location.replace(next.href);return;
+    }
+  }
   if(!document.getElementById('catalogue'))return;
   const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e;};
   const link=(text,url)=>{const a=el('a',text);a.href=url;return a;};
@@ -26,7 +45,7 @@
       const q=new URLSearchParams(location.search);selected=q.get('checkpoint')||'';invalid='';const c=cat.checkpoints.find(x=>x.id===selected);
       if(selected&&!c)invalid='The requested checkpoint is not in this catalogue.';
       const requestedKind=q.get('kind');if(requestedKind&&!['community','aggregator'].includes(requestedKind))invalid='The requested study is not in this catalogue.';
-      kind=c?.kind||(q.has('stage')?'aggregator':requestedKind)||'aggregator';
+      kind=c?.kind||(q.has('stage')?'aggregator':requestedKind)||'community';
       entity=c?(c.kind==='community'?c.entity:c.stage):(kind==='aggregator'?q.get('stage')||q.get('entity')||'':q.get('entity')||'');
       scope=q.get('scope')==='all'?'all':'featured';
       const n=Number(q.get('page'));page=Number.isSafeInteger(n)&&n>0?n:1;
@@ -36,10 +55,14 @@
       history.pushState(null,'',u);
     }
     function matching(){
-      const rows=invalid||!entity?[]:cat.checkpoints.filter(c=>c.kind===kind&&(c.kind==='community'?c.entity:c.stage)===entity);
+      if(invalid||!entity)return [];
+      let rows=cat.checkpoints.filter(c=>c.kind===kind&&(c.kind==='community'?c.entity:c.stage)===entity);
+      if(kind==='community'&&rows.some(c=>c.availability==='ready')){
+        rows=rows.filter(c=>c.availability==='ready'||c.id===selected);
+      }
       // Use the recorded close date, or saved date if no close timestamp exists.
       const savedTime=c=>Date.parse(c.closed_utc||historical.checkpoints[c.id]?.saved_utc)||0;
-      return kind==='aggregator'?rows.sort((a,b)=>savedTime(b)-savedTime(a)||a.id.localeCompare(b.id)):rows;
+      return kind==='aggregator'?rows.sort((a,b)=>Number(b.availability==='ready')-Number(a.availability==='ready')||savedTime(b)-savedTime(a)||a.id.localeCompare(b.id)):rows;
     }
     function pager(total){
       const nav=el('nav',null,'catalogue-nav');nav.setAttribute('aria-label','Checkpoint pages');const pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
@@ -47,6 +70,7 @@
       nav.append(el('span',`Page ${page} of ${pages}`));return nav;
     }
     function draw(){
+      document.getElementById('checkpoint-results').hidden=!entity&&!invalid;
       document.getElementById('aggregator-map').hidden=kind!=='aggregator';document.getElementById('community-map').hidden=kind!=='community';other.hidden=true;otherList.replaceChildren();
       document.querySelectorAll('[data-kind]').forEach(a=>a.setAttribute('aria-current',a.dataset.kind===kind?'true':'false'));
       document.querySelectorAll('[data-stage],[data-entity]').forEach(a=>{const current=(kind==='aggregator'?a.dataset.stage:a.dataset.entity)===entity&&!!entity;if(current)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
@@ -76,10 +100,10 @@
           const text=prepared?'Chat Online opens a prepared copy.':'Chat Online unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
           card.append(el('p',text,'why'));
         }
-        actions.append(local,online);card.append(actions);
+        if(ready||privateChoice){actions.append(local,online);card.append(actions);}
         const setup=el('section');setup.id='local-setup-'+c.id;card.append(setup);
         const control=window.RplaceLocalSetup.mount(local,setup,c);
-        if(selected===c.id&&new URLSearchParams(location.search).get('local')==='1')control.open();
+        if(ready&&selected===c.id&&new URLSearchParams(location.search).get('local')==='1')control.open();
         if(!primary&&!ready)card.append(el('p',c.candidate?'This checkpoint is being prepared for interviews.':c.reason||'An interview is not available for this checkpoint.','why'));
         const evidence=el('details',null,'checkpoint-evidence');evidence.append(el('summary','Evidence and details'));
         if(primary){evidence.append(el('p',c.milestone+' · '+c.title));if(!ready)evidence.append(el('p',c.candidate?'This checkpoint is being prepared for interviews.':c.reason||'An interview is not available for this checkpoint.','why'));}
@@ -95,7 +119,7 @@
         const d=el('details');d.append(el('summary','Provenance and restore details'));const dl=el('dl');for(const k of ['backend','model','effort','cli_version','restored_cli_version','session_id','parent_checkpoint','origin_run','outputs_scope'])dl.append(el('dt',k.replaceAll('_',' ')),el('dd',c[k]||'Not recorded'));d.append(dl);
         if(h.lineage){d.append(el('p',`Verified D2 fork parent: ${h.lineage.fork_parent}. Original session: ${h.lineage.forked_from_session}. Fork boundary ordinal: ${h.lineage.forked_from_ordinal_exclusive}. D3 retains D2 session ${h.lineage.d2_session} in run.json.`),link('Selected native identity evidence',`history-evidence/${c.entity}-D2-lineage.json`));}
         if(c.original_source)d.append(link('File-by-file source recipe',c.original_source.recipe),el('p',`${c.original_source.git_files} files from the original GitHub commit; ${c.original_source.supplement_files} saved files from the declared supplement. The main conversation comes from ${c.original_source.primary_transcript_from_git?'the original GitHub transcript':'the saved-session archive, not a Git-tracked transcript'}.`),link('How original-source restoration works','ORIGINAL-SOURCES.md'));
-        if(ready&&c.bundle?.sha256)d.append(el('p',`Bundle SHA-256: ${c.bundle.sha256}`));evidence.append(d,link('Link to this checkpoint',`interviews.html?checkpoint=${encodeURIComponent(c.id)}`));card.append(evidence);return card;
+        if(ready&&c.bundle?.sha256)d.append(el('p',`Bundle SHA-256: ${c.bundle.sha256}`));evidence.append(d,link('Link to this checkpoint',`all-interviews.html?checkpoint=${encodeURIComponent(c.id)}`));card.append(evidence);return card;
       };
       if(kind==='aggregator'){
         list.append(cardFor(rows[0],true));

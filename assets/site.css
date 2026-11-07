@@ -529,3 +529,27 @@ main .stage-list p{margin:0 0 .25rem}
 .facts-fold[open]>summary{margin-bottom:.6rem}
 /* Four steps sit two by two rather than three and one. */
 @media(min-width:681px){#main ol.stage-list:has(>li:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Keep both interview destinations and the reference menu visible on small screens. */
+main > nav.interview-parts {
+  position: relative;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 1.3rem;
+  overflow: visible;
+  white-space: normal;
+  mask-image: none;
+}
+main > nav.interview-parts::after { display: none; }
+.interview-parts details, .interview-parts details:last-of-type { border: 0; padding: 0; margin: 0; }
+.interview-parts summary { min-height: 44px; align-items: center; font-size: .95rem; font-weight: 400; color: var(--muted); }
+.interview-parts summary:hover, .interview-parts .resource-current { color: var(--ink); }
+.interview-parts .resource-current { text-decoration: underline; text-underline-offset: .3em; }
+.interview-parts .resource-links {
+  position: absolute; z-index: 4; width: max-content; max-width: 100%;
+  padding: .45rem .95rem; border: 1px solid var(--rule); background: var(--bg);
+}
+.interview-parts .resource-links a { display: flex; align-items: center; min-height: 44px; }
+@media (max-width: 680px) {
+  main > nav.interview-parts { column-gap: 1rem; }
+  .interview-parts .resource-links { inset-inline-start: 0; }
+}

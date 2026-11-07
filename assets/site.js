@@ -71,6 +71,11 @@
         if(config.hosted_url){const u=new URL('/online-chat.html',config.hosted_url);if(u.protocol==='https:'){u.searchParams.set('checkpoint',c.id);onlineURL=u.href;}}
         local.className='talk-action talk-local';
         const online=link('Chat Online',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Online at '+(c.kind==='community'?'r/'+c.entity+' '+c.title:c.milestone)+', opens in a new tab');
+        if(ready&&config.hosted_url&&Array.isArray(config.prepared_checkpoints)){
+          const prepared=config.prepared_checkpoints.includes(c.id);
+          const text=prepared?'Chat Online opens a prepared copy.':'Chat Online unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
+          card.append(el('p',text,'why'));
+        }
         actions.append(local,online);card.append(actions);
         const setup=el('section');setup.id='local-setup-'+c.id;card.append(setup);
         const control=window.RplaceLocalSetup.mount(local,setup,c);

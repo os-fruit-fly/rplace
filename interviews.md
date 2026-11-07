@@ -4,6 +4,9 @@ Choose a stage or community to question its saved agent. Answers are new; the or
 
 ## Where to start
 
+Four aggregator checkpoints (B4, C5, D3 and D4) and two r/PlaceNL checkpoints (after coding and at D3) are already unpacked on the interview server. The other 42 unpack when you open them. A large checkpoint can take several minutes.
+
+
 You do not need to open every checkpoint. These seven mark where the analysis took shape. Each opens the saved agent at that moment; its record shows what it had done.
 
 ### Across communities

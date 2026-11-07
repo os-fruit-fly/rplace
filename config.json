@@ -1,4 +1,12 @@
 {
   "hosted_url": "https://rplace-review.tail4fc98c.ts.net",
-  "hosting_mode": "static"
+  "hosting_mode": "static",
+  "prepared_checkpoints": [
+    "aggregator--claude-v43-1--C4-field--B4.B4c",
+    "aggregator--claude-v43-1--C4-field--C5.C5d-p2",
+    "aggregator--claude-v43-1--C4-field--D3.D3c",
+    "aggregator--claude-v43-1--C4-field--D4.D4a-08",
+    "community--PlaceNL--coding-close",
+    "community--PlaceNL--D3"
+  ]
 }

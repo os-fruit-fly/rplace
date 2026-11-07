@@ -8242,18 +8242,43 @@
    "kind": "community",
    "entity": "PlaceNL",
    "milestone": "D3",
-   "title": "Re-check, D3",
+   "title": "Second return to the population model (D3)",
    "backend": "codex",
    "featured": true,
-   "availability": "record-only",
-   "reason": "Checkpoint package and native session must be matched and verified.",
-   "bundle": null,
+   "availability": "ready",
+   "reason": "",
+   "bundle": {
+    "sha256": "5467b5114c13706253953a9a354f3941be156536584178f0e2236a0bffc134a1",
+    "bytes": 3318427,
+    "unpacked_bytes": 13988772,
+    "proof": {
+     "bundle_sha256": "5467b5114c13706253953a9a354f3941be156536584178f0e2236a0bffc134a1",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T14:54:50.327315+00:00"
+    }
+   },
    "record_url": null,
    "model": "gpt-6.1-sol",
-   "effort": null,
+   "effort": "medium",
    "session_id": "01a14243-9dd9-76e0-b329-3d3b9bcd3e41",
    "parent_checkpoint": null,
-   "return_sha256": "43f2ea8e053ab34ff2750aef45ad1d685a27151b4a2f074e28a74b23c00206d0"
+   "return_sha256": "43f2ea8e053ab34ff2750aef45ad1d685a27151b4a2f074e28a74b23c00206d0",
+   "cli_version": "codex-cli 0.160.0",
+   "local_route": {
+    "kind": "review-archive",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-PlaceNL-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-PlaceNL-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T18:17:02.006869+00:00"
   },
   {
    "id": "community--thenetherlands--coding-close",
@@ -8449,18 +8474,43 @@
    "kind": "community",
    "entity": "thenetherlands",
    "milestone": "D3",
-   "title": "Re-check, D3",
+   "title": "Second return to the population model (D3)",
    "backend": "codex",
    "featured": true,
-   "availability": "record-only",
-   "reason": "Checkpoint package and native session must be matched and verified.",
-   "bundle": null,
+   "availability": "ready",
+   "reason": "",
+   "bundle": {
+    "sha256": "af380cb4879112a76f6db1cde6275e47fec622ff3cdbe7e5ba5810070c30ea1d",
+    "bytes": 22592254,
+    "unpacked_bytes": 77561963,
+    "proof": {
+     "bundle_sha256": "af380cb4879112a76f6db1cde6275e47fec622ff3cdbe7e5ba5810070c30ea1d",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T14:57:01.386935+00:00"
+    }
+   },
    "record_url": null,
    "model": "gpt-6.1-sol",
-   "effort": null,
+   "effort": "medium",
    "session_id": "01a1430d-3b22-7443-91c8-d0d8e1645668",
    "parent_checkpoint": null,
-   "return_sha256": "56bff906d0116629ba0f00952ad4a7498da0485fe5adfadd328e1ee023c41849"
+   "return_sha256": "56bff906d0116629ba0f00952ad4a7498da0485fe5adfadd328e1ee023c41849",
+   "cli_version": "codex-cli 0.160.0",
+   "local_route": {
+    "kind": "review-archive",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-thenetherlands-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-thenetherlands-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-22T18:24:51.905902+00:00"
   },
   {
    "id": "community--cirkeltrek--coding-close",
@@ -8654,18 +8704,43 @@
    "kind": "community",
    "entity": "cirkeltrek",
    "milestone": "D3",
-   "title": "Re-check, D3",
+   "title": "Second return to the population model (D3)",
    "backend": "codex",
    "featured": true,
-   "availability": "record-only",
-   "reason": "Checkpoint package and native session must be matched and verified.",
-   "bundle": null,
+   "availability": "ready",
+   "reason": "",
+   "bundle": {
+    "sha256": "310515e7c8667f24094ac2e8d3560fa25b57774a3ba6bd0a3891bc28ebf01460",
+    "bytes": 5466469,
+    "unpacked_bytes": 22666632,
+    "proof": {
+     "bundle_sha256": "310515e7c8667f24094ac2e8d3560fa25b57774a3ba6bd0a3891bc28ebf01460",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T14:56:01.369564+00:00"
+    }
+   },
    "record_url": null,
    "model": "gpt-6.1-sol",
-   "effort": null,
+   "effort": "medium",
    "session_id": "01a14290-8697-7870-ab8b-f98ccb49e94b",
    "parent_checkpoint": null,
-   "return_sha256": "e8d61227bf7ab2906b4dac69036e6a130f55ff9146e04cd21fbd74cffe31abde"
+   "return_sha256": "e8d61227bf7ab2906b4dac69036e6a130f55ff9146e04cd21fbd74cffe31abde",
+   "cli_version": "codex-cli 0.160.0",
+   "local_route": {
+    "kind": "review-archive",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-cirkeltrek-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cirkeltrek-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T21:15:00.171495+00:00"
   },
   {
    "id": "community--norge--coding-close",
@@ -9439,18 +9514,43 @@
    "kind": "community",
    "entity": "greece",
    "milestone": "D3",
-   "title": "Re-check, D3",
+   "title": "Second return to the population model (D3)",
    "backend": "codex",
    "featured": true,
-   "availability": "record-only",
-   "reason": "Checkpoint package and native session must be matched and verified.",
-   "bundle": null,
+   "availability": "ready",
+   "reason": "",
+   "bundle": {
+    "sha256": "1b3b6ea68815a025ee1dc602f5e6f1f34a10ecab370cd5f0c3340cece1ac605b",
+    "bytes": 11225173,
+    "unpacked_bytes": 39015116,
+    "proof": {
+     "bundle_sha256": "1b3b6ea68815a025ee1dc602f5e6f1f34a10ecab370cd5f0c3340cece1ac605b",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T15:00:01.995160+00:00"
+    }
+   },
    "record_url": null,
    "model": "gpt-6.1-sol",
-   "effort": null,
+   "effort": "medium",
    "session_id": "01a142ad-db7a-7641-ba8c-270b7dd431ba",
    "parent_checkpoint": null,
-   "return_sha256": "1890199ab98ea4c63f416988e65e28a58745b279773a8b0fbcd3e5e90b449ae9"
+   "return_sha256": "1890199ab98ea4c63f416988e65e28a58745b279773a8b0fbcd3e5e90b449ae9",
+   "cli_version": "codex-cli 0.160.0",
+   "local_route": {
+    "kind": "review-archive",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-greece-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-greece-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-22T17:42:24.689245+00:00"
   },
   {
    "id": "community--czech--coding-close",
@@ -9838,18 +9938,43 @@
    "kind": "community",
    "entity": "armenia",
    "milestone": "D3",
-   "title": "Re-check, D3",
+   "title": "Second return to the population model (D3)",
    "backend": "codex",
    "featured": true,
-   "availability": "record-only",
-   "reason": "Checkpoint package and native session must be matched and verified.",
-   "bundle": null,
+   "availability": "ready",
+   "reason": "",
+   "bundle": {
+    "sha256": "4480decfca105d5a83284f3ffb24f0dd36b8456217390561b76fecdd9098e42e",
+    "bytes": 5448716,
+    "unpacked_bytes": 20760187,
+    "proof": {
+     "bundle_sha256": "4480decfca105d5a83284f3ffb24f0dd36b8456217390561b76fecdd9098e42e",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T14:55:16.115509+00:00"
+    }
+   },
    "record_url": null,
    "model": "gpt-6.1-sol",
-   "effort": null,
+   "effort": "medium",
    "session_id": "01a14350-7f6b-79a1-b67e-3d549107b303",
    "parent_checkpoint": null,
-   "return_sha256": "fd90b0f600755dce5efa3faf72e0da9abc3b6f9962ba0c554cbfcb108d5ac44d"
+   "return_sha256": "fd90b0f600755dce5efa3faf72e0da9abc3b6f9962ba0c554cbfcb108d5ac44d",
+   "cli_version": "codex-cli 0.160.0",
+   "local_route": {
+    "kind": "review-archive",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-armenia-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-armenia-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T18:55:44.342714+00:00"
   },
   {
    "id": "community--indonesia--coding-close",
@@ -13664,20 +13789,53 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "There is no completed R6 archive for this community in the review release.",
    "bundle": null,
    "record_url": null,
    "model": null,
    "effort": null,
-   "cli_version": null,
+   "cli_version": null
+  },
+  {
+   "id": "community--FloydVsVoid--D3",
+   "kind": "community",
+   "entity": "FloydVsVoid",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a14236-f639-7e02-9952-1a11062b8eeb",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "d33692615aebc14c3134c3b7bc8f9fc79bc0147eb57bc2814f805bae73dd4733",
+    "bytes": 3373264,
+    "unpacked_bytes": 14651442,
+    "proof": {
+     "bundle_sha256": "d33692615aebc14c3134c3b7bc8f9fc79bc0147eb57bc2814f805bae73dd4733",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T15:00:21.451553+00:00"
+    }
+   },
    "local_route": {
     "kind": "review-archive",
-    "archive": "community-FloydVsVoid-R6",
-    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
-    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-FloydVsVoid-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T18:08:50.872182+00:00"
   },
   {
    "id": "community--cubers--coding-close",
@@ -13710,20 +13868,53 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "There is no completed R6 archive for this community in the review release.",
    "bundle": null,
    "record_url": null,
    "model": null,
    "effort": null,
-   "cli_version": null,
+   "cli_version": null
+  },
+  {
+   "id": "community--cubers--D3",
+   "kind": "community",
+   "entity": "cubers",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a142d5-1f0d-7591-803f-cf7c2ab32c02",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "b49da93d9ddbb3174a6cb747f10091df21b9c01879f1100e903889afdb538e0c",
+    "bytes": 12495728,
+    "unpacked_bytes": 45232264,
+    "proof": {
+     "bundle_sha256": "b49da93d9ddbb3174a6cb747f10091df21b9c01879f1100e903889afdb538e0c",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T15:00:41.600877+00:00"
+    }
+   },
    "local_route": {
     "kind": "review-archive",
-    "archive": "community-cubers-R6",
-    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
-    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-cubers-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-22T18:02:13.841725+00:00"
   },
   {
    "id": "community--gorillaz--coding-close",
@@ -13756,20 +13947,53 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "There is no completed R6 archive for this community in the review release.",
    "bundle": null,
    "record_url": null,
    "model": null,
    "effort": null,
-   "cli_version": null,
+   "cli_version": null
+  },
+  {
+   "id": "community--gorillaz--D3",
+   "kind": "community",
+   "entity": "gorillaz",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a142bc-6544-7801-8be5-b7d38ba70af6",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "c3bd37ab8af4c6bc38ad6f25be1a2c8b63e13f4b233c200ad810046b7f0a5cd8",
+    "bytes": 10738411,
+    "unpacked_bytes": 39710564,
+    "proof": {
+     "bundle_sha256": "c3bd37ab8af4c6bc38ad6f25be1a2c8b63e13f4b233c200ad810046b7f0a5cd8",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T15:00:58.334287+00:00"
+    }
+   },
    "local_route": {
     "kind": "review-archive",
-    "archive": "community-gorillaz-R6",
-    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
-    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-gorillaz-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-22T17:49:25.040908+00:00"
   },
   {
    "id": "community--warframe--coding-close",
@@ -13802,20 +14026,53 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "There is no completed R6 archive for this community in the review release.",
    "bundle": null,
    "record_url": null,
    "model": null,
    "effort": null,
-   "cli_version": null,
+   "cli_version": null
+  },
+  {
+   "id": "community--warframe--D3",
+   "kind": "community",
+   "entity": "warframe",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a14362-cbdf-7902-be33-b2d0edb91f3c",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "b86059d8fadeb72df42fdbd6b7bd5834bd8afe50e39fded79488babee76dd0ed",
+    "bytes": 42553698,
+    "unpacked_bytes": 144692897,
+    "proof": {
+     "bundle_sha256": "b86059d8fadeb72df42fdbd6b7bd5834bd8afe50e39fded79488babee76dd0ed",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T15:01:25.223033+00:00"
+    }
+   },
    "local_route": {
     "kind": "review-archive",
-    "archive": "community-warframe-R6",
-    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
-    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-warframe-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-22T18:41:22.535360+00:00"
   },
   {
    "id": "community--dallasstars--coding-close",
@@ -13848,20 +14105,53 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "There is no completed R6 archive for this community in the review release.",
    "bundle": null,
    "record_url": null,
    "model": null,
    "effort": null,
-   "cli_version": null,
+   "cli_version": null
+  },
+  {
+   "id": "community--dallasstars--D3",
+   "kind": "community",
+   "entity": "dallasstars",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a14251-b8b7-73a2-b38f-33da6131975e",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "d031f007942cd443cd8398cff3b96abdc325f0f363bb54ceb4b6e270a0a5ae08",
+    "bytes": 4042378,
+    "unpacked_bytes": 15252940,
+    "proof": {
+     "bundle_sha256": "d031f007942cd443cd8398cff3b96abdc325f0f363bb54ceb4b6e270a0a5ae08",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T15:01:42.506637+00:00"
+    }
+   },
    "local_route": {
     "kind": "review-archive",
-    "archive": "community-dallasstars-R6",
-    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
-    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-dallasstars-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T18:23:21.710947+00:00"
   },
   {
    "id": "community--ik_ihe--coding-close",
@@ -13910,6 +14200,46 @@
    }
   },
   {
+   "id": "community--ik_ihe--D3",
+   "kind": "community",
+   "entity": "ik_ihe",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a141fd-3373-79f0-a641-f4cf2c669866",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "59e74d025b94acfcc5714106605c0fd62ef9b99932294d328da0ba8accc3c22c",
+    "bytes": 1948279,
+    "unpacked_bytes": 8450344,
+    "proof": {
+     "bundle_sha256": "59e74d025b94acfcc5714106605c0fd62ef9b99932294d328da0ba8accc3c22c",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T14:57:17.163863+00:00"
+    }
+   },
+   "local_route": {
+    "kind": "review-archive",
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-ik_ihe-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T17:22:34.738089+00:00"
+  },
+  {
    "id": "community--GreyBlob--coding-close",
    "kind": "community",
    "entity": "GreyBlob",
@@ -13940,20 +14270,53 @@
    "title": "6.1 local model, R6",
    "backend": "codex",
    "featured": true,
-   "availability": "ready",
-   "reason": "",
+   "availability": "record-only",
+   "reason": "There is no completed R6 archive for this community in the review release.",
    "bundle": null,
    "record_url": null,
    "model": null,
    "effort": null,
-   "cli_version": null,
+   "cli_version": null
+  },
+  {
+   "id": "community--GreyBlob--D3",
+   "kind": "community",
+   "entity": "GreyBlob",
+   "milestone": "D3",
+   "title": "Second return to the population model (D3)",
+   "availability": "ready",
+   "reason": "",
+   "featured": true,
+   "backend": "codex",
+   "model": "gpt-6.1-sol",
+   "effort": "medium",
+   "session_id": "01a142e5-260f-7152-88f6-f72506c1e7a7",
+   "cli_version": "codex-cli 0.160.0",
+   "bundle": {
+    "sha256": "45e88fb0f3ddcf3ce42d1dacce102c76b28211c21049fff3e92da3b91231515a",
+    "bytes": 2797529,
+    "unpacked_bytes": 11009738,
+    "proof": {
+     "bundle_sha256": "45e88fb0f3ddcf3ce42d1dacce102c76b28211c21049fff3e92da3b91231515a",
+     "cli_version": "codex-cli 0.166.0-alpha.5.1",
+     "historical_cli_version": "codex-cli 0.160.0",
+     "runtime_sha256": "58a91f6ea19bea477ae3a2ec48d619f0039afe75d3476260747e11d201fa7cea",
+     "native_fork": true,
+     "compatibility_accepted": true,
+     "historical_files": true,
+     "historical_recall": false,
+     "model_calls": 0,
+     "tested_utc": "2026-11-07T14:59:35.635434+00:00"
+    }
+   },
    "local_route": {
     "kind": "review-archive",
-    "archive": "community-GreyBlob-R6",
-    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh",
-    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-R6",
-    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104"
-   }
+    "script_url": "https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh",
+    "archive": "community-GreyBlob-D3",
+    "command": "curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-D3",
+    "release_url": "https://github.com/os-fruit-fly/rplace/releases/tag/community-d3-20261107"
+   },
+   "closed_utc": "2026-10-21T17:56:24.222145+00:00"
   }
  ],
  "final_publication": {

@@ -2,9 +2,9 @@
 
 Choose a community or an aggregator checkpoint. Each card shows what was saved and which routes are available.
 
-**Read saved outputs** opens selected narrative files from that exact checkpoint in the browser, with provenance and hashes. It needs no model login. **Read the record** opens the original transcript or close receipt on GitHub. **Chat Locally** expands setup beneath the selected checkpoint, with one command first and a step-by-step guide below. The stage map and description stay on the page. **Chat Online** opens a new tab, asks for reviewer sign-in, and opens the selected checkpoint when its server is available. Your research page stays open. Hosted access still waits on deployment and runtime checks.
+**Read saved outputs** opens selected narrative files from that exact checkpoint in the browser, with provenance and hashes. It needs no model login. **Read the record** opens the original transcript or close receipt on GitHub. **Chat Locally** expands setup beneath the selected checkpoint, with one command first and a step-by-step guide below. The stage map and description stay on the page. **Chat Online** opens a new tab, asks for reviewer sign-in, and opens the selected checkpoint when its server is available. Your research page stays open. Reviewer sign-in is live. Online answers are limited to a private pilot.
 
-Original GitHub transcripts and downloads are in the public research repository. The local **Open the interview service on this computer** link works on this computer only. Online interviews from a phone need a separately configured HTTPS service, which is not connected yet.
+Original GitHub transcripts and downloads are in the public research repository. The local **Open the interview service on this computer** link works on this computer only. On a phone, select Reviewer sign in and enter the lowercase username and password from your access sheet.
 
 A complete bundle contains the conversation and the filesystem at that checkpoint, plus a manifest and runtime provenance; Git history and transcripts hold only part of it. Historical files stay separate from current research and from other interviews.
 
@@ -35,11 +35,11 @@ Reading pages use the pixel stream's participant IDs and still contain linkable 
 
 ## Return to an online interview
 
-Online interviews are not connected yet; this section describes the planned server interface.
+Reviewer sign-in is live. The private pilot uses the interview controls described below.
 
 After sign-in, **Open interviews** lists the chats still held by the server. Return opens the same interview, with its messages and historical files, without restoring again. Repeated clicks on Chat Online also reuse the existing chat for that checkpoint.
 
-Close interview removes only that disposable copy. Export first to keep the conversation; typing `/exit` opens the same close controls. Closing a browser tab leaves the interview available until its idle timeout. An open chat or Open interviews page keeps it active; without either page connected, it expires after 30 minutes. A server restart also ends access. The pilot has three interview slots and restores one checkpoint at a time.
+Close interview removes only that disposable copy. Export first to keep the conversation; typing `/exit` opens the same close controls. Closing a browser tab leaves the interview available until its idle timeout. An open chat or Open interviews page keeps it active; without either page connected, it expires after 30 minutes. A server restart also ends access. The host allows one open interview per account and restores one checkpoint at a time.
 
 ## Open an interview on your computer
 

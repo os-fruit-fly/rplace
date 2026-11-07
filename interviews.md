@@ -4,7 +4,7 @@ Choose a stage or community to question its saved agent. Answers are new; the or
 
 ## Where to start
 
-You do not need to open every checkpoint. These six mark where the analysis took shape. Each opens the saved agent at that moment; its record shows what it had done.
+You do not need to open every checkpoint. These seven mark where the analysis took shape. Each opens the saved agent at that moment; its record shows what it had done.
 
 ### Across communities
 
@@ -16,5 +16,9 @@ You do not need to open every checkpoint. These six mark where the analysis took
 ### One community: r/PlaceNL
 
 - [After coding](interviews.html?checkpoint=community--PlaceNL--coding-close): r/PlaceNL's coder has read every thread and written its codes, themes and case account. Ask how a code follows from the members' words. [Its record](records/community--PlaceNL--coding-close.html).
-- [After the return (R6)](interviews.html?checkpoint=community--PlaceNL--R6): the coder has raised the canal houses against the model, seen the revised model at the re-check, and built a local model of its community. Ask whether the revised model now fits and what it would still change. The re-check itself was kept as a record only: [r/PlaceNL's return](results/placenl-return.html). [Its record](records/community--PlaceNL--R6.html).
+- [After building the local model (R6)](interviews.html?checkpoint=community--PlaceNL--R6). Ask how the coder explains the organization of r/PlaceNL from its own case. [Read its local model](records/community--PlaceNL--R6.html).
+- [After the second return (D3)](interviews.html?checkpoint=community--PlaceNL--D3). The first population model went back to a copy of the coder at its coding close. At D3 that coder saw the revised population model. Ask whether the account of the canal houses now fits the evidence. [Read both returns](results/placenl-return.html).
 
+### All 12 communities at the second return (D3)
+
+[r/FloydVsVoid](interviews.html?checkpoint=community--FloydVsVoid--D3) · [r/GreyBlob](interviews.html?checkpoint=community--GreyBlob--D3) · [r/PlaceNL](interviews.html?checkpoint=community--PlaceNL--D3) · [r/armenia](interviews.html?checkpoint=community--armenia--D3) · [r/cirkeltrek](interviews.html?checkpoint=community--cirkeltrek--D3) · [r/cubers](interviews.html?checkpoint=community--cubers--D3) · [r/dallasstars](interviews.html?checkpoint=community--dallasstars--D3) · [r/gorillaz](interviews.html?checkpoint=community--gorillaz--D3) · [r/greece](interviews.html?checkpoint=community--greece--D3) · [r/ik_ihe](interviews.html?checkpoint=community--ik_ihe--D3) · [r/thenetherlands](interviews.html?checkpoint=community--thenetherlands--D3) · [r/warframe](interviews.html?checkpoint=community--warframe--D3)

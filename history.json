@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "reviewed_utc": "2026-10-28T08:16:37.810053+00:00",
- "catalogue_sha256": "9b8c561c7873865e7dcb470056a7ff99e55b2cdb54d7568da7ee4a8b87ebf4a2",
+ "catalogue_sha256": "070dbe0f404e14733da60330de7b52b204c3af52243d394b239fd095ed63399b",
  "baseline_commit": "c070d990be88234ccd74101d4104160e71a28c5e",
  "scope": "Historical reading context only. Does not change checkpoint admission, original files or runtime settings.",
  "checkpoints": {
@@ -2858,8 +2858,8 @@
   "community--PlaceNL--D3": {
    "source_commit": "c070d990be88234ccd74101d4104160e71a28c5e",
    "source_commit_date": "2026-10-23T12:38:38+02:00",
-   "saved_utc": null,
-   "saved_date_basis": "Not recorded in the catalogue; source commit date is not a close date.",
+   "saved_utc": "2026-10-21T18:17:02.006869+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
    "record_url": null,
    "return_metadata": {
     "model": "gpt-6.1-sol",
@@ -2943,8 +2943,8 @@
   "community--thenetherlands--D3": {
    "source_commit": "c070d990be88234ccd74101d4104160e71a28c5e",
    "source_commit_date": "2026-10-23T12:38:38+02:00",
-   "saved_utc": null,
-   "saved_date_basis": "Not recorded in the catalogue; source commit date is not a close date.",
+   "saved_utc": "2026-10-22T18:24:51.905902+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
    "record_url": null,
    "return_metadata": {
     "model": "gpt-6.1-sol",
@@ -3028,8 +3028,8 @@
   "community--cirkeltrek--D3": {
    "source_commit": "c070d990be88234ccd74101d4104160e71a28c5e",
    "source_commit_date": "2026-10-23T12:38:38+02:00",
-   "saved_utc": null,
-   "saved_date_basis": "Not recorded in the catalogue; source commit date is not a close date.",
+   "saved_utc": "2026-10-21T21:15:00.171495+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
    "record_url": null,
    "return_metadata": {
     "model": "gpt-6.1-sol",
@@ -3368,8 +3368,8 @@
   "community--greece--D3": {
    "source_commit": "c070d990be88234ccd74101d4104160e71a28c5e",
    "source_commit_date": "2026-10-23T12:38:38+02:00",
-   "saved_utc": null,
-   "saved_date_basis": "Not recorded in the catalogue; source commit date is not a close date.",
+   "saved_utc": "2026-10-22T17:42:24.689245+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
    "record_url": null,
    "return_metadata": {
     "model": "gpt-6.1-sol",
@@ -3538,8 +3538,8 @@
   "community--armenia--D3": {
    "source_commit": "c070d990be88234ccd74101d4104160e71a28c5e",
    "source_commit_date": "2026-10-23T12:38:38+02:00",
-   "saved_utc": null,
-   "saved_date_basis": "Not recorded in the catalogue; source commit date is not a close date.",
+   "saved_utc": "2026-10-21T18:55:44.342714+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
    "record_url": null,
    "return_metadata": {
     "model": "gpt-6.1-sol",
@@ -4808,6 +4808,48 @@
    "saved_date_basis": "Not recorded on this site; the archive holds the saved session.",
    "record_url": null,
    "notes": []
+  },
+  "community--FloydVsVoid--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-21T18:08:50.872182+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
+  },
+  "community--GreyBlob--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-21T17:56:24.222145+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
+  },
+  "community--cubers--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-22T18:02:13.841725+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
+  },
+  "community--dallasstars--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-21T18:23:21.710947+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
+  },
+  "community--gorillaz--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-22T17:49:25.040908+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
+  },
+  "community--ik_ihe--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-21T17:22:34.738089+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
+  },
+  "community--warframe--D3": {
+   "notes": [],
+   "saved_utc": "2026-10-22T18:41:22.535360+00:00",
+   "saved_date_basis": "Completed D3 turn, verified against the return receipt.",
+   "record_url": null
   }
  },
  "stages": {

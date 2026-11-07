@@ -1,5 +1,5 @@
 # r/place checkpoint commands, review copy
-# Paste one into Terminal on macOS or Linux. Each downloads one archive from https://github.com/os-fruit-fly/rplace/releases/tag/checkpoints-review-20261104, checks it and runs its resume.sh.
+# Paste one into Terminal on macOS or Linux. Each downloads one archive from its GitHub review release, checks it and runs its resume.sh.
 
 ## The aggregator
 # A1.A1b-55, reading block (aggregator--claude-v43-1--C4-field--A1.A1b-55)
@@ -90,32 +90,17 @@ curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-re
 # r/FloydVsVoid, 5.6 case-lead close (community--FloydVsVoid--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-coding-close
 
-# r/FloydVsVoid, 6.1 local model, R6 (community--FloydVsVoid--R6)
-curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-R6
-
 # r/cubers, 5.6 case-lead close (community--cubers--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-coding-close
-
-# r/cubers, 6.1 local model, R6 (community--cubers--R6)
-curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-R6
 
 # r/gorillaz, 5.6 case-lead close (community--gorillaz--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-coding-close
 
-# r/gorillaz, 6.1 local model, R6 (community--gorillaz--R6)
-curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-R6
-
 # r/warframe, 5.6 case-lead close (community--warframe--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-coding-close
 
-# r/warframe, 6.1 local model, R6 (community--warframe--R6)
-curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-R6
-
 # r/dallasstars, 5.6 case-lead close (community--dallasstars--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-coding-close
-
-# r/dallasstars, 6.1 local model, R6 (community--dallasstars--R6)
-curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-R6
 
 # r/ik_ihe, 5.6 case-lead close (community--ik_ihe--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-coding-close
@@ -126,6 +111,40 @@ curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-re
 # r/GreyBlob, 5.6 case-lead close (community--GreyBlob--coding-close)
 curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-coding-close
 
-# r/GreyBlob, 6.1 local model, R6 (community--GreyBlob--R6)
-curl -fL https://github.com/os-fruit-fly/rplace/releases/download/checkpoints-review-20261104/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-R6
+## Community coders at D3, after the second return
 
+# r/FloydVsVoid, second return (D3) (community--FloydVsVoid--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-FloydVsVoid-D3
+
+# r/GreyBlob, second return (D3) (community--GreyBlob--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-GreyBlob-D3
+
+# r/PlaceNL, second return (D3) (community--PlaceNL--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-PlaceNL-D3
+
+# r/armenia, second return (D3) (community--armenia--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-armenia-D3
+
+# r/cirkeltrek, second return (D3) (community--cirkeltrek--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cirkeltrek-D3
+
+# r/cubers, second return (D3) (community--cubers--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-cubers-D3
+
+# r/dallasstars, second return (D3) (community--dallasstars--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-dallasstars-D3
+
+# r/gorillaz, second return (D3) (community--gorillaz--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-gorillaz-D3
+
+# r/greece, second return (D3) (community--greece--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-greece-D3
+
+# r/ik_ihe, second return (D3) (community--ik_ihe--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-ik_ihe-D3
+
+# r/thenetherlands, second return (D3) (community--thenetherlands--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-thenetherlands-D3
+
+# r/warframe, second return (D3) (community--warframe--D3)
+curl -fL https://github.com/os-fruit-fly/rplace/releases/download/community-d3-20261107/get-checkpoint.sh -o get-checkpoint.sh && bash get-checkpoint.sh community-warframe-D3

@@ -2,6 +2,8 @@
 
 Each community is read by its own community coder, a model conversation that sees no other community and no earlier coding. The coding handler prepares each community, launches its coder, checks the result and keeps the record. Communities with more than 500 items divide their threads among fleet coders, and the community coder brings their work together. In this study: 705 communities, coded from 7 September to 4 October 2026, with 115,388 first-order codes and 7,844 second-order themes.
 
+[Open the r/PlaceNL files from each step](results/files.html#placenl).
+
 ## Its contracts
 
 - [The coder contract](sources/coder-contract.html), version 32 (version 30 for 102 communities, r/PlaceNL among them): the method, the rules, the five steps and the outputs.

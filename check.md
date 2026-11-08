@@ -2,6 +2,8 @@
 
 Each claim in the proposal and its technical appendix that this site can show, with a link to its evidence. A link opens the place where the evidence is visible; a link into a folded section opens the fold. Claims the site cannot show yet are listed at the end.
 
+[Files by stage](results/files.html) lists the population coding scheme, the r/PlaceNL codes and the records behind the models.
+
 On this page: [The record](#the-record) · [Community coding](#community-coding) · [The population model](#the-population-model) · [The return](#the-return) · [Organizational forms](#organizational-forms) · [The instrument and its checks](#the-instrument-and-its-checks) · [Not on the site yet](#not-on-the-site-yet)
 
 ## The record

@@ -1,6 +1,6 @@
 # Findings
 
-What the completed run found, and the records behind each claim.
+What the completed run found, and the records behind each claim. [Browse the files by stage](results/files.html).
 
 ## What the run found
 

@@ -444,3 +444,21 @@
 }
 #results-population .model-key { margin-top: .6rem; }
 #results-population .form-figure-link { margin: .3rem 0 0; }
+
+#results-community .case-form-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 28rem);
+  align-items: center;
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+}
+#results-community .case-form-profile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+@media (max-width: 32rem) {
+  #results-community .case-form-profile { grid-template-columns: 1fr; }
+  #results-community .case-form-profile > a { width: min(100%, 15rem); }
+}

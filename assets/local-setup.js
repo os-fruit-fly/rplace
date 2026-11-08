@@ -40,7 +40,10 @@
     if(!/^[A-Za-z0-9][A-Za-z0-9_.-]*$/.test(r.archive)||!['codex','claude'].includes(c.backend)||r.command!=='curl -fL '+r.script_url+' -o get-checkpoint.sh && bash get-checkpoint.sh '+r.archive)throw Error('This checkpoint needs a manually checked launch command.');
     const cli=c.backend==='claude'?'Claude Code':'Codex';
     panel.append(node('p','Paste this command into Terminal on your Mac or Linux computer. It downloads the release helper, then this checkpoint\'s archive, which it checks, unpacks in ~/rplace-checkpoints and opens as a private interview page on your computer. Large archives come in parts, joined automatically.'));
+    const privacy=node('p','The original archive retains Reddit usernames. ');
+    privacy.append(link('How participant identities are handled','guides/history.html#release-access'));
     command(panel,r.command);
+    panel.append(privacy);
     const version=(c.cli_version||'').replace(/\s*\(Claude Code\)/,'').replace(/^codex-cli\s+/,'');
     panel.append(node('p','Use Python 3.11 or newer and '+cli+(version?' '+version:'')+'. Allow about three times the archive\'s size in free disk space. No model turn begins until you ask a question; questions use your own account.'));
     panel.append(node('h4','Or follow these steps'));

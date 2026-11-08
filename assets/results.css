@@ -422,3 +422,25 @@
 @media (max-width: 40rem) {
   .findings-table-scroll .ladder-rows { min-width: 30rem; }
 }
+
+/* Keep all seven dimension diagrams within one click of each other. */
+#results-population .model-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .15rem .75rem;
+  align-items: center;
+  padding: .4rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: .9rem;
+}
+#results-population .model-choices > * {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+#results-population .model-choices [aria-current] {
+  color: var(--ink);
+  font-weight: 700;
+}
+#results-population .model-key { margin-top: .6rem; }
+#results-population .form-figure-link { margin: .3rem 0 0; }

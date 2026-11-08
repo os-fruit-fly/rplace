@@ -8,9 +8,9 @@
     copy.onclick=async()=>{try{await navigator.clipboard.writeText(text);copy.textContent='Copied';}catch(_){copy.textContent='Select and copy the command above';}};
     parent.append(pre,copy);
   };
-  function render(panel,c){
+  function render(panel,c,communityName){
     panel.replaceChildren();
-    const heading=node('h3',c.kind==='aggregator'?'Run '+c.stage+' locally':'Run r/'+c.entity+' locally');
+    const heading=node('h3',c.kind==='aggregator'?'Run '+c.stage+' locally':'Run '+(communityName||'r/'+c.entity)+' locally');
     heading.id=panel.id+'-title';panel.setAttribute('aria-labelledby',heading.id);panel.append(heading);
     panel.append(node('p','Checkpoint '+c.milestone+': '+c.title+'.'));
     if(c.local_route?.kind==='review-archive'){renderArchive(panel,c,c.local_route);return;}
@@ -117,7 +117,7 @@
         focused.getBoundingClientRect().top<innerHeight && focused.getBoundingClientRect().bottom>0;
       try{
         if(error)throw error;
-        render(panel,checkpointData);
+        render(panel,checkpointData,button.dataset.communityName);
         loaded=true;
         panel.removeAttribute('aria-label');
       }catch(e){

@@ -96,11 +96,42 @@
     let loaded=false;
     async function toggle(){
       const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));panel.hidden=!open;
-      if(!open||loaded)return;
-      panel.replaceChildren(node('p','Loading local setup…'));panel.setAttribute('aria-busy','true');
-      try{render(panel,typeof checkpoint==='string'?await entry(checkpoint):checkpoint);loaded=true;}
-      catch(e){const message=node('p',e.message+' Close and reopen Chat Locally to retry.');message.setAttribute('role','status');panel.replaceChildren(message);}
-      finally{panel.removeAttribute('aria-busy');}
+      if(!open||loaded||panel.hasAttribute('aria-busy'))return;
+
+      panel.replaceChildren(node('p','Loading local setup…'));
+      panel.tabIndex=0;
+      panel.setAttribute('aria-label','Loading local setup');
+      panel.setAttribute('aria-busy','true');
+
+      let checkpointData, error;
+      try{checkpointData=typeof checkpoint==='string'?await entry(checkpoint):checkpoint;}
+      catch(e){error=e;}
+
+      // Tab can enter or leave the loading panel while the catalogue is in flight.
+      const focused=document.activeElement;
+      const follow=focused!==panel && focused.matches(':focus-visible') &&
+        (panel.compareDocumentPosition(focused)&Node.DOCUMENT_POSITION_FOLLOWING) &&
+        focused.getBoundingClientRect().top<innerHeight && focused.getBoundingClientRect().bottom>0;
+      try{
+        if(error)throw error;
+        render(panel,checkpointData);
+        loaded=true;
+        panel.removeAttribute('aria-label');
+      }catch(e){
+        const message=node('p',e.message+' Close and reopen Chat Locally to retry.');
+        message.setAttribute('role','status');
+        panel.replaceChildren(message);
+        panel.removeAttribute('aria-labelledby');
+        panel.setAttribute('aria-label','Local setup unavailable');
+      }
+      panel.tabIndex=-1;
+      panel.removeAttribute('aria-busy');
+      if(focused===panel){
+        (panel.querySelector('button,a[href]')||panel).focus();
+      }else if(follow && focused.getBoundingClientRect().top>=innerHeight){
+        // The expanded instructions may have pushed the next focused link off screen.
+        focused.scrollIntoView({block:'nearest'});
+      }
     }
     button.addEventListener('click',toggle);return {open:()=>button.getAttribute('aria-expanded')==='true'?Promise.resolve():toggle()};
   }

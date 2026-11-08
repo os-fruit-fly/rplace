@@ -31,7 +31,7 @@ Activity messages are no record of which sources were read, so compare an answer
 
 Interviews depend on continued access to compatible models and software, so a saved checkpoint may not resume in the future. Outputs and transcripts stay readable without a model call. The paper proposes an open-weight rerun with archived weights to reduce this dependency; that rerun is not yet part of the shared baseline. [Long-term access and resource limits](project.html#keeping-the-baseline-usable).
 
-Reading pages use the pixel stream's participant IDs and still contain linkable Reddit text. The reading website and the research repository are public; original bundles and transcripts keep usernames. [Release access](history.html#release-access) explains these boundaries. Running an interview sends text to the model provider. Credentials are never included. Original records stay intact.
+Reading pages use the pixel stream's participant IDs and still contain linkable Reddit text. The reading website and the research repository are public; original bundles and transcripts keep usernames. [Release access](history.html#release-access) explains these boundaries. When you ask a question, the provider receives your question and context that can include saved conversation history and passages from checkpoint files. Sign-in names the provider and links to its privacy terms. Closing the interview discards the host copy. Credentials are never included. Original records stay intact.
 
 ## Return to an online interview
 

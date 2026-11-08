@@ -166,7 +166,7 @@ main.page-agents{counter-reset:spec}
 @media(pointer:coarse){button,select,summary{min-height:44px}header nav a{padding:.6rem 0}}
 @media(prefers-reduced-motion:no-preference){a,button{transition:background-color .12s ease,color .12s ease}}
 @media(max-width:760px){.example-pair{grid-template-columns:minmax(0,1fr)}}
-@media(max-width:680px){header{grid-template-columns:minmax(0,1fr) auto}header .utility{display:contents}header #theme{grid-column:2;grid-row:1}header .task-nav{grid-column:1/-1;margin-top:.9rem;gap:.2rem 1.1rem}header .menu{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;white-space:nowrap;gap:1.3rem;padding:1rem 0 .5rem}header .menu::-webkit-scrollbar{display:none}.parts{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;white-space:nowrap;gap:1.2rem;margin-top:-1.2rem;mask-image:linear-gradient(90deg,#000 88%,transparent)}.parts::-webkit-scrollbar{display:none}.parts::after,header .menu::after{content:'';flex:0 0 2.5rem}.examples{grid-template-columns:1fr}}
+@media(max-width:680px){header{grid-template-columns:minmax(0,1fr) auto}header .utility{display:contents}header #theme{grid-column:2;grid-row:1}header .task-nav{grid-column:1/-1;margin-top:.9rem;gap:.2rem 1.1rem}header .menu{gap:0 1.3rem;padding:1rem 0 .5rem}.parts{gap:0 1.2rem;margin-top:-1.2rem}.examples{grid-template-columns:1fr}}
 @media(max-width:680px){.spec{grid-template-columns:1fr}.spec>h2{grid-row:auto;margin-bottom:.8rem}.spec>*{grid-column:1}}
 /* One stage map shared by explanation and interview selection. */
 .stage-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem 2rem;margin:2rem 0}
@@ -197,6 +197,7 @@ main.page-agents{counter-reset:spec}
 .actions .talk-local:hover,.actions .talk-local[aria-expanded="true"] { background: var(--tint); }
 .actions button.talk-local { font-size: inherit; font-weight: 650; border-radius: 0; }
 .local-setup { margin: 1.5rem 0; padding: 1.3rem 0; border-block: 1px solid var(--rule); }
+.local-setup:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 .local-setup h3 { font-size: 1.35rem; margin: 0 0 .7rem; }
 .local-setup h4 { font-size: 1.1rem; margin: 2rem 0 1rem; }
 .local-setup-steps { max-width: 72ch; padding-left: 1.4rem; }
@@ -572,3 +573,10 @@ header .task-nav a[data-reviewer-entry], header #theme {
 header .utility { column-gap: .6rem; }
 header .task-nav a[data-reviewer-entry]:hover, header #theme:hover { background: var(--surface); }
 @media(max-width:680px){header{column-gap:.6rem}}
+@media (max-width: 390px) {
+  header { grid-template-columns: minmax(0, 1fr) auto; row-gap: .25rem; }
+  header .brand { grid-column: 1; grid-row: 1 / span 2; }
+  header .task-nav { justify-self: end; }
+  header #theme { grid-column: 2; grid-row: 2; justify-self: end; }
+  header .menu { grid-row: 3; }
+}

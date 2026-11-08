@@ -80,6 +80,6 @@ These reading pages are public. Saved reading pages, their Markdown and JSONL do
 
 Original checkpoint bundles and transcripts are in the public research repository. Three legacy manual pages containing participant handles link to their originals in the research repository. Original research files keep their verified bytes. Reading manifests list the hashes of original sources apart from those of the derived copies.
 
-Reviewer sign-in works in a browser. Run on your computer is available with a supported model account and runtime.
+Reviewer sign-in works in a browser. Chat Locally is available with a supported model account and runtime.
 
 [Machine-readable history and evidence hashes](../history.json). New records extend the catalog; earlier checkpoint identities, accepted bundles and source recipes are unchanged. Additional runtime proofs, when available, name the exact executable tested.

@@ -90,7 +90,7 @@
         if(c.kind==='community'){const descriptions={'coding-close':'After coding: codes, themes and the case account.','R6':'After the local model: the account, model and coding structure.','D2':'After the return: how the population model fits this community.','D3':'After the re-check: how the revised model fits this community.'};if(descriptions[c.milestone])card.append(el('p',descriptions[c.milestone],'why'));}
         const privateChoice=privateChoices.get(c.id),ready=(c.availability==='ready'&&c.bundle?.url&&c.bundle?.sha256)||c.local_route?.kind==='review-archive',h=historical.checkpoints[c.id];
         if(!primary&&h.saved_utc)card.append(el('p','Saved '+h.saved_utc.slice(0,10),'checkpoint-date'));
-        const actions=el('div',null,'actions chat-actions'),local=el('button','Run on your computer');
+        const actions=el('div',null,'actions chat-actions'),local=el('button','Chat Locally');
         let onlineURL='online-chat.html?checkpoint='+encodeURIComponent(c.id);
         if(config.hosted_url){const u=new URL('/talk',config.hosted_url);if(u.protocol==='https:'){u.searchParams.set('checkpoint',c.id);onlineURL=u.href;}}
         local.className='talk-action talk-local';

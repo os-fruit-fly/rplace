@@ -27,7 +27,7 @@
         location.replace(destination.href);return;
       }
       status.textContent='Online interviews are not connected yet.';
-      content.replaceChildren(node('p','You can read the study here and use Run on your computer to open a checkpoint on your own computer. Checkpoint downloads come from the public research repository.'));
+      content.replaceChildren(node('p','You can read the study here and use Chat Locally to open a checkpoint on your own computer. Checkpoint downloads come from the public research repository.'));
       if(document.getElementById('retention-note'))document.getElementById('retention-note').hidden=true;
       return;
     }

@@ -2,7 +2,7 @@
 
 Choose a community or an aggregator checkpoint. Each card shows what was saved and which routes are available.
 
-**Read saved outputs** opens selected narrative files from that exact checkpoint in the browser, with provenance and hashes. It needs no model login. **Read the record** opens the original transcript or close receipt on GitHub. **Run on your computer** expands setup beneath the selected checkpoint, with one command first and a step-by-step guide below. The stage map and description stay on the page. **Chat Online** opens a new tab, asks for reviewer sign-in, and opens the selected checkpoint when its server is available. Your research page stays open.
+**Read saved outputs** opens selected narrative files from that exact checkpoint in the browser, with provenance and hashes. It needs no model login. **Read the record** opens the original transcript or close receipt on GitHub. **Chat Locally** expands setup beneath the selected checkpoint, with one command first and a step-by-step guide below. The stage map and description stay on the page. **Chat Online** opens a new tab, asks for reviewer sign-in, and opens the selected checkpoint when its server is available. Your research page stays open.
 
 Original GitHub transcripts and downloads are in the public research repository. The local **Open the interview service on this computer** link works on this computer only. On a phone, select Reviewer sign in and enter the lowercase username and password from your access sheet.
 
@@ -43,11 +43,11 @@ Close interview removes only that disposable copy. Export first to keep the conv
 
 ## Open an interview on your computer
 
-Select **Run on your computer** on the checkpoint card and paste its single command into Terminal on a Mac or Linux computer. It downloads the launcher, verifies its SHA-256 and every packaged file, prepares a private Python environment, and checks the supported runtime. It asks for GitHub and model-provider sign-in when needed, then opens the interview page. You complete sign-in yourself, and no question is sent until you type it.
+Select **Chat Locally** on the checkpoint card and paste its single command into Terminal on a Mac or Linux computer. It downloads the launcher, verifies its SHA-256 and every packaged file, prepares a private Python environment, and checks the supported runtime. It asks for GitHub and model-provider sign-in when needed, then opens the interview page. You complete sign-in yourself, and no question is sent until you type it.
 
 Python 3.11 or newer, Bash, curl, Git, GitHub CLI and the checkpoint's supported native CLI must already be installed. The command reports missing tools or an unsupported version, and it leaves system software and the runtime as they are. Community archive reading installs `zstandard` in the launcher's private environment when needed. The launcher is stored under `~/.local/share/rplace-interview-launchers/`; interview state remains under `~/.rplace-interviews/`. Later launches reuse verified files and valid logins.
 
-Below the single command, **Or follow these steps** gives the separate download, login and launch steps. Select Run on your computer again to close the instructions. Ask your question in the local interview page. Export before ending if you want to keep the new conversation.
+Below the single command, **Or follow these steps** gives the separate download, login and launch steps. Select Chat Locally again to close the instructions. Ask your question in the local interview page. Export before ending if you want to keep the new conversation.
 
 The default route downloads from the public research repository. If the authors have already supplied the exact verified bundle, use the **Already downloaded the checkpoint?** command instead. That explicit offline route skips GitHub restoration; it still requires the provider login and supported runtime. The site cannot grant access. Expect a setup step on the computer, and the download time and disk space the launcher lists, before the interview opens. [Launcher version and SHA-256](../downloads/launcher.json). A missing login or unsupported CLI stops the interview and reports the reason.
 

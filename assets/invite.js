@@ -7,9 +7,9 @@
   document.getElementById('invite-local').href=checkpoint?'local-chat.html?checkpoint='+encodeURIComponent(checkpoint):'interviews.html';
   const invite=fragment.get('invite');history.replaceState(null,'',location.pathname+location.search);
   async function submit(code){button.disabled=true;status.textContent='Signing in…';try{
-    const r=await fetch('/api/invite',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({invite:code}),cache:'no-store'});let d;try{d=await r.json();}catch(_){throw Error('Online interviews are not connected here yet. Use Run on your computer.');}if(!r.ok)throw Error(d.error||'The invitation could not be opened.');location.replace(target);
+    const r=await fetch('/api/invite',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({invite:code}),cache:'no-store'});let d;try{d=await r.json();}catch(_){throw Error('Online interviews are not connected here yet. Use Chat Locally.');}if(!r.ok)throw Error(d.error||'The invitation could not be opened.');location.replace(target);
   }catch(e){status.textContent=e.message;button.disabled=false;}}
   form.onsubmit=e=>{e.preventDefault();submit(document.getElementById('invite-code').value.trim());};
-  try{const r=await fetch('/api/hosted-session',{cache:'no-store'});if(!r.ok){status.textContent=r.status===404?'Online interviews are not connected to this preview yet. Use Run on your computer below.':'The online interview server is unavailable. Try again later or use Run on your computer.';form.hidden=true;return;}if((await r.json()).authenticated){location.replace(target);return;}}catch(_){status.textContent='The online interview server could not be reached. Try again later or use Run on your computer.';form.hidden=true;return;}
+  try{const r=await fetch('/api/hosted-session',{cache:'no-store'});if(!r.ok){status.textContent=r.status===404?'Online interviews are not connected to this preview yet. Use Chat Locally below.':'The online interview server is unavailable. Try again later or use Chat Locally.';form.hidden=true;return;}if((await r.json()).authenticated){location.replace(target);return;}}catch(_){status.textContent='The online interview server could not be reached. Try again later or use Chat Locally.';form.hidden=true;return;}
   if(invite)await submit(invite);
 })();

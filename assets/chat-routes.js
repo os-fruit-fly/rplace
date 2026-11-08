@@ -27,7 +27,7 @@
         location.replace(destination.href);return;
       }
       status.textContent='Online interviews are not connected yet.';
-      content.replaceChildren(node('p','You can read the study here and use Chat Locally to open a checkpoint on your own computer. Checkpoint downloads come from the public research repository.'));
+      content.replaceChildren(node('p','You can read the study here and use Run on your computer to open a checkpoint on your own computer. Checkpoint downloads come from the public research repository.'));
       if(document.getElementById('retention-note'))document.getElementById('retention-note').hidden=true;
       return;
     }
@@ -42,9 +42,9 @@
     const phases={waiting_restore:'Waiting to restore',restoring_originals:'Restoring and verifying original files',downloading:'Downloading files',unpacking_verifying:'Unpacking and verifying',checking_identity:'Checking session identity',files_ready:'Ready for a question',opening_conversation:'Opening the saved conversation',answering:'Answering',ready:'Ready',error:'Needs operator attention'};
     async function refresh(){if(loading)return;loading=true;try{
       const data=await json('/api/interviews');status.textContent=data.interviews.length+' of '+data.capacity+' interview slots in use.';
-      document.getElementById('retention-note').textContent='An open chat or this list keeps interviews available. Without either page connected, they expire after '+Math.round(data.idle_seconds/60)+' minutes. Closing a browser tab does not close an interview immediately. A server restart also ends access to these copies.';
+      document.getElementById('retention-note').textContent='Each interview closes after inactivity lasting '+Math.round(data.idle_seconds/60)+' minutes. Closing a browser tab does not close an interview immediately. A server restart also ends access to these copies.';
       const digest=JSON.stringify(data);if(previous===digest)return;previous=digest;content.replaceChildren();
-      if(!data.interviews.length){content.append(node('p','You have no open interviews. Choose a checkpoint and select Chat Online.'));return;}
+      if(!data.interviews.length){content.append(node('p','You have no open interviews. Choose a checkpoint and select Chat Locally.'));return;}
       for(const s of data.interviews){
         const item=node('article');item.className='checkpoint';item.append(node('h2',s.title),node('p',phases[s.phase]||s.status));
         const actions=node('div');actions.className='actions';const open=link('Return to interview',s.url,true),exportButton=node('button','Export'),close=node('button','Close interview');open.className='talk-action';actions.append(open,exportButton,close);item.append(actions);

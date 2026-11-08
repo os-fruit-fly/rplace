@@ -49,7 +49,7 @@ On this page: [The record](#the-record) · [Community coding](#community-coding)
 - [Contracts v32 for the community coders and v43 for the aggregator](versions.html#contract-versions): Appendix 5.4. Every version and what changed.
 - [Completed checks and planned comparisons](guides/study.html#how-the-model-is-checked): Proposal, the three levels of checks; Appendix 5.4.
 - [The r/place subreddit, left out of the population model](results/population-record.html#the-rplace-subreddit): Proposal, the three levels of checks.
-- [Checkpoint interviews: Chat Locally and Chat Online](interviews.html): Proposal, the repository; Appendix 5.5. Choose a stage, then Chat Locally; Chat Online opens reviewer sign-in. Online answers are limited to a private pilot.
+- [Checkpoint interviews: Run on your computer and Chat Locally](interviews.html): Proposal, the repository; Appendix 5.5. Choose a stage. Chat Locally opens the selected agent in a new tab, with reviewer sign-in when needed.
 - [18 aggregator checkpoints, one at the close of each stage, and 30 community checkpoints from 12 communities](launch-commands.html): Appendix 5.5. The 48 downloads include the coding close and D3 for all 12 communities, plus R6 for six. The repository holds hundreds of saved checkpoints, among them intermediate pauses and the communities' D2 and D3 returns: [the checkpoint list](checkpoint-index.html) gives 314 from the aggregator and 77 from 21 communities. The other communities' checkpoints, about 2,000, exist offline: they were saved before the repository existed, and are too many for anyone to read.
 
 ## Not on the site yet

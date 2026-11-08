@@ -15,7 +15,7 @@ Read the [interview guide](../guides/interviews.md), [runtime guide](../runtime.
 
 ## Start here
 
-The checkpoint's Chat Locally button expands instructions on the same page. Its first Bash command downloads and verifies the launcher, prepares a private environment, checks access, requests missing sign-ins and opens the selected interview. Separate download, login and launch steps follow it. Use a Mac or Linux computer with Python 3.11 or newer and the supported native executable. The command does not install system tools or replace runtimes. Keep its private interview home outside every Git checkout.
+The checkpoint's Run on your computer button expands instructions on the same page. Its first Bash command downloads and verifies the launcher, prepares a private environment, checks access, requests missing sign-ins and opens the selected interview. Separate download, login and launch steps follow it. Use a Mac or Linux computer with Python 3.11 or newer and the supported native executable. The command does not install system tools or replace runtimes. Keep its private interview home outside every Git checkout.
 
 For manual setup, download and extract the site's [launcher](../downloads/rplace-interviews.zip), check its [version and hash](../downloads/launcher.json), and follow its README.
 
@@ -31,7 +31,7 @@ The website cannot grant repository or provider access. Ask the study owner for 
 
 ## Open and check
 
-Use **Chat Locally** on the selected card. Paste its first command into Terminal, or follow the separate steps below it. The launcher verifies the source recipe or supplied bundle, saved file hashes, conversation identity and supported runtime. It refuses mismatches. Restoration alone sends no aggregator question.
+Use **Run on your computer** on the selected card. Paste its first command into Terminal, or follow the separate steps below it. The launcher verifies the source recipe or supplied bundle, saved file hashes, conversation identity and supported runtime. It refuses mismatches. Restoration alone sends no aggregator question.
 
 The default route restores original GitHub files plus the explicitly declared saved-state supplement. [Original-source details](../ORIGINAL-SOURCES.md) explain the distinction. Do not silently fall back to another checkpoint, current workspace or fresh agent.
 

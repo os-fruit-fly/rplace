@@ -99,7 +99,7 @@
       if(!open||loaded)return;
       panel.replaceChildren(node('p','Loading local setup…'));panel.setAttribute('aria-busy','true');
       try{render(panel,typeof checkpoint==='string'?await entry(checkpoint):checkpoint);loaded=true;}
-      catch(e){const message=node('p',e.message+' Close and reopen Chat Locally to retry.');message.setAttribute('role','status');panel.replaceChildren(message);}
+      catch(e){const message=node('p',e.message+' Close and reopen Run on your computer to retry.');message.setAttribute('role','status');panel.replaceChildren(message);}
       finally{panel.removeAttribute('aria-busy');}
     }
     button.addEventListener('click',toggle);return {open:()=>button.getAttribute('aria-expanded')==='true'?Promise.resolve():toggle()};

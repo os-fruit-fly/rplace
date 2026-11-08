@@ -90,17 +90,17 @@
         if(c.kind==='community'){const descriptions={'coding-close':'After coding: codes, themes and the case account.','R6':'After the local model: the account, model and coding structure.','D2':'After the return: how the population model fits this community.','D3':'After the re-check: how the revised model fits this community.'};if(descriptions[c.milestone])card.append(el('p',descriptions[c.milestone],'why'));}
         const privateChoice=privateChoices.get(c.id),ready=(c.availability==='ready'&&c.bundle?.url&&c.bundle?.sha256)||c.local_route?.kind==='review-archive',h=historical.checkpoints[c.id];
         if(!primary&&h.saved_utc)card.append(el('p','Saved '+h.saved_utc.slice(0,10),'checkpoint-date'));
-        const actions=el('div',null,'actions chat-actions'),local=el('button','Chat Locally');
+        const actions=el('div',null,'actions chat-actions'),local=el('button','Run on your computer');
         let onlineURL='online-chat.html?checkpoint='+encodeURIComponent(c.id);
-        if(config.hosted_url){const u=new URL('/online-chat.html',config.hosted_url);if(u.protocol==='https:'){u.searchParams.set('checkpoint',c.id);onlineURL=u.href;}}
+        if(config.hosted_url){const u=new URL('/talk',config.hosted_url);if(u.protocol==='https:'){u.searchParams.set('checkpoint',c.id);onlineURL=u.href;}}
         local.className='talk-action talk-local';
-        const online=link('Chat Online',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Online at '+(c.kind==='community'?'r/'+c.entity+' '+c.title:c.milestone)+', opens in a new tab');
+        const online=link('Chat Locally',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Locally at '+(c.kind==='community'?'r/'+c.entity+' '+c.title:c.milestone)+', opens in a new tab');
         if(ready&&config.hosted_url&&Array.isArray(config.prepared_checkpoints)){
           const prepared=config.prepared_checkpoints.includes(c.id);
-          const text=prepared?'Chat Online opens a prepared copy.':'Chat Online unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
+          const text=prepared?'Chat Locally opens a prepared copy.':'Chat Locally unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
           card.append(el('p',text,'why'));
         }
-        if(ready||privateChoice){actions.append(local,online);card.append(actions);}
+        if(ready||privateChoice){actions.append(online,local);card.append(actions);}
         const setup=el('section');setup.id='local-setup-'+c.id;card.append(setup);
         const control=window.RplaceLocalSetup.mount(local,setup,c);
         if(ready&&selected===c.id&&new URLSearchParams(location.search).get('local')==='1')control.open();

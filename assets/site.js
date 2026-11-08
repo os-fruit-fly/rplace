@@ -83,8 +83,7 @@
       page=Math.min(page,Math.max(1,Math.ceil(secondary.length/PAGE_SIZE)));const start=(page-1)*PAGE_SIZE;
       const stageName=cat.stages.find(s=>s.id===entity)?.name;
       const community = kind === 'community' && Array.from(document.querySelectorAll('[data-entity]')).find(a => a.dataset.entity === entity);
-      const communityName = community ? community.textContent : 'r/' + entity;
-      title.textContent=entity?(kind==='community'?communityName:entity+(stageName?' · '+stageName:'')):(kind==='community'?'Choose a community above':'Choose a stage above');
+      title.textContent=entity?(kind==='community'?'r/'+entity:entity+(stageName?' · '+stageName:'')):(kind==='community'?'Choose a community above':'Choose a stage above');
       description.replaceChildren();
       description.hidden = !rows.length || (kind === 'community' && !community);
       if (!description.hidden && community) {
@@ -106,7 +105,7 @@
         let onlineURL='online-chat.html?checkpoint='+encodeURIComponent(c.id);
         if(config.hosted_url){const u=new URL('/talk',config.hosted_url);if(u.protocol==='https:'){u.searchParams.set('checkpoint',c.id);onlineURL=u.href;}}
         local.className='talk-action talk-local';
-        const online=link('Chat Online',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Online at '+(c.kind==='community'?communityName+' '+c.title:c.milestone)+', opens in a new tab');
+        const online=link('Chat Online',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Online at '+(c.kind==='community'?'r/'+c.entity+' '+c.title:c.milestone)+', opens in a new tab');
         if(ready&&config.hosted_url&&Array.isArray(config.prepared_checkpoints)){
           const prepared=config.prepared_checkpoints.includes(c.id);
           const text=prepared?'Chat Online opens a prepared copy.':'Chat Online unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
@@ -114,7 +113,6 @@
         }
         if(ready||privateChoice){actions.append(online,local);card.append(actions);}
         const setup=el('section');setup.id='local-setup-'+c.id;card.append(setup);
-        if (community) local.dataset.communityName = communityName;
         const control=window.RplaceLocalSetup.mount(local,setup,c);
         if(ready&&selected===c.id&&new URLSearchParams(location.search).get('local')==='1')control.open();
         if(!primary&&!ready)card.append(el('p',c.candidate?'This checkpoint is being prepared for interviews.':c.reason||'An interview is not available for this checkpoint.','why'));

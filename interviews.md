@@ -2,9 +2,9 @@
 
 An interview generates new answers from a saved conversation and its files. Check each answer against the original record. The agent’s internal computation at the time was never recorded. [How interviews work](guides/interviews.html).
 
-## One community: r/PlaceNL (form B)
+## One community: r/PlaceNL
 
-This community coordinated Dutch artwork through maps, Discord and a repair script. The script kept restoring the flag over canal houses that members had agreed to add.
+This community coordinated Dutch artwork through maps, Discord and a repair script. The script kept restoring the flag over canal houses that members had agreed to add. [Form B in the population model](results/population-forms.html#form-B).
 
 The coding close has two continuations. On one, the coder built a local model (R6). On the other, a copy of the coder tested the first population model (D2) and continued in the same session for the re-check (D3). [See the fork evidence](guides/history.html#models-and-lineage).
 

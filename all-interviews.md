@@ -4,7 +4,7 @@
 
 ## Communities
 
-### r/armenia (form B)
+### r/armenia
 
 Members drew the Armenian tricolour beside GreyBlob’s cat and made a defence pact with r/greece. After Dutch artwork covered the flag, they found space to rebuild above the Indian flag. [Form B in the population model](results/population-forms.html#form-B).
 
@@ -12,7 +12,7 @@ Members drew the Armenian tricolour beside GreyBlob’s cat and made a defence p
 - [R6](all-interviews.html?checkpoint=community--armenia--R6)
 - [D3](all-interviews.html?checkpoint=community--armenia--D3)
 
-### r/cirkeltrek (form A)
+### r/cirkeltrek
 
 Members of this Dutch humour community circulated pixel plans for the national anthem and a lion. As the lion spread over neighbouring artwork, some members called for annexation while others tried to negotiate borders. [Form A in the population model](results/population-forms.html#form-A).
 
@@ -20,35 +20,35 @@ Members of this Dutch humour community circulated pixel plans for the national a
 - [R6](all-interviews.html?checkpoint=community--cirkeltrek--R6)
 - [D3](all-interviews.html?checkpoint=community--cirkeltrek--D3)
 
-### r/cubers (form C)
+### r/cubers
 
 Puzzle enthusiasts drew a three-by-three cube together. When some wanted to expand it to four by four, others objected that the larger design would encroach on the Bulgarian flag. [Form C in the population model](results/population-forms.html#form-C).
 
 - [coding-close](all-interviews.html?checkpoint=community--cubers--coding-close)
 - [D3](all-interviews.html?checkpoint=community--cubers--D3)
 
-### r/dallasstars (form F)
+### r/dallasstars
 
 Dallas Stars hockey fans carried their logo template from one proposed site to the next. When another group explained that a seemingly empty spot already held its logo, the fans agreed to move. [Form F in the population model](results/population-forms.html#form-F).
 
 - [coding-close](all-interviews.html?checkpoint=community--dallasstars--coding-close)
 - [D3](all-interviews.html?checkpoint=community--dallasstars--D3)
 
-### r/FloydVsVoid (form A)
+### r/FloydVsVoid
 
 Pink Floyd fans tried to draw the prism from The Dark Side of the Moon in territory claimed by the Void. After an early defeat, they rallied around a shared design and negotiated where the rainbow would meet neighbouring art. [Form A in the population model](results/population-forms.html#form-A).
 
 - [coding-close](all-interviews.html?checkpoint=community--FloydVsVoid--coding-close)
 - [D3](all-interviews.html?checkpoint=community--FloydVsVoid--D3)
 
-### r/gorillaz (form D)
+### r/gorillaz
 
 Fans drew the four members of the band Gorillaz one portrait at a time. Even after the faces were recognisable, fans kept returning to repair eyes, hair and colours. [Form D in the population model](results/population-forms.html#form-D).
 
 - [coding-close](all-interviews.html?checkpoint=community--gorillaz--coding-close)
 - [D3](all-interviews.html?checkpoint=community--gorillaz--D3)
 
-### r/greece (form D)
+### r/greece
 
 Members worked out the width of the Greek flag’s stripes and called on allies to defend it. After Dutch placers overran the first flag, some helped the Greek builders raise another elsewhere. [Form D in the population model](results/population-forms.html#form-D).
 
@@ -56,14 +56,14 @@ Members worked out the width of the Greek flag’s stripes and called on allies 
 - [R6](all-interviews.html?checkpoint=community--greece--R6)
 - [D3](all-interviews.html?checkpoint=community--greece--D3)
 
-### r/GreyBlob (form D)
+### r/GreyBlob
 
 A group formed to draw a grey patch, then gave it a heart and a cat. When Dutch artwork covered their patch, members looked for a new site and finished a smaller grey cat before the canvas closed. [Form D in the population model](results/population-forms.html#form-D).
 
 - [coding-close](all-interviews.html?checkpoint=community--GreyBlob--coding-close)
 - [D3](all-interviews.html?checkpoint=community--GreyBlob--D3)
 
-### r/ik_ihe (form B)
+### r/ik_ihe
 
 Members of this Dutch meme community called for help drawing Pipo the Clown, starting with a pink pixel for his nose. An update redirected volunteers to the Dutch national anthem and to Discord to coordinate. [Form B in the population model](results/population-forms.html#form-B).
 
@@ -71,7 +71,7 @@ Members of this Dutch meme community called for help drawing Pipo the Clown, sta
 - [R6](all-interviews.html?checkpoint=community--ik_ihe--R6)
 - [D3](all-interviews.html?checkpoint=community--ik_ihe--D3)
 
-### r/PlaceNL (form B)
+### r/PlaceNL
 
 This community coordinated Dutch artwork through maps, Discord and a repair script. The script kept restoring the flag over canal houses that members had agreed to add. [Form B in the population model](results/population-forms.html#form-B).
 
@@ -79,7 +79,7 @@ This community coordinated Dutch artwork through maps, Discord and a repair scri
 - [R6](all-interviews.html?checkpoint=community--PlaceNL--R6)
 - [D3](all-interviews.html?checkpoint=community--PlaceNL--D3)
 
-### r/thenetherlands (form E)
+### r/thenetherlands
 
 Members of the Dutch national subreddit built a flag, laid out the words of the national anthem and negotiated borders. As the project grew, they directed volunteers to r/PlaceNL and Discord to coordinate the work. [Form E in the population model](results/population-forms.html#form-E).
 
@@ -87,7 +87,7 @@ Members of the Dutch national subreddit built a flag, laid out the words of the 
 - [R6](all-interviews.html?checkpoint=community--thenetherlands--R6)
 - [D3](all-interviews.html?checkpoint=community--thenetherlands--D3)
 
-### r/warframe (form E)
+### r/warframe
 
 Fans of the video game Warframe drew its Lotus emblem and kept repairing it. When someone proposed drawing the character Nova beneath it, another member asked whether the neighbouring Green Lattice had agreed. [Form E in the population model](results/population-forms.html#form-E).
 

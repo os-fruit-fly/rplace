@@ -376,3 +376,49 @@
 :is(#results-community,#results-population) summary::before{content:"";flex:none;align-self:center;width:.42em;height:.42em;font-size:inherit;border:solid var(--accent);border-width:0 1.5px 1.5px 0;transform:translateY(-.1em) rotate(-45deg)}
 :is(#results-community,#results-population) details[open]>summary::before{content:"";transform:translateY(-.2em) rotate(45deg)}
 :is(#results-community,#results-population) .plate:not(:has(.figure-reader)) summary::before{border-color:#a32a14}
+
+/* Findings stages: the case facts, short accounts and supporting records. */
+#main :is(#results-community, #results-population) .findings-part-heading {
+  font-size: clamp(2.15rem, 1.8rem + 1.5vw, 2.8rem) !important;
+  margin: 2.5rem 0 1rem;
+  padding: 0;
+  border: 0;
+  line-height: 1.1;
+}
+.results-artifact .findings-short > section {
+  border: 1px solid var(--muted);
+  padding: clamp(.85rem, 2.2vw, 1.5rem);
+  margin: 0 0 1rem;
+  min-width: 0;
+}
+#main .results-artifact :is(.findings-short, .findings-detail) > section > h3:first-child {
+  font: 750 clamp(1.4rem, 1.15rem + 1vw, 1.75rem)/1.15 var(--display) !important;
+  font-stretch: 75% !important;
+  margin: 0 0 .6rem;
+}
+.results-artifact .findings-short > section > :last-child { margin-bottom: 0; }
+.results-artifact .findings-detail > section + section {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+#main .results-artifact .theme-list {
+  margin: 1rem 0;
+  border-block: 1px solid var(--rule);
+}
+#main .results-artifact .theme-list > summary {
+  display: flex;
+  min-height: 44px;
+  gap: .7rem;
+  padding: .65rem .15rem;
+  font-weight: 650 !important;
+}
+.findings-short .coded-pair {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+.results-artifact .findings-table-scroll {
+  overflow-x: auto;
+}
+@media (max-width: 40rem) {
+  .findings-table-scroll .ladder-rows { min-width: 30rem; }
+}

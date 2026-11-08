@@ -1,13 +1,11 @@
 # Findings
 
-In r/PlaceNL, the script that defended the Dutch flag kept erasing [the canal houses](results/placenl-return.html#repair-and-change) members wanted to add. Across 705 communities, the study traces how people built, defended and changed their artwork.
+Community coders traced how people organized in 705 r/place communities. The aggregator grouped the coders’ themes into eight dimensions and built a population model with 21 connections among 30 elements. The coders then checked the model against their own cases. The aggregator used the changes it accepted from those checks, together with each community’s codes, to identify six candidate organizational forms.
 
 - **[How the discussion changed over time](results/population-coding.html#when-the-codes-fall).** In the first 34 hours, the most common codes describe how subreddits chose to take part in the event.
 - **[How communities built and kept their artwork](results/population-aggregation.html#model).** The population model links recruitment and coordination to the work of defending and repairing a design.
-- **[How the six forms were identified](results/population-forms.html#forms).** The tree groups 558 communities by the codes they share and the changes they called for in the model.
-- **[Where the forms change the model](results/population-forms.html#figure-3).** The spider plots compare each form’s share of changes across eight dimensions with the average for communities that proposed changes. Shown here: A (borders), C (redesign) and F (relocation).
-
-The two journeys below take one community and then all 705 through the same parts of the study. [Browse the files by stage](results/files.html).
+- **[The six organizational forms](results/population-forms.html#the-six-forms).** Read the aggregator’s description of each form and see which communities belong to it.
+- **[Where the forms change the model](results/form-to-post.html).** Each plot compares a form’s share of changes across eight dimensions with the average for communities that proposed changes. Read from form to post.
 
 ## One community: r/PlaceNL
 

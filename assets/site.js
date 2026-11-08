@@ -94,10 +94,10 @@
         let onlineURL='online-chat.html?checkpoint='+encodeURIComponent(c.id);
         if(config.hosted_url){const u=new URL('/talk',config.hosted_url);if(u.protocol==='https:'){u.searchParams.set('checkpoint',c.id);onlineURL=u.href;}}
         local.className='talk-action talk-local';
-        const online=link('Chat Locally',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Locally at '+(c.kind==='community'?'r/'+c.entity+' '+c.title:c.milestone)+', opens in a new tab');
+        const online=link('Chat Online',onlineURL);online.className='talk-action';online.target='_blank';online.rel='noopener';online.setAttribute('aria-label','Chat Online at '+(c.kind==='community'?'r/'+c.entity+' '+c.title:c.milestone)+', opens in a new tab');
         if(ready&&config.hosted_url&&Array.isArray(config.prepared_checkpoints)){
           const prepared=config.prepared_checkpoints.includes(c.id);
-          const text=prepared?'Chat Locally opens a prepared copy.':'Chat Locally unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
+          const text=prepared?'Chat Online opens a prepared copy.':'Chat Online unpacks this checkpoint when you open it. Large checkpoints can take several minutes.';
           card.append(el('p',text,'why'));
         }
         if(ready||privateChoice){actions.append(online,local);card.append(actions);}

@@ -44,7 +44,7 @@
       const data=await json('/api/interviews');status.textContent=data.interviews.length+' of '+data.capacity+' interview slots in use.';
       document.getElementById('retention-note').textContent='Each interview closes after inactivity lasting '+Math.round(data.idle_seconds/60)+' minutes. Closing a browser tab does not close an interview immediately. A server restart also ends access to these copies.';
       const digest=JSON.stringify(data);if(previous===digest)return;previous=digest;content.replaceChildren();
-      if(!data.interviews.length){content.append(node('p','You have no open interviews. Choose a checkpoint and select Chat Locally.'));return;}
+      if(!data.interviews.length){content.append(node('p','You have no open interviews. Choose a checkpoint and select Chat Online.'));return;}
       for(const s of data.interviews){
         const item=node('article');item.className='checkpoint';item.append(node('h2',s.title),node('p',phases[s.phase]||s.status));
         const actions=node('div');actions.className='actions';const open=link('Return to interview',s.url,true),exportButton=node('button','Export'),close=node('button','Close interview');open.className='talk-action';actions.append(open,exportButton,close);item.append(actions);

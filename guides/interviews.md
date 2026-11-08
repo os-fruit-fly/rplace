@@ -2,7 +2,7 @@
 
 Choose a community or an aggregator checkpoint. Each card shows what was saved and which routes are available.
 
-**Read saved outputs** opens selected narrative files from that exact checkpoint in the browser, with provenance and hashes. It needs no model login. **Read the record** opens the original transcript or close receipt on GitHub. **Run on your computer** expands setup beneath the selected checkpoint, with one command first and a step-by-step guide below. The stage map and description stay on the page. **Chat Locally** opens a new tab, asks for reviewer sign-in, and opens the selected checkpoint when its server is available. Your research page stays open. The appendix calls this browser route “Chat Online”.
+**Read saved outputs** opens selected narrative files from that exact checkpoint in the browser, with provenance and hashes. It needs no model login. **Read the record** opens the original transcript or close receipt on GitHub. **Run on your computer** expands setup beneath the selected checkpoint, with one command first and a step-by-step guide below. The stage map and description stay on the page. **Chat Online** opens a new tab, asks for reviewer sign-in, and opens the selected checkpoint when its server is available. Your research page stays open.
 
 Original GitHub transcripts and downloads are in the public research repository. The local **Open the interview service on this computer** link works on this computer only. On a phone, select Reviewer sign in and enter the lowercase username and password from your access sheet.
 
@@ -37,7 +37,7 @@ Reading pages use the pixel stream's participant IDs and still contain linkable 
 
 Browser interviews use the name and password on your reviewer access sheet.
 
-After sign-in, **Open interviews** lists the chats still held by the server. Return opens the same interview, with its messages and historical files, without restoring again. Repeated clicks on Chat Locally also reuse the existing chat for that checkpoint.
+After sign-in, **Open interviews** lists the chats still held by the server. Return opens the same interview, with its messages and historical files, without restoring again. Repeated clicks on Chat Online also reuse the existing chat for that checkpoint.
 
 Close interview removes only that disposable copy. Export first to keep the conversation; typing `/exit` opens the same close controls. Signing out discards all your open interviews. Each interview also closes after two hours of inactivity, even if a tab stays open. You can keep two interviews open when server slots are available.
 

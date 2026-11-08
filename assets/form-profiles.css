@@ -1,0 +1,7 @@
+.spider-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; max-width:52rem; margin:1rem 0; padding:0; list-style:none; }
+.spider-grid li { margin:0; }
+.spider-grid a { display:block; text-align:center; font-weight:600; }
+.spider-grid img { display:block; background:white; width:100%; height:auto; }
+.spider-grid a span { display:inline-block; padding:.3rem .7rem; }
+@media(max-width:700px){ .spider-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; } }
+.spider-grid small { display:block; text-align:center; color:var(--muted); font-size:.86rem; }

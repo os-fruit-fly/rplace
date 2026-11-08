@@ -81,16 +81,8 @@ figcaption { margin-top: .55rem; }
 }
 .spider-group { margin:1.4rem 0 2rem; }
 .spider-group > p, .front-handoff > p, .study-entries { max-width:69ch; }
-.spider-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; max-width:52rem; margin:1rem 0; padding:0; list-style:none; }
-.spider-grid li { margin:0; }
-.spider-grid a { display:block; text-align:center; font-weight:600; }
-.spider-grid img { display:block; background:white; width:100%; height:auto; }
-.spider-grid a span { display:inline-block; padding:.3rem .7rem; }
 .figure-preview picture { display:block; width:100%; }
 .evidence-card { border-color:color-mix(in srgb,var(--accent) 50%,var(--rule)); }
 #form-reading-link { color:var(--accent); font-weight:650; text-decoration:underline; text-underline-offset:.18em; margin-top:.25rem; }
 .front-handoff { border-top:2px solid var(--line); padding-top:1rem; margin-top:1.6rem; }
 .front-handoff h2 { margin-top:0; }
-@media(max-width:700px){ .spider-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; } }
-
-.spider-grid small { display:block; text-align:center; color:var(--muted); font-size:.86rem; }

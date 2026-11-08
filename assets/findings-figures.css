@@ -24,7 +24,6 @@
 }
 .figure-preview img { display: block; width: 100%; height: 7rem; object-fit: contain; }
 .figure-copy { display: grid; align-content: start; gap: .3rem; padding: .65rem .8rem .85rem; }
-.figure-copy small { color: var(--muted); font-size: .75rem; line-height: 1.3; }
 .figure-copy strong {
   font-size: 1.06rem;
   line-height: 1.25;
@@ -34,13 +33,27 @@
 }
 .figure-card:hover strong, .figure-card:focus-visible strong { color: var(--accent); }
 .figure-copy > span { font-size: .92rem; line-height: 1.4; }
+.profile-preview { min-height: 7.8rem; }
+.profile-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 15rem);
+  color: #222;
+  text-align: center;
+  font-size: .75rem;
+  line-height: 1.25;
+}
+.profile-strip img { grid-column: 1 / -1; width: 100%; height: auto; }
 @media (max-width: 980px) {
   .findings-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .figure-card { display: grid; grid-template-columns: minmax(5rem, 32%) 1fr; }
-  .figure-preview img { height: 5.25rem; }
-  .figure-copy { padding: .65rem; }
 }
 @media (max-width: 680px) {
   .findings-figures { grid-template-columns: 1fr; gap: .5rem; }
-  .figure-card { grid-template-columns: clamp(4.7rem, 23vw, 7.5rem) 1fr; }
+  .figure-card { display: grid; grid-template-columns: clamp(4.7rem, 23vw, 7.5rem) 1fr; }
+  .figure-preview img { height: 5.25rem; }
+  .figure-copy { padding: .65rem; }
+  .profile-card { display: flex; flex-direction: column; }
+  .profile-card .figure-copy { order: -1; }
+  .profile-preview { min-height: 0; padding: .3rem .65rem .65rem; }
+  .profile-strip img { height: auto; }
 }

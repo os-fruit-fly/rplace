@@ -2,10 +2,10 @@
 
 In r/PlaceNL, the script that defended the Dutch flag kept erasing [the canal houses](results/placenl-return.html#repair-and-change) members wanted to add. Across 705 communities, the study traces how people built, defended and changed their artwork.
 
-- **[Figure 1. Codes over time](results/population-coding.html#when-the-codes-fall).** In the first 34 hours, the most common codes concern how subreddits made room for the event.
-- **[Figure 2. The population model](results/population-aggregation.html#model).** The model traces how communities recruit people, build artwork together and repair it when others change it.
-- **[Figure 3. Tree of the six forms](results/population-forms.html#forms).** The tree groups 558 communities into six forms using their codes and the changes they sought in the model.
-- **[Figure 4. Form profiles](results/population-forms.html#figure-3).** In form C, coordination accounts for 40% of selected changes on average, compared with 28% across communities with changes.
+- **[How the discussion changed over time](results/population-coding.html#when-the-codes-fall).** In the first 34 hours, the most common codes describe how subreddits chose to take part in the event.
+- **[How communities built and kept their artwork](results/population-aggregation.html#model).** The population model links recruitment and coordination to the work of defending and repairing a design.
+- **[How the six forms were identified](results/population-forms.html#forms).** The tree groups 558 communities by the codes they share and the changes they called for in the model.
+- **[Where the forms change the model](results/population-forms.html#figure-3).** The spider plots compare each form’s share of changes across eight dimensions with the average for communities that proposed changes. Shown here: A (borders), C (redesign) and F (relocation).
 
 The two journeys below take one community and then all 705 through the same parts of the study. [Browse the files by stage](results/files.html).
 

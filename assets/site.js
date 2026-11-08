@@ -4,8 +4,71 @@
   try{mode=localStorage.getItem('rplace-theme')||'light';}catch(_){}
   function applyTheme(){document.documentElement.dataset.theme=mode;if(theme)theme.textContent=`Theme: ${mode}`;}
   applyTheme();if(theme)theme.onclick=()=>{mode=['light','dark','system'][(['light','dark','system'].indexOf(mode)+1)%3];try{localStorage.setItem('rplace-theme',mode);}catch(_){}applyTheme();};
-  const menu=document.querySelector('header .menu'),here=menu&&menu.querySelector('[aria-current]');const showHere=()=>{if(!here)return;const m=menu.getBoundingClientRect(),h=here.getBoundingClientRect();if(h.right>m.right-48)menu.scrollLeft+=h.right-m.right+60;};(document.fonts?document.fonts.ready:Promise.resolve()).then(()=>{if(menu&&menu.scrollWidth>menu.clientWidth)menu.classList.add('scrolls');showHere();});
-  const tabs=document.querySelector('main .parts'),tab=tabs&&tabs.querySelector('[aria-current]');(document.fonts?document.fonts.ready:Promise.resolve()).then(()=>{if(!tab)return;const r=tabs.getBoundingClientRect(),t=tab.getBoundingClientRect();if(t.right>r.right-48)tabs.scrollLeft+=t.right-r.right+60;});
+  const menu = document.querySelector('header .menu');
+  const tabs = document.querySelector('main > nav.parts');
+  const phone = window.matchMedia('(max-width: 680px)');
+  const fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
+
+  function revealCurrent(nav) {
+    const current = nav?.querySelector('[aria-current]');
+    if (!current || !nav.clientWidth || nav.scrollWidth <= nav.clientWidth) return;
+    const frame = nav.getBoundingClientRect();
+    const item = current.getBoundingClientRect();
+    if (item.right > frame.right) nav.scrollLeft += item.right - frame.right + 6;
+    else if (item.left < frame.left) nav.scrollLeft += item.left - frame.left - 6;
+  }
+  if (menu && tabs) {
+    const bar = document.createElement('div');
+    bar.className = 'site-tab-bar';
+    menu.before(bar);
+    bar.append(menu);
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'section-pages-button';
+    toggle.textContent = 'Pages';
+    toggle.setAttribute('aria-label', 'Pages in ' + tabs.getAttribute('aria-label'));
+    tabs.id ||= 'section-pages';
+    toggle.setAttribute('aria-controls', tabs.id);
+    tabs.classList.add('section-pages-panel');
+    bar.append(toggle);
+
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', String(open));
+      tabs.classList.toggle('pages-open', open);
+      if (!open) tabs.querySelectorAll('details[open]').forEach(detail => { detail.open = false; });
+    }
+    setOpen(false);
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !event.defaultPrevented && phone.matches && tabs.classList.contains('pages-open')) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!tabs.contains(event.target) && !toggle.contains(event.target) && tabs.classList.contains('pages-open')) setOpen(false);
+    });
+    phone.addEventListener('change', () => {
+      if (phone.matches && tabs.contains(document.activeElement)) toggle.focus();
+      setOpen(false);
+    });
+  }
+  if (menu) {
+    const showEdges = () => {
+      const end = menu.scrollWidth - menu.clientWidth;
+      menu.classList.toggle('more-before', menu.scrollLeft > 2);
+      menu.classList.toggle('more-after', menu.scrollLeft < end - 2);
+    };
+    menu.addEventListener('scroll', showEdges, {passive: true});
+    const updateTabs = () => {
+      menu.classList.toggle('scrolls', menu.scrollWidth > menu.clientWidth);
+      revealCurrent(menu);
+      showEdges();
+      if (!phone.matches) revealCurrent(tabs);
+    };
+    fontsReady.then(updateTabs);
+    if ('ResizeObserver' in window) new ResizeObserver(updateTabs).observe(menu);
+  }
   document.querySelectorAll('.page-run pre.text code, .page-run pre code.language-text').forEach(code=>{
     const copy=document.createElement('button');copy.type='button';copy.textContent='Copy prompt';
     copy.onclick=async()=>{try{await navigator.clipboard.writeText(code.textContent);copy.textContent='Copied';}catch(_){copy.textContent='Select and copy the prompt above';}};code.parentElement.after(copy);
@@ -17,7 +80,7 @@
   if(resources){
     document.addEventListener('click',event=>{if(!resources.contains(event.target))resources.open=false;});
     resources.addEventListener('keydown',event=>{
-      if(event.key==='Escape'&&resources.open){resources.open=false;resources.querySelector('summary').focus();}
+      if(event.key==='Escape'&&resources.open){event.preventDefault();resources.open=false;resources.querySelector('summary').focus();}
     });
   }
   // Published links to a selected checkpoint keep their query and anchor on the directory.

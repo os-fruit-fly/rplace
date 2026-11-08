@@ -4,6 +4,7 @@ This repository accompanies the paper An Organizational Fruit Fly: r/place as a 
 
 ## Research context
 
+- [Three conflicts on the 2017 canvas](events.md) and [the record in numbers](data.md).
 - [r/place as a model organism](organism.md).
 - [Why compose single cases](composition.md).
 - [One shared research object](guides/project.md).

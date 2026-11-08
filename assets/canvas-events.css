@@ -1,0 +1,19 @@
+.page-events .canvas-story { border-top: 1px solid var(--rule); margin: 1.8rem 0; padding-top: 1.25rem; }
+.canvas-story h2 { margin: 0 0 .55rem; }
+.page-events .story-jumps, .page-events .story-sources {
+  display: flex; flex-wrap: wrap; list-style: none; gap: .25rem 1.25rem; padding: 0; margin: .8rem 0;
+}
+.page-events .story-jumps li, .page-events .story-sources li { margin: 0; }
+.page-events .canvas-clock { margin-top: 1rem; color: var(--muted); font-size: .85rem; }
+.canvas-sequence { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(.4rem,1.5vw,1rem); max-width: 43rem; margin: 1rem 0 .8rem; }
+.canvas-sequence figure { margin: 0; min-width: 0; }
+.canvas-sequence img { display: block; width: 100%; height: auto; image-rendering: pixelated; border: 1px solid var(--rule); }
+.canvas-sequence figcaption { font-size: .9rem; line-height: 1.35; padding-top: .35rem; }
+.canvas-sequence time { display: block; color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.page-events .story-sources { font-size: .9rem; }
+.canvas-method { margin-top: 1.5rem; border-top: 1px solid var(--rule); padding: .8rem 0; }
+.canvas-method summary { cursor: pointer; }
+@media (max-width: 480px) {
+ .canvas-sequence figcaption { font-size: .82rem; }
+ .canvas-sequence time { font-size: .74rem; }
+}

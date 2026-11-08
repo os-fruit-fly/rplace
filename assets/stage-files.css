@@ -16,3 +16,16 @@
 }
 .file-index .archive { margin: .5rem 0 1rem 1.25rem; }
 .file-index .archive summary { font-weight: 500; }
+
+.file-index:has(.stage-defs) { max-width: none; }
+.file-index .stage-defs { margin-block: 1.5rem; }
+.output-group { border-top: 1px solid var(--rule); padding-block: .35rem; }
+.output-group summary { padding-block: .55rem; }
+.output-group .member-links { overflow-wrap: anywhere; }
+.file-index .output-group dl { display: block; }
+.file-index .output-group dd { margin-bottom: .8rem; }
+
+.file-register-search { margin: 1rem 0; }
+.file-register-search label { display:block; font-weight:650; margin-bottom:.4rem; }
+.file-register-search input { box-sizing:border-box; width:min(100%,30rem); padding:.6rem .7rem; font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--muted); }
+.file-register-search [role=status]:empty, .file-register-search ul:empty { display:none; }

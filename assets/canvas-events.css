@@ -1,19 +1,49 @@
-.page-events .canvas-story { border-top: 1px solid var(--rule); margin: 1.8rem 0; padding-top: 1.25rem; }
-.canvas-story h2 { margin: 0 0 .55rem; }
-.page-events .story-jumps, .page-events .story-sources {
-  display: flex; flex-wrap: wrap; list-style: none; gap: .25rem 1.25rem; padding: 0; margin: .8rem 0;
+.page-events .event-cards {
+  max-width: 52rem;
+  padding: 0;
+  margin: 1.7rem 0 3rem;
+  list-style: none;
 }
-.page-events .story-jumps li, .page-events .story-sources li { margin: 0; }
-.page-events .canvas-clock { margin-top: 1rem; color: var(--muted); font-size: .85rem; }
-.canvas-sequence { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(.4rem,1.5vw,1rem); max-width: 43rem; margin: 1rem 0 .8rem; }
-.canvas-sequence figure { margin: 0; min-width: 0; }
-.canvas-sequence img { display: block; width: 100%; height: auto; image-rendering: pixelated; border: 1px solid var(--rule); }
-.canvas-sequence figcaption { font-size: .9rem; line-height: 1.35; padding-top: .35rem; }
-.canvas-sequence time { display: block; color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
-.page-events .story-sources { font-size: .9rem; }
-.canvas-method { margin-top: 1.5rem; border-top: 1px solid var(--rule); padding: .8rem 0; }
-.canvas-method summary { cursor: pointer; }
+#main .event-cards li { max-width: none !important; margin: 0; border-top: 1px solid var(--rule); }
+.event-cards li:last-child { border-bottom: 1px solid var(--rule); }
+.event-card { display: grid; grid-template-columns: clamp(6rem,18vw,12rem) 1fr; gap: clamp(.9rem,3vw,2rem); align-items: center; padding: 1.2rem 0; text-decoration: none; color: var(--ink); }
+.event-card strong { display: block; color: var(--accent); text-decoration: underline; text-underline-offset: .16em; font-size: clamp(1.15rem,2vw,1.5rem); line-height: 1.2; }
+.event-card strong + span { display: block; margin-top: .4rem; }
+.event-card:hover strong { text-decoration-thickness: 2px; }
+.event-preview { display: grid; place-items: center; background: var(--surface); }
+.event-preview img { display: block; width: 100%; max-height: 8rem; object-fit: contain; image-rendering: pixelated; }
+.episode-page { max-width: 53rem; }
+.episode-back { margin: .75rem 0; }
+.episode-section { margin: 2.25rem 0; border-top: 1px solid var(--rule); padding-top: 1rem; }
+.episode-section h2 { margin: 0 0 .7rem; }
+.episode-step { margin-top: 1.4rem; }
+.episode-step h3 { margin: 0; }
+.episode-step p { margin: .4rem 0; }
+.episode-sources, .episode-note { font-size: .9rem; }
+.episode-note { color: var(--muted); }
+.event-player { max-width: 42rem; scroll-margin-top: 1rem; }
+.event-frame { margin: .75rem 0 1.6rem; }
+.event-frame img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.event-frame figcaption { margin-top: .55rem; }
+.event-frame figcaption strong { display: block; font-variant-numeric: tabular-nums; }
+.frame-controls { display: flex; gap: 1rem; align-items: center; margin: .75rem 0; }
+.frame-controls button { border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: .45rem .8rem; min-height: 44px; cursor: pointer; }
+.frame-controls button:disabled { opacity: .45; cursor: default; }
+.frame-controls label { flex: 1; min-width: 0; text-align: center; }
+.frame-controls input { display: block; width: 100%; margin: 0; min-height: 24px; accent-color: var(--accent); }
+.frame-position { font-variant-numeric: tabular-nums; }
+.event-frame[hidden], .frame-controls[hidden] { display: none; }
+.episode-table { border-collapse: collapse; width: 100%; max-width: 42rem; margin: .6rem 0 1rem; }
+.episode-table caption { text-align: left; margin-bottom: .6rem; }
+.episode-table td, .episode-table th { text-align: right; border-bottom: 1px solid var(--rule); padding: .55rem .4rem; font-variant-numeric: tabular-nums; }
+.episode-table th:first-child { text-align: left; }
+.thread-list { margin-top: 1.25rem; }
+.thread-list summary { cursor: pointer; font-weight: 650; min-height: 44px; }
+.thread-list ol { padding-left: 2.1rem; }
+.thread-list li { border-top: 1px solid var(--rule); padding: .55rem 0; }
+.thread-list li span { display: block; color: var(--muted); font-size: .87rem; }
 @media (max-width: 480px) {
- .canvas-sequence figcaption { font-size: .82rem; }
- .canvas-sequence time { font-size: .74rem; }
+  .event-card { grid-template-columns: minmax(4.5rem,25%) 1fr; }
+  .frame-controls { gap: .6rem; }
+  .episode-table th, .episode-table td { padding: .4rem .22rem; overflow-wrap: anywhere; }
 }

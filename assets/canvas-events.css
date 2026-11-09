@@ -9,9 +9,11 @@
 .event-card { display: grid; grid-template-columns: clamp(6rem,18vw,12rem) 1fr; gap: clamp(.9rem,3vw,2rem); align-items: center; padding: 1.2rem 0; text-decoration: none; color: var(--ink); }
 .event-card strong { display: block; color: var(--accent); text-decoration: underline; text-underline-offset: .16em; font-size: clamp(1.15rem,2vw,1.5rem); line-height: 1.2; }
 .event-card strong + span { display: block; margin-top: .4rem; }
+.event-motion { min-height: 44px; padding: .4rem .8rem; border: 1px solid var(--line); background: var(--bg); color: var(--ink); font: inherit; cursor: pointer; }
+.event-motion:not([hidden]) + .event-cards { margin-top: .85rem; }
 .event-card:hover strong { text-decoration-thickness: 2px; }
 .event-preview { display: grid; place-items: center; background: var(--surface); }
-.event-preview img { display: block; width: 100%; max-height: 8rem; object-fit: contain; image-rendering: pixelated; }
+.event-preview img { display: block; width: 100%; height: auto; max-height: 8rem; object-fit: contain; image-rendering: pixelated; }
 .episode-page { max-width: 53rem; }
 .episode-back { margin: .75rem 0; }
 .episode-section { margin: 2.25rem 0; border-top: 1px solid var(--rule); padding-top: 1rem; }

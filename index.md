@@ -16,7 +16,7 @@ The study has three parts, run in order.
 
 ## What we found
 
-The run followed one community closely and all 705 together.
+The run followed one community closely and all 705 together. [From form to post](results/form-to-post.html) traces one of the six organizational forms back to the posts behind it.
 
 1. **[One community: r/PlaceNL](results/placenl.html)** Founded for the event to coordinate the Dutch artworks. Its coders turned 701 posts and comments into 246 codes and 21 themes. At the return its coder reported canal houses erased by the community's own defense script; corrections from other communities revised the model's account of repair, and r/PlaceNL's line became a specification of it.
 2. **[The population model](results/population.html)** Each community coded on its own, then composed into eight aggregate dimensions and one model. Communities that asked for similar changes to the model form six candidate organizational forms.

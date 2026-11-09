@@ -1,0 +1,29 @@
+.home > .home-gallery { width:100%; min-width:0; margin:0; }
+.home-gallery [hidden] {display:none !important}
+.gallery-tabs {display:flex;align-items:stretch;gap:0;border-bottom:1px solid var(--rule);margin-bottom:.6rem}
+.gallery-tabs button,.playback button {font:inherit;font-size:.875rem;font-weight:550;color:var(--ink);background:transparent;border:0;border-radius:0;cursor:pointer;min-height:44px;padding:.4rem .7rem}
+.gallery-tabs button {flex:1;white-space:nowrap;border-bottom:2px solid transparent}
+.gallery-tabs button[aria-pressed="true"] {color:var(--accent);border-bottom-color:currentColor}
+.home-gallery .gallery-image {width:100%;aspect-ratio:1;box-sizing:border-box;background:var(--surface);display:grid;place-items:center;overflow:hidden;touch-action:pan-y pinch-zoom;border:1px solid var(--rule)}
+.home-gallery .whole-canvas {display:block;width:100%;height:100%;object-fit:contain;border:0}
+.home-gallery canvas {display:block;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+.home-gallery figcaption {color:var(--ink);margin:.72rem 0 .4rem;min-height:6.7rem}
+.home-gallery figcaption strong,.home-gallery figcaption span {display:block}
+.home-gallery figcaption strong {font-size:1.08rem;line-height:1.35}
+.home-gallery figcaption span,.home-gallery figcaption a {font-size:.94rem;line-height:1.45}
+.home-gallery figcaption span {margin:.18rem 0}
+.home-gallery .playback {display:flex;align-items:center;gap:.5rem;border-top:1px solid var(--rule);min-height:46px}
+.playback .play {border:1px solid var(--rule);padding:.2rem .6rem;min-width:4.4rem;min-height:36px}
+.playback input {flex:1;min-width:2.5rem;accent-color:var(--accent);min-height:36px}
+.playback .stamp {font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto;white-space:nowrap}
+.page-index .paper-links {font-size:.94rem}
+@media(max-width:860px){
+  .home>.orientation {display:block;order:0}
+  .home>.canvas {order:1;margin:.3rem 0 .75rem}
+  .home>.examples {order:2}
+}
+@media(max-width:400px){.gallery-tabs button{padding:.4rem .28rem}.playback .stamp {font-size:.74rem}}
+
+.home-gallery .hourly-strip {display:block;width:100%;height:1.5rem;margin-top:.2rem}
+.hour-cursor {stroke:var(--ink);stroke-width:2}
+@media (prefers-reduced-motion:no-preference){.gallery-slide:not([hidden]){animation:gallery-enter .18s ease-out}@keyframes gallery-enter{from{opacity:.5}to{opacity:1}}}

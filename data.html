@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The record in numbers | r/place</title><link rel="stylesheet" href="assets/site.css"><script defer src="assets/local-setup.js"></script><script defer src="assets/site.js"></script><script defer src="assets/reviewer.js"></script></head>
+<title>The record in numbers | r/place</title><link rel="stylesheet" href="assets/site.css"><script defer src="assets/local-setup.js"></script><script defer src="assets/site.js"></script><script defer src="assets/reviewer.js"></script><link rel="stylesheet" href="assets/activity/style.css"><script defer src="assets/activity/player.js"></script></head>
 <body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">r/place<span>An organizational fruit fly</span></a>
 <div class="utility"><nav class="task-nav" aria-label="Use the repository"><a class="check-link" href="check.html">Fact check the proposal</a><a data-reviewer-entry href="open-interviews.html" target="_blank" rel="noopener">Reviewer sign in</a></nav><button id="theme" type="button" aria-label="Change color theme">Theme: light</button></div><nav class="menu" aria-label="Main"><a aria-current=location href="index.html">Overview</a><a  href="organism.html">Model organism</a><a  href="instrument.html">Instrument</a><a  href="results.html">Findings</a><a  href="interviews.html">Checkpoint interviews</a></nav></header>
 <main id="main" class="page-data" data-layer="Overview"><nav class="parts" aria-label="Overview"><a  href="index.html">Introduction</a><a aria-current=location href="events.html">Events on the canvas</a><a  href="check.html">Fact check the proposal</a></nav><section class="orientation" aria-label="Overview"><nav class="toc group-switch" aria-label="Pages in this tab"><a href="events.html">Three conflicts</a><a href="data.html" aria-current="page">The record in numbers</a><a href="emergence.html">New communities</a></nav><h1 id="the-record-in-numbers">The record in numbers</h1>
@@ -10,6 +10,11 @@ comments of the subreddits behind its artworks. This page shows what
 each holds. Every figure is computed from the shared files; the <a
 href="sources/data-README.html">data guide</a> explains how to download
 and rebuild them.</p>
+<section class="activity-panel" id="placements"><h2>Where people placed pixels</h2><figure class="hourly-map" data-hourly-map="placements">
+<div class="map-media"><img src="assets/activity/placements-still.webp" width="200" height="200" alt="Placements per block across the canvas in hour 51. Bright blocks received the most placements."><canvas width="200" height="200" hidden role="img" aria-label="Hourly map of placements across the canvas. The time and scale follow."></canvas>
+<div class="map-controls" hidden><button type="button">Play</button><input type="range" min="0" max="72" step="1" value="51" aria-label="Hour on the canvas"></div></div>
+<figcaption><span class="map-time">Hour 51 · 2 Apr, 19:00 UTC</span><strong class="map-value">401,385 placements</strong><p>Each square covers 5 by 5 pixels. Brighter squares received more placements in the hour shown.</p>
+<div class="map-legend"><strong>Placements per square</strong><ol><li><i aria-hidden="true" style="--swatch:#18212a"></i>None</li><li><i aria-hidden="true" style="--swatch:#264453"></i>1 to 4</li><li><i aria-hidden="true" style="--swatch:#32667a"></i>5 to 14</li><li><i aria-hidden="true" style="--swatch:#408b91"></i>15 to 39</li><li><i aria-hidden="true" style="--swatch:#70b8a6"></i>40 to 79</li><li><i aria-hidden="true" style="--swatch:#b1dcb5"></i>80 to 159</li><li><i aria-hidden="true" style="--swatch:#f7f2bc"></i>160+</li></ol></div></figcaption></figure><p>See <a href="events.html#conflict">where people painted the same color again</a> and how participants described the three disputes.</p></section>
 <h2 id="pixel-changes">Pixel changes</h2>
 <p>Reddit's log records the time, position, color and hashed account of
 every change: 16,559,897 changes by 1,166,924 accounts (Reddit, 2017).
@@ -19,7 +24,7 @@ public traffic, at 16:55 UTC. The study's window opens at 16:00, so its
 hours run from 0 to 73; the last pixel change came at 16:58:54. Activity
 rose and fell with the day: it dipped between about 04:00 and 12:00 UTC,
 and peaked in hour 51 at 401,442 changes.</p>
-<figure class="data-figure"><img src="assets/data/pixels-per-hour.svg" alt="Pixel changes per hour over the 72 hours. 391 test changes by 18 accounts before the opening are left out." width="630" height="290" loading="lazy"><figcaption>Pixel changes per hour over the 72 hours. 391 test changes by 18 accounts before the opening are left out.</figcaption></figure>
+<figure class="data-figure"><img src="assets/data/pixels-per-hour.svg" alt="Pixel changes per hour over the 72 hours. 391 test changes by 18 accounts before the opening are left out." width="630" height="290" loading="lazy"><figcaption>Hourly counts from the full log, including coordinates outside the canvas. The map above counts placements inside the canvas. Both exclude the 391 test placements before the study window.</figcaption></figure>
 
 <p>Most accounts did little. The median account made 3 changes, and a
 third of all accounts (382,233) made just one. The most active account

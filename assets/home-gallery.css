@@ -28,3 +28,5 @@
 .home-gallery .hourly-strip {display:block;width:100%;height:1.5rem;margin-top:.2rem}
 .hour-cursor {stroke:var(--ink);stroke-width:2}
 @media (prefers-reduced-motion:no-preference){.gallery-slide:not([hidden]){animation:gallery-enter .18s ease-out}@keyframes gallery-enter{from{opacity:.5}to{opacity:1}}}
+
+@media(max-width:480px){.gallery-tabs button{min-width:0;padding-inline:.18rem}}

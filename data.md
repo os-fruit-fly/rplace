@@ -2,6 +2,10 @@
 
 The dataset joins four public records of the 2017 event: Reddit's log of every pixel change, the table of the usernames behind its hashed names, the Place Atlas of the finished canvas, and the posts and comments of the subreddits behind its artworks. This page shows what each holds. Every figure is computed from the shared files; the [data guide](sources/data-README.html) explains how to download and rebuild them.
 
+## Where people placed pixels
+
+[Play the hourly placement map](data.html#placements). Each square covers 5 by 5 pixels. [Compare repaint activity](events.html#conflict).
+
 ## Pixel changes
 
 Reddit's log records the time, position, color and hashed account of every change: 16,559,897 changes by 1,166,924 accounts (Reddit, 2017). The canvas opened to the public on 31 March 2017 and froze on 3 April at 17:00 UTC: a little over 72 hours of placing from the first minute of public traffic, at 16:55 UTC. The study's window opens at 16:00, so its hours run from 0 to 73; the last pixel change came at 16:58:54. Activity rose and fell with the day: it dipped between about 04:00 and 12:00 UTC, and peaked in hour 51 at 401,442 changes.

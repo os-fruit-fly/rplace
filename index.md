@@ -5,7 +5,7 @@ r/place as a model organism for cumulative grounded theory.
 Over 72 hours in 2017, more than a million people built and defended pictures on a shared canvas. The pixels show what changed. In their discussions, people proposed designs, settled borders and called for help.
 We brought these records together for 705 communities. Like biologists returning to the fruit fly, researchers can return to the same cases, compare explanations and test what earlier studies missed.
 
-[Explore the three conflicts on the canvas](events.html).
+[Explore the three conflicts on the canvas](events.html) or [see where people repainted the same color](events.html#conflict).
 
 ## How the study works
 

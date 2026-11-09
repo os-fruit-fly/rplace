@@ -13,3 +13,7 @@ A raid blackened the pink osu! logo. The Void claimed the attack, its own member
 ## [France, Germany and the EU flag](event-france-germany-eu.html)
 
 German stripes crossed the French tricolour. Builders from both sides turned the disputed patch into a European flag.
+
+## Conflict
+
+Across the canvas, 26.4% of placements repeated the color already on the pixel. People could choose the same color while defending a flag or simply paint at the same time. The discussions in the three cases help distinguish those accounts. [Explore the hourly map and graph](events.html#conflict) or [download the hourly counts](assets/activity/hourly.csv).

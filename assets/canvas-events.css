@@ -40,10 +40,20 @@
 .episode-table td, .episode-table th { text-align: right; border-bottom: 1px solid var(--rule); padding: .55rem .4rem; font-variant-numeric: tabular-nums; }
 .episode-table th:first-child { text-align: left; }
 .thread-list { margin-top: 1.25rem; }
-.thread-list summary { cursor: pointer; font-weight: 650; min-height: 44px; }
+.thread-list > summary { cursor: pointer; font-weight: 650; min-height: 44px; }
+/* Source citations expand in place and also work without JavaScript. */
+.source-items { margin-top: .45rem; }
+.source-item { padding: 0; border: 0; }
+.source-item:last-of-type { border-bottom: 0; }
+.source-items .source-item + .source-item { border-top: 1px solid var(--rule); }
+.source-item > summary { width: fit-content; max-width: 100%; min-height: 44px; box-sizing: border-box; align-items: center; padding: .45rem 0; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+.source-item > summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.source-item[open] > summary { font-weight: 650; }
+.source-item > .source-line { margin: .1rem 0 .65rem; padding: .25rem 0 .25rem .75rem; border-left: 2px solid var(--rule); line-height: 1.5; font-size: .95rem; overflow-wrap: anywhere; }
+.source-line time, .source-line code { color: var(--muted); font-variant-numeric: tabular-nums; }
 .thread-list ol { padding-left: 2.1rem; }
 .thread-list li { border-top: 1px solid var(--rule); padding: .55rem 0; }
-.thread-list li span { display: block; color: var(--muted); font-size: .87rem; }
+.thread-list li > span { display: block; color: var(--muted); font-size: .87rem; }
 @media (max-width: 480px) {
   .event-card { grid-template-columns: minmax(4.5rem,25%) 1fr; }
   .frame-controls { gap: .6rem; }

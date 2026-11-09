@@ -5,8 +5,6 @@ r/place as a model organism for cumulative grounded theory.
 Over 72 hours in 2017, more than a million people built and defended pictures on a shared canvas. The pixels show what changed. In their discussions, people proposed designs, settled borders and called for help.
 We brought these records together for 705 communities. Like biologists returning to the fruit fly, researchers can return to the same cases, compare explanations and test what earlier studies missed.
 
-[Proposal (PDF)](papers/proposal.pdf) · [Technical appendix (PDF)](papers/technical-appendix.pdf) · [Fact check the proposal](check.html)
-
 [Explore the three conflicts on the canvas](events.html).
 
 ## How the study works
@@ -23,3 +21,4 @@ The run followed one community closely and all 705 together. [From form to post]
 
 1. **[One community: r/PlaceNL](results/placenl.html)** Members founded r/PlaceNL to coordinate the Dutch artworks. Its coders turned 701 posts and comments into 246 codes and 21 themes. On the first return, its coder proposed 28 changes to the population model. The aggregator cited the Dutch case alongside other communities in five revisions to the final model.
 2. **[The population model](results/population.html)** Each community coded on its own, then composed into eight aggregate dimensions and one model. Communities that asked for similar changes to the model form six candidate organizational forms.
+3. **[Fact check the proposal](check.html)** Check each claim against the [instrument](instrument.html) and [findings](results.html).

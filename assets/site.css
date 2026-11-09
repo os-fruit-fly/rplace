@@ -507,7 +507,7 @@ main .stage-list p{margin:0 0 .25rem}
 @media(max-width:680px){#results-population table.dims-table caption{display:block;max-width:none}}
 /* Wide charts (codes per hour) keep a readable size on phones and scroll inside their frame. */
 @media(max-width:680px){#main .data-figure.wide{overflow-x:auto}#main .data-figure.wide img{min-width:720px}#main .data-figure.wide figcaption{position:sticky;left:0;max-width:calc(100vw - 2rem)}}
-/* Check the papers: in the header on wide screens, in the footer everywhere; on phones the header keeps its height (contract 2.3). */
+/* Fact check the proposal: in the header on wide screens, in the footer everywhere; on phones the header keeps its height (contract 2.3). */
 @media(max-width:680px){header .task-nav a.check-link{display:none}}
 /* Every stage map looks like the instrument guide's (design audit, 6 November 2026): part heading over a 2px rule, one row per stage, code in accent, name in ink. */
 #main .stage-group>h3{padding-bottom:.4rem;border-bottom:2px solid var(--line);margin:0 0 .2rem}

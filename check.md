@@ -1,6 +1,6 @@
-# Check the papers
+# Fact check the proposal
 
-Each claim in the proposal and its technical appendix that this site can show, with a link to its evidence. A link opens the place where the evidence is visible; a link into a folded section opens the fold. Claims the site cannot show yet are listed at the end.
+Read the [proposal (PDF)](papers/proposal.pdf) and [technical appendix (PDF)](papers/technical-appendix.pdf), then select a claim below to see the evidence behind it. The final section lists claims the site cannot yet verify.
 
 [Files by stage](results/files.html) lists the population coding scheme, the r/PlaceNL codes and the records behind the models.
 

@@ -18,9 +18,10 @@
 .playback .stamp {font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto;white-space:nowrap}
 .page-index .paper-links {font-size:.94rem}
 @media(max-width:860px){
-  .home>.orientation {display:block;order:0}
+  .home>.orientation {display:contents}
+  .home>.orientation>p:first-of-type {order:0}
   .home>.canvas {order:1;margin:.3rem 0 .75rem}
-  .home>.examples {order:2}
+  .home>.examples {order:3}
 }
 @media(max-width:400px){.gallery-tabs button{padding:.4rem .28rem}.playback .stamp {font-size:.74rem}}
 

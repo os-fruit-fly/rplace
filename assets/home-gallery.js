@@ -11,7 +11,7 @@
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const utc = new Intl.DateTimeFormat('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'UTC'});
   let view = 0, frame = 0, sheet = null, ready = false, generation = 0;
-  let playing = !motion.matches, inView = false, reading = false;
+  let playing = !motion.matches, reading = false;
   let timer = null, due = 0, left = 0;
 
   function stopClock() {
@@ -22,7 +22,7 @@
     }
   }
   function syncClock() {
-    const running = playing && ready && !reading && inView && !document.hidden;
+    const running = playing && ready && !reading && !document.hidden;
     if (!running) { stopClock(); return; }
     if (timer !== null) return;
     due = performance.now() + left;
@@ -124,9 +124,6 @@
       select((view+(dx<0?1:-1)+slides.length)%slides.length);
     }
   },{passive:true});
-  new IntersectionObserver(([entry])=>{
-    inView = entry.isIntersecting && entry.intersectionRatio>=.35; syncClock();
-  },{threshold:[0,.35]}).observe(gallery);
   bar.hidden = false;
   gallery.querySelector('.gallery-tabs').hidden = false;
   setPlaying(playing);

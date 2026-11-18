@@ -356,8 +356,6 @@ main a[download]::after{content:" ↓";font-size:.85em}
 :is(#results-community) .about figure.area figcaption{color:var(--muted);font-size:.9rem;padding-top:.5rem;max-width:75ch}
 :is(#results-community) .about .area-scroll{overflow-x:auto}
 @media(max-width:680px){:is(#results-community) .about figure.area .area-scroll img{width:1000px;max-width:none}}
-/* The paper's title appears once, on the front page; the footer keeps its links at the right. */
-footer>div{margin-left:auto}
 @media(max-width:680px){.stage-strip .strip-label,:is(#results-community,#results-population) .stage-strip .strip-label{margin-bottom:.15rem}}
 /* The population pilot: the eight dimensions as one compact list; links to the rest of the site. */
 :is(#results-population) ul.dimlist{list-style:none;padding:0;margin:.6rem 0 1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem 1.6rem;max-width:none}
@@ -395,8 +393,6 @@ main.page-results>.findings h2{margin:0 0 .4rem;font-size:1.6rem}
 main.page-results>.findings ol{margin:.4rem 0 .7rem;padding-left:1.4rem}
 main.page-results>.findings li{margin:.45rem 0;line-height:1.45}
 main.page-results>.findings a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
-/* The footer holds the two links every page carries: For agents and Repository. */
-footer>div{display:flex;gap:1.6rem}
 .sub-head{font-weight:400;color:var(--muted);font-size:.85em}
 :is(#results-population) table.dims-table{margin:.8rem 0 .6rem;display:block;overflow-x:auto;max-width:100%}
 :is(#results-population) table.dims-table caption{caption-side:top;text-align:left;color:var(--muted);font-size:.85rem;padding-bottom:.4rem}
@@ -507,7 +503,7 @@ main .stage-list p{margin:0 0 .25rem}
 @media(max-width:680px){#results-population table.dims-table caption{display:block;max-width:none}}
 /* Wide charts (codes per hour) keep a readable size on phones and scroll inside their frame. */
 @media(max-width:680px){#main .data-figure.wide{overflow-x:auto}#main .data-figure.wide img{min-width:720px}#main .data-figure.wide figcaption{position:sticky;left:0;max-width:calc(100vw - 2rem)}}
-/* Fact check the proposal: in the header on wide screens, in the footer everywhere; on phones the header keeps its height (contract 2.3). */
+/* Keep the compact header on phones. The proposal check remains in the Overview navigation. */
 @media(max-width:680px){header .task-nav a.check-link{display:none}}
 /* Every stage map looks like the instrument guide's (design audit, 6 November 2026): part heading over a 2px rule, one row per stage, code in accent, name in ink. */
 #main .stage-group>h3{padding-bottom:.4rem;border-bottom:2px solid var(--line);margin:0 0 .2rem}
@@ -636,3 +632,12 @@ header .task-nav a[data-reviewer-entry]:hover, header #theme:hover { background:
   header:has(.utility) .brand span { font-size: .68rem; }
   header:has(.utility) .task-nav a[data-reviewer-entry], header:has(.utility) #theme { padding-inline: .45rem; }
 }
+
+/* Shared reference links and project identity at the end of each page. */
+footer.site-footer{align-items:center;gap:1rem 2rem}
+.site-footer .footer-brand{display:inline-flex;flex-direction:column;justify-content:center;min-height:44px;color:var(--ink);font:750 1.15rem/1.2 var(--font);font-stretch:75%;text-decoration:none}
+.site-footer .footer-brand span{margin-top:.3rem;font:400 .8rem/1.4 var(--font);color:var(--muted)}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:.2rem 1.5rem;margin-left:auto}
+.site-footer nav a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.18em}
+.site-footer a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media(max-width:620px){.site-footer nav{margin-left:0;width:100%;column-gap:1.2rem}}

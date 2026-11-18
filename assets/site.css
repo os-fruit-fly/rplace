@@ -634,10 +634,9 @@ header .task-nav a[data-reviewer-entry]:hover, header #theme:hover { background:
 }
 
 /* Shared reference links and project identity at the end of each page. */
-footer.site-footer{align-items:center;gap:1rem 2rem}
-.site-footer .footer-brand{display:inline-flex;flex-direction:column;justify-content:center;min-height:44px;color:var(--ink);font:750 1.15rem/1.2 var(--font);font-stretch:75%;text-decoration:none}
-.site-footer .footer-brand span{margin-top:.3rem;font:400 .8rem/1.4 var(--font);color:var(--muted)}
-.site-footer nav{display:flex;flex-wrap:wrap;gap:.2rem 1.5rem;margin-left:auto}
-.site-footer nav a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.18em}
+footer.site-footer{align-items:center;flex-wrap:nowrap;gap:1rem 2rem;overflow-x:auto}
+.site-footer .footer-brand{display:inline-flex;align-items:center;flex-shrink:0;min-height:44px;color:var(--ink);font:750 1.15rem/1.2 var(--font);font-stretch:75%;text-decoration:none;white-space:nowrap}
+.site-footer nav{display:flex;flex-wrap:nowrap;gap:clamp(.5rem,2vw,1.5rem);margin-left:auto}
+.site-footer nav a{display:inline-flex;align-items:center;flex-shrink:0;min-height:44px;white-space:nowrap;text-underline-offset:.18em}
 .site-footer a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
-@media(max-width:620px){.site-footer nav{margin-left:0;width:100%;column-gap:1.2rem}}
+@media(max-width:620px){footer.site-footer{column-gap:.65rem}.site-footer .footer-brand{font-size:1rem}}

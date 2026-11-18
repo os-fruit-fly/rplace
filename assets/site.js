@@ -206,7 +206,7 @@
         if(secondary.length>PAGE_SIZE)list.append(pager(secondary.length));
       }
     }
-    function navigate(a){const q=new URL(a.href).searchParams;selected='';invalid='';page=1;kind=q.get('kind')||(q.has('stage')?'aggregator':kind);entity=q.get('stage')||q.get('entity')||'';scope='featured';writeURL();draw();if(entity)title.focus();}
+    function navigate(a){const q=new URL(a.href).searchParams;selected='';invalid='';page=1;kind=q.get('kind')||(q.has('stage')?'aggregator':kind);entity=q.get('stage')||q.get('entity')||'';scope='featured';writeURL();draw();if(entity){document.getElementById('checkpoint-results').scrollIntoView({block:'start',behavior:'instant'});title.focus({preventScroll:true});}}
     document.querySelectorAll('[data-kind],[data-stage],[data-entity]').forEach(a=>a.addEventListener('click',e=>{if(e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();navigate(a);}));
     other.ontoggle=()=>{
       if(other.hidden)return;

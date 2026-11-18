@@ -1,7 +1,7 @@
 /* Reading pilot only. The public reading layout is unchanged. */
 .reading-pilot-note{font-size:.875rem;color:var(--muted);padding:.6rem 0;border-bottom:1px solid var(--rule);margin:0 0 1.2rem}
 .reading-pilot .findings-short{margin-top:1.5rem;border:1px solid var(--line);padding:1.15rem}
-.reading-pilot #main .findings-short>.findings-part-heading{margin:0 0 1rem}
+.reading-pilot #main :is(#results-community,#results-population) .findings-short>.findings-part-heading{margin:0 0 1rem}
 .reading-pilot .findings-short>p{max-width:66ch;margin:.8rem 0 0}
 .reading-pilot .findings-short>p:last-child{margin-bottom:0}
 .reading-pilot .findings-short+.fact-box{margin-top:1.5rem}

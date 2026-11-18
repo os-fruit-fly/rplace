@@ -1,0 +1,12 @@
+/* Reading pilot only. The public reading layout is unchanged. */
+.reading-pilot-note{font-size:.875rem;color:var(--muted);padding:.6rem 0;border-bottom:1px solid var(--rule);margin:0 0 1.2rem}
+.reading-pilot .findings-short{margin-top:1.5rem;border:1px solid var(--line);padding:1.15rem}
+.reading-pilot #main .findings-short>.findings-part-heading{margin:0 0 1rem}
+.reading-pilot .findings-short>p{max-width:66ch;margin:.8rem 0 0}
+.reading-pilot .findings-short>p:last-child{margin-bottom:0}
+.reading-pilot .findings-short+.fact-box{margin-top:1.5rem}
+.reading-pilot .form-reading-note{font-size:1.05rem;line-height:1.65;max-width:66ch;margin:1.2rem 0 1.6rem}
+.reading-pilot .reading-key{font-size:.95rem;max-width:66ch;margin:1rem 0 2rem}
+.reading-pilot .independent-model{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line)}
+.reading-pilot .local-next{margin-bottom:1.8rem}
+.reading-pilot .stage-strip a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}

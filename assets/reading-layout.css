@@ -1,0 +1,11 @@
+/* Shared reading layout for the community and population findings. */
+.reading-layout .findings-short{margin-top:1.5rem;border:1px solid var(--line);padding:1.15rem}
+.reading-layout #main :is(#results-community,#results-population) .findings-short>.findings-part-heading{margin:0 0 1rem}
+.reading-layout .findings-short>p{max-width:66ch;margin:.8rem 0 0}
+.reading-layout .findings-short>p:last-child{margin-bottom:0}
+.reading-layout .findings-short+.fact-box{margin-top:1.5rem}
+.reading-layout .form-reading-note{font-size:1.05rem;line-height:1.65;max-width:66ch;margin:1.2rem 0 1.6rem}
+.reading-layout .reading-key{font-size:.95rem;max-width:66ch;margin:1rem 0 2rem}
+.reading-layout .independent-model{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line)}
+.reading-layout .local-next{margin-bottom:1.8rem}
+.reading-layout .stage-strip a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
